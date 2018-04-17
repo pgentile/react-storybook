@@ -8,6 +8,7 @@ import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee';
 
 import MyButton from './MyButton';
 
+
 storiesOf('MyButton', module)
   .addDecorator(withKnobs)
   .add('with simple label', () => {
