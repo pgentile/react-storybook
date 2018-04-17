@@ -8,9 +8,13 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .jsx,.js ./src",
-    "fix": "eslint --fix --ext .jsx,.js ./src"
+    "fix": "eslint --fix --ext .jsx,.js ./src",
+    "test": "jest"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-solid": "^5.0.10",
+    "@fortawesome/react-fontawesome": "^0.0.18",
     "lodash-es": "^4.17.8",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",
@@ -20,19 +24,32 @@
     "@storybook/addon-actions": "^3.4.0",
     "@storybook/addon-knobs": "^3.4.0",
     "@storybook/addon-links": "^3.4.0",
+    "@storybook/addon-storyshots": "^3.4.1",
     "@storybook/addons": "^3.4.0",
     "@storybook/cli": "^3.4.0",
     "@storybook/react": "^3.4.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^21.15.0",
     "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.3.2",
+    "regenerator-runtime": "^0.11.1",
     "webpack": "^4.5.0"
-  }
+  },
+  "browserslist": [
+    "last 3 chrome versions",
+    "last 3 firefox versions",
+    "last 2 safari versions",
+    "last 2 edge versions",
+    "last 1 ie version"
+  ]
 }
