@@ -5,12 +5,13 @@ import { action } from '@storybook/addon-actions';
 
 import DebouncedInput from './DebouncedInput';
 
+
 storiesOf('DebouncedInput', module)
   .addDecorator(withKnobs)
   .add('with a debounced value', () => {
     return (
       <DebouncedInput
-        debounceDelay={number('Debounce delay', 1000)}
+        debounceDelay={number('Debounce delay', 500)}
         onChange={action('On value change')} />
     );
   });

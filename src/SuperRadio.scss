@@ -1,0 +1,38 @@
+$baseBackgroundColor: lightblue;
+$margin: 10px;
+
+.superRadio {
+  background-color: lighten($baseBackgroundColor, 10%);
+  border-radius: 7px;
+  border: 1px darkgray solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  &__radioElement {
+    margin: auto 0 auto $margin;
+    // background-color: $baseBackgroundColor;
+  }
+
+  &__icon {
+    margin: auto $margin;
+    // background-color: $baseBackgroundColor;
+    // border-left: darkgray 1px solid;
+  }
+
+  &__labelElement {
+    margin: auto $margin auto 0;
+  }
+
+  &__labelTitle {
+    margin: $margin;
+    font-weight: bold;
+  }
+
+  &__labelDescription {
+    margin: $margin;
+  }
+
+}
+
