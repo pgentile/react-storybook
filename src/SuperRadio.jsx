@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import styles from './SuperRadio.scss';
 
 
-export default class SuperRadio extends React.PureComponent {
+class SuperRadio extends React.PureComponent {
 
   static propTypes = {
     label: PropTypes.string.isRequired,
@@ -13,6 +13,7 @@ export default class SuperRadio extends React.PureComponent {
     description: PropTypes.string,
     checked: PropTypes.bool,
     onChange: PropTypes.func,
+    forwardedRef: PropTypes.any,
   };
 
   static counter = 0;
@@ -28,13 +29,13 @@ export default class SuperRadio extends React.PureComponent {
   }
 
   render() {
-    const { label, icon, description, checked, onChange } = this.props;
+    const { label, icon, description, checked, onChange, forwardedRef } = this.props;
     const { id } = this.state;
 
     return (
       <div className={styles.superRadio}>
         <div className={styles.superRadio__radioElement}>
-          <input type="radio" id={id} checked={checked} onChange={onChange} />
+          <input type="radio" id={id} checked={checked} onChange={onChange} ref={forwardedRef} />
         </div>
         <div className={styles.superRadio__icon}>
           <label htmlFor={id}>
@@ -52,3 +53,10 @@ export default class SuperRadio extends React.PureComponent {
   }
 
 }
+
+
+export default forwardRef((props, ref) => {
+  return (
+    <SuperRadio forwardedRef={ref} {...props} />
+  );
+});

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createRef } from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs/react';
@@ -14,6 +14,18 @@ storiesOf('SuperRadio', module)
   .add('main', () => {
     return (
       <SuperRadio
+        label={text('Label', 'Radio button')}
+        description={text('Description', 'This is my radio button')}
+        onChange={action('on checked change')}
+        icon={faCoffee} />
+    );
+  })
+  .add('reference', () => {
+    const ref = createRef();
+
+    return (
+      <SuperRadio
+        ref={ref}
         label={text('Label', 'Radio button')}
         description={text('Description', 'This is my radio button')}
         onChange={action('on checked change')}
