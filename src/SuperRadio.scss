@@ -2,6 +2,7 @@ $baseBackgroundColor: lightblue;
 $margin: 10px;
 
 .superRadio {
+  margin: $margin;
   background-color: lighten($baseBackgroundColor, 10%);
   border-radius: 7px;
   border: 1px darkgray solid;
@@ -16,13 +17,13 @@ $margin: 10px;
   }
 
   &__icon {
-    margin: auto $margin;
+    margin: auto 0 auto $margin;
     // background-color: $baseBackgroundColor;
     // border-left: darkgray 1px solid;
   }
 
   &__labelElement {
-    margin: auto $margin auto 0;
+    margin: auto 0;
   }
 
   &__labelTitle {
