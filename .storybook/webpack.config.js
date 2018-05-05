@@ -21,7 +21,7 @@ module.exports = {
           {
             loader: "css-loader", // translates CSS into CommonJS
             options: {
-              modules: true,
+              modules: false,
             },
           },
           {

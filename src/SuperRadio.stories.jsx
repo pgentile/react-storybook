@@ -56,7 +56,7 @@ class Example extends React.Component {
   render() {
     const { selectedRadioIndex } = this.state;
 
-    return range(0, 2).map(index => {
+    return range(0, 5).map(index => {
       return (
         <SuperRadio
           key={index}

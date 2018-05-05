@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
-import styles from './SuperRadio.scss';
+import './SuperRadio.scss';
 
 
 class SuperRadio extends React.PureComponent {
@@ -32,21 +32,23 @@ class SuperRadio extends React.PureComponent {
     const { label, icon, description, checked, onChange, forwardedRef } = this.props;
     const { id } = this.state;
 
+    const bemBlock = block('super-radio');
+
     return (
-      <div className={styles.superRadio}>
-        <div className={styles.superRadio__radioElement}>
+      <div className={bemBlock + ' ' + bemBlock.modifier('checked', checked || false)}>
+        <div className={bemBlock.element('radio-element')}>
           <input type="radio" id={id} checked={checked} onChange={onChange} ref={forwardedRef} />
         </div>
-        <div className={styles.superRadio__icon}>
+        <div className={bemBlock.element('icon')}>
           <label htmlFor={id}>
             <FontAwesomeIcon icon={icon} size="2x" />
           </label>
         </div>
-        <div className={styles.superRadio__labelElement}>
-          <p className={styles.superRadio__labelTitle}>
+        <div className={bemBlock.element('label-element')}>
+          <p className={bemBlock.element('label-title')}>
             <label htmlFor={id}>{label}</label>
           </p>
-          {description && <p className={styles.superRadio__labelDescription}>{description}</p>}
+          {description && <p className={bemBlock.element('label-description')}>{description}</p>}
         </div>
       </div>
     );
@@ -60,3 +62,28 @@ export default forwardRef((props, ref) => {
     <SuperRadio forwardedRef={ref} {...props} />
   );
 });
+
+
+function block(blockName) {
+  return {
+    toString: () => blockName,
+    element: (elementName) => element(blockName, elementName),
+    modifier: (modifierName, active) => modifier(blockName, null, modifierName, active),
+  };
+}
+
+
+function element(blockName, elementName) {
+  return {
+    toString: () => `${blockName}__${elementName}`,
+    modifier: (modifierName, active) => modifier(blockName, elementName, modifierName, active),
+  };
+}
+
+
+function modifier(blockName, elementName, modifierName, active) {
+  if (active === undefined || active === true) {
+    return `${blockName}${elementName ? `__${elementName}` : ''}_${modifierName}`;
+  }
+  return '';
+}

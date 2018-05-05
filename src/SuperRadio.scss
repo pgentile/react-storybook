@@ -1,37 +1,42 @@
-$baseBackgroundColor: lightblue;
+$baseBackgroundColor: lightgreen;
+$baseBorderColor: darkgray;
 $margin: 10px;
 
-.superRadio {
+
+.super-radio {
   margin: $margin;
-  background-color: lighten($baseBackgroundColor, 10%);
+  background-color: $baseBackgroundColor;
   border-radius: 7px;
-  border: 1px darkgray solid;
+  border: 1px $baseBorderColor solid;
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
 
-  &__radioElement {
+  &_checked {
+    background-color: darken($baseBackgroundColor, 10%);
+    box-shadow: 0 3px 10px lighten($baseBorderColor, 10%);
+    border-color: darken($baseBorderColor, 20%);
+  }
+
+  &__radio-element {
     margin: auto 0 auto $margin;
-    // background-color: $baseBackgroundColor;
   }
 
   &__icon {
     margin: auto 0 auto $margin;
-    // background-color: $baseBackgroundColor;
-    // border-left: darkgray 1px solid;
   }
 
-  &__labelElement {
+  &__label-element {
     margin: auto 0;
   }
 
-  &__labelTitle {
+  &__label-title {
     margin: $margin;
     font-weight: bold;
   }
 
-  &__labelDescription {
+  &__label-description {
     margin: $margin;
   }
 
