@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './DateInput.scss';
+
 
 const DATE_REGEX = /^([0-9]{0,4})-([0-9]{0,2})-([0-9]{0,2})$/;
 
@@ -102,8 +104,9 @@ export default class DateInput extends React.PureComponent {
     const { year, month, day } = this.state;
 
     return (
-      <fieldset>
+      <fieldset className="date-input">
         <input
+          className="date-input__input date-input__input_day"
           type="text"
           inputMode="numeric"
           autoComplete="bday-day"
@@ -114,6 +117,7 @@ export default class DateInput extends React.PureComponent {
           onChange={this.onDayChange} />
 
         <input
+          className="date-input__input date-input__input_month"
           type="text"
           inputMode="numeric"
           autoComplete="bday-month"
@@ -124,6 +128,7 @@ export default class DateInput extends React.PureComponent {
           onChange={this.onMonthChange} />
 
         <input
+          className="date-input__input date-input__input_year"
           type="text"
           inputMode="numeric"
           autoComplete="bday-year"

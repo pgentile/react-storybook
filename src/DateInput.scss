@@ -1,0 +1,22 @@
+.date-input {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &__input {
+
+    &_day, &_month {
+      width: 4em;
+    }
+
+    &_year {
+      width: 8em;
+    }
+
+    &::placeholder {
+      color: lightgray;
+    }
+
+  }
+
+}

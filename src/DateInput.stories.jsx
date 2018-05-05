@@ -13,4 +13,9 @@ storiesOf('DateInput', module)
     return (
       <DateInput value={text('Date', '1990-02-13')} onChange={action('onChange')} />
     );
+  })
+  .add('empty', () => {
+    return (
+      <DateInput onChange={action('onChange')} />
+    );
   });

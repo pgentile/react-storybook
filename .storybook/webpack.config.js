@@ -6,6 +6,7 @@
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
 
+
 module.exports = {
   plugins: [
     // your custom plugins
@@ -22,6 +23,15 @@ module.exports = {
             loader: "css-loader", // translates CSS into CommonJS
             options: {
               modules: false,
+              importLoaders: 2,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                require('autoprefixer'),
+              ],
             },
           },
           {

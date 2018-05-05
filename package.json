@@ -9,12 +9,13 @@
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .jsx,.js ./src",
     "fix": "eslint --fix --ext .jsx,.js ./src",
-    "test": "jest"
+    "test": "jest",
+    "browserslist": "browserslist"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-solid": "^5.0.10",
-    "@fortawesome/react-fontawesome": "^0.0.18",
+    "@fortawesome/react-fontawesome": "^0.0.19",
     "lodash-es": "^4.17.8",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",
@@ -30,6 +31,7 @@
     "@storybook/addons": "^3.4.0",
     "@storybook/cli": "^3.4.0",
     "@storybook/react": "^3.4.0",
+    "autoprefixer": "^8.4.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
@@ -39,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "browserslist": "^3.2.6",
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -47,10 +50,10 @@
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
     "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.5",
     "react-test-renderer": "^16.3.2",
     "regenerator-runtime": "^0.11.1",
     "sass-loader": "^7.0.1",
-    "sinon": "^4.5.0",
     "storybook-addon-intl": "^2.3.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.5.0"
@@ -58,9 +61,17 @@
   "browserslist": [
     "last 3 chrome versions",
     "last 3 firefox versions",
-    "last 2 safari versions",
-    "last 2 edge versions",
-    "last 1 ie version"
+    "last 3 safari versions",
+    "last 3 edge versions",
+    "last 1 ie version",
+    "last 3 ChromeAndroid versions",
+    "last 3 Android versions",
+    "last 3 iOS versions",
+    ">= 0.5% in FR",
+    ">= 0.5% in CH",
+    ">= 0.5% in BE",
+    ">= 0.5% in DE",
+    ">= 0.5% in GB"
   ],
   "jest": {
     "rootDir": "./src",
