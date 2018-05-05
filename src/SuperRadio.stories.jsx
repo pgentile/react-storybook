@@ -34,6 +34,17 @@ storiesOf('SuperRadio', module)
         icon={faCloud} />
     );
   })
+  .add('without icon', () => {
+    const ref = createRef();
+
+    return (
+      <SuperRadio
+        ref={ref}
+        label="Radio button 2"
+        description="This is my radio button 2"
+        onChange="on checked change 2" />
+    );
+  })
   .add('example', () => {
     return (
       <Example />
@@ -60,8 +71,8 @@ class Example extends React.Component {
       return (
         <SuperRadio
           key={index}
-          label={text(`Label ${index}`, `Radio button ${index}`)}
-          description={text(`Description ${index}`, `This is my radio button ${index}`)}
+          label={`Label ${index + 1}`}
+          description={`This is my radio button ${index + 1}`}
           onChange={this.onChangeAction(index)}
           checked={index === selectedRadioIndex}
           icon={faCoffee} />

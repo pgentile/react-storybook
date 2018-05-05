@@ -39,11 +39,11 @@ class SuperRadio extends React.PureComponent {
         <div className={bemBlock.element('radio-element')}>
           <input type="radio" id={id} checked={checked} onChange={onChange} ref={forwardedRef} />
         </div>
-        <div className={bemBlock.element('icon')}>
+        {icon && <div className={bemBlock.element('icon')}>
           <label htmlFor={id}>
             <FontAwesomeIcon icon={icon} size="2x" />
           </label>
-        </div>
+        </div>}
         <div className={bemBlock.element('label-element')}>
           <p className={bemBlock.element('label-title')}>
             <label htmlFor={id}>{label}</label>
