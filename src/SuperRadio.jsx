@@ -9,11 +9,10 @@ class SuperRadio extends React.PureComponent {
 
   static propTypes = {
     label: PropTypes.string.isRequired,
-    icon: PropTypes.object.isRequired,
+    icon: PropTypes.object,
     description: PropTypes.string,
     checked: PropTypes.bool,
     onChange: PropTypes.func,
-    forwardedRef: PropTypes.any,
   };
 
   static counter = 0;
@@ -29,15 +28,16 @@ class SuperRadio extends React.PureComponent {
   }
 
   render() {
-    const { label, icon, description, checked, onChange, forwardedRef } = this.props;
+    const { label, icon, description, checked, onChange } = this.props;
     const { id } = this.state;
 
     const bemBlock = block('super-radio');
 
     return (
-      <div className={bemBlock + ' ' + bemBlock.modifier('checked', checked || false)}>
+      <div
+        className={bemBlock + ' ' + bemBlock.modifier('checked', checked || false)}>
         <div className={bemBlock.element('radio-element')}>
-          <input type="radio" id={id} checked={checked} onChange={onChange} ref={forwardedRef} />
+          <input type="radio" id={id} checked={checked} onChange={onChange} />
         </div>
         {icon && <div className={bemBlock.element('icon')}>
           <label htmlFor={id}>
