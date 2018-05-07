@@ -1,3 +1,5 @@
+import 'babel-polyfill';
+
 import { configure, addDecorator } from '@storybook/react';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
 import { addLocaleData } from 'react-intl';
