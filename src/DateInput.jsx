@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import './DateInput.scss';
 
 
-const DATE_REGEX = /^([0-9]{0,4})-([0-9]{0,2})-([0-9]{0,2})$/;
-
-
 export default class DateInput extends React.PureComponent {
 
   static propTypes = {
@@ -14,94 +11,37 @@ export default class DateInput extends React.PureComponent {
     onChange: PropTypes.func,
   };
 
-  state = {
-    valueProp: null,
-    year: '',
-    month: '',
-    day: '',
-  };
+  onValueChange = (name) => (event) => {
+    const { target } = event;
+    const { value: fieldValue } = target;
 
-  inputRefs = {
-    year: null,
-    month: null,
-    day: null,
-  };
-
-  static getDerivedStateFromProps(nextProps, prevState) {
-    const { value } = nextProps;
-    const { valueProp } = prevState;
-    if (value !== valueProp) {
-      if (value) {
-        const matches = value.match(DATE_REGEX);
-        if (matches) {
-          const [, year, month, day] = matches;
-          return {
-            year,
-            month,
-            day,
-            valueProp: value,
-          };
-        }
+    const { value, onChange } = this.props;
+    if (onChange) {
+      const updatedValue = updateValue(value, name, fieldValue);
+      if (updatedValue !== value) {
+        onChange(updatedValue);
       }
-
-      return {
-        year: '',
-        month: '',
-        day: '',
-        valueProp: value,
-      };
     }
-    return null;
+
+    this.maybeGoToNextInput(target);
+  };
+
+  maybeGoToNextInput(target) {
+    const { maxLength, selectionStart, nextElementSibling: nextInput } = target;
+
+    if (nextInput && nextInput.nodeName === 'INPUT' && selectionStart === maxLength) {
+      nextInput.focus();
+      nextInput.select();
+    }
   }
 
-  onValueChange = (name, callback) => (event) => {
-    const value = event.target.value;
-
-    const { onChange } = this.props;
-    if (onChange) {
-      const { year, month, day } = this.state;
-      const date = { year, month, day };
-      date[name] = value;
-      onChange(`${date.year}-${date.month}-${date.day}`);
-    }
-
-    if (callback) {
-      callback(event);
-    }
-
-    this.setState({
-      [name]: value,
-    });
-  };
-
-  onDayChange = this.onValueChange('day', event => {
-    if (event.target.selectionStart === 2) {
-      const nextInput = this.inputRefs.month;
-      nextInput.focus();
-      nextInput.setSelectionRange(0, nextInput.value.length);
-    }
-  });
-
-  onMonthChange = this.onValueChange('month', event => {
-    if (event.target.selectionStart === 2) {
-      const nextInput = this.inputRefs.year;
-      nextInput.focus();
-      nextInput.setSelectionRange(0, nextInput.value.length);
-    }
-  });
-
+  onDayChange = this.onValueChange('day');
+  onMonthChange = this.onValueChange('month');
   onYearChange = this.onValueChange('year');
 
-  setRef = (name) => (ref) => {
-    this.inputRefs[name] = ref;
-  };
-
-  setDayRef = this.setRef('day');
-  setMonthRef = this.setRef('month');
-  setYearRef = this.setRef('year');
-
   render() {
-    const { year, month, day } = this.state;
+    const { value } = this.props;
+    const { year, month, day } = parseValue(value);
 
     return (
       <fieldset className="date-input">
@@ -112,7 +52,6 @@ export default class DateInput extends React.PureComponent {
           autoComplete="bday-day"
           maxLength={2}
           placeholder="Jour"
-          ref={this.setDayRef}
           value={day}
           onChange={this.onDayChange} />
 
@@ -123,7 +62,6 @@ export default class DateInput extends React.PureComponent {
           autoComplete="bday-month"
           maxLength={2}
           placeholder="Mois"
-          ref={this.setMonthRef}
           value={month}
           onChange={this.onMonthChange} />
 
@@ -134,11 +72,46 @@ export default class DateInput extends React.PureComponent {
           autoComplete="bday-year"
           maxLength={4}
           placeholder="Année"
-          ref={this.setYearRef}
           value={year}
           onChange={this.onYearChange} />
       </fieldset>
     );
   }
 
+}
+
+
+const DEFAULT_DATE = {
+  year: '',
+  month: '',
+  day: '',
+};
+
+
+function parseValue(value) {
+  if (value) {
+    const parts = value.split('-');
+    const [year, month, day] = parts;
+    return {
+      ...DEFAULT_DATE,
+      year,
+      month,
+      day,
+    };
+  }
+
+  return { ...DEFAULT_DATE };
+}
+
+
+function updateValue(value, fieldName, fieldValue) {
+  const updatedValue = {
+    ...parseValue(value),
+    [fieldName]: fieldValue,
+  };
+  const { year, month, day } = updatedValue;
+  if (year || month || day) {
+    return `${year}-${month}-${day}`;
+  }
+  return '';
 }
