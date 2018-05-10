@@ -1,11 +1,15 @@
 import React from 'react';
-import range from 'lodash-es/range';
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs/react';
 import { action } from '@storybook/addon-actions';
 
 import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee';
+import faCcVisa from '@fortawesome/fontawesome-free-brands/faCcVisa';
+import faCcMastercard from '@fortawesome/fontawesome-free-brands/faCcMastercard';
+import faCcAmex from '@fortawesome/fontawesome-free-brands/faCcAmex';
+import faCcAmazonPay from '@fortawesome/fontawesome-free-brands/faCcAmazonPay';
+import faCcPaypal from '@fortawesome/fontawesome-free-brands/faCcPaypal';
 
 import SuperRadio from './SuperRadio';
 
@@ -51,17 +55,40 @@ class Example extends React.Component {
   render() {
     const { selectedRadioIndex } = this.state;
 
-    return range(3).map(index => {
-      return (
-        <SuperRadio
-          key={index}
-          label={`Label ${index + 1}`}
-          description={`This is my radio button ${index + 1}`}
-          onChange={this.onChangeAction(index)}
-          checked={index === selectedRadioIndex}
-          icon={faCoffee} />
-      );
-    });
+    const cards = [
+      {
+        label: 'Visa',
+        icon: faCcVisa,
+      },
+      {
+        label: 'Mastercard',
+        icon: faCcMastercard,
+      },
+      {
+        label: 'American Express',
+        icon: faCcAmex,
+      },
+      {
+        label: 'Paypal',
+        icon: faCcPaypal,
+      },
+      {
+        label: 'Amazon Pay',
+        icon: faCcAmazonPay,
+      },
+    ];
+
+    const radios = cards.map((card, index) => (
+      <SuperRadio
+        key={index}
+        label={card.label}
+        description={`Payez avec ${card.label}`}
+        onChange={this.onChangeAction(index)}
+        checked={selectedRadioIndex === index}
+        icon={card.icon} />
+    ));
+
+    return radios;
   }
 
 }

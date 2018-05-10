@@ -17,10 +17,10 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: "style-loader", // creates style nodes from JS strings
+            loader: "style-loader",
           },
           {
-            loader: "css-loader", // translates CSS into CommonJS
+            loader: "css-loader",
             options: {
               modules: false,
               importLoaders: 2,
@@ -36,6 +36,29 @@ module.exports = {
           },
           {
             loader: "sass-loader", // compiles Sass to CSS
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+            options: {
+              modules: false,
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                require('autoprefixer'),
+              ],
+            },
           },
         ],
       },

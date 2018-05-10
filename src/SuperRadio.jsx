@@ -25,7 +25,7 @@ export default class SuperRadio extends React.PureComponent {
 
     const input = this.inputRef.current;
     if (input && !input.checked) {
-      console.info('Radio clicked');
+      input.focus();
       input.click();
     }
   }
@@ -49,14 +49,14 @@ export default class SuperRadio extends React.PureComponent {
         </div>
         {icon && <div className={bemBlock.element('icon')}>
           <label htmlFor={this.inputId}>
-            <FontAwesomeIcon icon={icon} size="2x" />
+            <FontAwesomeIcon icon={icon} size="3x" />
           </label>
         </div>}
-        <div className={bemBlock.element('label-element')}>
-          <p className={bemBlock.element('label-title')}>
+        <div className={bemBlock.element('description')}>
+          <p className={bemBlock.element('description-title')}>
             <label htmlFor={this.inputId}>{label}</label>
           </p>
-          {description && <p className={bemBlock.element('label-description')}>{description}</p>}
+          {description && <p className={bemBlock.element('description-description')}>{description}</p>}
         </div>
       </div>
     );
