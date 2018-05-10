@@ -19,6 +19,7 @@
     "@fortawesome/react-fontawesome": "^0.0.19",
     "babel-polyfill": "^6.26.0",
     "lodash-es": "^4.17.8",
+    "luhn": "^2.1.0",
     "makecancelable": "^1.0.0",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.6.1",
