@@ -1,11 +1,11 @@
-import React, { forwardRef } from 'react';
+import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import './SuperRadio.scss';
 
 
-class SuperRadio extends React.PureComponent {
+export default class SuperRadio extends React.PureComponent {
 
   static propTypes = {
     label: PropTypes.string.isRequired,
@@ -17,36 +17,44 @@ class SuperRadio extends React.PureComponent {
 
   static counter = 0;
 
-  constructor(props) {
-    super(props);
+  inputRef = createRef();
+  inputId = `super-radio-${++SuperRadio.counter}`;
 
-    SuperRadio.counter++;
+  selectRadio = (event) => {
+    event.stopPropagation();
 
-    this.state = {
-      id: `super-radio-${SuperRadio.counter}`,
-    };
+    const input = this.inputRef.current;
+    if (input && !input.checked) {
+      console.info('Radio clicked');
+      input.click();
+    }
   }
 
   render() {
     const { label, icon, description, checked, onChange } = this.props;
-    const { id } = this.state;
 
     const bemBlock = block('super-radio');
 
     return (
       <div
-        className={bemBlock + ' ' + bemBlock.modifier('checked', checked || false)}>
+        className={bemBlock + ' ' + bemBlock.modifier('checked', checked || false)}
+        onClick={this.selectRadio}>
         <div className={bemBlock.element('radio-element')}>
-          <input type="radio" id={id} checked={checked} onChange={onChange} />
+          <input
+            ref={this.inputRef}
+            type="radio"
+            id={this.inputId}
+            checked={checked}
+            onChange={onChange} />
         </div>
         {icon && <div className={bemBlock.element('icon')}>
-          <label htmlFor={id}>
+          <label htmlFor={this.inputId}>
             <FontAwesomeIcon icon={icon} size="2x" />
           </label>
         </div>}
         <div className={bemBlock.element('label-element')}>
           <p className={bemBlock.element('label-title')}>
-            <label htmlFor={id}>{label}</label>
+            <label htmlFor={this.inputId}>{label}</label>
           </p>
           {description && <p className={bemBlock.element('label-description')}>{description}</p>}
         </div>
@@ -55,13 +63,6 @@ class SuperRadio extends React.PureComponent {
   }
 
 }
-
-
-export default forwardRef((props, ref) => {
-  return (
-    <SuperRadio forwardedRef={ref} {...props} />
-  );
-});
 
 
 function block(blockName) {
