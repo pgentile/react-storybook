@@ -4,12 +4,13 @@ $baseBackgroundColor: lightgreen;
 $baseBorderColor: darkgray;
 $baseMargin: 12px;
 $descriptionMargin: 10px;
+$borderBoxSize: 2px;
 
 .super-radio {
   margin: $baseMargin;
   background-color: $baseBackgroundColor;
   border-radius: 7px;
-  border: 2px $baseBorderColor solid;
+  border: $borderBoxSize $baseBorderColor solid;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -32,7 +33,9 @@ $descriptionMargin: 10px;
   }
 
   &__description {
-    margin: (-$baseMargin) 0 (-$baseMargin) (-$baseMargin);
+    $descriptionMargin: -$baseMargin;
+    // top | right | bottom | left
+    margin: $descriptionMargin 0 $descriptionMargin $descriptionMargin;
   }
 
   &__description-title {
