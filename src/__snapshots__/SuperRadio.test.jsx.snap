@@ -2,10 +2,16 @@
 
 exports[`Super radio 1`] = `
 <div
-  className={undefined}
+  className="super-radio "
+  onClick={[Function]}
 >
   <div
-    className={undefined}
+    className={
+      Object {
+        "modifier": [Function],
+        "toString": [Function],
+      }
+    }
   >
     <input
       checked={undefined}
@@ -15,14 +21,19 @@ exports[`Super radio 1`] = `
     />
   </div>
   <div
-    className={undefined}
+    className={
+      Object {
+        "modifier": [Function],
+        "toString": [Function],
+      }
+    }
   >
     <label
       htmlFor="super-radio-1"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-coffee fa-w-20 fa-2x "
+        className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
         data-icon="coffee"
         data-prefix="fas"
         role="img"
@@ -39,10 +50,20 @@ exports[`Super radio 1`] = `
     </label>
   </div>
   <div
-    className={undefined}
+    className={
+      Object {
+        "modifier": [Function],
+        "toString": [Function],
+      }
+    }
   >
     <p
-      className={undefined}
+      className={
+        Object {
+          "modifier": [Function],
+          "toString": [Function],
+        }
+      }
     >
       <label
         htmlFor="super-radio-1"
@@ -51,7 +72,12 @@ exports[`Super radio 1`] = `
       </label>
     </p>
     <p
-      className={undefined}
+      className={
+        Object {
+          "modifier": [Function],
+          "toString": [Function],
+        }
+      }
     >
       This is my radio button
     </p>
