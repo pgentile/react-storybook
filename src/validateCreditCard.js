@@ -2,8 +2,8 @@ import luhn from 'fast-luhn';
 
 
 export default validateAll(
-  onlyDigits,
   minMaxSizeValidator(8, 19),
+  onlyDigits,
   luhn,
   validateAny(
     // AMEX
