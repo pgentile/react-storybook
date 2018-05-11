@@ -72,6 +72,23 @@ describe('Valid Maestro cards', () => {
   });
 });
 
+describe('Invalid card numbers', () => {
+  const cases = {
+    'Too small': '1234567',
+    'Too big': '1111 1111 1111 1111 1111 1111 1111',
+    'Not a Luhn number': '6759 5600 4500 5727 055',
+    'Unsupported IIN': '3566 1111 1111 1113',
+  };
+
+  Object.keys(cases).forEach((key) => {
+    const creditCard = cases[key];
+    test(key, () => {
+      const validated = validateCreditCard(removeWhitespace(creditCard));
+      expect(validated).toBeFalsy();
+    });
+  });
+});
+
 
 function removeWhitespace(s) {
   return s.replace(/ /g, '');
