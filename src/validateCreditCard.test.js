@@ -13,9 +13,9 @@ describe('Valid VISA cards', () => {
     '4250 4977 1554 2988',
   ];
 
-  creditCards.map(removeWhitespace).forEach((creditCard) => {
+  creditCards.forEach((creditCard) => {
     test(`${creditCard} is a valid VISA credit card number`, () => {
-      const validated = validateCreditCard(creditCard);
+      const validated = validateCreditCard(removeWhitespace(creditCard));
       expect(validated).toBe(true);
     });
   });
@@ -30,9 +30,9 @@ describe('Valid Mastercard cards', () => {
     '5579 0498 7984 3339',
   ];
 
-  creditCards.map(removeWhitespace).forEach((creditCard) => {
+  creditCards.forEach((creditCard) => {
     test(`${creditCard} is a valid Mastercard credit card number`, () => {
-      const validated = validateCreditCard(creditCard);
+      const validated = validateCreditCard(removeWhitespace(creditCard));
       expect(validated).toBe(true);
     });
   });
@@ -46,9 +46,9 @@ describe('Valid AMEX cards', () => {
     '3782 8224 6310 005',
   ];
 
-  creditCards.map(removeWhitespace).forEach((creditCard) => {
+  creditCards.forEach((creditCard) => {
     test(`${creditCard} is a valid AMEX credit card number`, () => {
-      const validated = validateCreditCard(creditCard);
+      const validated = validateCreditCard(removeWhitespace(creditCard));
       expect(validated).toBe(true);
     });
   });
@@ -64,9 +64,9 @@ describe('Valid Maestro cards', () => {
     '5641 8211 1116 6669',
   ];
 
-  creditCards.map(removeWhitespace).forEach((creditCard) => {
+  creditCards.forEach((creditCard) => {
     test(`${creditCard} is a valid Maestro credit card number`, () => {
-      const validated = validateCreditCard(creditCard);
+      const validated = validateCreditCard(removeWhitespace(creditCard));
       expect(validated).toBe(true);
     });
   });

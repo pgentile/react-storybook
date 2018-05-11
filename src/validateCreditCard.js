@@ -1,10 +1,10 @@
-import { validate as validateLuhn } from 'luhn';
+import luhn from 'fast-luhn';
 
 
 export default validateAll(
   onlyDigits,
   minMaxSizeValidator(8, 19),
-  validateLuhn,
+  luhn,
   validateAny(
     // AMEX
     validateAll(
@@ -46,18 +46,14 @@ export default validateAll(
 
 function validateAny(...validators) {
   return (creditCard) => {
-    return validators.reduce((result, validator) => {
-      return result || validator(creditCard);
-    }, false);
+    return validators.some(validator => validator(creditCard));
   };
 }
 
 
 function validateAll(...validators) {
   return (creditCard) => {
-    return validators.reduce((result, validator) => {
-      return result && validator(creditCard);
-    }, true);
+    return validators.every(validator => validator(creditCard));
   };
 }
 

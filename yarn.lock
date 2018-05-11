@@ -3631,6 +3631,10 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
+fast-luhn@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/fast-luhn/-/fast-luhn-1.0.3.tgz#759ca3a983dda06742d3a3cfa6f64070536a422f"
+
 fast-memoize@^2.2.7:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fast-memoize/-/fast-memoize-2.3.2.tgz#f6b9eb8e06a754029cca25b4cd3945f2f6242c90"
@@ -5688,10 +5692,6 @@ lru-cache@^4.0.1, lru-cache@^4.1.1:
   dependencies:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
-
-luhn@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/luhn/-/luhn-2.1.0.tgz#4d0d6bb7e8dc80dd09a34c42e0423cd7adf1ef9a"
 
 macaddress@^0.2.8:
   version "0.2.8"
