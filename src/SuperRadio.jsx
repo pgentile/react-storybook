@@ -1,6 +1,7 @@
 import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faQuestionCircle from '@fortawesome/fontawesome-free-solid/faQuestionCircle';
 
 import './SuperRadio.scss';
 
@@ -8,11 +9,16 @@ import './SuperRadio.scss';
 export default class SuperRadio extends React.PureComponent {
 
   static propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.node.isRequired,
     icon: PropTypes.object,
-    description: PropTypes.string,
+    description: PropTypes.node,
+    help: PropTypes.bool,
     checked: PropTypes.bool,
     onChange: PropTypes.func,
+  };
+
+  static defaultProps = {
+    help: false,
   };
 
   static counter = 0;
@@ -31,14 +37,12 @@ export default class SuperRadio extends React.PureComponent {
   }
 
   render() {
-    const { label, icon, description, checked, onChange } = this.props;
+    const { label, icon, description, help, checked, onChange } = this.props;
 
     const bemBlock = block('super-radio');
 
     return (
-      <div
-        className={bemBlock + ' ' + bemBlock.modifier('checked', checked || false)}
-        onClick={this.selectRadio}>
+      <div className={bemBlock + ' ' + ' ' + bemBlock.modifier('checked', checked || false)}>
         <div className={bemBlock.element('radio-element')}>
           <input
             ref={this.inputRef}
@@ -56,8 +60,13 @@ export default class SuperRadio extends React.PureComponent {
           <p className={bemBlock.element('description-title')}>
             <label htmlFor={this.inputId}>{label}</label>
           </p>
-          {description && <p className={bemBlock.element('description-description')}>{description}</p>}
+          {description && <p className={bemBlock.element('description-description')}>
+            {description}
+          </p>}
         </div>
+        {help && <div className={bemBlock.element('help')}>
+          <FontAwesomeIcon icon={faQuestionCircle} size="1x" />
+        </div>}
       </div>
     );
   }

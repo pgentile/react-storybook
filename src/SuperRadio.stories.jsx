@@ -22,6 +22,7 @@ storiesOf('SuperRadio', module)
         label={text('Label', 'Radio button')}
         description={text('Description', 'This is my radio button')}
         onChange={action('on checked change')}
+        help={boolean('Help', false)}
         checked={boolean('Checked', false)}
         icon={faCoffee} />
     );
