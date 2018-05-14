@@ -4,7 +4,13 @@
 
 export default async function encryptPayload(payload) {
   const crypto = window.crypto || window.msCrypto;
-  if (!crypto || !crypto.subtle) {
+
+  if (!crypto) {
+    throw new Error('Browser crypto engine not available');
+  }
+
+  const subtle = crypto.subtle || crypto.webkitSubtle;
+  if (!subtle) {
     throw new Error('Browser crypto engine not available');
   }
 
@@ -27,11 +33,9 @@ export default async function encryptPayload(payload) {
     ['encrypt', 'decrypt'],
   );
 
-  const vector = crypto.getRandomValues(new Uint8Array(16));
   const encrypted = await crypto.subtle.encrypt(
     {
       name: 'RSA-OAEP',
-      iv: vector
     },
     key.publicKey,
     convertStringToArrayBufferView(payload),
@@ -42,7 +46,6 @@ export default async function encryptPayload(payload) {
   const decrypted = await crypto.subtle.decrypt(
     {
       name: 'RSA-OAEP',
-      iv: vector
     },
     key.privateKey,
     encrypted
