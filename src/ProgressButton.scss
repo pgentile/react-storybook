@@ -1,0 +1,43 @@
+.progress-button {
+  display: inline-block;
+  position: relative;
+  background: darkcyan;
+  color: white;
+  font-weight: bold;
+  // box-sizing: border-box;
+
+  border: 3px red solid;
+  border-radius: 7px;
+
+  &__content {
+    min-width: 10em;
+    margin: 15px;
+  }
+
+  &__progress-bar {
+    border-radius: 7px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    opacity: 0;
+    transition-property: width;
+
+    &_loading {
+      opacity: 1;
+      width: 100%;
+      transition-duration: 10s;
+    }
+
+    &_finished {
+      opacity: 1;
+      width: 100%;
+      transition-duration: 0.5s;
+    }
+
+  }
+
+}
