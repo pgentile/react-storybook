@@ -10,6 +10,7 @@ import faCcMastercard from '@fortawesome/fontawesome-free-brands/faCcMastercard'
 import faCcAmex from '@fortawesome/fontawesome-free-brands/faCcAmex';
 import faCcAmazonPay from '@fortawesome/fontawesome-free-brands/faCcAmazonPay';
 import faCcPaypal from '@fortawesome/fontawesome-free-brands/faCcPaypal';
+import faCcApplePay from '@fortawesome/fontawesome-free-brands/faCcApplePay';
 
 import SuperRadio from './SuperRadio';
 
@@ -77,19 +78,22 @@ class Example extends React.Component {
         label: 'Amazon Pay',
         icon: faCcAmazonPay,
       },
+      {
+        label: 'Apple Pay',
+        icon: faCcApplePay,
+      },
     ];
 
-    const radios = cards.map((card, index) => (
+    return cards.map((card, index) => (
       <SuperRadio
         key={index}
         label={card.label}
         description={`Payez avec ${card.label}`}
         onChange={this.onChangeAction(index)}
         checked={selectedRadioIndex === index}
-        icon={card.icon} />
+        icon={card.icon}
+        help={true} />
     ));
-
-    return radios;
   }
 
 }

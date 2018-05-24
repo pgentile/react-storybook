@@ -2,8 +2,7 @@
 
 exports[`Super radio 1`] = `
 <div
-  className="super-radio "
-  onClick={[Function]}
+  className="super-radio  "
 >
   <div
     className={
@@ -13,51 +12,20 @@ exports[`Super radio 1`] = `
       }
     }
   >
-    <input
-      checked={undefined}
-      id="super-radio-1"
-      onChange={undefined}
-      type="radio"
-    />
-  </div>
-  <div
-    className={
-      Object {
-        "modifier": [Function],
-        "toString": [Function],
+    <div
+      className={
+        Object {
+          "modifier": [Function],
+          "toString": [Function],
+        }
       }
-    }
-  >
-    <label
-      htmlFor="super-radio-1"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
-        data-icon="coffee"
-        data-prefix="fas"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 640 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </label>
-  </div>
-  <div
-    className={
-      Object {
-        "modifier": [Function],
-        "toString": [Function],
-      }
-    }
-  >
-    <p
+      <input
+        id="super-radio-1"
+        type="radio"
+      />
+    </div>
+    <div
       className={
         Object {
           "modifier": [Function],
@@ -68,10 +36,25 @@ exports[`Super radio 1`] = `
       <label
         htmlFor="super-radio-1"
       >
-        Label
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
+          data-icon="coffee"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 640 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
       </label>
-    </p>
-    <p
+    </div>
+    <div
       className={
         Object {
           "modifier": [Function],
@@ -79,8 +62,31 @@ exports[`Super radio 1`] = `
         }
       }
     >
-      This is my radio button
-    </p>
+      <p
+        className={
+          Object {
+            "modifier": [Function],
+            "toString": [Function],
+          }
+        }
+      >
+        <label
+          htmlFor="super-radio-1"
+        >
+          Label
+        </label>
+      </p>
+      <p
+        className={
+          Object {
+            "modifier": [Function],
+            "toString": [Function],
+          }
+        }
+      >
+        This is my radio button
+      </p>
+    </div>
   </div>
 </div>
 `;

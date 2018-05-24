@@ -23,6 +23,10 @@ export default class SuperRadio extends React.PureComponent {
 
   static counter = 0;
 
+  state = {
+    showHelp: false,
+  };
+
   inputRef = createRef();
   inputId = `super-radio-${++SuperRadio.counter}`;
 
@@ -36,36 +40,52 @@ export default class SuperRadio extends React.PureComponent {
     }
   }
 
+  toggleHelp = () => {
+    this.setState((prevState) => {
+      return {
+        showHelp: !prevState.showHelp,
+      };
+    });
+  };
+
   render() {
     const { label, icon, description, help, checked, onChange } = this.props;
+    const { showHelp } = this.state;
 
     const bemBlock = block('super-radio');
 
     return (
       <div className={bemBlock + ' ' + ' ' + bemBlock.modifier('checked', checked || false)}>
-        <div className={bemBlock.element('radio-element')}>
-          <input
-            ref={this.inputRef}
-            type="radio"
-            id={this.inputId}
-            checked={checked}
-            onChange={onChange} />
+        <div className={bemBlock.element('main-container')}>
+          <div className={bemBlock.element('radio-element')}>
+            <input
+              ref={this.inputRef}
+              type="radio"
+              id={this.inputId}
+              checked={checked}
+              onChange={onChange} />
+          </div>
+          {icon && <div className={bemBlock.element('icon')}>
+            <label htmlFor={this.inputId}>
+              <FontAwesomeIcon icon={icon} size="3x" />
+            </label>
+          </div>}
+          <div className={bemBlock.element('description')}>
+            <p className={bemBlock.element('description-title')}>
+              <label htmlFor={this.inputId}>{label}</label>
+            </p>
+            {description && <p className={bemBlock.element('description-description')}>
+              {description}
+            </p>}
+          </div>
+          {help && <div className={bemBlock.element('help')}>
+            <a className={bemBlock.element('help-link')} onClick={this.toggleHelp}>
+              <FontAwesomeIcon icon={faQuestionCircle} size="1x" />
+            </a>
+          </div>}
         </div>
-        {icon && <div className={bemBlock.element('icon')}>
-          <label htmlFor={this.inputId}>
-            <FontAwesomeIcon icon={icon} size="3x" />
-          </label>
-        </div>}
-        <div className={bemBlock.element('description')}>
-          <p className={bemBlock.element('description-title')}>
-            <label htmlFor={this.inputId}>{label}</label>
-          </p>
-          {description && <p className={bemBlock.element('description-description')}>
-            {description}
-          </p>}
-        </div>
-        {help && <div className={bemBlock.element('help')}>
-          <FontAwesomeIcon icon={faQuestionCircle} size="1x" />
+        {help && <div className={bemBlock.element('help-details') + ' ' + bemBlock.element('help-details').modifier('visible', showHelp)}>
+          Coucou...
         </div>}
       </div>
     );
