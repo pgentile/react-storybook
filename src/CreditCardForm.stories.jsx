@@ -44,6 +44,46 @@ storiesOf('CreditCardForm', module)
           <div>
             <label>
               Prénom
+              <input type="text" autoComplete="shipping given-name" spellCheck={false} />
+            </label>
+          </div>
+          <div>
+            <label>
+              Nom
+              <input type="text" autoComplete="shipping family-name" spellCheck={false} />
+            </label>
+          </div>
+          <div>
+            <label>
+              Adresse (ligne 1)
+              <input type="text" autoComplete="shipping address-line1" spellCheck={false} />
+            </label>
+          </div>
+          <div>
+            <label>
+              Adresse (ligne 2)
+              <input type="text" autoComplete="shipping address-line2" spellCheck={false} />
+            </label>
+          </div>
+          <div>
+            <label>
+              Code postal
+              <input type="text" autoComplete="shipping postal-code" spellCheck={false} />
+            </label>
+          </div>
+          <div>
+            <label>
+              Ville
+              <input type="text" autoComplete="shipping address-level2" spellCheck={false} />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Facturation</legend>
+          <div>
+            <label>
+              Prénom
               <input type="text" autoComplete="billing given-name" spellCheck={false} />
             </label>
           </div>
@@ -68,13 +108,13 @@ storiesOf('CreditCardForm', module)
           <div>
             <label>
               Code postal
-              <input type="text" autoComplete="billing postal-code" />
+              <input type="text" autoComplete="billing postal-code" spellCheck={false} />
             </label>
           </div>
           <div>
             <label>
               Ville
-              <input type="text" autoComplete="billing address-level2" />
+              <input type="text" autoComplete="billing address-level2" spellCheck={false} />
             </label>
           </div>
         </fieldset>

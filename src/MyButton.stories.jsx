@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs/react';
 import { action } from '@storybook/addon-actions';
 
-import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import MyButton from './MyButton';
 

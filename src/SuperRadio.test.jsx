@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import SuperRadio from './SuperRadio';
 

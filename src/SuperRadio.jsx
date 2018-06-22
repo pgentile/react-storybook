@@ -1,7 +1,7 @@
 import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faQuestionCircle from '@fortawesome/fontawesome-free-solid/faQuestionCircle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 import './SuperRadio.scss';
 
@@ -12,13 +12,9 @@ export default class SuperRadio extends React.PureComponent {
     label: PropTypes.node.isRequired,
     icon: PropTypes.object,
     description: PropTypes.node,
-    help: PropTypes.bool,
+    help: PropTypes.node,
     checked: PropTypes.bool,
     onChange: PropTypes.func,
-  };
-
-  static defaultProps = {
-    help: false,
   };
 
   static counter = 0;
@@ -40,12 +36,18 @@ export default class SuperRadio extends React.PureComponent {
     }
   }
 
-  toggleHelp = () => {
+  toggleHelp = (event) => {
+    event.stopPropagation();
+
     this.setState((prevState) => {
       return {
         showHelp: !prevState.showHelp,
       };
     });
+  };
+
+  stopPropagation = (event) => {
+    event.stopPropagation();
   };
 
   render() {
@@ -56,17 +58,18 @@ export default class SuperRadio extends React.PureComponent {
 
     return (
       <div className={bemBlock + ' ' + ' ' + bemBlock.modifier('checked', checked || false)}>
-        <div className={bemBlock.element('main-container')}>
+        <div className={bemBlock.element('main-container')} onClick={this.selectRadio}>
           <div className={bemBlock.element('radio-element')}>
             <input
               ref={this.inputRef}
               type="radio"
               id={this.inputId}
               checked={checked}
-              onChange={onChange} />
+              onChange={onChange}
+              onClick={this.stopPropagation} />
           </div>
           {icon && <div className={bemBlock.element('icon')}>
-            <label htmlFor={this.inputId}>
+            <label htmlFor={this.inputId} onClick={this.stopPropagation}>
               <FontAwesomeIcon icon={icon} size="3x" />
             </label>
           </div>}
@@ -80,12 +83,12 @@ export default class SuperRadio extends React.PureComponent {
           </div>
           {help && <div className={bemBlock.element('help')}>
             <a className={bemBlock.element('help-link')} onClick={this.toggleHelp}>
-              <FontAwesomeIcon icon={faQuestionCircle} size="1x" />
+              <FontAwesomeIcon className={bemBlock.element('help-icon').toString()} icon={faQuestionCircle} size="1x" />
             </a>
           </div>}
         </div>
         {help && <div className={bemBlock.element('help-details') + ' ' + bemBlock.element('help-details').modifier('visible', showHelp)}>
-          Coucou...
+          {help}
         </div>}
       </div>
     );

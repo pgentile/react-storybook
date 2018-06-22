@@ -11,6 +11,7 @@ exports[`Super radio 1`] = `
         "toString": [Function],
       }
     }
+    onClick={[Function]}
   >
     <div
       className={
@@ -22,6 +23,7 @@ exports[`Super radio 1`] = `
     >
       <input
         id="super-radio-1"
+        onClick={[Function]}
         type="radio"
       />
     </div>
@@ -35,6 +37,7 @@ exports[`Super radio 1`] = `
     >
       <label
         htmlFor="super-radio-1"
+        onClick={[Function]}
       >
         <svg
           aria-hidden="true"

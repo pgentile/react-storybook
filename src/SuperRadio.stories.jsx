@@ -4,13 +4,15 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs/react';
 import { action } from '@storybook/addon-actions';
 
-import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee';
-import faCcVisa from '@fortawesome/fontawesome-free-brands/faCcVisa';
-import faCcMastercard from '@fortawesome/fontawesome-free-brands/faCcMastercard';
-import faCcAmex from '@fortawesome/fontawesome-free-brands/faCcAmex';
-import faCcAmazonPay from '@fortawesome/fontawesome-free-brands/faCcAmazonPay';
-import faCcPaypal from '@fortawesome/fontawesome-free-brands/faCcPaypal';
-import faCcApplePay from '@fortawesome/fontawesome-free-brands/faCcApplePay';
+import {
+  faCoffee,
+  faCcVisa,
+  faCcMastercard,
+  faCcAmex,
+  faCcAmazonPay,
+  faCcPaypal,
+  faCcApplePay,
+} from '@fortawesome/free-brands-svg-icons';
 
 import SuperRadio from './SuperRadio';
 
@@ -23,7 +25,6 @@ storiesOf('SuperRadio', module)
         label={text('Label', 'Radio button')}
         description={text('Description', 'This is my radio button')}
         onChange={action('on checked change')}
-        help={boolean('Help', false)}
         checked={boolean('Checked', false)}
         icon={faCoffee} />
     );
@@ -84,6 +85,10 @@ class Example extends React.Component {
       },
     ];
 
+    const help = (
+      <p>This is the fucking help&nbsp;!</p>
+    );
+
     return cards.map((card, index) => (
       <SuperRadio
         key={index}
@@ -92,7 +97,7 @@ class Example extends React.Component {
         onChange={this.onChangeAction(index)}
         checked={selectedRadioIndex === index}
         icon={card.icon}
-        help={true} />
+        help={help} />
     ));
   }
 

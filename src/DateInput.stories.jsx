@@ -18,4 +18,31 @@ storiesOf('DateInput', module)
     return (
       <DateInput onChange={action('onChange')} />
     );
+  })
+  .add('dynamic', () => {
+    return (
+      <DynamicForm />
+    );
   });
+
+
+class DynamicForm extends React.PureComponent {
+
+  state = {
+    value: '',
+  };
+
+  onChange = (value) => {
+    this.setState({
+      value,
+    });
+  };
+
+  render() {
+    const { value } = this.state;
+    return (
+      <DateInput value={value} onChange={this.onChange} />
+    );
+  }
+
+}
