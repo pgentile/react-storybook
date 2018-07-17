@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 const supportedPaymentMethods = [
   {
     supportedMethods: 'basic-card',
     data: {
-      supportedNetworks: ['visa', 'mastercard', 'amex'],
+      supportedNetworks: ['visa', 'mastercard', 'amex', 'cb', 'maestro'],
     },
   }
 ];
@@ -13,24 +14,24 @@ const supportedPaymentMethods = [
 const paymentDetails = {
   total: {
     label: 'Total',
-    amount:{
+    amount: {
       currency: 'EUR',
-      value: 15
+      value: 85
     }
   },
   displayItems: [
     {
-      label: 'TER Clisson → Nantes',
-      amount:{
+      label: 'TER Clisson → Nantes — 2 passagers',
+      amount: {
         currency: 'EUR',
         value: 5
       }
     },
     {
-      label: 'TGV Nantes → Paris',
-      amount:{
+      label: 'TGV Nantes → Paris — 2 passagers',
+      amount: {
         currency: 'EUR',
-        value: 10
+        value: 80
       }
     }
   ],
@@ -39,6 +40,11 @@ const paymentDetails = {
 const options = {};
 
 export default class PaymentRequestComponent extends React.PureComponent {
+
+  static propTypes = {
+    onSuccess: PropTypes.func.isRequired,
+    onError: PropTypes.func.isRequired,
+  };
 
   request = new PaymentRequest(supportedPaymentMethods, paymentDetails, options);
 
@@ -51,9 +57,22 @@ export default class PaymentRequestComponent extends React.PureComponent {
   }
 
   async pay() {
-    const response = await this.request.show();
-    await wait(5000);
-    await response.complete('success');
+    const { onSuccess, onError } = this.props;
+
+    let success = false;
+    try {
+      const response = await this.request.show();
+      console.info('Credit card info:', JSON.stringify(response));
+      await wait(5000);
+      await response.complete('success');
+      success = true;
+    } catch (e) {
+      onError(e);
+    } finally {
+      if (success) {
+        onSuccess();
+      }
+    }
   }
 
 }
