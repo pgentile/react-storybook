@@ -1,0 +1,28 @@
+$breakpoint-base-width: 400px;
+$breakpoint-width-1x: $breakpoint-base-width;
+$breakpoint-width-2x: $breakpoint-base-width * 2;
+
+.adaptative {
+
+  border: 2px blue solid;
+  padding: 10px;
+
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: repeat(1, 1fr);
+
+  @media all and (min-width: $breakpoint-width-1x) and (max-width: $breakpoint-width-2x) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media all and (min-width: $breakpoint-width-2x) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    border: 2px green solid;
+    padding: 15px;
+  }
+
+}
