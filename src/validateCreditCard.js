@@ -45,16 +45,12 @@ export default validateAll(
 
 
 function validateAny(...validators) {
-  return (creditCard) => {
-    return validators.some(validator => validator(creditCard));
-  };
+  return (creditCard) => validators.some(validator => validator(creditCard));
 }
 
 
 function validateAll(...validators) {
-  return (creditCard) => {
-    return validators.every(validator => validator(creditCard));
-  };
+  return (creditCard) => validators.every(validator => validator(creditCard));
 }
 
 

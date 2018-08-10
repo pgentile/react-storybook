@@ -1,0 +1,79 @@
+@mixin travel-container-margin($position: null) {
+  $outer-margin: 0.8rem;
+  $inner-margin: 1.8rem;
+
+  margin-top: $outer-margin;
+  margin-bottom: $outer-margin;
+
+  @if $position == 'left' {
+    margin-left: $outer-margin;
+    margin-right: $inner-margin;
+  } @else if $position == 'right' {
+    margin-left: 0;
+    margin-right: $outer-margin;
+  } @else {
+    margin-left: 0;
+    margin-right: $inner-margin;
+  }
+
+}
+
+.travel {
+
+  display: flex;
+  align-items: center;
+
+  border: 1px #999 solid;
+  border-radius: 5px;
+
+  &__title-container {
+    @include travel-container-margin("left");
+
+    // background-color: lightblue;
+  }
+
+  &__dates-container {
+    @include travel-container-margin;
+
+    // background-color: lightcoral;
+  }
+
+  &__passengers-container {
+    @include travel-container-margin;
+
+    flex: 1 0;
+
+    // background-color: lightgreen;
+  }
+
+  &__price-container {
+    @include travel-container-margin("right");
+
+    // background-color: lightyellow;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  &__outward-date, &__inward-date {
+    margin: 0;
+    padding: 0;
+
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  &__passengers {
+    margin: 0;
+    padding: 0;
+
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+}
