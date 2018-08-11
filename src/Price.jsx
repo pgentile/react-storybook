@@ -24,7 +24,7 @@ export default class Price extends React.PureComponent {
     const cents = Math.floor((value * 100) % 100);
 
     return (
-      <Element className={className}>
+      <Element className={`price ${className}`}>
         <span className="price__units">{units}</span>
         ,&thinsp;
         <span className="price__cents">{cents}</span>
