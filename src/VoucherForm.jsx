@@ -68,11 +68,12 @@ export default class VoucherForm extends React.PureComponent {
     const disableForm = currentState === 'FORM_SUBMITTING';
 
     return (
-      <Card as="section" className={`voucher-form ${className}`}>
+      <Card
+        as="section"
+        className={`voucher-form ${className}`}
+        onClick={showQuestion ? this.onShowForm : null}>
         {showQuestion && <p className="voucher-form__question">
-          <a href="#" onClick={this.onShowForm}>
             Avez-vous un code promo&nbsp;?
-          </a>
         </p>}
         {showForm && <form
           className="voucher-form__form"
@@ -86,7 +87,6 @@ export default class VoucherForm extends React.PureComponent {
             value={code}
             onChange={this.onCodeChange} />
           {' '}
-
           <button disabled={disableForm} type="submit">
             Ajouter le code promo
           </button>

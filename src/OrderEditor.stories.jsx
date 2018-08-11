@@ -28,6 +28,9 @@ const items = [
 storiesOf('OrderEditor', module)
   .add('main', () => {
     return (
-      <OrderEditor items={items} onAddVoucher={action('add voucher')} />
+      <OrderEditor
+        items={items}
+        onAddVoucher={action('add voucher')}
+        onAddDonation={action('add donation')} />
     );
   });

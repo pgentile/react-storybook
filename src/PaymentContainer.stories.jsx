@@ -28,6 +28,9 @@ const items = [
 storiesOf('PaymentContainer', module)
   .add('main', () => {
     return (
-      <PaymentContainer items={items} onAddVoucher={action('add voucher')} />
+      <PaymentContainer
+        items={items}
+        onAddVoucher={action('add voucher')}
+        onAddDonation={action('add donation')} />
     );
   });

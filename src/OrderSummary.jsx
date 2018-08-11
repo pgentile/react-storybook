@@ -7,17 +7,11 @@ import Card from './Card';
 import './OrderSummary.scss';
 
 
-const pricePropType = PropTypes.shape({
-  value: PropTypes.number.isRequired,
-  currency: PropTypes.string.isRequired,
-});
-
-
 export const orderItemPropType = PropTypes.shape({
   id: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['DONATION', 'VOUCHER']),
   label: PropTypes.node.isRequired,
-  price: pricePropType.isRequired,
+  price: Price.propTypes.price,
   onCancel: PropTypes.func,
 });
 
@@ -69,7 +63,7 @@ class OrderSummaryDetails extends React.PureComponent {
     const { items } = this.props;
 
     const itemElements = items.map(item => {
-      return <OrderSummaryItem key={item.id} {...item} />;
+      return <OrderSummaryItem key={item.id} item={item} />;
     });
 
     return (
@@ -85,16 +79,18 @@ class OrderSummaryDetails extends React.PureComponent {
 class OrderSummaryItem extends React.PureComponent {
 
   static propTypes = {
-    ...orderItemPropType,
+    item: orderItemPropType.isRequired,
   };
 
   onCancel = event => {
     event.preventDefault();
-    this.props.onCancel();
+    this.props.item.onCancel();
   }
 
   render() {
-    const { label, price, onCancel } = this.props;
+    const { item } = this.props;
+    const { label, price, onCancel } = item;
+
     return (
       <li className="order-summary__item">
         <span className="order-summary__item-label">
@@ -103,7 +99,7 @@ class OrderSummaryItem extends React.PureComponent {
             Supprimer
           </a>}
         </span>
-        <Price className="order-summary__item-price" {...price} />
+        <Price className="order-summary__item-price" price={price} />
       </li>
     );
   }
@@ -114,7 +110,7 @@ class OrderSummaryItem extends React.PureComponent {
 class OrderSummaryTotal extends React.PureComponent {
 
   static propTypes = {
-    totalPrice: pricePropType.isRequired,
+    totalPrice: Price.propTypes.price,
   };
 
   render() {
@@ -125,7 +121,7 @@ class OrderSummaryTotal extends React.PureComponent {
         <span className="order-summary__total-label">
           Total de votre commande
         </span>
-        <Price className="order-summary__total-price" {...totalPrice} />
+        <Price className="order-summary__total-price" price={totalPrice} />
       </p>
     );
   }
