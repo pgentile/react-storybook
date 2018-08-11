@@ -69,7 +69,7 @@ export default class VoucherForm extends React.PureComponent {
     const disableForm = currentState === 'FORM_SUBMITTING';
 
     return (
-      <Card as="section" className={`voucher-form ${className}`}>
+      <Card as="section" layer="flat" className={`voucher-form ${className}`}>
 
         {showQuestion && <FlatButton
           className="voucher-form__question"

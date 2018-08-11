@@ -28,6 +28,7 @@ export default class Donation extends React.PureComponent {
     return (
       <Card
         as="section"
+        layer="flat"
         className={`donation ${className}`}>
         <FlatButton className="donation__add-button" onClick={this.onAddDonation}>
           Voulez-vous ajouter un don&nbsp;?

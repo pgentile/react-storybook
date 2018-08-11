@@ -4,28 +4,44 @@ import { storiesOf } from '@storybook/react';
 
 import Card from './Card';
 
+const content = (
+  <p>Voici une jolie petite carte.</p>
+);
+
+const layers = ['base', 'flat', 'raised', 'overlay', 'sticky-nav', 'temp-nav', 'pop-out'];
+
 
 const stories = storiesOf('Card', module)
-  .add('Simple carte', () => {
+  .add('Carte simple', () => {
     return (
       <Card>
-        <p>Voici une petite carte toute simple.</p>
+        {content}
       </Card>
     );
   })
   .add('Carte avec bordures arrondies', () => {
     return (
-      <Card hasRoundedBorder>
-        <p>Voici une petite carte toute simple.</p>
+      <Card layer="flat" hasRoundedBorder>
+        {content}
       </Card>
     );
   });
 
-['base', 'raised', 'overlay', 'sticky-nav', 'temp-nav', 'pop-out'].forEach(layer => {
-  stories.add(`Carte avec niveau ${layer}`, () => {
+layers.forEach(layer => {
+  stories.add(`Carte de niveau ${layer}`, () => {
     return (
       <Card layer={layer}>
         <p>Carte de niveau <b>{layer}</b></p>
+      </Card>
+    );
+  });
+});
+
+layers.forEach(layer => {
+  stories.add(`Carte de niveau ${layer} sans bordure`, () => {
+    return (
+      <Card layer={layer} hasBorder={false}>
+        <p>Carte de niveau <b>{layer}</b> sans borbure</p>
       </Card>
     );
   });

@@ -1,18 +1,52 @@
-@import "./_layers.scss";
-
-
 .card {
 
   $background-color: white;
-
-  border: 1px solid #BBB;
+  $layer-shadow-color: rgba(0, 0, 0, 0.2);
+  $border-width: 1px;
+  $border-color: #BBB;
 
   background-color: $background-color;
+
+  &--has-border {
+    border: $border-width solid $background-color;
+  }
 
   &--has-rounded-border {
     border-radius: 5px;
   }
 
-  @include layers;
+  &--layer-base {
+    box-shadow: none;
+  }
+
+  &--layer-flat {
+    box-shadow: none;
+    border-color: $border-color;
+  }
+
+  &--layer-raised {
+    box-shadow: 0 1px 2px 0 $layer-shadow-color;
+    border-color: $border-color;
+  }
+
+  &--layer-overlay {
+    box-shadow: 0 4px 8px 0 $layer-shadow-color;
+    border-color: $border-color;
+  }
+
+  &--layer-sticky-nav {
+    box-shadow: 0 6px 12px 0 $layer-shadow-color;
+    border-color: $border-color;
+  }
+
+  &--layer-temp-nav {
+    box-shadow: 0 8px 16px 0 $layer-shadow-color;
+    border-color: $border-color;
+  }
+
+  &--layer-pop-out {
+    box-shadow: 0 12px 24px 0 $layer-shadow-color;
+    border-color: $border-color;
+  }
 
 }
