@@ -1,6 +1,6 @@
 @mixin travel-container-margin($position: null) {
   $outer-margin: 0.8rem;
-  $inner-margin: 1.8rem;
+  $inner-margin: 1.5rem;
 
   margin-top: $outer-margin;
   margin-bottom: $outer-margin;
@@ -29,27 +29,43 @@
   &__title-container {
     @include travel-container-margin("left");
 
-    // background-color: lightblue;
+    // $width: 30%;
+    // flex-basis: $width;
+    // max-width: $width;
   }
 
   &__dates-container {
     @include travel-container-margin;
 
-    // background-color: lightcoral;
+    // $width: 30%;
+    // flex-basis: $width;
+    // max-width: $width;
+  }
+
+  &--grid .travel {
+
+    &__title-container {
+      $width: 30%;
+      flex-basis: $width;
+      max-width: $width;
+    }
+
+    &__dates-container {
+      $width: 30%;
+      flex-basis: $width;
+      max-width: $width;
+    }
+
   }
 
   &__passengers-container {
     @include travel-container-margin;
 
     flex: 1 0;
-
-    // background-color: lightgreen;
   }
 
   &__price-container {
     @include travel-container-margin("right");
-
-    // background-color: lightyellow;
   }
 
   &__title {
@@ -58,14 +74,29 @@
 
     font-weight: bold;
     font-size: 1.5rem;
+
+    &--asymetrical-roundtrip {
+      font-size: 1.2rem;
+    }
+
+    &:nth-child(2) {
+      margin-top: 0.3rem;
+    }
+
   }
 
-  &__outward-date, &__inward-date {
+  &__date {
+
     margin: 0;
     padding: 0;
 
     font-weight: normal;
     font-size: 1rem;
+
+    &:nth-child(2) {
+      margin-top: 0.3rem;
+    }
+
   }
 
   &__passengers {
