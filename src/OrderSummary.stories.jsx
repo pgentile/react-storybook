@@ -50,7 +50,7 @@ const items = [
   },
 ];
 
-storiesOf('OrderSummary', module)
+storiesOf('Payment / OrderSummary', module)
   .add('main', () => {
     return (
       <OrderSummary items={items}/>

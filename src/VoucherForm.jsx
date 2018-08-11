@@ -89,7 +89,7 @@ export default class VoucherForm extends React.PureComponent {
             value={code}
             onChange={this.onCodeChange} />
           {' '}
-          <button disabled={disableForm} type="submit">
+          <button disabled={disableForm || !code} type="submit">
             Ajouter le code promo
           </button>
           {' '}

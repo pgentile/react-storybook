@@ -25,7 +25,7 @@ const items = [
 ];
 
 
-storiesOf('OrderEditor', module)
+storiesOf('Payment / OrderEditor', module)
   .add('main', () => {
     return (
       <OrderEditor

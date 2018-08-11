@@ -1,16 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 
 import VoucherForm from './VoucherForm';
 
 
-function onAddVoucher() {
-
-}
-
-storiesOf('VoucherForm', module)
+storiesOf('Payment / VoucherForm', module)
   .add('main', () => {
     return (
-      <VoucherForm onAddVoucher={onAddVoucher} />
+      <VoucherForm onAddVoucher={action('add voucher')} />
     );
   });

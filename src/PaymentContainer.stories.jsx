@@ -25,7 +25,7 @@ const items = [
 ];
 
 
-storiesOf('PaymentContainer', module)
+storiesOf('Payment / PaymentContainer', module)
   .add('main', () => {
     return (
       <PaymentContainer
