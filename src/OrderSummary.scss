@@ -1,7 +1,7 @@
 .order-summary {
   $margin: 0.5rem;
 
-  margin: -$margin;
+  padding: $margin;
 
   &__details {
     display: block;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Price from './Price';
+import Card from './Card';
 
 import './OrderSummary.scss';
 
@@ -31,11 +32,11 @@ export default class OrderSummary extends React.PureComponent {
     const totalPrice = computeTotalPrice(items.map(item => item.price));
 
     return (
-      <section className="order-summary">
+      <Card as="section" className="order-summary" layer="raised">
         <OrderSummaryDetails items={items} />
         <div className="order-summary__separator" />
         <OrderSummaryTotal totalPrice={totalPrice} />
-      </section>
+      </Card>
     );
   }
 

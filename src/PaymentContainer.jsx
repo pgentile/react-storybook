@@ -19,9 +19,7 @@ export default class PaymentContainer extends React.PureComponent {
 
     return (
       <section className="payment-container">
-        <Card className="payment-container__order-summary" layer="raised">
-          <OrderSummary items={items} />
-        </Card>
+        <OrderSummary className="payment-container__order-summary" items={items} />
         <div className="payment-container__form">
           <Wip>Ici, il y aura le formulaire de paiement</Wip>
         </div>
