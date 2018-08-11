@@ -12,7 +12,6 @@ export default class Card extends React.PureComponent {
     hasRoundedBorder: PropTypes.bool,
     layer: PropTypes.string,
     as: PropTypes.any,
-    onClick: PropTypes.func,
     className: PropTypes.string,
     children: PropTypes.node,
   };
@@ -24,16 +23,15 @@ export default class Card extends React.PureComponent {
   };
 
   render() {
-    const { as: Element, hasRoundedBorder, layer, className, children, onClick, ...otherProps } = this.props;
+    const { as: Element, hasRoundedBorder, layer, className, children, ...otherProps } = this.props;
 
     const bemClass = bemModifiers('card', {
       'has-rounded-border': hasRoundedBorder,
-      [`layer-${layer}`]: !!layer,
-      'clickable': !!onClick,
+      [`layer-${layer}`]: !!layer
     });
 
     return (
-      <Element className={`${bemClass} ${className}`} onClick={onClick} {...otherProps}>
+      <Element className={`${bemClass} ${className}`} {...otherProps}>
         {children}
       </Element>
     );

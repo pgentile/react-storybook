@@ -13,17 +13,6 @@
     border-radius: 5px;
   }
 
-  &--clickable {
-    cursor: pointer;
-
-    transition: background-color 0.2s ease-in;
-
-    &:hover {
-      background-color: darken($background-color, 10%);
-    }
-
-  }
-
   @include layers;
 
 }

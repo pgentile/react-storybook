@@ -66,7 +66,7 @@ class TravelHeader extends React.PureComponent {
     return (
       <div className="travel__header">
         <TravelTitle outwardTrip={outwardTrip} inwardTrip={inwardTrip} />
-        <Price as="p" className="travel__header-price" {...price} />
+        <Price as="p" className="travel__header-price" price={price} />
       </div>
     );
   }

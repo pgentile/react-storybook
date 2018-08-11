@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Card from './Card';
+import FlatButton from './FlatButton';
 
 import './VoucherForm.scss';
 
@@ -68,13 +69,14 @@ export default class VoucherForm extends React.PureComponent {
     const disableForm = currentState === 'FORM_SUBMITTING';
 
     return (
-      <Card
-        as="section"
-        className={`voucher-form ${className}`}
-        onClick={showQuestion ? this.onShowForm : null}>
-        {showQuestion && <p className="voucher-form__question">
+      <Card as="section" className={`voucher-form ${className}`}>
+
+        {showQuestion && <FlatButton
+          className="voucher-form__question"
+          onClick={this.onShowForm}>
             Avez-vous un code promo&nbsp;?
-        </p>}
+        </FlatButton>}
+
         {showForm && <form
           className="voucher-form__form"
           onSubmit={this.onVoucherSubmit} onReset={this.onCancel}>
@@ -96,6 +98,7 @@ export default class VoucherForm extends React.PureComponent {
           </button>
 
         </form>}
+
       </Card>
     );
   }
