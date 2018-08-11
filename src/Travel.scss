@@ -1,110 +1,36 @@
-@mixin travel-container-margin($position: null) {
-  $outer-margin: 0.8rem;
-  $inner-margin: 1.5rem;
-
-  margin-top: $outer-margin;
-  margin-bottom: $outer-margin;
-
-  @if $position == 'left' {
-    margin-left: $outer-margin;
-    margin-right: $inner-margin;
-  } @else if $position == 'right' {
-    margin-left: 0;
-    margin-right: $outer-margin;
-  } @else {
-    margin-left: 0;
-    margin-right: $inner-margin;
-  }
-
-}
-
 .travel {
 
-  display: flex;
-  align-items: center;
+  $margin: 0.5rem;
 
-  border: 1px #999 solid;
-  border-radius: 5px;
+  &__header {
+    display: flex;
+    align-items: baseline;
 
-  &__title-container {
-    @include travel-container-margin("left");
-
-    // $width: 30%;
-    // flex-basis: $width;
-    // max-width: $width;
-  }
-
-  &__dates-container {
-    @include travel-container-margin;
-
-    // $width: 30%;
-    // flex-basis: $width;
-    // max-width: $width;
-  }
-
-  &--grid .travel {
-
-    &__title-container {
-      $width: 30%;
-      flex-basis: $width;
-      max-width: $width;
+    &-title {
+      flex: 1 0;
     }
 
-    &__dates-container {
-      $width: 30%;
-      flex-basis: $width;
-      max-width: $width;
+    &-title, &-price {
+      margin: $margin;
+      padding: 0;
     }
 
   }
 
-  &__passengers-container {
-    @include travel-container-margin;
+  &__details {
+    display: flex;
+    align-items: baseline;
 
-    flex: 1 0;
-  }
+    margin-top: $margin / 2;
 
-  &__price-container {
-    @include travel-container-margin("right");
-  }
+    &-date, &-passengers {
+      margin: $margin;
+      padding: 0;
 
-  &__title {
-    margin: 0;
-    padding: 0;
-
-    font-weight: bold;
-    font-size: 1.5rem;
-
-    &--asymetrical-roundtrip {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      font-weight: normal;
     }
 
-    &:nth-child(2) {
-      margin-top: 0.3rem;
-    }
-
-  }
-
-  &__date {
-
-    margin: 0;
-    padding: 0;
-
-    font-weight: normal;
-    font-size: 1rem;
-
-    &:nth-child(2) {
-      margin-top: 0.3rem;
-    }
-
-  }
-
-  &__passengers {
-    margin: 0;
-    padding: 0;
-
-    font-weight: normal;
-    font-size: 1rem;
   }
 
 }

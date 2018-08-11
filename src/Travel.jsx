@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import Price from './Price';
+import Card from './Card';
 import bemModifiers from './bemModifiers';
 
 import './Travel.scss';
@@ -27,7 +28,6 @@ export default class Travel extends React.PureComponent {
     inwardTrip: tripPropShape,
     passengerCount: PropTypes.number.isRequired,
     price: amountPropShape.isRequired,
-    grid: PropTypes.bool.isRequired,
   };
 
   static defaultProps = {
@@ -35,30 +35,20 @@ export default class Travel extends React.PureComponent {
   };
 
   render() {
-    const { outwardTrip, inwardTrip, passengerCount, price, grid } = this.props;
-
-    const className = bemModifiers('travel', {
-      grid,
-    });
+    const { outwardTrip, inwardTrip, passengerCount, price } = this.props;
 
     return (
-      <section className={className}>
-        <div className="travel__title-container">
-          <TravelTitle
-            outwardTrip={outwardTrip}
-            inwardTrip={inwardTrip} />
-        </div>
-        <div className="travel__dates-container">
-          <TravelDates
+      <section className="travel">
+        <Card className="travel__card">
+          <div className="travel__header">
+            <TravelTitle outwardTrip={outwardTrip} inwardTrip={inwardTrip} />
+            <Price className="travel__header-price" {...price} />
+          </div>
+          <TravelDetails
             outwardDepartureDate={outwardTrip.departureDate}
-            inwardDepartureDate={inwardTrip && inwardTrip.departureDate} />
-        </div>
-        <div className="travel__passengers-container">
-          <TravelPassengers passengerCount={passengerCount} />
-        </div>
-        <div className="travel__price-container">
-          <Price {...price} />
-        </div>
+            inwardDepartureDate={inwardTrip && inwardTrip.departureDate}
+            passengerCount={passengerCount} />
+        </Card>
       </section>
     );
   }
@@ -81,19 +71,45 @@ class TravelTitle extends React.PureComponent {
 
     const separator = symetricalRountrip ? '⇄' : '➝';
 
-    const titleClass = bemModifiers('travel__title', {
+    const titleClass = bemModifiers('travel__header-title', {
       'asymetrical-roundtrip': asymetricalRountrip,
     });
 
     return (
-      <Fragment>
-        <h1 className={titleClass}>
-          {`${outwardTrip.origin} ${separator} ${outwardTrip.destination}`}
-        </h1>
-        {asymetricalRountrip && <h1 className={titleClass}>
-          {`${inwardTrip.origin} ${separator} ${inwardTrip.destination}`}
-        </h1>}
-      </Fragment>
+      <h1 className={titleClass}>
+        {`${outwardTrip.origin} ${separator} ${outwardTrip.destination}`}
+        {asymetricalRountrip && ` ● ${inwardTrip.origin} ${separator} ${inwardTrip.destination}`}
+      </h1>
+    );
+  }
+
+}
+
+class TravelDetails extends React.PureComponent {
+
+  static propTypes = {
+    outwardDepartureDate: PropTypes.string.isRequired,
+    inwardDepartureDate: PropTypes.string,
+    passengerCount: PropTypes.number.isRequired,
+  };
+
+  render() {
+    const { outwardDepartureDate, inwardDepartureDate, passengerCount } = this.props;
+    const dimension = passengerCount === 1 ? 'passager' : 'passagers';
+
+    return (
+      <div className="travel__details">
+        {!inwardDepartureDate && <h2 className="travel__details-date">
+          Départ le <b>{outwardDepartureDate}</b>
+        </h2>}
+        {inwardDepartureDate && <h2 className="travel__details-date">
+          Aller le <b>{outwardDepartureDate}</b>
+        </h2>}
+        {inwardDepartureDate && <h2 className="travel__details-date">
+          Retour le <b>{inwardDepartureDate}</b>
+        </h2>}
+        <p className="travel__details-passengers">{passengerCount}&nbsp;{dimension}</p>
+      </div>
     );
   }
 
@@ -107,44 +123,3 @@ function isSymetricalRountrip(outwardTrip, inwardTrip) {
   return outwardTrip.origin === inwardTrip.destination && outwardTrip.destination === inwardTrip.origin;
 }
 
-
-class TravelDates extends React.PureComponent {
-
-  static propTypes = {
-    outwardDepartureDate: PropTypes.string.isRequired,
-    inwardDepartureDate: PropTypes.string,
-  };
-
-  render() {
-    const { outwardDepartureDate, inwardDepartureDate } = this.props;
-
-    return (
-      <Fragment>
-        {!inwardDepartureDate && <h2 className="travel__date">Départ le <b>{outwardDepartureDate}</b></h2>}
-        {inwardDepartureDate && <h2 className="travel__date">Aller le <b>{outwardDepartureDate}</b></h2>}
-        {inwardDepartureDate && <h2 className="travel__date">Retour le <b>{inwardDepartureDate}</b></h2>}
-      </Fragment>
-    );
-  }
-
-}
-
-
-class TravelPassengers extends React.PureComponent {
-
-  static propTypes = {
-    passengerCount: PropTypes.number.isRequired,
-  };
-
-  render() {
-    const { passengerCount } = this.props;
-    const dimension = passengerCount === 1 ? 'passager' : 'passagers';
-
-    return (
-      <h2 className="travel__passengers">
-        {passengerCount}&nbsp;{dimension}
-      </h2>
-    );
-  }
-
-}

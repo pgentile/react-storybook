@@ -28,6 +28,11 @@ const price = {
   currency: '€',
 };
 
+const price2 = {
+  value: 98.50,
+  currency: '£',
+};
+
 
 storiesOf('Travel', module)
   .add('Aller simple', () => {
@@ -55,7 +60,7 @@ storiesOf('Travel', module)
           <Travel grid outwardTrip={outwardTrip} inwardTrip={inwardTrip} passengerCount={2} price={price} />
         </div>
         <div style={{ margin: '0.3rem' }}>
-          <Travel grid outwardTrip={outwardTrip} inwardTrip={inwardTrip2} passengerCount={1} price={price} />
+          <Travel grid outwardTrip={outwardTrip} inwardTrip={inwardTrip2} passengerCount={1} price={price2} />
         </div>
       </Fragment>
     );
