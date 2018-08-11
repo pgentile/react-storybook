@@ -22,6 +22,7 @@ export default class Price extends React.PureComponent {
     const { as: Element, className, value, currency } = this.props;
     const units = Math.floor(value);
     const cents = Math.floor((value * 100) % 100);
+    const centsDisplay = cents < 10 ? `0${cents}` : cents.toString();
 
     return (
       <Element className={`price ${className}`}>
@@ -29,7 +30,7 @@ export default class Price extends React.PureComponent {
           {units}
         </span>
         <span className="price__remaining">
-          ,&thinsp;{cents}&nbsp;{currency}
+          ,&thinsp;{centsDisplay}&nbsp;{currency}
         </span>
       </Element>
     );

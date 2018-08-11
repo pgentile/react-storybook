@@ -15,7 +15,7 @@ export default class Wip extends React.PureComponent {
     return (
       <div className="wip">
         <div className="wip__container">
-          {children}
+          {children || 'Work in progress'}
         </div>
       </div>
     );
