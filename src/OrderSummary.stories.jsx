@@ -10,9 +10,7 @@ class OrderSummaryDemo extends React.PureComponent {
   onCancel = id => {
     this.setState(state => {
       const items = state.items.filter(item => item.id !== id);
-      return {
-        items,
-      };
+      return { items };
     });
   };
 
@@ -23,6 +21,14 @@ class OrderSummaryDemo extends React.PureComponent {
         label: 'Vos billets',
         price: {
           value: 109.80,
+          currency: '€',
+        },
+      },
+      {
+        id: 'assurances',
+        label: 'Vos assurances',
+        price: {
+          value: 5.90,
           currency: '€',
         },
       },
