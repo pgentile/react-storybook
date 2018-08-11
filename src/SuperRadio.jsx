@@ -57,7 +57,7 @@ export default class SuperRadio extends React.PureComponent {
     const bemBlock = block('super-radio');
 
     return (
-      <div className={bemBlock + ' ' + ' ' + bemBlock.modifier('checked', checked || false)}>
+      <div className={`${bemBlock } ` + ` ${ bemBlock.modifier('checked', checked || false)}`}>
         <div className={bemBlock.element('main-container')} onClick={this.selectRadio}>
           <div className={bemBlock.element('radio-element')}>
             <input
@@ -87,7 +87,7 @@ export default class SuperRadio extends React.PureComponent {
             </a>
           </div>}
         </div>
-        {help && <div className={bemBlock.element('help-details') + ' ' + bemBlock.element('help-details').modifier('visible', showHelp)}>
+        {help && <div className={`${bemBlock.element('help-details') } ${ bemBlock.element('help-details').modifier('visible', showHelp)}`}>
           {help}
         </div>}
       </div>

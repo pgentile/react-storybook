@@ -1,24 +1,35 @@
+@mixin payment-container-large-screen {
+  @media only screen and (min-width: 1000px) {
+    @content;
+  }
+}
+
 .payment-container {
+  $margin: 1rem;
 
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: $margin;
 
   margin: 0 auto;
 
   max-width: 750px;
 
-  @media only screen and (min-width: 1000px) {
+  @include payment-container-large-screen {
     grid-template-columns: 1.2fr 2fr;
 
     max-width: 1200px;
   }
 
-  &__order-summary {
-    // padding: 1rem;
+  &__left {
+
   }
 
-  &__form {
-    // padding: 0.5rem;
+  &__right {
+
+  }
+
+  &__voucher-form, &__donation {
+    margin-top: $margin;
   }
 
 }

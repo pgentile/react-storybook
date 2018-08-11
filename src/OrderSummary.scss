@@ -41,12 +41,6 @@
 
   }
 
-  &__separator {
-    margin: $margin;
-
-    border-top: 1px solid #BBB;
-  }
-
   &__total {
     display: flex;
 
@@ -67,6 +61,12 @@
       margin: $margin;
     }
 
+  }
+
+  &__separator {
+    margin: $margin;
+
+    border-top: 1px solid #BBB;
   }
 
 }

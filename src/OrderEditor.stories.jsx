@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import PaymentContainer from './PaymentContainer';
+import OrderEditor from './OrderEditor';
 
 
 const items = [
@@ -21,13 +21,13 @@ const items = [
       value: 5.90,
       currency: '€',
     },
-  }
+  },
 ];
 
 
-storiesOf('PaymentContainer', module)
+storiesOf('OrderEditor', module)
   .add('main', () => {
     return (
-      <PaymentContainer items={items} onAddVoucher={action('add voucher')} />
+      <OrderEditor items={items} onAddVoucher={action('add voucher')} />
     );
   });

@@ -15,6 +15,7 @@ const pricePropType = PropTypes.shape({
 
 export const orderItemPropType = PropTypes.shape({
   id: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['DONATION', 'VOUCHER']),
   label: PropTypes.node.isRequired,
   price: pricePropType.isRequired,
   onCancel: PropTypes.func,
@@ -130,3 +131,4 @@ class OrderSummaryTotal extends React.PureComponent {
   }
 
 }
+

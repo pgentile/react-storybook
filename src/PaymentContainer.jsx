@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import OrderSummary from './OrderSummary';
-import Card from './Card';
+import OrderEditor from './OrderEditor';
 import Wip from './Wip';
 
 import './PaymentContainer.scss';
@@ -11,17 +9,23 @@ import './PaymentContainer.scss';
 export default class PaymentContainer extends React.PureComponent {
 
   static propTypes = {
-    items: OrderSummary.propTypes.items,
+    items: OrderEditor.propTypes.items,
+    onAddVoucher: OrderEditor.propTypes.onAddVoucher,
   };
 
   render() {
-    const { items } = this.props;
+    const { items, onAddVoucher } = this.props;
 
     return (
       <section className="payment-container">
-        <OrderSummary className="payment-container__order-summary" items={items} />
-        <div className="payment-container__form">
-          <Wip>Ici, il y aura le formulaire de paiement</Wip>
+        <div className="payment-container__left">
+          <OrderEditor items={items} onAddVoucher={onAddVoucher} />
+        </div>
+        <div className="payment-container__right">
+          <Wip>
+            <p style={{height: '30rem'}}>
+              Ici, il y aura le formulaire de paiement
+            </p></Wip>
         </div>
       </section>
     );
