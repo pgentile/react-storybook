@@ -1,0 +1,15 @@
+.voucher-form {
+
+  $margin: 0.5rem;
+
+  &__question {
+    margin: $margin;
+    padding: 0;
+  }
+
+  &__form {
+    margin: $margin;
+    padding: 0;
+  }
+
+}
