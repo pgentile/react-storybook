@@ -35,16 +35,14 @@ export default class Travel extends React.PureComponent {
 
     return (
       <section className="travel">
-        <Card className="travel__card" hasRoundedBorder>
-          <TravelHeader
-            outwardTrip={outwardTrip}
-            inwardTrip={inwardTrip}
-            price={price} />
-          <TravelDetails
-            outwardDepartureDate={outwardTrip.departureDate}
-            inwardDepartureDate={inwardTrip && inwardTrip.departureDate}
-            passengerCount={passengerCount} />
-        </Card>
+        <TravelHeader
+          outwardTrip={outwardTrip}
+          inwardTrip={inwardTrip}
+          price={price} />
+        <TravelDetails
+          outwardDepartureDate={outwardTrip.departureDate}
+          inwardDepartureDate={inwardTrip && inwardTrip.departureDate}
+          passengerCount={passengerCount} />
       </section>
     );
   }
