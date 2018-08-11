@@ -30,26 +30,44 @@ export default class Travel extends React.PureComponent {
     price: amountPropShape.isRequired,
   };
 
-  static defaultProps = {
-    grid: false,
-  };
-
   render() {
     const { outwardTrip, inwardTrip, passengerCount, price } = this.props;
 
     return (
       <section className="travel">
-        <Card className="travel__card">
-          <div className="travel__header">
-            <TravelTitle outwardTrip={outwardTrip} inwardTrip={inwardTrip} />
-            <Price className="travel__header-price" {...price} />
-          </div>
+        <Card className="travel__card" hasRoundedBorder>
+          <TravelHeader
+            outwardTrip={outwardTrip}
+            inwardTrip={inwardTrip}
+            price={price} />
           <TravelDetails
             outwardDepartureDate={outwardTrip.departureDate}
             inwardDepartureDate={inwardTrip && inwardTrip.departureDate}
             passengerCount={passengerCount} />
         </Card>
       </section>
+    );
+  }
+
+}
+
+
+class TravelHeader extends React.PureComponent {
+
+  static propTypes = {
+    outwardTrip: tripPropShape.isRequired,
+    inwardTrip: tripPropShape,
+    price: amountPropShape.isRequired,
+  };
+
+  render() {
+    const { outwardTrip, inwardTrip, price } = this.props;
+
+    return (
+      <div className="travel__header">
+        <TravelTitle outwardTrip={outwardTrip} inwardTrip={inwardTrip} />
+        <Price className="travel__header-price" {...price} />
+      </div>
     );
   }
 

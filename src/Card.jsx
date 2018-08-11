@@ -1,27 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import bemModifiers from './bemModifiers';
+
 import './Card.scss';
 
 
 export default class Card extends React.PureComponent {
 
   static propTypes = {
+    hasRoundedBorder: PropTypes.bool,
+    as: PropTypes.any,
     className: PropTypes.string,
     children: PropTypes.node
   };
 
   static defaultProps = {
+    hasRoundedBorder: false,
+    as: 'div',
     className: '',
   };
 
   render() {
-    const { className, children } = this.props;
+    const { as: Element, hasRoundedBorder, className, children } = this.props;
+
+    const bemClass = bemModifiers('card', {
+      'has-rounded-border': hasRoundedBorder,
+    })
 
     return (
-      <div className={`card ${className}`}>
+      <Element className={`${bemClass} ${className}`}>
         {children}
-      </div>
+      </Element>
     );
   }
 
