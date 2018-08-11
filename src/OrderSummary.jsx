@@ -25,11 +25,12 @@ export default class OrderSummary extends React.PureComponent {
   render() {
     const { items } = this.props;
     const totalPrice = computeTotalPrice(items.map(item => item.price));
+    const hasManyItems = items.length > 1;
 
     return (
       <Card as="section" className="order-summary" layer="raised">
-        <OrderSummaryDetails items={items} />
-        <div className="order-summary__separator" />
+        {hasManyItems && <OrderSummaryDetails items={items} />}
+        {hasManyItems && <div className="order-summary__separator" />}
         <OrderSummaryTotal totalPrice={totalPrice} />
       </Card>
     );

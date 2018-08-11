@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Price from './Price';
-import Card from './Card';
 import bemModifiers from './bemModifiers';
 
 import './Travel.scss';
