@@ -25,11 +25,12 @@ export default class Price extends React.PureComponent {
 
     return (
       <Element className={`price ${className}`}>
-        <span className="price__units">{units}</span>
-        ,&thinsp;
-        <span className="price__cents">{cents}</span>
-        &nbsp;
-        <span className="price__currency">{currency}</span>
+        <span className="price__units">
+          {units}
+        </span>
+        <span className="price__remaining">
+          ,&thinsp;{cents}&nbsp;{currency}
+        </span>
       </Element>
     );
   }

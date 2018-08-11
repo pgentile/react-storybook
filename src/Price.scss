@@ -2,12 +2,12 @@
 
   $base-color: black;
 
-  font-size: 1rem;
-  color: lighten($base-color, 25%);
+  font-size: 1em;
+  color: $base-color;
 
-  &__units {
-    font-size: 1.5rem;
-    color: $base-color;
+  &__remaining {
+    font-size: 0.8em;
+    color:  lighten($base-color, 30%);
   }
 
 }

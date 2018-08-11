@@ -1,6 +1,9 @@
+@import "./_layers.scss";
+
+
 .card {
 
-  border: 1px solid black;
+  border: 1px solid #BBB;
 
   background-color: white;
 
@@ -8,6 +11,6 @@
     border-radius: 5px;
   }
 
-  // box-shadow: 0px 6px 15px -3px darkgrey;
+  @include layers;
 
 }

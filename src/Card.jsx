@@ -10,6 +10,7 @@ export default class Card extends React.PureComponent {
 
   static propTypes = {
     hasRoundedBorder: PropTypes.bool,
+    layer: PropTypes.string,
     as: PropTypes.any,
     className: PropTypes.string,
     children: PropTypes.node
@@ -22,11 +23,12 @@ export default class Card extends React.PureComponent {
   };
 
   render() {
-    const { as: Element, hasRoundedBorder, className, children } = this.props;
+    const { as: Element, hasRoundedBorder, layer, className, children } = this.props;
 
     const bemClass = bemModifiers('card', {
       'has-rounded-border': hasRoundedBorder,
-    })
+      [`layer-${layer}`]: !!layer,
+    });
 
     return (
       <Element className={`${bemClass} ${className}`}>
