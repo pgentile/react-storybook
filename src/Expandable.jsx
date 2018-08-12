@@ -14,7 +14,7 @@ export default class Expandable extends React.PureComponent {
   };
 
   static defaultProps = {
-    expanded: true,
+    expanded: false,
   };
 
   duration = 150;
