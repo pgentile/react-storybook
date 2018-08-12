@@ -52,7 +52,7 @@ export default class VoucherForm extends React.PureComponent {
     });
 
     try {
-      await this.props.onAddVoucher({ code });
+      await this.props.onAddVoucher(code);
     } catch (e) {
       this.setState({
         currentState: 'FORM',

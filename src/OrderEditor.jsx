@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import OrderSummary from './OrderSummary';
 import VoucherForm from './VoucherForm';
@@ -12,24 +13,42 @@ export default class OrderEditor extends React.PureComponent {
   static propTypes = {
     items: OrderSummary.propTypes.items,
     onAddVoucher: VoucherForm.propTypes.onAddVoucher,
+    onCancelVoucher: PropTypes.func.isRequired,
     onAddDonation: Donation.propTypes.onAddDonation,
     onCancelDonation: Donation.propTypes.onCancelDonation,
   };
 
   render() {
-    const { items, onAddVoucher, onAddDonation, onCancelDonation } = this.props;
+    const { items, onAddVoucher, onCancelVoucher, onAddDonation, onCancelDonation } = this.props;
     const hasVoucher = hasItemOfType(items, 'VOUCHER');
     const donation = findDonation(items);
+
+    const itemsWithActions = items.map(item => {
+      switch (item.type) {
+      case 'VOUCHER':
+        return {
+          ...item,
+          onCancel: () => onCancelVoucher(),
+        };
+      case 'DONATION':
+        return {
+          ...item,
+          onCancel: () => onCancelDonation(),
+        };
+      default:
+        return item;
+      }
+    });
 
     return (
       <section className="order-editor">
 
-        <OrderSummary className="order-editor__summary" items={items} />
+        <OrderSummary className="order-editor__summary" items={itemsWithActions} />
 
         {!hasVoucher && <VoucherForm
           className="order-editor__voucher-form"
           onAddVoucher={onAddVoucher}
-        />}
+          onCancelVoucher={onCancelVoucher} />}
 
         <Donation
           className="order-editor__donation"

@@ -1738,6 +1738,92 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
 </section>
 `;
 
+exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
+<section
+  className="payment-container"
+>
+  <div
+    className="payment-container__left"
+  >
+    <section
+      className="order-editor"
+    >
+      <section
+        className="card card--has-border card--layer-raised order-summary"
+      >
+        <p
+          className="order-summary__total"
+        >
+          <span
+            className="order-summary__total-label"
+          >
+            Total de votre commande
+          </span>
+          <span
+            className="price order-summary__total-price"
+          >
+            <span
+              className="price__units"
+            >
+              55
+            </span>
+            <span
+              className="price__remaining"
+            >
+              , 
+              60
+               
+              €
+            </span>
+          </span>
+        </p>
+      </section>
+      <section
+        className="card card--has-border card--layer-flat voucher-form order-editor__voucher-form"
+      >
+        <button
+          className="flat-button voucher-form__question"
+          onClick={[Function]}
+        >
+          Avez-vous un code promo ?
+        </button>
+      </section>
+      <section
+        className="card card--has-border card--layer-flat donation order-editor__donation"
+      >
+        <button
+          className="flat-button donation__add-button"
+          onClick={[Function]}
+        >
+          Voulez-vous ajouter un don ?
+        </button>
+      </section>
+    </section>
+  </div>
+  <div
+    className="payment-container__right"
+  >
+    <div
+      className="wip"
+    >
+      <div
+        className="wip__container"
+      >
+        <p
+          style={
+            Object {
+              "height": "30rem",
+            }
+          }
+        >
+          Ici, il y aura le formulaire de paiement
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots Payment / VoucherForm main 1`] = `
 <section
   className="card card--has-border card--layer-flat voucher-form "

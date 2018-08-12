@@ -55,6 +55,7 @@ const donationItem = {
 
 const onActions = {
   onAddVoucher: action('add voucher'),
+  onCancelVoucher: cancelVoucher,
   onAddDonation: action('add donation'),
   onCancelDonation: cancelDonation,
 };

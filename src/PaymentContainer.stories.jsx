@@ -31,6 +31,7 @@ storiesOf('Payment / PaymentContainer', module)
       <PaymentContainer
         items={items}
         onAddVoucher={action('add voucher')}
+        onCancelVoucher={action('cancel voucher')}
         onAddDonation={action('add donation')}
         onCancelDonation={action('cancel donation')} />
     );
