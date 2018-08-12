@@ -7,17 +7,15 @@ import './Expandable.scss';
 export default class Expandable extends React.PureComponent {
 
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     expanded: PropTypes.bool.isRequired,
-    duration: PropTypes.number.isRequired,
-    className: PropTypes.string,
   };
 
   static defaultProps = {
     expanded: true,
-    duration: 200,
-    className: '',
   };
+
+  duration = 150;
 
   windowRef = createRef();
 
@@ -31,9 +29,9 @@ export default class Expandable extends React.PureComponent {
   }
 
   componentDidUpdate(prevProps) {
-    const { expanded, duration } = this.props;
+    const { expanded } = this.props;
     if (prevProps.expanded !== expanded) {
-      expanded ? this.show(duration) : this.hide(duration);
+      expanded ? this.show() : this.hide();
     }
   }
 
@@ -41,10 +39,10 @@ export default class Expandable extends React.PureComponent {
     this.unmounted = true;
   }
 
-  async show(duration) {
-    const contentHeight = this.contentRef.current.clientHeight;
+  async show() {
+    const contentHeight = this.contentRef.current.offsetHeight;
 
-    await animate(duration, progress => {
+    await animate(this.duration, progress => {
       if (this.unmounted) {
         return;
       }
@@ -56,10 +54,10 @@ export default class Expandable extends React.PureComponent {
     this.windowRef.current.style.height = 'auto';
   }
 
-  async hide(duration) {
-    const contentHeight = this.contentRef.current.clientHeight;
+  async hide() {
+    const contentHeight = this.windowRef.current.offsetHeight;
 
-    await animate(duration, progress => {
+    await animate(this.duration, progress => {
       if (this.unmounted) {
         return;
       }
@@ -80,12 +78,10 @@ export default class Expandable extends React.PureComponent {
   }
 
   render() {
-    // Linter: ne pas passer expanded en
-    // eslint-disable-next-line no-unused-vars
-    const { children, expanded, className, ...otherProps } = this.props;
+    const { children } = this.props;
 
     return (
-      <div className={`expandable ${className}`} {...otherProps}>
+      <div className="expandable">
         <div className="expandable__window" ref={this.windowRef}>
           <div className="expandable__content" ref={this.contentRef}>
             {children}

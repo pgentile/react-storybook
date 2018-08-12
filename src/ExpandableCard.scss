@@ -1,0 +1,19 @@
+.expandable-card {
+
+  &__expandable {
+    $background-color: #EEE;
+    $border-color: #BBB;
+
+    // Fix for content margins...
+    border: 0.01rem solid transparent;
+
+    background-color: $background-color;
+    background-image: linear-gradient(
+      $border-color 1px,
+      darken($background-color, 5%),
+      $background-color 10px,
+      $background-color
+      );
+  }
+
+}

@@ -2,6 +2,12 @@
 
   &__window {
     overflow: hidden;
+
+    width: 100%;
+  }
+
+  &__content {
+    width: 100%;
   }
 
 }
