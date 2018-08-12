@@ -31,6 +31,7 @@
     "@storybook/addon-actions": "^3.4.0",
     "@storybook/addon-knobs": "^3.4.0",
     "@storybook/addon-links": "^3.4.0",
+    "@storybook/addon-storyshots": "^3.4.10",
     "@storybook/addons": "^3.4.0",
     "@storybook/cli": "^3.4.0",
     "@storybook/react": "^3.4.0",
@@ -75,12 +76,5 @@
     ">= 0.5% in BE",
     ">= 0.5% in DE",
     ">= 0.5% in GB"
-  ],
-  "jest": {
-    "rootDir": "./src",
-    "testURL": "http://localhost/",
-    "moduleNameMapper": {
-      "\\.(scss|css)$": "<rootDir>/__mocks__/styleMock.js"
-    }
-  }
+  ]
 }
