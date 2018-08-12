@@ -23,22 +23,20 @@ export default class OrderEditor extends React.PureComponent {
 
     return (
       <section className="order-editor">
-        <div className="payment-container__left">
 
-          <OrderSummary className="order-editor__summary" items={items} />
+        <OrderSummary className="order-editor__summary" items={items} />
 
-          {!hasVoucher && <VoucherForm
-            className="order-editor__voucher-form"
-            onAddVoucher={onAddVoucher}
-          />}
+        {!hasVoucher && <VoucherForm
+          className="order-editor__voucher-form"
+          onAddVoucher={onAddVoucher}
+        />}
 
-          <Donation
-            className="order-editor__donation"
-            selectedDonation={donation}
-            onAddDonation={onAddDonation}
-            onCancelDonation={onCancelDonation} />
+        <Donation
+          className="order-editor__donation"
+          selectedDonation={donation}
+          onAddDonation={onAddDonation}
+          onCancelDonation={onCancelDonation} />
 
-        </div>
       </section>
     );
   }
