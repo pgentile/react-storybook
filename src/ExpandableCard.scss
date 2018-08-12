@@ -6,6 +6,7 @@
 
     // Fix for content margins...
     border: 0.01rem solid transparent;
+    background-clip: border-box;
 
     background-color: $background-color;
     background-image: linear-gradient(
