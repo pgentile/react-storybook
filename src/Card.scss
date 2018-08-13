@@ -12,7 +12,11 @@
   }
 
   &--has-rounded-border {
-    border-radius: 5px;
+    border-radius: 0.5rem;
+
+    // Couper les bords rectangulaires des
+    // composants inclus dans la carte
+    overflow: hidden;
   }
 
   // Layers: see http://www.carbondesignsystem.com/style/layer/overview
