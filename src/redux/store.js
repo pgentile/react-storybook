@@ -11,6 +11,7 @@ export const middlewares = [
   promiseMiddleware(),
 ];
 
+
 let composeEnhancers = compose;
 
 if (process.env.NODE_ENV !== 'production') { // eslint-disable-line no-undef
@@ -23,12 +24,19 @@ if (process.env.NODE_ENV !== 'production') { // eslint-disable-line no-undef
   composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 }
 
-const defaultInitialState = {};
-const defaultMiddlewares = middlewares;
-
-export function createStore(initialState = defaultInitialState, middlewares = defaultMiddlewares) {
-  return createReduxStore(reducer, initialState, composeEnhancers(applyMiddleware(...middlewares)));
-}
 
 // Export a created store
+
+const initialState = {};
+
+
+export function createStore() {
+  return createReduxStore(
+    reducer,
+    initialState,
+    composeEnhancers(applyMiddleware(...middlewares))
+  );
+}
+
+
 export default createStore();

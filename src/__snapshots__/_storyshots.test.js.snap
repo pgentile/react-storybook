@@ -1765,13 +1765,13 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             <span
               className="price__units"
             >
-              55
+              0
             </span>
             <span
               className="price__remaining"
             >
               , 
-              60
+              00
                
               €
             </span>

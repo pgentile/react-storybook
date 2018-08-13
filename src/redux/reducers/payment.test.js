@@ -1,6 +1,17 @@
-import { loadItems, addVoucher, selectPaymentItems } from './payment';
-import { createStore, middlewares } from '../store';
-import captureStoreActions from '../captureStoreActions';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+
+import payment, {
+  VOUCHER_TYPE,
+  selectPaymentItems,
+  selectPaymentItemsWithoutVoucher,
+  selectVoucher,
+  loadItems,
+  addVoucher,
+  cancelVoucher
+} from './payment';
+
+import { middlewares } from '../store';
+import captureStoreActions from '../testutils/captureStoreActions';
 
 
 let storeActionsMiddleware;
@@ -8,7 +19,69 @@ let store;
 
 beforeEach(() => {
   storeActionsMiddleware = captureStoreActions();
-  store = createStore(undefined, [...middlewares, storeActionsMiddleware]);
+
+  const reducer = combineReducers({ payment });
+  const enhancer = applyMiddleware(...middlewares, storeActionsMiddleware);
+  store = createStore(reducer, {}, enhancer);
+});
+
+
+describe('Selectors', () => {
+
+  test('Select items', async () => {
+    const items = [
+      createItem(),
+      createItem(),
+      createItem(),
+    ];
+
+    await store.dispatch(loadItems(items));
+    const selectedItems = selectPaymentItems(store.getState());
+
+    expect(selectedItems).toEqual(items);
+  });
+
+  test('Select items without voucher', async () => {
+    const items = [
+      createItem(),
+      createItem({ type: VOUCHER_TYPE }),
+      createItem(),
+    ];
+
+    await store.dispatch(loadItems(items));
+
+    const selectedItems = selectPaymentItemsWithoutVoucher(store.getState());
+
+    expect(selectedItems).toHaveLength(2);
+  });
+
+  test('Select voucher', async () => {
+    const items = [
+      createItem(),
+      createItem({ type: VOUCHER_TYPE }),
+      createItem(),
+    ];
+
+    await store.dispatch(loadItems(items));
+
+    const voucherItem = selectVoucher(store.getState());
+
+    expect(voucherItem).not.toBeNull();
+  });
+
+  test('Select unexisting voucher', async () => {
+    const items = [
+      createItem(),
+      createItem(),
+    ];
+
+    await store.dispatch(loadItems(items));
+
+    const voucherItem = selectVoucher(store.getState());
+
+    expect(voucherItem).toBeNull();
+  });
+
 });
 
 
@@ -45,30 +118,36 @@ describe('Actions', () => {
     expect(actions[1]).toHaveProperty('payload.code', code);
   });
 
-});
+  test('Adding a second voucher should replace first voucher', async () => {
+    const code = 'RADIN';
+    const code2 = 'SECOND';
 
+    await store.dispatch(addVoucher(code));
+    await store.dispatch(addVoucher(code2));
 
-describe('Selectors', () => {
+    const voucherItem = selectVoucher(store.getState());
 
-  test('Select items', async () => {
-    const items = [
-      createItem(),
-      createItem(),
-      createItem(),
-    ];
+    expect(voucherItem).toHaveProperty('code', code2);
+  });
 
-    await store.dispatch(loadItems(items));
-    const selectedItems = selectPaymentItems(store.getState());
+  test('Cancel voucher', async () => {
+    const code = 'RADIN';
 
-    expect(selectedItems).toEqual(items);
+    await store.dispatch(addVoucher(code));
+    await store.dispatch(cancelVoucher(code));
+
+    const voucherItem = selectVoucher(store.getState());
+
+    expect(voucherItem).toBeNull();
   });
 
 });
 
 
-function createItem() {
+function createItem({ id, name, ...extraProps } = {}) {
   return {
-    id: 'id',
-    name: 'This is an item',
+    id: id || 'id',
+    name: name || 'This is an item',
+    ...extraProps,
   };
 }
