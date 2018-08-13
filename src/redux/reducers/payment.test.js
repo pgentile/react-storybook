@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 
 import payment, {
   VOUCHER_TYPE,
@@ -10,7 +10,7 @@ import payment, {
   cancelVoucher
 } from './payment';
 
-import { middlewares } from '../store';
+import createStore from '../createStore';
 import captureStoreActions from '../testutils/captureStoreActions';
 
 
@@ -20,9 +20,11 @@ let store;
 beforeEach(() => {
   storeActionsMiddleware = captureStoreActions();
 
-  const reducer = combineReducers({ payment });
-  const enhancer = applyMiddleware(...middlewares, storeActionsMiddleware);
-  store = createStore(reducer, {}, enhancer);
+  store = createStore(
+    combineReducers({ payment }),
+    {
+      extraMiddlewares: [storeActionsMiddleware],
+    });
 });
 
 

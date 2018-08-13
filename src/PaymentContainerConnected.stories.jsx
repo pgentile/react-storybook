@@ -1,17 +1,18 @@
 import React from 'react';
+import { combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { storiesOf } from '@storybook/react';
 
 import PaymentContainerConnected from './PaymentContainerConnected';
-import { createStore } from './redux/store';
+import createStore from './redux/createStore';
 
-import * as payment from './redux/reducers/payment';
+import payment, { loadItems } from './redux/reducers/payment';
 
 
 storiesOf('Payment / PaymentContainerConnected', module)
   .addDecorator(story => {
-    const store = createStore();
-    store.dispatch(payment.loadItems([
+    const store = createStore(combineReducers({ payment }));
+    store.dispatch(loadItems([
       {
         id: 'billets',
         label: 'Vos billets',
