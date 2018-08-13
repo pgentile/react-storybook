@@ -1,3 +1,10 @@
+import { FULFILLED } from 'redux-promise-middleware';
+
+import createScope from './createScope';
+
+
+// Actions
+
 const LOAD_ITEMS = 'PAYMENT/LOAD_ITEMS';
 const ADD_VOUCHER = 'PAYMENT/ADD_VOUCHER';
 const CANCEL_VOUCHER = 'PAYMENT/CANCEL_VOUCHER';
@@ -6,9 +13,9 @@ const CANCEL_VOUCHER = 'PAYMENT/CANCEL_VOUCHER';
 export function loadItems(items) {
   return {
     type: LOAD_ITEMS,
-    payload: {
+    payload: Promise.resolve({
       items,
-    },
+    }),
   };
 }
 
@@ -16,9 +23,9 @@ export function loadItems(items) {
 export function addVoucher(code) {
   return {
     type: ADD_VOUCHER,
-    payload: {
+    payload: Promise.resolve({
       code,
-    },
+    }),
   };
 }
 
@@ -26,10 +33,21 @@ export function addVoucher(code) {
 export function cancelVoucher() {
   return {
     type: CANCEL_VOUCHER,
-    payload: {},
+    payload: Promise.resolve({
+
+    }),
   };
 }
 
+
+// Selectors
+
+const scope = createScope(state => state.payment);
+
+export const selectPaymentItems = scope(payment => payment.items);
+
+
+// Reducer
 
 const initialState = {
   items: [],
@@ -40,13 +58,14 @@ export default (state = initialState, action) => {
 
   switch (type) {
 
-  case LOAD_ITEMS:
+  case `${LOAD_ITEMS}_${FULFILLED}`: {
     return {
       ...state,
       items: payload.items,
     };
+  }
 
-  case ADD_VOUCHER: {
+  case `${ADD_VOUCHER}_${FULFILLED}`: {
     const itemsWithNoVoucher = state.items.filter(item => item.type !== 'VOUCHER');
 
     const voucherItem = {
@@ -68,7 +87,7 @@ export default (state = initialState, action) => {
     };
   }
 
-  case CANCEL_VOUCHER: {
+  case `${CANCEL_VOUCHER}_${FULFILLED}`: {
     return {
       ...state,
       items: state.items.filter(item => item.type !== 'VOUCHER'),

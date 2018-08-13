@@ -1,12 +1,11 @@
 import { connect } from 'react-redux';
 
 import PaymentContainer from './PaymentContainer';
-import { addVoucher, cancelVoucher } from './redux/reducers/payment';
-import { getPaymentItems } from './redux/selectors';
+import { addVoucher, cancelVoucher, selectPaymentItems } from './redux/reducers/payment';
 
 
 const mapStateToProps = state => ({
-  items: getPaymentItems(state),
+  items: selectPaymentItems(state),
 });
 
 const mapDispatchToProps = {
