@@ -162,9 +162,9 @@ describe('Actions', () => {
     const actions = storeActionsMiddleware.getActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty('type', 'PAYMENT/ADD_VOUCHER_PENDING');
+    expect(actions[0]).toHaveProperty('type', 'PAYMENT/VOUCHER/ADD_PENDING');
 
-    expect(actions[1]).toHaveProperty('type', 'PAYMENT/ADD_VOUCHER_FULFILLED');
+    expect(actions[1]).toHaveProperty('type', 'PAYMENT/VOUCHER/ADD_FULFILLED');
     expect(actions[1]).toHaveProperty('payload.code', code);
   });
 
@@ -201,9 +201,9 @@ describe('Actions', () => {
     const actions = storeActionsMiddleware.getActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty('type', 'PAYMENT/ADD_DONATION_PENDING');
+    expect(actions[0]).toHaveProperty('type', 'PAYMENT/DONATION/ADD_PENDING');
 
-    expect(actions[1]).toHaveProperty('type', 'PAYMENT/ADD_DONATION_FULFILLED');
+    expect(actions[1]).toHaveProperty('type', 'PAYMENT/DONATION/ADD_FULFILLED');
     expect(actions[1]).toHaveProperty('payload.code', code);
   });
 
