@@ -1,10 +1,19 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
 import ExpandableCard from './ExpandableCard';
 
 
 class ExpandableCardDemo extends React.PureComponent {
+
+  static propTypes = {
+    foldable: PropTypes.bool
+  };
+
+  static defaultProps = {
+    foldable: false
+  };
 
   state = {
     expanded: false,
@@ -19,8 +28,12 @@ class ExpandableCardDemo extends React.PureComponent {
     ),
   };
 
-  onToggleExpand = (event) => {
+  onToggleExpand = event => {
     event.preventDefault();
+    this.toogleExpand();
+  };
+
+  toogleExpand = () => {
     this.setState(state => {
       return {
         expanded: !state.expanded,
@@ -29,13 +42,15 @@ class ExpandableCardDemo extends React.PureComponent {
   };
 
   render() {
+    const { foldable } = this.props;
     const { expanded, content } = this.state;
 
     return (
       <ExpandableCard
         layer="flat"
         expandableContent={content}
-        expanded={expanded}>
+        expanded={expanded}
+        onFold={foldable ? this.toogleExpand : null}>
         <p>
           Cette carte peut afficher plus de détails.
           {' '}
@@ -51,8 +66,13 @@ class ExpandableCardDemo extends React.PureComponent {
 
 
 storiesOf('ExpandableCard', module)
-  .add('Dans une carte', () => {
+  .add('main', () => {
     return (
       <ExpandableCardDemo />
+    );
+  })
+  .add('Avec bouton pour repliage', () => {
+    return (
+      <ExpandableCardDemo foldable />
     );
   });
