@@ -1,5 +1,3 @@
-import { combineReducers } from 'redux';
-
 import payment, {
   VOUCHER_TYPE,
   selectPaymentItems,
@@ -21,7 +19,9 @@ beforeEach(() => {
   storeActionsMiddleware = captureStoreActions();
 
   store = createStore(
-    combineReducers({ payment }),
+    {
+      payment
+    },
     {
       extraMiddlewares: [storeActionsMiddleware],
     });

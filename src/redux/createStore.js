@@ -1,4 +1,9 @@
-import { createStore as createReduxStore, applyMiddleware, compose } from 'redux';
+import {
+  createStore as createReduxStore,
+  applyMiddleware,
+  compose,
+  combineReducers
+} from 'redux';
 import promiseMiddleware from 'redux-promise-middleware';
 import thunkMiddleware from 'redux-thunk';
 import freezeMiddleware from 'redux-freeze';
@@ -25,7 +30,7 @@ if (process.env.NODE_ENV !== 'production') { // eslint-disable-line no-undef
 }
 
 
-export default function createStore(reducer, options = {}) {
+export default function createStore(reducers, options = {}) {
   const realOptions = {
     initialState: {},
     extraMiddlewares: [],
@@ -38,7 +43,7 @@ export default function createStore(reducer, options = {}) {
   ));
 
   return createReduxStore(
-    reducer,
+    combineReducers(reducers),
     realOptions.initialState,
     enhancer
   );

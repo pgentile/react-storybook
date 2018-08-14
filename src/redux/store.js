@@ -1,7 +1,9 @@
 import createStore from './createStore';
-import reducer from './reducer';
+import payment from './reducers/payment';
 
 
 // Export a created store
 
-export default createStore(reducer);
+export default createStore({
+  payment,
+});

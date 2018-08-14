@@ -1,5 +1,4 @@
 import React from 'react';
-import { combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { storiesOf } from '@storybook/react';
 
@@ -11,7 +10,10 @@ import payment, { loadItems } from './redux/reducers/payment';
 
 storiesOf('Payment / PaymentContainerConnected', module)
   .addDecorator(story => {
-    const store = createStore(combineReducers({ payment }));
+    const store = createStore({
+      payment,
+    });
+
     store.dispatch(loadItems([
       {
         id: 'billets',
