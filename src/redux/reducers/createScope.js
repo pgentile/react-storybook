@@ -1,7 +1,27 @@
-export default function createScope(scopeExtractor) {
+import { isUndefined } from 'lodash-es';
+
+// Behaviors for undefined scoped state
+
+export function returnDefaultValue(defaultValue) {
+  return () => defaultValue;
+}
+
+export const returnUndefined = returnDefaultValue();
+
+export function applySelector() {
+  return selector => selector;
+}
+
+
+// Scope factory
+
+export default function createScope(scopeExtractor, undefinedStateBehavior = returnUndefined) {
   return selector => {
     const scopedSelector = rootState => {
       const scopedState = scopeExtractor(rootState);
+      if (isUndefined(scopedState)) {
+        return undefinedStateBehavior(selector)(scopedState);
+      }
       return selector(scopedState);
     };
 
