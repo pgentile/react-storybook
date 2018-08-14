@@ -43,7 +43,9 @@ export default function createStore(reducers, options = {}) {
   ));
 
   return createReduxStore(
-    combineReducers(reducers),
+    combineReducers({
+      ...reducers,
+    }),
     realOptions.initialState,
     enhancer
   );

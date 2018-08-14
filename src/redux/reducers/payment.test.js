@@ -146,7 +146,7 @@ describe('Actions', () => {
 
     await store.dispatch(loadItems(items));
 
-    const actions = storeActionsMiddleware.getActions();
+    const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
     expect(actions[0]).toHaveProperty('type', 'PAYMENT/LOAD_ITEMS_PENDING');
@@ -159,7 +159,7 @@ describe('Actions', () => {
     const code = 'RADIN';
     await store.dispatch(addVoucher(code));
 
-    const actions = storeActionsMiddleware.getActions();
+    const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
     expect(actions[0]).toHaveProperty('type', 'PAYMENT/VOUCHER/ADD_PENDING');
@@ -198,7 +198,7 @@ describe('Actions', () => {
     const code = 'MSF';
     await store.dispatch(addDonation(code));
 
-    const actions = storeActionsMiddleware.getActions();
+    const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
     expect(actions[0]).toHaveProperty('type', 'PAYMENT/DONATION/ADD_PENDING');

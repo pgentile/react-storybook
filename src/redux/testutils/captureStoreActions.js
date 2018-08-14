@@ -8,8 +8,7 @@ export default function captureStoreActions() {
     return result;
   };
 
-  middleware.getActions = () => [...actions];
-  middleware.clearActions = () => actions.splice(0, actions.length);
+  middleware.drainActions = () => actions.splice(0, actions.length);
 
   return middleware;
 }
