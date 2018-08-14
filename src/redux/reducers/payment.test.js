@@ -1,11 +1,16 @@
 import payment, {
   VOUCHER_TYPE,
+  DONATION_TYPE,
   selectPaymentItems,
   selectPaymentItemsWithoutVoucher,
+  selectPaymentItemsWithoutDonation,
   selectVoucher,
+  selectDonation,
   loadItems,
   addVoucher,
-  cancelVoucher
+  cancelVoucher,
+  addDonation,
+  cancelDonation
 } from './payment';
 
 import createStore from '../createStore';
@@ -47,6 +52,7 @@ describe('Selectors', () => {
     const items = [
       createItem(),
       createItem({ type: VOUCHER_TYPE }),
+      createItem({ type: DONATION_TYPE }),
       createItem(),
     ];
 
@@ -54,7 +60,22 @@ describe('Selectors', () => {
 
     const selectedItems = selectPaymentItemsWithoutVoucher(store.getState());
 
-    expect(selectedItems).toHaveLength(2);
+    expect(selectedItems).toHaveLength(3);
+  });
+
+  test('Select items without donation', async () => {
+    const items = [
+      createItem(),
+      createItem({ type: VOUCHER_TYPE }),
+      createItem({ type: DONATION_TYPE }),
+      createItem(),
+    ];
+
+    await store.dispatch(loadItems(items));
+
+    const selectedItems = selectPaymentItemsWithoutDonation(store.getState());
+
+    expect(selectedItems).toHaveLength(3);
   });
 
   test('Select voucher', async () => {
@@ -66,9 +87,9 @@ describe('Selectors', () => {
 
     await store.dispatch(loadItems(items));
 
-    const voucherItem = selectVoucher(store.getState());
+    const item = selectVoucher(store.getState());
 
-    expect(voucherItem).not.toBeNull();
+    expect(item).not.toBeNull();
   });
 
   test('Select unexisting voucher', async () => {
@@ -79,9 +100,36 @@ describe('Selectors', () => {
 
     await store.dispatch(loadItems(items));
 
-    const voucherItem = selectVoucher(store.getState());
+    const item = selectVoucher(store.getState());
 
-    expect(voucherItem).toBeNull();
+    expect(item).toBeNull();
+  });
+
+  test('Select donation', async () => {
+    const items = [
+      createItem(),
+      createItem({ type: DONATION_TYPE }),
+      createItem(),
+    ];
+
+    await store.dispatch(loadItems(items));
+
+    const item = selectDonation(store.getState());
+
+    expect(item).not.toBeNull();
+  });
+
+  test('Select unexisting donation', async () => {
+    const items = [
+      createItem(),
+      createItem(),
+    ];
+
+    await store.dispatch(loadItems(items));
+
+    const item = selectDonation(store.getState());
+
+    expect(item).toBeNull();
   });
 
 });
@@ -135,12 +183,54 @@ describe('Actions', () => {
   test('Cancel voucher', async () => {
     const code = 'RADIN';
 
+    const stateBeforeActions = store.getState();
+
     await store.dispatch(addVoucher(code));
     await store.dispatch(cancelVoucher(code));
 
     const voucherItem = selectVoucher(store.getState());
 
     expect(voucherItem).toBeNull();
+    expect(store.getState()).toEqual(stateBeforeActions);
+  });
+
+  test('Add donation', async () => {
+    const code = 'MSF';
+    await store.dispatch(addDonation(code));
+
+    const actions = storeActionsMiddleware.getActions();
+    expect(actions).toHaveLength(2);
+
+    expect(actions[0]).toHaveProperty('type', 'PAYMENT/ADD_DONATION_PENDING');
+
+    expect(actions[1]).toHaveProperty('type', 'PAYMENT/ADD_DONATION_FULFILLED');
+    expect(actions[1]).toHaveProperty('payload.code', code);
+  });
+
+  test('Adding a second donation should replace first donation', async () => {
+    const code = 'MSF';
+    const code2 = 'SURF_RIDER';
+
+    await store.dispatch(addDonation(code));
+    await store.dispatch(addDonation(code2));
+
+    const item = selectDonation(store.getState());
+
+    expect(item).toHaveProperty('code', code2);
+  });
+
+  test('Cancel donation', async () => {
+    const code = 'MSF';
+
+    const stateBeforeActions = store.getState();
+
+    await store.dispatch(addDonation(code));
+    await store.dispatch(cancelDonation(code));
+
+    const item = selectDonation(store.getState());
+
+    expect(item).toBeNull();
+    expect(store.getState()).toEqual(stateBeforeActions);
   });
 
 });
