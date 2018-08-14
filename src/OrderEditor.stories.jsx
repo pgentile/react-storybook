@@ -34,6 +34,7 @@ const voucherItem = {
     value: -2.0,
     currency: '€',
   },
+  code: 'RADIN',
   onCancel: cancelVoucher,
 };
 
@@ -45,10 +46,8 @@ const donationItem = {
     value: 1.0,
     currency: '€',
   },
-  donationDetails: {
-    code: 'code',
-    association: 'Médecins sans frontières',
-  },
+  code: 'code',
+  association: 'Médecins sans frontières',
   onCancel: cancelDonation,
 };
 

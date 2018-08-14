@@ -677,7 +677,11 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         <span
           className="order-summary__item-label"
         >
-          Votre code promotion
+          Code promotion 
+          <b>
+            RADIN
+          </b>
+           appliqué
           <a
             className="order-summary__item-cancel"
             href="#"
@@ -816,7 +820,10 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
         <span
           className="order-summary__item-label"
         >
-          Votre don
+          Votre don pour 
+          <b>
+            Médecins sans frontières
+          </b>
           <a
             className="order-summary__item-cancel"
             href="#"

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import OrderSummary from './OrderSummary';
 import VoucherForm from './VoucherForm';
 import Donation from './Donation';
+import { DONATION_TYPE, VOUCHER_TYPE } from './redux/reducers/payment';
 
 import './OrderEditor.scss';
 
@@ -20,19 +21,29 @@ export default class OrderEditor extends React.PureComponent {
 
   render() {
     const { items, onAddVoucher, onCancelVoucher, onAddDonation, onCancelDonation } = this.props;
-    const hasVoucher = hasItemOfType(items, 'VOUCHER');
+    const hasVoucher = hasItemOfType(items, VOUCHER_TYPE);
     const donation = findDonation(items);
 
     const itemsWithActions = items.map(item => {
       switch (item.type) {
-      case 'VOUCHER':
+      case VOUCHER_TYPE:
         return {
           ...item,
+          label: (
+            <Fragment>
+              Code promotion <b>{item.code}</b> appliqué
+            </Fragment>
+          ),
           onCancel: () => onCancelVoucher(),
         };
-      case 'DONATION':
+      case DONATION_TYPE:
         return {
           ...item,
+          label: (
+            <Fragment>
+              Votre don pour <b>{item.association}</b>
+            </Fragment>
+          ),
           onCancel: () => onCancelDonation(),
         };
       default:
@@ -69,9 +80,11 @@ function hasItemOfType(items, type) {
 
 
 function findDonation(items) {
-  const donationItem = items.find(item => item.type === 'DONATION');
+  const donationItem = items.find(item => item.type === DONATION_TYPE);
   if (!donationItem) {
     return null;
   }
-  return donationItem.donationDetails;
+
+  const { code, association } = donationItem;
+  return { code, association };
 }

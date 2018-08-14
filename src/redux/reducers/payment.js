@@ -6,6 +6,7 @@ import createScope from './createScope';
 // Some useful variables
 
 export const VOUCHER_TYPE = 'VOUCHER';
+export const DONATION_TYPE = 'DONATION';
 
 
 // Selectors
@@ -18,16 +19,28 @@ export const selectPaymentItemsWithoutVoucher = scope(payment => {
   return selectPaymentItems.withinScope(payment).filter(item => item.type !== VOUCHER_TYPE);
 });
 
+export const selectPaymentItemsWithoutDonation = scope(payment => {
+  return selectPaymentItems.withinScope(payment).filter(item => item.type !== DONATION_TYPE);
+});
+
 export const selectVoucher = scope(payment => {
   return selectPaymentItems.withinScope(payment).find(item => item.type === VOUCHER_TYPE) || null;
+});
+
+export const selectDonation = scope(payment => {
+  return selectPaymentItems.withinScope(payment).find(item => item.type === DONATION_TYPE) || null;
 });
 
 
 // Actions
 
 const LOAD_ITEMS = 'PAYMENT/LOAD_ITEMS';
+
 const ADD_VOUCHER = 'PAYMENT/ADD_VOUCHER';
 const CANCEL_VOUCHER = 'PAYMENT/CANCEL_VOUCHER';
+
+const ADD_DONATION = 'PAYMENT/ADD_DONATION';
+const CANCEL_DONATION = 'PAYMENT/CANCEL_DONATION';
 
 
 export function loadItems(items) {
@@ -53,6 +66,24 @@ export function addVoucher(code) {
 export function cancelVoucher() {
   return {
     type: CANCEL_VOUCHER,
+    payload: Promise.resolve(),
+  };
+}
+
+
+export function addDonation(code) {
+  return {
+    type: ADD_DONATION,
+    payload: Promise.resolve({
+      code,
+    }),
+  };
+}
+
+
+export function cancelDonation() {
+  return {
+    type: CANCEL_DONATION,
     payload: Promise.resolve(),
   };
 }
@@ -105,6 +136,40 @@ export default (state = initialState, action) => {
     return {
       ...state,
       items: selectPaymentItemsWithoutVoucher.withinScope(state),
+    };
+  }
+
+  case `${ADD_DONATION}_${FULFILLED}`: {
+    const { code } = payload;
+
+    const itemsWithNoDonation = selectPaymentItemsWithoutDonation.withinScope(state);
+
+    const association = 'Médecins sans frontières';
+    const donationItem = {
+      id: `donation-${code}`,
+      type: DONATION_TYPE,
+      label: `Votre don pour ${association}`,
+      price: {
+        value: 1,
+        currency: '€',
+      },
+      code,
+      association,
+    };
+
+    return {
+      ...state,
+      items: [
+        ...itemsWithNoDonation,
+        donationItem,
+      ],
+    };
+  }
+
+  case `${CANCEL_DONATION}_${FULFILLED}`: {
+    return {
+      ...state,
+      items: selectPaymentItemsWithoutDonation.withinScope(state),
     };
   }
 
