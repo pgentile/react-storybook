@@ -3,16 +3,14 @@ import { Provider } from 'react-redux';
 import { storiesOf } from '@storybook/react';
 
 import PaymentContainerConnected from './PaymentContainerConnected';
-import createStore from './redux/createStore';
+import { createDefaultStore } from './redux/store';
 
-import payment, { loadItems } from './redux/reducers/payment';
+import { loadItems } from './redux/reducers/payment';
 
 
 storiesOf('Payment / PaymentContainerConnected', module)
   .addDecorator(story => {
-    const store = createStore({
-      payment,
-    });
+    const store = createDefaultStore();
 
     store.dispatch(loadItems([
       {

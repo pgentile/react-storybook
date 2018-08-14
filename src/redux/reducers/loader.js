@@ -40,7 +40,7 @@ export default (state = initialState, action) => {
 
 // Middleware
 
-const unloadExpirationDelay = 50;
+const unloadExpirationDelay = 100;
 
 export function middleware() {
   let loadingCounter = 0;

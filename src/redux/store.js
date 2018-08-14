@@ -5,11 +5,15 @@ import loader, { middleware as loaderMiddleware } from './reducers/loader';
 
 // Export a created store
 
-const reducers = {
-  payment,
-  loader,
-};
+export function createDefaultStore() {
+  const reducers = {
+    payment,
+    loader,
+  };
 
-export default createStore(reducers, {
-  extraMiddlewares: [loaderMiddleware],
-});
+  return createStore(reducers, {
+    extraMiddlewares: [loaderMiddleware],
+  });
+}
+
+export default createDefaultStore();
