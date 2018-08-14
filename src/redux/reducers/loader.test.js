@@ -149,3 +149,33 @@ test('Multiple resolutions', async () => {
   const isLoadingAfterUnload = selectIsLoading(store.getState());
   expect(isLoadingAfterUnload).toBe(false);
 });
+
+test('Ignore loader', async () => {
+  await store.dispatch({
+    type: 'TEST',
+    payload: Promise.resolve(),
+    meta: {
+      loader: {
+        ignore: true,
+      },
+    },
+  });
+
+  const actions = storeActionsMiddleware.drainActions();
+  expect(actions).toHaveLength(2);
+
+  const [pendingAction, fulfilledAction] = actions;
+  expect(pendingAction.type).toEqual('TEST_PENDING');
+  expect(fulfilledAction.type).toEqual('TEST_FULFILLED');
+
+  const isLoading = selectIsLoading(store.getState());
+  expect(isLoading).toBe(false);
+
+  jest.runAllTimers();
+
+  const updatedActions = storeActionsMiddleware.drainActions();
+  expect(updatedActions).toHaveLength(0);
+
+  const isLoadingAfterUnload = selectIsLoading(store.getState());
+  expect(isLoadingAfterUnload).toBe(false);
+});

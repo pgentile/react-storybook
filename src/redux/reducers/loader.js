@@ -47,7 +47,12 @@ export function middleware() {
 
   return next => action => {
     const result = next(action);
-    const { type } = action;
+    const { type, meta } = action;
+
+    // Don't update the loader if the promise asked to ignore the loader
+    if (meta && meta.loader && meta.loader.ignore) {
+      return result;
+    }
 
     if (type.endsWith(PENDING)) {
       if (loadingCounter === 0) {
