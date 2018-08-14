@@ -17,16 +17,20 @@ export function applySelector() {
 
 export default function createScope(scopeExtractor, undefinedStateBehavior = returnUndefined) {
   return selector => {
-    const scopedSelector = rootState => {
-      const scopedState = scopeExtractor(rootState);
+    const selectFromScopedState = scopedState => {
       if (isUndefined(scopedState)) {
         return undefinedStateBehavior(selector)(scopedState);
       }
       return selector(scopedState);
     };
 
+    const scopedSelector = rootState => {
+      const scopedState = scopeExtractor(rootState);
+      return selectFromScopedState(scopedState);
+    };
+
     // Access the scoped selector
-    scopedSelector.withinScope = selector;
+    scopedSelector.withinScope = selectFromScopedState;
 
     return scopedSelector;
   };
