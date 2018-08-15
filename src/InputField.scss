@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0.5rem;
 
+  background-color: white;
+
   font-size: 1rem;
   color: $color;
 
@@ -25,11 +27,25 @@
 
   &:disabled {
     background-color: lighten($border-color, 5%);
-    color: lighten($color, 10%);
+    color: lighten($color, 60%);
+    border-color: $border-color;
+
+    &:focus {
+      border-color: $border-color;
+    }
+  }
+
+  &:read-only {
+    border-color: $border-color;
+
+    &:focus {
+      border-color: $border-color;
+    }
   }
 
   &::placeholder {
-    color: lighten($color, 60%);
+    color: lighten($color, 70%);
+    font-style: italic;
   }
 
   &--error {
@@ -40,10 +56,6 @@
     &:focus {
       border-bottom-color: $error-border-color;
     }
-  }
-
-  &--help {
-    // border-bottom-color: grey;
   }
 
 }

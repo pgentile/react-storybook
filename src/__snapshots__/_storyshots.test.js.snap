@@ -613,6 +613,7 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
       className="form-input-field form-input-field--help"
       id="form-field-2"
       placeholder="Valeur d'exemple"
+      type="text"
     />
   </div>
   <ul
@@ -644,6 +645,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
       className="form-input-field form-input-field--error"
       id="form-field-1"
       placeholder="Valeur d'exemple"
+      type="text"
     />
   </div>
   <ul
@@ -680,6 +682,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
       className="form-input-field form-input-field--error"
       id="form-field-3"
       placeholder="Valeur d'exemple"
+      type="text"
     />
   </div>
   <ul
@@ -711,9 +714,77 @@ exports[`Storyshots Forms / FieldContainer main 1`] = `
       className="form-input-field"
       id="form-field-0"
       placeholder="Valeur d'exemple"
+      type="text"
     />
   </div>
 </div>
+`;
+
+exports[`Storyshots Forms / InputField Avec aide 1`] = `
+<input
+  className="form-input-field form-input-field--help"
+  defaultValue=""
+  type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Avec erreur 1`] = `
+<input
+  className="form-input-field form-input-field--error"
+  defaultValue=""
+  type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Avec erreur et aide 1`] = `
+<input
+  className="form-input-field form-input-field--error form-input-field--help"
+  defaultValue=""
+  type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Avec placeholder 1`] = `
+<input
+  className="form-input-field"
+  defaultValue=""
+  placeholder="Example"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Avec valeur 1`] = `
+<input
+  className="form-input-field"
+  defaultValue="Example"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Désactivé 1`] = `
+<input
+  className="form-input-field"
+  defaultValue="Example"
+  disabled={true}
+  type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Lecture seule 1`] = `
+<input
+  className="form-input-field"
+  defaultValue="Example"
+  readOnly={true}
+  type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField main 1`] = `
+<input
+  className="form-input-field"
+  defaultValue=""
+  type="text"
+/>
 `;
 
 exports[`Storyshots LoaderDemo main 1`] = `
@@ -1027,10 +1098,10 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
     </p>
   </section>
   <section
-    className="card card--has-border card--layer-flat voucher-form order-editor__voucher-form"
+    className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
   >
     <button
-      className="flat-button voucher-form__question"
+      className="flat-button voucher-container__question"
       onClick={[Function]}
     >
       Avez-vous un code promo ?
@@ -1159,10 +1230,10 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
     </p>
   </section>
   <section
-    className="card card--has-border card--layer-flat voucher-form order-editor__voucher-form"
+    className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
   >
     <button
-      className="flat-button voucher-form__question"
+      className="flat-button voucher-container__question"
       onClick={[Function]}
     >
       Avez-vous un code promo ?
@@ -1216,10 +1287,10 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
     </p>
   </section>
   <section
-    className="card card--has-border card--layer-flat voucher-form order-editor__voucher-form"
+    className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
   >
     <button
-      className="flat-button voucher-form__question"
+      className="flat-button voucher-container__question"
       onClick={[Function]}
     >
       Avez-vous un code promo ?
@@ -1845,10 +1916,10 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
         </p>
       </section>
       <section
-        className="card card--has-border card--layer-flat voucher-form order-editor__voucher-form"
+        className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
       >
         <button
-          className="flat-button voucher-form__question"
+          className="flat-button voucher-container__question"
           onClick={[Function]}
         >
           Avez-vous un code promo ?
@@ -1931,10 +2002,10 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
         </p>
       </section>
       <section
-        className="card card--has-border card--layer-flat voucher-form order-editor__voucher-form"
+        className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
       >
         <button
-          className="flat-button voucher-form__question"
+          className="flat-button voucher-container__question"
           onClick={[Function]}
         >
           Avez-vous un code promo ?
@@ -1976,17 +2047,127 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / VoucherForm main 1`] = `
+exports[`Storyshots Payment / VoucherContainer main 1`] = `
 <section
-  className="card card--has-border card--layer-flat voucher-form "
+  className="card card--has-border card--layer-flat voucher-container "
 >
   <button
-    className="flat-button voucher-form__question"
+    className="flat-button voucher-container__question"
     onClick={[Function]}
   >
     Avez-vous un code promo ?
   </button>
 </section>
+`;
+
+exports[`Storyshots Payment / VoucherForm disabled 1`] = `
+<form
+  className="voucher-form "
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="voucher-form__line"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-5"
+      >
+        Code promo
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoFocus={true}
+          className="form-input-field"
+          disabled={true}
+          id="form-field-5"
+          maxLength={16}
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="voucher-form__line"
+  >
+    <button
+      disabled={true}
+      type="submit"
+    >
+      Ajouter le code promo
+    </button>
+     
+    <button
+      disabled={true}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment / VoucherForm main 1`] = `
+<form
+  className="voucher-form "
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="voucher-form__line"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-4"
+      >
+        Code promo
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoFocus={true}
+          className="form-input-field"
+          disabled={false}
+          id="form-field-4"
+          maxLength={16}
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="voucher-form__line"
+  >
+    <button
+      disabled={false}
+      type="submit"
+    >
+      Ajouter le code promo
+    </button>
+     
+    <button
+      disabled={false}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Storyshots PaymentRequestComponent main 1`] = `
