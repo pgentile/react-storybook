@@ -41,34 +41,44 @@ export default class Expandable extends React.PureComponent {
     this.unmounted = true;
   }
 
-  async show() {
-    const contentHeight = this.contentRef.current.offsetHeight;
+  async animate(callback) {
+    return await animate(this.duration, this.stillMounted(callback));
+  }
 
-    await animate(this.duration, progress => {
+  stillMounted(callback) {
+    return (...args) => {
       if (this.unmounted) {
         return;
       }
 
+      callback(...args);
+    };
+  }
+
+  async show() {
+    const contentHeight = this.contentRef.current.offsetHeight;
+
+    await this.animate(progress => {
       const newHeight = contentHeight * progress;
       this.windowRef.current.style.height = `${newHeight}px`;
     });
 
-    this.windowRef.current.style.height = 'auto';
+    this.stillMounted(() => {
+      this.windowRef.current.style.height = 'auto';
+    });
   }
 
   async hide() {
     const contentHeight = this.windowRef.current.offsetHeight;
 
-    await animate(this.duration, progress => {
-      if (this.unmounted) {
-        return;
-      }
-
+    await this.animate(progress => {
       const newHeight = contentHeight * (1 - progress);
       this.windowRef.current.style.height = `${newHeight}px`;
     });
 
-    this.windowRef.current.style.height = 0;
+    this.stillMounted(() => {
+      this.windowRef.current.style.height = 0;
+    });
   }
 
   showNow() {
