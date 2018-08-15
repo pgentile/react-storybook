@@ -73,6 +73,8 @@ describe('Pliage / dépliagle des Expandable', () => {
       ),
     );
 
+    expect(wrapper.find('.expandable__window').getDOMNode().style).toHaveProperty('height', '0px');
+
     wrapper.setProps({
       expanded: true,
     });
@@ -99,6 +101,8 @@ describe('Pliage / dépliagle des Expandable', () => {
         </Expandable>
       ),
     );
+
+    expect(wrapper.find('.expandable__window').getDOMNode().style).toHaveProperty('height', '0px');
 
     // Déplier
     wrapper.setProps({
@@ -132,20 +136,23 @@ describe('Pliage / dépliagle des Expandable', () => {
 
 async function waitUntil(maxDuration, callback) {
   const endTimestamp = Date.now() + maxDuration;
-  let exception = new Error('Test failed');
-  while (Date.now() <= endTimestamp || exception) {
+
+  let exception = new Error('Failed to complete');
+  do {
     try {
-      await callback();
-      exception = null;
+      callback();
+
+      // Success ! Break the method
+      return;
     } catch (e) {
       exception = e;
     }
-    await delay(50);
-  }
 
-  if (exception) {
-    throw exception;
-  }
+    await delay(50);
+  } while (Date.now() <= endTimestamp);
+
+  console.error(`Failed to complete in success for ${maxDuration}ms`);
+  throw exception;
 }
 
 

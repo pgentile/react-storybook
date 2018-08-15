@@ -42,17 +42,17 @@ export default class Expandable extends React.PureComponent {
   }
 
   async animate(callback) {
-    return await animate(this.duration, this.stillMounted(callback));
+    return await animate(this.duration, progress => {
+      this.stillMounted(() => callback(progress));
+    });
   }
 
   stillMounted(callback) {
-    return (...args) => {
-      if (this.unmounted) {
-        return;
-      }
+    if (this.unmounted) {
+      return;
+    }
 
-      callback(...args);
-    };
+    callback();
   }
 
   async show() {
@@ -64,6 +64,7 @@ export default class Expandable extends React.PureComponent {
     });
 
     this.stillMounted(() => {
+      console.info('Changing the window size to auto');
       this.windowRef.current.style.height = 'auto';
     });
   }
