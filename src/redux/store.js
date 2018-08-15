@@ -1,6 +1,6 @@
 import createStore from './createStore';
 import payment from './reducers/payment';
-import loader, { middleware as loaderMiddleware } from './reducers/loader';
+import loader, { loaderMiddleware } from './reducers/loader';
 
 
 // Export a created store
@@ -12,7 +12,7 @@ export function createDefaultStore() {
   };
 
   return createStore(reducers, {
-    extraMiddlewares: [loaderMiddleware],
+    extraMiddlewares: [loaderMiddleware()],
   });
 }
 

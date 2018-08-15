@@ -8,7 +8,7 @@ export function returnDefaultValue(defaultValue) {
 
 export const returnUndefined = returnDefaultValue();
 
-export function applySelector() {
+export function alwaysExecute() {
   return selector => selector;
 }
 

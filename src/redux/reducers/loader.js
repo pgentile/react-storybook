@@ -40,12 +40,10 @@ export default (state = initialState, action) => {
 
 // Middleware
 
-const unloadExpirationDelay = 100;
-
-export function middleware() {
+export function loaderMiddleware(unloadExpirationDelay = 100) {
   let loadingCounter = 0;
 
-  return next => action => {
+  return () => next => action => {
     const result = next(action);
     const { type, meta } = action;
 

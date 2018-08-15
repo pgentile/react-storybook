@@ -1,4 +1,4 @@
-import loader, { middleware, selectIsLoading } from './loader';
+import loader, { loaderMiddleware, selectIsLoading } from './loader';
 
 import createStore from '../createStore';
 import captureStoreActions from '../testutils/captureStoreActions';
@@ -18,7 +18,7 @@ beforeEach(() => {
     },
     {
       extraMiddlewares: [
-        middleware,
+        loaderMiddleware(),
         storeActionsMiddleware,
       ],
     });
