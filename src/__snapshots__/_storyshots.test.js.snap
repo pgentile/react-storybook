@@ -596,6 +596,126 @@ exports[`Storyshots Encryption test 1`] = `
 </div>
 `;
 
+exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
+<div
+  className="form-field-container"
+>
+  <label
+    className="form-field-container__label"
+    htmlFor="form-field-2"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      className="form-input-field form-input-field--help"
+      id="form-field-2"
+      placeholder="Valeur d'exemple"
+    />
+  </div>
+  <ul
+    className="form-field-container__help"
+  >
+    <li
+      className="form-field-container__help-message"
+    >
+      Un peu d'aide, ça ne fait pas de mal
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
+<div
+  className="form-field-container"
+>
+  <label
+    className="form-field-container__label"
+    htmlFor="form-field-1"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      className="form-input-field form-input-field--error"
+      id="form-field-1"
+      placeholder="Valeur d'exemple"
+    />
+  </div>
+  <ul
+    className="form-field-container__errors"
+  >
+    <li
+      className="form-field-container__errors-message"
+    >
+      Données invalides
+    </li>
+    <li
+      className="form-field-container__errors-message"
+    >
+      Nom inconnu
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
+<div
+  className="form-field-container"
+>
+  <label
+    className="form-field-container__label"
+    htmlFor="form-field-3"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      className="form-input-field form-input-field--error"
+      id="form-field-3"
+      placeholder="Valeur d'exemple"
+    />
+  </div>
+  <ul
+    className="form-field-container__errors"
+  >
+    <li
+      className="form-field-container__errors-message"
+    >
+      Données invalides
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer main 1`] = `
+<div
+  className="form-field-container"
+>
+  <label
+    className="form-field-container__label"
+    htmlFor="form-field-0"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      className="form-input-field"
+      id="form-field-0"
+      placeholder="Valeur d'exemple"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots LoaderDemo main 1`] = `
 <div>
   <button

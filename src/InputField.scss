@@ -1,0 +1,42 @@
+.form-input-field {
+  $border-color: #EEE;
+  $bottom-border-color: darken($border-color, 20%);
+
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+
+  font-size: 1rem;
+
+  border: 1px solid $border-color;
+  border-bottom-color: $bottom-border-color;
+  border-bottom-width: 3px;
+
+  transition: border-color 0.2s ease-in;
+
+  &:focus {
+    outline: none;
+    border-color: darken($border-color, 40%);
+  }
+
+  &::placeholder {
+    color: darken($border-color, 10%);
+  }
+
+  &--error {
+    $error-border-color: red;
+
+    border-bottom-color: $error-border-color;
+
+    &:focus {
+      border-bottom-color: $error-border-color;
+    }
+  }
+
+  &--help {
+    // border-bottom-color: grey;
+  }
+
+}
