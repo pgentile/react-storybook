@@ -17,16 +17,16 @@ export function alwaysExecute(selector) {
 
 export default function createScope(scopeExtractor, undefinedStateBehavior = returnUndefined) {
   return selector => {
-    const selectFromScopedState = scopedState => {
+    const selectFromScopedState = (scopedState, ...args) => {
       if (isUndefined(scopedState)) {
-        return undefinedStateBehavior(selector)(scopedState);
+        return undefinedStateBehavior(selector)(scopedState, ...args);
       }
-      return selector(scopedState);
+      return selector(scopedState, ...args);
     };
 
-    const scopedSelector = rootState => {
+    const scopedSelector = (rootState, ...args) => {
       const scopedState = scopeExtractor(rootState);
-      return selectFromScopedState(scopedState);
+      return selectFromScopedState(scopedState, ...args);
     };
 
     // Access the scoped selector
