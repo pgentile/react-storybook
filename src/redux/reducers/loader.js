@@ -16,7 +16,7 @@ function changeState(loading) {
     type: CHANGE_STATE,
     payload: {
       loading,
-    }
+    },
   };
 }
 

@@ -3,13 +3,13 @@ import { isUndefined } from 'lodash-es';
 // Behaviors for undefined scoped state
 
 export function returnDefaultValue(defaultValue) {
-  return () => defaultValue;
+  return () => () => defaultValue;
 }
 
-export const returnUndefined = returnDefaultValue();
+export const returnUndefined = returnDefaultValue(undefined);
 
-export function alwaysExecute() {
-  return selector => selector;
+export function alwaysExecute(selector) {
+  return selector;
 }
 
 
