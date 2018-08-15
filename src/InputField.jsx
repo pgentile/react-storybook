@@ -27,7 +27,10 @@ export default class InputField extends React.PureComponent {
     });
 
     return (
-      <input {...otherProps} className={className} />
+      <input
+        type="text"
+        {...otherProps}
+        className={className} />
     );
   }
 

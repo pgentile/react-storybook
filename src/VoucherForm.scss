@@ -8,8 +8,12 @@
   }
 
   &__form {
-    margin: $margin;
+    margin: 0;
     padding: 0;
+
+    &-line {
+      margin: $margin;
+    }
   }
 
 }
