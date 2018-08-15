@@ -596,6 +596,31 @@ exports[`Storyshots Encryption test 1`] = `
 </div>
 `;
 
+exports[`Storyshots LoaderDemo main 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Load one
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Load parallel
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Load sequential
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Load on, no indicator
+  </button>
+</div>
+`;
+
 exports[`Storyshots MyButton with icon 1`] = `
 <button
   onClick={[Function]}
