@@ -7,4 +7,5 @@ module.exports = {
   transformIgnorePatterns: [
     '/node_modules/(?!lodash-es)/',
   ],
+  coverageDirectory: '../build/coverage',
 };
