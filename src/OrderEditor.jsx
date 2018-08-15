@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import OrderSummary from './OrderSummary';
-import VoucherForm from './VoucherForm';
+import VoucherContainer from './VoucherContainer';
 import Donation from './Donation';
 import { DONATION_TYPE, VOUCHER_TYPE } from './redux/reducers/payment';
 
@@ -13,7 +13,7 @@ export default class OrderEditor extends React.PureComponent {
 
   static propTypes = {
     items: OrderSummary.propTypes.items,
-    onAddVoucher: VoucherForm.propTypes.onAddVoucher,
+    onAddVoucher: VoucherContainer.propTypes.onAddVoucher,
     onCancelVoucher: PropTypes.func.isRequired,
     onAddDonation: Donation.propTypes.onAddDonation,
     onCancelDonation: Donation.propTypes.onCancelDonation,
@@ -56,7 +56,7 @@ export default class OrderEditor extends React.PureComponent {
 
         <OrderSummary className="order-editor__summary" items={itemsWithActions} />
 
-        {!hasVoucher && <VoucherForm
+        {!hasVoucher && <VoucherContainer
           className="order-editor__voucher-form"
           onAddVoucher={onAddVoucher}
           onCancelVoucher={onCancelVoucher} />}

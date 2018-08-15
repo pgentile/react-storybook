@@ -8,6 +8,16 @@ import VoucherForm from './VoucherForm';
 storiesOf('Payment / VoucherForm', module)
   .add('main', () => {
     return (
-      <VoucherForm onAddVoucher={action('add voucher')} />
+      <VoucherForm
+        onAddVoucher={action('add voucher')}
+        onCancel={action('cancel')} />
+    );
+  })
+  .add('disabled', () => {
+    return (
+      <VoucherForm
+        disabled
+        onAddVoucher={action('add voucher')}
+        onCancel={action('cancel')} />
     );
   });

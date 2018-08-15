@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Card from './Card';
-import FlatButton from './FlatButton';
 import FieldContainer from './FieldContainer';
 import InputField from './InputField';
 
@@ -12,27 +10,22 @@ import './VoucherForm.scss';
 export default class VoucherForm extends React.PureComponent {
 
   static propTypes = {
-    className: PropTypes.string.isRequired,
+    className: PropTypes.string,
+    disabled: PropTypes.bool,
     onAddVoucher: PropTypes.func.isRequired,
+    onCancel: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
     className: '',
+    disabled: false,
   };
 
   state = {
-    currentState: 'QUESTION',
     code: '',
     errorMessage: null,
     valid: false,
     touched: false,
-  };
-
-  onShowForm = event => {
-    event.preventDefault();
-    this.setState({
-      currentState: 'FORM',
-    });
   };
 
   onCodeChange = event => {
@@ -51,10 +44,11 @@ export default class VoucherForm extends React.PureComponent {
 
   onCancel = () => {
     this.setState({
-      currentState: 'QUESTION',
       code: '',
       touched: false,
     });
+
+    this.props.onCancel();
   }
 
   validateCode(code) {
@@ -71,73 +65,58 @@ export default class VoucherForm extends React.PureComponent {
   }
 
   onVoucherSubmit = async event => {
-    const { code } = this.state;
-
     event.preventDefault();
-    this.setState({
-      currentState: 'FORM_SUBMITTING',
-    });
 
-    try {
-      await this.props.onAddVoucher(code);
-    } catch (e) {
+    const { code, valid } = this.state;
+
+    if (valid) {
+      this.props.onAddVoucher(code);
+    } else {
       this.setState({
-        currentState: 'FORM',
+        touched: true,
       });
     }
   };
 
   render() {
-    const { className } = this.props;
-    const { currentState, code, valid, touched, errorMessage } = this.state;
-
-    const showQuestion = currentState === 'QUESTION';
-    const showForm = currentState === 'FORM' || currentState === 'FORM_SUBMITTING';
-    const disableForm = currentState === 'FORM_SUBMITTING';
-    const disableSubmit = !valid;
+    const { className, disabled } = this.props;
+    const { code, touched, errorMessage } = this.state;
 
     return (
-      <Card as="section" layer="flat" className={`voucher-form ${className}`}>
+      <form
+        className={`voucher-form ${className}`}
+        onSubmit={this.onVoucherSubmit}
+        onReset={this.onCancel}>
 
-        {showQuestion && <FlatButton
-          className="voucher-form__question"
-          onClick={this.onShowForm}>
-            Avez-vous un code promo&nbsp;?
-        </FlatButton>}
+        <div className="voucher-form__line">
+          <FieldContainer
+            label="Code promo"
+            errorMessages={errorMessage && touched ? [errorMessage] : []}>
+            {props => (
+              <InputField
+                {...props}
+                disabled={disabled}
+                autoFocus
+                type="text"
+                value={code}
+                maxLength={16}
+                onChange={this.onCodeChange}
+                onBlur={this.onCodeBlur} />
+            )}
+          </FieldContainer>
+        </div>
 
-        {showForm && <form
-          className="voucher-form__form"
-          onSubmit={this.onVoucherSubmit} onReset={this.onCancel}>
+        <div className="voucher-form__line">
+          <button disabled={disabled} type="submit">
+            Ajouter le code promo
+          </button>
+          {' '}
+          <button disabled={disabled} type="reset">
+            Annuler
+          </button>
+        </div>
 
-          <div className="voucher-form__form-line">
-            <FieldContainer label="Code promo" errorMessages={errorMessage && touched ? [errorMessage] : []}>
-              {props => (
-                <InputField
-                  {...props}
-                  disabled={disableForm}
-                  autoFocus
-                  type="text"
-                  value={code}
-                  maxlength={16}
-                  onChange={this.onCodeChange}
-                  onBlur={this.onCodeBlur} />
-              )}
-            </FieldContainer>
-          </div>
-
-          <div className="voucher-form__form-line">
-            <button disabled={disableForm || disableSubmit} type="submit">
-              Ajouter le code promo
-            </button>
-            {' '}
-            <button disabled={disableForm} type="reset">
-              Annuler
-            </button>
-          </div>
-
-        </form>}
-
-      </Card>
+      </form>
     );
   }
 

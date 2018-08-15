@@ -1,0 +1,9 @@
+.voucher-container {
+  $margin: 1rem;
+
+  &__question, &__form {
+    box-sizing: border-box;
+    padding: $margin;
+    width: 100%;
+  }
+}

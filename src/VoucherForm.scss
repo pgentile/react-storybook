@@ -1,18 +1,16 @@
 .voucher-form {
+  margin: 0;
+  padding: 0;
 
-  $margin: 1rem;
+  &__line {
+    margin: 1rem 0;
 
-  &__question {
-    padding: $margin;
-    width: 100%;
-  }
+    &:first-child {
+      margin-top: 0;
+    }
 
-  &__form {
-    margin: 0;
-    padding: 0;
-
-    &-line {
-      margin: $margin;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
