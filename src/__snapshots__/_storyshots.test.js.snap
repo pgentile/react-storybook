@@ -596,6 +596,31 @@ exports[`Storyshots Encryption test 1`] = `
 </div>
 `;
 
+exports[`Storyshots Forms / Button disabled 1`] = `
+<button
+  className="button "
+  disabled={true}
+>
+  Mon bouton
+</button>
+`;
+
+exports[`Storyshots Forms / Button main 1`] = `
+<button
+  className="button "
+>
+  Mon bouton
+</button>
+`;
+
+exports[`Storyshots Forms / Button show disabled 1`] = `
+<button
+  className="button button--disabled "
+>
+  Mon bouton
+</button>
+`;
+
 exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
 <div
   className="form-field-container"
@@ -2066,13 +2091,14 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     className="voucher-form__line"
   >
     <button
+      className="button button--disabled voucher-form__button"
       disabled={false}
       type="submit"
     >
       Ajouter le code promo
     </button>
-     
     <button
+      className="button voucher-form__button"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -2122,13 +2148,14 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     className="voucher-form__line"
   >
     <button
+      className="button voucher-form__button"
       disabled={false}
       type="submit"
     >
       Ajouter le code promo
     </button>
-     
     <button
+      className="button voucher-form__button"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -2178,13 +2205,14 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     className="voucher-form__line"
   >
     <button
+      className="button voucher-form__button"
       disabled={false}
       type="submit"
     >
       Ajouter le code promo
     </button>
-     
     <button
+      className="button voucher-form__button"
       disabled={false}
       onClick={[Function]}
       type="button"

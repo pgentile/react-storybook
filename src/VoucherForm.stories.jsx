@@ -26,12 +26,13 @@ storiesOf('Payment / VoucherForm', module)
   })
   .add('initial code', () => {
     return (
-      <VoucherForm code="EURO2016" {...actions} />
+      <VoucherForm isInitialValid code="EURO2016" {...actions} />
     );
   })
   .add('submit error', () => {
     return (
       <VoucherForm
+        isInitialValid
         code="CODE21"
         {...actions}
         onAddVoucher={addVoucherWithFailure} />

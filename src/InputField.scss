@@ -26,6 +26,8 @@
   }
 
   &:disabled {
+    transition: none;
+
     background-color: lighten($border-color, 5%);
     color: lighten($color, 60%);
     border-color: $border-color;
@@ -36,6 +38,8 @@
   }
 
   &:read-only {
+    transition: none;
+
     border-color: $border-color;
 
     &:focus {

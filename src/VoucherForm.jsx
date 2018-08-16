@@ -4,6 +4,7 @@ import { withFormik } from 'formik';
 
 import FieldContainer from './FieldContainer';
 import InputField from './InputField';
+import Button from './Button';
 
 import './VoucherForm.scss';
 
@@ -20,6 +21,7 @@ class VoucherForm extends React.PureComponent {
   };
 
   onCancel = () => {
+    this.props.resetForm();
     this.props.onCancel();
   };
 
@@ -34,6 +36,7 @@ class VoucherForm extends React.PureComponent {
       handleBlur,
       handleSubmit,
       isSubmitting,
+      isValid,
     } = this.props;
 
     const codeErrorMessage = submitCount > 0 || touched.code ? errors.code : null;
@@ -60,13 +63,20 @@ class VoucherForm extends React.PureComponent {
         </div>
 
         <div className="voucher-form__line">
-          <button disabled={isSubmitting} type="submit">
+          <Button
+            className="voucher-form__button"
+            showDisabled={!isValid}
+            disabled={isSubmitting}
+            type="submit">
             Ajouter le code promo
-          </button>
-          {' '}
-          <button type="button" disabled={isSubmitting} onClick={this.onCancel}>
+          </Button>
+          <Button
+            className="voucher-form__button"
+            type="button"
+            disabled={isSubmitting}
+            onClick={this.onCancel}>
             Annuler
-          </button>
+          </Button>
         </div>
 
       </form>
@@ -77,6 +87,7 @@ class VoucherForm extends React.PureComponent {
 
 
 export default withFormik({
+  validateOnBlur: false,
   mapPropsToValues: props => ({
     code: props.code || '',
   }),
