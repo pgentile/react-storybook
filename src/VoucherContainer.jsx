@@ -40,8 +40,7 @@ export default class VoucherContainer extends React.PureComponent {
     const { currentState } = this.state;
 
     const showQuestion = currentState === 'QUESTION';
-    const showForm = currentState === 'FORM' || currentState === 'FORM_SUBMITTING';
-    const disableForm = currentState === 'FORM_SUBMITTING';
+    const showForm = currentState === 'FORM';
 
     return (
       <Card as="section" layer="flat" className={`voucher-container ${className}`}>
@@ -54,7 +53,6 @@ export default class VoucherContainer extends React.PureComponent {
 
         {showForm && <VoucherForm
           className="voucher-container__form"
-          disabled={disableForm}
           onAddVoucher={onAddVoucher}
           onCancel={this.onHideForm}
         />}
