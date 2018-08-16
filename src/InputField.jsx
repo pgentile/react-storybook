@@ -10,12 +10,10 @@ export default class InputField extends React.PureComponent {
 
   static propTypes = {
     error: PropTypes.bool,
-    help: PropTypes.bool,
   };
 
   static defaultProps = {
     error: false,
-    help: false,
   };
 
   render() {

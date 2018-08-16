@@ -25,16 +25,6 @@ storiesOf('Forms / InputField', module)
       <InputField defaultValue="" error />
     );
   })
-  .add('Avec aide', () => {
-    return (
-      <InputField defaultValue="" help />
-    );
-  })
-  .add('Avec erreur et aide', () => {
-    return (
-      <InputField defaultValue="" error help />
-    );
-  })
   .add('Désactivé', () => {
     return (
       <InputField defaultValue="Example" disabled />
