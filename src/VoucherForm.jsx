@@ -22,7 +22,6 @@ class VoucherForm extends React.PureComponent {
   };
 
   onCancel = () => {
-    this.props.resetForm();
     this.props.onCancel();
   };
 
@@ -43,6 +42,8 @@ class VoucherForm extends React.PureComponent {
 
     const codeErrorMessage = submitCount > 0 || touched.code ? errors.code : null;
     const success = status === 'SUCCESS';
+    const submitError = status === 'FAILED';
+    const disableForm = isSubmitting || success;
 
     return (
       <form className={`voucher-form ${className}`} onSubmit={handleSubmit}>
@@ -56,8 +57,9 @@ class VoucherForm extends React.PureComponent {
                 {...props}
                 name="code"
                 autoFocus
+                autoComplete="off"
                 maxLength={16}
-                disabled={isSubmitting}
+                disabled={disableForm}
                 value={values.code}
                 onChange={handleChange}
                 onBlur={handleBlur} />
@@ -70,9 +72,9 @@ class VoucherForm extends React.PureComponent {
             className="voucher-form__button"
             type="submit"
             size="small"
-            showDisabled={!isValid}
-            disabled={isSubmitting}
-            loading={isSubmitting}
+            showDisabled={!submitError && !isValid}
+            disabled={disableForm}
+            loading={disableForm}
             finished={success}>
             Ajouter le code promo
           </ProgressButton>
@@ -80,7 +82,7 @@ class VoucherForm extends React.PureComponent {
             className="voucher-form__button"
             type="button"
             size="small"
-            disabled={isSubmitting}
+            disabled={disableForm}
             onClick={this.onCancel}>
             Annuler
           </Button>
@@ -115,6 +117,7 @@ export default withFormik({
       setErrors({
         code: "Nous n'avons pas réussi à prendre en compte votre code promo",
       });
+      setStatus('FAILED');
     } finally {
       setSubmitting(false);
     }
