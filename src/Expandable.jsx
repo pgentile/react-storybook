@@ -64,7 +64,6 @@ export default class Expandable extends React.PureComponent {
     });
 
     this.stillMounted(() => {
-      console.info('Changing the window size to auto');
       this.windowRef.current.style.height = 'auto';
     });
   }
