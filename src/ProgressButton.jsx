@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Button from './Button';
+import bemModifiers from './bemModifiers';
+
 import './ProgressButton.scss';
 
 
@@ -8,34 +11,37 @@ import './ProgressButton.scss';
 export default class ProgressButton extends React.PureComponent {
 
   static propTypes = {
+    ...Button.propTypes,
     loading: PropTypes.bool,
     finished: PropTypes.bool,
-    children: PropTypes.node,
-    onClick: PropTypes.func,
+    disabled: PropTypes.bool,
   };
 
   static defaultProps = {
+    className: '',
     loading: false,
-    finished: true,
-  };
-
-  onClick = (event) => {
-    const { onClick } = this.props;
-    if (onClick) {
-      onClick(event);
-    }
+    finished: false,
+    disabled: false,
   };
 
   render() {
-    const { loading, finished, children, ...otherProps } = this.props;
+    const { className, loading, finished, disabled, children, ...otherProps } = this.props;
+
+    const progressBarClassName = bemModifiers('progress-button__progress-bar', {
+      loading,
+      finished,
+    });
 
     return (
-      <button className="progress-button" {...otherProps} onClick={this.onClick}>
+      <Button
+        className={`progress-button ${className}`}
+        disabled={loading || finished || disabled}
+        {...otherProps}>
         <div className="progress-button__content">
           {children}
         </div>
-        <div className={`progress-button__progress-bar ${loading && !finished ? 'progress-button__progress-bar_loading' : ''} ${finished ? 'progress-button__progress-bar_finished' : ''}`} />
-      </button>
+        <div className={progressBarClassName} />
+      </Button>
     );
   }
 

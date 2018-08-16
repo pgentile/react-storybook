@@ -5,6 +5,7 @@ import { withFormik } from 'formik';
 import FieldContainer from './FieldContainer';
 import InputField from './InputField';
 import Button from './Button';
+import ProgressButton from './ProgressButton';
 
 import './VoucherForm.scss';
 
@@ -37,9 +38,11 @@ class VoucherForm extends React.PureComponent {
       handleSubmit,
       isSubmitting,
       isValid,
+      status,
     } = this.props;
 
     const codeErrorMessage = submitCount > 0 || touched.code ? errors.code : null;
+    const success = status === 'SUCCESS';
 
     return (
       <form className={`voucher-form ${className}`} onSubmit={handleSubmit}>
@@ -63,14 +66,16 @@ class VoucherForm extends React.PureComponent {
         </div>
 
         <div className="voucher-form__line">
-          <Button
+          <ProgressButton
             className="voucher-form__button"
             type="submit"
             size="small"
             showDisabled={!isValid}
-            disabled={isSubmitting}>
+            disabled={isSubmitting}
+            loading={isSubmitting}
+            finished={success}>
             Ajouter le code promo
-          </Button>
+          </ProgressButton>
           <Button
             className="voucher-form__button"
             type="button"
@@ -102,9 +107,10 @@ export default withFormik({
 
     return errors;
   },
-  handleSubmit: async (values, { props, setSubmitting, setErrors }) => {
+  handleSubmit: async (values, { props, setSubmitting, setErrors, setStatus }) => {
     try {
       await props.onAddVoucher(values.code);
+      setStatus('SUCCESS');
     } catch (e) {
       setErrors({
         code: "Nous n'avons pas réussi à prendre en compte votre code promo",

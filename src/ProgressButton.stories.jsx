@@ -1,19 +1,66 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean } from '@storybook/addon-knobs/react';
 
 import ProgressButton from './ProgressButton';
 
 
 storiesOf('ProgressButton', module)
-  .addDecorator(withKnobs)
   .add('main', () => {
     return (
-      <ProgressButton
-        disabled={boolean('Disabled ?', false)}
-        loading={boolean('Loading ?', false)}
-        finished={boolean('Finished ?', false)}>
+      <ProgressButtonDemo />
+    );
+  })
+  .add('loading', () => {
+    return (
+      <ProgressButton loading>Payer</ProgressButton>
+    );
+  })
+  .add('finished', () => {
+    return (
+      <ProgressButton finished>Payer</ProgressButton>
+    );
+  })
+  .add('disabled', () => {
+    return (
+      <ProgressButton disabled>Payer</ProgressButton>
+    );
+  });
+
+
+class ProgressButtonDemo extends React.PureComponent {
+
+  state = {
+    loading: false,
+    finished: false,
+  };
+
+  onClick = () => {
+    this.setState({
+      loading: true,
+    });
+
+    setTimeout(() => {
+      this.setState({
+        finished: true,
+      });
+
+      setTimeout(() => {
+        this.setState({
+          loading: false,
+          finished: false,
+        });
+      }, 1000);
+    }, 3000);
+  };
+
+  render() {
+    const { loading, finished } = this.state;
+
+    return (
+      <ProgressButton loading={loading} finished={finished} onClick={this.onClick}>
         Payer
       </ProgressButton>
     );
-  });
+  }
+
+}

@@ -1,22 +1,10 @@
 .progress-button {
-  display: inline-block;
   position: relative;
-  background: darkcyan;
-  color: white;
-  font-weight: bold;
-  // box-sizing: border-box;
-
-  border: 3px red solid;
-  border-radius: 7px;
-
-  &__content {
-    min-width: 10em;
-    margin: 15px;
-  }
+  overflow: hidden;
 
   &__progress-bar {
-    border-radius: 7px;
-    background-color: green;
+    background-color: lighten(lightblue, 10%);
+
     position: absolute;
     top: 0;
     left: 0;
@@ -26,16 +14,16 @@
     opacity: 0;
     transition-property: width;
 
-    &_loading {
+    &--loading {
       opacity: 1;
-      width: 100%;
+      width: 90%;
       transition-duration: 10s;
     }
 
-    &_finished {
+    &--finished {
       opacity: 1;
       width: 100%;
-      transition-duration: 0.5s;
+      transition-duration: 0.2s;
     }
 
   }

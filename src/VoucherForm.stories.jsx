@@ -10,13 +10,6 @@ const actions = {
   onCancel: action('cancel'),
 };
 
-const addVoucherWithFailure = async () => {
-  return new Promise((resolve, reject) => {
-    const error = new Error('Technical error');
-    setTimeout(() => reject(error), 500);
-  });
-};
-
 
 storiesOf('Payment / VoucherForm', module)
   .add('Défaut', () => {
@@ -29,6 +22,15 @@ storiesOf('Payment / VoucherForm', module)
       <VoucherForm isInitialValid code="EURO2016" {...actions} />
     );
   })
+  .add('submit success', () => {
+    return (
+      <VoucherForm
+        isInitialValid
+        code="CODE21"
+        {...actions}
+        onAddVoucher={addVoucherWithSuccess} />
+    );
+  })
   .add('submit error', () => {
     return (
       <VoucherForm
@@ -38,3 +40,17 @@ storiesOf('Payment / VoucherForm', module)
         onAddVoucher={addVoucherWithFailure} />
     );
   });
+
+
+const addVoucherWithSuccess = async () => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(), 2000);
+  });
+};
+
+const addVoucherWithFailure = async () => {
+  return new Promise((resolve, reject) => {
+    const error = new Error('Technical error');
+    setTimeout(() => reject(error), 500);
+  });
+};
