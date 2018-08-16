@@ -610,21 +610,17 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
     className="form-field-container__field"
   >
     <input
-      className="form-input-field form-input-field--help"
+      className="form-input-field"
       id="form-field-2"
       placeholder="Valeur d'exemple"
       type="text"
     />
   </div>
-  <ul
+  <p
     className="form-field-container__help"
   >
-    <li
-      className="form-field-container__help-message"
-    >
-      Un peu d'aide, ça ne fait pas de mal
-    </li>
-  </ul>
+    Un peu d'aide, ça ne fait pas de mal
+  </p>
 </div>
 `;
 
@@ -648,20 +644,11 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
       type="text"
     />
   </div>
-  <ul
-    className="form-field-container__errors"
+  <p
+    className="form-field-container__error"
   >
-    <li
-      className="form-field-container__errors-message"
-    >
-      Données invalides
-    </li>
-    <li
-      className="form-field-container__errors-message"
-    >
-      Nom inconnu
-    </li>
-  </ul>
+    Nom inconnu
+  </p>
 </div>
 `;
 
@@ -685,15 +672,11 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
       type="text"
     />
   </div>
-  <ul
-    className="form-field-container__errors"
+  <p
+    className="form-field-container__error"
   >
-    <li
-      className="form-field-container__errors-message"
-    >
-      Données invalides
-    </li>
-  </ul>
+    Données invalides
+  </p>
 </div>
 `;
 
@@ -720,25 +703,9 @@ exports[`Storyshots Forms / FieldContainer main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / InputField Avec aide 1`] = `
-<input
-  className="form-input-field form-input-field--help"
-  defaultValue=""
-  type="text"
-/>
-`;
-
 exports[`Storyshots Forms / InputField Avec erreur 1`] = `
 <input
   className="form-input-field form-input-field--error"
-  defaultValue=""
-  type="text"
-/>
-`;
-
-exports[`Storyshots Forms / InputField Avec erreur et aide 1`] = `
-<input
-  className="form-input-field form-input-field--error form-input-field--help"
   defaultValue=""
   type="text"
 />
@@ -2113,28 +2080,6 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
       Annuler
     </button>
   </div>
-  <pre
-    className="voucher-form__line"
-  >
-    {
-  "values": {
-    "code": ""
-  },
-  "errors": {},
-  "touched": {},
-  "isSubmitting": false,
-  "isValidating": false,
-  "submitCount": 0,
-  "dirty": false,
-  "isValid": false,
-  "initialValues": {
-    "code": ""
-  },
-  "validateOnChange": true,
-  "validateOnBlur": true,
-  "className": ""
-}
-  </pre>
 </form>
 `;
 
@@ -2191,29 +2136,6 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
       Annuler
     </button>
   </div>
-  <pre
-    className="voucher-form__line"
-  >
-    {
-  "code": "EURO2016",
-  "values": {
-    "code": "EURO2016"
-  },
-  "errors": {},
-  "touched": {},
-  "isSubmitting": false,
-  "isValidating": false,
-  "submitCount": 0,
-  "dirty": false,
-  "isValid": false,
-  "initialValues": {
-    "code": "EURO2016"
-  },
-  "validateOnChange": true,
-  "validateOnBlur": true,
-  "className": ""
-}
-  </pre>
 </form>
 `;
 
@@ -2270,29 +2192,6 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
       Annuler
     </button>
   </div>
-  <pre
-    className="voucher-form__line"
-  >
-    {
-  "code": "CODE21",
-  "values": {
-    "code": "CODE21"
-  },
-  "errors": {},
-  "touched": {},
-  "isSubmitting": false,
-  "isValidating": false,
-  "submitCount": 0,
-  "dirty": false,
-  "isValid": false,
-  "initialValues": {
-    "code": "CODE21"
-  },
-  "validateOnChange": true,
-  "validateOnBlur": true,
-  "className": ""
-}
-  </pre>
 </form>
 `;
 

@@ -12,26 +12,20 @@ export default class FieldContainer extends React.PureComponent {
     label: PropTypes.node,
     id: PropTypes.string,
     children: PropTypes.func.isRequired,
-    errorMessages: PropTypes.arrayOf(PropTypes.node.isRequired),
-    helpMessages: PropTypes.arrayOf(PropTypes.node.isRequired),
-  };
-
-  static defaultProps = {
-    errorMessages: [],
-    helpMessages: [],
+    errorMessage: PropTypes.node,
+    helpMessage: PropTypes.node,
   };
 
   generatedId = `form-field-${FieldContainer.count++}`;
 
   render() {
-    const { id, label, children, errorMessages, helpMessages } = this.props;
-    const showErrorMessages = errorMessages.length > 0;
-    const showHelpMessages = helpMessages.length > 0 && !showErrorMessages;
+    const { id, label, children, errorMessage, helpMessage } = this.props;
+    const showErrorMessage = !!errorMessage;
+    const showHelpMessage = !!helpMessage && !showErrorMessage;
     const inputId = id || this.generatedId;
 
     const fieldProps = {
-      error: showErrorMessages,
-      help: showHelpMessages,
+      error: showErrorMessage,
       id: inputId,
     };
 
@@ -46,19 +40,9 @@ export default class FieldContainer extends React.PureComponent {
           {children(fieldProps)}
         </div>
 
-        {showErrorMessages &&
-          <ul className="form-field-container__errors">
-            {errorMessages.map((message, index) => (
-              <li className="form-field-container__errors-message" key={index}>{message}</li>
-            ))}
-          </ul>}
+        {showErrorMessage && <p className="form-field-container__error">{errorMessage}</p>}
 
-        {(showHelpMessages) &&
-          <ul className="form-field-container__help">
-            {helpMessages.map((message, index) => (
-              <li className="form-field-container__help-message" key={index}>{message}</li>
-            ))}
-          </ul>}
+        {showHelpMessage && <p className="form-field-container__help">{helpMessage}</p>}
 
       </div>
     );

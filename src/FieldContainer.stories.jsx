@@ -23,7 +23,7 @@ storiesOf('Forms / FieldContainer', module)
     return (
       <FieldContainer
         label="Example"
-        errorMessages={['Données invalides', 'Nom inconnu']}>
+        errorMessage="Nom inconnu">
         {innerField}
       </FieldContainer>
     );
@@ -32,7 +32,7 @@ storiesOf('Forms / FieldContainer', module)
     return (
       <FieldContainer
         label="Example"
-        helpMessages={["Un peu d'aide, ça ne fait pas de mal"]}>
+        helpMessage="Un peu d'aide, ça ne fait pas de mal">
         {innerField}
       </FieldContainer>
     );
@@ -41,8 +41,8 @@ storiesOf('Forms / FieldContainer', module)
     return (
       <FieldContainer
         label="Example"
-        errorMessages={['Données invalides']}
-        helpMessages={['Aide']}>
+        errorMessage="Données invalides"
+        helpMessage="Aide">
         {innerField}
       </FieldContainer>
     );

@@ -1,6 +1,5 @@
 .form-field-container {
   $margin: 0.5rem;
-  $message-margin: $margin - 0.2rem;
 
   &__label {
     display: block;
@@ -13,56 +12,27 @@
     font-weight: bold;
   }
 
-  &__errors {
-
+  &__error {
     display: block;
-    list-style-type: none;
 
     margin: 0;
     padding: 0;
+    margin-top: $margin;
 
     font-size: 1rem;
     color: red;
     font-weight: bold;
-
-    &-message {
-      display: block;
-
-      margin: 0;
-      padding: 0;
-      margin-top: $message-margin;
-
-      &:first-child {
-        margin-top: $margin;
-      }
-    }
-
   }
 
   &__help {
-
     display: block;
-    list-style-type: none;
 
     margin: 0;
     padding: 0;
+    margin-top: $margin;
 
     font-size: 0.8rem;
     color: grey;
-
-    &-message {
-      display: block;
-
-      margin: 0;
-      padding: 0;
-      margin-top: $message-margin;
-
-      &:first-child {
-        margin-top: $margin;
-      }
-
-    }
-
   }
 
 }

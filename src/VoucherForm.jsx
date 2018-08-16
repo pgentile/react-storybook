@@ -36,9 +36,7 @@ class VoucherForm extends React.PureComponent {
       isSubmitting,
     } = this.props;
 
-    const errorMessages = nonFalseList(
-      submitCount > 0 || touched.code ? errors.code : null
-    );
+    const codeErrorMessage = submitCount > 0 || touched.code ? errors.code : null;
 
     return (
       <form className={`voucher-form ${className}`} onSubmit={handleSubmit}>
@@ -46,7 +44,7 @@ class VoucherForm extends React.PureComponent {
         <div className="voucher-form__line">
           <FieldContainer
             label="Code promo"
-            errorMessages={errorMessages}>
+            errorMessage={codeErrorMessage}>
             {props => (
               <InputField
                 {...props}
@@ -71,7 +69,6 @@ class VoucherForm extends React.PureComponent {
           </button>
         </div>
 
-        <pre className="voucher-form__line">{JSON.stringify(this.props, null, 2)}</pre>
       </form>
     );
   }
@@ -104,8 +101,3 @@ export default withFormik({
     }
   },
 })(VoucherForm);
-
-
-function nonFalseList(...items) {
-  return items.filter(item => !!item);
-}
