@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Card from './Card';
+import Button from './Button';
 import FlatButton from './FlatButton';
 
 import './Donation.scss';
@@ -80,9 +81,9 @@ class SelectedDonation extends React.PureComponent {
           Nous vous en remercions&nbsp;!
         </p>
         <p className="donation__selection-cancel">
-          <button onClick={this.onCancelDonation}>
+          <Button size="small" onClick={this.onCancelDonation}>
             Annuler mon don
-          </button>
+          </Button>
         </p>
       </div>
     );

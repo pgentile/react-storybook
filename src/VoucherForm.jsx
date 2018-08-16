@@ -65,14 +65,16 @@ class VoucherForm extends React.PureComponent {
         <div className="voucher-form__line">
           <Button
             className="voucher-form__button"
+            type="submit"
+            size="small"
             showDisabled={!isValid}
-            disabled={isSubmitting}
-            type="submit">
+            disabled={isSubmitting}>
             Ajouter le code promo
           </Button>
           <Button
             className="voucher-form__button"
             type="button"
+            size="small"
             disabled={isSubmitting}
             onClick={this.onCancel}>
             Annuler

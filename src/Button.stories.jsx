@@ -1,22 +1,37 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 
 import Button from './Button';
 
 
-storiesOf('Forms / Button', module)
+const actions = {
+  onClick: action('click'),
+};
+
+
+const stories = storiesOf('Forms / Button', module)
   .add('main', () => {
     return (
-      <Button>Mon bouton</Button>
+      <Button {...actions}>Mon bouton</Button>
     );
   })
   .add('disabled', () => {
     return (
-      <Button disabled>Mon bouton</Button>
+      <Button {...actions} disabled>Mon bouton</Button>
     );
   })
   .add('show disabled', () => {
     return (
-      <Button showDisabled>Mon bouton</Button>
+      <Button {...actions} showDisabled>Mon bouton</Button>
     );
   });
+
+
+['small', 'normal', 'large'].forEach(size => {
+  stories.add(`Taille ${size}`, () => {
+    return (
+      <Button {...actions} size={size}>Mon bouton</Button>
+    );
+  });
+});

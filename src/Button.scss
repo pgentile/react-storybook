@@ -44,4 +44,17 @@
     }
   }
 
+  &--size {
+
+    &-small {
+      padding: 0.3rem 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    &-large {
+      font-size: 1.5rem;
+    }
+
+  }
+
 }

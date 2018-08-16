@@ -596,10 +596,38 @@ exports[`Storyshots Encryption test 1`] = `
 </div>
 `;
 
+exports[`Storyshots Forms / Button Taille large 1`] = `
+<button
+  className="button button--size-large "
+  onClick={[Function]}
+>
+  Mon bouton
+</button>
+`;
+
+exports[`Storyshots Forms / Button Taille normal 1`] = `
+<button
+  className="button button--size-normal "
+  onClick={[Function]}
+>
+  Mon bouton
+</button>
+`;
+
+exports[`Storyshots Forms / Button Taille small 1`] = `
+<button
+  className="button button--size-small "
+  onClick={[Function]}
+>
+  Mon bouton
+</button>
+`;
+
 exports[`Storyshots Forms / Button disabled 1`] = `
 <button
-  className="button "
+  className="button button--size-normal "
   disabled={true}
+  onClick={[Function]}
 >
   Mon bouton
 </button>
@@ -607,7 +635,8 @@ exports[`Storyshots Forms / Button disabled 1`] = `
 
 exports[`Storyshots Forms / Button main 1`] = `
 <button
-  className="button "
+  className="button button--size-normal "
+  onClick={[Function]}
 >
   Mon bouton
 </button>
@@ -615,7 +644,8 @@ exports[`Storyshots Forms / Button main 1`] = `
 
 exports[`Storyshots Forms / Button show disabled 1`] = `
 <button
-  className="button button--disabled "
+  className="button button--disabled button--size-normal "
+  onClick={[Function]}
 >
   Mon bouton
 </button>
@@ -1118,6 +1148,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
         className="donation__selection-cancel"
       >
         <button
+          className="button button--size-small "
           onClick={[Function]}
         >
           Annuler mon don
@@ -2091,14 +2122,14 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     className="voucher-form__line"
   >
     <button
-      className="button button--disabled voucher-form__button"
+      className="button button--disabled button--size-small voucher-form__button"
       disabled={false}
       type="submit"
     >
       Ajouter le code promo
     </button>
     <button
-      className="button voucher-form__button"
+      className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -2148,14 +2179,14 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     className="voucher-form__line"
   >
     <button
-      className="button voucher-form__button"
+      className="button button--size-small voucher-form__button"
       disabled={false}
       type="submit"
     >
       Ajouter le code promo
     </button>
     <button
-      className="button voucher-form__button"
+      className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -2205,14 +2236,14 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     className="voucher-form__line"
   >
     <button
-      className="button voucher-form__button"
+      className="button button--size-small voucher-form__button"
       disabled={false}
       type="submit"
     >
       Ajouter le code promo
     </button>
     <button
-      className="button voucher-form__button"
+      className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
       type="button"

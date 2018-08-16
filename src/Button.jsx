@@ -13,19 +13,22 @@ export default class Button extends React.PureComponent {
     children: PropTypes.node,
     className: PropTypes.string,
     showDisabled: PropTypes.bool,
+    size: PropTypes.oneOf(['small', 'normal', 'large']),
   };
 
   static defaultProps = {
     as: 'button',
     className: '',
     showDisabled: false,
+    size: 'normal',
   };
 
   render() {
-    const { as: Element, children, className, showDisabled, ...otherProps } = this.props;
+    const { as: Element, children, className, showDisabled, size, ...otherProps } = this.props;
 
     const realClassName = bemModifiers('button', {
       disabled: showDisabled,
+      [`size-${size}`]: true,
     });
 
     return (
