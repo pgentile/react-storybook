@@ -1,27 +1,38 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs/react';
-import { action } from '@storybook/addon-actions';
 
 import DateInput from './DateInput';
 
 
-storiesOf('DateInput', module)
-  .addDecorator(withKnobs)
+storiesOf('Forms / DateInput', module)
   .add('main', () => {
     return (
-      <DateInput value={text('Date', '1990-02-13')} onChange={action('onChange')} />
+      <DateInput />
     );
   })
-  .add('empty', () => {
+  .add('with value', () => {
     return (
-      <DateInput onChange={action('onChange')} />
+      <DateInput value="1990-02-13" />
     );
   })
   .add('dynamic', () => {
     return (
       <DynamicForm />
+    );
+  })
+  .add('error', () => {
+    return (
+      <DateInput value="1990-02-13" error />
+    );
+  })
+  .add('disabled', () => {
+    return (
+      <DateInput value="1990-02-13" disabled />
+    );
+  })
+  .add('read-only', () => {
+    return (
+      <DateInput value="1990-02-13" readOnly />
     );
   });
 

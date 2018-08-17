@@ -1,10 +1,51 @@
-.date-input {
-  border: none;
+.form-date-input {
+  $color: black;
+  $border-color: #EEE;
+  $bottom-border-color: darken($border-color, 20%);
+  $border-width: 1px;
+  $border-bottom-width: 3px;
+  $background-color: white;
+
+  $error-border-color: red;
+
+  $disabled-background-color: lighten($border-color, 5%);
+  $disabled-color: lighten($color, 60%);
+
+  $focus-border-color: darken($border-color, 40%);
+
+  $placeholder-color: lighten($color, 70%);
+
+
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: inline;
+  display: block;
+
+  background-color: $background-color;
+
+  border: $border-width solid $border-color;
+  border-bottom: $border-bottom-width solid $bottom-border-color;
+
+  transition: border-color 0.2s ease-in;
 
   &__input {
+
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.5rem;
+    border: 0;
+
+    border-right: $border-width solid $border-color;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    background-color: transparent;
+
+    font-size: 1rem;
+    color: $color;
 
     &_day, &_month {
       width: 4em;
@@ -14,10 +55,42 @@
       width: 8em;
     }
 
-    &::placeholder {
-      color: lightgray;
+    &:focus {
+      outline: none;
     }
 
+    &:disabled {
+      transition: none;
+
+      color: $disabled-color;
+    }
+
+    &::placeholder {
+      color: $placeholder-color;
+      font-style: italic;
+    }
+
+  }
+
+  &--focus {
+    border-color: $focus-border-color;
+  }
+
+  &--disabled {
+    transition: none;
+
+    background-color: $disabled-background-color;
+    border-color: $border-color;
+  }
+
+  &--read-only {
+    transition: none;
+
+    border-color: $border-color;
+  }
+
+  &--error {
+    border-bottom-color: $error-border-color;
   }
 
 }

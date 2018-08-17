@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions';
 import YearMonthInput from './YearMonthInput';
 
 
-storiesOf('YearMonthInput', module)
+storiesOf('Forms / YearMonthInput', module)
   .addDecorator(withKnobs)
   .add('main', () => {
     return (

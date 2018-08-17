@@ -2,6 +2,18 @@
   $color: black;
   $border-color: #EEE;
   $bottom-border-color: darken($border-color, 20%);
+  $border-width: 1px;
+  $border-bottom-width: 3px;
+  $background-color: white;
+
+  $error-border-color: red;
+
+  $disabled-background-color: lighten($border-color, 5%);
+  $disabled-color: lighten($color, 60%);
+
+  $focus-border-color: darken($border-color, 40%);
+
+  $placeholder-color: lighten($color, 70%);
 
   display: block;
   box-sizing: border-box;
@@ -9,27 +21,27 @@
   margin: 0;
   padding: 0.5rem;
 
-  background-color: white;
+  background-color: $background-color;
 
   font-size: 1rem;
   color: $color;
 
-  border: 1px solid $border-color;
+  border: $border-width solid $border-color;
   border-bottom-color: $bottom-border-color;
-  border-bottom-width: 3px;
+  border-bottom-width: $border-bottom-width;
 
   transition: border-color 0.2s ease-in;
 
   &:focus {
     outline: none;
-    border-color: darken($border-color, 40%);
+    border-color: $focus-border-color;
   }
 
   &:disabled {
     transition: none;
 
-    background-color: lighten($border-color, 5%);
-    color: lighten($color, 60%);
+    background-color: $disabled-background-color;
+    color: $disabled-color;
     border-color: $border-color;
 
     &:focus {
@@ -48,12 +60,11 @@
   }
 
   &::placeholder {
-    color: lighten($color, 70%);
+    color: $placeholder-color;
     font-style: italic;
   }
 
   &--error {
-    $error-border-color: red;
 
     border-bottom-color: $error-border-color;
 

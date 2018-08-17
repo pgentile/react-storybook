@@ -3,12 +3,29 @@ import PropTypes from 'prop-types';
 
 import './DateInput.scss';
 
+import bemModifiers from './bemModifiers';
+
 
 export default class DateInput extends React.PureComponent {
 
   static propTypes = {
+    className: PropTypes.string,
+    id: PropTypes.string,
+    error: PropTypes.bool,
+    disabled: PropTypes.bool,
+    readOnly: PropTypes.bool,
     value: PropTypes.string,
     onChange: PropTypes.func,
+  };
+
+  static defaultProps = {
+    className: '',
+    disabled: false,
+    readOnly: false,
+  };
+
+  state = {
+    focus: false,
   };
 
   onValueChange = (name) => (event) => {
@@ -39,41 +56,76 @@ export default class DateInput extends React.PureComponent {
   onMonthChange = this.onValueChange('month');
   onYearChange = this.onValueChange('year');
 
+  onFieldFocus = () => {
+    this.setState({
+      focus: true,
+    });
+  };
+
+  onFieldBlur = () => {
+    this.setState({
+      focus: false,
+    });
+  };
+
   render() {
-    const { value } = this.props;
+    const { id, className, error, disabled, readOnly, value } = this.props;
+    const { focus } = this.state;
     const { year, month, day } = parseValue(value);
 
+    const realClassName = bemModifiers('form-date-input', {
+      error,
+      disabled,
+      focus,
+      'read-only': readOnly,
+    });
+
     return (
-      <fieldset className="date-input">
+      <fieldset className={`${realClassName} ${className}`}>
+
         <input
-          className="date-input__input date-input__input_day"
+          className="form-date-input__input form-date-input__input_day"
           type="text"
           inputMode="numeric"
           autoComplete="bday-day"
           maxLength={2}
           placeholder="Jour"
+          id={id}
           value={day}
+          disabled={disabled}
+          readOnly={readOnly}
+          onFocus={this.onFieldFocus}
+          onBlur={this.onFieldBlur}
           onChange={this.onDayChange} />
 
         <input
-          className="date-input__input date-input__input_month"
+          className="form-date-input__input form-date-input__input_month"
           type="text"
           inputMode="numeric"
           autoComplete="bday-month"
           maxLength={2}
           placeholder="Mois"
           value={month}
+          disabled={disabled}
+          readOnly={readOnly}
+          onFocus={this.onFieldFocus}
+          onBlur={this.onFieldBlur}
           onChange={this.onMonthChange} />
 
         <input
-          className="date-input__input date-input__input_year"
+          className="form-date-input__input form-date-input__input_year"
           type="text"
           inputMode="numeric"
           autoComplete="bday-year"
           maxLength={4}
           placeholder="Année"
           value={year}
+          disabled={disabled}
+          readOnly={readOnly}
+          onFocus={this.onFieldFocus}
+          onBlur={this.onFieldBlur}
           onChange={this.onYearChange} />
+
       </fieldset>
     );
   }

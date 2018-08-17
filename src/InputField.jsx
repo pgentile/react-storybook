@@ -17,11 +17,10 @@ export default class InputField extends React.PureComponent {
   };
 
   render() {
-    const { error, help, ...otherProps } = this.props;
+    const { error, ...otherProps } = this.props;
 
     const className = bemModifiers('form-input-field', {
       error,
-      help,
     });
 
     return (
