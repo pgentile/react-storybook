@@ -465,117 +465,6 @@ exports[`Storyshots CreditCardForm main 1`] = `
 </form>
 `;
 
-exports[`Storyshots DateInput dynamic 1`] = `
-<fieldset
-  className="date-input"
->
-  <input
-    autoComplete="bday-day"
-    className="date-input__input date-input__input_day"
-    inputMode="numeric"
-    maxLength={2}
-    onChange={[Function]}
-    placeholder="Jour"
-    type="text"
-    value=""
-  />
-  <input
-    autoComplete="bday-month"
-    className="date-input__input date-input__input_month"
-    inputMode="numeric"
-    maxLength={2}
-    onChange={[Function]}
-    placeholder="Mois"
-    type="text"
-    value=""
-  />
-  <input
-    autoComplete="bday-year"
-    className="date-input__input date-input__input_year"
-    inputMode="numeric"
-    maxLength={4}
-    onChange={[Function]}
-    placeholder="Année"
-    type="text"
-    value=""
-  />
-</fieldset>
-`;
-
-exports[`Storyshots DateInput empty 1`] = `
-<fieldset
-  className="date-input"
->
-  <input
-    autoComplete="bday-day"
-    className="date-input__input date-input__input_day"
-    inputMode="numeric"
-    maxLength={2}
-    onChange={[Function]}
-    placeholder="Jour"
-    type="text"
-    value=""
-  />
-  <input
-    autoComplete="bday-month"
-    className="date-input__input date-input__input_month"
-    inputMode="numeric"
-    maxLength={2}
-    onChange={[Function]}
-    placeholder="Mois"
-    type="text"
-    value=""
-  />
-  <input
-    autoComplete="bday-year"
-    className="date-input__input date-input__input_year"
-    inputMode="numeric"
-    maxLength={4}
-    onChange={[Function]}
-    placeholder="Année"
-    type="text"
-    value=""
-  />
-</fieldset>
-`;
-
-exports[`Storyshots DateInput main 1`] = `
-<fieldset
-  className="date-input"
->
-  <input
-    autoComplete="bday-day"
-    className="date-input__input date-input__input_day"
-    inputMode="numeric"
-    maxLength={2}
-    onChange={[Function]}
-    placeholder="Jour"
-    type="text"
-    value="13"
-  />
-  <input
-    autoComplete="bday-month"
-    className="date-input__input date-input__input_month"
-    inputMode="numeric"
-    maxLength={2}
-    onChange={[Function]}
-    placeholder="Mois"
-    type="text"
-    value="02"
-  />
-  <input
-    autoComplete="bday-year"
-    className="date-input__input date-input__input_year"
-    inputMode="numeric"
-    maxLength={4}
-    onChange={[Function]}
-    placeholder="Année"
-    type="text"
-    value="1990"
-  />
-</fieldset>
-`;
-
 exports[`Storyshots DebouncedInput with a debounced value 1`] = `
 <input
   onChange={[Function]}
@@ -649,6 +538,300 @@ exports[`Storyshots Forms / Button show disabled 1`] = `
 >
   Mon bouton
 </button>
+`;
+
+exports[`Storyshots Forms / DateInput disabled 1`] = `
+<fieldset
+  className="form-date-input form-date-input--disabled "
+>
+  <input
+    autoComplete="bday-day"
+    className="form-date-input__input form-date-input__input_day"
+    disabled={true}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Jour"
+    readOnly={false}
+    type="text"
+    value="13"
+  />
+  <input
+    autoComplete="bday-month"
+    className="form-date-input__input form-date-input__input_month"
+    disabled={true}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Mois"
+    readOnly={false}
+    type="text"
+    value="02"
+  />
+  <input
+    autoComplete="bday-year"
+    className="form-date-input__input form-date-input__input_year"
+    disabled={true}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Année"
+    readOnly={false}
+    type="text"
+    value="1990"
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput dynamic 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    autoComplete="bday-day"
+    className="form-date-input__input form-date-input__input_day"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Jour"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+  <input
+    autoComplete="bday-month"
+    className="form-date-input__input form-date-input__input_month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Mois"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+  <input
+    autoComplete="bday-year"
+    className="form-date-input__input form-date-input__input_year"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Année"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput error 1`] = `
+<fieldset
+  className="form-date-input form-date-input--error "
+>
+  <input
+    autoComplete="bday-day"
+    className="form-date-input__input form-date-input__input_day"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Jour"
+    readOnly={false}
+    type="text"
+    value="13"
+  />
+  <input
+    autoComplete="bday-month"
+    className="form-date-input__input form-date-input__input_month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Mois"
+    readOnly={false}
+    type="text"
+    value="02"
+  />
+  <input
+    autoComplete="bday-year"
+    className="form-date-input__input form-date-input__input_year"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Année"
+    readOnly={false}
+    type="text"
+    value="1990"
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput main 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    autoComplete="bday-day"
+    className="form-date-input__input form-date-input__input_day"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Jour"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+  <input
+    autoComplete="bday-month"
+    className="form-date-input__input form-date-input__input_month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Mois"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+  <input
+    autoComplete="bday-year"
+    className="form-date-input__input form-date-input__input_year"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Année"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput read-only 1`] = `
+<fieldset
+  className="form-date-input form-date-input--read-only "
+>
+  <input
+    autoComplete="bday-day"
+    className="form-date-input__input form-date-input__input_day"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Jour"
+    readOnly={true}
+    type="text"
+    value="13"
+  />
+  <input
+    autoComplete="bday-month"
+    className="form-date-input__input form-date-input__input_month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Mois"
+    readOnly={true}
+    type="text"
+    value="02"
+  />
+  <input
+    autoComplete="bday-year"
+    className="form-date-input__input form-date-input__input_year"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Année"
+    readOnly={true}
+    type="text"
+    value="1990"
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput with value 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    autoComplete="bday-day"
+    className="form-date-input__input form-date-input__input_day"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Jour"
+    readOnly={false}
+    type="text"
+    value="13"
+  />
+  <input
+    autoComplete="bday-month"
+    className="form-date-input__input form-date-input__input_month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Mois"
+    readOnly={false}
+    type="text"
+    value="02"
+  />
+  <input
+    autoComplete="bday-year"
+    className="form-date-input__input form-date-input__input_year"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Année"
+    readOnly={false}
+    type="text"
+    value="1990"
+  />
+</fieldset>
 `;
 
 exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
@@ -872,6 +1055,39 @@ exports[`Storyshots Forms / ProgressButton main 1`] = `
     className="progress-button__progress-bar"
   />
 </button>
+`;
+
+exports[`Storyshots Forms / YearMonthInput main 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    className="form-date-input__input form-date-input__input_month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Mois"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+  <input
+    className="form-date-input__input form-date-input__input_year"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Année"
+    readOnly={false}
+    type="text"
+    value=""
+  />
+</fieldset>
 `;
 
 exports[`Storyshots LoaderDemo main 1`] = `
@@ -3783,29 +3999,4 @@ exports[`Storyshots Wip main 1`] = `
     Work in progress
   </div>
 </div>
-`;
-
-exports[`Storyshots YearMonthInput main 1`] = `
-<fieldset
-  className="date-input"
->
-  <input
-    className="date-input__input date-input__input_month"
-    inputMode="numeric"
-    maxLength={2}
-    onChange={[Function]}
-    placeholder="Mois"
-    type="text"
-    value=""
-  />
-  <input
-    className="date-input__input date-input__input_year"
-    inputMode="numeric"
-    maxLength={4}
-    onChange={[Function]}
-    placeholder="Année"
-    type="text"
-    value=""
-  />
-</fieldset>
 `;
