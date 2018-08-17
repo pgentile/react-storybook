@@ -7,6 +7,7 @@ import { storiesOf } from '@storybook/react';
 import createStore from './redux/createStore';
 import loader, { loaderMiddleware, selectIsLoading } from './redux/reducers/loader';
 import Spinner from './Spinner';
+import sleep from './sleep';
 
 
 storiesOf('LoaderDemo', module)
@@ -103,13 +104,9 @@ function loadSequential() {
 }
 
 function loadSomething(ignoreLoader = false) {
-  const promise = new Promise(resolve => {
-    setTimeout(() => resolve(), 1000);
-  });
-
   return {
     type: 'LOAD_SOMETHING',
-    payload: promise,
+    payload: sleep(1000),
     meta: {
       loader: {
         ignore: ignoreLoader,

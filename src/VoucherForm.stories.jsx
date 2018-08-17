@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import VoucherForm from './VoucherForm';
+import sleep from './sleep';
 
 
 const actions = {
@@ -42,15 +43,11 @@ storiesOf('Payment / VoucherForm', module)
   });
 
 
-const addVoucherWithSuccess = async () => {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(), 2000);
-  });
-};
+async function addVoucherWithSuccess() {
+  return await sleep(2000);
+}
 
-const addVoucherWithFailure = async () => {
-  return new Promise((resolve, reject) => {
-    const error = new Error('Technical error');
-    setTimeout(() => reject(error), 500);
-  });
-};
+async function addVoucherWithFailure() {
+  await sleep(1000);
+  throw new Error('Technical error');
+}

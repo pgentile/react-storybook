@@ -4,6 +4,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 
 import Expandable from './Expandable';
+import sleep from './sleep';
 
 
 beforeAll(() => {
@@ -148,18 +149,9 @@ async function waitUntil(maxDuration, callback) {
       exception = e;
     }
 
-    await delay(50);
+    await sleep(50);
   } while (Date.now() <= endTimestamp);
 
   console.error(`Failed to complete in success for ${maxDuration}ms`);
   throw exception;
-}
-
-
-async function delay(duration) {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve();
-    }, duration);
-  });
 }

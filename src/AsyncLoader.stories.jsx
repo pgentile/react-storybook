@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import AsyncLoader from './AsyncLoader';
+import sleep from './sleep';
 
 
 storiesOf('AsyncLoader', module)
@@ -14,27 +15,18 @@ storiesOf('AsyncLoader', module)
     return (
       <AsyncLoader loader={loaderError} error={error} />
     );
-  })
-
-
-async function wait(durationMs) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, durationMs);
   });
-}
 
 
 async function loader() {
-  await wait(3000);
+  await sleep(3000);
   return (
     <p>Mon composant est chargé</p>
   );
 }
 
 async function loaderError() {
-  await wait(2000);
+  await sleep(2000);
   throw new Error('Demo error');
 }
 

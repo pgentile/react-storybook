@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import ProgressButton from './ProgressButton';
+import sleep from './sleep';
 
 
 storiesOf('Forms / ProgressButton', module)
@@ -34,23 +35,23 @@ class ProgressButtonDemo extends React.PureComponent {
     finished: false,
   };
 
-  onClick = () => {
+  onClick = async () => {
     this.setState({
       loading: true,
     });
 
-    setTimeout(() => {
-      this.setState({
-        finished: true,
-      });
+    await sleep(3000);
 
-      setTimeout(() => {
-        this.setState({
-          loading: false,
-          finished: false,
-        });
-      }, 1000);
-    }, 3000);
+    this.setState({
+      finished: true,
+    });
+
+    await sleep(1000);
+
+    this.setState({
+      loading: false,
+      finished: false,
+    });
   };
 
   render() {

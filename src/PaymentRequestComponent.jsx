@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import sleep from './sleep';
 
 
 const supportedPaymentMethods = [
@@ -63,7 +64,7 @@ export default class PaymentRequestComponent extends React.PureComponent {
     try {
       const response = await this.request.show();
       console.info('Credit card info:', JSON.stringify(response));
-      await wait(5000);
+      await sleep(5000);
       await response.complete('success');
       success = true;
     } catch (e) {
@@ -77,11 +78,3 @@ export default class PaymentRequestComponent extends React.PureComponent {
 
 }
 
-
-async function wait(duration) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, duration);
-  });
-}
