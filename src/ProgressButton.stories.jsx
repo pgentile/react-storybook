@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import ProgressButton from './ProgressButton';
 
 
-storiesOf('ProgressButton', module)
+storiesOf('Forms / ProgressButton', module)
   .add('main', () => {
     return (
       <ProgressButtonDemo />

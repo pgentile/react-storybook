@@ -30,8 +30,6 @@ class VoucherForm extends React.PureComponent {
       className,
       values,
       errors,
-      touched,
-      submitCount,
       handleChange,
       handleBlur,
       handleSubmit,
@@ -39,10 +37,9 @@ class VoucherForm extends React.PureComponent {
       isValid,
       status,
     } = this.props;
+    const { submissionStatus, errorMessage } = status || {};
 
-    const codeErrorMessage = submitCount > 0 || touched.code ? errors.code : null;
-    const success = status === 'SUCCESS';
-    const submitError = status === 'FAILED';
+    const success = submissionStatus === 'SUCCESS';
     const disableForm = isSubmitting || success;
 
     return (
@@ -51,7 +48,7 @@ class VoucherForm extends React.PureComponent {
         <div className="voucher-form__line">
           <FieldContainer
             label="Code promo"
-            errorMessage={codeErrorMessage}>
+            errorMessage={errors.code || errorMessage}>
             {props => (
               <InputField
                 {...props}
@@ -72,9 +69,9 @@ class VoucherForm extends React.PureComponent {
             className="voucher-form__button"
             type="submit"
             size="small"
-            showDisabled={!submitError && !isValid}
+            showDisabled={!isValid}
             disabled={disableForm}
-            loading={disableForm}
+            loading={isSubmitting}
             finished={success}>
             Ajouter le code promo
           </ProgressButton>
@@ -109,15 +106,20 @@ export default withFormik({
 
     return errors;
   },
-  handleSubmit: async (values, { props, setSubmitting, setErrors, setStatus }) => {
+  handleSubmit: async (values, { props, setSubmitting, setStatus }) => {
     try {
       await props.onAddVoucher(values.code);
-      setStatus('SUCCESS');
-    } catch (e) {
-      setErrors({
-        code: "Nous n'avons pas réussi à prendre en compte votre code promo",
+      setStatus({
+        submissionStatus: 'SUCCESS',
       });
-      setStatus('FAILED');
+    } catch (e) {
+      setStatus({
+        submissionStatus: 'SUCCESS',
+      });
+      setStatus({
+        submissionStatus: 'FAILED',
+        errorMessage: "Nous n'avons pas réussi à prendre en compte votre code promo",
+      });
     } finally {
       setSubmitting(false);
     }

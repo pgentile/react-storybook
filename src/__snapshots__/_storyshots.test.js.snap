@@ -809,6 +809,71 @@ exports[`Storyshots Forms / InputField main 1`] = `
 />
 `;
 
+exports[`Storyshots Forms / ProgressButton disabled 1`] = `
+<button
+  className="button button--size-normal progress-button "
+  disabled={true}
+>
+  <div
+    className="progress-button__content"
+  >
+    Payer
+  </div>
+  <div
+    className="progress-button__progress-bar"
+  />
+</button>
+`;
+
+exports[`Storyshots Forms / ProgressButton finished 1`] = `
+<button
+  className="button button--size-normal progress-button "
+  disabled={true}
+>
+  <div
+    className="progress-button__content"
+  >
+    Payer
+  </div>
+  <div
+    className="progress-button__progress-bar progress-button__progress-bar--finished"
+  />
+</button>
+`;
+
+exports[`Storyshots Forms / ProgressButton loading 1`] = `
+<button
+  className="button button--size-normal progress-button "
+  disabled={true}
+>
+  <div
+    className="progress-button__content"
+  >
+    Payer
+  </div>
+  <div
+    className="progress-button__progress-bar progress-button__progress-bar--loading"
+  />
+</button>
+`;
+
+exports[`Storyshots Forms / ProgressButton main 1`] = `
+<button
+  className="button button--size-normal progress-button "
+  disabled={false}
+  onClick={[Function]}
+>
+  <div
+    className="progress-button__content"
+  >
+    Payer
+  </div>
+  <div
+    className="progress-button__progress-bar"
+  />
+</button>
+`;
+
 exports[`Storyshots LoaderDemo main 1`] = `
 <div>
   <button
@@ -2348,71 +2413,6 @@ exports[`Storyshots PaymentRequestComponent main 1`] = `
   onClick={[Function]}
 >
   Payer
-</button>
-`;
-
-exports[`Storyshots ProgressButton disabled 1`] = `
-<button
-  className="button button--size-normal progress-button "
-  disabled={true}
->
-  <div
-    className="progress-button__content"
-  >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar"
-  />
-</button>
-`;
-
-exports[`Storyshots ProgressButton finished 1`] = `
-<button
-  className="button button--size-normal progress-button "
-  disabled={true}
->
-  <div
-    className="progress-button__content"
-  >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar progress-button__progress-bar--finished"
-  />
-</button>
-`;
-
-exports[`Storyshots ProgressButton loading 1`] = `
-<button
-  className="button button--size-normal progress-button "
-  disabled={true}
->
-  <div
-    className="progress-button__content"
-  >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar progress-button__progress-bar--loading"
-  />
-</button>
-`;
-
-exports[`Storyshots ProgressButton main 1`] = `
-<button
-  className="button button--size-normal progress-button "
-  disabled={false}
-  onClick={[Function]}
->
-  <div
-    className="progress-button__content"
-  >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar"
-  />
 </button>
 `;
 

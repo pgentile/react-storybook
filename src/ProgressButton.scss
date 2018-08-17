@@ -1,11 +1,20 @@
 .progress-button {
+  $content-z-index: 10;
+
   position: relative;
   overflow: hidden;
+
+  &__content {
+    position: relative;
+    z-index: $content-z-index;
+  }
 
   &__progress-bar {
     background-color: lighten(lightblue, 10%);
 
     position: absolute;
+    z-index: $content-z-index - 1;
+
     top: 0;
     left: 0;
     right: 0;
@@ -13,6 +22,7 @@
     width: 0%;
     opacity: 0;
     transition-property: width;
+    transition-timing-function: ease-out;
 
     &--loading {
       opacity: 1;
