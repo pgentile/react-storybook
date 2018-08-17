@@ -34,11 +34,12 @@ test('Pending', () => {
   });
 
   const actions = storeActionsMiddleware.drainActions();
-  expect(actions).toHaveLength(2);
+  const actionTypes = actions.map(action => action.type);
 
-  const [pendingAction, loadAction] = actions;
-  expect(pendingAction.type).toEqual('TEST_PENDING');
-  expect(loadAction.type).toEqual('LOADER/CHANGE_STATE');
+  expect(actionTypes).toEqual([
+    'TEST_PENDING',
+    'LOADER/CHANGE_STATE',
+  ]);
 
   const isLoading = selectIsLoading(store.getState());
   expect(isLoading).toBe(true);
@@ -51,12 +52,13 @@ test('Fullfilment', async () => {
   });
 
   const actions = storeActionsMiddleware.drainActions();
-  expect(actions).toHaveLength(3);
+  const actionTypes = actions.map(action => action.type);
 
-  const [pendingAction, loadAction, fulfilledAction] = actions;
-  expect(pendingAction.type).toEqual('TEST_PENDING');
-  expect(loadAction.type).toEqual('LOADER/CHANGE_STATE');
-  expect(fulfilledAction.type).toEqual('TEST_FULFILLED');
+  expect(actionTypes).toEqual([
+    'TEST_PENDING',
+    'LOADER/CHANGE_STATE',
+    'TEST_FULFILLED',
+  ]);
 
   const isLoading = selectIsLoading(store.getState());
   expect(isLoading).toBe(true);
@@ -64,34 +66,31 @@ test('Fullfilment', async () => {
   jest.runAllTimers();
 
   const updatedActions = storeActionsMiddleware.drainActions();
-  expect(updatedActions).toHaveLength(1);
+  const updatedActionTypes = updatedActions.map(action => action.type);
 
-  const [unloadAction] = updatedActions;
-  expect(unloadAction.type).toEqual('LOADER/CHANGE_STATE');
+  expect(updatedActionTypes).toEqual([
+    'LOADER/CHANGE_STATE'
+  ]);
 
   const isLoadingAfterUnload = selectIsLoading(store.getState());
   expect(isLoadingAfterUnload).toBe(false);
 });
 
 test('Rejection', async () => {
-  try {
-    await store.dispatch({
-      type: 'TEST',
-      payload: Promise.reject(new Error()),
-    });
+  const actionResult = store.dispatch({
+    type: 'TEST',
+    payload: Promise.reject(new Error('Failure')),
+  });
 
-    fail('An exception should have been thrown'); // eslint-disable-line no-undef
-  } catch (e) {
-    // This is good !
-  }
+  await expect(actionResult).rejects.toThrow('Failure')
 
   const actions = storeActionsMiddleware.drainActions();
-  expect(actions).toHaveLength(3);
-
-  const [pendingAction, loadAction, fulfilledAction] = actions;
-  expect(pendingAction.type).toEqual('TEST_PENDING');
-  expect(loadAction.type).toEqual('LOADER/CHANGE_STATE');
-  expect(fulfilledAction.type).toEqual('TEST_REJECTED');
+  const actionTypes = actions.map(action => action.type);
+  expect(actionTypes).toEqual([
+    'TEST_PENDING',
+    'LOADER/CHANGE_STATE',
+    'TEST_REJECTED',
+  ]);
 
   const isLoading = selectIsLoading(store.getState());
   expect(isLoading).toBe(true);
@@ -99,10 +98,11 @@ test('Rejection', async () => {
   jest.runAllTimers();
 
   const updatedActions = storeActionsMiddleware.drainActions();
-  expect(updatedActions).toHaveLength(1);
+  const updatedActionTypes = updatedActions.map(action => action.type);
 
-  const [unloadAction] = updatedActions;
-  expect(unloadAction.type).toEqual('LOADER/CHANGE_STATE');
+  expect(updatedActionTypes).toEqual([
+    'LOADER/CHANGE_STATE',
+  ]);
 
   const isLoadingAfterUnload = selectIsLoading(store.getState());
   expect(isLoadingAfterUnload).toBe(false);
@@ -114,16 +114,12 @@ test('Multiple resolutions', async () => {
     payload: Promise.resolve(),
   });
 
-  try {
-    await store.dispatch({
-      type: 'TEST2',
-      payload: Promise.reject(new Error()),
-    });
+  const actionResult2 = store.dispatch({
+    type: 'TEST2',
+    payload: Promise.reject(new Error('Failure')),
+  });
 
-    fail('An exception should have been thrown'); // eslint-disable-line no-undef
-  } catch (e) {
-    // This is good !
-  }
+  await expect(actionResult2).rejects.toThrow('Failure')
 
   const actions = storeActionsMiddleware.drainActions();
   const types = actions.map(action => action.type);
@@ -162,11 +158,12 @@ test('Ignore loader', async () => {
   });
 
   const actions = storeActionsMiddleware.drainActions();
-  expect(actions).toHaveLength(2);
+  const actionTypes = actions.map(action => action.type);
 
-  const [pendingAction, fulfilledAction] = actions;
-  expect(pendingAction.type).toEqual('TEST_PENDING');
-  expect(fulfilledAction.type).toEqual('TEST_FULFILLED');
+  expect(actionTypes).toEqual([
+    'TEST_PENDING',
+    'TEST_FULFILLED',
+  ]);
 
   const isLoading = selectIsLoading(store.getState());
   expect(isLoading).toBe(false);
