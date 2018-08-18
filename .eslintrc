@@ -23,42 +23,22 @@
     }
   },
   "globals": {
-    "module": true
+    "module": true,
+    "process": true
   },
   "extends": [
     "eslint:recommended",
+    "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:jest/recommended"
   ],
   "rules": {
-    "indent": [
+    "no-unused-vars": [
       "error",
-      2
-    ],
-    "eqeqeq": [
-      "error",
-      "always"
-    ],
-    "curly": "error",
-    "default-case": "error",
-    "no-var": "error",
-    "no-multi-spaces": "error",
-    "no-useless-constructor": "error",
-    "prefer-const": "error",
-    "prefer-rest-params": "error",
-    "prefer-spread": "error",
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "react/jsx-no-bind": "error",
-    "react/sort-comp": "off",
-    "no-console": "warn",
-    "prefer-template": "warn",
-    "quotes": [
-      "warn",
-      "single",
       {
-        "avoidEscape": true
+        "ignoreRestSiblings": true
       }
-    ]
+    ],
+    "no-console": "warn"
   }
 }

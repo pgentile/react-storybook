@@ -1,4 +1,4 @@
-import { isUndefined } from 'lodash-es';
+import { isUndefined } from "lodash-es";
 
 // Behaviors for undefined scoped state
 
@@ -11,7 +11,6 @@ export const returnUndefined = returnDefaultValue(undefined);
 export function alwaysExecute(selector) {
   return selector;
 }
-
 
 // Scope factory
 

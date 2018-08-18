@@ -1,32 +1,26 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
 
-import PaymentRequestComponent from './PaymentRequestComponent';
+import PaymentRequestComponent from "./PaymentRequestComponent";
 
-
-storiesOf('PaymentRequestComponent', module)
-  .add('main', () => {
-    return (
-      <Story />
-    );
-  });
-
+storiesOf("PaymentRequestComponent", module).add("main", () => {
+  return <Story />;
+});
 
 class Story extends React.PureComponent {
-
   state = {
-    requesting: false,
+    requesting: false
   };
 
   pay = () => {
     this.setState({
-      requesting: true,
+      requesting: true
     });
   };
 
   reset = () => {
     this.setState({
-      requesting: false,
+      requesting: false
     });
   };
 
@@ -40,5 +34,4 @@ class Story extends React.PureComponent {
       </Fragment>
     );
   }
-
 }

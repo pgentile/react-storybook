@@ -1,18 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './FlatButton.scss';
-
+import "./FlatButton.scss";
 
 export default class FlatButton extends React.PureComponent {
-
   static propTypes = {
     children: PropTypes.node,
-    className: PropTypes.string,
+    className: PropTypes.string
   };
 
   static defaultProps = {
-    className: '',
+    className: ""
   };
 
   render() {
@@ -24,5 +22,4 @@ export default class FlatButton extends React.PureComponent {
       </button>
     );
   }
-
 }

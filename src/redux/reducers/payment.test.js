@@ -11,11 +11,10 @@ import payment, {
   cancelVoucher,
   addDonation,
   cancelDonation
-} from './payment';
+} from "./payment";
 
-import createStore from '../createStore';
-import captureStoreActions from '../testutils/captureStoreActions';
-
+import createStore from "../createStore";
+import captureStoreActions from "../testutils/captureStoreActions";
 
 let storeActionsMiddleware;
 let store;
@@ -28,19 +27,14 @@ beforeEach(() => {
       payment
     },
     {
-      extraMiddlewares: [storeActionsMiddleware],
-    });
+      extraMiddlewares: [storeActionsMiddleware]
+    }
+  );
 });
 
-
-describe('Selectors', () => {
-
-  test('Select items', async () => {
-    const items = [
-      createItem(),
-      createItem(),
-      createItem(),
-    ];
+describe("Selectors", () => {
+  test("Select items", async () => {
+    const items = [createItem(), createItem(), createItem()];
 
     await store.dispatch(loadItems(items));
     const selectedItems = selectPaymentItems(store.getState());
@@ -48,13 +42,8 @@ describe('Selectors', () => {
     expect(selectedItems).toEqual(items);
   });
 
-  test('Select items without voucher', async () => {
-    const items = [
-      createItem(),
-      createItem({ type: VOUCHER_TYPE }),
-      createItem({ type: DONATION_TYPE }),
-      createItem(),
-    ];
+  test("Select items without voucher", async () => {
+    const items = [createItem(), createItem({ type: VOUCHER_TYPE }), createItem({ type: DONATION_TYPE }), createItem()];
 
     await store.dispatch(loadItems(items));
 
@@ -63,13 +52,8 @@ describe('Selectors', () => {
     expect(selectedItems).toHaveLength(3);
   });
 
-  test('Select items without donation', async () => {
-    const items = [
-      createItem(),
-      createItem({ type: VOUCHER_TYPE }),
-      createItem({ type: DONATION_TYPE }),
-      createItem(),
-    ];
+  test("Select items without donation", async () => {
+    const items = [createItem(), createItem({ type: VOUCHER_TYPE }), createItem({ type: DONATION_TYPE }), createItem()];
 
     await store.dispatch(loadItems(items));
 
@@ -78,12 +62,8 @@ describe('Selectors', () => {
     expect(selectedItems).toHaveLength(3);
   });
 
-  test('Select voucher', async () => {
-    const items = [
-      createItem(),
-      createItem({ type: VOUCHER_TYPE }),
-      createItem(),
-    ];
+  test("Select voucher", async () => {
+    const items = [createItem(), createItem({ type: VOUCHER_TYPE }), createItem()];
 
     await store.dispatch(loadItems(items));
 
@@ -92,11 +72,8 @@ describe('Selectors', () => {
     expect(item).not.toBeNull();
   });
 
-  test('Select unexisting voucher', async () => {
-    const items = [
-      createItem(),
-      createItem(),
-    ];
+  test("Select unexisting voucher", async () => {
+    const items = [createItem(), createItem()];
 
     await store.dispatch(loadItems(items));
 
@@ -105,12 +82,8 @@ describe('Selectors', () => {
     expect(item).toBeNull();
   });
 
-  test('Select donation', async () => {
-    const items = [
-      createItem(),
-      createItem({ type: DONATION_TYPE }),
-      createItem(),
-    ];
+  test("Select donation", async () => {
+    const items = [createItem(), createItem({ type: DONATION_TYPE }), createItem()];
 
     await store.dispatch(loadItems(items));
 
@@ -119,11 +92,8 @@ describe('Selectors', () => {
     expect(item).not.toBeNull();
   });
 
-  test('Select unexisting donation', async () => {
-    const items = [
-      createItem(),
-      createItem(),
-    ];
+  test("Select unexisting donation", async () => {
+    const items = [createItem(), createItem()];
 
     await store.dispatch(loadItems(items));
 
@@ -131,57 +101,50 @@ describe('Selectors', () => {
 
     expect(item).toBeNull();
   });
-
 });
 
-
-describe('Actions', () => {
-
-  test('Load items', async () => {
-    const items = [
-      createItem(),
-      createItem(),
-      createItem(),
-    ];
+describe("Actions", () => {
+  test("Load items", async () => {
+    const items = [createItem(), createItem(), createItem()];
 
     await store.dispatch(loadItems(items));
 
     const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty('type', 'PAYMENT/LOAD_ITEMS_PENDING');
+    expect(actions[0]).toHaveProperty("type", "PAYMENT/LOAD_ITEMS_PENDING");
 
-    expect(actions[1]).toHaveProperty('type', 'PAYMENT/LOAD_ITEMS_FULFILLED');
-    expect(actions[1]).toHaveProperty('payload.items', items);
+    expect(actions[1]).toHaveProperty("type", "PAYMENT/LOAD_ITEMS_FULFILLED");
+    expect(actions[1]).toHaveProperty("payload.items", items);
   });
 
-  test('Add voucher', async () => {
-    const code = 'RADIN';
+  test("Add voucher", async () => {
+    const code = "RADIN";
     await store.dispatch(addVoucher(code));
 
     const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty('type', 'PAYMENT/VOUCHER/ADD_PENDING');
+    expect(actions[0]).toHaveProperty("type", "PAYMENT/VOUCHER/ADD_PENDING");
 
-    expect(actions[1]).toHaveProperty('type', 'PAYMENT/VOUCHER/ADD_FULFILLED');
-    expect(actions[1]).toHaveProperty('payload.code', code);
+    expect(actions[1]).toHaveProperty("type", "PAYMENT/VOUCHER/ADD_FULFILLED");
+    expect(actions[1]).toHaveProperty("payload.code", code);
   });
 
-  test('Adding a second voucher should replace first voucher', async () => {
-    const code = 'RADIN';
-    const code2 = 'SECOND';
+  test("Adding a second voucher should replace first voucher", async () => {
+    const code = "RADIN";
+    const code2 = "SECOND";
 
     await store.dispatch(addVoucher(code));
     await store.dispatch(addVoucher(code2));
 
     const voucherItem = selectVoucher(store.getState());
 
-    expect(voucherItem).toHaveProperty('code', code2);
+    expect(voucherItem).toHaveProperty("code", code2);
   });
 
-  test('Cancel voucher', async () => {
-    const code = 'RADIN';
+  test("Cancel voucher", async () => {
+    const code = "RADIN";
 
     const stateBeforeActions = store.getState();
 
@@ -194,33 +157,33 @@ describe('Actions', () => {
     expect(store.getState()).toEqual(stateBeforeActions);
   });
 
-  test('Add donation', async () => {
-    const code = 'MSF';
+  test("Add donation", async () => {
+    const code = "MSF";
     await store.dispatch(addDonation(code));
 
     const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty('type', 'PAYMENT/DONATION/ADD_PENDING');
+    expect(actions[0]).toHaveProperty("type", "PAYMENT/DONATION/ADD_PENDING");
 
-    expect(actions[1]).toHaveProperty('type', 'PAYMENT/DONATION/ADD_FULFILLED');
-    expect(actions[1]).toHaveProperty('payload.code', code);
+    expect(actions[1]).toHaveProperty("type", "PAYMENT/DONATION/ADD_FULFILLED");
+    expect(actions[1]).toHaveProperty("payload.code", code);
   });
 
-  test('Adding a second donation should replace first donation', async () => {
-    const code = 'MSF';
-    const code2 = 'SURF_RIDER';
+  test("Adding a second donation should replace first donation", async () => {
+    const code = "MSF";
+    const code2 = "SURF_RIDER";
 
     await store.dispatch(addDonation(code));
     await store.dispatch(addDonation(code2));
 
     const item = selectDonation(store.getState());
 
-    expect(item).toHaveProperty('code', code2);
+    expect(item).toHaveProperty("code", code2);
   });
 
-  test('Cancel donation', async () => {
-    const code = 'MSF';
+  test("Cancel donation", async () => {
+    const code = "MSF";
 
     const stateBeforeActions = store.getState();
 
@@ -232,14 +195,12 @@ describe('Actions', () => {
     expect(item).toBeNull();
     expect(store.getState()).toEqual(stateBeforeActions);
   });
-
 });
-
 
 function createItem({ id, name, ...extraProps } = {}) {
   return {
-    id: id || 'id',
-    name: name || 'This is an item',
-    ...extraProps,
+    id: id || "id",
+    name: name || "This is an item",
+    ...extraProps
   };
 }

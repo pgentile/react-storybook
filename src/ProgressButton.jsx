@@ -1,48 +1,40 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Button from './Button';
-import bemModifiers from './bemModifiers';
+import Button from "./Button";
+import bemModifiers from "./bemModifiers";
 
-import './ProgressButton.scss';
-
+import "./ProgressButton.scss";
 
 // See https://codepen.io/teamturret/pen/KwyVQx
 export default class ProgressButton extends React.PureComponent {
-
   static propTypes = {
     ...Button.propTypes,
     loading: PropTypes.bool,
     finished: PropTypes.bool,
-    disabled: PropTypes.bool,
+    disabled: PropTypes.bool
   };
 
   static defaultProps = {
-    className: '',
+    className: "",
     loading: false,
     finished: false,
-    disabled: false,
+    disabled: false
   };
 
   render() {
     const { className, loading, finished, disabled, children, ...otherProps } = this.props;
 
-    const progressBarClassName = bemModifiers('progress-button__progress-bar', {
+    const progressBarClassName = bemModifiers("progress-button__progress-bar", {
       loading,
-      finished,
+      finished
     });
 
     return (
-      <Button
-        className={`progress-button ${className}`}
-        disabled={loading || finished || disabled}
-        {...otherProps}>
-        <div className="progress-button__content">
-          {children}
-        </div>
+      <Button className={`progress-button ${className}`} disabled={loading || finished || disabled} {...otherProps}>
+        <div className="progress-button__content">{children}</div>
         <div className={progressBarClassName} />
       </Button>
     );
   }
-
 }

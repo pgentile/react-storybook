@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import './Spinner.scss';
-
+import "./Spinner.scss";
 
 // See http://tobiasahlin.com/spinkit/
 export default class Spinner extends React.PureComponent {
-
   render() {
     return (
       <div className="spinner">
@@ -15,5 +13,4 @@ export default class Spinner extends React.PureComponent {
       </div>
     );
   }
-
 }

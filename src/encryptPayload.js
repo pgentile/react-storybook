@@ -6,15 +6,15 @@ export default async function encryptPayload(payload) {
   const crypto = window.crypto || window.msCrypto;
 
   if (!crypto) {
-    throw new Error('Browser crypto engine not available');
+    throw new Error("Browser crypto engine not available");
   }
 
   const subtle = crypto.subtle || crypto.webkitSubtle;
   if (!subtle) {
-    throw new Error('Browser crypto engine not available');
+    throw new Error("Browser crypto engine not available");
   }
 
-  console.log('Input data:', payload);
+  console.log("Input data:", payload);
 
   //Parameters:
   //1. Asymmetric Encryption algorithm name and its requirements
@@ -22,38 +22,38 @@ export default async function encryptPayload(payload) {
   //3. Usage of the keys. (http://www.w3.org/TR/WebCryptoAPI/#cryptokey-interface-types)
   const key = await crypto.subtle.generateKey(
     {
-      name: 'RSA-OAEP',
+      name: "RSA-OAEP",
       modulusLength: 2048,
       publicExponent: new Uint8Array([0x01, 0x00, 0x01]),
       hash: {
-        name: 'SHA-256'
+        name: "SHA-256"
       }
     },
     true,
-    ['encrypt', 'decrypt'],
+    ["encrypt", "decrypt"]
   );
 
   const encrypted = await crypto.subtle.encrypt(
     {
-      name: 'RSA-OAEP',
+      name: "RSA-OAEP"
     },
     key.publicKey,
-    convertStringToArrayBufferView(payload),
+    convertStringToArrayBufferView(payload)
   );
 
-  console.log('My encrypted data:', encrypted);
+  console.log("My encrypted data:", encrypted);
 
   const decrypted = await crypto.subtle.decrypt(
     {
-      name: 'RSA-OAEP',
+      name: "RSA-OAEP"
     },
     key.privateKey,
     encrypted
   );
 
   const decryptedArray = new Uint8Array(decrypted);
-  console.log('Decrypted data, raw:', decrypted);
-  console.log('Decrypted data:', convertArrayBufferViewtoString(decryptedArray));
+  console.log("Decrypted data, raw:", decrypted);
+  console.log("Decrypted data:", convertArrayBufferViewtoString(decryptedArray));
 }
 
 function convertStringToArrayBufferView(str) {
@@ -66,7 +66,7 @@ function convertStringToArrayBufferView(str) {
 }
 
 function convertArrayBufferViewtoString(buffer) {
-  let str = '';
+  let str = "";
   for (let iii = 0; iii < buffer.byteLength; iii++) {
     str += String.fromCharCode(buffer[iii]);
   }

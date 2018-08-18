@@ -1,25 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Price from './Price';
-import Card from './Card';
+import Price from "./Price";
+import Card from "./Card";
 
-import './OrderSummary.scss';
-
+import "./OrderSummary.scss";
 
 export const orderItemPropType = PropTypes.shape({
   id: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['DONATION', 'VOUCHER']),
+  type: PropTypes.oneOf(["DONATION", "VOUCHER"]),
   label: PropTypes.node.isRequired,
   price: Price.propTypes.price,
-  onCancel: PropTypes.func,
+  onCancel: PropTypes.func
 });
 
-
 export default class OrderSummary extends React.PureComponent {
-
   static propTypes = {
-    items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired,
+    items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired
   };
 
   render() {
@@ -35,29 +32,25 @@ export default class OrderSummary extends React.PureComponent {
       </Card>
     );
   }
-
 }
-
 
 function computeTotalPrice(prices) {
   if (prices.length === 0) {
     return {
       value: 0,
-      currency: '€',
+      currency: "€"
     };
   }
 
   return {
     value: prices.map(price => price.value).reduce((left, right) => left + right, 0),
-    currency: prices[0].currency,
+    currency: prices[0].currency
   };
 }
 
-
 class OrderSummaryDetails extends React.PureComponent {
-
   static propTypes = {
-    items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired,
+    items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired
   };
 
   render() {
@@ -67,26 +60,19 @@ class OrderSummaryDetails extends React.PureComponent {
       return <OrderSummaryItem key={item.id} item={item} />;
     });
 
-    return (
-      <ul className="order-summary__details">
-        {itemElements}
-      </ul>
-    );
+    return <ul className="order-summary__details">{itemElements}</ul>;
   }
-
 }
 
-
 class OrderSummaryItem extends React.PureComponent {
-
   static propTypes = {
-    item: orderItemPropType.isRequired,
+    item: orderItemPropType.isRequired
   };
 
   onCancel = event => {
     event.preventDefault();
     this.props.item.onCancel();
-  }
+  };
 
   render() {
     const { item } = this.props;
@@ -96,22 +82,21 @@ class OrderSummaryItem extends React.PureComponent {
       <li className="order-summary__item">
         <span className="order-summary__item-label">
           {label}
-          {onCancel && <a className="order-summary__item-cancel" href="#" onClick={this.onCancel}>
-            Supprimer
-          </a>}
+          {onCancel && (
+            <a className="order-summary__item-cancel" href="#" onClick={this.onCancel}>
+              Supprimer
+            </a>
+          )}
         </span>
         <Price className="order-summary__item-price" price={price} />
       </li>
     );
   }
-
 }
 
-
 class OrderSummaryTotal extends React.PureComponent {
-
   static propTypes = {
-    totalPrice: Price.propTypes.price,
+    totalPrice: Price.propTypes.price
   };
 
   render() {
@@ -119,13 +104,9 @@ class OrderSummaryTotal extends React.PureComponent {
 
     return (
       <p className="order-summary__total">
-        <span className="order-summary__total-label">
-          Total de votre commande
-        </span>
+        <span className="order-summary__total-label">Total de votre commande</span>
         <Price className="order-summary__total-price" price={totalPrice} />
       </p>
     );
   }
-
 }
-

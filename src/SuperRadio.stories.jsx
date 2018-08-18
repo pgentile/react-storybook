@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs/react';
-import { action } from '@storybook/addon-actions';
+import { storiesOf } from "@storybook/react";
+import { withKnobs, text, boolean } from "@storybook/addon-knobs/react";
+import { action } from "@storybook/addon-actions";
 
-
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 import {
   faCcVisa,
@@ -13,47 +12,39 @@ import {
   faCcAmex,
   faCcAmazonPay,
   faCcPaypal,
-  faCcApplePay,
-} from '@fortawesome/free-brands-svg-icons';
+  faCcApplePay
+} from "@fortawesome/free-brands-svg-icons";
 
-import SuperRadio from './SuperRadio';
+import SuperRadio from "./SuperRadio";
 
-
-storiesOf('SuperRadio', module)
+storiesOf("SuperRadio", module)
   .addDecorator(withKnobs)
-  .add('main', () => {
+  .add("main", () => {
     return (
       <SuperRadio
-        label={text('Label', 'Radio button')}
-        description={text('Description', 'This is my radio button')}
-        onChange={action('on checked change')}
-        checked={boolean('Checked', false)}
-        icon={faCoffee} />
+        label={text("Label", "Radio button")}
+        description={text("Description", "This is my radio button")}
+        onChange={action("on checked change")}
+        checked={boolean("Checked", false)}
+        icon={faCoffee}
+      />
     );
   })
-  .add('without icon', () => {
-    return (
-      <SuperRadio
-        label="Radio button"
-        description="This is my radio button" />
-    );
+  .add("without icon", () => {
+    return <SuperRadio label="Radio button" description="This is my radio button" />;
   })
-  .add('example', () => {
-    return (
-      <Example />
-    );
+  .add("example", () => {
+    return <Example />;
   });
 
-
 class Example extends React.Component {
-
   state = {
-    selectedRadioIndex: null,
+    selectedRadioIndex: null
   };
 
-  onChangeAction = (index) => () => {
+  onChangeAction = index => () => {
     this.setState({
-      selectedRadioIndex: index,
+      selectedRadioIndex: index
     });
   };
 
@@ -62,34 +53,32 @@ class Example extends React.Component {
 
     const cards = [
       {
-        label: 'Visa',
-        icon: faCcVisa,
+        label: "Visa",
+        icon: faCcVisa
       },
       {
-        label: 'Mastercard',
-        icon: faCcMastercard,
+        label: "Mastercard",
+        icon: faCcMastercard
       },
       {
-        label: 'American Express',
-        icon: faCcAmex,
+        label: "American Express",
+        icon: faCcAmex
       },
       {
-        label: 'Paypal',
-        icon: faCcPaypal,
+        label: "Paypal",
+        icon: faCcPaypal
       },
       {
-        label: 'Amazon Pay',
-        icon: faCcAmazonPay,
+        label: "Amazon Pay",
+        icon: faCcAmazonPay
       },
       {
-        label: 'Apple Pay',
-        icon: faCcApplePay,
-      },
+        label: "Apple Pay",
+        icon: faCcApplePay
+      }
     ];
 
-    const help = (
-      <p>This is the fucking help&nbsp;!</p>
-    );
+    const help = <p>This is the fucking help&nbsp;!</p>;
 
     return cards.map((card, index) => (
       <SuperRadio
@@ -99,8 +88,8 @@ class Example extends React.Component {
         onChange={this.onChangeAction(index)}
         checked={selectedRadioIndex === index}
         icon={card.icon}
-        help={help} />
+        help={help}
+      />
     ));
   }
-
 }

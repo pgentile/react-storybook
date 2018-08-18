@@ -1,13 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './DateInput.scss';
+import "./DateInput.scss";
 
-import bemModifiers from './bemModifiers';
-
+import bemModifiers from "./bemModifiers";
 
 export default class DateInput extends React.PureComponent {
-
   static propTypes = {
     className: PropTypes.string,
     id: PropTypes.string,
@@ -15,20 +13,20 @@ export default class DateInput extends React.PureComponent {
     disabled: PropTypes.bool,
     readOnly: PropTypes.bool,
     value: PropTypes.string,
-    onChange: PropTypes.func,
+    onChange: PropTypes.func
   };
 
   static defaultProps = {
-    className: '',
+    className: "",
     disabled: false,
-    readOnly: false,
+    readOnly: false
   };
 
   state = {
-    focus: false,
+    focus: false
   };
 
-  onValueChange = (name) => (event) => {
+  onValueChange = name => event => {
     const { target } = event;
     const { value: fieldValue } = target;
 
@@ -46,25 +44,25 @@ export default class DateInput extends React.PureComponent {
   maybeGoToNextInput(target) {
     const { maxLength, selectionStart, nextElementSibling: nextInput } = target;
 
-    if (nextInput && nextInput.nodeName === 'INPUT' && selectionStart === maxLength) {
+    if (nextInput && nextInput.nodeName === "INPUT" && selectionStart === maxLength) {
       nextInput.focus();
       nextInput.select();
     }
   }
 
-  onDayChange = this.onValueChange('day');
-  onMonthChange = this.onValueChange('month');
-  onYearChange = this.onValueChange('year');
+  onDayChange = this.onValueChange("day");
+  onMonthChange = this.onValueChange("month");
+  onYearChange = this.onValueChange("year");
 
   onFieldFocus = () => {
     this.setState({
-      focus: true,
+      focus: true
     });
   };
 
   onFieldBlur = () => {
     this.setState({
-      focus: false,
+      focus: false
     });
   };
 
@@ -73,16 +71,15 @@ export default class DateInput extends React.PureComponent {
     const { focus } = this.state;
     const { year, month, day } = parseValue(value);
 
-    const realClassName = bemModifiers('form-date-input', {
+    const realClassName = bemModifiers("form-date-input", {
       error,
       disabled,
       focus,
-      'read-only': readOnly,
+      "read-only": readOnly
     });
 
     return (
       <fieldset className={`${realClassName} ${className}`}>
-
         <input
           className="form-date-input__input form-date-input__input_day"
           type="text"
@@ -96,7 +93,8 @@ export default class DateInput extends React.PureComponent {
           readOnly={readOnly}
           onFocus={this.onFieldFocus}
           onBlur={this.onFieldBlur}
-          onChange={this.onDayChange} />
+          onChange={this.onDayChange}
+        />
 
         <input
           className="form-date-input__input form-date-input__input_month"
@@ -110,7 +108,8 @@ export default class DateInput extends React.PureComponent {
           readOnly={readOnly}
           onFocus={this.onFieldFocus}
           onBlur={this.onFieldBlur}
-          onChange={this.onMonthChange} />
+          onChange={this.onMonthChange}
+        />
 
         <input
           className="form-date-input__input form-date-input__input_year"
@@ -124,46 +123,42 @@ export default class DateInput extends React.PureComponent {
           readOnly={readOnly}
           onFocus={this.onFieldFocus}
           onBlur={this.onFieldBlur}
-          onChange={this.onYearChange} />
-
+          onChange={this.onYearChange}
+        />
       </fieldset>
     );
   }
-
 }
 
-
 const DEFAULT_DATE = {
-  year: '',
-  month: '',
-  day: '',
+  year: "",
+  month: "",
+  day: ""
 };
-
 
 function parseValue(value) {
   if (value) {
-    const parts = value.split('-');
+    const parts = value.split("-");
     const [year, month, day] = parts;
     return {
       ...DEFAULT_DATE,
       year,
       month,
-      day,
+      day
     };
   }
 
   return { ...DEFAULT_DATE };
 }
 
-
 function updateValue(value, fieldName, fieldValue) {
   const updatedValue = {
     ...parseValue(value),
-    [fieldName]: fieldValue,
+    [fieldName]: fieldValue
   };
   const { year, month, day } = updatedValue;
   if (year || month || day) {
     return `${year}-${month}-${day}`;
   }
-  return '';
+  return "";
 }

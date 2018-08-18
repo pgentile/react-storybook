@@ -1,17 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import debounce from 'lodash-es/debounce';
-
+import React from "react";
+import PropTypes from "prop-types";
+import debounce from "lodash-es/debounce";
 
 export default class DebouncedInput extends React.Component {
-
   static propTypes = {
     onChange: PropTypes.func,
-    debounceDelay: PropTypes.number.isRequired,
+    debounceDelay: PropTypes.number.isRequired
   };
 
   static defaultProps = {
-    debounceDelay: 500,
+    debounceDelay: 500
   };
 
   state = {};
@@ -24,11 +22,11 @@ export default class DebouncedInput extends React.Component {
 
       if (onChange) {
         if (debounceDelay > 0) {
-          const debouncer = debounce((event) => {
+          const debouncer = debounce(event => {
             return onChange(event);
           }, debounceDelay);
 
-          onChangeDebounced = (event) => {
+          onChangeDebounced = event => {
             event.persist();
             debouncer(event);
           };
@@ -40,7 +38,7 @@ export default class DebouncedInput extends React.Component {
       return {
         onChangeDebounced,
         onChange,
-        debounceDelay,
+        debounceDelay
       };
     }
 
@@ -52,9 +50,6 @@ export default class DebouncedInput extends React.Component {
     const props = { ...this.props, onChange };
     delete props.debounceDelay;
 
-    return (
-      <input {...props} />
-    );
+    return <input {...props} />;
   }
-
 }

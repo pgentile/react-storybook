@@ -1,12 +1,8 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import Spinner from './Spinner';
+import Spinner from "./Spinner";
 
-
-storiesOf('Spinner', module)
-  .add('main', () => {
-    return (
-      <Spinner />
-    );
-  });
+storiesOf("Spinner", module).add("main", () => {
+  return <Spinner />;
+});

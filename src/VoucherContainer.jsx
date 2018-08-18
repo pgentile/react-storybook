@@ -1,64 +1,57 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Card from './Card';
-import FlatButton from './FlatButton';
-import VoucherForm from './VoucherForm';
+import Card from "./Card";
+import FlatButton from "./FlatButton";
+import VoucherForm from "./VoucherForm";
 
-import './VoucherContainer.scss';
-
+import "./VoucherContainer.scss";
 
 export default class VoucherContainer extends React.PureComponent {
-
   static propTypes = {
     className: PropTypes.string,
-    onAddVoucher: PropTypes.func.isRequired,
+    onAddVoucher: PropTypes.func.isRequired
   };
 
   static defaultProps = {
-    className: '',
+    className: ""
   };
 
   state = {
-    currentState: 'QUESTION',
+    currentState: "QUESTION"
   };
 
   onShowForm = () => {
     this.setState({
-      currentState: 'FORM',
+      currentState: "FORM"
     });
   };
 
   onHideForm = () => {
     this.setState({
-      currentState: 'QUESTION',
+      currentState: "QUESTION"
     });
-  }
+  };
 
   render() {
     const { className, onAddVoucher } = this.props;
     const { currentState } = this.state;
 
-    const showQuestion = currentState === 'QUESTION';
-    const showForm = currentState === 'FORM';
+    const showQuestion = currentState === "QUESTION";
+    const showForm = currentState === "FORM";
 
     return (
       <Card as="section" layer="flat" className={`voucher-container ${className}`}>
-
-        {showQuestion && <FlatButton
-          className="voucher-container__question"
-          onClick={this.onShowForm}>
+        {showQuestion && (
+          <FlatButton className="voucher-container__question" onClick={this.onShowForm}>
             Avez-vous un code promo&nbsp;?
-        </FlatButton>}
+          </FlatButton>
+        )}
 
-        {showForm && <VoucherForm
-          className="voucher-container__form"
-          onAddVoucher={onAddVoucher}
-          onCancel={this.onHideForm}
-        />}
-
+        {showForm && (
+          <VoucherForm className="voucher-container__form" onAddVoucher={onAddVoucher} onCancel={this.onHideForm} />
+        )}
       </Card>
     );
   }
-
 }

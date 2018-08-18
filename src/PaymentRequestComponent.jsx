@@ -1,50 +1,48 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import sleep from './sleep';
-
+import React from "react";
+import PropTypes from "prop-types";
+import sleep from "./sleep";
 
 const supportedPaymentMethods = [
   {
-    supportedMethods: 'basic-card',
+    supportedMethods: "basic-card",
     data: {
-      supportedNetworks: ['visa', 'mastercard', 'amex', 'cb', 'maestro'],
-    },
+      supportedNetworks: ["visa", "mastercard", "amex", "cb", "maestro"]
+    }
   }
 ];
 
 const paymentDetails = {
   total: {
-    label: 'Total',
+    label: "Total",
     amount: {
-      currency: 'EUR',
+      currency: "EUR",
       value: 85
     }
   },
   displayItems: [
     {
-      label: 'TER Clisson → Nantes — 2 passagers',
+      label: "TER Clisson → Nantes — 2 passagers",
       amount: {
-        currency: 'EUR',
+        currency: "EUR",
         value: 5
       }
     },
     {
-      label: 'TGV Nantes → Paris — 2 passagers',
+      label: "TGV Nantes → Paris — 2 passagers",
       amount: {
-        currency: 'EUR',
+        currency: "EUR",
         value: 80
       }
     }
-  ],
+  ]
 };
 
 const options = {};
 
 export default class PaymentRequestComponent extends React.PureComponent {
-
   static propTypes = {
     onSuccess: PropTypes.func.isRequired,
-    onError: PropTypes.func.isRequired,
+    onError: PropTypes.func.isRequired
   };
 
   request = new PaymentRequest(supportedPaymentMethods, paymentDetails, options);
@@ -63,9 +61,9 @@ export default class PaymentRequestComponent extends React.PureComponent {
     let success = false;
     try {
       const response = await this.request.show();
-      console.info('Credit card info:', JSON.stringify(response));
+      console.info("Credit card info:", JSON.stringify(response));
       await sleep(5000);
-      await response.complete('success');
+      await response.complete("success");
       success = true;
     } catch (e) {
       onError(e);
@@ -75,6 +73,4 @@ export default class PaymentRequestComponent extends React.PureComponent {
       }
     }
   }
-
 }
-

@@ -1,12 +1,10 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import { storiesOf } from "@storybook/react";
 
-import ExpandableCard from './ExpandableCard';
-
+import ExpandableCard from "./ExpandableCard";
 
 class ExpandableCardDemo extends React.PureComponent {
-
   static propTypes = {
     foldable: PropTypes.bool
   };
@@ -25,7 +23,7 @@ class ExpandableCardDemo extends React.PureComponent {
         <p>Voici du contenu dépliable.</p>
         <p>Voici du contenu dépliable.</p>
       </Fragment>
-    ),
+    )
   };
 
   onToggleExpand = event => {
@@ -36,7 +34,7 @@ class ExpandableCardDemo extends React.PureComponent {
   toogleExpand = () => {
     this.setState(state => {
       return {
-        expanded: !state.expanded,
+        expanded: !state.expanded
       };
     });
   };
@@ -50,29 +48,23 @@ class ExpandableCardDemo extends React.PureComponent {
         layer="flat"
         expandableContent={content}
         expanded={expanded}
-        onFold={foldable ? this.toogleExpand : null}>
+        onFold={foldable ? this.toogleExpand : null}
+      >
         <p>
-          Cette carte peut afficher plus de détails.
-          {' '}
+          Cette carte peut afficher plus de détails.{" "}
           <a href="#" onClick={this.onToggleExpand}>
-            {expanded ? 'Replier' : 'En savoir plus'}
+            {expanded ? "Replier" : "En savoir plus"}
           </a>
         </p>
       </ExpandableCard>
     );
   }
-
 }
 
-
-storiesOf('ExpandableCard', module)
-  .add('main', () => {
-    return (
-      <ExpandableCardDemo />
-    );
+storiesOf("ExpandableCard", module)
+  .add("main", () => {
+    return <ExpandableCardDemo />;
   })
-  .add('Avec bouton pour repliage', () => {
-    return (
-      <ExpandableCardDemo foldable />
-    );
+  .add("Avec bouton pour repliage", () => {
+    return <ExpandableCardDemo foldable />;
   });

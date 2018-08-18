@@ -1,30 +1,26 @@
-import { PENDING, FULFILLED, REJECTED } from 'redux-promise-middleware';
-
+import { PENDING, FULFILLED, REJECTED } from "redux-promise-middleware";
 
 // Selectors
 
 export const selectIsLoading = state => state.loader.loading;
 
-
 // Actions
 
-const CHANGE_STATE = 'LOADER/CHANGE_STATE';
-
+const CHANGE_STATE = "LOADER/CHANGE_STATE";
 
 function changeState(loading) {
   return {
     type: CHANGE_STATE,
     payload: {
-      loading,
-    },
+      loading
+    }
   };
 }
-
 
 // Reducer
 
 const initialState = {
-  loading: false,
+  loading: false
 };
 
 export default (state = initialState, action) => {
@@ -36,7 +32,6 @@ export default (state = initialState, action) => {
 
   return state;
 };
-
 
 // Middleware
 

@@ -1,56 +1,45 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import ProgressButton from './ProgressButton';
-import sleep from './sleep';
+import ProgressButton from "./ProgressButton";
+import sleep from "./sleep";
 
-
-storiesOf('Forms / ProgressButton', module)
-  .add('main', () => {
-    return (
-      <ProgressButtonDemo />
-    );
+storiesOf("Forms / ProgressButton", module)
+  .add("main", () => {
+    return <ProgressButtonDemo />;
   })
-  .add('loading', () => {
-    return (
-      <ProgressButton loading>Payer</ProgressButton>
-    );
+  .add("loading", () => {
+    return <ProgressButton loading>Payer</ProgressButton>;
   })
-  .add('finished', () => {
-    return (
-      <ProgressButton finished>Payer</ProgressButton>
-    );
+  .add("finished", () => {
+    return <ProgressButton finished>Payer</ProgressButton>;
   })
-  .add('disabled', () => {
-    return (
-      <ProgressButton disabled>Payer</ProgressButton>
-    );
+  .add("disabled", () => {
+    return <ProgressButton disabled>Payer</ProgressButton>;
   });
 
-
 class ProgressButtonDemo extends React.PureComponent {
-
   state = {
     loading: false,
-    finished: false,
+    finished: false
   };
 
   onClick = async () => {
     this.setState({
-      loading: true,
+      loading: true
     });
 
     await sleep(3000);
 
     this.setState({
-      finished: true,
+      finished: true
     });
 
     await sleep(1000);
 
     this.setState({
       loading: false,
-      finished: false,
+      finished: false
     });
   };
 
@@ -63,5 +52,4 @@ class ProgressButtonDemo extends React.PureComponent {
       </ProgressButton>
     );
   }
-
 }

@@ -1,32 +1,28 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Price from './Price';
-import bemModifiers from './bemModifiers';
+import Price from "./Price";
+import bemModifiers from "./bemModifiers";
 
-import './Travel.scss';
-
+import "./Travel.scss";
 
 const tripPropShape = PropTypes.shape({
   origin: PropTypes.string.isRequired,
   destination: PropTypes.string.isRequired,
-  departureDate: PropTypes.string.isRequired,
+  departureDate: PropTypes.string.isRequired
 });
-
 
 const amountPropShape = PropTypes.shape({
   value: PropTypes.number.isRequired,
-  currency: PropTypes.string.isRequired,
-})
-
+  currency: PropTypes.string.isRequired
+});
 
 export default class Travel extends React.PureComponent {
-
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
     inwardTrip: tripPropShape,
     passengerCount: PropTypes.number.isRequired,
-    price: amountPropShape.isRequired,
+    price: amountPropShape.isRequired
   };
 
   render() {
@@ -34,27 +30,22 @@ export default class Travel extends React.PureComponent {
 
     return (
       <section className="travel">
-        <TravelHeader
-          outwardTrip={outwardTrip}
-          inwardTrip={inwardTrip}
-          price={price} />
+        <TravelHeader outwardTrip={outwardTrip} inwardTrip={inwardTrip} price={price} />
         <TravelDetails
           outwardDepartureDate={outwardTrip.departureDate}
           inwardDepartureDate={inwardTrip && inwardTrip.departureDate}
-          passengerCount={passengerCount} />
+          passengerCount={passengerCount}
+        />
       </section>
     );
   }
-
 }
 
-
 class TravelHeader extends React.PureComponent {
-
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
     inwardTrip: tripPropShape,
-    price: amountPropShape.isRequired,
+    price: amountPropShape.isRequired
   };
 
   render() {
@@ -67,15 +58,12 @@ class TravelHeader extends React.PureComponent {
       </div>
     );
   }
-
 }
 
-
 class TravelTitle extends React.PureComponent {
-
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
-    inwardTrip: tripPropShape,
+    inwardTrip: tripPropShape
   };
 
   render() {
@@ -84,10 +72,10 @@ class TravelTitle extends React.PureComponent {
     const symetricalRountrip = roundtrip && isSymetricalRountrip(outwardTrip, inwardTrip);
     const asymetricalRountrip = roundtrip && !symetricalRountrip;
 
-    const separator = symetricalRountrip ? '⇄' : '➝';
+    const separator = symetricalRountrip ? "⇄" : "➝";
 
-    const titleClass = bemModifiers('travel__header-title', {
-      'asymetrical-roundtrip': asymetricalRountrip,
+    const titleClass = bemModifiers("travel__header-title", {
+      "asymetrical-roundtrip": asymetricalRountrip
     });
 
     return (
@@ -97,39 +85,45 @@ class TravelTitle extends React.PureComponent {
       </h1>
     );
   }
-
 }
 
 class TravelDetails extends React.PureComponent {
-
   static propTypes = {
     outwardDepartureDate: PropTypes.string.isRequired,
     inwardDepartureDate: PropTypes.string,
-    passengerCount: PropTypes.number.isRequired,
+    passengerCount: PropTypes.number.isRequired
   };
 
   render() {
     const { outwardDepartureDate, inwardDepartureDate, passengerCount } = this.props;
-    const dimension = passengerCount === 1 ? 'passager' : 'passagers';
+    const dimension = passengerCount === 1 ? "passager" : "passagers";
 
     return (
       <div className="travel__details">
-        {!inwardDepartureDate && <h2 className="travel__details-date">
-          Départ le <b>{outwardDepartureDate}</b>
-        </h2>}
-        {inwardDepartureDate && <h2 className="travel__details-date">
-          Aller le <b>{outwardDepartureDate}</b>
-        </h2>}
-        {inwardDepartureDate && <h2 className="travel__details-date">
-          Retour le <b>{inwardDepartureDate}</b>
-        </h2>}
-        <p className="travel__details-passengers">{passengerCount}&nbsp;{dimension}</p>
+        {!inwardDepartureDate && (
+          <h2 className="travel__details-date">
+            Départ le <b>{outwardDepartureDate}</b>
+          </h2>
+        )}
+        {inwardDepartureDate && (
+          <h2 className="travel__details-date">
+            Aller le <b>{outwardDepartureDate}</b>
+          </h2>
+        )}
+        {inwardDepartureDate && (
+          <h2 className="travel__details-date">
+            Retour le <b>{inwardDepartureDate}</b>
+          </h2>
+        )}
+        <p className="travel__details-passengers">
+          {passengerCount}
+          &nbsp;
+          {dimension}
+        </p>
       </div>
     );
   }
-
 }
-
 
 function isSymetricalRountrip(outwardTrip, inwardTrip) {
   if (!inwardTrip) {
@@ -137,4 +131,3 @@ function isSymetricalRountrip(outwardTrip, inwardTrip) {
   }
   return outwardTrip.origin === inwardTrip.destination && outwardTrip.destination === inwardTrip.origin;
 }
-

@@ -1,31 +1,29 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
-import Spinner from './Spinner';
-
+import Spinner from "./Spinner";
 
 export default class AsyncLoader extends React.Component {
-
   static propTypes = {
     loader: PropTypes.func.isRequired,
-    error: PropTypes.func,
+    error: PropTypes.func
   };
 
   state = {
     loading: true,
     component: null,
-    generation: 0,
+    generation: 0
   };
 
   unmounted = false;
 
   onLoaded(component, expectedGeneration) {
     if (!this.unmounted) {
-      this.setState((prevState) => {
+      this.setState(prevState => {
         if (prevState.generation === expectedGeneration) {
           this.setState({
             loading: false,
-            component,
+            component
           });
         }
       });
@@ -37,14 +35,14 @@ export default class AsyncLoader extends React.Component {
 
     const newGeneration = generation + 1;
     this.setState({
-      generation: newGeneration,
+      generation: newGeneration
     });
 
     let component = null;
     try {
       component = await loader();
     } catch (e) {
-      console.error('Failed to load some component', e);
+      console.error("Failed to load some component", e);
       component = error(e);
     }
 
@@ -77,5 +75,4 @@ export default class AsyncLoader extends React.Component {
       </Fragment>
     );
   }
-
 }

@@ -1,19 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import OrderEditor from './OrderEditor';
-import Wip from './Wip';
+import OrderEditor from "./OrderEditor";
+import Wip from "./Wip";
 
-import './PaymentContainer.scss';
-
+import "./PaymentContainer.scss";
 
 export default class PaymentContainer extends React.PureComponent {
-
   static propTypes = {
     items: OrderEditor.propTypes.items,
     onAddVoucher: OrderEditor.propTypes.onAddVoucher,
     onCancelVoucher: OrderEditor.propTypes.onCancelVoucher,
     onAddDonation: OrderEditor.propTypes.onAddDonation,
-    onCancelDonation: OrderEditor.propTypes.onCancelDonation,
+    onCancelDonation: OrderEditor.propTypes.onCancelDonation
   };
 
   render() {
@@ -27,16 +25,15 @@ export default class PaymentContainer extends React.PureComponent {
             onAddVoucher={onAddVoucher}
             onCancelVoucher={onCancelVoucher}
             onAddDonation={onAddDonation}
-            onCancelDonation={onCancelDonation} />
+            onCancelDonation={onCancelDonation}
+          />
         </div>
         <div className="payment-container__right">
           <Wip>
-            <p style={{height: '30rem'}}>
-              Ici, il y aura le formulaire de paiement
-            </p></Wip>
+            <p style={{ height: "30rem" }}>Ici, il y aura le formulaire de paiement</p>
+          </Wip>
         </div>
       </section>
     );
   }
-
 }

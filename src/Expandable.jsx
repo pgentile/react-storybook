@@ -1,20 +1,18 @@
-import React, { createRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { createRef } from "react";
+import PropTypes from "prop-types";
 
-import animate from './animate';
+import animate from "./animate";
 
-import './Expandable.scss';
-
+import "./Expandable.scss";
 
 export default class Expandable extends React.PureComponent {
-
   static propTypes = {
     children: PropTypes.node,
-    expanded: PropTypes.bool.isRequired,
+    expanded: PropTypes.bool.isRequired
   };
 
   static defaultProps = {
-    expanded: false,
+    expanded: false
   };
 
   duration = 150;
@@ -64,7 +62,7 @@ export default class Expandable extends React.PureComponent {
     });
 
     this.stillMounted(() => {
-      this.windowRef.current.style.height = 'auto';
+      this.windowRef.current.style.height = "auto";
     });
   }
 
@@ -82,7 +80,7 @@ export default class Expandable extends React.PureComponent {
   }
 
   showNow() {
-    this.windowRef.current.style.height = 'auto';
+    this.windowRef.current.style.height = "auto";
   }
 
   hideNow() {
@@ -102,6 +100,4 @@ export default class Expandable extends React.PureComponent {
       </div>
     );
   }
-
 }
-

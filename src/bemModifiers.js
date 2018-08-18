@@ -7,5 +7,5 @@ export default function bemModifiers(elementOrBlockClass, modifiers) {
     }
   });
 
-  return classNames.join(' ');
+  return classNames.join(" ");
 }

@@ -1,43 +1,34 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { Provider } from 'react-redux';
-import { storiesOf } from '@storybook/react';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { Provider } from "react-redux";
+import { storiesOf } from "@storybook/react";
 
-import createStore from './redux/createStore';
-import loader, { loaderMiddleware, selectIsLoading } from './redux/reducers/loader';
-import Spinner from './Spinner';
-import sleep from './sleep';
+import createStore from "./redux/createStore";
+import loader, { loaderMiddleware, selectIsLoading } from "./redux/reducers/loader";
+import Spinner from "./Spinner";
+import sleep from "./sleep";
 
-
-storiesOf('LoaderDemo', module)
+storiesOf("LoaderDemo", module)
   .addDecorator(story => {
     const reducers = { loader };
     const store = createStore(reducers, {
-      extraMiddlewares: [loaderMiddleware()],
+      extraMiddlewares: [loaderMiddleware()]
     });
 
-    return (
-      <Provider store={store}>
-        {story()}
-      </Provider>
-    );
+    return <Provider store={store}>{story()}</Provider>;
   })
-  .add('main', () => {
-    return (
-      <LoaderDemoConnected />
-    );
+  .add("main", () => {
+    return <LoaderDemoConnected />;
   });
 
-
 class LoaderDemo extends React.PureComponent {
-
   static propTypes = {
     loading: PropTypes.bool.isRequired,
     loadOne: PropTypes.func.isRequired,
     loadParallel: PropTypes.func.isRequired,
     loadSequential: PropTypes.func.isRequired,
-    loadOneNoIndicator: PropTypes.func.isRequired,
+    loadOneNoIndicator: PropTypes.func.isRequired
   };
 
   onLoadOne = () => {
@@ -61,7 +52,6 @@ class LoaderDemo extends React.PureComponent {
 
     return (
       <Fragment>
-
         <div>
           <button onClick={this.onLoadOne}>Load one</button>
           <button onClick={this.onLoadParallel}>Load parallel</button>
@@ -69,14 +59,14 @@ class LoaderDemo extends React.PureComponent {
           <button onClick={this.onLoadOneNoIndicator}>Load on, no indicator</button>
         </div>
 
-        {loading && <div>
-          <Spinner />
-        </div>}
-
+        {loading && (
+          <div>
+            <Spinner />
+          </div>
+        )}
       </Fragment>
     );
   }
-
 }
 
 function loadOne() {
@@ -105,13 +95,13 @@ function loadSequential() {
 
 function loadSomething(ignoreLoader = false) {
   return {
-    type: 'LOAD_SOMETHING',
+    type: "LOAD_SOMETHING",
     payload: sleep(1000),
     meta: {
       loader: {
-        ignore: ignoreLoader,
-      },
-    },
+        ignore: ignoreLoader
+      }
+    }
   };
 }
 
@@ -119,11 +109,14 @@ const mapDispatchToProps = {
   loadOne,
   loadParallel,
   loadSequential,
-  loadOneNoIndicator,
+  loadOneNoIndicator
 };
 
 const mapStateToProps = state => ({
-  loading: selectIsLoading(state),
+  loading: selectIsLoading(state)
 });
 
-const LoaderDemoConnected = connect(mapStateToProps, mapDispatchToProps)(LoaderDemo);
+const LoaderDemoConnected = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(LoaderDemo);

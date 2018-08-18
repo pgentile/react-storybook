@@ -1,15 +1,14 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean } from '@storybook/addon-knobs/react';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withKnobs, boolean } from "@storybook/addon-knobs/react";
 
-import Expandable from './Expandable';
+import Expandable from "./Expandable";
 
-
-storiesOf('Expandable', module)
+storiesOf("Expandable", module)
   .addDecorator(withKnobs)
-  .add('Exemple', () => {
+  .add("Exemple", () => {
     return (
-      <Expandable expanded={boolean('expanded', true)}>
+      <Expandable expanded={boolean("expanded", true)}>
         <p>Voici du contenu dépliable.</p>
         <p>Voici du contenu dépliable.</p>
         <p>Voici du contenu dépliable.</p>

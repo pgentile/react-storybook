@@ -1,27 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Card from './Card';
-import Button from './Button';
-import FlatButton from './FlatButton';
+import Card from "./Card";
+import Button from "./Button";
+import FlatButton from "./FlatButton";
 
-import './Donation.scss';
-
+import "./Donation.scss";
 
 export default class Donation extends React.PureComponent {
-
   static propTypes = {
     className: PropTypes.string.isRequired,
     selectedDonation: PropTypes.shape({
       code: PropTypes.string.isRequired,
-      association: PropTypes.string.isRequired,
+      association: PropTypes.string.isRequired
     }),
     onAddDonation: PropTypes.func.isRequired,
-    onCancelDonation: PropTypes.func.isRequired,
+    onCancelDonation: PropTypes.func.isRequired
   };
 
   static defaultProps = {
-    className: '',
+    className: ""
   };
 
   onAddDonation = () => {
@@ -37,34 +35,28 @@ export default class Donation extends React.PureComponent {
     const hasDonationSelected = !!selectedDonation;
 
     return (
-      <Card
-        as="section"
-        layer="flat"
-        className={`donation ${className}`}>
+      <Card as="section" layer="flat" className={`donation ${className}`}>
+        {!hasDonationSelected && (
+          <FlatButton className="donation__add-button" onClick={this.onAddDonation}>
+            Voulez-vous ajouter un don&nbsp;?
+          </FlatButton>
+        )}
 
-        {!hasDonationSelected && <FlatButton className="donation__add-button" onClick={this.onAddDonation}>
-          Voulez-vous ajouter un don&nbsp;?
-        </FlatButton>}
-
-        {hasDonationSelected && <SelectedDonation
-          donation={selectedDonation}
-          onCancelDonation={this.onCancelDonation} />}
-
+        {hasDonationSelected && (
+          <SelectedDonation donation={selectedDonation} onCancelDonation={this.onCancelDonation} />
+        )}
       </Card>
     );
   }
-
 }
 
-
 class SelectedDonation extends React.PureComponent {
-
   static propTypes = {
     donation: PropTypes.shape({
       code: PropTypes.string.isRequired,
-      association: PropTypes.string.isRequired,
+      association: PropTypes.string.isRequired
     }).isRequired,
-    onCancelDonation: PropTypes.func.isRequired,
+    onCancelDonation: PropTypes.func.isRequired
   };
 
   onCancelDonation = () => {
@@ -77,8 +69,7 @@ class SelectedDonation extends React.PureComponent {
     return (
       <div className="donation__selection">
         <p className="donation__selection-thanks">
-          Vous avez choisi de faire un don à <b>{donation.association}</b>.
-          Nous vous en remercions&nbsp;!
+          Vous avez choisi de faire un don à <b>{donation.association}</b>. Nous vous en remercions&nbsp;!
         </p>
         <p className="donation__selection-cancel">
           <Button size="small" onClick={this.onCancelDonation}>
@@ -88,8 +79,4 @@ class SelectedDonation extends React.PureComponent {
       </div>
     );
   }
-
 }
-
-
-

@@ -1,23 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './Price.scss';
-
+import "./Price.scss";
 
 export default class Price extends React.PureComponent {
-
   static propTypes = {
     as: PropTypes.any,
     className: PropTypes.string,
     price: PropTypes.shape({
       value: PropTypes.number.isRequired,
-      currency: PropTypes.string.isRequired,
-    }).isRequired,
+      currency: PropTypes.string.isRequired
+    }).isRequired
   };
 
   static defaultProps = {
-    as: 'span',
-    className: '',
+    as: "span",
+    className: ""
   };
 
   render() {
@@ -29,14 +27,14 @@ export default class Price extends React.PureComponent {
 
     return (
       <Element className={`price ${className}`}>
-        <span className="price__units">
-          {units}
-        </span>
+        <span className="price__units">{units}</span>
         <span className="price__remaining">
-          ,&thinsp;{centsDisplay}&nbsp;{currency}
+          ,&thinsp;
+          {centsDisplay}
+          &nbsp;
+          {currency}
         </span>
       </Element>
     );
   }
-
 }
