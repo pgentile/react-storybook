@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 
 import OrderSummary from "./OrderSummary";
 import VoucherContainer from "./VoucherContainer";
+import InsuranceContainer from "./InsuranceContainer";
 import Donation from "./Donation";
-import { DONATION_TYPE, VOUCHER_TYPE } from "./redux/reducers/payment";
+import { DONATION_TYPE, VOUCHER_TYPE, INSURANCE_TYPE } from "./redux/reducers/payment";
 
 import "./OrderEditor.scss";
 
@@ -13,14 +14,25 @@ export default class OrderEditor extends React.PureComponent {
     items: OrderSummary.propTypes.items,
     onAddVoucher: VoucherContainer.propTypes.onAddVoucher,
     onCancelVoucher: PropTypes.func.isRequired,
+    onAddInsurance: InsuranceContainer.propTypes.onAddInsurance,
+    onCancelInsurance: PropTypes.func.isRequired,
     onAddDonation: Donation.propTypes.onAddDonation,
     onCancelDonation: Donation.propTypes.onCancelDonation
   };
 
   render() {
-    const { items, onAddVoucher, onCancelVoucher, onAddDonation, onCancelDonation } = this.props;
+    const {
+      items,
+      onAddVoucher,
+      onCancelVoucher,
+      onAddInsurance,
+      onCancelInsurance,
+      onAddDonation,
+      onCancelDonation
+    } = this.props;
     const hasVoucher = hasItemOfType(items, VOUCHER_TYPE);
-    const donation = findDonation(items);
+    const hasInsurance = hasItemOfType(items, INSURANCE_TYPE);
+    const donation = findItemOfType(items, DONATION_TYPE);
 
     const itemsWithActions = items.map(item => {
       switch (item.type) {
@@ -44,6 +56,11 @@ export default class OrderEditor extends React.PureComponent {
             ),
             onCancel: () => onCancelDonation()
           };
+        case INSURANCE_TYPE:
+          return {
+            ...item,
+            onCancel: () => onCancelInsurance()
+          };
         default:
           return item;
       }
@@ -53,9 +70,17 @@ export default class OrderEditor extends React.PureComponent {
       <section className="order-editor">
         <OrderSummary className="order-editor__summary" items={itemsWithActions} />
 
+        {!hasInsurance && (
+          <InsuranceContainer
+            className="order-editor__insurance"
+            onAddInsurance={onAddInsurance}
+            onCancelInsurance={onCancelInsurance}
+          />
+        )}
+
         {!hasVoucher && (
           <VoucherContainer
-            className="order-editor__voucher-form"
+            className="order-editor__voucher"
             onAddVoucher={onAddVoucher}
             onCancelVoucher={onCancelVoucher}
           />
@@ -76,8 +101,8 @@ function hasItemOfType(items, type) {
   return items.some(item => item.type === type);
 }
 
-function findDonation(items) {
-  const donationItem = items.find(item => item.type === DONATION_TYPE);
+function findItemOfType(items, type) {
+  const donationItem = items.find(item => item.type === type);
   if (!donationItem) {
     return null;
   }

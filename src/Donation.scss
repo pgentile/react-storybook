@@ -11,9 +11,15 @@
   }
 
   &__selection {
+    margin: $margin;
 
-    p {
-      margin: $margin;
+    &-thanks, &-cancel {
+      margin: $margin 0;
+    }
+
+    &-cancel-button {
+      display: block;
+      margin: 0 auto;
     }
 
   }

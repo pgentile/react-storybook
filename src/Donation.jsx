@@ -72,7 +72,7 @@ class SelectedDonation extends React.PureComponent {
           Vous avez choisi de faire un don à <b>{donation.association}</b>. Nous vous en remercions&nbsp;!
         </p>
         <p className="donation__selection-cancel">
-          <Button size="small" onClick={this.onCancelDonation}>
+          <Button className="donation__selection-cancel-button" size="small" onClick={this.onCancelDonation}>
             Annuler mon don
           </Button>
         </p>

@@ -32,6 +32,8 @@ storiesOf("Payment / PaymentContainer", module).add("main", () => {
       items={items}
       onAddVoucher={action("add voucher")}
       onCancelVoucher={action("cancel voucher")}
+      onAddInsurance={action("add insurance")}
+      onCancelInsurance={action("cancel insurance")}
       onAddDonation={action("add donation")}
       onCancelDonation={action("cancel donation")}
     />

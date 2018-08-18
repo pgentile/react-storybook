@@ -1,11 +1,7 @@
 .order-editor {
   $margin: 1rem;
 
-  &__voucher-form {
-    margin-top: $margin;
-  }
-
-  &__donation {
+  &__insurance, &__voucher, &__donation {
     margin-top: $margin;
   }
 

@@ -27,6 +27,10 @@ export const selectPaymentItemsWithoutDonation = scope(payment => {
   return selectPaymentItems.withinScope(payment).filter(item => item.type !== DONATION_TYPE);
 });
 
+export const selectPaymentItemsWithoutInsurance = scope(payment => {
+  return selectPaymentItems.withinScope(payment).filter(item => item.type !== INSURANCE_TYPE);
+});
+
 export const selectVoucher = scope(payment => {
   return selectPaymentItems.withinScope(payment).find(item => item.type === VOUCHER_TYPE) || null;
 });
@@ -44,6 +48,9 @@ const CANCEL_VOUCHER = "PAYMENT/VOUCHER/CANCEL";
 
 const ADD_DONATION = "PAYMENT/DONATION/ADD";
 const CANCEL_DONATION = "PAYMENT/DONATION/CANCEL";
+
+const ADD_INSURANCE = "PAYMENT/INSURANCE/ADD";
+const CANCEL_INSURANCE = "PAYMENT/INSURANCE/CANCEL";
 
 export function loadItems(items) {
   return {
@@ -66,6 +73,22 @@ export function addVoucher(code) {
 export function cancelVoucher() {
   return {
     type: CANCEL_VOUCHER,
+    payload: Promise.resolve()
+  };
+}
+
+export function addInsurance(price) {
+  return {
+    type: ADD_INSURANCE,
+    payload: Promise.resolve({
+      price
+    })
+  };
+}
+
+export function cancelInsurance() {
+  return {
+    type: CANCEL_INSURANCE,
     payload: Promise.resolve()
   };
 }
@@ -160,6 +183,31 @@ export default (state = initialState, action) => {
       return {
         ...state,
         items: selectPaymentItemsWithoutDonation.withinScope(state)
+      };
+    }
+
+    case `${ADD_INSURANCE}_${FULFILLED}`: {
+      const { price } = payload;
+
+      const itemsWithoutInsurance = selectPaymentItemsWithoutInsurance.withinScope(state);
+
+      const insuranceItem = {
+        id: "insurance",
+        type: INSURANCE_TYPE,
+        label: "Vos assurances",
+        price
+      };
+
+      return {
+        ...state,
+        items: [...itemsWithoutInsurance, insuranceItem]
+      };
+    }
+
+    case `${CANCEL_INSURANCE}_${FULFILLED}`: {
+      return {
+        ...state,
+        items: selectPaymentItemsWithoutInsurance.withinScope(state)
       };
     }
 

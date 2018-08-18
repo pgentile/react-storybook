@@ -1,0 +1,10 @@
+.insurance {
+  $margin: 1rem;
+
+  &__question {
+    width: 100%;
+    padding: $margin;
+    text-align: center;
+  }
+
+}

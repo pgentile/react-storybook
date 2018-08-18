@@ -10,12 +10,22 @@ export default class PaymentContainer extends React.PureComponent {
     items: OrderEditor.propTypes.items,
     onAddVoucher: OrderEditor.propTypes.onAddVoucher,
     onCancelVoucher: OrderEditor.propTypes.onCancelVoucher,
+    onAddInsurance: OrderEditor.propTypes.onAddInsurance,
+    onCancelInsurance: OrderEditor.propTypes.onCancelInsurance,
     onAddDonation: OrderEditor.propTypes.onAddDonation,
     onCancelDonation: OrderEditor.propTypes.onCancelDonation
   };
 
   render() {
-    const { items, onAddVoucher, onCancelVoucher, onAddDonation, onCancelDonation } = this.props;
+    const {
+      items,
+      onAddVoucher,
+      onCancelVoucher,
+      onAddInsurance,
+      onCancelInsurance,
+      onAddDonation,
+      onCancelDonation
+    } = this.props;
 
     return (
       <section className="payment-container">
@@ -24,6 +34,8 @@ export default class PaymentContainer extends React.PureComponent {
             items={items}
             onAddVoucher={onAddVoucher}
             onCancelVoucher={onCancelVoucher}
+            onAddInsurance={onAddInsurance}
+            onCancelInsurance={onCancelInsurance}
             onAddDonation={onAddDonation}
             onCancelDonation={onCancelDonation}
           />

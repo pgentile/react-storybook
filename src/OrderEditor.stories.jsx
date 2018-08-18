@@ -7,6 +7,7 @@ import { TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE } from "./redu
 
 const cancelVoucher = action("cancel voucher");
 const cancelDonation = action("cancel donation");
+const cancelInsurance = action("cancel insurance");
 
 const billetsItem = {
   id: "billets",
@@ -56,6 +57,8 @@ const donationItem = {
 const onActions = {
   onAddVoucher: action("add voucher"),
   onCancelVoucher: cancelVoucher,
+  onAddInsurance: action("add insurance"),
+  onCancelInsurance: cancelInsurance,
   onAddDonation: action("add donation"),
   onCancelDonation: cancelDonation
 };
