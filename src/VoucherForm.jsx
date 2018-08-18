@@ -28,6 +28,7 @@ class VoucherForm extends React.PureComponent {
       className,
       values,
       errors,
+      touched,
       handleChange,
       handleBlur,
       handleSubmit,
@@ -43,12 +44,11 @@ class VoucherForm extends React.PureComponent {
     return (
       <form className={`voucher-form ${className}`} onSubmit={handleSubmit}>
         <div className="voucher-form__line">
-          <FieldContainer label="Code promo" errorMessage={errors.code || errorMessage}>
+          <FieldContainer label="Code promo" errorMessage={(touched.code && errors.code) || errorMessage}>
             {props => (
               <InputField
                 {...props}
                 name="code"
-                autoFocus
                 autoComplete="off"
                 maxLength={16}
                 disabled={disableForm}

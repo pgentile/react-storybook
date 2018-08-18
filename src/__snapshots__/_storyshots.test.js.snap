@@ -2413,7 +2413,6 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
       >
         <input
           autoComplete="off"
-          autoFocus={true}
           className="form-input-field"
           disabled={false}
           id="form-field-4"
@@ -2478,7 +2477,6 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
       >
         <input
           autoComplete="off"
-          autoFocus={true}
           className="form-input-field"
           disabled={false}
           id="form-field-5"
@@ -2543,7 +2541,6 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
       >
         <input
           autoComplete="off"
-          autoFocus={true}
           className="form-input-field"
           disabled={false}
           id="form-field-7"
@@ -2608,7 +2605,6 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
       >
         <input
           autoComplete="off"
-          autoFocus={true}
           className="form-input-field"
           disabled={false}
           id="form-field-6"
