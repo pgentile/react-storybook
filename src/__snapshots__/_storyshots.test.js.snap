@@ -1228,14 +1228,29 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
             RADIN
           </b>
            appliqué
-          <a
-            className="order-summary__item-cancel"
-            href="#"
-            onClick={[Function]}
-          >
-            Supprimer
-          </a>
         </span>
+        <a
+          className="order-summary__item-cancel"
+          href="#"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            data-icon="trash-alt"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
         <span
           className="price order-summary__item-price"
         >
@@ -1262,6 +1277,28 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         >
           Vos assurances
         </span>
+        <a
+          className="order-summary__item-cancel"
+          href="#"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            data-icon="trash-alt"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
         <span
           className="price order-summary__item-price"
         >
@@ -1370,14 +1407,29 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
           <b>
             Médecins sans frontières
           </b>
-          <a
-            className="order-summary__item-cancel"
-            href="#"
-            onClick={[Function]}
-          >
-            Supprimer
-          </a>
         </span>
+        <a
+          className="order-summary__item-cancel"
+          href="#"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            data-icon="trash-alt"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
         <span
           className="price order-summary__item-price"
         >
@@ -1428,7 +1480,34 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
     </p>
   </section>
   <section
-    className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
+    className="card card--has-border card--layer-flat insurance order-editor__insurance"
+  >
+    <button
+      className="flat-button insurance__question"
+      onClick={[Function]}
+    >
+      Assurez votre voyage, à partir de 
+      <span
+        className="price "
+      >
+        <span
+          className="price__units"
+        >
+          12
+        </span>
+        <span
+          className="price__remaining"
+        >
+          , 
+          90
+           
+          €
+        </span>
+      </span>
+    </button>
+  </section>
+  <section
+    className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
   >
     <button
       className="flat-button voucher-container__question"
@@ -1456,7 +1535,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
         className="donation__selection-cancel"
       >
         <button
-          className="button button--size-small "
+          className="button button--size-small donation__selection-cancel-button"
           onClick={[Function]}
         >
           Annuler mon don
@@ -1511,6 +1590,28 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
         >
           Vos assurances
         </span>
+        <a
+          className="order-summary__item-cancel"
+          href="#"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            data-icon="trash-alt"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
         <span
           className="price order-summary__item-price"
         >
@@ -1561,7 +1662,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
     </p>
   </section>
   <section
-    className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
+    className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
   >
     <button
       className="flat-button voucher-container__question"
@@ -1618,7 +1719,34 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
     </p>
   </section>
   <section
-    className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
+    className="card card--has-border card--layer-flat insurance order-editor__insurance"
+  >
+    <button
+      className="flat-button insurance__question"
+      onClick={[Function]}
+    >
+      Assurez votre voyage, à partir de 
+      <span
+        className="price "
+      >
+        <span
+          className="price__units"
+        >
+          12
+        </span>
+        <span
+          className="price__remaining"
+        >
+          , 
+          90
+           
+          €
+        </span>
+      </span>
+    </button>
+  </section>
+  <section
+    className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
   >
     <button
       className="flat-button voucher-container__question"
@@ -1680,14 +1808,29 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
         className="order-summary__item-label"
       >
         Votre code promotion
-        <a
-          className="order-summary__item-cancel"
-          href="#"
-          onClick={[Function]}
-        >
-          Supprimer
-        </a>
       </span>
+      <a
+        className="order-summary__item-cancel"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          data-icon="trash-alt"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
       <span
         className="price order-summary__item-price"
       >
@@ -1714,6 +1857,28 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
       >
         Vos assurances
       </span>
+      <a
+        className="order-summary__item-cancel"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          data-icon="trash-alt"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
       <span
         className="price order-summary__item-price"
       >
@@ -1805,14 +1970,29 @@ exports[`Storyshots Payment / OrderSummary Avec un don 1`] = `
         className="order-summary__item-label"
       >
         Votre don
-        <a
-          className="order-summary__item-cancel"
-          href="#"
-          onClick={[Function]}
-        >
-          Supprimer
-        </a>
       </span>
+      <a
+        className="order-summary__item-cancel"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          data-icon="trash-alt"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
       <span
         className="price order-summary__item-price"
       >
@@ -1905,6 +2085,28 @@ exports[`Storyshots Payment / OrderSummary Billets & assurances 1`] = `
       >
         Vos assurances
       </span>
+      <a
+        className="order-summary__item-cancel"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          data-icon="trash-alt"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
       <span
         className="price order-summary__item-price"
       >
@@ -2029,14 +2231,29 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
         className="order-summary__item-label"
       >
         Votre code promotion
-        <a
-          className="order-summary__item-cancel"
-          href="#"
-          onClick={[Function]}
-        >
-          Supprimer
-        </a>
       </span>
+      <a
+        className="order-summary__item-cancel"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          data-icon="trash-alt"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
       <span
         className="price order-summary__item-price"
       >
@@ -2063,6 +2280,28 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
       >
         Vos assurances
       </span>
+      <a
+        className="order-summary__item-cancel"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          data-icon="trash-alt"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
       <span
         className="price order-summary__item-price"
       >
@@ -2088,14 +2327,29 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
         className="order-summary__item-label"
       >
         Votre don
-        <a
-          className="order-summary__item-cancel"
-          href="#"
-          onClick={[Function]}
-        >
-          Supprimer
-        </a>
       </span>
+      <a
+        className="order-summary__item-cancel"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          data-icon="trash-alt"
+          data-prefix="fas"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
       <span
         className="price order-summary__item-price"
       >
@@ -2197,6 +2451,28 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             >
               Vos assurances
             </span>
+            <a
+              className="order-summary__item-cancel"
+              href="#"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-trash-alt fa-w-14 "
+                data-icon="trash-alt"
+                data-prefix="fas"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
             <span
               className="price order-summary__item-price"
             >
@@ -2247,7 +2523,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
         </p>
       </section>
       <section
-        className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
+        className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
       >
         <button
           className="flat-button voucher-container__question"
@@ -2333,7 +2609,34 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
         </p>
       </section>
       <section
-        className="card card--has-border card--layer-flat voucher-container order-editor__voucher-form"
+        className="card card--has-border card--layer-flat insurance order-editor__insurance"
+      >
+        <button
+          className="flat-button insurance__question"
+          onClick={[Function]}
+        >
+          Assurez votre voyage, à partir de 
+          <span
+            className="price "
+          >
+            <span
+              className="price__units"
+            >
+              12
+            </span>
+            <span
+              className="price__remaining"
+            >
+              , 
+              90
+               
+              €
+            </span>
+          </span>
+        </button>
+      </section>
+      <section
+        className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
       >
         <button
           className="flat-button voucher-container__question"

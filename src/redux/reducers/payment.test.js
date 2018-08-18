@@ -1,6 +1,7 @@
 import payment, {
   VOUCHER_TYPE,
   DONATION_TYPE,
+  TICKET_TYPE,
   selectPaymentItems,
   selectPaymentItemsWithoutVoucher,
   selectPaymentItemsWithoutDonation,
@@ -34,7 +35,7 @@ beforeEach(() => {
 
 describe("Selectors", () => {
   test("Select items", async () => {
-    const items = [createItem(), createItem(), createItem()];
+    const items = [createItem({ type: TICKET_TYPE })];
 
     await store.dispatch(loadItems(items));
     const selectedItems = selectPaymentItems(store.getState());
@@ -43,27 +44,35 @@ describe("Selectors", () => {
   });
 
   test("Select items without voucher", async () => {
-    const items = [createItem(), createItem({ type: VOUCHER_TYPE }), createItem({ type: DONATION_TYPE }), createItem()];
+    const items = [
+      createItem({ type: TICKET_TYPE }),
+      createItem({ type: VOUCHER_TYPE }),
+      createItem({ type: DONATION_TYPE })
+    ];
 
     await store.dispatch(loadItems(items));
 
     const selectedItems = selectPaymentItemsWithoutVoucher(store.getState());
 
-    expect(selectedItems).toHaveLength(3);
+    expect(selectedItems).toHaveLength(2);
   });
 
   test("Select items without donation", async () => {
-    const items = [createItem(), createItem({ type: VOUCHER_TYPE }), createItem({ type: DONATION_TYPE }), createItem()];
+    const items = [
+      createItem({ type: TICKET_TYPE }),
+      createItem({ type: VOUCHER_TYPE }),
+      createItem({ type: DONATION_TYPE })
+    ];
 
     await store.dispatch(loadItems(items));
 
     const selectedItems = selectPaymentItemsWithoutDonation(store.getState());
 
-    expect(selectedItems).toHaveLength(3);
+    expect(selectedItems).toHaveLength(2);
   });
 
   test("Select voucher", async () => {
-    const items = [createItem(), createItem({ type: VOUCHER_TYPE }), createItem()];
+    const items = [createItem({ type: TICKET_TYPE }), createItem({ type: VOUCHER_TYPE })];
 
     await store.dispatch(loadItems(items));
 
@@ -73,7 +82,7 @@ describe("Selectors", () => {
   });
 
   test("Select unexisting voucher", async () => {
-    const items = [createItem(), createItem()];
+    const items = [createItem({ type: TICKET_TYPE })];
 
     await store.dispatch(loadItems(items));
 
@@ -83,7 +92,7 @@ describe("Selectors", () => {
   });
 
   test("Select donation", async () => {
-    const items = [createItem(), createItem({ type: DONATION_TYPE }), createItem()];
+    const items = [createItem({ type: TICKET_TYPE }), createItem({ type: DONATION_TYPE })];
 
     await store.dispatch(loadItems(items));
 
@@ -93,7 +102,7 @@ describe("Selectors", () => {
   });
 
   test("Select unexisting donation", async () => {
-    const items = [createItem(), createItem()];
+    const items = [createItem({ type: TICKET_TYPE })];
 
     await store.dispatch(loadItems(items));
 
@@ -105,7 +114,7 @@ describe("Selectors", () => {
 
 describe("Actions", () => {
   test("Load items", async () => {
-    const items = [createItem(), createItem(), createItem()];
+    const items = [createItem({ type: TICKET_TYPE })];
 
     await store.dispatch(loadItems(items));
 
@@ -132,9 +141,12 @@ describe("Actions", () => {
   });
 
   test("Adding a second voucher should replace first voucher", async () => {
+    const items = [createItem({ type: TICKET_TYPE })];
+
     const code = "RADIN";
     const code2 = "SECOND";
 
+    await store.dispatch(loadItems(items));
     await store.dispatch(addVoucher(code));
     await store.dispatch(addVoucher(code2));
 
@@ -171,9 +183,12 @@ describe("Actions", () => {
   });
 
   test("Adding a second donation should replace first donation", async () => {
+    const items = [createItem({ type: TICKET_TYPE })];
+
     const code = "MSF";
     const code2 = "SURF_RIDER";
 
+    await store.dispatch(loadItems(items));
     await store.dispatch(addDonation(code));
     await store.dispatch(addDonation(code2));
 
@@ -197,10 +212,15 @@ describe("Actions", () => {
   });
 });
 
-function createItem({ id, name, ...extraProps } = {}) {
+function createItem({ id, type, name, price, ...extraProps } = {}) {
   return {
     id: id || "id",
+    type: type || "type",
     name: name || "This is an item",
+    price: price || {
+      amount: 15.6,
+      currency: "€"
+    },
     ...extraProps
   };
 }

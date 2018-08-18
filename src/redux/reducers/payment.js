@@ -107,6 +107,11 @@ export default (state = initialState, action) => {
       const { code } = payload;
 
       const tickets = selectTickets.withinScope(state);
+
+      if (tickets.length === 0) {
+        return state;
+      }
+
       const ticketPrice = {
         value: tickets.map(ticket => ticket.price.value).reduce((left, right) => left + right, 0),
         currency: tickets[0].price.currency
