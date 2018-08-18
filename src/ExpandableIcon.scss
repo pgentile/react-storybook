@@ -1,7 +1,10 @@
 .expandable-icon {
 
-  transition: transform 0.2s linear;
+  transition: transform 0.15s linear;
   transform: rotate(90deg);
+
+  position: relative;
+  top: 0.15em;
 
   &--expanded {
     transform: rotate(180deg);

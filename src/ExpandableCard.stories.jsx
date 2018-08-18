@@ -3,14 +3,15 @@ import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react";
 
 import ExpandableCard from "./ExpandableCard";
+import ExpandableIcon from "./ExpandableIcon";
 
 class ExpandableCardDemo extends React.PureComponent {
   static propTypes = {
-    foldable: PropTypes.bool
+    expandable: PropTypes.bool
   };
 
   static defaultProps = {
-    foldable: false
+    expandable: false
   };
 
   state = {
@@ -40,7 +41,7 @@ class ExpandableCardDemo extends React.PureComponent {
   };
 
   render() {
-    const { foldable } = this.props;
+    const { expandable } = this.props;
     const { expanded, content } = this.state;
 
     return (
@@ -48,13 +49,15 @@ class ExpandableCardDemo extends React.PureComponent {
         layer="flat"
         expandableContent={content}
         expanded={expanded}
-        onFold={foldable ? this.toogleExpand : null}
+        onFold={expandable ? this.toogleExpand : null}
       >
         <p>
           Cette carte peut afficher plus de détails.{" "}
           <a href="#" onClick={this.onToggleExpand}>
-            {expanded ? "Replier" : "En savoir plus"}
+            En savoir plus
           </a>
+          &nbsp;
+          <ExpandableIcon expanded={expanded} onClick={this.onToggleExpand} />
         </p>
       </ExpandableCard>
     );
@@ -66,5 +69,5 @@ storiesOf("ExpandableCard", module)
     return <ExpandableCardDemo />;
   })
   .add("Avec bouton pour repliage", () => {
-    return <ExpandableCardDemo foldable />;
+    return <ExpandableCardDemo expandable />;
   });
