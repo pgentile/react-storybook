@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import Price from "./Price";
 import Card from "./Card";
 import { TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE } from "./redux/reducers/payment";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 import "./OrderSummary.scss";
 
@@ -81,14 +83,12 @@ class OrderSummaryItem extends React.PureComponent {
 
     return (
       <li className="order-summary__item">
-        <span className="order-summary__item-label">
-          {label}
-          {onCancel && (
-            <a className="order-summary__item-cancel" href="#" onClick={this.onCancel}>
-              Supprimer
-            </a>
-          )}
-        </span>
+        <span className="order-summary__item-label">{label}</span>
+        {onCancel && (
+          <a className="order-summary__item-cancel" href="#" onClick={this.onCancel}>
+            <FontAwesomeIcon icon={faTrashAlt} />
+          </a>
+        )}
         <Price className="order-summary__item-price" price={price} />
       </li>
     );

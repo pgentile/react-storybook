@@ -12,6 +12,7 @@
 
   &__item {
     display: flex;
+    align-items: baseline;
 
     margin: 0;
     padding: 0;
@@ -21,22 +22,26 @@
     font-size: 1rem;
 
     &-label {
-      flex: 1 0;
 
       margin: $margin;
     }
 
     &-cancel {
+      display: block;
+
+      margin: $margin;
+
       color: inherit;
       text-decoration: none;
-
-      &::before {
-        content: ' — ';
-      }
     }
 
     &-price {
+      display: block;
+      flex: 1 0;
+
       margin: $margin;
+
+      text-align: right;
     }
 
   }
