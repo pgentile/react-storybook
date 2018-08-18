@@ -15,6 +15,10 @@ const scope = createScope(state => state.payment);
 
 export const selectPaymentItems = scope(payment => payment.items);
 
+export const selectTickets = scope(payment => {
+  return selectPaymentItems.withinScope(payment).filter(item => item.type === TICKET_TYPE);
+});
+
 export const selectPaymentItemsWithoutVoucher = scope(payment => {
   return selectPaymentItems.withinScope(payment).filter(item => item.type !== VOUCHER_TYPE);
 });
@@ -102,22 +106,17 @@ export default (state = initialState, action) => {
     case `${ADD_VOUCHER}_${FULFILLED}`: {
       const { code } = payload;
 
-      const itemsWithNoVoucher = selectPaymentItemsWithoutVoucher.withinScope(state);
-
-      const voucherItem = {
-        id: `voucher-${code}`,
-        type: VOUCHER_TYPE,
-        label: `Votre code promo ${code}`,
-        price: {
-          value: -10,
-          currency: "€"
-        },
-        code
+      const tickets = selectTickets.withinScope(state);
+      const ticketPrice = {
+        value: tickets.map(ticket => ticket.price.value).reduce((left, right) => left + right, 0),
+        currency: tickets[0].price.currency
       };
+
+      const voucherItem = computeVoucher(ticketPrice, code);
 
       return {
         ...state,
-        items: [...itemsWithNoVoucher, voucherItem]
+        items: [...selectPaymentItemsWithoutVoucher.withinScope(state), voucherItem]
       };
     }
 
@@ -163,3 +162,61 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+function computeVoucher(ticketPrice, code) {
+  const { currency } = ticketPrice;
+
+  const baseVoucherItem = {
+    id: `voucher-${code}`,
+    type: VOUCHER_TYPE,
+    label: `Votre code promo ${code}`,
+    code
+  };
+
+  switch (code) {
+    case "PROMO10%": {
+      const voucherPercentage = 10;
+
+      return {
+        ...baseVoucherItem,
+        voucherType: "PERCENTAGE",
+        voucherPercentage,
+        price: {
+          value: -ticketPrice.value * (voucherPercentage / 100),
+          currency
+        }
+      };
+    }
+
+    case "PROMO25%": {
+      const voucherPercentage = 25;
+
+      return {
+        ...baseVoucherItem,
+        voucherType: "PERCENTAGE",
+        voucherPercentage,
+        price: {
+          value: -ticketPrice.value * (voucherPercentage / 100),
+          currency
+        }
+      };
+    }
+
+    default: {
+      const voucherAmount = 10;
+
+      return {
+        ...baseVoucherItem,
+        voucherType: "AMOUNT",
+        voucherAmount: {
+          value: voucherAmount,
+          currency
+        },
+        price: {
+          value: -voucherAmount,
+          currency
+        }
+      };
+    }
+  }
+}
