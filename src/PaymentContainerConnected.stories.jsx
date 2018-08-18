@@ -5,7 +5,7 @@ import { storiesOf } from "@storybook/react";
 import PaymentContainerConnected from "./PaymentContainerConnected";
 import { createDefaultStore } from "./redux/store";
 
-import { loadItems } from "./redux/reducers/payment";
+import { TICKET_TYPE, loadItems } from "./redux/reducers/payment";
 
 storiesOf("Payment / PaymentContainerConnected", module)
   .addDecorator(story => {
@@ -15,6 +15,7 @@ storiesOf("Payment / PaymentContainerConnected", module)
       loadItems([
         {
           id: "billets",
+          type: TICKET_TYPE,
           label: "Vos billets",
           price: {
             value: 55.6,

@@ -3,10 +3,12 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import PaymentContainer from "./PaymentContainer";
+import { TICKET_TYPE, INSURANCE_TYPE } from "./redux/reducers/payment";
 
 const items = [
   {
     id: "billets",
+    type: TICKET_TYPE,
     label: "Vos billets",
     price: {
       value: 109.8,
@@ -15,6 +17,7 @@ const items = [
   },
   {
     id: "assurances",
+    type: INSURANCE_TYPE,
     label: "Vos assurances",
     price: {
       value: 5.9,

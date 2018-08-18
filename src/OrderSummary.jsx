@@ -3,12 +3,13 @@ import PropTypes from "prop-types";
 
 import Price from "./Price";
 import Card from "./Card";
+import { TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE } from "./redux/reducers/payment";
 
 import "./OrderSummary.scss";
 
 export const orderItemPropType = PropTypes.shape({
   id: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["DONATION", "VOUCHER"]),
+  type: PropTypes.oneOf([TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE]),
   label: PropTypes.node.isRequired,
   price: Price.propTypes.price,
   onCancel: PropTypes.func

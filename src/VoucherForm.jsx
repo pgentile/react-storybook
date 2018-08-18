@@ -109,9 +109,6 @@ export default withFormik({
       });
     } catch (e) {
       setStatus({
-        submissionStatus: "SUCCESS"
-      });
-      setStatus({
         submissionStatus: "FAILED",
         errorMessage: "Nous n'avons pas réussi à prendre en compte votre code promo"
       });
