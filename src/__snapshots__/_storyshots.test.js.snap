@@ -553,11 +553,16 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Jour"
+    placeholder="JJ"
     readOnly={false}
     type="text"
     value="13"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
@@ -567,11 +572,16 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Mois"
+    placeholder="MM"
     readOnly={false}
     type="text"
     value="02"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
@@ -581,7 +591,7 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Année"
+    placeholder="AAAA"
     readOnly={false}
     type="text"
     value="1990"
@@ -602,11 +612,16 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Jour"
+    placeholder="JJ"
     readOnly={false}
     type="text"
     value=""
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
@@ -616,11 +631,16 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Mois"
+    placeholder="MM"
     readOnly={false}
     type="text"
     value=""
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
@@ -630,7 +650,7 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Année"
+    placeholder="AAAA"
     readOnly={false}
     type="text"
     value=""
@@ -651,11 +671,16 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Jour"
+    placeholder="JJ"
     readOnly={false}
     type="text"
     value="13"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
@@ -665,11 +690,16 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Mois"
+    placeholder="MM"
     readOnly={false}
     type="text"
     value="02"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
@@ -679,7 +709,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Année"
+    placeholder="AAAA"
     readOnly={false}
     type="text"
     value="1990"
@@ -700,11 +730,16 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Jour"
+    placeholder="JJ"
     readOnly={false}
     type="text"
     value=""
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
@@ -714,11 +749,16 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Mois"
+    placeholder="MM"
     readOnly={false}
     type="text"
     value=""
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
@@ -728,7 +768,7 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Année"
+    placeholder="AAAA"
     readOnly={false}
     type="text"
     value=""
@@ -749,11 +789,16 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Jour"
+    placeholder="JJ"
     readOnly={true}
     type="text"
     value="13"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
@@ -763,11 +808,16 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Mois"
+    placeholder="MM"
     readOnly={true}
     type="text"
     value="02"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
@@ -777,7 +827,7 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Année"
+    placeholder="AAAA"
     readOnly={true}
     type="text"
     value="1990"
@@ -798,11 +848,16 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Jour"
+    placeholder="JJ"
     readOnly={false}
     type="text"
     value="13"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
@@ -812,11 +867,16 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Mois"
+    placeholder="MM"
     readOnly={false}
     type="text"
     value="02"
   />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
   <input
     autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
@@ -826,7 +886,7 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
-    placeholder="Année"
+    placeholder="AAAA"
     readOnly={false}
     type="text"
     value="1990"
@@ -1055,39 +1115,6 @@ exports[`Storyshots Forms / ProgressButton main 1`] = `
     className="progress-button__progress-bar"
   />
 </button>
-`;
-
-exports[`Storyshots Forms / YearMonthInput main 1`] = `
-<fieldset
-  className="form-date-input "
->
-  <input
-    className="form-date-input__input form-date-input__input_month"
-    disabled={false}
-    inputMode="numeric"
-    maxLength={2}
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    placeholder="Mois"
-    readOnly={false}
-    type="text"
-    value=""
-  />
-  <input
-    className="form-date-input__input form-date-input__input_year"
-    disabled={false}
-    inputMode="numeric"
-    maxLength={4}
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    placeholder="Année"
-    readOnly={false}
-    type="text"
-    value=""
-  />
-</fieldset>
 `;
 
 exports[`Storyshots LoaderDemo main 1`] = `

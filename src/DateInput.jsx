@@ -42,9 +42,14 @@ export default class DateInput extends React.PureComponent {
   };
 
   maybeGoToNextInput(target) {
-    const { maxLength, selectionStart, nextElementSibling: nextInput } = target;
+    const { maxLength, selectionStart } = target;
 
-    if (nextInput && nextInput.nodeName === "INPUT" && selectionStart === maxLength) {
+    let nextInput = target.nextElementSibling;
+    while (nextInput && nextInput.nodeName !== "INPUT") {
+      nextInput = nextInput.nextElementSibling;
+    }
+
+    if (nextInput && selectionStart === maxLength) {
       nextInput.focus();
       nextInput.select();
     }
@@ -86,7 +91,7 @@ export default class DateInput extends React.PureComponent {
           inputMode="numeric"
           autoComplete="bday-day"
           maxLength={2}
-          placeholder="Jour"
+          placeholder="JJ"
           id={id}
           value={day}
           disabled={disabled}
@@ -95,14 +100,14 @@ export default class DateInput extends React.PureComponent {
           onBlur={this.onFieldBlur}
           onChange={this.onDayChange}
         />
-
+        <span className="form-date-input__input-separator">/</span>
         <input
           className="form-date-input__input form-date-input__input_month"
           type="text"
           inputMode="numeric"
           autoComplete="bday-month"
           maxLength={2}
-          placeholder="Mois"
+          placeholder="MM"
           value={month}
           disabled={disabled}
           readOnly={readOnly}
@@ -110,14 +115,14 @@ export default class DateInput extends React.PureComponent {
           onBlur={this.onFieldBlur}
           onChange={this.onMonthChange}
         />
-
+        <span className="form-date-input__input-separator">/</span>
         <input
           className="form-date-input__input form-date-input__input_year"
           type="text"
           inputMode="numeric"
           autoComplete="bday-year"
           maxLength={4}
-          placeholder="Année"
+          placeholder="AAAA"
           value={year}
           disabled={disabled}
           readOnly={readOnly}

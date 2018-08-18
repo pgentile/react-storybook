@@ -1,5 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 
 import DateInput from "./DateInput";
 
@@ -28,10 +29,12 @@ class DynamicForm extends React.PureComponent {
     value: ""
   };
 
-  onChange = value => {
+  onChange = (value, ...args) => {
     this.setState({
       value
     });
+
+    action("change")(value, ...args);
   };
 
   render() {
