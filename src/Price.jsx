@@ -21,8 +21,9 @@ export default class Price extends React.PureComponent {
   render() {
     const { as: Element, className, price } = this.props;
     const { value, currency } = price;
-    const units = Math.floor(value);
-    const cents = Math.floor((value * 100) % 100);
+
+    const units = Math.trunc(value);
+    const cents = Math.abs(Math.trunc((value * 100) % 100));
     const centsDisplay = cents < 10 ? `0${cents}` : cents.toString();
 
     return (
