@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-import Card from "./Card";
 import Button from "./Button";
-import FlatButton from "./FlatButton";
+import ExpandableCard from "./ExpandableCard";
+import ExpandableIcon from "./ExpandableIcon";
 
 import "./Donation.scss";
 
@@ -22,6 +22,10 @@ export default class Donation extends React.PureComponent {
     className: ""
   };
 
+  state = {
+    showDetails: false
+  };
+
   onAddDonation = () => {
     this.props.onAddDonation();
   };
@@ -30,22 +34,83 @@ export default class Donation extends React.PureComponent {
     this.props.onCancelDonation();
   };
 
+  onToggleDetails = () => {
+    this.setState(state => ({
+      showDetails: !state.showDetails
+    }));
+  };
+
   render() {
-    const { className, selectedDonation } = this.props;
+    const { className, selectedDonation, onAddDonation } = this.props;
+    const { showDetails } = this.state;
     const hasDonationSelected = !!selectedDonation;
 
+    const details = (
+      <Fragment>
+        <p>En savoir plus sur URCT...</p>
+      </Fragment>
+    );
+
     return (
-      <Card as="section" layer="flat" className={`donation ${className}`}>
+      <ExpandableCard
+        as="section"
+        layer="flat"
+        className={`donation ${className}`}
+        expandableContent={details}
+        expanded={showDetails}
+      >
         {!hasDonationSelected && (
-          <FlatButton className="donation__add-button" onClick={this.onAddDonation}>
-            Voulez-vous ajouter un don&nbsp;?
-          </FlatButton>
+          <DonationProposal
+            showDetails={showDetails}
+            onToggleDetails={this.onToggleDetails}
+            onAddDonation={onAddDonation}
+          />
         )}
 
         {hasDonationSelected && (
           <SelectedDonation donation={selectedDonation} onCancelDonation={this.onCancelDonation} />
         )}
-      </Card>
+      </ExpandableCard>
+    );
+  }
+}
+
+class DonationProposal extends React.PureComponent {
+  static propTypes = {
+    showDetails: PropTypes.bool.isRequired,
+    onToggleDetails: PropTypes.func.isRequired,
+    onAddDonation: PropTypes.func.isRequired
+  };
+
+  onDetailsClick = event => {
+    event.preventDefault();
+    this.props.onToggleDetails();
+  };
+
+  render() {
+    const { showDetails, onAddDonation } = this.props;
+    return (
+      <Fragment>
+        <div className="donation__proposal">
+          <div className="donation__proposal-logo">
+            <img src="/images/urct-logo.svg" />
+          </div>
+          <div className="donation__proposal-punchline">
+            <h3>Donner, c&apos;est facile avec un rien c&apos;est tout</h3>
+            <p>
+              Je soutiens une cause qui me tient à cœur.{" "}
+              <a href="#" onClick={this.onDetailsClick}>
+                En savoir plus <ExpandableIcon expanded={showDetails} />
+              </a>
+            </p>
+          </div>
+        </div>
+        <p className="donation__proposal-donate-button">
+          <Button size="small" onClick={onAddDonation}>
+            Donner 1&nbsp;€
+          </Button>
+        </p>
+      </Fragment>
     );
   }
 }

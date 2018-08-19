@@ -10,7 +10,7 @@ import bemModifiers from "./bemModifiers";
 export default class ExpandableIcon extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    expanded: PropTypes.bool.expanded
+    expanded: PropTypes.bool.isRequired
   };
 
   static defaultProps = {

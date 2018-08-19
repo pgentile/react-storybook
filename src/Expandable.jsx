@@ -80,10 +80,16 @@ export default class Expandable extends React.PureComponent {
   }
 
   showNow() {
+    if (!this.windowRef.current) {
+      return;
+    }
     this.windowRef.current.style.height = "auto";
   }
 
   hideNow() {
+    if (!this.windowRef.current) {
+      return;
+    }
     this.windowRef.current.style.height = 0;
   }
 

@@ -1,6 +1,29 @@
 .donation {
   $margin: 1rem;
 
+  &__proposal {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &-logo {
+      margin: $margin;
+      margin-right: 0;
+      width: 3rem;
+    }
+
+    &-punchline {
+      h3, p {
+        margin: $margin;
+      }
+    }
+
+    &-donate-button {
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
   &__question {
     margin: $margin;
   }
