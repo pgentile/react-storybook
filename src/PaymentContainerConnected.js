@@ -8,6 +8,7 @@ import {
   cancelInsurance,
   addDonation,
   cancelDonation,
+  pay,
   selectPaymentItems
 } from "./redux/reducers/payment";
 
@@ -22,9 +23,7 @@ const mapDispatchToProps = {
   onCancelInsurance: () => cancelInsurance(),
   onAddDonation: () => addDonation("TOTO"),
   onCancelDonation: () => cancelDonation(),
-  onPay: () => ({
-    type: "IGNORED"
-  })
+  onPay: details => pay(details)
 };
 
 export default connect(

@@ -1,6 +1,7 @@
 import { FULFILLED } from "redux-promise-middleware";
 
 import createScope from "./createScope";
+import * as StripeAPI from "../../api/stripe";
 
 // Some useful variables
 
@@ -51,6 +52,8 @@ const CANCEL_DONATION = "PAYMENT/DONATION/CANCEL";
 
 const ADD_INSURANCE = "PAYMENT/INSURANCE/ADD";
 const CANCEL_INSURANCE = "PAYMENT/INSURANCE/CANCEL";
+
+const PAY = "PAYMENT/PAY/PAY";
 
 export function loadItems(items) {
   return {
@@ -106,6 +109,14 @@ export function cancelDonation() {
   return {
     type: CANCEL_DONATION,
     payload: Promise.resolve()
+  };
+}
+
+export function pay({ cardNumber, expirationDate, cvv }) {
+  StripeAPI.createToken({ cardNumber, expirationDate, cvv });
+
+  return {
+    type: PAY
   };
 }
 
