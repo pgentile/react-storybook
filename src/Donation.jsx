@@ -27,11 +27,14 @@ export default class Donation extends React.PureComponent {
   };
 
   onAddDonation = () => {
-    this.props.onAddDonation();
-  };
+    this.setState(({ showDetails }) => {
+      if (showDetails) {
+        return { showDetails: false };
+      }
+      return null;
+    });
 
-  onCancelDonation = () => {
-    this.props.onCancelDonation();
+    this.props.onAddDonation();
   };
 
   onToggleDetails = () => {
@@ -41,7 +44,7 @@ export default class Donation extends React.PureComponent {
   };
 
   render() {
-    const { className, selectedDonation, onAddDonation } = this.props;
+    const { className, selectedDonation, onCancelDonation } = this.props;
     const { showDetails } = this.state;
     const hasDonationSelected = !!selectedDonation;
 
@@ -63,13 +66,11 @@ export default class Donation extends React.PureComponent {
           <DonationProposal
             showDetails={showDetails}
             onToggleDetails={this.onToggleDetails}
-            onAddDonation={onAddDonation}
+            onAddDonation={this.onAddDonation}
           />
         )}
 
-        {hasDonationSelected && (
-          <SelectedDonation donation={selectedDonation} onCancelDonation={this.onCancelDonation} />
-        )}
+        {hasDonationSelected && <SelectedDonation donation={selectedDonation} onCancelDonation={onCancelDonation} />}
       </ExpandableCard>
     );
   }
@@ -124,12 +125,8 @@ class SelectedDonation extends React.PureComponent {
     onCancelDonation: PropTypes.func.isRequired
   };
 
-  onCancelDonation = () => {
-    this.props.onCancelDonation();
-  };
-
   render() {
-    const { donation } = this.props;
+    const { donation, onCancelDonation } = this.props;
 
     return (
       <div className="donation__selection">
@@ -137,7 +134,7 @@ class SelectedDonation extends React.PureComponent {
           Vous avez choisi de faire un don à <b>{donation.association}</b>. Nous vous en remercions&nbsp;!
         </p>
         <p className="donation__selection-cancel">
-          <Button className="donation__selection-cancel-button" size="small" onClick={this.onCancelDonation}>
+          <Button className="donation__selection-cancel-button" size="small" onClick={onCancelDonation}>
             Annuler mon don
           </Button>
         </p>
