@@ -50,6 +50,7 @@ class VoucherForm extends React.PureComponent {
                 {...props}
                 name="code"
                 autoComplete="off"
+                spellCheck={false}
                 maxLength={16}
                 disabled={disableForm}
                 value={values.code}

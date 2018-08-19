@@ -25,10 +25,6 @@ class PaymentForm extends React.PureComponent {
     className: ""
   };
 
-  onCancel = () => {
-    this.props.onCancel();
-  };
-
   render() {
     const {
       className,
@@ -58,6 +54,7 @@ class PaymentForm extends React.PureComponent {
               <InputField
                 {...props}
                 name="cardNumber"
+                inputMode="numeric"
                 autoComplete="cc-number"
                 maxLength={19}
                 value={values.cardNumber}
@@ -92,6 +89,7 @@ class PaymentForm extends React.PureComponent {
               <InputField
                 {...props}
                 name="cvv"
+                inputMode="numeric"
                 autoComplete="cc-csc"
                 maxLength={4}
                 value={values.cvv}
