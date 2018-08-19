@@ -13,7 +13,9 @@ export default class DateInput extends React.PureComponent {
     disabled: PropTypes.bool,
     readOnly: PropTypes.bool,
     value: PropTypes.string,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func
   };
 
   static defaultProps = {
@@ -59,16 +61,26 @@ export default class DateInput extends React.PureComponent {
   onMonthChange = this.onValueChange("month");
   onYearChange = this.onValueChange("year");
 
-  onFieldFocus = () => {
+  onFieldFocus = event => {
     this.setState({
       focus: true
     });
+
+    const { onFocus } = this.props;
+    if (onFocus) {
+      onFocus(event);
+    }
   };
 
   onFieldBlur = () => {
     this.setState({
       focus: false
     });
+
+    const { onBlur } = this.props;
+    if (onBlur) {
+      onBlur(event);
+    }
   };
 
   render() {

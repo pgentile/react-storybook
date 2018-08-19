@@ -18,7 +18,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: block;
 
   background-color: $background-color;
 
@@ -77,18 +77,19 @@
 
     font-size: 1rem;
     color: $placeholder-color;
+    text-align: center;
 
   }
+
+  // Bien respecter l'ordre des classes pour un affichage correct
+  // des différents états
 
   &--focus {
     border-color: $focus-border-color;
   }
 
-  &--disabled {
-    transition: none;
-
-    background-color: $disabled-background-color;
-    border-color: $border-color;
+  &--error {
+    border-bottom-color: $error-border-color;
   }
 
   &--read-only {
@@ -97,8 +98,11 @@
     border-color: $border-color;
   }
 
-  &--error {
-    border-bottom-color: $error-border-color;
+  &--disabled {
+    transition: none;
+
+    background-color: $disabled-background-color;
+    border-color: $border-color;
   }
 
 }
