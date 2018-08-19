@@ -32,4 +32,18 @@ storiesOf("Forms / FieldContainer", module)
         {innerField}
       </FieldContainer>
     );
+  })
+  .add("Désactivé", () => {
+    return (
+      <FieldContainer label="Example" disabled>
+        {innerField}
+      </FieldContainer>
+    );
+  })
+  .add("Lecture seule", () => {
+    return (
+      <FieldContainer label="Example" readOnly>
+        {innerField}
+      </FieldContainer>
+    );
   });

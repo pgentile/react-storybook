@@ -968,6 +968,54 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
 </div>
 `;
 
+exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
+<div
+  className="form-field-container"
+>
+  <label
+    className="form-field-container__label form-field-container__label--disabled"
+    htmlFor="form-field-4"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      className="form-input-field"
+      disabled={true}
+      id="form-field-4"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
+<div
+  className="form-field-container"
+>
+  <label
+    className="form-field-container__label"
+    htmlFor="form-field-5"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      className="form-input-field"
+      id="form-field-5"
+      placeholder="Valeur d'exemple"
+      readOnly={true}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Forms / FieldContainer main 1`] = `
 <div
   className="form-field-container"
@@ -2557,7 +2605,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           >
             <label
               className="form-field-container__label"
-              htmlFor="form-field-4"
+              htmlFor="form-field-6"
             >
               Numéro de carte
             </label>
@@ -2568,7 +2616,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 autoComplete="cc-number"
                 className="form-input-field"
                 disabled={false}
-                id="form-field-4"
+                id="form-field-6"
                 maxLength={19}
                 name="cardNumber"
                 onBlur={[Function]}
@@ -2587,7 +2635,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           >
             <label
               className="form-field-container__label"
-              htmlFor="form-field-5"
+              htmlFor="form-field-7"
             >
               Date d'expiration
             </label>
@@ -2601,7 +2649,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                   autoComplete="bday-day"
                   className="form-date-input__input form-date-input__input_day"
                   disabled={false}
-                  id="form-field-5"
+                  id="form-field-7"
                   inputMode="numeric"
                   maxLength={2}
                   onBlur={[Function]}
@@ -2662,7 +2710,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           >
             <label
               className="form-field-container__label"
-              htmlFor="form-field-6"
+              htmlFor="form-field-8"
             >
               Code de sécurité
             </label>
@@ -2673,7 +2721,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 autoComplete="cc-csc"
                 className="form-input-field"
                 disabled={false}
-                id="form-field-6"
+                id="form-field-8"
                 maxLength={4}
                 name="cvv"
                 onBlur={[Function]}
@@ -2693,9 +2741,23 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             type="submit"
           >
             Payer 
-            115.7
-             
-            €
+            <span
+              className="price price--no-color "
+            >
+              <span
+                className="price__units"
+              >
+                115
+              </span>
+              <span
+                className="price__remaining"
+              >
+                , 
+                70
+                 
+                €
+              </span>
+            </span>
           </button>
         </div>
       </form>
@@ -2816,7 +2878,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           >
             <label
               className="form-field-container__label"
-              htmlFor="form-field-7"
+              htmlFor="form-field-9"
             >
               Numéro de carte
             </label>
@@ -2827,7 +2889,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 autoComplete="cc-number"
                 className="form-input-field"
                 disabled={false}
-                id="form-field-7"
+                id="form-field-9"
                 maxLength={19}
                 name="cardNumber"
                 onBlur={[Function]}
@@ -2846,7 +2908,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           >
             <label
               className="form-field-container__label"
-              htmlFor="form-field-8"
+              htmlFor="form-field-10"
             >
               Date d'expiration
             </label>
@@ -2860,7 +2922,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                   autoComplete="bday-day"
                   className="form-date-input__input form-date-input__input_day"
                   disabled={false}
-                  id="form-field-8"
+                  id="form-field-10"
                   inputMode="numeric"
                   maxLength={2}
                   onBlur={[Function]}
@@ -2921,7 +2983,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           >
             <label
               className="form-field-container__label"
-              htmlFor="form-field-9"
+              htmlFor="form-field-11"
             >
               Code de sécurité
             </label>
@@ -2932,7 +2994,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 autoComplete="cc-csc"
                 className="form-input-field"
                 disabled={false}
-                id="form-field-9"
+                id="form-field-11"
                 maxLength={4}
                 name="cvv"
                 onBlur={[Function]}
@@ -2952,9 +3014,23 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             type="submit"
           >
             Payer 
-            0
-             
-            €
+            <span
+              className="price price--no-color "
+            >
+              <span
+                className="price__units"
+              >
+                0
+              </span>
+              <span
+                className="price__remaining"
+              >
+                , 
+                00
+                 
+                €
+              </span>
+            </span>
           </button>
         </div>
       </form>
@@ -2976,7 +3052,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-10"
+        htmlFor="form-field-12"
       >
         Numéro de carte
       </label>
@@ -2987,7 +3063,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           autoComplete="cc-number"
           className="form-input-field"
           disabled={false}
-          id="form-field-10"
+          id="form-field-12"
           maxLength={19}
           name="cardNumber"
           onBlur={[Function]}
@@ -3006,7 +3082,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-11"
+        htmlFor="form-field-13"
       >
         Date d'expiration
       </label>
@@ -3020,7 +3096,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
             autoComplete="bday-day"
             className="form-date-input__input form-date-input__input_day"
             disabled={false}
-            id="form-field-11"
+            id="form-field-13"
             inputMode="numeric"
             maxLength={2}
             onBlur={[Function]}
@@ -3081,7 +3157,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-12"
+        htmlFor="form-field-14"
       >
         Code de sécurité
       </label>
@@ -3092,7 +3168,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           autoComplete="cc-csc"
           className="form-input-field"
           disabled={false}
-          id="form-field-12"
+          id="form-field-14"
           maxLength={4}
           name="cvv"
           onBlur={[Function]}
@@ -3112,9 +3188,23 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       type="submit"
     >
       Payer 
-      98
-       
-      €
+      <span
+        className="price price--no-color "
+      >
+        <span
+          className="price__units"
+        >
+          98
+        </span>
+        <span
+          className="price__remaining"
+        >
+          , 
+          00
+           
+          €
+        </span>
+      </span>
     </button>
   </div>
 </form>
@@ -3146,7 +3236,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-13"
+        htmlFor="form-field-15"
       >
         Code promo
       </label>
@@ -3157,7 +3247,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-13"
+          id="form-field-15"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -3210,7 +3300,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-14"
+        htmlFor="form-field-16"
       >
         Code promo
       </label>
@@ -3221,7 +3311,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-14"
+          id="form-field-16"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -3274,7 +3364,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-16"
+        htmlFor="form-field-18"
       >
         Code promo
       </label>
@@ -3285,7 +3375,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-16"
+          id="form-field-18"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -3338,7 +3428,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-15"
+        htmlFor="form-field-17"
       >
         Code promo
       </label>
@@ -3349,7 +3439,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-15"
+          id="form-field-17"
           maxLength={16}
           name="code"
           onBlur={[Function]}

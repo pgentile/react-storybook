@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./FieldContainer.scss";
+import bemModifiers from "./bemModifiers";
 
 export default class FieldContainer extends React.PureComponent {
   static count = 0;
@@ -11,26 +12,34 @@ export default class FieldContainer extends React.PureComponent {
     id: PropTypes.string,
     children: PropTypes.func.isRequired,
     errorMessage: PropTypes.node,
-    helpMessage: PropTypes.node
+    helpMessage: PropTypes.node,
+    disabled: PropTypes.bool,
+    readOnly: PropTypes.bool
   };
 
   generatedId = `form-field-${FieldContainer.count++}`;
 
   render() {
-    const { id, label, children, errorMessage, helpMessage } = this.props;
+    const { id, label, children, errorMessage, helpMessage, disabled, readOnly } = this.props;
     const showErrorMessage = !!errorMessage;
     const showHelpMessage = !!helpMessage && !showErrorMessage;
     const inputId = id || this.generatedId;
 
     const fieldProps = {
       error: showErrorMessage,
-      id: inputId
+      id: inputId,
+      disabled,
+      readOnly
     };
+
+    const labelClassName = bemModifiers("form-field-container__label", {
+      disabled
+    });
 
     return (
       <div className="form-field-container">
         {label && (
-          <label className="form-field-container__label" htmlFor={inputId}>
+          <label className={labelClassName} htmlFor={inputId}>
             {label}
           </label>
         )}

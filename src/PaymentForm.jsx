@@ -9,8 +9,6 @@ import DateInput from "./DateInput";
 import Button from "./Button";
 import Price from "./Price";
 
-import sleep from "./sleep";
-
 import "./PaymentForm.scss";
 
 class PaymentForm extends React.PureComponent {
@@ -51,14 +49,17 @@ class PaymentForm extends React.PureComponent {
     return (
       <form className={`payment-form ${className}`} onSubmit={handleSubmit}>
         <div className="payment-form__line payment-form__line--card-number">
-          <FieldContainer label="Numéro de carte" errorMessage={touched.cardNumber && errors.cardNumber}>
+          <FieldContainer
+            label="Numéro de carte"
+            disabled={disableForm}
+            errorMessage={touched.cardNumber && errors.cardNumber}
+          >
             {props => (
               <InputField
                 {...props}
                 name="cardNumber"
                 autoComplete="cc-number"
                 maxLength={19}
-                disabled={disableForm}
                 value={values.cardNumber}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -68,12 +69,15 @@ class PaymentForm extends React.PureComponent {
         </div>
 
         <div className="payment-form__line payment-form__line--expiration-date">
-          <FieldContainer label="Date d'expiration" errorMessage={touched.expirationDate && errors.expirationDate}>
+          <FieldContainer
+            label="Date d'expiration"
+            disabled={disableForm}
+            errorMessage={touched.expirationDate && errors.expirationDate}
+          >
             {props => (
               <DateInput
                 {...props}
                 name="expirationDate"
-                disabled={disableForm}
                 value={values.expirationDate}
                 onChange={value => setFieldValue("expirationDate", value)}
                 onBlur={() => setFieldTouched("expirationDate", true)}
@@ -83,14 +87,13 @@ class PaymentForm extends React.PureComponent {
         </div>
 
         <div className="payment-form__line payment-form__line--cvv">
-          <FieldContainer label="Code de sécurité" errorMessage={touched.cvv && errors.cvv}>
+          <FieldContainer label="Code de sécurité" disabled={disableForm} errorMessage={touched.cvv && errors.cvv}>
             {props => (
               <InputField
                 {...props}
                 name="cvv"
                 autoComplete="cc-csc"
                 maxLength={4}
-                disabled={disableForm}
                 value={values.cvv}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -122,8 +125,7 @@ export default withFormik({
 
     if (values.cardNumber.length < 12) {
       errors.cardNumber = "Numéro de carte trop court";
-    }
-    if (!luhn(values.cardNumber)) {
+    } else if (!luhn(values.cardNumber)) {
       errors.cardNumber = "Numéro de carte invalide";
     }
 
@@ -137,9 +139,9 @@ export default withFormik({
 
     return errors;
   },
-  handleSubmit: async (values, { setSubmitting }) => {
+  handleSubmit: async (values, { props, setSubmitting }) => {
     try {
-      await sleep(values);
+      await props.onPay(values);
     } catch (e) {
       console.error("Failed to submit", e);
     } finally {

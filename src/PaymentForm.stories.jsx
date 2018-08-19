@@ -8,7 +8,7 @@ import sleep from "./sleep";
 const actions = {
   onPay: async (...args) => {
     await sleep(3000);
-    action("submit")(args);
+    action("submit")(...args);
   }
 };
 
