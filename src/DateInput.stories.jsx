@@ -22,6 +22,9 @@ storiesOf("Forms / DateInput", module)
   })
   .add("read-only", () => {
     return <DateInput value="1990-02-13" readOnly />;
+  })
+  .add("Mode year-month", () => {
+    return <DateInput value="02-13" mode="year-month" />;
   });
 
 class DynamicForm extends React.PureComponent {

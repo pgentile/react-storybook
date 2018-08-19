@@ -530,12 +530,49 @@ exports[`Storyshots Forms / Button show disabled 1`] = `
 </button>
 `;
 
+exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    className="form-date-input__input form-date-input__input_month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="MM"
+    readOnly={false}
+    type="text"
+    value="13"
+  />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
+  <input
+    className="form-date-input__input form-date-input__input_year"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="AAAA"
+    readOnly={false}
+    type="text"
+    value="02"
+  />
+</fieldset>
+`;
+
 exports[`Storyshots Forms / DateInput disabled 1`] = `
 <fieldset
   className="form-date-input form-date-input--disabled "
 >
   <input
-    autoComplete="bday-day"
     className="form-date-input__input form-date-input__input_day"
     disabled={true}
     inputMode="numeric"
@@ -554,9 +591,9 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
     disabled={true}
+    id={null}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -573,7 +610,6 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
     disabled={true}
     inputMode="numeric"
@@ -594,7 +630,6 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
   className="form-date-input "
 >
   <input
-    autoComplete="bday-day"
     className="form-date-input__input form-date-input__input_day"
     disabled={false}
     inputMode="numeric"
@@ -613,9 +648,9 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
     disabled={false}
+    id={null}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -632,7 +667,6 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
     disabled={false}
     inputMode="numeric"
@@ -653,7 +687,6 @@ exports[`Storyshots Forms / DateInput error 1`] = `
   className="form-date-input form-date-input--error "
 >
   <input
-    autoComplete="bday-day"
     className="form-date-input__input form-date-input__input_day"
     disabled={false}
     inputMode="numeric"
@@ -672,9 +705,9 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
     disabled={false}
+    id={null}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -691,7 +724,6 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
     disabled={false}
     inputMode="numeric"
@@ -712,7 +744,6 @@ exports[`Storyshots Forms / DateInput main 1`] = `
   className="form-date-input "
 >
   <input
-    autoComplete="bday-day"
     className="form-date-input__input form-date-input__input_day"
     disabled={false}
     inputMode="numeric"
@@ -731,9 +762,9 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
     disabled={false}
+    id={null}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -750,7 +781,6 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
     disabled={false}
     inputMode="numeric"
@@ -771,7 +801,6 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
   className="form-date-input form-date-input--read-only "
 >
   <input
-    autoComplete="bday-day"
     className="form-date-input__input form-date-input__input_day"
     disabled={false}
     inputMode="numeric"
@@ -790,9 +819,9 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
     disabled={false}
+    id={null}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -809,7 +838,6 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
     disabled={false}
     inputMode="numeric"
@@ -830,7 +858,6 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
   className="form-date-input "
 >
   <input
-    autoComplete="bday-day"
     className="form-date-input__input form-date-input__input_day"
     disabled={false}
     inputMode="numeric"
@@ -849,9 +876,9 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-month"
     className="form-date-input__input form-date-input__input_month"
     disabled={false}
+    id={null}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -868,7 +895,6 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     /
   </span>
   <input
-    autoComplete="bday-year"
     className="form-date-input__input form-date-input__input_year"
     disabled={false}
     inputMode="numeric"
@@ -2617,6 +2643,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 className="form-input-field"
                 disabled={false}
                 id="form-field-6"
+                inputMode="numeric"
                 maxLength={19}
                 name="cardNumber"
                 onBlur={[Function]}
@@ -2646,29 +2673,10 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 className="form-date-input "
               >
                 <input
-                  autoComplete="bday-day"
-                  className="form-date-input__input form-date-input__input_day"
-                  disabled={false}
-                  id="form-field-7"
-                  inputMode="numeric"
-                  maxLength={2}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="JJ"
-                  readOnly={false}
-                  type="text"
-                  value=""
-                />
-                <span
-                  className="form-date-input__input-separator"
-                >
-                  /
-                </span>
-                <input
-                  autoComplete="bday-month"
+                  autoComplete="cc-exp-month"
                   className="form-date-input__input form-date-input__input_month"
                   disabled={false}
+                  id="form-field-7"
                   inputMode="numeric"
                   maxLength={2}
                   onBlur={[Function]}
@@ -2685,7 +2693,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                   /
                 </span>
                 <input
-                  autoComplete="bday-year"
+                  autoComplete="cc-exp-year"
                   className="form-date-input__input form-date-input__input_year"
                   disabled={false}
                   inputMode="numeric"
@@ -2722,6 +2730,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 className="form-input-field"
                 disabled={false}
                 id="form-field-8"
+                inputMode="numeric"
                 maxLength={4}
                 name="cvv"
                 onBlur={[Function]}
@@ -2890,6 +2899,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 className="form-input-field"
                 disabled={false}
                 id="form-field-9"
+                inputMode="numeric"
                 maxLength={19}
                 name="cardNumber"
                 onBlur={[Function]}
@@ -2919,29 +2929,10 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 className="form-date-input "
               >
                 <input
-                  autoComplete="bday-day"
-                  className="form-date-input__input form-date-input__input_day"
-                  disabled={false}
-                  id="form-field-10"
-                  inputMode="numeric"
-                  maxLength={2}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="JJ"
-                  readOnly={false}
-                  type="text"
-                  value=""
-                />
-                <span
-                  className="form-date-input__input-separator"
-                >
-                  /
-                </span>
-                <input
-                  autoComplete="bday-month"
+                  autoComplete="cc-exp-month"
                   className="form-date-input__input form-date-input__input_month"
                   disabled={false}
+                  id="form-field-10"
                   inputMode="numeric"
                   maxLength={2}
                   onBlur={[Function]}
@@ -2958,7 +2949,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                   /
                 </span>
                 <input
-                  autoComplete="bday-year"
+                  autoComplete="cc-exp-year"
                   className="form-date-input__input form-date-input__input_year"
                   disabled={false}
                   inputMode="numeric"
@@ -2995,6 +2986,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 className="form-input-field"
                 disabled={false}
                 id="form-field-11"
+                inputMode="numeric"
                 maxLength={4}
                 name="cvv"
                 onBlur={[Function]}
@@ -3064,6 +3056,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           className="form-input-field"
           disabled={false}
           id="form-field-12"
+          inputMode="numeric"
           maxLength={19}
           name="cardNumber"
           onBlur={[Function]}
@@ -3093,29 +3086,10 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           className="form-date-input "
         >
           <input
-            autoComplete="bday-day"
-            className="form-date-input__input form-date-input__input_day"
-            disabled={false}
-            id="form-field-13"
-            inputMode="numeric"
-            maxLength={2}
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="JJ"
-            readOnly={false}
-            type="text"
-            value=""
-          />
-          <span
-            className="form-date-input__input-separator"
-          >
-            /
-          </span>
-          <input
-            autoComplete="bday-month"
+            autoComplete="cc-exp-month"
             className="form-date-input__input form-date-input__input_month"
             disabled={false}
+            id="form-field-13"
             inputMode="numeric"
             maxLength={2}
             onBlur={[Function]}
@@ -3132,7 +3106,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
             /
           </span>
           <input
-            autoComplete="bday-year"
+            autoComplete="cc-exp-year"
             className="form-date-input__input form-date-input__input_year"
             disabled={false}
             inputMode="numeric"
@@ -3169,6 +3143,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           className="form-input-field"
           disabled={false}
           id="form-field-14"
+          inputMode="numeric"
           maxLength={4}
           name="cvv"
           onBlur={[Function]}
@@ -3252,6 +3227,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          spellCheck={false}
           type="text"
           value=""
         />
@@ -3316,6 +3292,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          spellCheck={false}
           type="text"
           value="EURO2016"
         />
@@ -3380,6 +3357,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          spellCheck={false}
           type="text"
           value="CODE21"
         />
@@ -3444,6 +3422,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          spellCheck={false}
           type="text"
           value="CODE21"
         />
