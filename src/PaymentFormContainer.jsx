@@ -11,7 +11,8 @@ export default class PaymentFormContainer extends React.PureComponent {
     price: PropTypes.shape({
       value: PropTypes.number.isRequired,
       currency: PropTypes.string.isRequired
-    }).isRequired
+    }).isRequired,
+    onPay: PropTypes.func.isRequired
   };
 
   static defaultProps = {
@@ -19,12 +20,12 @@ export default class PaymentFormContainer extends React.PureComponent {
   };
 
   render() {
-    const { price } = this.props;
+    const { price, onPay } = this.props;
 
     return (
       <div className="payment-form-container">
         <h1 className="payment-form-container__title">Payez en toute sécurité</h1>
-        <PaymentForm className="payment-form-container__form" price={price} />
+        <PaymentForm className="payment-form-container__form" price={price} onPay={onPay} />
       </div>
     );
   }

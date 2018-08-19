@@ -6,6 +6,7 @@ import FieldContainer from "./FieldContainer";
 import InputField from "./InputField";
 import DateInput from "./DateInput";
 import Button from "./Button";
+import Price from "./Price";
 
 import sleep from "./sleep";
 
@@ -100,9 +101,7 @@ class PaymentForm extends React.PureComponent {
         <div className="payment-form__line payment-form__line--button">
           <Button size="large" type="submit" showDisabled={!isValid} disabled={disableForm}>
             Payer&nbsp;
-            {price.value}
-            &nbsp;
-            {price.currency}
+            <Price noColor price={price} />
           </Button>
         </div>
       </form>

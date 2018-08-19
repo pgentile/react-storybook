@@ -6,7 +6,7 @@ import PaymentForm from "./PaymentForm";
 import sleep from "./sleep";
 
 const actions = {
-  sleep: async (...args) => {
+  onPay: async (...args) => {
     await sleep(3000);
     action("submit")(args);
   }

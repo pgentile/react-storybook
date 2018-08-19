@@ -21,7 +21,10 @@ const mapDispatchToProps = {
   onAddInsurance: price => addInsurance(price),
   onCancelInsurance: () => cancelInsurance(),
   onAddDonation: () => addDonation("TOTO"),
-  onCancelDonation: () => cancelDonation()
+  onCancelDonation: () => cancelDonation(),
+  onPay: () => ({
+    type: "IGNORED"
+  })
 };
 
 export default connect(

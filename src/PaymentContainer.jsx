@@ -13,7 +13,8 @@ export default class PaymentContainer extends React.PureComponent {
     onAddInsurance: OrderEditor.propTypes.onAddInsurance,
     onCancelInsurance: OrderEditor.propTypes.onCancelInsurance,
     onAddDonation: OrderEditor.propTypes.onAddDonation,
-    onCancelDonation: OrderEditor.propTypes.onCancelDonation
+    onCancelDonation: OrderEditor.propTypes.onCancelDonation,
+    onPay: PaymentFormContainer.propTypes.onPay
   };
 
   render() {
@@ -24,7 +25,8 @@ export default class PaymentContainer extends React.PureComponent {
       onAddInsurance,
       onCancelInsurance,
       onAddDonation,
-      onCancelDonation
+      onCancelDonation,
+      onPay
     } = this.props;
 
     const prices = items.map(item => item.price);
@@ -44,7 +46,7 @@ export default class PaymentContainer extends React.PureComponent {
           />
         </div>
         <div className="payment-container__right">
-          <PaymentFormContainer price={totalPrice} />
+          <PaymentFormContainer price={totalPrice} onPay={onPay} />
         </div>
       </section>
     );
