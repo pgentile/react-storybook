@@ -1,0 +1,16 @@
+.payment-form-container {
+  $margin: 1rem;
+
+  &__title {
+    margin: 0;
+    margin-bottom: $margin;
+
+    padding: 0;
+
+    text-align: center;
+  }
+
+  &__form {
+  }
+
+}

@@ -2538,21 +2538,167 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
     className="payment-container__right"
   >
     <div
-      className="wip"
+      className="payment-form-container"
     >
-      <div
-        className="wip__container"
+      <h1
+        className="payment-form-container__title"
       >
-        <p
-          style={
-            Object {
-              "height": "30rem",
-            }
-          }
+        Payez en toute sécurité
+      </h1>
+      <form
+        className="payment-form payment-form-container__form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="payment-form__line payment-form__line--card-number"
         >
-          Ici, il y aura le formulaire de paiement
-        </p>
-      </div>
+          <div
+            className="form-field-container"
+          >
+            <label
+              className="form-field-container__label"
+              htmlFor="form-field-4"
+            >
+              Numéro de carte
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-number"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-4"
+                maxLength={19}
+                name="cardNumber"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="payment-form__line payment-form__line--expiration-date"
+        >
+          <div
+            className="form-field-container"
+          >
+            <label
+              className="form-field-container__label"
+              htmlFor="form-field-5"
+            >
+              Date d'expiration
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <fieldset
+                className="form-date-input "
+              >
+                <input
+                  autoComplete="bday-day"
+                  className="form-date-input__input form-date-input__input_day"
+                  disabled={false}
+                  id="form-field-5"
+                  inputMode="numeric"
+                  maxLength={2}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="JJ"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+                <span
+                  className="form-date-input__input-separator"
+                >
+                  /
+                </span>
+                <input
+                  autoComplete="bday-month"
+                  className="form-date-input__input form-date-input__input_month"
+                  disabled={false}
+                  inputMode="numeric"
+                  maxLength={2}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="MM"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+                <span
+                  className="form-date-input__input-separator"
+                >
+                  /
+                </span>
+                <input
+                  autoComplete="bday-year"
+                  className="form-date-input__input form-date-input__input_year"
+                  disabled={false}
+                  inputMode="numeric"
+                  maxLength={4}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="AAAA"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
+          className="payment-form__line payment-form__line--cvv"
+        >
+          <div
+            className="form-field-container"
+          >
+            <label
+              className="form-field-container__label"
+              htmlFor="form-field-6"
+            >
+              Code de sécurité
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-csc"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-6"
+                maxLength={4}
+                name="cvv"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="payment-form__line payment-form__line--button"
+        >
+          <button
+            className="button button--disabled button--size-large "
+            disabled={false}
+            type="submit"
+          >
+            Payer 
+            115.7
+             
+            €
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -2651,24 +2797,327 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
     className="payment-container__right"
   >
     <div
-      className="wip"
+      className="payment-form-container"
     >
-      <div
-        className="wip__container"
+      <h1
+        className="payment-form-container__title"
       >
-        <p
-          style={
-            Object {
-              "height": "30rem",
-            }
-          }
+        Payez en toute sécurité
+      </h1>
+      <form
+        className="payment-form payment-form-container__form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="payment-form__line payment-form__line--card-number"
         >
-          Ici, il y aura le formulaire de paiement
-        </p>
-      </div>
+          <div
+            className="form-field-container"
+          >
+            <label
+              className="form-field-container__label"
+              htmlFor="form-field-7"
+            >
+              Numéro de carte
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-number"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-7"
+                maxLength={19}
+                name="cardNumber"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="payment-form__line payment-form__line--expiration-date"
+        >
+          <div
+            className="form-field-container"
+          >
+            <label
+              className="form-field-container__label"
+              htmlFor="form-field-8"
+            >
+              Date d'expiration
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <fieldset
+                className="form-date-input "
+              >
+                <input
+                  autoComplete="bday-day"
+                  className="form-date-input__input form-date-input__input_day"
+                  disabled={false}
+                  id="form-field-8"
+                  inputMode="numeric"
+                  maxLength={2}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="JJ"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+                <span
+                  className="form-date-input__input-separator"
+                >
+                  /
+                </span>
+                <input
+                  autoComplete="bday-month"
+                  className="form-date-input__input form-date-input__input_month"
+                  disabled={false}
+                  inputMode="numeric"
+                  maxLength={2}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="MM"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+                <span
+                  className="form-date-input__input-separator"
+                >
+                  /
+                </span>
+                <input
+                  autoComplete="bday-year"
+                  className="form-date-input__input form-date-input__input_year"
+                  disabled={false}
+                  inputMode="numeric"
+                  maxLength={4}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="AAAA"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
+          className="payment-form__line payment-form__line--cvv"
+        >
+          <div
+            className="form-field-container"
+          >
+            <label
+              className="form-field-container__label"
+              htmlFor="form-field-9"
+            >
+              Code de sécurité
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-csc"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-9"
+                maxLength={4}
+                name="cvv"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="payment-form__line payment-form__line--button"
+        >
+          <button
+            className="button button--disabled button--size-large "
+            disabled={false}
+            type="submit"
+          >
+            Payer 
+            0
+             
+            €
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
+`;
+
+exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
+<form
+  className="payment-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="payment-form__line payment-form__line--card-number"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-10"
+      >
+        Numéro de carte
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoComplete="cc-number"
+          className="form-input-field"
+          disabled={false}
+          id="form-field-10"
+          maxLength={19}
+          name="cardNumber"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="payment-form__line payment-form__line--expiration-date"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-11"
+      >
+        Date d'expiration
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <fieldset
+          className="form-date-input "
+        >
+          <input
+            autoComplete="bday-day"
+            className="form-date-input__input form-date-input__input_day"
+            disabled={false}
+            id="form-field-11"
+            inputMode="numeric"
+            maxLength={2}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="JJ"
+            readOnly={false}
+            type="text"
+            value=""
+          />
+          <span
+            className="form-date-input__input-separator"
+          >
+            /
+          </span>
+          <input
+            autoComplete="bday-month"
+            className="form-date-input__input form-date-input__input_month"
+            disabled={false}
+            inputMode="numeric"
+            maxLength={2}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="MM"
+            readOnly={false}
+            type="text"
+            value=""
+          />
+          <span
+            className="form-date-input__input-separator"
+          >
+            /
+          </span>
+          <input
+            autoComplete="bday-year"
+            className="form-date-input__input form-date-input__input_year"
+            disabled={false}
+            inputMode="numeric"
+            maxLength={4}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="AAAA"
+            readOnly={false}
+            type="text"
+            value=""
+          />
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div
+    className="payment-form__line payment-form__line--cvv"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-12"
+      >
+        Code de sécurité
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoComplete="cc-csc"
+          className="form-input-field"
+          disabled={false}
+          id="form-field-12"
+          maxLength={4}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="payment-form__line payment-form__line--button"
+  >
+    <button
+      className="button button--disabled button--size-large "
+      disabled={false}
+      type="submit"
+    >
+      Payer 
+      98
+       
+      €
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Storyshots Payment / VoucherContainer main 1`] = `
@@ -2697,7 +3146,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-4"
+        htmlFor="form-field-13"
       >
         Code promo
       </label>
@@ -2708,7 +3157,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-4"
+          id="form-field-13"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -2761,7 +3210,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-5"
+        htmlFor="form-field-14"
       >
         Code promo
       </label>
@@ -2772,7 +3221,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-5"
+          id="form-field-14"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -2825,7 +3274,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-7"
+        htmlFor="form-field-16"
       >
         Code promo
       </label>
@@ -2836,7 +3285,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-7"
+          id="form-field-16"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -2889,7 +3338,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-6"
+        htmlFor="form-field-15"
       >
         Code promo
       </label>
@@ -2900,7 +3349,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-6"
+          id="form-field-15"
           maxLength={16}
           name="code"
           onBlur={[Function]}

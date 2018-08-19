@@ -1,7 +1,7 @@
 import React from "react";
 
 import OrderEditor from "./OrderEditor";
-import Wip from "./Wip";
+import PaymentFormContainer from "./PaymentFormContainer";
 
 import "./PaymentContainer.scss";
 
@@ -27,6 +27,9 @@ export default class PaymentContainer extends React.PureComponent {
       onCancelDonation
     } = this.props;
 
+    const prices = items.map(item => item.price);
+    const totalPrice = computeTotalPrice(prices);
+
     return (
       <section className="payment-container">
         <div className="payment-container__left">
@@ -41,11 +44,23 @@ export default class PaymentContainer extends React.PureComponent {
           />
         </div>
         <div className="payment-container__right">
-          <Wip>
-            <p style={{ height: "30rem" }}>Ici, il y aura le formulaire de paiement</p>
-          </Wip>
+          <PaymentFormContainer price={totalPrice} />
         </div>
       </section>
     );
   }
+}
+
+function computeTotalPrice(prices) {
+  if (prices.length === 0) {
+    return {
+      value: 0,
+      currency: "€"
+    };
+  }
+
+  return {
+    value: prices.map(price => price.value).reduce((left, right) => left + right, 0),
+    currency: prices[0].currency
+  };
 }
