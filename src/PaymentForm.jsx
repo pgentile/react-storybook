@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withFormik } from "formik";
+import luhn from "fast-luhn";
 
 import FieldContainer from "./FieldContainer";
 import InputField from "./InputField";
@@ -121,6 +122,9 @@ export default withFormik({
 
     if (values.cardNumber.length < 12) {
       errors.cardNumber = "Numéro de carte trop court";
+    }
+    if (!luhn(values.cardNumber)) {
+      errors.cardNumber = "Numéro de carte invalide";
     }
 
     if (values.cvv.length < 3) {
