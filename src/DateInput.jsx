@@ -9,6 +9,7 @@ import isDigits from "./isDigits";
 export default class DateInput extends React.PureComponent {
   static propTypes = {
     mode: PropTypes.oneOf(["date", "year-month"]).isRequired,
+    smallYear: PropTypes.bool.isRequired,
     className: PropTypes.string,
     id: PropTypes.string,
     error: PropTypes.bool,
@@ -23,6 +24,7 @@ export default class DateInput extends React.PureComponent {
 
   static defaultProps = {
     mode: "date",
+    smallYear: false,
     className: "",
     disabled: false,
     readOnly: false,
@@ -95,7 +97,7 @@ export default class DateInput extends React.PureComponent {
   };
 
   render() {
-    const { mode, id, className, error, disabled, readOnly, value, autoComplete } = this.props;
+    const { mode, smallYear, id, className, error, disabled, readOnly, value, autoComplete } = this.props;
     const { focus } = this.state;
     const { year, month, day } = parsers[mode].parseValue(value);
     const showDay = mode !== "year-month";
@@ -107,11 +109,16 @@ export default class DateInput extends React.PureComponent {
       "read-only": readOnly
     });
 
+    const yearClassName = bemModifiers("form-date-input__input", {
+      year: true,
+      "year-small": smallYear
+    });
+
     return (
       <fieldset className={`${realClassName} ${className}`}>
         {showDay && (
           <input
-            className="form-date-input__input form-date-input__input_day"
+            className="form-date-input__input form-date-input__input--day"
             type="text"
             inputMode="numeric"
             autoComplete={autoComplete.day}
@@ -128,7 +135,7 @@ export default class DateInput extends React.PureComponent {
         )}
         {showDay && <span className="form-date-input__input-separator">/</span>}
         <input
-          className="form-date-input__input form-date-input__input_month"
+          className="form-date-input__input form-date-input__input--month"
           type="text"
           inputMode="numeric"
           autoComplete={autoComplete.month}
@@ -144,12 +151,12 @@ export default class DateInput extends React.PureComponent {
         />
         <span className="form-date-input__input-separator">/</span>
         <input
-          className="form-date-input__input form-date-input__input_year"
+          className={yearClassName}
           type="text"
           inputMode="numeric"
           autoComplete={autoComplete.year}
-          maxLength={4}
-          placeholder="AAAA"
+          maxLength={smallYear ? 2 : 4}
+          placeholder={smallYear ? "AA" : "AAAA"}
           value={year}
           disabled={disabled}
           readOnly={readOnly}

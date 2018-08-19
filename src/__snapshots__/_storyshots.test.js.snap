@@ -535,7 +535,7 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
   className="form-date-input "
 >
   <input
-    className="form-date-input__input form-date-input__input_month"
+    className="form-date-input__input form-date-input__input--month"
     disabled={false}
     inputMode="numeric"
     maxLength={2}
@@ -545,7 +545,7 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
     placeholder="MM"
     readOnly={false}
     type="text"
-    value="13"
+    value="04"
   />
   <span
     className="form-date-input__input-separator"
@@ -553,7 +553,7 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_year"
+    className="form-date-input__input form-date-input__input--year"
     disabled={false}
     inputMode="numeric"
     maxLength={4}
@@ -563,7 +563,45 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
     placeholder="AAAA"
     readOnly={false}
     type="text"
-    value="02"
+    value="2018"
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput Mode year-month with small year 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    className="form-date-input__input form-date-input__input--month"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="MM"
+    readOnly={false}
+    type="text"
+    value="06"
+  />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
+  <input
+    className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+    disabled={false}
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="AA"
+    readOnly={false}
+    type="text"
+    value="22"
   />
 </fieldset>
 `;
@@ -573,7 +611,7 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
   className="form-date-input form-date-input--disabled "
 >
   <input
-    className="form-date-input__input form-date-input__input_day"
+    className="form-date-input__input form-date-input__input--day"
     disabled={true}
     inputMode="numeric"
     maxLength={2}
@@ -591,7 +629,7 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_month"
+    className="form-date-input__input form-date-input__input--month"
     disabled={true}
     id={null}
     inputMode="numeric"
@@ -610,7 +648,7 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_year"
+    className="form-date-input__input form-date-input__input--year"
     disabled={true}
     inputMode="numeric"
     maxLength={4}
@@ -630,7 +668,7 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
   className="form-date-input "
 >
   <input
-    className="form-date-input__input form-date-input__input_day"
+    className="form-date-input__input form-date-input__input--day"
     disabled={false}
     inputMode="numeric"
     maxLength={2}
@@ -648,7 +686,7 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_month"
+    className="form-date-input__input form-date-input__input--month"
     disabled={false}
     id={null}
     inputMode="numeric"
@@ -667,7 +705,7 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_year"
+    className="form-date-input__input form-date-input__input--year"
     disabled={false}
     inputMode="numeric"
     maxLength={4}
@@ -687,7 +725,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
   className="form-date-input form-date-input--error "
 >
   <input
-    className="form-date-input__input form-date-input__input_day"
+    className="form-date-input__input form-date-input__input--day"
     disabled={false}
     inputMode="numeric"
     maxLength={2}
@@ -705,7 +743,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_month"
+    className="form-date-input__input form-date-input__input--month"
     disabled={false}
     id={null}
     inputMode="numeric"
@@ -724,7 +762,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_year"
+    className="form-date-input__input form-date-input__input--year"
     disabled={false}
     inputMode="numeric"
     maxLength={4}
@@ -744,7 +782,7 @@ exports[`Storyshots Forms / DateInput main 1`] = `
   className="form-date-input "
 >
   <input
-    className="form-date-input__input form-date-input__input_day"
+    className="form-date-input__input form-date-input__input--day"
     disabled={false}
     inputMode="numeric"
     maxLength={2}
@@ -762,7 +800,7 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_month"
+    className="form-date-input__input form-date-input__input--month"
     disabled={false}
     id={null}
     inputMode="numeric"
@@ -781,7 +819,7 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_year"
+    className="form-date-input__input form-date-input__input--year"
     disabled={false}
     inputMode="numeric"
     maxLength={4}
@@ -801,7 +839,7 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
   className="form-date-input form-date-input--read-only "
 >
   <input
-    className="form-date-input__input form-date-input__input_day"
+    className="form-date-input__input form-date-input__input--day"
     disabled={false}
     inputMode="numeric"
     maxLength={2}
@@ -819,7 +857,7 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_month"
+    className="form-date-input__input form-date-input__input--month"
     disabled={false}
     id={null}
     inputMode="numeric"
@@ -838,7 +876,7 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_year"
+    className="form-date-input__input form-date-input__input--year"
     disabled={false}
     inputMode="numeric"
     maxLength={4}
@@ -858,7 +896,7 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
   className="form-date-input "
 >
   <input
-    className="form-date-input__input form-date-input__input_day"
+    className="form-date-input__input form-date-input__input--day"
     disabled={false}
     inputMode="numeric"
     maxLength={2}
@@ -876,7 +914,7 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_month"
+    className="form-date-input__input form-date-input__input--month"
     disabled={false}
     id={null}
     inputMode="numeric"
@@ -895,7 +933,7 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     /
   </span>
   <input
-    className="form-date-input__input form-date-input__input_year"
+    className="form-date-input__input form-date-input__input--year"
     disabled={false}
     inputMode="numeric"
     maxLength={4}
@@ -2989,7 +3027,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               >
                 <input
                   autoComplete="cc-exp-month"
-                  className="form-date-input__input form-date-input__input_month"
+                  className="form-date-input__input form-date-input__input--month"
                   disabled={false}
                   id="form-field-7"
                   inputMode="numeric"
@@ -3009,14 +3047,14 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 </span>
                 <input
                   autoComplete="cc-exp-year"
-                  className="form-date-input__input form-date-input__input_year"
+                  className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
                   disabled={false}
                   inputMode="numeric"
-                  maxLength={4}
+                  maxLength={2}
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
-                  placeholder="AAAA"
+                  placeholder="AA"
                   readOnly={false}
                   type="text"
                   value=""
@@ -3318,7 +3356,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               >
                 <input
                   autoComplete="cc-exp-month"
-                  className="form-date-input__input form-date-input__input_month"
+                  className="form-date-input__input form-date-input__input--month"
                   disabled={false}
                   id="form-field-10"
                   inputMode="numeric"
@@ -3338,14 +3376,14 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 </span>
                 <input
                   autoComplete="cc-exp-year"
-                  className="form-date-input__input form-date-input__input_year"
+                  className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
                   disabled={false}
                   inputMode="numeric"
-                  maxLength={4}
+                  maxLength={2}
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
-                  placeholder="AAAA"
+                  placeholder="AA"
                   readOnly={false}
                   type="text"
                   value=""
@@ -3475,7 +3513,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         >
           <input
             autoComplete="cc-exp-month"
-            className="form-date-input__input form-date-input__input_month"
+            className="form-date-input__input form-date-input__input--month"
             disabled={false}
             id="form-field-13"
             inputMode="numeric"
@@ -3495,14 +3533,14 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           </span>
           <input
             autoComplete="cc-exp-year"
-            className="form-date-input__input form-date-input__input_year"
+            className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
             disabled={false}
             inputMode="numeric"
-            maxLength={4}
+            maxLength={2}
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            placeholder="AAAA"
+            placeholder="AA"
             readOnly={false}
             type="text"
             value=""

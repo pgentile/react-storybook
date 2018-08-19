@@ -40,12 +40,16 @@
     color: $color;
     text-align: center;
 
-    &_day, &_month {
+    &--day, &--month {
       width: 3rem;
     }
 
-    &_year {
+    &--year {
       width: 4rem;
+    }
+
+    &--year-small {
+      width: 3rem;
     }
 
     &:focus {

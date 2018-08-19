@@ -75,6 +75,7 @@ class PaymentForm extends React.PureComponent {
               <DateInput
                 {...props}
                 mode="year-month"
+                smallYear
                 name="expirationDate"
                 value={values.expirationDate}
                 autoComplete={{ month: "cc-exp-month", year: "cc-exp-year" }}
@@ -133,7 +134,7 @@ export default withFormik({
       errors.cvv = "Code de sécurité trop court";
     }
 
-    if (!/^[0-9]{4}-[0-9]{1,2}$/.test(values.expirationDate)) {
+    if (!/^[0-9]{2}-[0-9]{1,2}$/.test(values.expirationDate)) {
       errors.expirationDate = "Date d'expiration invalide";
     }
 
