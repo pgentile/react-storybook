@@ -8,17 +8,11 @@ const content = <p>Voici une jolie petite carte.</p>;
 
 const layers = ["base", "flat", "raised", "overlay", "sticky-nav", "temp-nav", "pop-out"];
 
-const stories = storiesOf("Card", module)
-  .add("Carte simple", () => {
-    return <Card>{content}</Card>;
-  })
-  .add("Carte avec bordures arrondies", () => {
-    return (
-      <Card layer="flat" hasRoundedBorder>
-        {content}
-      </Card>
-    );
-  });
+const stories = storiesOf("Card", module);
+
+stories.add("Carte simple", () => {
+  return <Card>{content}</Card>;
+});
 
 layers.forEach(layer => {
   stories.add(`Carte de niveau ${layer}`, () => {

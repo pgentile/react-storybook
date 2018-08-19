@@ -7,16 +7,14 @@
 
   background-color: $background-color;
 
+  border-radius: 0.5rem;
+
+  // Couper les bords rectangulaires des
+  // composants inclus dans la carte
+  overflow: hidden;
+
   &--has-border {
     border: $border-width solid $background-color;
-  }
-
-  &--has-rounded-border {
-    border-radius: 0.5rem;
-
-    // Couper les bords rectangulaires des
-    // composants inclus dans la carte
-    overflow: hidden;
   }
 
   // Layers: see http://www.carbondesignsystem.com/style/layer/overview
