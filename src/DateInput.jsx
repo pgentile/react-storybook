@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import "./DateInput.scss";
 
 import bemModifiers from "./bemModifiers";
+import isDigits from "./isDigits";
 
 export default class DateInput extends React.PureComponent {
   static propTypes = {
@@ -12,6 +13,7 @@ export default class DateInput extends React.PureComponent {
     error: PropTypes.bool,
     disabled: PropTypes.bool,
     readOnly: PropTypes.bool,
+    autoComplete: PropTypes.object,
     value: PropTypes.string,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
@@ -21,7 +23,8 @@ export default class DateInput extends React.PureComponent {
   static defaultProps = {
     className: "",
     disabled: false,
-    readOnly: false
+    readOnly: false,
+    autoComplete: {}
   };
 
   state = {
@@ -31,6 +34,12 @@ export default class DateInput extends React.PureComponent {
   onValueChange = name => event => {
     const { target } = event;
     const { value: fieldValue } = target;
+
+    // Interdire autre chose que des chiffres
+    if (!isDigits(fieldValue)) {
+      event.preventDefault();
+      return;
+    }
 
     const { value, onChange } = this.props;
     if (onChange) {
@@ -84,7 +93,7 @@ export default class DateInput extends React.PureComponent {
   };
 
   render() {
-    const { id, className, error, disabled, readOnly, value } = this.props;
+    const { id, className, error, disabled, readOnly, value, autoComplete } = this.props;
     const { focus } = this.state;
     const { year, month, day } = parseValue(value);
 
@@ -101,7 +110,7 @@ export default class DateInput extends React.PureComponent {
           className="form-date-input__input form-date-input__input_day"
           type="text"
           inputMode="numeric"
-          autoComplete="bday-day"
+          autoComplete={autoComplete.day}
           maxLength={2}
           placeholder="JJ"
           id={id}
@@ -117,7 +126,7 @@ export default class DateInput extends React.PureComponent {
           className="form-date-input__input form-date-input__input_month"
           type="text"
           inputMode="numeric"
-          autoComplete="bday-month"
+          autoComplete={autoComplete.month}
           maxLength={2}
           placeholder="MM"
           value={month}
@@ -132,7 +141,7 @@ export default class DateInput extends React.PureComponent {
           className="form-date-input__input form-date-input__input_year"
           type="text"
           inputMode="numeric"
-          autoComplete="bday-year"
+          autoComplete={autoComplete.year}
           maxLength={4}
           placeholder="AAAA"
           value={year}
