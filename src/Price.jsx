@@ -2,11 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./Price.scss";
+import bemModifiers from "./bemModifiers";
 
 export default class Price extends React.PureComponent {
   static propTypes = {
     as: PropTypes.any,
     className: PropTypes.string,
+    noColor: PropTypes.bool,
     price: PropTypes.shape({
       value: PropTypes.number.isRequired,
       currency: PropTypes.string.isRequired
@@ -15,19 +17,24 @@ export default class Price extends React.PureComponent {
 
   static defaultProps = {
     as: "span",
-    className: ""
+    className: "",
+    noColor: false
   };
 
   render() {
-    const { as: Element, className, price } = this.props;
+    const { as: Element, className, price, noColor } = this.props;
     const { value, currency } = price;
 
     const units = Math.trunc(value);
     const cents = Math.abs(Math.trunc((value * 100) % 100));
     const centsDisplay = cents < 10 ? `0${cents}` : cents.toString();
 
+    const realClassName = bemModifiers("price", {
+      "no-color": noColor
+    });
+
     return (
-      <Element className={`price ${className}`}>
+      <Element className={`${realClassName} ${className}`}>
         <span className="price__units">{units}</span>
         <span className="price__remaining">
           ,&thinsp;

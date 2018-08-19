@@ -10,4 +10,16 @@
     color:  lighten($base-color, 30%);
   }
 
+  &--no-color {
+
+    color: inherit;
+
+    .price {
+      &__remaining {
+        color: inherit;
+      }
+    }
+
+  }
+
 }
