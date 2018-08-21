@@ -1,7 +1,6 @@
 import { FULFILLED } from "redux-promise-middleware";
 
 import createScope from "./createScope";
-import * as StripeAPI from "../../api/stripe";
 
 // Some useful variables
 
@@ -38,6 +37,13 @@ export const selectVoucher = scope(payment => {
 
 export const selectDonation = scope(payment => {
   return selectPaymentItems.withinScope(payment).find(item => item.type === DONATION_TYPE) || null;
+});
+
+export const selectTotalAmount = scope(payment => {
+  return selectPaymentItems
+    .withinScope(payment)
+    .map(item => item.price.value)
+    .reduce((left, right) => left + right, 0);
 });
 
 // Actions
@@ -112,11 +118,10 @@ export function cancelDonation() {
   };
 }
 
-export function pay({ cardNumber, expirationDate, cvv }) {
-  StripeAPI.createToken({ cardNumber, expirationDate, cvv });
-
+export function pay() {
   return {
-    type: PAY
+    type: PAY,
+    payload: {}
   };
 }
 
