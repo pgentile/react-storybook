@@ -118,10 +118,24 @@ export function cancelDonation() {
   };
 }
 
+class PaymentValidationError extends Error {
+  constructor(details) {
+    super("Payment error");
+    this.details = details;
+  }
+}
+
 export function pay() {
+  const error = new PaymentValidationError({
+    type: "VALIDATION",
+    errors: {
+      cardNumber: "Invalid card number"
+    }
+  });
+
   return {
     type: PAY,
-    payload: {}
+    payload: Promise.reject(error)
   };
 }
 

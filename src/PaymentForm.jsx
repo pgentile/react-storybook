@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withFormik } from "formik";
-import luhn from "fast-luhn";
-
+import cardValidator from "card-validator";
+import creditCardType from "credit-card-type";
 import FieldContainer from "./FieldContainer";
 import InputField from "./InputField";
 import DateInput from "./DateInput";
@@ -41,6 +41,12 @@ class PaymentForm extends React.PureComponent {
       isValid
     } = this.props;
     const disableForm = isSubmitting;
+
+    const cards = creditCardType(values.cardNumber);
+    const isMaestro = cards && cards.length === 1 && cards[0].type === "maestro";
+    const cvvHelpMessage = isMaestro
+      ? "Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
+      : null;
 
     return (
       <form className={`payment-form ${className}`} onSubmit={handleSubmit}>
@@ -87,7 +93,12 @@ class PaymentForm extends React.PureComponent {
         </div>
 
         <div className="payment-form__line payment-form__line--cvv">
-          <FieldContainer label="Code de sécurité" disabled={disableForm} errorMessage={touched.cvv && errors.cvv}>
+          <FieldContainer
+            label="Code de sécurité"
+            disabled={disableForm}
+            errorMessage={touched.cvv && errors.cvv}
+            helpMessage={cvvHelpMessage}
+          >
             {props => (
               <InputField
                 {...props}
@@ -124,27 +135,49 @@ export default withFormik({
   validate: values => {
     const errors = {};
 
-    if (values.cardNumber.length < 12) {
-      errors.cardNumber = "Numéro de carte trop court";
-    } else if (!luhn(values.cardNumber)) {
+    const cardValidation = cardValidator.number(values.cardNumber);
+    const card = (cardValidation && cardValidation.card) || { type: null };
+
+    if (cardValidation === null || !cardValidation.isValid) {
       errors.cardNumber = "Numéro de carte invalide";
+    } else {
+      const { type, niceType } = card;
+      if (type) {
+        const acceptedTypes = new Set(["visa", "mastercard", "american-express", "maestro"]);
+        if (!acceptedTypes.has(type)) {
+          errors.cardNumber = `Les cartes bancaires ${niceType} ne sont pas supportées`;
+        }
+      }
     }
 
-    if (values.cvv.length < 3) {
-      errors.cvv = "Code de sécurité trop court";
+    if (values.cvv) {
+      const cvvLength = (cardValidation && cardValidation.card && cardValidation.card.code.size) || null;
+      if (cvvLength && cvvLength !== values.cvv.length) {
+        errors.cvv = `Le code de sécurité doit faire ${cvvLength} chiffres`;
+      }
+    } else {
+      const { type } = card;
+      if (type !== "maestro") {
+        errors.cvv = "Le code de sécurité est requis";
+      }
     }
 
-    if (!/^[0-9]{2}-[0-9]{1,2}$/.test(values.expirationDate)) {
+    const [year, month] = values.expirationDate.split("-");
+    if (!cardValidator.expirationDate({ year, month }).isValid) {
       errors.expirationDate = "Date d'expiration invalide";
     }
 
     return errors;
   },
-  handleSubmit: async (values, { props, setSubmitting }) => {
+  handleSubmit: async (values, { props, setSubmitting, setErrors }) => {
     try {
       await props.onPay(values);
     } catch (e) {
       console.error("Failed to submit", e);
+
+      if (e.details && e.details.type === "VALIDATION") {
+        setErrors(e.details.errors || {});
+      }
     } finally {
       setSubmitting(false);
     }
