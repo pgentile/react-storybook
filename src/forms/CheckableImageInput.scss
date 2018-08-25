@@ -24,6 +24,8 @@
 
   position: relative;
 
+  outline: none;
+
   &:hover {
     border-color: $hover-border-color;
   }
@@ -54,6 +56,19 @@
 
       content: "";
     }
+  }
+
+  &--disabled {
+    border-color: $border-color;
+
+    &:hover {
+      border-color: $border-color;
+    }
+
+    &::after {
+      content: none;
+    }
+
   }
 
   &__input {
