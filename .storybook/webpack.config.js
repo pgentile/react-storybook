@@ -62,6 +62,17 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(svg|png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1024 * 8
+            }
+          }
+        ]
+      },
     ],
   },
 };
