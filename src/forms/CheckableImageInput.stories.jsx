@@ -3,35 +3,35 @@ import { storiesOf } from "@storybook/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCcVisa, faCcMastercard, faCcAmex } from "@fortawesome/free-brands-svg-icons";
 
-import RadioImageInput from "./RadioImageInput";
+import CheckableImageInput from "./CheckableImageInput";
 
-storiesOf("Forms / RadioImageInput", module)
+storiesOf("Forms / CheckableImageInput", module)
   .add("unchecked", () => {
     return (
-      <RadioImageInput>
+      <CheckableImageInput>
         <FontAwesomeIcon icon={faCcVisa} size="2x" />
-      </RadioImageInput>
+      </CheckableImageInput>
     );
   })
   .add("checked", () => {
     return (
-      <RadioImageInput checked>
+      <CheckableImageInput checked>
         <FontAwesomeIcon icon={faCcVisa} size="2x" />
-      </RadioImageInput>
+      </CheckableImageInput>
     );
   })
   .add("many", () => {
     return (
       <Fragment>
-        <RadioImageInput checked>
+        <CheckableImageInput checked>
           <FontAwesomeIcon icon={faCcVisa} size="2x" />
-        </RadioImageInput>
-        <RadioImageInput>
+        </CheckableImageInput>
+        <CheckableImageInput>
           <FontAwesomeIcon icon={faCcMastercard} size="2x" />
-        </RadioImageInput>
-        <RadioImageInput>
+        </CheckableImageInput>
+        <CheckableImageInput>
           <FontAwesomeIcon icon={faCcAmex} size="2x" />
-        </RadioImageInput>
+        </CheckableImageInput>
       </Fragment>
     );
   });
