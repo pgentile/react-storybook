@@ -3,14 +3,32 @@ import PropTypes from "prop-types";
 import { withFormik } from "formik";
 import cardValidator from "card-validator";
 import creditCardType from "credit-card-type";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCcVisa, faCcMastercard, faCcAmex } from "@fortawesome/free-brands-svg-icons";
 
 import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
 import DateInput from "../forms/DateInput";
+import CheckableImageInput from "../forms/CheckableImageInput";
 import Button from "../buttons/Button";
 import Price from "../Price";
 
 import "./PaymentForm.scss";
+
+const availableCardNetworks = [
+  {
+    name: "visa",
+    icon: faCcVisa
+  },
+  {
+    name: "mastercard",
+    icon: faCcMastercard
+  },
+  {
+    name: "american-express",
+    icon: faCcAmex
+  }
+];
 
 class PaymentForm extends React.PureComponent {
   static propTypes = {
@@ -49,8 +67,26 @@ class PaymentForm extends React.PureComponent {
       ? "Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
       : null;
 
+    const cardNetworks = availableCardNetworks.map(availableCardNetwork => {
+      return (
+        <CheckableImageInput
+          key={availableCardNetwork.name}
+          className="payment-form__card"
+          name="cardNetwork"
+          value={availableCardNetwork.name}
+          checked={values.cardNetwork === availableCardNetwork.name}
+          disabled={disableForm}
+          onChange={handleChange}
+        >
+          <FontAwesomeIcon icon={availableCardNetwork.icon} size="2x" />
+        </CheckableImageInput>
+      );
+    });
+
     return (
       <form className={`payment-form ${className}`} onSubmit={handleSubmit}>
+        <div className="payment-form__line payment-form__line--cards">{cardNetworks}</div>
+
         <div className="payment-form__line payment-form__line--card-number">
           <FieldContainer
             label="Numéro de carte"

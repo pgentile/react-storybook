@@ -7,10 +7,28 @@
   display: grid;
   grid-gap: $margin;
 
-  grid-template-areas: "card-number card-number" "expiration-date cvv" "button button";
+  grid-template-areas: "cards cards" "card-number card-number" "expiration-date cvv" "button button";
   grid-template-columns: 1fr 1fr;
 
+  &__card {
+    margin-left: $margin / 2;
+    margin-right: $margin / 2;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   &__line {
+    &--cards {
+      grid-area: cards;
+      margin: 0 auto;
+    }
+
     &--card-number {
       grid-area: card-number;
     }
