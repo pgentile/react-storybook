@@ -3,7 +3,7 @@ import { configure, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 import Expandable from "./Expandable";
-import sleep from "./sleep";
+import sleep from "./utils/sleep";
 
 beforeAll(() => {
   configure({

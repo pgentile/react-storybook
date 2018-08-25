@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
+import ExpandableCard from "../ExpandableCard";
+
 import "./SuperRadio.scss";
+import bemModifiers from "../utils/bemModifiers";
 
 export default class SuperRadio extends React.PureComponent {
   static propTypes = {
@@ -52,12 +55,14 @@ export default class SuperRadio extends React.PureComponent {
     const { label, icon, description, help, checked, onChange } = this.props;
     const { showHelp } = this.state;
 
-    const bemBlock = block("super-radio");
+    const realClassName = bemModifiers("super-radio", {
+      checked
+    });
 
     return (
-      <div className={`${bemBlock} ` + ` ${bemBlock.modifier("checked", checked || false)}`}>
-        <div className={bemBlock.element("main-container")} onClick={this.selectRadio}>
-          <div className={bemBlock.element("radio-element")}>
+      <ExpandableCard className={realClassName} expandableContent={help} expanded={showHelp} hasBorder layer="flat">
+        <div className="super-radio__main-container" onClick={this.selectRadio}>
+          <div className="super-radio__radio-element">
             <input
               ref={this.inputRef}
               type="radio"
@@ -68,62 +73,27 @@ export default class SuperRadio extends React.PureComponent {
             />
           </div>
           {icon && (
-            <div className={bemBlock.element("icon")}>
+            <div className="super-radio__icon">
               <label htmlFor={this.inputId} onClick={this.stopPropagation}>
                 <FontAwesomeIcon icon={icon} size="3x" />
               </label>
             </div>
           )}
-          <div className={bemBlock.element("description")}>
-            <p className={bemBlock.element("description-title")}>
+          <div className="super-radio__description">
+            <p className="super-radio__description-title">
               <label htmlFor={this.inputId}>{label}</label>
             </p>
-            {description && <p className={bemBlock.element("description-description")}>{description}</p>}
+            {description && <p className="super-radio__description-description">{description}</p>}
           </div>
           {help && (
-            <div className={bemBlock.element("help")}>
-              <a className={bemBlock.element("help-link")} onClick={this.toggleHelp}>
-                <FontAwesomeIcon
-                  className={bemBlock.element("help-icon").toString()}
-                  icon={faQuestionCircle}
-                  size="1x"
-                />
+            <div className="super-radio__help">
+              <a className="super-radio__help-link" onClick={this.toggleHelp}>
+                <FontAwesomeIcon className="super-radio__help-icon" icon={faQuestionCircle} size="1x" />
               </a>
             </div>
           )}
         </div>
-        {help && (
-          <div
-            className={`${bemBlock.element("help-details")} ${bemBlock
-              .element("help-details")
-              .modifier("visible", showHelp)}`}
-          >
-            {help}
-          </div>
-        )}
-      </div>
+      </ExpandableCard>
     );
   }
-}
-
-function block(blockName) {
-  return {
-    toString: () => blockName,
-    element: elementName => element(blockName, elementName),
-    modifier: (modifierName, active) => modifier(blockName, null, modifierName, active)
-  };
-}
-
-function element(blockName, elementName) {
-  return {
-    toString: () => `${blockName}__${elementName}`,
-    modifier: (modifierName, active) => modifier(blockName, elementName, modifierName, active)
-  };
-}
-
-function modifier(blockName, elementName, modifierName, active) {
-  if (active === undefined || active === true) {
-    return `${blockName}${elementName ? `__${elementName}` : ""}_${modifierName}`;
-  }
-  return "";
 }

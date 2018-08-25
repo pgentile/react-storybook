@@ -1,0 +1,52 @@
+.super-radio {
+  $base-margin: 0.5rem;
+  $description-margin: -$base-margin;
+
+  &__main-container {
+    padding: $base-margin;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__radio-element {
+    margin-right: $base-margin;
+    flex-grow: 0;
+  }
+
+  &__icon {
+    margin-right: $base-margin;
+    flex-grow: 0;
+  }
+
+  &__description {
+    // top | right | bottom | left
+    margin: $description-margin 0 $description-margin $description-margin;
+    flex-grow: 1;
+  }
+
+  &__description-title {
+    margin: $base-margin;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  &__description-description {
+    margin: $base-margin;
+    margin-left: $base-margin;
+  }
+
+  &__help {
+      // top | right | bottom | left
+      margin: $description-margin 0 $description-margin $description-margin;
+      flex-grow: 0;
+  }
+
+  &__help-link {
+    cursor: pointer;
+  }
+
+}
+
