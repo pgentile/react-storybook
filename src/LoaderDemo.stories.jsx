@@ -7,7 +7,7 @@ import { storiesOf } from "@storybook/react";
 import createStore from "./redux/createStore";
 import loader, { loaderMiddleware, selectIsLoading } from "./redux/reducers/loader";
 import Spinner from "./Spinner";
-import sleep from "./sleep";
+import sleep from "./utils/sleep";
 
 storiesOf("LoaderDemo", module)
   .addDecorator(story => {

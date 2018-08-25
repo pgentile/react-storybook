@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 import "./ExpandableIcon.scss";
-import bemModifiers from "./bemModifiers";
+import bemModifiers from "./utils/bemModifiers";
 
 export default class ExpandableIcon extends React.PureComponent {
   static propTypes = {

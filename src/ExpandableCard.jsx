@@ -5,7 +5,7 @@ import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 
 import Expandable from "./Expandable";
 import Card from "./Card";
-import FlatButton from "./FlatButton";
+import FlatButton from "./buttons/FlatButton";
 
 import "./ExpandableCard.scss";
 

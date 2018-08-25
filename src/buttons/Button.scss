@@ -1,0 +1,60 @@
+@import "../styles/_reset-button";
+
+
+.button {
+  @extend %button-resets;
+
+  $color: black;
+  $border-color: #EEE;
+  $background-color: white;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+  border: solid 1px $border-color;
+  border-radius: 0.5em;
+
+  background-color: $background-color;
+
+  padding: 0.5rem 2rem;
+
+  font-size: 1rem;
+  color: $color;
+
+  transition: background-color 0.2s ease-in;
+
+  outline: none;
+
+  &:hover {
+    border-color: darken($border-color, 40%);
+    background-color: darken($background-color, 10%);
+  }
+
+  &:disabled, &--disabled {
+    transition: none;
+
+    border-color: $border-color;
+    background-color: lighten($border-color, 5%);
+    color: lighten($color, 60%);
+
+    &:hover {
+      border-color: $border-color;
+      background-color: lighten($border-color, 5%);
+      color: lighten($color, 60%);
+    }
+  }
+
+  &--size {
+
+    &-small {
+      padding: 0.3rem 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    &-large {
+      font-size: 1.5rem;
+    }
+
+  }
+
+}

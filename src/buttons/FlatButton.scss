@@ -1,0 +1,20 @@
+@import "../styles/_reset-button";
+
+
+.flat-button {
+  @extend %button-resets;
+
+  $background-color: white;
+
+  cursor: pointer;
+
+  padding: 0.5rem;
+  font-size: 1rem;
+
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: darken($background-color, 10%);
+  }
+
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import bemModifiers from "./bemModifiers";
+import bemModifiers from "./utils/bemModifiers";
 
 import "./Card.scss";
 

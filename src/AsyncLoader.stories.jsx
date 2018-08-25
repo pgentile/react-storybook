@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 
 import AsyncLoader from "./AsyncLoader";
-import sleep from "./sleep";
+import sleep from "./utils/sleep";
 
 storiesOf("AsyncLoader", module)
   .add("success", () => {

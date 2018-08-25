@@ -1,7 +1,7 @@
 import React, { createRef } from "react";
 import PropTypes from "prop-types";
 
-import animate from "./animate";
+import animate from "./utils/animate";
 
 import "./Expandable.scss";
 
