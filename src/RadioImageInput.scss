@@ -1,0 +1,59 @@
+.radio-image-input {
+  $layer-shadow-color: rgba(0, 0, 0, 0.2);
+  $border-color: #EEE;
+  $border-width: 1px;
+
+  $checked-border-color: green;
+  $checked-border-width: 3px;
+
+  $disabled-color: lighten($border-color, 60%);
+  $hover-border-color: darken($border-color, 40%);
+
+  $padding: 0.5rem;
+
+  display: inline-block;
+
+  border: $border-color $border-width solid;
+  border-radius: 0.5rem;
+
+  padding: $padding;
+
+  cursor: pointer;
+
+  transition: border-color 0.2s ease-in;
+
+  position: relative;
+
+  &:hover {
+    border-color: $hover-border-color;
+  }
+
+  &--checked {
+    border-width: $checked-border-width;
+    border-color: $checked-border-color;
+    padding: calc(#{$padding} - (#{$checked-border-width} - #{$border-width}));
+
+    &:hover {
+      border-color: $checked-border-color;
+    }
+
+    &::after {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+
+      background-color: $checked-border-color;
+      color: white;
+
+      padding: 0.25rem;
+
+      font-size: 0.75rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      z-index: 2;
+
+      content: "✓";
+    }
+  }
+
+}
