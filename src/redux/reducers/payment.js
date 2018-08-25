@@ -1,6 +1,7 @@
 import { FULFILLED } from "redux-promise-middleware";
 
 import createScope from "./createScope";
+import sleep from "../../utils/sleep";
 
 // Some useful variables
 
@@ -126,16 +127,20 @@ class PaymentValidationError extends Error {
 }
 
 export function pay() {
-  const error = new PaymentValidationError({
-    type: "VALIDATION",
-    errors: {
-      cardNumber: "Invalid card number"
-    }
-  });
+  const payOnServer = async () => {
+    await sleep(2000);
+
+    throw new PaymentValidationError({
+      type: "VALIDATION",
+      errors: {
+        cardNumber: "Invalid card number"
+      }
+    });
+  };
 
   return {
     type: PAY,
-    payload: Promise.reject(error)
+    payload: payOnServer()
   };
 }
 

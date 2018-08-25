@@ -12,7 +12,9 @@ export default class Overlay extends React.Component {
   body = null;
   element = null;
 
-  componentDidMount() {
+  constructor() {
+    super();
+
     this.element = document.createElement("div");
     this.element.className = "overlay-container";
 
