@@ -1,23 +1,26 @@
 .payment-form {
   $margin: 1rem;
 
-  margin: 0;
-  padding: 0;
+  &__select-mean, &__means, &__credit-card-form {
+    margin: $margin 0;
+  }
 
-  display: grid;
-  grid-gap: $margin;
+  &__select-mean {
+    margin-top: 0;
+    text-align: center;
+  }
 
-  grid-template-areas:
-    "select-mean select-mean"
-    "means means"
-    "card-number card-number"
-    "expiration-date cvv"
-    "button button";
-  grid-template-columns: 1fr 1fr;
+  &__means {
+    margin: $margin;
+    text-align: center;
+  }
 
-  &__card {
-    margin-left: $margin / 2;
-    margin-right: $margin / 2;
+  &__credit-card-form {
+    margin-bottom: 0;
+  }
+
+  &__mean {
+    margin: 0 ($margin / 2);
 
     &:first-child {
       margin-left: 0;
@@ -26,39 +29,6 @@
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  &__line {
-    &--select-mean {
-      grid-area: select-mean;
-      margin: 0;
-
-      text-align: center;
-    }
-
-    &--means {
-      grid-area: means;
-      margin: 0 auto;
-    }
-
-    &--card-number {
-      grid-area: card-number;
-    }
-
-    &--expiration-date {
-      grid-area: expiration-date;
-    }
-
-    &--cvv {
-      grid-area: cvv;
-    }
-
-    &--button {
-      grid-area: button;
-      margin-top: $margin;
-      text-align: center;
-    }
-
   }
 
 }

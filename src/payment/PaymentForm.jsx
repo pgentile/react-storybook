@@ -2,20 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withFormik } from "formik";
 import cardValidator from "card-validator";
-import creditCardType from "credit-card-type";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCcVisa, faCcMastercard, faCcAmex } from "@fortawesome/free-brands-svg-icons";
+import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 
-import FieldContainer from "../forms/FieldContainer";
-import InputField from "../forms/InputField";
-import DateInput from "../forms/DateInput";
+import CreditCardForm from "./CreditCardForm";
 import CheckableImageInput from "../forms/CheckableImageInput";
-import Button from "../buttons/Button";
-import Price from "../Price";
 
 import "./PaymentForm.scss";
 
-const availableCardNetworks = [
+const availablePaymentMeans = [
+  {
+    name: "registred-cards",
+    icon: faCreditCard
+  },
   {
     name: "visa",
     icon: faCcVisa
@@ -44,123 +44,54 @@ class PaymentForm extends React.PureComponent {
     className: ""
   };
 
+  state = {
+    isSubmitting: false,
+    mean: null
+  };
+
+  onPay = async values => {
+    this.setState({ isSubmitting: true });
+    try {
+      return this.props.onPay(values);
+    } catch (e) {
+      this.setState({ isSubmitting: false });
+      throw e;
+    }
+  };
+
+  onMeanChange = event => {
+    this.setState({
+      mean: event.target.value
+    });
+  };
+
   render() {
-    const {
-      className,
-      price,
-      values,
-      errors,
-      touched,
-      handleChange,
-      handleBlur,
-      handleSubmit,
-      setFieldValue,
-      setFieldTouched,
-      isSubmitting,
-      isValid
-    } = this.props;
+    const { className, price } = this.props;
+    const { isSubmitting, mean } = this.state;
     const disableForm = isSubmitting;
 
-    const cards = creditCardType(values.cardNumber);
-    const isMaestro = cards && cards.length === 1 && cards[0].type === "maestro";
-    const cvvHelpMessage = isMaestro
-      ? "Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
-      : null;
-
-    const cardNetworks = availableCardNetworks.map(availableCardNetwork => {
+    const cardNetworks = availablePaymentMeans.map(availablePaymentMean => {
       return (
         <CheckableImageInput
-          key={availableCardNetwork.name}
-          className="payment-form__card"
-          name="cardNetwork"
-          value={availableCardNetwork.name}
-          checked={values.cardNetwork === availableCardNetwork.name}
+          key={availablePaymentMean.name}
+          className="payment-form__mean"
+          name="mean"
+          value={availablePaymentMean.name}
+          checked={mean === availablePaymentMean.name}
           disabled={disableForm}
-          onChange={handleChange}
+          onChange={this.onMeanChange}
         >
-          <FontAwesomeIcon icon={availableCardNetwork.icon} size="2x" />
+          <FontAwesomeIcon icon={availablePaymentMean.icon} size="2x" />
         </CheckableImageInput>
       );
     });
 
     return (
-      <form className={`payment-form ${className}`} onSubmit={handleSubmit}>
-        <p className="payment-form__line payment-form__line--select-mean">
-          Sélectionnez votre moyen de paiement&nbsp;:
-        </p>
-        <div className="payment-form__line payment-form__line--means">{cardNetworks}</div>
-
-        <div className="payment-form__line payment-form__line--card-number">
-          <FieldContainer
-            label="Numéro de carte"
-            disabled={disableForm}
-            errorMessage={touched.cardNumber && errors.cardNumber}
-          >
-            {props => (
-              <InputField
-                {...props}
-                name="cardNumber"
-                inputMode="numeric"
-                autoComplete="cc-number"
-                maxLength={19}
-                value={values.cardNumber}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            )}
-          </FieldContainer>
-        </div>
-
-        <div className="payment-form__line payment-form__line--expiration-date">
-          <FieldContainer
-            label="Date d'expiration"
-            disabled={disableForm}
-            errorMessage={touched.expirationDate && errors.expirationDate}
-          >
-            {props => (
-              <DateInput
-                {...props}
-                mode="year-month"
-                smallYear
-                name="expirationDate"
-                value={values.expirationDate}
-                autoComplete={{ month: "cc-exp-month", year: "cc-exp-year" }}
-                onChange={value => setFieldValue("expirationDate", value)}
-                onBlur={() => setFieldTouched("expirationDate", true)}
-              />
-            )}
-          </FieldContainer>
-        </div>
-
-        <div className="payment-form__line payment-form__line--cvv">
-          <FieldContainer
-            label="Code de sécurité"
-            disabled={disableForm}
-            errorMessage={touched.cvv && errors.cvv}
-            helpMessage={cvvHelpMessage}
-          >
-            {props => (
-              <InputField
-                {...props}
-                name="cvv"
-                inputMode="numeric"
-                autoComplete="cc-csc"
-                maxLength={4}
-                value={values.cvv}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            )}
-          </FieldContainer>
-        </div>
-
-        <div className="payment-form__line payment-form__line--button">
-          <Button size="large" type="submit" showDisabled={!isValid} disabled={disableForm}>
-            Payer&nbsp;
-            <Price noColor price={price} />
-          </Button>
-        </div>
-      </form>
+      <div className={`payment-form ${className}`}>
+        <p className="payment-form__line payment-form__select-mean">Sélectionnez votre moyen de paiement&nbsp;:</p>
+        <div className="payment-form__line payment-form__means">{cardNetworks}</div>
+        <CreditCardForm className="payment-form__credit-card-form" price={price} onPay={this.onPay} />
+      </div>
     );
   }
 }

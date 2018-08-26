@@ -1,0 +1,50 @@
+.credit-card-form {
+  $margin: 1rem;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-gap: $margin;
+
+  grid-template-areas:
+    "card-number card-number"
+    "expiration-date cvv"
+    "button button";
+  grid-template-columns: 1fr 1fr;
+
+  &__card {
+    margin-left: $margin / 2;
+    margin-right: $margin / 2;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__line {
+    &--card-number {
+      grid-area: card-number;
+    }
+
+    &--expiration-date {
+      grid-area: expiration-date;
+    }
+
+    &--cvv {
+      grid-area: cvv;
+    }
+
+    &--button {
+      grid-area: button;
+      margin-top: $margin;
+      text-align: center;
+    }
+
+  }
+
+}
