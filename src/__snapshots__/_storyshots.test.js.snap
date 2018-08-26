@@ -1487,6 +1487,160 @@ exports[`Storyshots LoaderDemo main 1`] = `
 </div>
 `;
 
+exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
+<form
+  className="credit-card-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="credit-card-form__line credit-card-form__line--card-number"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-6"
+      >
+        Numéro de carte
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoComplete="cc-number"
+          className="form-input-field"
+          disabled={false}
+          id="form-field-6"
+          inputMode="numeric"
+          maxLength={19}
+          name="cardNumber"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="credit-card-form__line credit-card-form__line--expiration-date"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-7"
+      >
+        Date d'expiration
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <fieldset
+          className="form-date-input "
+        >
+          <input
+            autoComplete="cc-exp-month"
+            className="form-date-input__input form-date-input__input--month"
+            disabled={false}
+            id="form-field-7"
+            inputMode="numeric"
+            maxLength={2}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="MM"
+            readOnly={false}
+            type="text"
+            value=""
+          />
+          <span
+            className="form-date-input__input-separator"
+          >
+            /
+          </span>
+          <input
+            autoComplete="cc-exp-year"
+            className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+            disabled={false}
+            inputMode="numeric"
+            maxLength={2}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="AA"
+            readOnly={false}
+            type="text"
+            value=""
+          />
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div
+    className="credit-card-form__line credit-card-form__line--cvv"
+  >
+    <div
+      className="form-field-container"
+    >
+      <label
+        className="form-field-container__label"
+        htmlFor="form-field-8"
+      >
+        Code de sécurité
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoComplete="cc-csc"
+          className="form-input-field"
+          disabled={false}
+          id="form-field-8"
+          inputMode="numeric"
+          maxLength={4}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="credit-card-form__line credit-card-form__line--button"
+  >
+    <button
+      className="button button--disabled button--size-large "
+      disabled={false}
+      type="submit"
+    >
+      Payer 
+      <span
+        className="price price--no-color "
+      >
+        <span
+          className="price__units"
+        >
+          98
+        </span>
+        <span
+          className="price__remaining"
+        >
+          , 
+          00
+           
+          €
+        </span>
+      </span>
+    </button>
+  </div>
+</form>
+`;
+
 exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
 <section
   className="order-editor"
@@ -3201,20 +3355,19 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
       >
         Payez en toute sécurité
       </h1>
-      <form
+      <div
         className="payment-form payment-form-container__form"
-        onSubmit={[Function]}
       >
         <p
-          className="payment-form__line payment-form__line--select-mean"
+          className="payment-form__select-mean"
         >
           Sélectionnez votre moyen de paiement :
         </p>
         <div
-          className="payment-form__line payment-form__line--means"
+          className="payment-form__means"
         >
           <span
-            className="checkable-image-input payment-form__card"
+            className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             tabIndex={0}
           >
@@ -3222,7 +3375,39 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               checked={false}
               className="checkable-image-input__input"
               disabled={false}
-              name="cardNetwork"
+              name="mean"
+              onChange={[Function]}
+              tabIndex={-1}
+              type="radio"
+              value="registred-cards"
+            />
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+              data-icon="credit-card"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+          <span
+            className="checkable-image-input payment-form__mean"
+            onClick={[Function]}
+            tabIndex={0}
+          >
+            <input
+              checked={false}
+              className="checkable-image-input__input"
+              disabled={false}
+              name="mean"
               onChange={[Function]}
               tabIndex={-1}
               type="radio"
@@ -3246,7 +3431,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             </svg>
           </span>
           <span
-            className="checkable-image-input payment-form__card"
+            className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             tabIndex={0}
           >
@@ -3254,7 +3439,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               checked={false}
               className="checkable-image-input__input"
               disabled={false}
-              name="cardNetwork"
+              name="mean"
               onChange={[Function]}
               tabIndex={-1}
               type="radio"
@@ -3278,7 +3463,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             </svg>
           </span>
           <span
-            className="checkable-image-input payment-form__card"
+            className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             tabIndex={0}
           >
@@ -3286,7 +3471,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               checked={false}
               className="checkable-image-input__input"
               disabled={false}
-              name="cardNetwork"
+              name="mean"
               onChange={[Function]}
               tabIndex={-1}
               type="radio"
@@ -3310,153 +3495,158 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             </svg>
           </span>
         </div>
-        <div
-          className="payment-form__line payment-form__line--card-number"
+        <form
+          className="credit-card-form payment-form__credit-card-form"
+          onSubmit={[Function]}
         >
           <div
-            className="form-field-container"
+            className="credit-card-form__line credit-card-form__line--card-number"
           >
-            <label
-              className="form-field-container__label"
-              htmlFor="form-field-6"
-            >
-              Numéro de carte
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container"
             >
-              <input
-                autoComplete="cc-number"
-                className="form-input-field"
-                disabled={false}
-                id="form-field-6"
-                inputMode="numeric"
-                maxLength={19}
-                name="cardNumber"
-                onBlur={[Function]}
-                onChange={[Function]}
-                type="text"
-                value=""
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="payment-form__line payment-form__line--expiration-date"
-        >
-          <div
-            className="form-field-container"
-          >
-            <label
-              className="form-field-container__label"
-              htmlFor="form-field-7"
-            >
-              Date d'expiration
-            </label>
-            <div
-              className="form-field-container__field"
-            >
-              <fieldset
-                className="form-date-input "
+              <label
+                className="form-field-container__label"
+                htmlFor="form-field-9"
+              >
+                Numéro de carte
+              </label>
+              <div
+                className="form-field-container__field"
               >
                 <input
-                  autoComplete="cc-exp-month"
-                  className="form-date-input__input form-date-input__input--month"
+                  autoComplete="cc-number"
+                  className="form-input-field"
                   disabled={false}
-                  id="form-field-7"
+                  id="form-field-9"
                   inputMode="numeric"
-                  maxLength={2}
+                  maxLength={19}
+                  name="cardNumber"
                   onBlur={[Function]}
                   onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="MM"
-                  readOnly={false}
                   type="text"
                   value=""
                 />
-                <span
-                  className="form-date-input__input-separator"
+              </div>
+            </div>
+          </div>
+          <div
+            className="credit-card-form__line credit-card-form__line--expiration-date"
+          >
+            <div
+              className="form-field-container"
+            >
+              <label
+                className="form-field-container__label"
+                htmlFor="form-field-10"
+              >
+                Date d'expiration
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <fieldset
+                  className="form-date-input "
                 >
-                  /
-                </span>
+                  <input
+                    autoComplete="cc-exp-month"
+                    className="form-date-input__input form-date-input__input--month"
+                    disabled={false}
+                    id="form-field-10"
+                    inputMode="numeric"
+                    maxLength={2}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="MM"
+                    readOnly={false}
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="form-date-input__input-separator"
+                  >
+                    /
+                  </span>
+                  <input
+                    autoComplete="cc-exp-year"
+                    className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+                    disabled={false}
+                    inputMode="numeric"
+                    maxLength={2}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="AA"
+                    readOnly={false}
+                    type="text"
+                    value=""
+                  />
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div
+            className="credit-card-form__line credit-card-form__line--cvv"
+          >
+            <div
+              className="form-field-container"
+            >
+              <label
+                className="form-field-container__label"
+                htmlFor="form-field-11"
+              >
+                Code de sécurité
+              </label>
+              <div
+                className="form-field-container__field"
+              >
                 <input
-                  autoComplete="cc-exp-year"
-                  className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+                  autoComplete="cc-csc"
+                  className="form-input-field"
                   disabled={false}
+                  id="form-field-11"
                   inputMode="numeric"
-                  maxLength={2}
+                  maxLength={4}
+                  name="cvv"
                   onBlur={[Function]}
                   onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="AA"
-                  readOnly={false}
                   type="text"
                   value=""
                 />
-              </fieldset>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="payment-form__line payment-form__line--cvv"
-        >
           <div
-            className="form-field-container"
+            className="credit-card-form__line credit-card-form__line--button"
           >
-            <label
-              className="form-field-container__label"
-              htmlFor="form-field-8"
+            <button
+              className="button button--disabled button--size-large "
+              disabled={false}
+              type="submit"
             >
-              Code de sécurité
-            </label>
-            <div
-              className="form-field-container__field"
-            >
-              <input
-                autoComplete="cc-csc"
-                className="form-input-field"
-                disabled={false}
-                id="form-field-8"
-                inputMode="numeric"
-                maxLength={4}
-                name="cvv"
-                onBlur={[Function]}
-                onChange={[Function]}
-                type="text"
-                value=""
-              />
-            </div>
+              Payer 
+              <span
+                className="price price--no-color "
+              >
+                <span
+                  className="price__units"
+                >
+                  115
+                </span>
+                <span
+                  className="price__remaining"
+                >
+                  , 
+                  70
+                   
+                  €
+                </span>
+              </span>
+            </button>
           </div>
-        </div>
-        <div
-          className="payment-form__line payment-form__line--button"
-        >
-          <button
-            className="button button--disabled button--size-large "
-            disabled={false}
-            type="submit"
-          >
-            Payer 
-            <span
-              className="price price--no-color "
-            >
-              <span
-                className="price__units"
-              >
-                115
-              </span>
-              <span
-                className="price__remaining"
-              >
-                , 
-                70
-                 
-                €
-              </span>
-            </span>
-          </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
   </div>
 </section>
@@ -3640,20 +3830,19 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
       >
         Payez en toute sécurité
       </h1>
-      <form
+      <div
         className="payment-form payment-form-container__form"
-        onSubmit={[Function]}
       >
         <p
-          className="payment-form__line payment-form__line--select-mean"
+          className="payment-form__select-mean"
         >
           Sélectionnez votre moyen de paiement :
         </p>
         <div
-          className="payment-form__line payment-form__line--means"
+          className="payment-form__means"
         >
           <span
-            className="checkable-image-input payment-form__card"
+            className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             tabIndex={0}
           >
@@ -3661,7 +3850,39 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               checked={false}
               className="checkable-image-input__input"
               disabled={false}
-              name="cardNetwork"
+              name="mean"
+              onChange={[Function]}
+              tabIndex={-1}
+              type="radio"
+              value="registred-cards"
+            />
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+              data-icon="credit-card"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+          <span
+            className="checkable-image-input payment-form__mean"
+            onClick={[Function]}
+            tabIndex={0}
+          >
+            <input
+              checked={false}
+              className="checkable-image-input__input"
+              disabled={false}
+              name="mean"
               onChange={[Function]}
               tabIndex={-1}
               type="radio"
@@ -3685,7 +3906,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             </svg>
           </span>
           <span
-            className="checkable-image-input payment-form__card"
+            className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             tabIndex={0}
           >
@@ -3693,7 +3914,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               checked={false}
               className="checkable-image-input__input"
               disabled={false}
-              name="cardNetwork"
+              name="mean"
               onChange={[Function]}
               tabIndex={-1}
               type="radio"
@@ -3717,7 +3938,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             </svg>
           </span>
           <span
-            className="checkable-image-input payment-form__card"
+            className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             tabIndex={0}
           >
@@ -3725,7 +3946,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               checked={false}
               className="checkable-image-input__input"
               disabled={false}
-              name="cardNetwork"
+              name="mean"
               onChange={[Function]}
               tabIndex={-1}
               type="radio"
@@ -3749,173 +3970,177 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             </svg>
           </span>
         </div>
-        <div
-          className="payment-form__line payment-form__line--card-number"
+        <form
+          className="credit-card-form payment-form__credit-card-form"
+          onSubmit={[Function]}
         >
           <div
-            className="form-field-container"
+            className="credit-card-form__line credit-card-form__line--card-number"
           >
-            <label
-              className="form-field-container__label"
-              htmlFor="form-field-9"
-            >
-              Numéro de carte
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container"
             >
-              <input
-                autoComplete="cc-number"
-                className="form-input-field"
-                disabled={false}
-                id="form-field-9"
-                inputMode="numeric"
-                maxLength={19}
-                name="cardNumber"
-                onBlur={[Function]}
-                onChange={[Function]}
-                type="text"
-                value=""
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="payment-form__line payment-form__line--expiration-date"
-        >
-          <div
-            className="form-field-container"
-          >
-            <label
-              className="form-field-container__label"
-              htmlFor="form-field-10"
-            >
-              Date d'expiration
-            </label>
-            <div
-              className="form-field-container__field"
-            >
-              <fieldset
-                className="form-date-input "
+              <label
+                className="form-field-container__label"
+                htmlFor="form-field-12"
+              >
+                Numéro de carte
+              </label>
+              <div
+                className="form-field-container__field"
               >
                 <input
-                  autoComplete="cc-exp-month"
-                  className="form-date-input__input form-date-input__input--month"
+                  autoComplete="cc-number"
+                  className="form-input-field"
                   disabled={false}
-                  id="form-field-10"
+                  id="form-field-12"
                   inputMode="numeric"
-                  maxLength={2}
+                  maxLength={19}
+                  name="cardNumber"
                   onBlur={[Function]}
                   onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="MM"
-                  readOnly={false}
                   type="text"
                   value=""
                 />
-                <span
-                  className="form-date-input__input-separator"
+              </div>
+            </div>
+          </div>
+          <div
+            className="credit-card-form__line credit-card-form__line--expiration-date"
+          >
+            <div
+              className="form-field-container"
+            >
+              <label
+                className="form-field-container__label"
+                htmlFor="form-field-13"
+              >
+                Date d'expiration
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <fieldset
+                  className="form-date-input "
                 >
-                  /
-                </span>
+                  <input
+                    autoComplete="cc-exp-month"
+                    className="form-date-input__input form-date-input__input--month"
+                    disabled={false}
+                    id="form-field-13"
+                    inputMode="numeric"
+                    maxLength={2}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="MM"
+                    readOnly={false}
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="form-date-input__input-separator"
+                  >
+                    /
+                  </span>
+                  <input
+                    autoComplete="cc-exp-year"
+                    className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+                    disabled={false}
+                    inputMode="numeric"
+                    maxLength={2}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="AA"
+                    readOnly={false}
+                    type="text"
+                    value=""
+                  />
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div
+            className="credit-card-form__line credit-card-form__line--cvv"
+          >
+            <div
+              className="form-field-container"
+            >
+              <label
+                className="form-field-container__label"
+                htmlFor="form-field-14"
+              >
+                Code de sécurité
+              </label>
+              <div
+                className="form-field-container__field"
+              >
                 <input
-                  autoComplete="cc-exp-year"
-                  className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+                  autoComplete="cc-csc"
+                  className="form-input-field"
                   disabled={false}
+                  id="form-field-14"
                   inputMode="numeric"
-                  maxLength={2}
+                  maxLength={4}
+                  name="cvv"
                   onBlur={[Function]}
                   onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="AA"
-                  readOnly={false}
                   type="text"
                   value=""
                 />
-              </fieldset>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="payment-form__line payment-form__line--cvv"
-        >
           <div
-            className="form-field-container"
+            className="credit-card-form__line credit-card-form__line--button"
           >
-            <label
-              className="form-field-container__label"
-              htmlFor="form-field-11"
+            <button
+              className="button button--disabled button--size-large "
+              disabled={false}
+              type="submit"
             >
-              Code de sécurité
-            </label>
-            <div
-              className="form-field-container__field"
-            >
-              <input
-                autoComplete="cc-csc"
-                className="form-input-field"
-                disabled={false}
-                id="form-field-11"
-                inputMode="numeric"
-                maxLength={4}
-                name="cvv"
-                onBlur={[Function]}
-                onChange={[Function]}
-                type="text"
-                value=""
-              />
-            </div>
+              Payer 
+              <span
+                className="price price--no-color "
+              >
+                <span
+                  className="price__units"
+                >
+                  0
+                </span>
+                <span
+                  className="price__remaining"
+                >
+                  , 
+                  00
+                   
+                  €
+                </span>
+              </span>
+            </button>
           </div>
-        </div>
-        <div
-          className="payment-form__line payment-form__line--button"
-        >
-          <button
-            className="button button--disabled button--size-large "
-            disabled={false}
-            type="submit"
-          >
-            Payer 
-            <span
-              className="price price--no-color "
-            >
-              <span
-                className="price__units"
-              >
-                0
-              </span>
-              <span
-                className="price__remaining"
-              >
-                , 
-                00
-                 
-                €
-              </span>
-            </span>
-          </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
   </div>
 </section>
 `;
 
 exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
-<form
+<div
   className="payment-form "
-  onSubmit={[Function]}
 >
   <p
-    className="payment-form__line payment-form__line--select-mean"
+    className="payment-form__select-mean"
   >
     Sélectionnez votre moyen de paiement :
   </p>
   <div
-    className="payment-form__line payment-form__line--means"
+    className="payment-form__means"
   >
     <span
-      className="checkable-image-input payment-form__card"
+      className="checkable-image-input payment-form__mean"
       onClick={[Function]}
       tabIndex={0}
     >
@@ -3923,7 +4148,39 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         checked={false}
         className="checkable-image-input__input"
         disabled={false}
-        name="cardNetwork"
+        name="mean"
+        onChange={[Function]}
+        tabIndex={-1}
+        type="radio"
+        value="registred-cards"
+      />
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+        data-icon="credit-card"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+    <span
+      className="checkable-image-input payment-form__mean"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <input
+        checked={false}
+        className="checkable-image-input__input"
+        disabled={false}
+        name="mean"
         onChange={[Function]}
         tabIndex={-1}
         type="radio"
@@ -3947,7 +4204,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       </svg>
     </span>
     <span
-      className="checkable-image-input payment-form__card"
+      className="checkable-image-input payment-form__mean"
       onClick={[Function]}
       tabIndex={0}
     >
@@ -3955,7 +4212,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         checked={false}
         className="checkable-image-input__input"
         disabled={false}
-        name="cardNetwork"
+        name="mean"
         onChange={[Function]}
         tabIndex={-1}
         type="radio"
@@ -3979,7 +4236,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       </svg>
     </span>
     <span
-      className="checkable-image-input payment-form__card"
+      className="checkable-image-input payment-form__mean"
       onClick={[Function]}
       tabIndex={0}
     >
@@ -3987,7 +4244,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         checked={false}
         className="checkable-image-input__input"
         disabled={false}
-        name="cardNetwork"
+        name="mean"
         onChange={[Function]}
         tabIndex={-1}
         type="radio"
@@ -4011,153 +4268,158 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       </svg>
     </span>
   </div>
-  <div
-    className="payment-form__line payment-form__line--card-number"
+  <form
+    className="credit-card-form payment-form__credit-card-form"
+    onSubmit={[Function]}
   >
     <div
-      className="form-field-container"
+      className="credit-card-form__line credit-card-form__line--card-number"
     >
-      <label
-        className="form-field-container__label"
-        htmlFor="form-field-12"
-      >
-        Numéro de carte
-      </label>
       <div
-        className="form-field-container__field"
+        className="form-field-container"
       >
-        <input
-          autoComplete="cc-number"
-          className="form-input-field"
-          disabled={false}
-          id="form-field-12"
-          inputMode="numeric"
-          maxLength={19}
-          name="cardNumber"
-          onBlur={[Function]}
-          onChange={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="payment-form__line payment-form__line--expiration-date"
-  >
-    <div
-      className="form-field-container"
-    >
-      <label
-        className="form-field-container__label"
-        htmlFor="form-field-13"
-      >
-        Date d'expiration
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <fieldset
-          className="form-date-input "
+        <label
+          className="form-field-container__label"
+          htmlFor="form-field-15"
+        >
+          Numéro de carte
+        </label>
+        <div
+          className="form-field-container__field"
         >
           <input
-            autoComplete="cc-exp-month"
-            className="form-date-input__input form-date-input__input--month"
+            autoComplete="cc-number"
+            className="form-input-field"
             disabled={false}
-            id="form-field-13"
+            id="form-field-15"
             inputMode="numeric"
-            maxLength={2}
+            maxLength={19}
+            name="cardNumber"
             onBlur={[Function]}
             onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="MM"
-            readOnly={false}
             type="text"
             value=""
           />
-          <span
-            className="form-date-input__input-separator"
+        </div>
+      </div>
+    </div>
+    <div
+      className="credit-card-form__line credit-card-form__line--expiration-date"
+    >
+      <div
+        className="form-field-container"
+      >
+        <label
+          className="form-field-container__label"
+          htmlFor="form-field-16"
+        >
+          Date d'expiration
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <fieldset
+            className="form-date-input "
           >
-            /
-          </span>
+            <input
+              autoComplete="cc-exp-month"
+              className="form-date-input__input form-date-input__input--month"
+              disabled={false}
+              id="form-field-16"
+              inputMode="numeric"
+              maxLength={2}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="MM"
+              readOnly={false}
+              type="text"
+              value=""
+            />
+            <span
+              className="form-date-input__input-separator"
+            >
+              /
+            </span>
+            <input
+              autoComplete="cc-exp-year"
+              className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+              disabled={false}
+              inputMode="numeric"
+              maxLength={2}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="AA"
+              readOnly={false}
+              type="text"
+              value=""
+            />
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      className="credit-card-form__line credit-card-form__line--cvv"
+    >
+      <div
+        className="form-field-container"
+      >
+        <label
+          className="form-field-container__label"
+          htmlFor="form-field-17"
+        >
+          Code de sécurité
+        </label>
+        <div
+          className="form-field-container__field"
+        >
           <input
-            autoComplete="cc-exp-year"
-            className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+            autoComplete="cc-csc"
+            className="form-input-field"
             disabled={false}
+            id="form-field-17"
             inputMode="numeric"
-            maxLength={2}
+            maxLength={4}
+            name="cvv"
             onBlur={[Function]}
             onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="AA"
-            readOnly={false}
             type="text"
             value=""
           />
-        </fieldset>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="payment-form__line payment-form__line--cvv"
-  >
     <div
-      className="form-field-container"
+      className="credit-card-form__line credit-card-form__line--button"
     >
-      <label
-        className="form-field-container__label"
-        htmlFor="form-field-14"
+      <button
+        className="button button--disabled button--size-large "
+        disabled={false}
+        type="submit"
       >
-        Code de sécurité
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <input
-          autoComplete="cc-csc"
-          className="form-input-field"
-          disabled={false}
-          id="form-field-14"
-          inputMode="numeric"
-          maxLength={4}
-          name="cvv"
-          onBlur={[Function]}
-          onChange={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
+        Payer 
+        <span
+          className="price price--no-color "
+        >
+          <span
+            className="price__units"
+          >
+            98
+          </span>
+          <span
+            className="price__remaining"
+          >
+            , 
+            00
+             
+            €
+          </span>
+        </span>
+      </button>
     </div>
-  </div>
-  <div
-    className="payment-form__line payment-form__line--button"
-  >
-    <button
-      className="button button--disabled button--size-large "
-      disabled={false}
-      type="submit"
-    >
-      Payer 
-      <span
-        className="price price--no-color "
-      >
-        <span
-          className="price__units"
-        >
-          98
-        </span>
-        <span
-          className="price__remaining"
-        >
-          , 
-          00
-           
-          €
-        </span>
-      </span>
-    </button>
-  </div>
-</form>
+  </form>
+</div>
 `;
 
 exports[`Storyshots Payment / PaymentRequestComponent main 1`] = `
@@ -4166,6 +4428,150 @@ exports[`Storyshots Payment / PaymentRequestComponent main 1`] = `
 >
   Payer
 </button>
+`;
+
+exports[`Storyshots Payment / RegistredCreditCard Mastercard 1`] = `
+<section
+  className="card card--has-border card--layer-flat registred-credit-card"
+>
+  <div
+    className="registred-credit-card__container"
+  >
+    <div
+      className="registred-credit-card__infos"
+    >
+      <h1
+        className="registred-credit-card__brand-title"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-cc-mastercard fa-w-18 "
+          data-icon="cc-mastercard"
+          data-prefix="fab"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M482.9 410.3c0 6.8-4.6 11.7-11.2 11.7-6.8 0-11.2-5.2-11.2-11.7 0-6.5 4.4-11.7 11.2-11.7 6.6 0 11.2 5.2 11.2 11.7zm-310.8-11.7c-7.1 0-11.2 5.2-11.2 11.7 0 6.5 4.1 11.7 11.2 11.7 6.5 0 10.9-4.9 10.9-11.7-.1-6.5-4.4-11.7-10.9-11.7zm117.5-.3c-5.4 0-8.7 3.5-9.5 8.7h19.1c-.9-5.7-4.4-8.7-9.6-8.7zm107.8.3c-6.8 0-10.9 5.2-10.9 11.7 0 6.5 4.1 11.7 10.9 11.7 6.8 0 11.2-4.9 11.2-11.7 0-6.5-4.4-11.7-11.2-11.7zm105.9 26.1c0 .3.3.5.3 1.1 0 .3-.3.5-.3 1.1-.3.3-.3.5-.5.8-.3.3-.5.5-1.1.5-.3.3-.5.3-1.1.3-.3 0-.5 0-1.1-.3-.3 0-.5-.3-.8-.5-.3-.3-.5-.5-.5-.8-.3-.5-.3-.8-.3-1.1 0-.5 0-.8.3-1.1 0-.5.3-.8.5-1.1.3-.3.5-.3.8-.5.5-.3.8-.3 1.1-.3.5 0 .8 0 1.1.3.5.3.8.3 1.1.5s.2.6.5 1.1zm-2.2 1.4c.5 0 .5-.3.8-.3.3-.3.3-.5.3-.8 0-.3 0-.5-.3-.8-.3 0-.5-.3-1.1-.3h-1.6v3.5h.8V426h.3l1.1 1.4h.8l-1.1-1.3zM576 81v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V81c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM64 220.6c0 76.5 62.1 138.5 138.5 138.5 27.2 0 53.9-8.2 76.5-23.1-72.9-59.3-72.4-171.2 0-230.5-22.6-15-49.3-23.1-76.5-23.1-76.4-.1-138.5 62-138.5 138.2zm224 108.8c70.5-55 70.2-162.2 0-217.5-70.2 55.3-70.5 162.6 0 217.5zm-142.3 76.3c0-8.7-5.7-14.4-14.7-14.7-4.6 0-9.5 1.4-12.8 6.5-2.4-4.1-6.5-6.5-12.2-6.5-3.8 0-7.6 1.4-10.6 5.4V392h-8.2v36.7h8.2c0-18.9-2.5-30.2 9-30.2 10.2 0 8.2 10.2 8.2 30.2h7.9c0-18.3-2.5-30.2 9-30.2 10.2 0 8.2 10 8.2 30.2h8.2v-23zm44.9-13.7h-7.9v4.4c-2.7-3.3-6.5-5.4-11.7-5.4-10.3 0-18.2 8.2-18.2 19.3 0 11.2 7.9 19.3 18.2 19.3 5.2 0 9-1.9 11.7-5.4v4.6h7.9V392zm40.5 25.6c0-15-22.9-8.2-22.9-15.2 0-5.7 11.9-4.8 18.5-1.1l3.3-6.5c-9.4-6.1-30.2-6-30.2 8.2 0 14.3 22.9 8.3 22.9 15 0 6.3-13.5 5.8-20.7.8l-3.5 6.3c11.2 7.6 32.6 6 32.6-7.5zm35.4 9.3l-2.2-6.8c-3.8 2.1-12.2 4.4-12.2-4.1v-16.6h13.1V392h-13.1v-11.2h-8.2V392h-7.6v7.3h7.6V416c0 17.6 17.3 14.4 22.6 10.9zm13.3-13.4h27.5c0-16.2-7.4-22.6-17.4-22.6-10.6 0-18.2 7.9-18.2 19.3 0 20.5 22.6 23.9 33.8 14.2l-3.8-6c-7.8 6.4-19.6 5.8-21.9-4.9zm59.1-21.5c-4.6-2-11.6-1.8-15.2 4.4V392h-8.2v36.7h8.2V408c0-11.6 9.5-10.1 12.8-8.4l2.4-7.6zm10.6 18.3c0-11.4 11.6-15.1 20.7-8.4l3.8-6.5c-11.6-9.1-32.7-4.1-32.7 15 0 19.8 22.4 23.8 32.7 15l-3.8-6.5c-9.2 6.5-20.7 2.6-20.7-8.6zm66.7-18.3H408v4.4c-8.3-11-29.9-4.8-29.9 13.9 0 19.2 22.4 24.7 29.9 13.9v4.6h8.2V392zm33.7 0c-2.4-1.2-11-2.9-15.2 4.4V392h-7.9v36.7h7.9V408c0-11 9-10.3 12.8-8.4l2.4-7.6zm40.3-14.9h-7.9v19.3c-8.2-10.9-29.9-5.1-29.9 13.9 0 19.4 22.5 24.6 29.9 13.9v4.6h7.9v-51.7zm7.6-75.1v4.6h.8V302h1.9v-.8h-4.6v.8h1.9zm6.6 123.8c0-.5 0-1.1-.3-1.6-.3-.3-.5-.8-.8-1.1-.3-.3-.8-.5-1.1-.8-.5 0-1.1-.3-1.6-.3-.3 0-.8.3-1.4.3-.5.3-.8.5-1.1.8-.5.3-.8.8-.8 1.1-.3.5-.3 1.1-.3 1.6 0 .3 0 .8.3 1.4 0 .3.3.8.8 1.1.3.3.5.5 1.1.8.5.3 1.1.3 1.4.3.5 0 1.1 0 1.6-.3.3-.3.8-.5 1.1-.8.3-.3.5-.8.8-1.1.3-.6.3-1.1.3-1.4zm3.2-124.7h-1.4l-1.6 3.5-1.6-3.5h-1.4v5.4h.8v-4.1l1.6 3.5h1.1l1.4-3.5v4.1h1.1v-5.4zm4.4-80.5c0-76.2-62.1-138.3-138.5-138.3-27.2 0-53.9 8.2-76.5 23.1 72.1 59.3 73.2 171.5 0 230.5 22.6 15 49.5 23.1 76.5 23.1 76.4.1 138.5-61.9 138.5-138.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         
+        <span
+          className="registred-credit-card__brand"
+        >
+          Carte 
+          Mastercard
+        </span>
+      </h1>
+      <p
+        className="registred-credit-card__masked-number"
+      >
+        <b>
+          N° de carte :
+        </b>
+         
+        5### #### #### 111#
+      </p>
+      <p
+        className="registred-credit-card__expiration"
+      >
+        <b>
+          Date d'expiration :
+        </b>
+         
+        07
+        /
+        2031
+      </p>
+    </div>
+    <div
+      className="registred-credit-card__select"
+    >
+      <button
+        className="button button--size-normal "
+        onClick={[Function]}
+      >
+        Utilisez cette carte
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Payment / RegistredCreditCard Visa 1`] = `
+<section
+  className="card card--has-border card--layer-flat registred-credit-card"
+>
+  <div
+    className="registred-credit-card__container"
+  >
+    <div
+      className="registred-credit-card__infos"
+    >
+      <h1
+        className="registred-credit-card__brand-title"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-cc-visa fa-w-18 "
+          data-icon="cc-visa"
+          data-prefix="fab"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2.3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4.2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2.2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2.1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         
+        <span
+          className="registred-credit-card__brand"
+        >
+          Carte 
+          Visa
+        </span>
+      </h1>
+      <p
+        className="registred-credit-card__masked-number"
+      >
+        <b>
+          N° de carte :
+        </b>
+         
+        4### #### #### 111#
+      </p>
+      <p
+        className="registred-credit-card__expiration"
+      >
+        <b>
+          Date d'expiration :
+        </b>
+         
+        07
+        /
+        2031
+      </p>
+    </div>
+    <div
+      className="registred-credit-card__select"
+    >
+      <button
+        className="button button--size-normal "
+        onClick={[Function]}
+      >
+        Utilisez cette carte
+      </button>
+    </div>
+  </div>
+</section>
 `;
 
 exports[`Storyshots Payment / VoucherContainer main 1`] = `
@@ -4194,7 +4600,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-15"
+        htmlFor="form-field-18"
       >
         Code promo
       </label>
@@ -4205,7 +4611,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-15"
+          id="form-field-18"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -4259,7 +4665,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-16"
+        htmlFor="form-field-19"
       >
         Code promo
       </label>
@@ -4270,7 +4676,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-16"
+          id="form-field-19"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -4324,7 +4730,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-18"
+        htmlFor="form-field-21"
       >
         Code promo
       </label>
@@ -4335,7 +4741,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-18"
+          id="form-field-21"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -4389,7 +4795,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
     >
       <label
         className="form-field-container__label"
-        htmlFor="form-field-17"
+        htmlFor="form-field-20"
       >
         Code promo
       </label>
@@ -4400,7 +4806,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           autoComplete="off"
           className="form-input-field"
           disabled={false}
-          id="form-field-17"
+          id="form-field-20"
           maxLength={16}
           name="code"
           onBlur={[Function]}

@@ -88,8 +88,8 @@ class PaymentForm extends React.PureComponent {
 
     return (
       <div className={`payment-form ${className}`}>
-        <p className="payment-form__line payment-form__select-mean">Sélectionnez votre moyen de paiement&nbsp;:</p>
-        <div className="payment-form__line payment-form__means">{cardNetworks}</div>
+        <p className="payment-form__select-mean">Sélectionnez votre moyen de paiement&nbsp;:</p>
+        <div className="payment-form__means">{cardNetworks}</div>
         <CreditCardForm className="payment-form__credit-card-form" price={price} onPay={this.onPay} />
       </div>
     );
