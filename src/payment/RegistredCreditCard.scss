@@ -1,0 +1,25 @@
+.registred-credit-card {
+  $margin: 1rem;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__infos {
+    flex: 1 0;
+  }
+
+  &__select {
+    margin: $margin;
+    margin-left: 0;
+  }
+
+  &__brand-title, &__masked-number, &__expiration {
+    margin: $margin;
+    padding: 0;
+  }
+
+}
