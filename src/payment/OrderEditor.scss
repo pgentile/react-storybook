@@ -1,6 +1,17 @@
 .order-editor {
   $margin: 1rem;
 
+  &__title {
+    margin: 0;
+    margin-bottom: $margin;
+
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 1.8rem;
+  }
+
   &__insurance, &__voucher, &__donation {
     margin-top: $margin;
   }

@@ -7,7 +7,12 @@
   display: grid;
   grid-gap: $margin;
 
-  grid-template-areas: "cards cards" "card-number card-number" "expiration-date cvv" "button button";
+  grid-template-areas:
+    "select-mean select-mean"
+    "means means"
+    "card-number card-number"
+    "expiration-date cvv"
+    "button button";
   grid-template-columns: 1fr 1fr;
 
   &__card {
@@ -24,8 +29,15 @@
   }
 
   &__line {
-    &--cards {
-      grid-area: cards;
+    &--select-mean {
+      grid-area: select-mean;
+      margin: 0;
+
+      text-align: center;
+    }
+
+    &--means {
+      grid-area: means;
       margin: 0 auto;
     }
 

@@ -1491,6 +1491,11 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
 <section
   className="order-editor"
 >
+  <h1
+    className="order-editor__title"
+  >
+    Récapitulatif
+  </h1>
   <section
     className="card card--has-border card--layer-raised order-summary"
   >
@@ -1744,6 +1749,11 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
 <section
   className="order-editor"
 >
+  <h1
+    className="order-editor__title"
+  >
+    Récapitulatif
+  </h1>
   <section
     className="card card--has-border card--layer-raised order-summary"
   >
@@ -1952,6 +1962,11 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
 <section
   className="order-editor"
 >
+  <h1
+    className="order-editor__title"
+  >
+    Récapitulatif
+  </h1>
   <section
     className="card card--has-border card--layer-raised order-summary"
   >
@@ -2163,6 +2178,11 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
 <section
   className="order-editor"
 >
+  <h1
+    className="order-editor__title"
+  >
+    Récapitulatif
+  </h1>
   <section
     className="card card--has-border card--layer-raised order-summary"
   >
@@ -2959,6 +2979,11 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
     <section
       className="order-editor"
     >
+      <h1
+        className="order-editor__title"
+      >
+        Récapitulatif
+      </h1>
       <section
         className="card card--has-border card--layer-raised order-summary"
       >
@@ -3168,7 +3193,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
   <div
     className="payment-container__right"
   >
-    <div
+    <section
       className="payment-form-container"
     >
       <h1
@@ -3180,8 +3205,13 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
         className="payment-form payment-form-container__form"
         onSubmit={[Function]}
       >
+        <p
+          className="payment-form__line payment-form__line--select-mean"
+        >
+          Sélectionnez votre moyen de paiement :
+        </p>
         <div
-          className="payment-form__line payment-form__line--cards"
+          className="payment-form__line payment-form__line--means"
         >
           <span
             className="checkable-image-input payment-form__card"
@@ -3427,7 +3457,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           </button>
         </div>
       </form>
-    </div>
+    </section>
   </div>
 </section>
 `;
@@ -3442,6 +3472,11 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
     <section
       className="order-editor"
     >
+      <h1
+        className="order-editor__title"
+      >
+        Récapitulatif
+      </h1>
       <section
         className="card card--has-border card--layer-raised order-summary"
       >
@@ -3597,7 +3632,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
   <div
     className="payment-container__right"
   >
-    <div
+    <section
       className="payment-form-container"
     >
       <h1
@@ -3609,8 +3644,13 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
         className="payment-form payment-form-container__form"
         onSubmit={[Function]}
       >
+        <p
+          className="payment-form__line payment-form__line--select-mean"
+        >
+          Sélectionnez votre moyen de paiement :
+        </p>
         <div
-          className="payment-form__line payment-form__line--cards"
+          className="payment-form__line payment-form__line--means"
         >
           <span
             className="checkable-image-input payment-form__card"
@@ -3856,7 +3896,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           </button>
         </div>
       </form>
-    </div>
+    </section>
   </div>
 </section>
 `;
@@ -3866,8 +3906,13 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
   className="payment-form "
   onSubmit={[Function]}
 >
+  <p
+    className="payment-form__line payment-form__line--select-mean"
+  >
+    Sélectionnez votre moyen de paiement :
+  </p>
   <div
-    className="payment-form__line payment-form__line--cards"
+    className="payment-form__line payment-form__line--means"
   >
     <span
       className="checkable-image-input payment-form__card"

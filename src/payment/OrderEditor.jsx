@@ -68,6 +68,8 @@ export default class OrderEditor extends React.PureComponent {
 
     return (
       <section className="order-editor">
+        <h1 className="order-editor__title">Récapitulatif</h1>
+
         <OrderSummary className="order-editor__summary" items={itemsWithActions} />
 
         {!hasInsurance && (

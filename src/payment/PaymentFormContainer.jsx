@@ -23,10 +23,10 @@ export default class PaymentFormContainer extends React.PureComponent {
     const { price, onPay } = this.props;
 
     return (
-      <div className="payment-form-container">
+      <section className="payment-form-container">
         <h1 className="payment-form-container__title">Payez en toute sécurité</h1>
         <PaymentForm className="payment-form-container__form" price={price} onPay={onPay} />
-      </div>
+      </section>
     );
   }
 }
