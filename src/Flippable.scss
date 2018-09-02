@@ -1,0 +1,39 @@
+.flippable {
+  $duration: 1s;
+  $height: 200px;
+
+  transform-style: preserve-3d;
+  transition: transform $duration linear;
+
+  box-sizing: content-box;
+  position: relative;
+  height: $height;
+  width: 100%;
+
+  border: 3px orange dotted;
+
+  &--flipped {
+    transform: rotateY(180deg);
+  }
+
+  &__face {
+    backface-visibility: hidden;
+
+    &--foreground {
+      background-color: red;
+    }
+
+    &--background {
+      transform: rotateY(180deg);
+      background-color: purple;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: $height;
+  }
+
+}
