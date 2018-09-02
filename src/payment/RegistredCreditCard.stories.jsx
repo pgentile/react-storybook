@@ -11,7 +11,7 @@ storiesOf("Payment / RegistredCreditCard", module)
         cardId="1"
         brand="visa"
         maskedNumber="4### #### #### 111#"
-        expiration={{ year: "2031", month: "07" }}
+        expirationDate="2031-01"
         onUseCard={action("use card")}
       />
     );
@@ -22,7 +22,7 @@ storiesOf("Payment / RegistredCreditCard", module)
         cardId="2"
         brand="mastercard"
         maskedNumber="5### #### #### 111#"
-        expiration={{ year: "2031", month: "07" }}
+        expirationDate="2031-01"
         onUseCard={action("use card")}
       />
     );

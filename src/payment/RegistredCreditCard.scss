@@ -1,5 +1,6 @@
 .registred-credit-card {
   $margin: 1rem;
+  $border-color: #BBB;
 
   &__container {
     display: flex;
@@ -20,6 +21,15 @@
   &__brand-title, &__masked-number, &__expiration {
     margin: $margin;
     padding: 0;
+  }
+
+  &__cvv-container {
+    margin: $margin;
+  }
+
+  &__cvv {
+    margin: 0 auto;
+    max-width: 15rem;
   }
 
 }
