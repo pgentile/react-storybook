@@ -1,0 +1,48 @@
+@import "./styles/_screen-sizes";
+
+.adaptative-list {
+  $margin: 1rem;
+  $border-color: #BBB;
+
+  &__separator {
+    display: none;
+  }
+
+  &__item {
+    margin: $margin 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  @include screen-min-medium {
+    display: flex;
+
+    &__separator {
+      display: block;
+      border-left: $border-color solid 1px;
+      // margin: 0 $margin;
+    }
+
+    &__item {
+      align-self: center;
+
+      margin: 0 $margin;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+  }
+
+}

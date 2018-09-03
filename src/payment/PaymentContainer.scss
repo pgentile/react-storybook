@@ -1,8 +1,5 @@
-@mixin payment-container-large-screen {
-  @media only screen and (min-width: 1000px) {
-    @content;
-  }
-}
+@import "../styles/_screen-sizes";
+
 
 .payment-container {
   $margin: 1rem;
@@ -14,7 +11,7 @@
 
   max-width: 750px;
 
-  @include payment-container-large-screen {
+  @include screen-large {
     grid-template-columns: 1.2fr 2fr;
 
     max-width: 1200px;
