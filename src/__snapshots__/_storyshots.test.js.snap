@@ -27,6 +27,52 @@ exports[`Storyshots Adaptative main 1`] = `
 </div>
 `;
 
+exports[`Storyshots AdaptativeList main 1`] = `
+<div
+  className="adaptative-list "
+>
+  <div
+    className="adaptative-list__item"
+  >
+    Ligne 1
+  </div>
+  <div
+    className="adaptative-list__separator"
+  />
+  <div
+    className="adaptative-list__item"
+  >
+    <p
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      Ligne 2
+    </p>
+  </div>
+  <div
+    className="adaptative-list__separator"
+  />
+  <div
+    className="adaptative-list__item"
+  >
+    Ligne 3
+  </div>
+  <div
+    className="adaptative-list__separator"
+  />
+  <div
+    className="adaptative-list__item"
+  >
+    Ligne 4
+    <br />
+    Et une sous-ligne
+  </div>
+</div>
+`;
+
 exports[`Storyshots AsyncLoader error 1`] = `
 <div
   className="spinner"
@@ -5178,6 +5224,32 @@ exports[`Storyshots Price Prix - Valeur de 46.5 € 1`] = `
     €
   </span>
 </span>
+`;
+
+exports[`Storyshots ResizableBlock main 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "1000px",
+    }
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "border": "2px dotted red",
+          "padding": "10px",
+        }
+      }
+    >
+      Breakpoint: 
+      <b>
+        S
+      </b>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Spinner main 1`] = `

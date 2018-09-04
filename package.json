@@ -39,7 +39,8 @@
     "redux-freeze": "^0.1.5",
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0",
-    "reselect": "^3.0.1"
+    "reselect": "^3.0.1",
+    "resize-observer-polyfill": "^1.5.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.0",
