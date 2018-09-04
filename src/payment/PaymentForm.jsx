@@ -51,10 +51,9 @@ export default class PaymentForm extends React.PureComponent {
   onPay = async values => {
     this.setState({ isSubmitting: true });
     try {
-      return this.props.onPay(values);
-    } catch (e) {
+      return await this.props.onPay(values);
+    } finally {
       this.setState({ isSubmitting: false });
-      throw e;
     }
   };
 
@@ -67,7 +66,6 @@ export default class PaymentForm extends React.PureComponent {
   render() {
     const { className, price } = this.props;
     const { isSubmitting, mean } = this.state;
-    const disableForm = isSubmitting;
     const paymentMeanIsRegistredCards = mean === "registred-cards";
 
     const cardNetworks = availablePaymentMeans.map(availablePaymentMean => {
@@ -78,7 +76,7 @@ export default class PaymentForm extends React.PureComponent {
           name="mean"
           value={availablePaymentMean.name}
           checked={mean === availablePaymentMean.name}
-          disabled={disableForm}
+          disabled={isSubmitting}
           onChange={this.onMeanChange}
         >
           <FontAwesomeIcon icon={availablePaymentMean.icon} size="2x" />
