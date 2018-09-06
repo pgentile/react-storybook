@@ -102,16 +102,18 @@ export default withFormik({
 
     return errors;
   },
-  handleSubmit: async (values, { props, setSubmitting, setStatus }) => {
+  handleSubmit: async (values, { props, setSubmitting, setStatus, setErrors }) => {
     try {
       await props.onAddVoucher(values.code);
       setStatus({
         submissionStatus: "SUCCESS"
       });
     } catch (e) {
+      setErrors({
+        code: "Nous n'avons pas réussi à prendre en compte votre code promo"
+      });
       setStatus({
-        submissionStatus: "FAILED",
-        errorMessage: "Nous n'avons pas réussi à prendre en compte votre code promo"
+        submissionStatus: "FAILED"
       });
     } finally {
       setSubmitting(false);

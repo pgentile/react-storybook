@@ -66,7 +66,7 @@
     }
 
     &::after {
-      content: none;
+      background-image: url("./CheckableImageInput-checked-disabled.svg");
     }
 
   }

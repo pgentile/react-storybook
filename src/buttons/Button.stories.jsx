@@ -8,6 +8,8 @@ const actions = {
   onClick: action("click")
 };
 
+const sizes = ["small", "normal", "large"];
+
 const stories = storiesOf("Buttons / Button", module)
   .add("main", () => {
     return <Button {...actions}>Mon bouton</Button>;
@@ -25,9 +27,16 @@ const stories = storiesOf("Buttons / Button", module)
         Mon bouton
       </Button>
     );
+  })
+  .add("flat", () => {
+    return (
+      <Button {...actions} flat>
+        Mon bouton
+      </Button>
+    );
   });
 
-["small", "normal", "large"].forEach(size => {
+sizes.forEach(size => {
   stories.add(`Taille ${size}`, () => {
     return (
       <Button {...actions} size={size}>

@@ -5,7 +5,7 @@ import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 
 import Expandable from "./Expandable";
 import Card from "./Card";
-import FlatButton from "./buttons/FlatButton";
+import Button from "./buttons/Button";
 
 import "./ExpandableCard.scss";
 
@@ -38,9 +38,9 @@ export default class ExpandableCard extends React.PureComponent {
           <Expandable expanded={expanded}>
             <div className="expandable-card__expandable">{expandableContent}</div>
             {hasFoldButton && (
-              <FlatButton className="expandable-card__fold-button" onClick={this.onFold}>
+              <Button className="expandable-card__fold-button" flat onClick={this.onFold}>
                 <FontAwesomeIcon icon={faAngleDoubleUp} />
-              </FlatButton>
+              </Button>
             )}
           </Expandable>
         )}

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Card from "../Card";
-import FlatButton from "../buttons/FlatButton";
+import Button from "../buttons/Button";
 import VoucherForm from "./VoucherForm";
 
 import "./VoucherContainer.scss";
@@ -43,9 +43,9 @@ export default class VoucherContainer extends React.PureComponent {
     return (
       <Card as="section" layer="flat" className={`voucher-container ${className}`}>
         {showQuestion && (
-          <FlatButton className="voucher-container__question" onClick={this.onShowForm}>
+          <Button className="voucher-container__question" flat onClick={this.onShowForm}>
             Avez-vous un code promo&nbsp;?
-          </FlatButton>
+          </Button>
         )}
 
         {showForm && (

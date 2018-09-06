@@ -20,6 +20,20 @@ storiesOf("Forms / CheckableImageInput", module)
       </CheckableImageInput>
     );
   })
+  .add("disabled", () => {
+    return (
+      <CheckableImageInput disabled>
+        <FontAwesomeIcon icon={faCcVisa} size="2x" />
+      </CheckableImageInput>
+    );
+  })
+  .add("disabled and checked", () => {
+    return (
+      <CheckableImageInput disabled checked>
+        <FontAwesomeIcon icon={faCcVisa} size="2x" />
+      </CheckableImageInput>
+    );
+  })
   .add("many", () => {
     return (
       <Fragment>
