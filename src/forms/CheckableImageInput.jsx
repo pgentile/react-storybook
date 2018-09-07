@@ -15,13 +15,15 @@ export default class CheckableImageInput extends React.PureComponent {
     type: PropTypes.oneOf(["checkbox", "radio"]),
     name: PropTypes.string,
     value: PropTypes.string,
+    tabIndex: PropTypes.number,
     onChange: PropTypes.func
   };
 
   static defaultProps = {
     className: "",
     checked: false,
-    type: "radio"
+    type: "radio",
+    tabIndex: 0
   };
 
   inputRef = createRef();
@@ -33,7 +35,7 @@ export default class CheckableImageInput extends React.PureComponent {
   };
 
   render() {
-    const { className, children, checked, type, name, value, disabled, readOnly, onChange } = this.props;
+    const { className, children, checked, type, name, value, disabled, readOnly, tabIndex, onChange } = this.props;
 
     const realClassName = bemModifiers("checkable-image-input", {
       checked,
@@ -42,7 +44,7 @@ export default class CheckableImageInput extends React.PureComponent {
     });
 
     return (
-      <span className={realClassName + " " + className} onClick={this.onClick} tabIndex={0}>
+      <span className={realClassName + " " + className} onClick={this.onClick} tabIndex={tabIndex}>
         <input
           className="checkable-image-input__input"
           tabIndex={-1}

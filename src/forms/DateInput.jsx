@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import "./DateInput.scss";
 
+import NumberInput from "./NumberInput";
 import bemModifiers from "../utils/bemModifiers";
-import isDigits from "../utils/isDigits";
 
 export default class DateInput extends React.PureComponent {
   static propTypes = {
@@ -38,12 +38,6 @@ export default class DateInput extends React.PureComponent {
   onValueChange = name => event => {
     const { target } = event;
     const { value: fieldValue } = target;
-
-    // Interdire autre chose que des chiffres
-    if (!isDigits(fieldValue)) {
-      event.preventDefault();
-      return;
-    }
 
     const { value, onChange, mode } = this.props;
     if (onChange) {
@@ -117,10 +111,8 @@ export default class DateInput extends React.PureComponent {
     return (
       <fieldset className={`${realClassName} ${className}`}>
         {showDay && (
-          <input
+          <NumberInput
             className="form-date-input__input form-date-input__input--day"
-            type="text"
-            inputMode="numeric"
             autoComplete={autoComplete.day}
             maxLength={2}
             placeholder="JJ"
@@ -134,10 +126,8 @@ export default class DateInput extends React.PureComponent {
           />
         )}
         {showDay && <span className="form-date-input__input-separator">/</span>}
-        <input
+        <NumberInput
           className="form-date-input__input form-date-input__input--month"
-          type="text"
-          inputMode="numeric"
           autoComplete={autoComplete.month}
           maxLength={2}
           placeholder="MM"
@@ -150,10 +140,8 @@ export default class DateInput extends React.PureComponent {
           onChange={this.onMonthChange}
         />
         <span className="form-date-input__input-separator">/</span>
-        <input
+        <NumberInput
           className={yearClassName}
-          type="text"
-          inputMode="numeric"
           autoComplete={autoComplete.year}
           maxLength={smallYear ? 2 : 4}
           placeholder={smallYear ? "AA" : "AAAA"}

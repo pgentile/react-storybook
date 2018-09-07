@@ -10,6 +10,7 @@
   grid-template-areas:
     "card-number card-number"
     "expiration-date cvv"
+    "name name"
     "button button";
   grid-template-columns: 1fr 1fr;
 
@@ -37,6 +38,10 @@
 
     &--cvv {
       grid-area: cvv;
+    }
+
+    &--name {
+      grid-area: name;
     }
 
     &--button {
