@@ -98,24 +98,27 @@ export default class RegistredCreditCard extends React.PureComponent {
         layer="flat"
         className="registred-credit-card"
       >
-        <div className="registred-credit-card__container">
-          <div className="registred-credit-card__infos">
-            <h1 className="registred-credit-card__brand-title">
-              <FontAwesomeIcon icon={brands[brand].icon} />{" "}
-              <span className="registred-credit-card__brand">Carte {brands[brand].name}</span>
-            </h1>
-            <p className="registred-credit-card__masked-number">
+        <h1 className="registred-credit-card__title">
+          <FontAwesomeIcon icon={brands[brand].icon} />{" "}
+          <span className="registred-credit-card__brand">Carte {brands[brand].name}</span>
+        </h1>
+
+        <div className="registred-credit-card__separator" />
+
+        <div className="registred-credit-card__details-container">
+          <div className="registred-credit-card__details">
+            <p className="registred-credit-card__details-line">
               <b>N° de carte&nbsp;:</b> {maskedNumber}
             </p>
-            <p className="registred-credit-card__expiration">
+            <p className="registred-credit-card__details-line">
               <b>Date d&apos;expiration&nbsp;:</b> {month}/{year}
             </p>
           </div>
-          {!showCvv && (
-            <div className="registred-credit-card__select">
-              <Button onClick={this.onToggleCvv}>Utilisez cette carte</Button>
-            </div>
-          )}
+          <div className="registred-credit-card__select">
+            <Button onClick={this.onToggleCvv} toggled={showCvv}>
+              Utiliser cette carte
+            </Button>
+          </div>
         </div>
       </ExpandableCard>
     );

@@ -115,21 +115,6 @@ class CreditCardForm extends React.PureComponent {
           </FieldContainer>
         </div>
 
-        <div className="credit-card-form__line credit-card-form__line--name">
-          <FieldContainer label="Nom sur la carte" disabled={disableForm} errorMessage={touched.name && errors.name}>
-            {props => (
-              <InputField
-                {...props}
-                name="name"
-                value={values.name}
-                autoComplete="cc-name"
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            )}
-          </FieldContainer>
-        </div>
-
         <div className="credit-card-form__line credit-card-form__line--button">
           <Button size="large" type="submit" showDisabled={!isValid} disabled={disableForm}>
             Payer&nbsp;
@@ -182,10 +167,6 @@ export default withFormik({
     const [year, month] = values.expirationDate.split("-");
     if (!cardValidator.expirationDate({ year, month }).isValid) {
       errors.expirationDate = "Date d'expiration invalide";
-    }
-
-    if (!values.name) {
-      errors.name = "Nom vide";
     }
 
     return errors;

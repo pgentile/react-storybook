@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-import Button from "../buttons/Button";
+import ManagedProgressButton from "../buttons/ManagedProgressButton";
 import ExpandableCard from "../ExpandableCard";
 import ExpandableIcon from "../ExpandableIcon";
 
@@ -107,9 +107,9 @@ class DonationProposal extends React.PureComponent {
           </div>
         </div>
         <p className="donation__proposal-donate-button">
-          <Button size="small" onClick={onAddDonation}>
+          <ManagedProgressButton size="small" onClick={onAddDonation}>
             Donner 1&nbsp;€
-          </Button>
+          </ManagedProgressButton>
         </p>
       </Fragment>
     );
@@ -134,9 +134,9 @@ class SelectedDonation extends React.PureComponent {
           Vous avez choisi de faire un don à <b>{donation.association}</b>. Nous vous en remercions&nbsp;!
         </p>
         <p className="donation__selection-cancel">
-          <Button className="donation__selection-cancel-button" size="small" onClick={onCancelDonation}>
+          <ManagedProgressButton className="donation__selection-cancel-button" size="small" onClick={onCancelDonation}>
             Annuler mon don
-          </Button>
+          </ManagedProgressButton>
         </p>
       </div>
     );

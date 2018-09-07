@@ -1,26 +1,48 @@
+@import "../styles/_screen-sizes";
+
 .registred-credit-card {
   $margin: 1rem;
   $border-color: #BBB;
 
-  &__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+  &__title {
+    margin: $margin;
+    font-size: 1.4rem;
   }
 
-  &__infos {
-    flex: 1 0;
+  &__separator {
+    margin: $margin;
+    border-top: $border-color solid 1px;
+  }
+
+  &__details-line {
+    margin: $margin;
+    font-size: 1rem;
   }
 
   &__select {
     margin: $margin;
-    margin-left: 0;
+    text-align: center;
   }
 
-  &__brand-title, &__masked-number, &__expiration {
-    margin: $margin;
-    padding: 0;
+  @include screen-min-small {
+
+    &__details-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+
+      margin-top: -$margin;
+    }
+
+    &__details {
+      flex: 1 0;
+    }
+
+    &__select {
+      margin-right: $margin;
+    }
+
   }
 
   &__cvv-container {

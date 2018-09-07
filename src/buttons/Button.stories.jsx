@@ -34,6 +34,13 @@ const stories = storiesOf("Buttons / Button", module)
         Mon bouton
       </Button>
     );
+  })
+  .add("toggled", () => {
+    return (
+      <Button {...actions} toggled>
+        Mon bouton
+      </Button>
+    );
   });
 
 sizes.forEach(size => {

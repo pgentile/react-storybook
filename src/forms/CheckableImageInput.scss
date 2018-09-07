@@ -31,6 +31,7 @@
   }
 
   &--checked {
+    transition: none;
     border-width: $checked-border-width;
     border-color: $checked-border-color;
     padding: calc(#{$padding} - (#{$checked-border-width} - #{$border-width}));
@@ -59,6 +60,8 @@
   }
 
   &--disabled {
+    transition: none;
+
     border-color: $border-color;
 
     &:hover {
