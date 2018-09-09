@@ -1,33 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCcVisa, faCcMastercard, faCcAmex } from "@fortawesome/free-brands-svg-icons";
-import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 
-import CheckableImageInput from "../forms/CheckableImageInput";
 import CreditCardForm from "./CreditCardForm";
 import RegistredCreditCardList from "./RegistredCreditCardList";
+import PaymentMeans from "./PaymentMeans";
 
 import "./PaymentForm.scss";
-
-const availablePaymentMeans = [
-  {
-    name: "registred-cards",
-    icon: faCreditCard
-  },
-  {
-    name: "visa",
-    icon: faCcVisa
-  },
-  {
-    name: "mastercard",
-    icon: faCcMastercard
-  },
-  {
-    name: "american-express",
-    icon: faCcAmex
-  }
-];
 
 export default class PaymentForm extends React.PureComponent {
   static propTypes = {
@@ -57,10 +35,8 @@ export default class PaymentForm extends React.PureComponent {
     }
   };
 
-  onMeanChange = event => {
-    this.setState({
-      mean: event.target.value
-    });
+  onMeanChange = mean => {
+    this.setState({ mean });
   };
 
   render() {
@@ -68,26 +44,16 @@ export default class PaymentForm extends React.PureComponent {
     const { isSubmitting, mean } = this.state;
     const paymentMeanIsRegistredCards = mean === "registred-cards";
 
-    const cardNetworks = availablePaymentMeans.map(availablePaymentMean => {
-      return (
-        <CheckableImageInput
-          key={availablePaymentMean.name}
-          className="payment-form__mean"
-          name="mean"
-          value={availablePaymentMean.name}
-          checked={mean === availablePaymentMean.name}
-          disabled={isSubmitting}
-          onChange={this.onMeanChange}
-        >
-          <FontAwesomeIcon icon={availablePaymentMean.icon} size="2x" />
-        </CheckableImageInput>
-      );
-    });
-
     return (
       <div className={`payment-form ${className}`}>
         <p className="payment-form__select-mean">Sélectionnez votre moyen de paiement&nbsp;:</p>
-        <div className="payment-form__means">{cardNetworks}</div>
+        <PaymentMeans
+          className="payment-form__means"
+          means={["registred-cards", "visa", "mastercard", "maestro", "american-express"]}
+          selectedMean={mean}
+          onMeanChange={this.onMeanChange}
+          disabled={isSubmitting}
+        />
         {paymentMeanIsRegistredCards && (
           <RegistredCreditCardList
             cards={[

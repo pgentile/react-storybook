@@ -12,23 +12,10 @@
 
   &__means {
     margin: $margin;
-    text-align: center;
   }
 
   &__credit-card-form {
     margin-bottom: 0;
-  }
-
-  &__mean {
-    margin: 0 ($margin / 2);
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
 }
