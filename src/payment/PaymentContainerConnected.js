@@ -12,9 +12,11 @@ import {
   selectPaymentItems,
   selectTotalAmount
 } from "../redux/reducers/payment";
+import { selectCards } from "../redux/reducers/connectedUser";
 
 const mapStateToProps = state => ({
   items: selectPaymentItems(state),
+  registredCards: selectCards(state),
   totalPrice: selectTotalAmount(state)
 });
 
