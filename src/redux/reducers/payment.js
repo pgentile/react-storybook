@@ -40,11 +40,25 @@ export const selectDonation = scope(payment => {
   return selectPaymentItems.withinScope(payment).find(item => item.type === DONATION_TYPE) || null;
 });
 
+const ZERO_EURO = Object.freeze({
+  value: 0,
+  currency: "EUR"
+});
+
 export const selectTotalAmount = scope(payment => {
-  return selectPaymentItems
-    .withinScope(payment)
-    .map(item => item.price.value)
-    .reduce((left, right) => left + right, 0);
+  const items = selectPaymentItems.withinScope(payment);
+
+  if (items.length === 0) {
+    return ZERO_EURO;
+  }
+
+  const value = items.reduce((left, right) => left.price.value + right.price.value, 0);
+  const currency = items[0].price.currency;
+
+  return {
+    value,
+    currency
+  };
 });
 
 // Actions
