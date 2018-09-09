@@ -16,7 +16,8 @@ export default class CheckableImageInput extends React.PureComponent {
     name: PropTypes.string,
     value: PropTypes.string,
     tabIndex: PropTypes.number,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    onKeyPress: PropTypes.func
   };
 
   static defaultProps = {
@@ -29,8 +30,18 @@ export default class CheckableImageInput extends React.PureComponent {
   inputRef = createRef();
 
   onClick = () => {
-    if (this.inputRef && this.inputRef.current) {
+    if (this.inputRef.current) {
       this.inputRef.current.click();
+    }
+  };
+
+  onKeyPress = event => {
+    if (this.inputRef.current && (event.key === "Enter" || event.key === " ")) {
+      this.inputRef.current.click();
+    }
+
+    if (this.props.onKeyPress) {
+      this.props.onKeyPress(event);
     }
   };
 
@@ -44,7 +55,12 @@ export default class CheckableImageInput extends React.PureComponent {
     });
 
     return (
-      <span className={realClassName + " " + className} onClick={this.onClick} tabIndex={tabIndex}>
+      <span
+        className={realClassName + " " + className}
+        onClick={this.onClick}
+        onKeyPress={this.onKeyPress}
+        tabIndex={tabIndex}
+      >
         <input
           className="checkable-image-input__input"
           tabIndex={-1}
