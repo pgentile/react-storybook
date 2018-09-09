@@ -118,18 +118,28 @@ export function cancelInsurance() {
 }
 
 export function addDonation(code) {
+  const donateOnServer = async () => {
+    await sleep(1500);
+
+    return {
+      code
+    };
+  };
+
   return {
     type: ADD_DONATION,
-    payload: Promise.resolve({
-      code
-    })
+    payload: donateOnServer()
   };
 }
 
 export function cancelDonation() {
+  const cancelDonationOnServer = async () => {
+    await sleep(1500);
+  };
+
   return {
     type: CANCEL_DONATION,
-    payload: Promise.resolve()
+    payload: cancelDonationOnServer()
   };
 }
 

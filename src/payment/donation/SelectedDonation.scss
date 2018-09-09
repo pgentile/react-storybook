@@ -1,0 +1,12 @@
+.selected-donation {
+  $margin: 1rem;
+
+  &__thanks, &__cancel {
+    margin: $margin;
+  }
+
+  &__cancel {
+    text-align: center;
+  }
+
+}

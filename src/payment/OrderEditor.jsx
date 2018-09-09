@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import OrderSummary from "./OrderSummary";
 import VoucherContainer from "./VoucherContainer";
 import InsuranceContainer from "./InsuranceContainer";
-import Donation from "./Donation";
+import Donation from "./donation/Donation";
 import { DONATION_TYPE, VOUCHER_TYPE, INSURANCE_TYPE } from "../redux/reducers/payment";
 
 import "./OrderEditor.scss";

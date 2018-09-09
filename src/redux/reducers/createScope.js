@@ -18,7 +18,7 @@ export default function createScope(scopeExtractor, undefinedStateBehavior = ret
   return selector => {
     const selectFromScopedState = (scopedState, ...args) => {
       if (isUndefined(scopedState)) {
-        return undefinedStateBehavior(selector)(scopedState, ...args);
+        return undefinedStateBehavior(selector)(scopedState);
       }
       return selector(scopedState, ...args);
     };

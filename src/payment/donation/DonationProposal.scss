@@ -1,0 +1,32 @@
+.donation-proposal {
+  $margin: 1rem;
+
+  &__content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+  }
+
+  &__logo {
+    margin: $margin;
+    margin-right: 0;
+    flex: 0 0 2.5rem;
+  }
+
+  &__punchline {
+    h3, p {
+      margin: $margin;
+    }
+  }
+
+  &__button {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  &__more {
+    margin: $margin;
+  }
+
+}
