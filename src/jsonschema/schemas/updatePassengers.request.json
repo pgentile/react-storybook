@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Mise à jour des passagers",
+  "required": [],
+  "properties": {
+    "passengers": {
+      "type": "array",
+      "title": "Passagers",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Identifiant"
+          },
+          "civility": {
+            "type": "string",
+            "title": "Civilité",
+            "enum": [
+              "MR",
+              "MRS"
+            ]
+          },
+          "firstName": {
+            "type": "string",
+            "title": "Prénom"
+          },
+          "lastName": {
+            "type": "string",
+            "title": "Nom de famille"
+          },
+          "birthDate": {
+            "type": "string",
+            "title": "Date de naissance",
+            "format": "date"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+          },
+          "phone": {
+            "type": "string",
+            "title": "N° de téléphone"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}

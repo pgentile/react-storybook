@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Mise à jour du commanditaire",
+  "required": [
+
+  ],
+  "properties": {
+    "civility": {
+      "type": "string",
+      "title": "Civilité",
+      "enum": [
+        "MR",
+        "MRS"
+      ]
+    },
+    "firstName": {
+      "type": "string",
+      "title": "Prénom"
+    },
+    "lastName": {
+      "type": "string",
+      "title": "Nom de famille"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "N° de téléphone"
+    },
+    "address": {
+      "type": "object",
+      "title": "Adresse postale",
+      "properties": {
+        "address": {
+          "type": "array",
+          "title": "Adresse",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "maxItems": 4
+        },
+        "city": {
+          "type": "string",
+          "title": "Ville"
+        },
+        "zipCode": {
+          "type": "string",
+          "title": "Code postal"
+        },
+        "country": {
+          "type": "string",
+          "title": "Pays"
+        }
+      }
+    }
+  },
+  "definitions": {
+  }
+}

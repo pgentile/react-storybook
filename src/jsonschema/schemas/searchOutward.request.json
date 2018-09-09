@@ -55,10 +55,6 @@
             ],
             "default": "HUMAN"
           },
-          "fareProfile": {
-            "type": "string",
-            "title": "Profil tarifaire"
-          },
           "ageRange": {
             "type":"string",
             "title": "Tranche d'âge"
@@ -72,9 +68,19 @@
             "title": "Date de naissance",
             "format": "date"
           },
-          "advantageCard": {
-            "type": "string",
-            "title": "N° de carte d'avantage commercial"
+          "fareProfiles": {
+            "type": "array",
+            "title": "Profils tarifaires",
+            "items": {
+              "type": "string"
+            }
+          },
+          "advantageCards": {
+            "type": "array",
+            "title": "N° de cartes d'avantages commerciaux",
+            "items": {
+              "type": "string"
+            }
           },
           "loyaltyCard": {
             "type": "string",
