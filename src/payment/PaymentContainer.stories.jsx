@@ -31,11 +31,33 @@ const totalPrice = {
   currency: "€"
 };
 
+const registredCards = [
+  {
+    id: "1",
+    brand: "visa",
+    maskedNumber: "#### #### #### 1111",
+    expirationDate: "2031-07"
+  },
+  {
+    id: "2",
+    brand: "mastercard",
+    maskedNumber: "#### #### #### 1113",
+    expirationDate: "2029-01"
+  },
+  {
+    id: "3",
+    brand: "maestro",
+    maskedNumber: "#### #### #### 1113",
+    expirationDate: "2029-01"
+  }
+];
+
 storiesOf("Payment / PaymentContainer", module).add("main", () => {
   return (
     <PaymentContainer
       items={items}
       totalPrice={totalPrice}
+      registredCards={registredCards}
       onAddVoucher={action("add voucher")}
       onCancelVoucher={action("cancel voucher")}
       onAddInsurance={action("add insurance")}

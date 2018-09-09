@@ -12,6 +12,27 @@ const actions = {
   }
 };
 
+const registredCards = [
+  {
+    id: "1",
+    brand: "visa",
+    maskedNumber: "#### #### #### 1111",
+    expirationDate: "2031-07"
+  },
+  {
+    id: "2",
+    brand: "mastercard",
+    maskedNumber: "#### #### #### 1113",
+    expirationDate: "2029-01"
+  },
+  {
+    id: "3",
+    brand: "maestro",
+    maskedNumber: "#### #### #### 1113",
+    expirationDate: "2029-01"
+  }
+];
+
 storiesOf("Payment / PaymentForm", module).add("Défaut", () => {
-  return <PaymentForm {...actions} price={{ value: 98, currency: "€" }} />;
+  return <PaymentForm {...actions} registredCards={registredCards} price={{ value: 98, currency: "€" }} />;
 });

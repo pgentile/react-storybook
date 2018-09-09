@@ -14,6 +14,7 @@ export default class PaymentForm extends React.PureComponent {
       value: PropTypes.number.isRequired,
       currency: PropTypes.string.isRequired
     }).isRequired,
+    registredCards: RegistredCreditCardList.propTypes.cards,
     onPay: PropTypes.func.isRequired
   };
 
@@ -40,7 +41,7 @@ export default class PaymentForm extends React.PureComponent {
   };
 
   render() {
-    const { className, price } = this.props;
+    const { className, registredCards, price } = this.props;
     const { isSubmitting, mean } = this.state;
     const paymentMeanIsRegistredCards = mean === "registred-cards";
 
@@ -55,30 +56,7 @@ export default class PaymentForm extends React.PureComponent {
           disabled={isSubmitting}
         />
         {paymentMeanIsRegistredCards && (
-          <RegistredCreditCardList
-            cards={[
-              {
-                id: "1",
-                brand: "visa",
-                maskedNumber: "#### #### #### 1111",
-                expirationDate: "2031-07"
-              },
-              {
-                id: "2",
-                brand: "mastercard",
-                maskedNumber: "#### #### #### 1113",
-                expirationDate: "2029-01"
-              },
-              {
-                id: "3",
-                brand: "maestro",
-                maskedNumber: "#### #### #### 1113",
-                expirationDate: "2029-01"
-              }
-            ]}
-            disabled={isSubmitting}
-            onUseCard={this.onPay}
-          />
+          <RegistredCreditCardList cards={registredCards} disabled={isSubmitting} onUseCard={this.onPay} />
         )}
         {!paymentMeanIsRegistredCards && (
           <CreditCardForm className="payment-form__credit-card-form" totalPrice={price} onPay={this.onPay} />

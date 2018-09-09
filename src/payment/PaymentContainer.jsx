@@ -11,6 +11,7 @@ export default class PaymentContainer extends React.PureComponent {
   static propTypes = {
     items: OrderEditor.propTypes.items,
     totalPrice: OrderEditor.propTypes.totalPrice,
+    registredCards: PaymentFormContainer.propTypes.registredCards,
     onAddVoucher: OrderEditor.propTypes.onAddVoucher,
     onCancelVoucher: OrderEditor.propTypes.onCancelVoucher,
     onAddInsurance: OrderEditor.propTypes.onAddInsurance,
@@ -42,6 +43,7 @@ export default class PaymentContainer extends React.PureComponent {
     const {
       items,
       totalPrice,
+      registredCards,
       onAddVoucher,
       onCancelVoucher,
       onAddInsurance,
@@ -67,7 +69,7 @@ export default class PaymentContainer extends React.PureComponent {
             />
           </div>
           <div className="payment-container__right">
-            <PaymentFormContainer price={totalPrice} onPay={this.onPay} />
+            <PaymentFormContainer price={totalPrice} registredCards={registredCards} onPay={this.onPay} />
           </div>
         </section>
         {paymentModal && <PaymentProcessingModal />}
