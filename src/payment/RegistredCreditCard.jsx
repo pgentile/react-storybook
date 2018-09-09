@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { faCcVisa, faCcMastercard, faCcAmex } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { getTypeInfo } from "credit-card-type";
 
 import ExpandableCard from "../ExpandableCard";
 import Button from "../buttons/Button";
@@ -11,54 +13,54 @@ import NumberInput from "../forms/NumberInput";
 
 import "./RegistredCreditCard.scss";
 
-const brands = {
-  visa: {
-    icon: faCcVisa,
-    name: "Visa"
-  },
-  mastercard: {
-    icon: faCcMastercard,
-    name: "Mastercard"
-  },
-  "american-express": {
-    icon: faCcAmex,
-    name: "American Express"
-  }
+const brandIcons = {
+  visa: faCcVisa,
+  mastercard: faCcMastercard,
+  "american-express": faCcAmex
+};
+
+export const registredCreditCardShape = {
+  id: PropTypes.string.isRequired,
+  maskedNumber: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
+  expirationDate: PropTypes.string.isRequired
 };
 
 export default class RegistredCreditCard extends React.PureComponent {
   static propTypes = {
-    cardId: PropTypes.string.isRequired,
-    maskedNumber: PropTypes.string.isRequired,
-    brand: PropTypes.oneOf(Object.keys(brands)).isRequired,
-    expirationDate: PropTypes.string.isRequired,
+    className: PropTypes.string,
+    card: PropTypes.shape(registredCreditCardShape).isRequired,
+    showCvv: PropTypes.bool,
+    onShowCvv: PropTypes.func.isRequired,
+    onHideCvv: PropTypes.func.isRequired,
     onUseCard: PropTypes.func.isRequired
   };
 
+  static defaultProps = {
+    className: "",
+    showCvv: false
+  };
+
   state = {
-    showCvv: false,
     cvv: ""
   };
 
+  onShowCvv = () => {
+    this.props.onShowCvv();
+  };
+
+  onHideCvv = () => {
+    this.setState({ cvv: "" });
+    this.props.onHideCvv();
+  };
+
   onUseCard = () => {
-    const { cardId, maskedNumber, brand, expirationDate, onUseCard } = this.props;
+    const { card, onUseCard } = this.props;
     const { cvv } = this.state;
 
     onUseCard({
-      cardId,
-      maskedNumber,
-      brand,
-      expirationDate,
+      id: card.id,
       cvv
-    });
-  };
-
-  onToggleCvv = () => {
-    this.setState(state => {
-      return {
-        showCvv: !state.showCvv,
-        cvv: ""
-      };
     });
   };
 
@@ -69,21 +71,27 @@ export default class RegistredCreditCard extends React.PureComponent {
   };
 
   render() {
-    const { maskedNumber, brand, expirationDate } = this.props;
-    const { showCvv, cvv } = this.state;
+    const { className, card, showCvv } = this.props;
+    const { maskedNumber, brand, expirationDate } = card;
     const [year, month] = expirationDate.split("-");
+    const { cvv } = this.state;
+
+    const cardBrandInfo = getTypeInfo(brand);
+    const brandName = cardBrandInfo.niceType;
+    const cvvLength = cardBrandInfo.code.size;
+    const isMaestro = brand === "maestro";
 
     const cvvBlock = (
       <div className="registred-credit-card__cvv-container">
         <div className="registred-credit-card__cvv">
-          <FieldContainer label="Code de sécurité">
+          <FieldContainer label="Code de sécurité" optional={isMaestro}>
             {props => (
               <InputField
                 as={NumberInput}
                 {...props}
                 value={cvv}
                 onChange={this.onCvvChange}
-                maxLength={4}
+                maxLength={cvvLength}
                 autoComplete="cc-csc"
               />
             )}
@@ -92,7 +100,7 @@ export default class RegistredCreditCard extends React.PureComponent {
             <Button size="small" onClick={this.onUseCard}>
               Utiliser
             </Button>
-            <Button size="small" onClick={this.onToggleCvv}>
+            <Button size="small" onClick={this.onHideCvv}>
               Annuler
             </Button>
           </p>
@@ -106,14 +114,12 @@ export default class RegistredCreditCard extends React.PureComponent {
         expandableContent={cvvBlock}
         as="section"
         layer="flat"
-        className="registred-credit-card"
+        className={`registred-credit-card ${className}`}
       >
         <h1 className="registred-credit-card__title">
-          <FontAwesomeIcon icon={brands[brand].icon} />{" "}
-          <span className="registred-credit-card__brand">Carte {brands[brand].name}</span>
+          <FontAwesomeIcon icon={brandIcons[brand] || faCreditCard} />{" "}
+          <span className="registred-credit-card__brand">Carte {brandName}</span>
         </h1>
-
-        <div className="registred-credit-card__separator" />
 
         <div className="registred-credit-card__details-container">
           <div className="registred-credit-card__details">
@@ -125,7 +131,7 @@ export default class RegistredCreditCard extends React.PureComponent {
             </p>
           </div>
           <div className="registred-credit-card__select">
-            <Button onClick={this.onToggleCvv} toggled={showCvv}>
+            <Button onClick={showCvv ? this.onHideCvv : this.onShowCvv} toggled={showCvv}>
               Utiliser cette carte
             </Button>
           </div>

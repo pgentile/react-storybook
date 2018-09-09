@@ -6,12 +6,9 @@
 
   &__title {
     margin: $margin;
+    padding-bottom: $margin;
     font-size: 1.4rem;
-  }
-
-  &__separator {
-    margin: $margin;
-    border-top: $border-color solid 1px;
+    border-bottom: $border-color solid 1px;
   }
 
   &__details-line {

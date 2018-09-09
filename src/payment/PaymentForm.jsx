@@ -6,7 +6,7 @@ import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 
 import CheckableImageInput from "../forms/CheckableImageInput";
 import CreditCardForm from "./CreditCardForm";
-import RegistredCreditCard from "./RegistredCreditCard";
+import RegistredCreditCardList from "./RegistredCreditCardList";
 
 import "./PaymentForm.scss";
 
@@ -89,12 +89,28 @@ export default class PaymentForm extends React.PureComponent {
         <p className="payment-form__select-mean">Sélectionnez votre moyen de paiement&nbsp;:</p>
         <div className="payment-form__means">{cardNetworks}</div>
         {paymentMeanIsRegistredCards && (
-          <RegistredCreditCard
-            cardId="1"
-            brand="visa"
-            maskedNumber="4### #### #### 111#"
-            expirationDate="2031-07"
-            onUseCard={() => {}}
+          <RegistredCreditCardList
+            cards={[
+              {
+                id: "1",
+                brand: "visa",
+                maskedNumber: "#### #### #### 1111",
+                expirationDate: "2031-07"
+              },
+              {
+                id: "2",
+                brand: "mastercard",
+                maskedNumber: "#### #### #### 1113",
+                expirationDate: "2029-01"
+              },
+              {
+                id: "3",
+                brand: "maestro",
+                maskedNumber: "#### #### #### 1113",
+                expirationDate: "2029-01"
+              }
+            ]}
+            onUseCard={this.onPay}
           />
         )}
         {!paymentMeanIsRegistredCards && (
