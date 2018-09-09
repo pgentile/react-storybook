@@ -1,0 +1,14 @@
+.registred-card-cvv-form {
+  $margin: 1rem;
+
+  &__cvv {
+    margin: $margin 0;
+    margin-top: 0;
+  }
+
+  &__buttons {
+    margin: $margin 0;
+    margin-bottom: 0;
+  }
+
+}

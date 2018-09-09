@@ -3123,6 +3123,137 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
 </form>
 `;
 
+exports[`Storyshots Payment / Donation / DonationProposal main 1`] = `
+<div
+  className="card card--has-border card--layer-flat expandable-card donation-proposal"
+>
+  <div
+    className="expandable-card__content"
+  >
+    <div
+      className="donation-proposal__content"
+    >
+      <div
+        className="donation-proposal__logo"
+      >
+        <img
+          alt="Logo URCT"
+          src="/images/urct-logo.svg"
+        />
+      </div>
+      <div
+        className="donation-proposal__punchline"
+      >
+        <h3>
+          Donner, c'est facile avec un rien c'est tout
+        </h3>
+        <p>
+          Je soutiens une cause qui me tient à cœur.
+           
+          <a
+            href="#"
+            onClick={[Function]}
+          >
+            En savoir plus 
+            <span>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                data-icon="angle-up"
+                data-prefix="fas"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <p
+      className="donation-proposal__button"
+    >
+      <button
+        className="button button--size-small progress-button "
+        disabled={false}
+        onClick={[Function]}
+      >
+        <div
+          className="progress-button__content"
+        >
+          Donner 1 €
+        </div>
+        <div
+          className="progress-button__progress-bar"
+        />
+      </button>
+    </p>
+  </div>
+  <div
+    className="expandable"
+  >
+    <div
+      className="expandable__window"
+    >
+      <div
+        className="expandable__content"
+      >
+        <div
+          className="expandable-card__expandable"
+        >
+          <p
+            className="donation-proposal__more"
+          >
+            En savoir plus sur URCT...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Payment / Donation / SelectedDonation main 1`] = `
+<div
+  className="card card--has-border card--layer-flat selected-donation"
+>
+  <p
+    className="selected-donation__thanks"
+  >
+    Vous avez choisi de faire un don à 
+    <b>
+      Société protectrice des animaux
+    </b>
+    . Nous vous en remercions !
+  </p>
+  <p
+    className="selected-donation__cancel"
+  >
+    <button
+      className="button button--size-small progress-button "
+      disabled={false}
+      onClick={[Function]}
+    >
+      <div
+        className="progress-button__content"
+      >
+        Annuler mon don
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+  </p>
+</div>
+`;
+
 exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
 <section
   className="order-editor"
@@ -3296,91 +3427,98 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
     </p>
   </section>
   <section
-    className="card card--has-border card--layer-flat expandable-card donation order-editor__donation"
+    className="order-editor__donation"
   >
     <div
-      className="expandable-card__content"
+      className="card card--has-border card--layer-flat expandable-card donation-proposal"
     >
       <div
-        className="donation__proposal"
+        className="expandable-card__content"
       >
         <div
-          className="donation__proposal-logo"
-        >
-          <img
-            src="/images/urct-logo.svg"
-          />
-        </div>
-        <div
-          className="donation__proposal-punchline"
-        >
-          <h3>
-            Donner, c'est facile avec un rien c'est tout
-          </h3>
-          <p>
-            Je soutiens une cause qui me tient à cœur.
-             
-            <a
-              href="#"
-              onClick={[Function]}
-            >
-              En savoir plus 
-              <span>
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
-                  data-icon="angle-up"
-                  data-prefix="fas"
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 320 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </span>
-            </a>
-          </p>
-        </div>
-      </div>
-      <p
-        className="donation__proposal-donate-button"
-      >
-        <button
-          className="button button--size-small progress-button "
-          disabled={false}
-          onClick={[Function]}
+          className="donation-proposal__content"
         >
           <div
-            className="progress-button__content"
+            className="donation-proposal__logo"
           >
-            Donner 1 €
+            <img
+              alt="Logo URCT"
+              src="/images/urct-logo.svg"
+            />
           </div>
           <div
-            className="progress-button__progress-bar"
-          />
-        </button>
-      </p>
-    </div>
-    <div
-      className="expandable"
-    >
+            className="donation-proposal__punchline"
+          >
+            <h3>
+              Donner, c'est facile avec un rien c'est tout
+            </h3>
+            <p>
+              Je soutiens une cause qui me tient à cœur.
+               
+              <a
+                href="#"
+                onClick={[Function]}
+              >
+                En savoir plus 
+                <span>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                    data-icon="angle-up"
+                    data-prefix="fas"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 320 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <p
+          className="donation-proposal__button"
+        >
+          <button
+            className="button button--size-small progress-button "
+            disabled={false}
+            onClick={[Function]}
+          >
+            <div
+              className="progress-button__content"
+            >
+              Donner 1 €
+            </div>
+            <div
+              className="progress-button__progress-bar"
+            />
+          </button>
+        </p>
+      </div>
       <div
-        className="expandable__window"
+        className="expandable"
       >
         <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="expandable-card__expandable"
+            className="expandable__content"
           >
-            <p>
-              En savoir plus sur URCT...
-            </p>
+            <div
+              className="expandable-card__expandable"
+            >
+              <p
+                className="donation-proposal__more"
+              >
+                En savoir plus sur URCT...
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -3550,61 +3688,38 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
     </button>
   </section>
   <section
-    className="card card--has-border card--layer-flat expandable-card donation order-editor__donation"
+    className="order-editor__donation"
   >
     <div
-      className="expandable-card__content"
+      className="card card--has-border card--layer-flat selected-donation"
     >
-      <div
-        className="donation__selection"
+      <p
+        className="selected-donation__thanks"
       >
-        <p
-          className="donation__selection-thanks"
-        >
-          Vous avez choisi de faire un don à 
-          <b>
-            Médecins sans frontières
-          </b>
-          . Nous vous en remercions !
-        </p>
-        <p
-          className="donation__selection-cancel"
-        >
-          <button
-            className="button button--size-small progress-button donation__selection-cancel-button"
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              className="progress-button__content"
-            >
-              Annuler mon don
-            </div>
-            <div
-              className="progress-button__progress-bar"
-            />
-          </button>
-        </p>
-      </div>
-    </div>
-    <div
-      className="expandable"
-    >
-      <div
-        className="expandable__window"
+        Vous avez choisi de faire un don à 
+        <b>
+          Médecins sans frontières
+        </b>
+        . Nous vous en remercions !
+      </p>
+      <p
+        className="selected-donation__cancel"
       >
-        <div
-          className="expandable__content"
+        <button
+          className="button button--size-small progress-button "
+          disabled={false}
+          onClick={[Function]}
         >
           <div
-            className="expandable-card__expandable"
+            className="progress-button__content"
           >
-            <p>
-              En savoir plus sur URCT...
-            </p>
+            Annuler mon don
           </div>
-        </div>
-      </div>
+          <div
+            className="progress-button__progress-bar"
+          />
+        </button>
+      </p>
     </div>
   </section>
 </section>
@@ -3741,91 +3856,98 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
     </button>
   </section>
   <section
-    className="card card--has-border card--layer-flat expandable-card donation order-editor__donation"
+    className="order-editor__donation"
   >
     <div
-      className="expandable-card__content"
+      className="card card--has-border card--layer-flat expandable-card donation-proposal"
     >
       <div
-        className="donation__proposal"
+        className="expandable-card__content"
       >
         <div
-          className="donation__proposal-logo"
-        >
-          <img
-            src="/images/urct-logo.svg"
-          />
-        </div>
-        <div
-          className="donation__proposal-punchline"
-        >
-          <h3>
-            Donner, c'est facile avec un rien c'est tout
-          </h3>
-          <p>
-            Je soutiens une cause qui me tient à cœur.
-             
-            <a
-              href="#"
-              onClick={[Function]}
-            >
-              En savoir plus 
-              <span>
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
-                  data-icon="angle-up"
-                  data-prefix="fas"
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 320 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </span>
-            </a>
-          </p>
-        </div>
-      </div>
-      <p
-        className="donation__proposal-donate-button"
-      >
-        <button
-          className="button button--size-small progress-button "
-          disabled={false}
-          onClick={[Function]}
+          className="donation-proposal__content"
         >
           <div
-            className="progress-button__content"
+            className="donation-proposal__logo"
           >
-            Donner 1 €
+            <img
+              alt="Logo URCT"
+              src="/images/urct-logo.svg"
+            />
           </div>
           <div
-            className="progress-button__progress-bar"
-          />
-        </button>
-      </p>
-    </div>
-    <div
-      className="expandable"
-    >
+            className="donation-proposal__punchline"
+          >
+            <h3>
+              Donner, c'est facile avec un rien c'est tout
+            </h3>
+            <p>
+              Je soutiens une cause qui me tient à cœur.
+               
+              <a
+                href="#"
+                onClick={[Function]}
+              >
+                En savoir plus 
+                <span>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                    data-icon="angle-up"
+                    data-prefix="fas"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 320 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <p
+          className="donation-proposal__button"
+        >
+          <button
+            className="button button--size-small progress-button "
+            disabled={false}
+            onClick={[Function]}
+          >
+            <div
+              className="progress-button__content"
+            >
+              Donner 1 €
+            </div>
+            <div
+              className="progress-button__progress-bar"
+            />
+          </button>
+        </p>
+      </div>
       <div
-        className="expandable__window"
+        className="expandable"
       >
         <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="expandable-card__expandable"
+            className="expandable__content"
           >
-            <p>
-              En savoir plus sur URCT...
-            </p>
+            <div
+              className="expandable-card__expandable"
+            >
+              <p
+                className="donation-proposal__more"
+              >
+                En savoir plus sur URCT...
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -3911,91 +4033,98 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
     </button>
   </section>
   <section
-    className="card card--has-border card--layer-flat expandable-card donation order-editor__donation"
+    className="order-editor__donation"
   >
     <div
-      className="expandable-card__content"
+      className="card card--has-border card--layer-flat expandable-card donation-proposal"
     >
       <div
-        className="donation__proposal"
+        className="expandable-card__content"
       >
         <div
-          className="donation__proposal-logo"
-        >
-          <img
-            src="/images/urct-logo.svg"
-          />
-        </div>
-        <div
-          className="donation__proposal-punchline"
-        >
-          <h3>
-            Donner, c'est facile avec un rien c'est tout
-          </h3>
-          <p>
-            Je soutiens une cause qui me tient à cœur.
-             
-            <a
-              href="#"
-              onClick={[Function]}
-            >
-              En savoir plus 
-              <span>
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
-                  data-icon="angle-up"
-                  data-prefix="fas"
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 320 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </span>
-            </a>
-          </p>
-        </div>
-      </div>
-      <p
-        className="donation__proposal-donate-button"
-      >
-        <button
-          className="button button--size-small progress-button "
-          disabled={false}
-          onClick={[Function]}
+          className="donation-proposal__content"
         >
           <div
-            className="progress-button__content"
+            className="donation-proposal__logo"
           >
-            Donner 1 €
+            <img
+              alt="Logo URCT"
+              src="/images/urct-logo.svg"
+            />
           </div>
           <div
-            className="progress-button__progress-bar"
-          />
-        </button>
-      </p>
-    </div>
-    <div
-      className="expandable"
-    >
+            className="donation-proposal__punchline"
+          >
+            <h3>
+              Donner, c'est facile avec un rien c'est tout
+            </h3>
+            <p>
+              Je soutiens une cause qui me tient à cœur.
+               
+              <a
+                href="#"
+                onClick={[Function]}
+              >
+                En savoir plus 
+                <span>
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                    data-icon="angle-up"
+                    data-prefix="fas"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 320 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <p
+          className="donation-proposal__button"
+        >
+          <button
+            className="button button--size-small progress-button "
+            disabled={false}
+            onClick={[Function]}
+          >
+            <div
+              className="progress-button__content"
+            >
+              Donner 1 €
+            </div>
+            <div
+              className="progress-button__progress-bar"
+            />
+          </button>
+        </p>
+      </div>
       <div
-        className="expandable__window"
+        className="expandable"
       >
         <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="expandable-card__expandable"
+            className="expandable__content"
           >
-            <p>
-              En savoir plus sur URCT...
-            </p>
+            <div
+              className="expandable-card__expandable"
+            >
+              <p
+                className="donation-proposal__more"
+              >
+                En savoir plus sur URCT...
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -4774,91 +4903,98 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
         </button>
       </section>
       <section
-        className="card card--has-border card--layer-flat expandable-card donation order-editor__donation"
+        className="order-editor__donation"
       >
         <div
-          className="expandable-card__content"
+          className="card card--has-border card--layer-flat expandable-card donation-proposal"
         >
           <div
-            className="donation__proposal"
+            className="expandable-card__content"
           >
             <div
-              className="donation__proposal-logo"
-            >
-              <img
-                src="/images/urct-logo.svg"
-              />
-            </div>
-            <div
-              className="donation__proposal-punchline"
-            >
-              <h3>
-                Donner, c'est facile avec un rien c'est tout
-              </h3>
-              <p>
-                Je soutiens une cause qui me tient à cœur.
-                 
-                <a
-                  href="#"
-                  onClick={[Function]}
-                >
-                  En savoir plus 
-                  <span>
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
-                      data-icon="angle-up"
-                      data-prefix="fas"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 320 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </p>
-            </div>
-          </div>
-          <p
-            className="donation__proposal-donate-button"
-          >
-            <button
-              className="button button--size-small progress-button "
-              disabled={false}
-              onClick={[Function]}
+              className="donation-proposal__content"
             >
               <div
-                className="progress-button__content"
+                className="donation-proposal__logo"
               >
-                Donner 1 €
+                <img
+                  alt="Logo URCT"
+                  src="/images/urct-logo.svg"
+                />
               </div>
               <div
-                className="progress-button__progress-bar"
-              />
-            </button>
-          </p>
-        </div>
-        <div
-          className="expandable"
-        >
+                className="donation-proposal__punchline"
+              >
+                <h3>
+                  Donner, c'est facile avec un rien c'est tout
+                </h3>
+                <p>
+                  Je soutiens une cause qui me tient à cœur.
+                   
+                  <a
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    En savoir plus 
+                    <span>
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                        data-icon="angle-up"
+                        data-prefix="fas"
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 320 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <p
+              className="donation-proposal__button"
+            >
+              <button
+                className="button button--size-small progress-button "
+                disabled={false}
+                onClick={[Function]}
+              >
+                <div
+                  className="progress-button__content"
+                >
+                  Donner 1 €
+                </div>
+                <div
+                  className="progress-button__progress-bar"
+                />
+              </button>
+            </p>
+          </div>
           <div
-            className="expandable__window"
+            className="expandable"
           >
             <div
-              className="expandable__content"
+              className="expandable__window"
             >
               <div
-                className="expandable-card__expandable"
+                className="expandable__content"
               >
-                <p>
-                  En savoir plus sur URCT...
-                </p>
+                <div
+                  className="expandable-card__expandable"
+                >
+                  <p
+                    className="donation-proposal__more"
+                  >
+                    En savoir plus sur URCT...
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -5251,91 +5387,98 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
         </button>
       </section>
       <section
-        className="card card--has-border card--layer-flat expandable-card donation order-editor__donation"
+        className="order-editor__donation"
       >
         <div
-          className="expandable-card__content"
+          className="card card--has-border card--layer-flat expandable-card donation-proposal"
         >
           <div
-            className="donation__proposal"
+            className="expandable-card__content"
           >
             <div
-              className="donation__proposal-logo"
-            >
-              <img
-                src="/images/urct-logo.svg"
-              />
-            </div>
-            <div
-              className="donation__proposal-punchline"
-            >
-              <h3>
-                Donner, c'est facile avec un rien c'est tout
-              </h3>
-              <p>
-                Je soutiens une cause qui me tient à cœur.
-                 
-                <a
-                  href="#"
-                  onClick={[Function]}
-                >
-                  En savoir plus 
-                  <span>
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
-                      data-icon="angle-up"
-                      data-prefix="fas"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 320 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </p>
-            </div>
-          </div>
-          <p
-            className="donation__proposal-donate-button"
-          >
-            <button
-              className="button button--size-small progress-button "
-              disabled={false}
-              onClick={[Function]}
+              className="donation-proposal__content"
             >
               <div
-                className="progress-button__content"
+                className="donation-proposal__logo"
               >
-                Donner 1 €
+                <img
+                  alt="Logo URCT"
+                  src="/images/urct-logo.svg"
+                />
               </div>
               <div
-                className="progress-button__progress-bar"
-              />
-            </button>
-          </p>
-        </div>
-        <div
-          className="expandable"
-        >
+                className="donation-proposal__punchline"
+              >
+                <h3>
+                  Donner, c'est facile avec un rien c'est tout
+                </h3>
+                <p>
+                  Je soutiens une cause qui me tient à cœur.
+                   
+                  <a
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    En savoir plus 
+                    <span>
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                        data-icon="angle-up"
+                        data-prefix="fas"
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 320 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <p
+              className="donation-proposal__button"
+            >
+              <button
+                className="button button--size-small progress-button "
+                disabled={false}
+                onClick={[Function]}
+              >
+                <div
+                  className="progress-button__content"
+                >
+                  Donner 1 €
+                </div>
+                <div
+                  className="progress-button__progress-bar"
+                />
+              </button>
+            </p>
+          </div>
           <div
-            className="expandable__window"
+            className="expandable"
           >
             <div
-              className="expandable__content"
+              className="expandable__window"
             >
               <div
-                className="expandable-card__expandable"
+                className="expandable__content"
               >
-                <p>
-                  En savoir plus sur URCT...
-                </p>
+                <div
+                  className="expandable-card__expandable"
+                >
+                  <p
+                    className="donation-proposal__more"
+                  >
+                    En savoir plus sur URCT...
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -5942,6 +6085,236 @@ exports[`Storyshots Payment / PaymentRequestComponent main 1`] = `
 </button>
 `;
 
+exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
+<form
+  className="registred-card-cvv-form"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-field-container registred-card-cvv-form__cvv"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-20"
+    >
+      Code de sécurité
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="cc-csc"
+        className="form-input-field "
+        disabled={false}
+        id="form-field-20"
+        inputMode="numeric"
+        maxLength={4}
+        name="cvv"
+        onBlur={[Function]}
+        onChange={[Function]}
+        readOnly={false}
+        type="tel"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="registred-card-cvv-form__buttons"
+  >
+    <button
+      className="button button--disabled button--size-small "
+      disabled={false}
+      type="submit"
+    >
+      Utiliser
+    </button>
+    <button
+      className="button button--size-small "
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
+<form
+  className="registred-card-cvv-form"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-field-container registred-card-cvv-form__cvv"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-21"
+    >
+      Code de sécurité
+      <span
+        className="label__optional"
+      >
+         (facultatif)
+      </span>
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="cc-csc"
+        className="form-input-field "
+        disabled={false}
+        id="form-field-21"
+        inputMode="numeric"
+        maxLength={3}
+        name="cvv"
+        onBlur={[Function]}
+        onChange={[Function]}
+        readOnly={false}
+        type="tel"
+        value=""
+      />
+    </div>
+    <p
+      className="form-field-container__help"
+    >
+      Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
+    </p>
+  </div>
+  <div
+    className="registred-card-cvv-form__buttons"
+  >
+    <button
+      className="button button--size-small "
+      disabled={false}
+      type="submit"
+    >
+      Utiliser
+    </button>
+    <button
+      className="button button--size-small "
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
+<form
+  className="registred-card-cvv-form"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-field-container registred-card-cvv-form__cvv"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-19"
+    >
+      Code de sécurité
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="cc-csc"
+        className="form-input-field "
+        disabled={false}
+        id="form-field-19"
+        inputMode="numeric"
+        maxLength={3}
+        name="cvv"
+        onBlur={[Function]}
+        onChange={[Function]}
+        readOnly={false}
+        type="tel"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="registred-card-cvv-form__buttons"
+  >
+    <button
+      className="button button--disabled button--size-small "
+      disabled={false}
+      type="submit"
+    >
+      Utiliser
+    </button>
+    <button
+      className="button button--size-small "
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
+<form
+  className="registred-card-cvv-form"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-field-container registred-card-cvv-form__cvv"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-18"
+    >
+      Code de sécurité
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="cc-csc"
+        className="form-input-field "
+        disabled={false}
+        id="form-field-18"
+        inputMode="numeric"
+        maxLength={3}
+        name="cvv"
+        onBlur={[Function]}
+        onChange={[Function]}
+        readOnly={false}
+        type="tel"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="registred-card-cvv-form__buttons"
+  >
+    <button
+      className="button button--disabled button--size-small "
+      disabled={false}
+      type="submit"
+    >
+      Utiliser
+    </button>
+    <button
+      className="button button--size-small "
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
 exports[`Storyshots Payment / RegistredCreditCard American Express 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
@@ -5999,7 +6372,7 @@ exports[`Storyshots Payment / RegistredCreditCard American Express 1`] = `
           </b>
            
           01
-          /
+           / 
           2031
         </p>
       </div>
@@ -6033,46 +6406,58 @@ exports[`Storyshots Payment / RegistredCreditCard American Express 1`] = `
             <div
               className="registred-credit-card__cvv"
             >
-              <div
-                className="form-field-container "
+              <form
+                className="registred-card-cvv-form"
+                onReset={[Function]}
+                onSubmit={[Function]}
               >
-                <label
-                  className="label form-field-container__label"
-                  htmlFor="form-field-22"
-                >
-                  Code de sécurité
-                </label>
                 <div
-                  className="form-field-container__field"
+                  className="form-field-container registred-card-cvv-form__cvv"
                 >
-                  <input
-                    autoComplete="cc-csc"
-                    className="form-input-field "
-                    disabled={false}
-                    id="form-field-22"
-                    inputMode="numeric"
-                    maxLength={4}
-                    onChange={[Function]}
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
+                  <label
+                    className="label form-field-container__label"
+                    htmlFor="form-field-26"
+                  >
+                    Code de sécurité
+                  </label>
+                  <div
+                    className="form-field-container__field"
+                  >
+                    <input
+                      autoComplete="cc-csc"
+                      className="form-input-field "
+                      disabled={false}
+                      id="form-field-26"
+                      inputMode="numeric"
+                      maxLength={4}
+                      name="cvv"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      readOnly={false}
+                      type="tel"
+                      value=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <p>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
+                <div
+                  className="registred-card-cvv-form__buttons"
                 >
-                  Utiliser
-                </button>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
-                >
-                  Annuler
-                </button>
-              </p>
+                  <button
+                    className="button button--disabled button--size-small "
+                    disabled={false}
+                    type="submit"
+                  >
+                    Utiliser
+                  </button>
+                  <button
+                    className="button button--size-small "
+                    onClick={[Function]}
+                    type="reset"
+                  >
+                    Annuler
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -6139,7 +6524,7 @@ exports[`Storyshots Payment / RegistredCreditCard Maestro 1`] = `
           </b>
            
           01
-          /
+           / 
           2031
         </p>
       </div>
@@ -6173,51 +6558,68 @@ exports[`Storyshots Payment / RegistredCreditCard Maestro 1`] = `
             <div
               className="registred-credit-card__cvv"
             >
-              <div
-                className="form-field-container "
+              <form
+                className="registred-card-cvv-form"
+                onReset={[Function]}
+                onSubmit={[Function]}
               >
-                <label
-                  className="label form-field-container__label"
-                  htmlFor="form-field-21"
-                >
-                  Code de sécurité
-                  <span
-                    className="label__optional"
-                  >
-                     (facultatif)
-                  </span>
-                </label>
                 <div
-                  className="form-field-container__field"
+                  className="form-field-container registred-card-cvv-form__cvv"
                 >
-                  <input
-                    autoComplete="cc-csc"
-                    className="form-input-field "
-                    disabled={false}
-                    id="form-field-21"
-                    inputMode="numeric"
-                    maxLength={3}
-                    onChange={[Function]}
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
+                  <label
+                    className="label form-field-container__label"
+                    htmlFor="form-field-25"
+                  >
+                    Code de sécurité
+                    <span
+                      className="label__optional"
+                    >
+                       (facultatif)
+                    </span>
+                  </label>
+                  <div
+                    className="form-field-container__field"
+                  >
+                    <input
+                      autoComplete="cc-csc"
+                      className="form-input-field "
+                      disabled={false}
+                      id="form-field-25"
+                      inputMode="numeric"
+                      maxLength={3}
+                      name="cvv"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      readOnly={false}
+                      type="tel"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    className="form-field-container__help"
+                  >
+                    Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
+                  </p>
                 </div>
-              </div>
-              <p>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
+                <div
+                  className="registred-card-cvv-form__buttons"
                 >
-                  Utiliser
-                </button>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
-                >
-                  Annuler
-                </button>
-              </p>
+                  <button
+                    className="button button--size-small "
+                    disabled={false}
+                    type="submit"
+                  >
+                    Utiliser
+                  </button>
+                  <button
+                    className="button button--size-small "
+                    onClick={[Function]}
+                    type="reset"
+                  >
+                    Annuler
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -6284,7 +6686,7 @@ exports[`Storyshots Payment / RegistredCreditCard Mastercard 1`] = `
           </b>
            
           01
-          /
+           / 
           2031
         </p>
       </div>
@@ -6318,46 +6720,58 @@ exports[`Storyshots Payment / RegistredCreditCard Mastercard 1`] = `
             <div
               className="registred-credit-card__cvv"
             >
-              <div
-                className="form-field-container "
+              <form
+                className="registred-card-cvv-form"
+                onReset={[Function]}
+                onSubmit={[Function]}
               >
-                <label
-                  className="label form-field-container__label"
-                  htmlFor="form-field-20"
-                >
-                  Code de sécurité
-                </label>
                 <div
-                  className="form-field-container__field"
+                  className="form-field-container registred-card-cvv-form__cvv"
                 >
-                  <input
-                    autoComplete="cc-csc"
-                    className="form-input-field "
-                    disabled={false}
-                    id="form-field-20"
-                    inputMode="numeric"
-                    maxLength={3}
-                    onChange={[Function]}
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
+                  <label
+                    className="label form-field-container__label"
+                    htmlFor="form-field-24"
+                  >
+                    Code de sécurité
+                  </label>
+                  <div
+                    className="form-field-container__field"
+                  >
+                    <input
+                      autoComplete="cc-csc"
+                      className="form-input-field "
+                      disabled={false}
+                      id="form-field-24"
+                      inputMode="numeric"
+                      maxLength={3}
+                      name="cvv"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      readOnly={false}
+                      type="tel"
+                      value=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <p>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
+                <div
+                  className="registred-card-cvv-form__buttons"
                 >
-                  Utiliser
-                </button>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
-                >
-                  Annuler
-                </button>
-              </p>
+                  <button
+                    className="button button--disabled button--size-small "
+                    disabled={false}
+                    type="submit"
+                  >
+                    Utiliser
+                  </button>
+                  <button
+                    className="button button--size-small "
+                    onClick={[Function]}
+                    type="reset"
+                  >
+                    Annuler
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -6424,7 +6838,7 @@ exports[`Storyshots Payment / RegistredCreditCard Visa 1`] = `
           </b>
            
           01
-          /
+           / 
           2031
         </p>
       </div>
@@ -6458,46 +6872,58 @@ exports[`Storyshots Payment / RegistredCreditCard Visa 1`] = `
             <div
               className="registred-credit-card__cvv"
             >
-              <div
-                className="form-field-container "
+              <form
+                className="registred-card-cvv-form"
+                onReset={[Function]}
+                onSubmit={[Function]}
               >
-                <label
-                  className="label form-field-container__label"
-                  htmlFor="form-field-18"
-                >
-                  Code de sécurité
-                </label>
                 <div
-                  className="form-field-container__field"
+                  className="form-field-container registred-card-cvv-form__cvv"
                 >
-                  <input
-                    autoComplete="cc-csc"
-                    className="form-input-field "
-                    disabled={false}
-                    id="form-field-18"
-                    inputMode="numeric"
-                    maxLength={3}
-                    onChange={[Function]}
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
+                  <label
+                    className="label form-field-container__label"
+                    htmlFor="form-field-22"
+                  >
+                    Code de sécurité
+                  </label>
+                  <div
+                    className="form-field-container__field"
+                  >
+                    <input
+                      autoComplete="cc-csc"
+                      className="form-input-field "
+                      disabled={false}
+                      id="form-field-22"
+                      inputMode="numeric"
+                      maxLength={3}
+                      name="cvv"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      readOnly={false}
+                      type="tel"
+                      value=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <p>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
+                <div
+                  className="registred-card-cvv-form__buttons"
                 >
-                  Utiliser
-                </button>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
-                >
-                  Annuler
-                </button>
-              </p>
+                  <button
+                    className="button button--disabled button--size-small "
+                    disabled={false}
+                    type="submit"
+                  >
+                    Utiliser
+                  </button>
+                  <button
+                    className="button button--size-small "
+                    onClick={[Function]}
+                    type="reset"
+                  >
+                    Annuler
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -6564,7 +6990,7 @@ exports[`Storyshots Payment / RegistredCreditCard Visible CVV 1`] = `
           </b>
            
           01
-          /
+           / 
           2031
         </p>
       </div>
@@ -6598,46 +7024,58 @@ exports[`Storyshots Payment / RegistredCreditCard Visible CVV 1`] = `
             <div
               className="registred-credit-card__cvv"
             >
-              <div
-                className="form-field-container "
+              <form
+                className="registred-card-cvv-form"
+                onReset={[Function]}
+                onSubmit={[Function]}
               >
-                <label
-                  className="label form-field-container__label"
-                  htmlFor="form-field-19"
-                >
-                  Code de sécurité
-                </label>
                 <div
-                  className="form-field-container__field"
+                  className="form-field-container registred-card-cvv-form__cvv"
                 >
-                  <input
-                    autoComplete="cc-csc"
-                    className="form-input-field "
-                    disabled={false}
-                    id="form-field-19"
-                    inputMode="numeric"
-                    maxLength={3}
-                    onChange={[Function]}
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
+                  <label
+                    className="label form-field-container__label"
+                    htmlFor="form-field-23"
+                  >
+                    Code de sécurité
+                  </label>
+                  <div
+                    className="form-field-container__field"
+                  >
+                    <input
+                      autoComplete="cc-csc"
+                      className="form-input-field "
+                      disabled={false}
+                      id="form-field-23"
+                      inputMode="numeric"
+                      maxLength={3}
+                      name="cvv"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      readOnly={false}
+                      type="tel"
+                      value=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <p>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
+                <div
+                  className="registred-card-cvv-form__buttons"
                 >
-                  Utiliser
-                </button>
-                <button
-                  className="button button--size-small "
-                  onClick={[Function]}
-                >
-                  Annuler
-                </button>
-              </p>
+                  <button
+                    className="button button--disabled button--size-small "
+                    disabled={false}
+                    type="submit"
+                  >
+                    Utiliser
+                  </button>
+                  <button
+                    className="button button--size-small "
+                    onClick={[Function]}
+                    type="reset"
+                  >
+                    Annuler
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -6707,7 +7145,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
             </b>
              
             01
-            /
+             / 
             2031
           </p>
         </div>
@@ -6741,46 +7179,58 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
               <div
                 className="registred-credit-card__cvv"
               >
-                <div
-                  className="form-field-container "
+                <form
+                  className="registred-card-cvv-form"
+                  onReset={[Function]}
+                  onSubmit={[Function]}
                 >
-                  <label
-                    className="label form-field-container__label"
-                    htmlFor="form-field-23"
-                  >
-                    Code de sécurité
-                  </label>
                   <div
-                    className="form-field-container__field"
+                    className="form-field-container registred-card-cvv-form__cvv"
                   >
-                    <input
-                      autoComplete="cc-csc"
-                      className="form-input-field "
-                      disabled={false}
-                      id="form-field-23"
-                      inputMode="numeric"
-                      maxLength={3}
-                      onChange={[Function]}
-                      readOnly={false}
-                      type="tel"
-                      value=""
-                    />
+                    <label
+                      className="label form-field-container__label"
+                      htmlFor="form-field-27"
+                    >
+                      Code de sécurité
+                    </label>
+                    <div
+                      className="form-field-container__field"
+                    >
+                      <input
+                        autoComplete="cc-csc"
+                        className="form-input-field "
+                        disabled={false}
+                        id="form-field-27"
+                        inputMode="numeric"
+                        maxLength={3}
+                        name="cvv"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        readOnly={false}
+                        type="tel"
+                        value=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
+                  <div
+                    className="registred-card-cvv-form__buttons"
                   >
-                    Utiliser
-                  </button>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
-                  >
-                    Annuler
-                  </button>
-                </p>
+                    <button
+                      className="button button--disabled button--size-small "
+                      disabled={false}
+                      type="submit"
+                    >
+                      Utiliser
+                    </button>
+                    <button
+                      className="button button--size-small "
+                      onClick={[Function]}
+                      type="reset"
+                    >
+                      Annuler
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -6844,7 +7294,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
             </b>
              
             01
-            /
+             / 
             2029
           </p>
         </div>
@@ -6878,46 +7328,58 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
               <div
                 className="registred-credit-card__cvv"
               >
-                <div
-                  className="form-field-container "
+                <form
+                  className="registred-card-cvv-form"
+                  onReset={[Function]}
+                  onSubmit={[Function]}
                 >
-                  <label
-                    className="label form-field-container__label"
-                    htmlFor="form-field-24"
-                  >
-                    Code de sécurité
-                  </label>
                   <div
-                    className="form-field-container__field"
+                    className="form-field-container registred-card-cvv-form__cvv"
                   >
-                    <input
-                      autoComplete="cc-csc"
-                      className="form-input-field "
-                      disabled={false}
-                      id="form-field-24"
-                      inputMode="numeric"
-                      maxLength={3}
-                      onChange={[Function]}
-                      readOnly={false}
-                      type="tel"
-                      value=""
-                    />
+                    <label
+                      className="label form-field-container__label"
+                      htmlFor="form-field-28"
+                    >
+                      Code de sécurité
+                    </label>
+                    <div
+                      className="form-field-container__field"
+                    >
+                      <input
+                        autoComplete="cc-csc"
+                        className="form-input-field "
+                        disabled={false}
+                        id="form-field-28"
+                        inputMode="numeric"
+                        maxLength={3}
+                        name="cvv"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        readOnly={false}
+                        type="tel"
+                        value=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
+                  <div
+                    className="registred-card-cvv-form__buttons"
                   >
-                    Utiliser
-                  </button>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
-                  >
-                    Annuler
-                  </button>
-                </p>
+                    <button
+                      className="button button--disabled button--size-small "
+                      disabled={false}
+                      type="submit"
+                    >
+                      Utiliser
+                    </button>
+                    <button
+                      className="button button--size-small "
+                      onClick={[Function]}
+                      type="reset"
+                    >
+                      Annuler
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -6981,7 +7443,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
             </b>
              
             01
-            /
+             / 
             2029
           </p>
         </div>
@@ -7015,46 +7477,58 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
               <div
                 className="registred-credit-card__cvv"
               >
-                <div
-                  className="form-field-container "
+                <form
+                  className="registred-card-cvv-form"
+                  onReset={[Function]}
+                  onSubmit={[Function]}
                 >
-                  <label
-                    className="label form-field-container__label"
-                    htmlFor="form-field-25"
-                  >
-                    Code de sécurité
-                  </label>
                   <div
-                    className="form-field-container__field"
+                    className="form-field-container registred-card-cvv-form__cvv"
                   >
-                    <input
-                      autoComplete="cc-csc"
-                      className="form-input-field "
-                      disabled={false}
-                      id="form-field-25"
-                      inputMode="numeric"
-                      maxLength={4}
-                      onChange={[Function]}
-                      readOnly={false}
-                      type="tel"
-                      value=""
-                    />
+                    <label
+                      className="label form-field-container__label"
+                      htmlFor="form-field-29"
+                    >
+                      Code de sécurité
+                    </label>
+                    <div
+                      className="form-field-container__field"
+                    >
+                      <input
+                        autoComplete="cc-csc"
+                        className="form-input-field "
+                        disabled={false}
+                        id="form-field-29"
+                        inputMode="numeric"
+                        maxLength={4}
+                        name="cvv"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        readOnly={false}
+                        type="tel"
+                        value=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
+                  <div
+                    className="registred-card-cvv-form__buttons"
                   >
-                    Utiliser
-                  </button>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
-                  >
-                    Annuler
-                  </button>
-                </p>
+                    <button
+                      className="button button--disabled button--size-small "
+                      disabled={false}
+                      type="submit"
+                    >
+                      Utiliser
+                    </button>
+                    <button
+                      className="button button--size-small "
+                      onClick={[Function]}
+                      type="reset"
+                    >
+                      Annuler
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -7118,7 +7592,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
             </b>
              
             01
-            /
+             / 
             2028
           </p>
         </div>
@@ -7152,51 +7626,68 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
               <div
                 className="registred-credit-card__cvv"
               >
-                <div
-                  className="form-field-container "
+                <form
+                  className="registred-card-cvv-form"
+                  onReset={[Function]}
+                  onSubmit={[Function]}
                 >
-                  <label
-                    className="label form-field-container__label"
-                    htmlFor="form-field-26"
-                  >
-                    Code de sécurité
-                    <span
-                      className="label__optional"
-                    >
-                       (facultatif)
-                    </span>
-                  </label>
                   <div
-                    className="form-field-container__field"
+                    className="form-field-container registred-card-cvv-form__cvv"
                   >
-                    <input
-                      autoComplete="cc-csc"
-                      className="form-input-field "
-                      disabled={false}
-                      id="form-field-26"
-                      inputMode="numeric"
-                      maxLength={3}
-                      onChange={[Function]}
-                      readOnly={false}
-                      type="tel"
-                      value=""
-                    />
+                    <label
+                      className="label form-field-container__label"
+                      htmlFor="form-field-30"
+                    >
+                      Code de sécurité
+                      <span
+                        className="label__optional"
+                      >
+                         (facultatif)
+                      </span>
+                    </label>
+                    <div
+                      className="form-field-container__field"
+                    >
+                      <input
+                        autoComplete="cc-csc"
+                        className="form-input-field "
+                        disabled={false}
+                        id="form-field-30"
+                        inputMode="numeric"
+                        maxLength={3}
+                        name="cvv"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        readOnly={false}
+                        type="tel"
+                        value=""
+                      />
+                    </div>
+                    <p
+                      className="form-field-container__help"
+                    >
+                      Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
+                    </p>
                   </div>
-                </div>
-                <p>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
+                  <div
+                    className="registred-card-cvv-form__buttons"
                   >
-                    Utiliser
-                  </button>
-                  <button
-                    className="button button--size-small "
-                    onClick={[Function]}
-                  >
-                    Annuler
-                  </button>
-                </p>
+                    <button
+                      className="button button--size-small "
+                      disabled={false}
+                      type="submit"
+                    >
+                      Utiliser
+                    </button>
+                    <button
+                      className="button button--size-small "
+                      onClick={[Function]}
+                      type="reset"
+                    >
+                      Annuler
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -7233,7 +7724,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-27"
+        htmlFor="form-field-31"
       >
         Code promo
       </label>
@@ -7244,7 +7735,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
-          id="form-field-27"
+          id="form-field-31"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -7299,7 +7790,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-28"
+        htmlFor="form-field-32"
       >
         Code promo
       </label>
@@ -7310,7 +7801,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
-          id="form-field-28"
+          id="form-field-32"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -7365,7 +7856,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-30"
+        htmlFor="form-field-34"
       >
         Code promo
       </label>
@@ -7376,7 +7867,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
-          id="form-field-30"
+          id="form-field-34"
           maxLength={16}
           name="code"
           onBlur={[Function]}
@@ -7431,7 +7922,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-29"
+        htmlFor="form-field-33"
       >
         Code promo
       </label>
@@ -7442,7 +7933,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
-          id="form-field-29"
+          id="form-field-33"
           maxLength={16}
           name="code"
           onBlur={[Function]}
