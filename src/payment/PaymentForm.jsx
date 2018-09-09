@@ -10,7 +10,7 @@ import "./PaymentForm.scss";
 export default class PaymentForm extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    price: PropTypes.shape({
+    totalPrice: PropTypes.shape({
       value: PropTypes.number.isRequired,
       currency: PropTypes.string.isRequired
     }).isRequired,
@@ -41,7 +41,7 @@ export default class PaymentForm extends React.PureComponent {
   };
 
   render() {
-    const { className, registredCards, price } = this.props;
+    const { className, registredCards, totalPrice } = this.props;
     const { isSubmitting, mean } = this.state;
     const paymentMeanIsRegistredCards = mean === "registred-cards";
 
@@ -56,10 +56,15 @@ export default class PaymentForm extends React.PureComponent {
           disabled={isSubmitting}
         />
         {paymentMeanIsRegistredCards && (
-          <RegistredCreditCardList cards={registredCards} disabled={isSubmitting} onUseCard={this.onPay} />
+          <RegistredCreditCardList
+            cards={registredCards}
+            totalPrice={totalPrice}
+            disabled={isSubmitting}
+            onUseCard={this.onPay}
+          />
         )}
         {!paymentMeanIsRegistredCards && (
-          <CreditCardForm className="payment-form__credit-card-form" totalPrice={price} onPay={this.onPay} />
+          <CreditCardForm className="payment-form__credit-card-form" totalPrice={totalPrice} onPay={this.onPay} />
         )}
       </div>
     );

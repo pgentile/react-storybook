@@ -7,12 +7,17 @@ import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
 import Button from "../buttons/Button";
 import NumberInput from "../forms/NumberInput";
+import Price from "../Price";
 
 import "./RegistredCardCvvForm.scss";
 
 class RegistredCardCvvForm extends React.PureComponent {
   static propTypes = {
     brand: PropTypes.string.isRequired,
+    totalPrice: PropTypes.shape({
+      value: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired
+    }).isRequired,
     disabled: PropTypes.bool,
     onCancel: PropTypes.func.isRequired,
     onUseCard: PropTypes.func.isRequired
@@ -25,6 +30,7 @@ class RegistredCardCvvForm extends React.PureComponent {
   render() {
     const {
       brand,
+      totalPrice,
       disabled,
       values,
       errors,
@@ -71,7 +77,8 @@ class RegistredCardCvvForm extends React.PureComponent {
         </FieldContainer>
         <div className="registred-card-cvv-form__buttons">
           <Button type="submit" size="small" showDisabled={!isValid} disabled={disableForm}>
-            Utiliser
+            Payer&nbsp;
+            <Price noColor price={totalPrice} />
           </Button>
           <Button type="reset" size="small" onClick={this.onCancel} disabled={disableForm}>
             Annuler

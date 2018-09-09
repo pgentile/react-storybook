@@ -9,14 +9,19 @@ const actions = {
   onCancel: action("hide CVV")
 };
 
+const totalPrice = {
+  value: 100,
+  currency: "€"
+};
+
 const stories = storiesOf("Payment / RegistredCardCvvForm", module);
 
 ["visa", "mastercard", "american-express", "maestro"].forEach(brand => {
   stories.add(brand, () => {
-    return <RegistredCardCvvForm brand={brand} {...actions} />;
+    return <RegistredCardCvvForm brand={brand} totalPrice={totalPrice} {...actions} />;
   });
 });
 
 stories.add("disabled", () => {
-  return <RegistredCardCvvForm brand="visa" {...actions} disabled />;
+  return <RegistredCardCvvForm brand="visa" totalPrice={totalPrice} {...actions} disabled />;
 });

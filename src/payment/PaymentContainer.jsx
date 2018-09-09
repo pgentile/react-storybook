@@ -69,7 +69,7 @@ export default class PaymentContainer extends React.PureComponent {
             />
           </div>
           <div className="payment-container__right">
-            <PaymentFormContainer price={totalPrice} registredCards={registredCards} onPay={this.onPay} />
+            <PaymentFormContainer totalPrice={totalPrice} registredCards={registredCards} onPay={this.onPay} />
           </div>
         </section>
         {paymentModal && <PaymentProcessingModal />}

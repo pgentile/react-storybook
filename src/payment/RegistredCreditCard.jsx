@@ -28,6 +28,10 @@ export default class RegistredCreditCard extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
     card: PropTypes.shape(registredCreditCardShape).isRequired,
+    totalPrice: PropTypes.shape({
+      value: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired
+    }).isRequired,
     showCvv: PropTypes.bool,
     disabled: PropTypes.bool,
     onShowCvv: PropTypes.func.isRequired,
@@ -68,7 +72,7 @@ export default class RegistredCreditCard extends React.PureComponent {
   };
 
   render() {
-    const { className, card, showCvv, disabled } = this.props;
+    const { className, card, totalPrice, showCvv, disabled } = this.props;
     const { maskedNumber, brand, expirationDate } = card;
     const [year, month] = expirationDate.split("-");
 
@@ -80,6 +84,7 @@ export default class RegistredCreditCard extends React.PureComponent {
         <div className="registred-credit-card__cvv">
           <RegistredCardCvvForm
             brand={brand}
+            totalPrice={totalPrice}
             onUseCard={this.onUseCard}
             onCancel={this.onHideCvv}
             disabled={disabled}

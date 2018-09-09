@@ -31,10 +31,15 @@ const cards = [
   }
 ];
 
+const totalPrice = {
+  value: 100,
+  currency: "€"
+};
+
 storiesOf("Payment / RegistredCreditCardList", module)
   .add("main", () => {
-    return <RegistredCreditCardList cards={cards} onUseCard={action("use card")} />;
+    return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} onUseCard={action("use card")} />;
   })
   .add("disabled", () => {
-    return <RegistredCreditCardList cards={cards} disabled onUseCard={action("use card")} />;
+    return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} disabled onUseCard={action("use card")} />;
   });

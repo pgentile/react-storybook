@@ -10,10 +10,16 @@ const actions = {
   onUseCard: action("use card")
 };
 
+const totalPrice = {
+  value: 100,
+  currency: "€"
+};
+
 storiesOf("Payment / RegistredCreditCard", module)
   .add("Visa", () => {
     return (
       <RegistredCreditCard
+        totalPrice={totalPrice}
         card={{
           id: "1",
           brand: "visa",
@@ -27,6 +33,7 @@ storiesOf("Payment / RegistredCreditCard", module)
   .add("Visible CVV", () => {
     return (
       <RegistredCreditCard
+        totalPrice={totalPrice}
         card={{
           id: "1",
           brand: "visa",
@@ -41,6 +48,7 @@ storiesOf("Payment / RegistredCreditCard", module)
   .add("disabled", () => {
     return (
       <RegistredCreditCard
+        totalPrice={totalPrice}
         card={{
           id: "1",
           brand: "visa",
@@ -55,6 +63,7 @@ storiesOf("Payment / RegistredCreditCard", module)
   .add("Visible CVV and disabled", () => {
     return (
       <RegistredCreditCard
+        totalPrice={totalPrice}
         card={{
           id: "1",
           brand: "visa",
@@ -70,6 +79,7 @@ storiesOf("Payment / RegistredCreditCard", module)
   .add("Mastercard", () => {
     return (
       <RegistredCreditCard
+        totalPrice={totalPrice}
         card={{
           id: "1",
           brand: "mastercard",
@@ -83,6 +93,7 @@ storiesOf("Payment / RegistredCreditCard", module)
   .add("Maestro", () => {
     return (
       <RegistredCreditCard
+        totalPrice={totalPrice}
         card={{
           id: "1",
           brand: "maestro",
@@ -96,6 +107,7 @@ storiesOf("Payment / RegistredCreditCard", module)
   .add("American Express", () => {
     return (
       <RegistredCreditCard
+        totalPrice={totalPrice}
         card={{
           id: "1",
           brand: "american-express",

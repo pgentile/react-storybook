@@ -9,6 +9,10 @@ import "./RegistredCreditCardList.scss";
 export default class RegistredCreditCardList extends React.PureComponent {
   static propTypes = {
     cards: PropTypes.arrayOf(PropTypes.shape(registredCreditCardShape)),
+    totalPrice: PropTypes.shape({
+      value: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired
+    }).isRequired,
     disabled: PropTypes.bool,
     onUseCard: PropTypes.func.isRequired
   };
@@ -36,7 +40,7 @@ export default class RegistredCreditCardList extends React.PureComponent {
   };
 
   render() {
-    const { cards, disabled, onUseCard } = this.props;
+    const { cards, totalPrice, disabled, onUseCard } = this.props;
     const { cardId } = this.state;
 
     const renderedCarts = cards.map(card => {
@@ -45,6 +49,7 @@ export default class RegistredCreditCardList extends React.PureComponent {
           className="registred-credit-card-list__item"
           key={card.id}
           card={card}
+          totalPrice={totalPrice}
           disabled={disabled}
           showCvv={card.id === cardId}
           onUseCard={onUseCard}

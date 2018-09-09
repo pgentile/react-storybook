@@ -8,7 +8,7 @@ import "./PaymentFormContainer.scss";
 export default class PaymentFormContainer extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    price: PropTypes.shape({
+    totalPrice: PropTypes.shape({
       value: PropTypes.number.isRequired,
       currency: PropTypes.string.isRequired
     }).isRequired,
@@ -21,14 +21,14 @@ export default class PaymentFormContainer extends React.PureComponent {
   };
 
   render() {
-    const { price, registredCards, onPay } = this.props;
+    const { totalPrice, registredCards, onPay } = this.props;
 
     return (
       <section className="payment-form-container">
         <h1 className="payment-form-container__title">Payez en toute sécurité</h1>
         <PaymentForm
           className="payment-form-container__form"
-          price={price}
+          totalPrice={totalPrice}
           registredCards={registredCards}
           onPay={onPay}
         />
