@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import memoize from "fast-memoize";
 
 import RegistredCreditCard, { registredCreditCardShape } from "./RegistredCreditCard";
 
@@ -19,11 +20,13 @@ export default class RegistredCreditCardList extends React.PureComponent {
     cardId: null
   };
 
-  onShowCvv = cardId => {
-    this.setState({
-      cardId
-    });
-  };
+  onShowCvv = memoize(cardId => {
+    return () => {
+      this.setState({
+        cardId
+      });
+    };
+  });
 
   onHideCvv = () => {
     this.setState({
@@ -43,7 +46,7 @@ export default class RegistredCreditCardList extends React.PureComponent {
           card={card}
           showCvv={card.id === cardId}
           onUseCard={onUseCard}
-          onShowCvv={() => this.onShowCvv(card.id)}
+          onShowCvv={this.onShowCvv(card.id)}
           onHideCvv={this.onHideCvv}
         />
       );
