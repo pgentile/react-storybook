@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Search outward request",
+  "required": [
+    "origin",
+    "destination",
+    "departureDate"
+  ],
+  "properties": {
+    "origin": {
+      "$ref": "#/definitions/station",
+      "title": "Origin"
+    },
+    "destination": {
+      "$ref": "#/definitions/station",
+      "title": "Destination"
+    },
+    "maxVias": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2,
+      "title": "Nombre maximum de vias"
+    },
+    "vias": {
+      "type": "array",
+      "title": "Vias",
+      "items": {
+        "$ref": "#/definitions/station"
+      }
+    },
+    "departureDate": {
+      "type": "string",
+      "title": "Departure date",
+      "format": "date-time"
+    },
+    "inwardDepartureDate": {
+      "type": "string",
+      "title": "Inward departure date",
+      "format": "date-time"
+    },
+    "passengers": {
+      "type": "array",
+      "title": "Passagers",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type de passager",
+            "enum": [
+              "HUMAN",
+              "TODDLER_ON_KNEES",
+              "ANIMAL"
+            ],
+            "default": "HUMAN"
+          },
+          "fareProfile": {
+            "type": "string",
+            "title": "Profil tarifaire"
+          },
+          "ageRange": {
+            "type":"string",
+            "title": "Tranche d'âge"
+          },
+          "ageAtTravelTime": {
+            "type": "integer",
+            "title": "Âge à la date du voyage"
+          },
+          "birthDate": {
+            "type": "string",
+            "title": "Date de naissance",
+            "format": "date"
+          },
+          "advantageCard": {
+            "type": "string",
+            "title": "N° de carte d'avantage commercial"
+          },
+          "loyaltyCard": {
+            "type": "string",
+            "title": "N° de carte de fidélité"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "station": {
+      "type": "object",
+      "required": [
+        "type",
+        "code"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "title": "Code type",
+          "enum": ["RESARAIL", "UIC"],
+          "default": "RESARAIL"
+        },
+        "code": {
+          "type": "string",
+          "title": "Location code"
+        }
+      }
+    }
+  }
+}

@@ -1,29 +1,22 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "title": "Search request",
+  "title": "Search inward request",
   "required": [
-    "origin",
-    "destination",
+    "outwardProposals",
     "departureDate"
   ],
   "properties": {
-    "origin": {
-      "$ref": "#/definitions/station",
-      "title": "Origin"
-    },
-    "destination": {
-      "$ref": "#/definitions/station",
-      "title": "Destination"
+    "outwardProposals": {
+      "type": "array",
+      "title": "Propositions aller",
+      "items": {
+        "type": "string"
+      }
     },
     "departureDate": {
       "type": "string",
       "title": "Departure date",
-      "format": "date-time"
-    },
-    "inwardDepartureDate": {
-      "type": "string",
-      "title": "Inward departure date",
       "format": "date-time"
     }
   },
