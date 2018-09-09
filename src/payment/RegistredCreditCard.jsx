@@ -127,7 +127,9 @@ export default class RegistredCreditCard extends React.PureComponent {
               <b>N° de carte&nbsp;:</b> {maskedNumber}
             </p>
             <p className="registred-credit-card__details-line">
-              <b>Date d&apos;expiration&nbsp;:</b> {month}/{year}
+              <b>Date d&apos;expiration&nbsp;:</b> {month}
+              &thinsp;/&thinsp;
+              {year}
             </p>
           </div>
           <div className="registred-credit-card__select">
