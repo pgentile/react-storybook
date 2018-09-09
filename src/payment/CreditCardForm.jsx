@@ -45,77 +45,76 @@ class CreditCardForm extends React.PureComponent {
 
     const cards = creditCardType(values.cardNumber);
     const isMaestro = cards && cards.length === 1 && cards[0].type === "maestro";
-    const cvvHelpMessage = isMaestro
-      ? "Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
-      : null;
+    const cvvHelpMessage =
+      isMaestro && !values.cvv
+        ? "Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
+        : null;
 
     return (
       <form className={`credit-card-form ${className}`} onSubmit={handleSubmit}>
-        <div className="credit-card-form__line credit-card-form__line--card-number">
-          <FieldContainer
-            label="Numéro de carte"
-            disabled={disableForm}
-            errorMessage={touched.cardNumber && errors.cardNumber}
-          >
-            {props => (
-              <InputField
-                {...props}
-                name="cardNumber"
-                inputMode="numeric"
-                autoComplete="cc-number"
-                maxLength={19}
-                value={values.cardNumber}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            )}
-          </FieldContainer>
-        </div>
+        <FieldContainer
+          label="Numéro de carte"
+          className="credit-card-form__card-number"
+          disabled={disableForm}
+          errorMessage={touched.cardNumber && errors.cardNumber}
+        >
+          {props => (
+            <InputField
+              {...props}
+              name="cardNumber"
+              inputMode="numeric"
+              autoComplete="cc-number"
+              maxLength={19}
+              value={values.cardNumber}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+          )}
+        </FieldContainer>
 
-        <div className="credit-card-form__line credit-card-form__line--expiration-date">
-          <FieldContainer
-            label="Date d'expiration"
-            disabled={disableForm}
-            errorMessage={touched.expirationDate && errors.expirationDate}
-          >
-            {props => (
-              <DateInput
-                {...props}
-                mode="year-month"
-                smallYear
-                name="expirationDate"
-                value={values.expirationDate}
-                autoComplete={{ month: "cc-exp-month", year: "cc-exp-year" }}
-                onChange={value => setFieldValue("expirationDate", value)}
-                onBlur={() => setFieldTouched("expirationDate", true)}
-              />
-            )}
-          </FieldContainer>
-        </div>
+        <FieldContainer
+          label="Date d'expiration"
+          className="credit-card-form__expiration-date"
+          disabled={disableForm}
+          errorMessage={touched.expirationDate && errors.expirationDate}
+        >
+          {props => (
+            <DateInput
+              {...props}
+              mode="year-month"
+              smallYear
+              name="expirationDate"
+              value={values.expirationDate}
+              autoComplete={{ month: "cc-exp-month", year: "cc-exp-year" }}
+              onChange={value => setFieldValue("expirationDate", value)}
+              onBlur={() => setFieldTouched("expirationDate", true)}
+            />
+          )}
+        </FieldContainer>
 
-        <div className="credit-card-form__line credit-card-form__line--cvv">
-          <FieldContainer
-            label="Code de sécurité"
-            disabled={disableForm}
-            errorMessage={touched.cvv && errors.cvv}
-            helpMessage={cvvHelpMessage}
-          >
-            {props => (
-              <InputField
-                {...props}
-                name="cvv"
-                inputMode="numeric"
-                autoComplete="cc-csc"
-                maxLength={4}
-                value={values.cvv}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            )}
-          </FieldContainer>
-        </div>
+        <FieldContainer
+          label="Code de sécurité"
+          className="credit-card-form__cvv"
+          disabled={disableForm}
+          errorMessage={touched.cvv && errors.cvv}
+          helpMessage={cvvHelpMessage}
+          optional={isMaestro}
+        >
+          {props => (
+            <InputField
+              {...props}
+              name="cvv"
+              inputMode="numeric"
+              autoComplete="cc-csc"
+              maxLength={4}
+              value={values.cvv}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+          )}
+        </FieldContainer>
 
-        <div className="credit-card-form__line credit-card-form__line--button">
+        <div className="credit-card-form__button">
           <Button size="large" type="submit" showDisabled={!isValid} disabled={disableForm}>
             Payer&nbsp;
             <Price noColor price={price} />
@@ -153,7 +152,7 @@ export default withFormik({
     }
 
     if (values.cvv) {
-      const cvvLength = (cardValidation && cardValidation.card && cardValidation.card.code.size) || null;
+      const cvvLength = cardValidation && cardValidation.card && cardValidation.card.code.size;
       if (cvvLength && cvvLength !== values.cvv.length) {
         errors.cvv = `Le code de sécurité doit faire ${cvvLength} chiffres`;
       }

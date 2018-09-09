@@ -1,0 +1,16 @@
+.label {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+
+  &__optional {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: lighten(black, 60%);
+  }
+
+  &--disabled {
+    color: lighten(black, 60%);
+  }
+
+}

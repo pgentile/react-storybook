@@ -476,6 +476,50 @@ exports[`Storyshots Card Carte simple 1`] = `
 </div>
 `;
 
+exports[`Storyshots Carousel main 1`] = `
+<div
+  className="carousel "
+>
+  <div
+    className="carousel__items-container"
+    style={
+      Object {
+        "left": "0%",
+        "width": "300%",
+      }
+    }
+  >
+    <div
+      className="carousel__item"
+    >
+      <p>
+        Item 1
+        <br />
+        Item 1, line 2
+      </p>
+    </div>
+    <div
+      className="carousel__item"
+    >
+      <p>
+        Item 2
+      </p>
+    </div>
+    <div
+      className="carousel__item"
+    >
+      <p>
+        Item 3
+        <br />
+        Item 3, line 2
+        <br />
+        Item 3, line 3
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Encryption test 1`] = `
 <div
   style={
@@ -1156,10 +1200,10 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
 
 exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
 <div
-  className="form-field-container"
+  className="form-field-container "
 >
   <label
-    className="form-field-container__label"
+    className="label form-field-container__label"
     htmlFor="form-field-2"
   >
     Example
@@ -1169,8 +1213,10 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
   >
     <input
       className="form-input-field"
+      disabled={false}
       id="form-field-2"
       placeholder="Valeur d'exemple"
+      readOnly={false}
       type="text"
     />
   </div>
@@ -1184,10 +1230,10 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
 
 exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
 <div
-  className="form-field-container"
+  className="form-field-container "
 >
   <label
-    className="form-field-container__label"
+    className="label form-field-container__label"
     htmlFor="form-field-1"
   >
     Example
@@ -1197,8 +1243,10 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
   >
     <input
       className="form-input-field form-input-field--error"
+      disabled={false}
       id="form-field-1"
       placeholder="Valeur d'exemple"
+      readOnly={false}
       type="text"
     />
   </div>
@@ -1212,10 +1260,10 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
 
 exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
 <div
-  className="form-field-container"
+  className="form-field-container "
 >
   <label
-    className="form-field-container__label"
+    className="label form-field-container__label"
     htmlFor="form-field-3"
   >
     Example
@@ -1225,8 +1273,10 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
   >
     <input
       className="form-input-field form-input-field--error"
+      disabled={false}
       id="form-field-3"
       placeholder="Valeur d'exemple"
+      readOnly={false}
       type="text"
     />
   </div>
@@ -1240,10 +1290,10 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
 
 exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
 <div
-  className="form-field-container"
+  className="form-field-container "
 >
   <label
-    className="form-field-container__label form-field-container__label--disabled"
+    className="label label--disabled form-field-container__label"
     htmlFor="form-field-4"
   >
     Example
@@ -1256,6 +1306,7 @@ exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
       disabled={true}
       id="form-field-4"
       placeholder="Valeur d'exemple"
+      readOnly={false}
       type="text"
     />
   </div>
@@ -1264,10 +1315,10 @@ exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
 
 exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
 <div
-  className="form-field-container"
+  className="form-field-container "
 >
   <label
-    className="form-field-container__label"
+    className="label form-field-container__label"
     htmlFor="form-field-5"
   >
     Example
@@ -1277,6 +1328,7 @@ exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
   >
     <input
       className="form-input-field"
+      disabled={false}
       id="form-field-5"
       placeholder="Valeur d'exemple"
       readOnly={true}
@@ -1288,10 +1340,10 @@ exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
 
 exports[`Storyshots Forms / FieldContainer main 1`] = `
 <div
-  className="form-field-container"
+  className="form-field-container "
 >
   <label
-    className="form-field-container__label"
+    className="label form-field-container__label"
     htmlFor="form-field-0"
   >
     Example
@@ -1301,8 +1353,10 @@ exports[`Storyshots Forms / FieldContainer main 1`] = `
   >
     <input
       className="form-input-field"
+      disabled={false}
       id="form-field-0"
       placeholder="Valeur d'exemple"
+      readOnly={false}
       type="text"
     />
   </div>
@@ -1358,6 +1412,48 @@ exports[`Storyshots Forms / InputField main 1`] = `
   defaultValue=""
   type="text"
 />
+`;
+
+exports[`Storyshots Forms / Label disabled 1`] = `
+<label
+  className="label label--disabled "
+>
+  Label
+</label>
+`;
+
+exports[`Storyshots Forms / Label main 1`] = `
+<label
+  className="label "
+>
+  Label
+</label>
+`;
+
+exports[`Storyshots Forms / Label optional 1`] = `
+<label
+  className="label "
+>
+  Label
+  <span
+    className="label__optional"
+  >
+     (facultatif)
+  </span>
+</label>
+`;
+
+exports[`Storyshots Forms / Label optional and disabled 1`] = `
+<label
+  className="label label--disabled "
+>
+  Label
+  <span
+    className="label__optional"
+  >
+     (facultatif)
+  </span>
+</label>
 `;
 
 exports[`Storyshots Forms / NumberInput main 1`] = `
@@ -1663,7 +1759,7 @@ exports[`Storyshots Forms / SuperRadio without icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots JsonSchemaForm / JsonSchemaForm main 1`] = `
+exports[`Storyshots JsonSchemaForm SearchInwardForm 1`] = `
 <form
   className="rjsf"
   noValidate={false}
@@ -1676,7 +1772,107 @@ exports[`Storyshots JsonSchemaForm / JsonSchemaForm main 1`] = `
       <legend
         id="root__title"
       >
-        Search request
+        Search inward request
+      </legend>
+      <div
+        className="form-group field field-array"
+      >
+        <fieldset
+          className="field field-array field-array-of-string"
+        >
+          <legend
+            id="root_outwardProposals__title"
+          >
+            Propositions aller*
+          </legend>
+          <div
+            className="row array-item-list"
+          />
+          <div
+            className="row"
+          >
+            <p
+              className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+            >
+              <button
+                className="btn btn-info btn-add col-xs-12"
+                disabled={false}
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <i
+                  className="glyphicon glyphicon-plus"
+                />
+              </button>
+            </p>
+          </div>
+        </fieldset>
+        <div />
+        <div />
+      </div>
+      <div
+        className="form-group field field-string"
+      >
+        <label
+          className="control-label"
+          htmlFor="root_departureDate"
+        >
+          Departure date
+          <span
+            className="required"
+          >
+            *
+          </span>
+        </label>
+        <div />
+        <input
+          autoFocus={false}
+          className="form-control"
+          disabled={false}
+          id="root_departureDate"
+          label="Departure date"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          readOnly={false}
+          required={true}
+          type="datetime-local"
+          value=""
+        />
+        <div />
+        <div />
+      </div>
+    </fieldset>
+    <div />
+    <div />
+  </div>
+  <p>
+    <button
+      className="btn btn-info"
+      type="submit"
+    >
+      Submit
+    </button>
+  </p>
+</form>
+`;
+
+exports[`Storyshots JsonSchemaForm SearchOutwardForm 1`] = `
+<form
+  className="rjsf"
+  noValidate={false}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group field field-object"
+  >
+    <fieldset>
+      <legend
+        id="root__title"
+      >
+        Search outward request
       </legend>
       <div
         className="form-group field field-object"
@@ -1851,6 +2047,71 @@ exports[`Storyshots JsonSchemaForm / JsonSchemaForm main 1`] = `
         <div />
       </div>
       <div
+        className="form-group field field-integer"
+      >
+        <label
+          className="control-label"
+          htmlFor="root_maxVias"
+        >
+          Nombre maximum de vias
+        </label>
+        <div />
+        <input
+          autoFocus={false}
+          className="form-control"
+          disabled={false}
+          id="root_maxVias"
+          label="Nombre maximum de vias"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          readOnly={false}
+          required={false}
+          type="text"
+          value=""
+        />
+        <div />
+        <div />
+      </div>
+      <div
+        className="form-group field field-array"
+      >
+        <fieldset
+          className="field field-array field-array-of-object"
+        >
+          <legend
+            id="root_vias__title"
+          >
+            Vias
+          </legend>
+          <div
+            className="row array-item-list"
+          />
+          <div
+            className="row"
+          >
+            <p
+              className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+            >
+              <button
+                className="btn btn-info btn-add col-xs-12"
+                disabled={false}
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <i
+                  className="glyphicon glyphicon-plus"
+                />
+              </button>
+            </p>
+          </div>
+        </fieldset>
+        <div />
+        <div />
+      </div>
+      <div
         className="form-group field field-string"
       >
         <label
@@ -1911,6 +2172,766 @@ exports[`Storyshots JsonSchemaForm / JsonSchemaForm main 1`] = `
         <div />
         <div />
       </div>
+      <div
+        className="form-group field field-array"
+      >
+        <fieldset
+          className="field field-array field-array-of-object"
+        >
+          <legend
+            id="root_passengers__title"
+          >
+            Passagers
+          </legend>
+          <div
+            className="row array-item-list"
+          >
+            <div
+              className="array-item"
+            >
+              <div
+                className="col-xs-9"
+              >
+                <div
+                  className="form-group field field-object"
+                >
+                  <fieldset>
+                    <div
+                      className="form-group field field-string"
+                    >
+                      <label
+                        className="control-label"
+                        htmlFor="root_passengers_0_type"
+                      >
+                        Type de passager
+                      </label>
+                      <div />
+                      <select
+                        autoFocus={false}
+                        className="form-control"
+                        disabled={false}
+                        id="root_passengers_0_type"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        required={false}
+                        value="HUMAN"
+                      >
+                        <option
+                          value="HUMAN"
+                        >
+                          HUMAN
+                        </option>
+                        <option
+                          value="TODDLER_ON_KNEES"
+                        >
+                          TODDLER_ON_KNEES
+                        </option>
+                        <option
+                          value="ANIMAL"
+                        >
+                          ANIMAL
+                        </option>
+                      </select>
+                      <div />
+                      <div />
+                    </div>
+                    <div
+                      className="form-group field field-string"
+                    >
+                      <label
+                        className="control-label"
+                        htmlFor="root_passengers_0_ageRange"
+                      >
+                        Tranche d'âge
+                      </label>
+                      <div />
+                      <input
+                        autoFocus={false}
+                        className="form-control"
+                        disabled={false}
+                        id="root_passengers_0_ageRange"
+                        label="Tranche d'âge"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        readOnly={false}
+                        required={false}
+                        type="text"
+                        value=""
+                      />
+                      <div />
+                      <div />
+                    </div>
+                    <div
+                      className="form-group field field-integer"
+                    >
+                      <label
+                        className="control-label"
+                        htmlFor="root_passengers_0_ageAtTravelTime"
+                      >
+                        Âge à la date du voyage
+                      </label>
+                      <div />
+                      <input
+                        autoFocus={false}
+                        className="form-control"
+                        disabled={false}
+                        id="root_passengers_0_ageAtTravelTime"
+                        label="Âge à la date du voyage"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        readOnly={false}
+                        required={false}
+                        type="text"
+                        value=""
+                      />
+                      <div />
+                      <div />
+                    </div>
+                    <div
+                      className="form-group field field-string"
+                    >
+                      <label
+                        className="control-label"
+                        htmlFor="root_passengers_0_birthDate"
+                      >
+                        Date de naissance
+                      </label>
+                      <div />
+                      <input
+                        autoFocus={false}
+                        className="form-control"
+                        disabled={false}
+                        id="root_passengers_0_birthDate"
+                        label="Date de naissance"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        readOnly={false}
+                        required={false}
+                        type="date"
+                        value=""
+                      />
+                      <div />
+                      <div />
+                    </div>
+                    <div
+                      className="form-group field field-array"
+                    >
+                      <fieldset
+                        className="field field-array field-array-of-string"
+                      >
+                        <legend
+                          id="root_passengers_0_fareProfiles__title"
+                        >
+                          Profils tarifaires
+                        </legend>
+                        <div
+                          className="row array-item-list"
+                        />
+                        <div
+                          className="row"
+                        >
+                          <p
+                            className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                          >
+                            <button
+                              className="btn btn-info btn-add col-xs-12"
+                              disabled={false}
+                              onClick={[Function]}
+                              tabIndex="0"
+                              type="button"
+                            >
+                              <i
+                                className="glyphicon glyphicon-plus"
+                              />
+                            </button>
+                          </p>
+                        </div>
+                      </fieldset>
+                      <div />
+                      <div />
+                    </div>
+                    <div
+                      className="form-group field field-array"
+                    >
+                      <fieldset
+                        className="field field-array field-array-of-string"
+                      >
+                        <legend
+                          id="root_passengers_0_advantageCards__title"
+                        >
+                          N° de cartes d'avantages commerciaux
+                        </legend>
+                        <div
+                          className="row array-item-list"
+                        />
+                        <div
+                          className="row"
+                        >
+                          <p
+                            className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                          >
+                            <button
+                              className="btn btn-info btn-add col-xs-12"
+                              disabled={false}
+                              onClick={[Function]}
+                              tabIndex="0"
+                              type="button"
+                            >
+                              <i
+                                className="glyphicon glyphicon-plus"
+                              />
+                            </button>
+                          </p>
+                        </div>
+                      </fieldset>
+                      <div />
+                      <div />
+                    </div>
+                    <div
+                      className="form-group field field-string"
+                    >
+                      <label
+                        className="control-label"
+                        htmlFor="root_passengers_0_loyaltyCard"
+                      >
+                        N° de carte de fidélité
+                      </label>
+                      <div />
+                      <input
+                        autoFocus={false}
+                        className="form-control"
+                        disabled={false}
+                        id="root_passengers_0_loyaltyCard"
+                        label="N° de carte de fidélité"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        readOnly={false}
+                        required={false}
+                        type="text"
+                        value=""
+                      />
+                      <div />
+                      <div />
+                    </div>
+                  </fieldset>
+                  <div />
+                  <div />
+                </div>
+              </div>
+              <div
+                className="col-xs-3 array-item-toolbox"
+              >
+                <div
+                  className="btn-group"
+                  style={
+                    Object {
+                      "display": "flex",
+                      "justifyContent": "space-around",
+                    }
+                  }
+                >
+                  <button
+                    className="btn btn-danger array-item-remove"
+                    disabled={false}
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "flex": 1,
+                        "fontWeight": "bold",
+                        "paddingLeft": 6,
+                        "paddingRight": 6,
+                      }
+                    }
+                    tabIndex="-1"
+                    type="button"
+                  >
+                    <i
+                      className="glyphicon glyphicon-remove"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <p
+              className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+            >
+              <button
+                className="btn btn-info btn-add col-xs-12"
+                disabled={false}
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <i
+                  className="glyphicon glyphicon-plus"
+                />
+              </button>
+            </p>
+          </div>
+        </fieldset>
+        <div />
+        <div />
+      </div>
+    </fieldset>
+    <div />
+    <div />
+  </div>
+  <p>
+    <button
+      className="btn btn-info"
+      type="submit"
+    >
+      Submit
+    </button>
+  </p>
+</form>
+`;
+
+exports[`Storyshots JsonSchemaForm UpdateOwnerForm 1`] = `
+<form
+  className="rjsf"
+  noValidate={false}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group field field-object"
+  >
+    <fieldset>
+      <legend
+        id="root__title"
+      >
+        Mise à jour du commanditaire
+      </legend>
+      <div
+        className="form-group field field-string"
+      >
+        <label
+          className="control-label"
+          htmlFor="root_civility"
+        >
+          Civilité
+        </label>
+        <div />
+        <select
+          autoFocus={false}
+          className="form-control"
+          disabled={false}
+          id="root_civility"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          required={false}
+          value=""
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="MR"
+          >
+            MR
+          </option>
+          <option
+            value="MRS"
+          >
+            MRS
+          </option>
+        </select>
+        <div />
+        <div />
+      </div>
+      <div
+        className="form-group field field-string"
+      >
+        <label
+          className="control-label"
+          htmlFor="root_firstName"
+        >
+          Prénom
+        </label>
+        <div />
+        <input
+          autoFocus={false}
+          className="form-control"
+          disabled={false}
+          id="root_firstName"
+          label="Prénom"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          readOnly={false}
+          required={false}
+          type="text"
+          value=""
+        />
+        <div />
+        <div />
+      </div>
+      <div
+        className="form-group field field-string"
+      >
+        <label
+          className="control-label"
+          htmlFor="root_lastName"
+        >
+          Nom de famille
+        </label>
+        <div />
+        <input
+          autoFocus={false}
+          className="form-control"
+          disabled={false}
+          id="root_lastName"
+          label="Nom de famille"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          readOnly={false}
+          required={false}
+          type="text"
+          value=""
+        />
+        <div />
+        <div />
+      </div>
+      <div
+        className="form-group field field-string"
+      >
+        <label
+          className="control-label"
+          htmlFor="root_email"
+        >
+          Email
+        </label>
+        <div />
+        <input
+          autoFocus={false}
+          className="form-control"
+          disabled={false}
+          id="root_email"
+          label="Email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          readOnly={false}
+          required={false}
+          type="email"
+          value=""
+        />
+        <div />
+        <div />
+      </div>
+      <div
+        className="form-group field field-string"
+      >
+        <label
+          className="control-label"
+          htmlFor="root_phone"
+        >
+          N° de téléphone
+        </label>
+        <div />
+        <input
+          autoFocus={false}
+          className="form-control"
+          disabled={false}
+          id="root_phone"
+          label="N° de téléphone"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          readOnly={false}
+          required={false}
+          type="text"
+          value=""
+        />
+        <div />
+        <div />
+      </div>
+      <div
+        className="form-group field field-object"
+      >
+        <fieldset>
+          <legend
+            id="root_address__title"
+          >
+            Adresse postale
+          </legend>
+          <div
+            className="form-group field field-array"
+          >
+            <fieldset
+              className="field field-array field-array-of-string"
+            >
+              <legend
+                id="root_address_address__title"
+              >
+                Adresse
+              </legend>
+              <div
+                className="row array-item-list"
+              >
+                <div
+                  className="array-item"
+                >
+                  <div
+                    className="col-xs-9"
+                  >
+                    <div
+                      className="form-group field field-string"
+                    >
+                      <div />
+                      <div />
+                      <input
+                        autoFocus={false}
+                        className="form-control"
+                        disabled={false}
+                        id="root_address_address_0"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder=""
+                        readOnly={false}
+                        required={true}
+                        type="text"
+                        value=""
+                      />
+                      <div />
+                      <div />
+                    </div>
+                  </div>
+                  <div
+                    className="col-xs-3 array-item-toolbox"
+                  >
+                    <div
+                      className="btn-group"
+                      style={
+                        Object {
+                          "display": "flex",
+                          "justifyContent": "space-around",
+                        }
+                      }
+                    >
+                      <button
+                        className="btn btn-danger array-item-remove"
+                        disabled={false}
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "flex": 1,
+                            "fontWeight": "bold",
+                            "paddingLeft": 6,
+                            "paddingRight": 6,
+                          }
+                        }
+                        tabIndex="-1"
+                        type="button"
+                      >
+                        <i
+                          className="glyphicon glyphicon-remove"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row"
+              >
+                <p
+                  className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                >
+                  <button
+                    className="btn btn-info btn-add col-xs-12"
+                    disabled={false}
+                    onClick={[Function]}
+                    tabIndex="0"
+                    type="button"
+                  >
+                    <i
+                      className="glyphicon glyphicon-plus"
+                    />
+                  </button>
+                </p>
+              </div>
+            </fieldset>
+            <div />
+            <div />
+          </div>
+          <div
+            className="form-group field field-string"
+          >
+            <label
+              className="control-label"
+              htmlFor="root_address_city"
+            >
+              Ville
+            </label>
+            <div />
+            <input
+              autoFocus={false}
+              className="form-control"
+              disabled={false}
+              id="root_address_city"
+              label="Ville"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder=""
+              readOnly={false}
+              required={false}
+              type="text"
+              value=""
+            />
+            <div />
+            <div />
+          </div>
+          <div
+            className="form-group field field-string"
+          >
+            <label
+              className="control-label"
+              htmlFor="root_address_zipCode"
+            >
+              Code postal
+            </label>
+            <div />
+            <input
+              autoFocus={false}
+              className="form-control"
+              disabled={false}
+              id="root_address_zipCode"
+              label="Code postal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder=""
+              readOnly={false}
+              required={false}
+              type="text"
+              value=""
+            />
+            <div />
+            <div />
+          </div>
+          <div
+            className="form-group field field-string"
+          >
+            <label
+              className="control-label"
+              htmlFor="root_address_country"
+            >
+              Pays
+            </label>
+            <div />
+            <input
+              autoFocus={false}
+              className="form-control"
+              disabled={false}
+              id="root_address_country"
+              label="Pays"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder=""
+              readOnly={false}
+              required={false}
+              type="text"
+              value=""
+            />
+            <div />
+            <div />
+          </div>
+        </fieldset>
+        <div />
+        <div />
+      </div>
+    </fieldset>
+    <div />
+    <div />
+  </div>
+  <p>
+    <button
+      className="btn btn-info"
+      type="submit"
+    >
+      Submit
+    </button>
+  </p>
+</form>
+`;
+
+exports[`Storyshots JsonSchemaForm UpdatePassengersForm 1`] = `
+<form
+  className="rjsf"
+  noValidate={false}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group field field-object"
+  >
+    <fieldset>
+      <legend
+        id="root__title"
+      >
+        Mise à jour des passagers
+      </legend>
+      <div
+        className="form-group field field-array"
+      >
+        <fieldset
+          className="field field-array field-array-of-object"
+        >
+          <legend
+            id="root_passengers__title"
+          >
+            Passagers
+          </legend>
+          <div
+            className="row array-item-list"
+          />
+          <div
+            className="row"
+          >
+            <p
+              className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+            >
+              <button
+                className="btn btn-info btn-add col-xs-12"
+                disabled={false}
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <i
+                  className="glyphicon glyphicon-plus"
+                />
+              </button>
+            </p>
+          </div>
+        </fieldset>
+        <div />
+        <div />
+      </div>
     </fieldset>
     <div />
     <div />
@@ -1957,125 +2978,115 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="credit-card-form__line credit-card-form__line--card-number"
+    className="form-field-container credit-card-form__card-number"
   >
-    <div
-      className="form-field-container"
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-6"
     >
-      <label
-        className="form-field-container__label"
-        htmlFor="form-field-6"
-      >
-        Numéro de carte
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <input
-          autoComplete="cc-number"
-          className="form-input-field"
-          disabled={false}
-          id="form-field-6"
-          inputMode="numeric"
-          maxLength={19}
-          name="cardNumber"
-          onBlur={[Function]}
-          onChange={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
+      Numéro de carte
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="cc-number"
+        className="form-input-field"
+        disabled={false}
+        id="form-field-6"
+        inputMode="numeric"
+        maxLength={19}
+        name="cardNumber"
+        onBlur={[Function]}
+        onChange={[Function]}
+        readOnly={false}
+        type="text"
+        value=""
+      />
     </div>
   </div>
   <div
-    className="credit-card-form__line credit-card-form__line--expiration-date"
+    className="form-field-container credit-card-form__expiration-date"
   >
-    <div
-      className="form-field-container"
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-7"
     >
-      <label
-        className="form-field-container__label"
-        htmlFor="form-field-7"
+      Date d'expiration
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <fieldset
+        className="form-date-input "
       >
-        Date d'expiration
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <fieldset
-          className="form-date-input "
+        <input
+          autoComplete="cc-exp-month"
+          className="form-date-input__input form-date-input__input--month"
+          disabled={false}
+          id="form-field-7"
+          inputMode="numeric"
+          maxLength={2}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="MM"
+          readOnly={false}
+          type="tel"
+          value=""
+        />
+        <span
+          className="form-date-input__input-separator"
         >
-          <input
-            autoComplete="cc-exp-month"
-            className="form-date-input__input form-date-input__input--month"
-            disabled={false}
-            id="form-field-7"
-            inputMode="numeric"
-            maxLength={2}
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="MM"
-            readOnly={false}
-            type="tel"
-            value=""
-          />
-          <span
-            className="form-date-input__input-separator"
-          >
-            /
-          </span>
-          <input
-            autoComplete="cc-exp-year"
-            className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-            disabled={false}
-            inputMode="numeric"
-            maxLength={2}
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="AA"
-            readOnly={false}
-            type="tel"
-            value=""
-          />
-        </fieldset>
-      </div>
-    </div>
-  </div>
-  <div
-    className="credit-card-form__line credit-card-form__line--cvv"
-  >
-    <div
-      className="form-field-container"
-    >
-      <label
-        className="form-field-container__label"
-        htmlFor="form-field-8"
-      >
-        Code de sécurité
-      </label>
-      <div
-        className="form-field-container__field"
-      >
+          /
+        </span>
         <input
-          autoComplete="cc-csc"
-          className="form-input-field"
+          autoComplete="cc-exp-year"
+          className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
           disabled={false}
-          id="form-field-8"
           inputMode="numeric"
-          maxLength={4}
-          name="cvv"
+          maxLength={2}
           onBlur={[Function]}
           onChange={[Function]}
-          type="text"
+          onFocus={[Function]}
+          placeholder="AA"
+          readOnly={false}
+          type="tel"
           value=""
         />
-      </div>
+      </fieldset>
     </div>
   </div>
   <div
-    className="credit-card-form__line credit-card-form__line--button"
+    className="form-field-container credit-card-form__cvv"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-8"
+    >
+      Code de sécurité
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="cc-csc"
+        className="form-input-field"
+        disabled={false}
+        id="form-field-8"
+        inputMode="numeric"
+        maxLength={4}
+        name="cvv"
+        onBlur={[Function]}
+        onChange={[Function]}
+        readOnly={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="credit-card-form__button"
   >
     <button
       className="button button--disabled button--size-large "
@@ -4004,125 +5015,115 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           onSubmit={[Function]}
         >
           <div
-            className="credit-card-form__line credit-card-form__line--card-number"
+            className="form-field-container credit-card-form__card-number"
           >
-            <div
-              className="form-field-container"
+            <label
+              className="label form-field-container__label"
+              htmlFor="form-field-9"
             >
-              <label
-                className="form-field-container__label"
-                htmlFor="form-field-9"
-              >
-                Numéro de carte
-              </label>
-              <div
-                className="form-field-container__field"
-              >
-                <input
-                  autoComplete="cc-number"
-                  className="form-input-field"
-                  disabled={false}
-                  id="form-field-9"
-                  inputMode="numeric"
-                  maxLength={19}
-                  name="cardNumber"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  type="text"
-                  value=""
-                />
-              </div>
+              Numéro de carte
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-number"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-9"
+                inputMode="numeric"
+                maxLength={19}
+                name="cardNumber"
+                onBlur={[Function]}
+                onChange={[Function]}
+                readOnly={false}
+                type="text"
+                value=""
+              />
             </div>
           </div>
           <div
-            className="credit-card-form__line credit-card-form__line--expiration-date"
+            className="form-field-container credit-card-form__expiration-date"
           >
-            <div
-              className="form-field-container"
+            <label
+              className="label form-field-container__label"
+              htmlFor="form-field-10"
             >
-              <label
-                className="form-field-container__label"
-                htmlFor="form-field-10"
+              Date d'expiration
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <fieldset
+                className="form-date-input "
               >
-                Date d'expiration
-              </label>
-              <div
-                className="form-field-container__field"
-              >
-                <fieldset
-                  className="form-date-input "
+                <input
+                  autoComplete="cc-exp-month"
+                  className="form-date-input__input form-date-input__input--month"
+                  disabled={false}
+                  id="form-field-10"
+                  inputMode="numeric"
+                  maxLength={2}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="MM"
+                  readOnly={false}
+                  type="tel"
+                  value=""
+                />
+                <span
+                  className="form-date-input__input-separator"
                 >
-                  <input
-                    autoComplete="cc-exp-month"
-                    className="form-date-input__input form-date-input__input--month"
-                    disabled={false}
-                    id="form-field-10"
-                    inputMode="numeric"
-                    maxLength={2}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    placeholder="MM"
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
-                  <span
-                    className="form-date-input__input-separator"
-                  >
-                    /
-                  </span>
-                  <input
-                    autoComplete="cc-exp-year"
-                    className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-                    disabled={false}
-                    inputMode="numeric"
-                    maxLength={2}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    placeholder="AA"
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
-                </fieldset>
-              </div>
-            </div>
-          </div>
-          <div
-            className="credit-card-form__line credit-card-form__line--cvv"
-          >
-            <div
-              className="form-field-container"
-            >
-              <label
-                className="form-field-container__label"
-                htmlFor="form-field-11"
-              >
-                Code de sécurité
-              </label>
-              <div
-                className="form-field-container__field"
-              >
+                  /
+                </span>
                 <input
-                  autoComplete="cc-csc"
-                  className="form-input-field"
+                  autoComplete="cc-exp-year"
+                  className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
                   disabled={false}
-                  id="form-field-11"
                   inputMode="numeric"
-                  maxLength={4}
-                  name="cvv"
+                  maxLength={2}
                   onBlur={[Function]}
                   onChange={[Function]}
-                  type="text"
+                  onFocus={[Function]}
+                  placeholder="AA"
+                  readOnly={false}
+                  type="tel"
                   value=""
                 />
-              </div>
+              </fieldset>
             </div>
           </div>
           <div
-            className="credit-card-form__line credit-card-form__line--button"
+            className="form-field-container credit-card-form__cvv"
+          >
+            <label
+              className="label form-field-container__label"
+              htmlFor="form-field-11"
+            >
+              Code de sécurité
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-csc"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-11"
+                inputMode="numeric"
+                maxLength={4}
+                name="cvv"
+                onBlur={[Function]}
+                onChange={[Function]}
+                readOnly={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="credit-card-form__button"
           >
             <button
               className="button button--disabled button--size-large "
@@ -4487,125 +5488,115 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           onSubmit={[Function]}
         >
           <div
-            className="credit-card-form__line credit-card-form__line--card-number"
+            className="form-field-container credit-card-form__card-number"
           >
-            <div
-              className="form-field-container"
+            <label
+              className="label form-field-container__label"
+              htmlFor="form-field-12"
             >
-              <label
-                className="form-field-container__label"
-                htmlFor="form-field-12"
-              >
-                Numéro de carte
-              </label>
-              <div
-                className="form-field-container__field"
-              >
-                <input
-                  autoComplete="cc-number"
-                  className="form-input-field"
-                  disabled={false}
-                  id="form-field-12"
-                  inputMode="numeric"
-                  maxLength={19}
-                  name="cardNumber"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  type="text"
-                  value=""
-                />
-              </div>
+              Numéro de carte
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-number"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-12"
+                inputMode="numeric"
+                maxLength={19}
+                name="cardNumber"
+                onBlur={[Function]}
+                onChange={[Function]}
+                readOnly={false}
+                type="text"
+                value=""
+              />
             </div>
           </div>
           <div
-            className="credit-card-form__line credit-card-form__line--expiration-date"
+            className="form-field-container credit-card-form__expiration-date"
           >
-            <div
-              className="form-field-container"
+            <label
+              className="label form-field-container__label"
+              htmlFor="form-field-13"
             >
-              <label
-                className="form-field-container__label"
-                htmlFor="form-field-13"
+              Date d'expiration
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <fieldset
+                className="form-date-input "
               >
-                Date d'expiration
-              </label>
-              <div
-                className="form-field-container__field"
-              >
-                <fieldset
-                  className="form-date-input "
+                <input
+                  autoComplete="cc-exp-month"
+                  className="form-date-input__input form-date-input__input--month"
+                  disabled={false}
+                  id="form-field-13"
+                  inputMode="numeric"
+                  maxLength={2}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="MM"
+                  readOnly={false}
+                  type="tel"
+                  value=""
+                />
+                <span
+                  className="form-date-input__input-separator"
                 >
-                  <input
-                    autoComplete="cc-exp-month"
-                    className="form-date-input__input form-date-input__input--month"
-                    disabled={false}
-                    id="form-field-13"
-                    inputMode="numeric"
-                    maxLength={2}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    placeholder="MM"
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
-                  <span
-                    className="form-date-input__input-separator"
-                  >
-                    /
-                  </span>
-                  <input
-                    autoComplete="cc-exp-year"
-                    className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-                    disabled={false}
-                    inputMode="numeric"
-                    maxLength={2}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    placeholder="AA"
-                    readOnly={false}
-                    type="tel"
-                    value=""
-                  />
-                </fieldset>
-              </div>
-            </div>
-          </div>
-          <div
-            className="credit-card-form__line credit-card-form__line--cvv"
-          >
-            <div
-              className="form-field-container"
-            >
-              <label
-                className="form-field-container__label"
-                htmlFor="form-field-14"
-              >
-                Code de sécurité
-              </label>
-              <div
-                className="form-field-container__field"
-              >
+                  /
+                </span>
                 <input
-                  autoComplete="cc-csc"
-                  className="form-input-field"
+                  autoComplete="cc-exp-year"
+                  className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
                   disabled={false}
-                  id="form-field-14"
                   inputMode="numeric"
-                  maxLength={4}
-                  name="cvv"
+                  maxLength={2}
                   onBlur={[Function]}
                   onChange={[Function]}
-                  type="text"
+                  onFocus={[Function]}
+                  placeholder="AA"
+                  readOnly={false}
+                  type="tel"
                   value=""
                 />
-              </div>
+              </fieldset>
             </div>
           </div>
           <div
-            className="credit-card-form__line credit-card-form__line--button"
+            className="form-field-container credit-card-form__cvv"
+          >
+            <label
+              className="label form-field-container__label"
+              htmlFor="form-field-14"
+            >
+              Code de sécurité
+            </label>
+            <div
+              className="form-field-container__field"
+            >
+              <input
+                autoComplete="cc-csc"
+                className="form-input-field"
+                disabled={false}
+                id="form-field-14"
+                inputMode="numeric"
+                maxLength={4}
+                name="cvv"
+                onBlur={[Function]}
+                onChange={[Function]}
+                readOnly={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="credit-card-form__button"
           >
             <button
               className="button button--disabled button--size-large "
@@ -4785,125 +5776,115 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     onSubmit={[Function]}
   >
     <div
-      className="credit-card-form__line credit-card-form__line--card-number"
+      className="form-field-container credit-card-form__card-number"
     >
-      <div
-        className="form-field-container"
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-15"
       >
-        <label
-          className="form-field-container__label"
-          htmlFor="form-field-15"
-        >
-          Numéro de carte
-        </label>
-        <div
-          className="form-field-container__field"
-        >
-          <input
-            autoComplete="cc-number"
-            className="form-input-field"
-            disabled={false}
-            id="form-field-15"
-            inputMode="numeric"
-            maxLength={19}
-            name="cardNumber"
-            onBlur={[Function]}
-            onChange={[Function]}
-            type="text"
-            value=""
-          />
-        </div>
+        Numéro de carte
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoComplete="cc-number"
+          className="form-input-field"
+          disabled={false}
+          id="form-field-15"
+          inputMode="numeric"
+          maxLength={19}
+          name="cardNumber"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          type="text"
+          value=""
+        />
       </div>
     </div>
     <div
-      className="credit-card-form__line credit-card-form__line--expiration-date"
+      className="form-field-container credit-card-form__expiration-date"
     >
-      <div
-        className="form-field-container"
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-16"
       >
-        <label
-          className="form-field-container__label"
-          htmlFor="form-field-16"
+        Date d'expiration
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <fieldset
+          className="form-date-input "
         >
-          Date d'expiration
-        </label>
-        <div
-          className="form-field-container__field"
-        >
-          <fieldset
-            className="form-date-input "
+          <input
+            autoComplete="cc-exp-month"
+            className="form-date-input__input form-date-input__input--month"
+            disabled={false}
+            id="form-field-16"
+            inputMode="numeric"
+            maxLength={2}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="MM"
+            readOnly={false}
+            type="tel"
+            value=""
+          />
+          <span
+            className="form-date-input__input-separator"
           >
-            <input
-              autoComplete="cc-exp-month"
-              className="form-date-input__input form-date-input__input--month"
-              disabled={false}
-              id="form-field-16"
-              inputMode="numeric"
-              maxLength={2}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="MM"
-              readOnly={false}
-              type="tel"
-              value=""
-            />
-            <span
-              className="form-date-input__input-separator"
-            >
-              /
-            </span>
-            <input
-              autoComplete="cc-exp-year"
-              className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-              disabled={false}
-              inputMode="numeric"
-              maxLength={2}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="AA"
-              readOnly={false}
-              type="tel"
-              value=""
-            />
-          </fieldset>
-        </div>
-      </div>
-    </div>
-    <div
-      className="credit-card-form__line credit-card-form__line--cvv"
-    >
-      <div
-        className="form-field-container"
-      >
-        <label
-          className="form-field-container__label"
-          htmlFor="form-field-17"
-        >
-          Code de sécurité
-        </label>
-        <div
-          className="form-field-container__field"
-        >
+            /
+          </span>
           <input
-            autoComplete="cc-csc"
-            className="form-input-field"
+            autoComplete="cc-exp-year"
+            className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
             disabled={false}
-            id="form-field-17"
             inputMode="numeric"
-            maxLength={4}
-            name="cvv"
+            maxLength={2}
             onBlur={[Function]}
             onChange={[Function]}
-            type="text"
+            onFocus={[Function]}
+            placeholder="AA"
+            readOnly={false}
+            type="tel"
             value=""
           />
-        </div>
+        </fieldset>
       </div>
     </div>
     <div
-      className="credit-card-form__line credit-card-form__line--button"
+      className="form-field-container credit-card-form__cvv"
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-17"
+      >
+        Code de sécurité
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          autoComplete="cc-csc"
+          className="form-input-field"
+          disabled={false}
+          id="form-field-17"
+          inputMode="numeric"
+          maxLength={4}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="credit-card-form__button"
     >
       <button
         className="button button--disabled button--size-large "
@@ -5037,10 +6018,10 @@ exports[`Storyshots Payment / RegistredCreditCard Mastercard 1`] = `
               className="registred-credit-card__cvv"
             >
               <div
-                className="form-field-container"
+                className="form-field-container "
               >
                 <label
-                  className="form-field-container__label"
+                  className="label form-field-container__label"
                   htmlFor="form-field-19"
                 >
                   Code de sécurité
@@ -5051,8 +6032,10 @@ exports[`Storyshots Payment / RegistredCreditCard Mastercard 1`] = `
                   <input
                     autoComplete="cc-csc"
                     className="form-input-field"
+                    disabled={false}
                     id="form-field-19"
                     onChange={[Function]}
+                    readOnly={false}
                     type="text"
                     value=""
                   />
@@ -5176,10 +6159,10 @@ exports[`Storyshots Payment / RegistredCreditCard Visa 1`] = `
               className="registred-credit-card__cvv"
             >
               <div
-                className="form-field-container"
+                className="form-field-container "
               >
                 <label
-                  className="form-field-container__label"
+                  className="label form-field-container__label"
                   htmlFor="form-field-18"
                 >
                   Code de sécurité
@@ -5190,8 +6173,10 @@ exports[`Storyshots Payment / RegistredCreditCard Visa 1`] = `
                   <input
                     autoComplete="cc-csc"
                     className="form-input-field"
+                    disabled={false}
                     id="form-field-18"
                     onChange={[Function]}
+                    readOnly={false}
                     type="text"
                     value=""
                   />
@@ -5242,10 +6227,10 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     className="voucher-form__line"
   >
     <div
-      className="form-field-container"
+      className="form-field-container "
     >
       <label
-        className="form-field-container__label"
+        className="label form-field-container__label"
         htmlFor="form-field-20"
       >
         Code promo
@@ -5262,6 +6247,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          readOnly={false}
           spellCheck={false}
           type="text"
           value=""
@@ -5307,10 +6293,10 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     className="voucher-form__line"
   >
     <div
-      className="form-field-container"
+      className="form-field-container "
     >
       <label
-        className="form-field-container__label"
+        className="label form-field-container__label"
         htmlFor="form-field-21"
       >
         Code promo
@@ -5327,6 +6313,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          readOnly={false}
           spellCheck={false}
           type="text"
           value="EURO2016"
@@ -5372,10 +6359,10 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     className="voucher-form__line"
   >
     <div
-      className="form-field-container"
+      className="form-field-container "
     >
       <label
-        className="form-field-container__label"
+        className="label form-field-container__label"
         htmlFor="form-field-23"
       >
         Code promo
@@ -5392,6 +6379,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          readOnly={false}
           spellCheck={false}
           type="text"
           value="CODE21"
@@ -5437,10 +6425,10 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
     className="voucher-form__line"
   >
     <div
-      className="form-field-container"
+      className="form-field-container "
     >
       <label
-        className="form-field-container__label"
+        className="label form-field-container__label"
         htmlFor="form-field-22"
       >
         Code promo
@@ -5457,6 +6445,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          readOnly={false}
           spellCheck={false}
           type="text"
           value="CODE21"

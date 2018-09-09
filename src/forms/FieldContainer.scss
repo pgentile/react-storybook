@@ -6,14 +6,6 @@
     margin: 0;
     padding: 0;
     margin-bottom: $margin;
-
-    font-size: 1rem;
-    color: black;
-    font-weight: bold;
-
-    &--disabled {
-      color: lighten(black, 60%);
-    }
   }
 
   &__error {

@@ -1,28 +1,51 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Label from "./Label";
+
 import "./FieldContainer.scss";
-import bemModifiers from "../utils/bemModifiers";
 
 export default class FieldContainer extends React.PureComponent {
   static count = 0;
 
   static propTypes = {
+    as: PropTypes.string,
+    className: PropTypes.string,
     label: PropTypes.node,
     id: PropTypes.string,
     children: PropTypes.func.isRequired,
     errorMessage: PropTypes.node,
     helpMessage: PropTypes.node,
     disabled: PropTypes.bool,
+    optional: PropTypes.bool,
     readOnly: PropTypes.bool
+  };
+
+  static defaultProps = {
+    as: "div",
+    className: "",
+    disabled: false,
+    optional: false,
+    readOnly: false
   };
 
   generatedId = `form-field-${FieldContainer.count++}`;
 
   render() {
-    const { id, label, children, errorMessage, helpMessage, disabled, readOnly } = this.props;
-    const showErrorMessage = !!errorMessage;
-    const showHelpMessage = !!helpMessage && !showErrorMessage;
+    const {
+      as: Element,
+      className,
+      id,
+      label,
+      children,
+      errorMessage,
+      helpMessage,
+      disabled,
+      optional,
+      readOnly
+    } = this.props;
+    const showErrorMessage = !!errorMessage && !disabled;
+    const showHelpMessage = !!helpMessage && !showErrorMessage && !disabled;
     const inputId = id || this.generatedId;
 
     const fieldProps = {
@@ -32,16 +55,12 @@ export default class FieldContainer extends React.PureComponent {
       readOnly
     };
 
-    const labelClassName = bemModifiers("form-field-container__label", {
-      disabled
-    });
-
     return (
-      <div className="form-field-container">
+      <Element className={`form-field-container ${className}`}>
         {label && (
-          <label className={labelClassName} htmlFor={inputId}>
+          <Label className="form-field-container__label" htmlFor={inputId} optional={optional} disabled={disabled}>
             {label}
-          </label>
+          </Label>
         )}
 
         <div className="form-field-container__field">{children(fieldProps)}</div>
@@ -49,7 +68,7 @@ export default class FieldContainer extends React.PureComponent {
         {showErrorMessage && <p className="form-field-container__error">{errorMessage}</p>}
 
         {showHelpMessage && <p className="form-field-container__help">{helpMessage}</p>}
-      </div>
+      </Element>
     );
   }
 }
