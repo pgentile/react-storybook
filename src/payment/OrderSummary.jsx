@@ -19,12 +19,12 @@ export const orderItemPropType = PropTypes.shape({
 
 export default class OrderSummary extends React.PureComponent {
   static propTypes = {
-    items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired
+    items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired,
+    totalPrice: Price.propTypes.price
   };
 
   render() {
-    const { items } = this.props;
-    const totalPrice = computeTotalPrice(items.map(item => item.price));
+    const { items, totalPrice } = this.props;
     const hasManyItems = items.length > 1;
 
     return (
@@ -35,20 +35,6 @@ export default class OrderSummary extends React.PureComponent {
       </Card>
     );
   }
-}
-
-function computeTotalPrice(prices) {
-  if (prices.length === 0) {
-    return {
-      value: 0,
-      currency: "€"
-    };
-  }
-
-  return {
-    value: prices.map(price => price.value).reduce((left, right) => left + right, 0),
-    currency: prices[0].currency
-  };
 }
 
 class OrderSummaryDetails extends React.PureComponent {

@@ -54,6 +54,11 @@ const donationItem = {
   onCancel: cancelDonation
 };
 
+const totalPrice = {
+  value: 123,
+  currency: "€"
+};
+
 const onActions = {
   onAddVoucher: action("add voucher"),
   onCancelVoucher: cancelVoucher,
@@ -65,14 +70,14 @@ const onActions = {
 
 storiesOf("Payment / OrderEditor", module)
   .add("Billets uniquement", () => {
-    return <OrderEditor items={[billetsItem]} {...onActions} />;
+    return <OrderEditor items={[billetsItem]} totalPrice={totalPrice} {...onActions} />;
   })
   .add("Billets & assurances", () => {
-    return <OrderEditor items={[billetsItem, assurancesItem]} {...onActions} />;
+    return <OrderEditor items={[billetsItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
   })
   .add("Avec un code promo", () => {
-    return <OrderEditor items={[billetsItem, voucherItem, assurancesItem]} {...onActions} />;
+    return <OrderEditor items={[billetsItem, voucherItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
   })
   .add("Avec un don", () => {
-    return <OrderEditor items={[billetsItem, donationItem]} {...onActions} />;
+    return <OrderEditor items={[billetsItem, donationItem]} totalPrice={totalPrice} {...onActions} />;
   });

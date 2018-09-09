@@ -114,7 +114,7 @@ export default class PaymentForm extends React.PureComponent {
           />
         )}
         {!paymentMeanIsRegistredCards && (
-          <CreditCardForm className="payment-form__credit-card-form" price={price} onPay={this.onPay} />
+          <CreditCardForm className="payment-form__credit-card-form" totalPrice={price} onPay={this.onPay} />
         )}
       </div>
     );

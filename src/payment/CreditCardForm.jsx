@@ -16,7 +16,7 @@ import "./CreditCardForm.scss";
 class CreditCardForm extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    price: PropTypes.shape({
+    totalPrice: PropTypes.shape({
       value: PropTypes.number.isRequired,
       currency: PropTypes.string.isRequired
     }).isRequired,
@@ -30,7 +30,7 @@ class CreditCardForm extends React.PureComponent {
   render() {
     const {
       className,
-      price,
+      totalPrice,
       values,
       errors,
       touched,
@@ -118,7 +118,7 @@ class CreditCardForm extends React.PureComponent {
         <div className="credit-card-form__button">
           <Button size="large" type="submit" showDisabled={!isValid} disabled={disableForm}>
             Payer&nbsp;
-            <Price noColor price={price} />
+            <Price noColor price={totalPrice} />
           </Button>
         </div>
       </form>

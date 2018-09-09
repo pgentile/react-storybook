@@ -56,19 +56,24 @@ const donationItem = {
   onCancel: cancelDonation
 };
 
+const totalPrice = {
+  value: 123,
+  currency: "€"
+};
+
 storiesOf("Payment / OrderSummary", module)
   .add("Billets uniquement", () => {
-    return <OrderSummary items={[ticketItem]} />;
+    return <OrderSummary items={[ticketItem]} totalPrice={totalPrice} />;
   })
   .add("Billets & assurances", () => {
-    return <OrderSummary items={[ticketItem, insuranceItem]} />;
+    return <OrderSummary items={[ticketItem, insuranceItem]} totalPrice={totalPrice} />;
   })
   .add("Avec un code promo", () => {
-    return <OrderSummary items={[ticketItem, voucherItem, insuranceItem]} />;
+    return <OrderSummary items={[ticketItem, voucherItem, insuranceItem]} totalPrice={totalPrice} />;
   })
   .add("Avec un don", () => {
-    return <OrderSummary items={[ticketItem, donationItem]} />;
+    return <OrderSummary items={[ticketItem, donationItem]} totalPrice={totalPrice} />;
   })
   .add("Tous les types", () => {
-    return <OrderSummary items={[ticketItem, voucherItem, insuranceItem, donationItem]} />;
+    return <OrderSummary items={[ticketItem, voucherItem, insuranceItem, donationItem]} totalPrice={totalPrice} />;
   });

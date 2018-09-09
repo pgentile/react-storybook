@@ -1,4 +1,5 @@
 import { FULFILLED } from "redux-promise-middleware";
+import { createSelector } from "reselect";
 
 import createScope from "./createScope";
 import sleep from "../../utils/sleep";
@@ -16,50 +17,53 @@ const scope = createScope(state => state.payment);
 
 export const selectPaymentItems = scope(payment => payment.items);
 
-export const selectTickets = scope(payment => {
-  return selectPaymentItems.withinScope(payment).filter(item => item.type === TICKET_TYPE);
-});
+export const selectTickets = scope(
+  createSelector(payment => payment.items, items => items.filter(item => item.type === TICKET_TYPE))
+);
 
-export const selectPaymentItemsWithoutVoucher = scope(payment => {
-  return selectPaymentItems.withinScope(payment).filter(item => item.type !== VOUCHER_TYPE);
-});
+export const selectPaymentItemsWithoutVoucher = scope(
+  createSelector(payment => payment.items, items => items.filter(item => item.type !== VOUCHER_TYPE))
+);
 
-export const selectPaymentItemsWithoutDonation = scope(payment => {
-  return selectPaymentItems.withinScope(payment).filter(item => item.type !== DONATION_TYPE);
-});
+export const selectPaymentItemsWithoutDonation = scope(
+  createSelector(payment => payment.items, items => items.filter(item => item.type !== DONATION_TYPE))
+);
 
-export const selectPaymentItemsWithoutInsurance = scope(payment => {
-  return selectPaymentItems.withinScope(payment).filter(item => item.type !== INSURANCE_TYPE);
-});
+export const selectPaymentItemsWithoutInsurance = scope(
+  createSelector(payment => payment.items, items => items.filter(item => item.type !== INSURANCE_TYPE))
+);
 
-export const selectVoucher = scope(payment => {
-  return selectPaymentItems.withinScope(payment).find(item => item.type === VOUCHER_TYPE) || null;
-});
+export const selectVoucher = scope(
+  createSelector(payment => payment.items, items => items.find(item => item.type === VOUCHER_TYPE) || null)
+);
 
-export const selectDonation = scope(payment => {
-  return selectPaymentItems.withinScope(payment).find(item => item.type === DONATION_TYPE) || null;
-});
+export const selectDonation = scope(
+  createSelector(payment => payment.items, items => items.find(item => item.type === DONATION_TYPE) || null)
+);
 
 const ZERO_EURO = Object.freeze({
   value: 0,
-  currency: "EUR"
+  currency: "€"
 });
 
-export const selectTotalAmount = scope(payment => {
-  const items = selectPaymentItems.withinScope(payment);
+export const selectTotalAmount = scope(
+  createSelector(
+    payment => payment.items,
+    items => {
+      if (items.length === 0) {
+        return ZERO_EURO;
+      }
 
-  if (items.length === 0) {
-    return ZERO_EURO;
-  }
+      const value = items.reduce((totalValue, item) => totalValue + item.price.value, 0);
+      const currency = items[0].price.currency;
 
-  const value = items.reduce((left, right) => left.price.value + right.price.value, 0);
-  const currency = items[0].price.currency;
-
-  return {
-    value,
-    currency
-  };
-});
+      return {
+        value,
+        currency
+      };
+    }
+  )
+);
 
 // Actions
 
@@ -143,23 +147,9 @@ export function cancelDonation() {
   };
 }
 
-class PaymentValidationError extends Error {
-  constructor(details) {
-    super("Payment error");
-    this.details = details;
-  }
-}
-
 export function pay() {
   const payOnServer = async () => {
     await sleep(2000);
-
-    throw new PaymentValidationError({
-      type: "VALIDATION",
-      errors: {
-        cardNumber: "Invalid card number"
-      }
-    });
   };
 
   return {

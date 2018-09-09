@@ -9,11 +9,13 @@ import {
   addDonation,
   cancelDonation,
   pay,
-  selectPaymentItems
+  selectPaymentItems,
+  selectTotalAmount
 } from "../redux/reducers/payment";
 
 const mapStateToProps = state => ({
-  items: selectPaymentItems(state)
+  items: selectPaymentItems(state),
+  totalPrice: selectTotalAmount(state)
 });
 
 const mapDispatchToProps = {

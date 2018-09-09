@@ -26,10 +26,16 @@ const items = [
   }
 ];
 
+const totalPrice = {
+  value: 123,
+  currency: "€"
+};
+
 storiesOf("Payment / PaymentContainer", module).add("main", () => {
   return (
     <PaymentContainer
       items={items}
+      totalPrice={totalPrice}
       onAddVoucher={action("add voucher")}
       onCancelVoucher={action("cancel voucher")}
       onAddInsurance={action("add insurance")}

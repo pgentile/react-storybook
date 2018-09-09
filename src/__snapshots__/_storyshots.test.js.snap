@@ -3475,13 +3475,13 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         <span
           className="price__units"
         >
-          113
+          123
         </span>
         <span
           className="price__remaining"
         >
           , 
-          70
+          00
            
           €
         </span>
@@ -3700,13 +3700,13 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
         <span
           className="price__units"
         >
-          110
+          123
         </span>
         <span
           className="price__remaining"
         >
           , 
-          80
+          00
            
           €
         </span>
@@ -3895,13 +3895,13 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
         <span
           className="price__units"
         >
-          115
+          123
         </span>
         <span
           className="price__remaining"
         >
           , 
-          70
+          00
            
           €
         </span>
@@ -4046,13 +4046,13 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
         <span
           className="price__units"
         >
-          109
+          123
         </span>
         <span
           className="price__remaining"
         >
           , 
-          80
+          00
            
           €
         </span>
@@ -4345,13 +4345,13 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
       <span
         className="price__units"
       >
-        113
+        123
       </span>
       <span
         className="price__remaining"
       >
         , 
-        70
+        00
          
         €
       </span>
@@ -4459,13 +4459,13 @@ exports[`Storyshots Payment / OrderSummary Avec un don 1`] = `
       <span
         className="price__units"
       >
-        110
+        123
       </span>
       <span
         className="price__remaining"
       >
         , 
-        80
+        00
          
         €
       </span>
@@ -4573,13 +4573,13 @@ exports[`Storyshots Payment / OrderSummary Billets & assurances 1`] = `
       <span
         className="price__units"
       >
-        115
+        123
       </span>
       <span
         className="price__remaining"
       >
         , 
-        70
+        00
          
         €
       </span>
@@ -4606,13 +4606,13 @@ exports[`Storyshots Payment / OrderSummary Billets uniquement 1`] = `
       <span
         className="price__units"
       >
-        109
+        123
       </span>
       <span
         className="price__remaining"
       >
         , 
-        80
+        00
          
         €
       </span>
@@ -4816,13 +4816,13 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
       <span
         className="price__units"
       >
-        114
+        123
       </span>
       <span
         className="price__remaining"
       >
         , 
-        70
+        00
          
         €
       </span>
@@ -4944,13 +4944,13 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             <span
               className="price__units"
             >
-              115
+              123
             </span>
             <span
               className="price__remaining"
             >
               , 
-              70
+              00
                
               €
             </span>
@@ -5366,13 +5366,13 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 <span
                   className="price__units"
                 >
-                  115
+                  123
                 </span>
                 <span
                   className="price__remaining"
                 >
                   , 
-                  70
+                  00
                    
                   €
                 </span>
