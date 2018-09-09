@@ -569,6 +569,7 @@ exports[`Storyshots Forms / CheckableImageInput checked 1`] = `
 <span
   className="checkable-image-input checkable-image-input--checked "
   onClick={[Function]}
+  onKeyPress={[Function]}
   tabIndex={0}
 >
   <input
@@ -600,6 +601,7 @@ exports[`Storyshots Forms / CheckableImageInput disabled 1`] = `
 <span
   className="checkable-image-input checkable-image-input--disabled "
   onClick={[Function]}
+  onKeyPress={[Function]}
   tabIndex={0}
 >
   <input
@@ -632,6 +634,7 @@ exports[`Storyshots Forms / CheckableImageInput disabled and checked 1`] = `
 <span
   className="checkable-image-input checkable-image-input--checked checkable-image-input--disabled "
   onClick={[Function]}
+  onKeyPress={[Function]}
   tabIndex={0}
 >
   <input
@@ -665,6 +668,7 @@ Array [
   <span
     className="checkable-image-input checkable-image-input--checked "
     onClick={[Function]}
+    onKeyPress={[Function]}
     tabIndex={0}
   >
     <input
@@ -693,6 +697,7 @@ Array [
   <span
     className="checkable-image-input "
     onClick={[Function]}
+    onKeyPress={[Function]}
     tabIndex={0}
   >
     <input
@@ -721,6 +726,7 @@ Array [
   <span
     className="checkable-image-input "
     onClick={[Function]}
+    onKeyPress={[Function]}
     tabIndex={0}
   >
     <input
@@ -753,6 +759,7 @@ exports[`Storyshots Forms / CheckableImageInput unchecked 1`] = `
 <span
   className="checkable-image-input "
   onClick={[Function]}
+  onKeyPress={[Function]}
   tabIndex={0}
 >
   <input
@@ -4884,6 +4891,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -4916,6 +4924,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -4948,6 +4957,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -4980,6 +4990,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -5357,6 +5368,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -5389,6 +5401,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -5421,6 +5434,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -5453,6 +5467,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           <span
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
+            onKeyPress={[Function]}
             tabIndex={0}
           >
             <input
@@ -5645,6 +5660,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     <span
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
+      onKeyPress={[Function]}
       tabIndex={0}
     >
       <input
@@ -5677,6 +5693,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     <span
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
+      onKeyPress={[Function]}
       tabIndex={0}
     >
       <input
@@ -5709,6 +5726,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     <span
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
+      onKeyPress={[Function]}
       tabIndex={0}
     >
       <input
@@ -5741,6 +5759,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     <span
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
+      onKeyPress={[Function]}
       tabIndex={0}
     >
       <input
