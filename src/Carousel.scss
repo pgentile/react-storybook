@@ -1,0 +1,14 @@
+.carousel {
+  overflow: hidden;
+
+  &__items-container{
+    position: relative;
+    display: flex;
+
+    transition: left 0.5s linear;
+  }
+
+  &__item {
+    width: 100%;
+  }
+}
