@@ -94,10 +94,10 @@ export default class Expandable extends React.PureComponent {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, expanded } = this.props;
 
     return (
-      <div className="expandable">
+      <div className="expandable" aria-hidden={!expanded}>
         <div className="expandable__window" ref={this.windowRef}>
           <div className="expandable__content" ref={this.contentRef}>
             {children}

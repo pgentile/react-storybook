@@ -24,8 +24,12 @@ export default class Flippable extends React.PureComponent {
 
     return (
       <div className={realClassName}>
-        <div className="flippable__face flippable__face--foreground">{foreground}</div>
-        <div className="flippable__face flippable__face--background">{background}</div>
+        <div className="flippable__face flippable__face--foreground" aria-hidden={flipped}>
+          {foreground}
+        </div>
+        <div className="flippable__face flippable__face--background" aria-hidden={!flipped}>
+          {background}
+        </div>
       </div>
     );
   }

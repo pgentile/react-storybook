@@ -17,21 +17,25 @@ export default class CheckableImageInput extends React.PureComponent {
     value: PropTypes.string,
     tabIndex: PropTypes.number,
     onChange: PropTypes.func,
-    onKeyPress: PropTypes.func
+    onKeyPress: PropTypes.func,
+    onClick: PropTypes.func
   };
 
   static defaultProps = {
     className: "",
-    checked: false,
     type: "radio",
     tabIndex: 0
   };
 
   inputRef = createRef();
 
-  onClick = () => {
+  onClick = event => {
     if (this.inputRef.current) {
       this.inputRef.current.click();
+    }
+
+    if (this.props.onClick) {
+      this.props.onClick(event);
     }
   };
 
@@ -45,8 +49,24 @@ export default class CheckableImageInput extends React.PureComponent {
     }
   };
 
+  onInputClick = event => {
+    event.stopPropagation();
+  };
+
   render() {
-    const { className, children, checked, type, name, value, disabled, readOnly, tabIndex, onChange } = this.props;
+    const {
+      className,
+      children,
+      checked,
+      type,
+      name,
+      value,
+      disabled,
+      readOnly,
+      tabIndex,
+      onChange,
+      ...otherProps
+    } = this.props;
 
     const realClassName = bemModifiers("checkable-image-input", {
       checked,
@@ -56,10 +76,15 @@ export default class CheckableImageInput extends React.PureComponent {
 
     return (
       <span
+        {...otherProps}
         className={realClassName + " " + className}
         onClick={this.onClick}
         onKeyPress={this.onKeyPress}
         tabIndex={tabIndex}
+        role={type}
+        aria-checked={checked}
+        aria-disabled={disabled}
+        aria-readonly={readOnly}
       >
         <input
           className="checkable-image-input__input"
@@ -72,6 +97,7 @@ export default class CheckableImageInput extends React.PureComponent {
           disabled={disabled}
           readOnly={readOnly}
           onChange={onChange}
+          onClick={this.onInputClick}
         />
         {children}
       </span>

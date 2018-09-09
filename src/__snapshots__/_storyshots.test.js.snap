@@ -539,6 +539,7 @@ exports[`Storyshots Flippable main 1`] = `
   className="flippable"
 >
   <div
+    aria-hidden={false}
     className="flippable__face flippable__face--foreground"
   >
     <div
@@ -551,6 +552,7 @@ exports[`Storyshots Flippable main 1`] = `
     </div>
   </div>
   <div
+    aria-hidden={true}
     className="flippable__face flippable__face--background"
   >
     <div
@@ -567,14 +569,18 @@ exports[`Storyshots Flippable main 1`] = `
 
 exports[`Storyshots Forms / CheckableImageInput checked 1`] = `
 <span
+  aria-checked={true}
   className="checkable-image-input checkable-image-input--checked "
   onClick={[Function]}
   onKeyPress={[Function]}
+  role="radio"
   tabIndex={0}
 >
   <input
     checked={true}
     className="checkable-image-input__input"
+    onChange={[Function]}
+    onClick={[Function]}
     tabIndex={-1}
     type="radio"
   />
@@ -599,15 +605,18 @@ exports[`Storyshots Forms / CheckableImageInput checked 1`] = `
 
 exports[`Storyshots Forms / CheckableImageInput disabled 1`] = `
 <span
+  aria-disabled={true}
   className="checkable-image-input checkable-image-input--disabled "
   onClick={[Function]}
   onKeyPress={[Function]}
+  role="radio"
   tabIndex={0}
 >
   <input
-    checked={false}
     className="checkable-image-input__input"
     disabled={true}
+    onChange={[Function]}
+    onClick={[Function]}
     tabIndex={-1}
     type="radio"
   />
@@ -632,15 +641,20 @@ exports[`Storyshots Forms / CheckableImageInput disabled 1`] = `
 
 exports[`Storyshots Forms / CheckableImageInput disabled and checked 1`] = `
 <span
+  aria-checked={true}
+  aria-disabled={true}
   className="checkable-image-input checkable-image-input--checked checkable-image-input--disabled "
   onClick={[Function]}
   onKeyPress={[Function]}
+  role="radio"
   tabIndex={0}
 >
   <input
     checked={true}
     className="checkable-image-input__input"
     disabled={true}
+    onChange={[Function]}
+    onClick={[Function]}
     tabIndex={-1}
     type="radio"
   />
@@ -666,14 +680,18 @@ exports[`Storyshots Forms / CheckableImageInput disabled and checked 1`] = `
 exports[`Storyshots Forms / CheckableImageInput many 1`] = `
 Array [
   <span
+    aria-checked={true}
     className="checkable-image-input checkable-image-input--checked "
     onClick={[Function]}
     onKeyPress={[Function]}
+    role="radio"
     tabIndex={0}
   >
     <input
       checked={true}
       className="checkable-image-input__input"
+      onChange={[Function]}
+      onClick={[Function]}
       tabIndex={-1}
       type="radio"
     />
@@ -698,11 +716,13 @@ Array [
     className="checkable-image-input "
     onClick={[Function]}
     onKeyPress={[Function]}
+    role="radio"
     tabIndex={0}
   >
     <input
-      checked={false}
       className="checkable-image-input__input"
+      onChange={[Function]}
+      onClick={[Function]}
       tabIndex={-1}
       type="radio"
     />
@@ -727,11 +747,13 @@ Array [
     className="checkable-image-input "
     onClick={[Function]}
     onKeyPress={[Function]}
+    role="radio"
     tabIndex={0}
   >
     <input
-      checked={false}
       className="checkable-image-input__input"
+      onChange={[Function]}
+      onClick={[Function]}
       tabIndex={-1}
       type="radio"
     />
@@ -755,16 +777,54 @@ Array [
 ]
 `;
 
+exports[`Storyshots Forms / CheckableImageInput readOnly 1`] = `
+<span
+  aria-readonly={true}
+  className="checkable-image-input checkable-image-input--read-only "
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="radio"
+  tabIndex={0}
+>
+  <input
+    className="checkable-image-input__input"
+    onChange={[Function]}
+    onClick={[Function]}
+    readOnly={true}
+    tabIndex={-1}
+    type="radio"
+  />
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+    data-icon="cc-visa"
+    data-prefix="fab"
+    role="img"
+    style={Object {}}
+    viewBox="0 0 576 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2.3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4.2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2.2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2.1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
+</span>
+`;
+
 exports[`Storyshots Forms / CheckableImageInput unchecked 1`] = `
 <span
   className="checkable-image-input "
   onClick={[Function]}
   onKeyPress={[Function]}
+  role="radio"
   tabIndex={0}
 >
   <input
-    checked={false}
     className="checkable-image-input__input"
+    onChange={[Function]}
+    onClick={[Function]}
     tabIndex={-1}
     type="radio"
   />
@@ -1633,6 +1693,7 @@ exports[`Storyshots Forms / SuperRadio help 1`] = `
     </div>
   </div>
   <div
+    aria-hidden={true}
     className="expandable"
   >
     <div
@@ -3197,6 +3258,7 @@ exports[`Storyshots Payment / Donation / DonationProposal main 1`] = `
     </p>
   </div>
   <div
+    aria-hidden={true}
     className="expandable"
   >
     <div
@@ -3502,6 +3564,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         </p>
       </div>
       <div
+        aria-hidden={true}
         className="expandable"
       >
         <div
@@ -3931,6 +3994,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
         </p>
       </div>
       <div
+        aria-hidden={true}
         className="expandable"
       >
         <div
@@ -4108,6 +4172,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
         </p>
       </div>
       <div
+        aria-hidden={true}
         className="expandable"
       >
         <div
@@ -4978,6 +5043,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             </p>
           </div>
           <div
+            aria-hidden={true}
             className="expandable"
           >
             <div
@@ -5025,9 +5091,12 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           className="payment-form__means"
         >
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5036,6 +5105,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="registred-cards"
@@ -5058,9 +5128,12 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             </svg>
           </span>
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5069,6 +5142,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="visa"
@@ -5091,9 +5165,12 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             </svg>
           </span>
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5102,6 +5179,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="mastercard"
@@ -5124,9 +5202,12 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             </svg>
           </span>
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5135,6 +5216,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="american-express"
@@ -5462,6 +5544,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             </p>
           </div>
           <div
+            aria-hidden={true}
             className="expandable"
           >
             <div
@@ -5509,9 +5592,12 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
           className="payment-form__means"
         >
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5520,6 +5606,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="registred-cards"
@@ -5542,9 +5629,12 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             </svg>
           </span>
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5553,6 +5643,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="visa"
@@ -5575,9 +5666,12 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             </svg>
           </span>
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5586,6 +5680,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="mastercard"
@@ -5608,9 +5703,12 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
             </svg>
           </span>
           <span
+            aria-checked={false}
+            aria-disabled={false}
             className="checkable-image-input payment-form__mean"
             onClick={[Function]}
             onKeyPress={[Function]}
+            role="radio"
             tabIndex={0}
           >
             <input
@@ -5619,6 +5717,7 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
               disabled={false}
               name="mean"
               onChange={[Function]}
+              onClick={[Function]}
               tabIndex={-1}
               type="radio"
               value="american-express"
@@ -5801,9 +5900,12 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
     className="payment-form__means"
   >
     <span
+      aria-checked={false}
+      aria-disabled={false}
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
       onKeyPress={[Function]}
+      role="radio"
       tabIndex={0}
     >
       <input
@@ -5812,6 +5914,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         disabled={false}
         name="mean"
         onChange={[Function]}
+        onClick={[Function]}
         tabIndex={-1}
         type="radio"
         value="registred-cards"
@@ -5834,9 +5937,12 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       </svg>
     </span>
     <span
+      aria-checked={false}
+      aria-disabled={false}
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
       onKeyPress={[Function]}
+      role="radio"
       tabIndex={0}
     >
       <input
@@ -5845,6 +5951,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         disabled={false}
         name="mean"
         onChange={[Function]}
+        onClick={[Function]}
         tabIndex={-1}
         type="radio"
         value="visa"
@@ -5867,9 +5974,12 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       </svg>
     </span>
     <span
+      aria-checked={false}
+      aria-disabled={false}
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
       onKeyPress={[Function]}
+      role="radio"
       tabIndex={0}
     >
       <input
@@ -5878,6 +5988,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         disabled={false}
         name="mean"
         onChange={[Function]}
+        onClick={[Function]}
         tabIndex={-1}
         type="radio"
         value="mastercard"
@@ -5900,9 +6011,12 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       </svg>
     </span>
     <span
+      aria-checked={false}
+      aria-disabled={false}
       className="checkable-image-input payment-form__mean"
       onClick={[Function]}
       onKeyPress={[Function]}
+      role="radio"
       tabIndex={0}
     >
       <input
@@ -5911,6 +6025,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
         disabled={false}
         name="mean"
         onChange={[Function]}
+        onClick={[Function]}
         tabIndex={-1}
         type="radio"
         value="american-express"
@@ -6389,6 +6504,7 @@ exports[`Storyshots Payment / RegistredCreditCard American Express 1`] = `
     </div>
   </div>
   <div
+    aria-hidden={true}
     className="expandable"
   >
     <div
@@ -6541,6 +6657,7 @@ exports[`Storyshots Payment / RegistredCreditCard Maestro 1`] = `
     </div>
   </div>
   <div
+    aria-hidden={true}
     className="expandable"
   >
     <div
@@ -6703,6 +6820,7 @@ exports[`Storyshots Payment / RegistredCreditCard Mastercard 1`] = `
     </div>
   </div>
   <div
+    aria-hidden={true}
     className="expandable"
   >
     <div
@@ -6855,6 +6973,7 @@ exports[`Storyshots Payment / RegistredCreditCard Visa 1`] = `
     </div>
   </div>
   <div
+    aria-hidden={true}
     className="expandable"
   >
     <div
@@ -7007,6 +7126,7 @@ exports[`Storyshots Payment / RegistredCreditCard Visible CVV 1`] = `
     </div>
   </div>
   <div
+    aria-hidden={false}
     className="expandable"
   >
     <div
@@ -7162,6 +7282,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       className="expandable"
     >
       <div
@@ -7311,6 +7432,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       className="expandable"
     >
       <div
@@ -7460,6 +7582,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       className="expandable"
     >
       <div
@@ -7609,6 +7732,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
       </div>
     </div>
     <div
+      aria-hidden={true}
       className="expandable"
     >
       <div
