@@ -42,6 +42,7 @@ export default class RegistredCreditCardList extends React.PureComponent {
   render() {
     const { cards, totalPrice, disabled, onUseCard } = this.props;
     const { cardId } = this.state;
+    const onlyOneCard = cards.length === 1;
 
     const renderedCarts = cards.map(card => {
       return (
@@ -51,7 +52,8 @@ export default class RegistredCreditCardList extends React.PureComponent {
           card={card}
           totalPrice={totalPrice}
           disabled={disabled}
-          showCvv={card.id === cardId}
+          showCvv={card.id === cardId || onlyOneCard}
+          hideCvvDisabled={onlyOneCard}
           onUseCard={onUseCard}
           onShowCvv={this.onShowCvv(card.id)}
           onHideCvv={this.onHideCvv}

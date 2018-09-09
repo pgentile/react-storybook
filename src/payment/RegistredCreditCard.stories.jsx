@@ -76,6 +76,22 @@ storiesOf("Payment / RegistredCreditCard", module)
       />
     );
   })
+  .add("Hide CVV disabled", () => {
+    return (
+      <RegistredCreditCard
+        totalPrice={totalPrice}
+        hideCvvDisabled
+        showCvv
+        card={{
+          id: "1",
+          brand: "visa",
+          maskedNumber: "#### #### #### 111#",
+          expirationDate: "2031-01"
+        }}
+        {...actions}
+      />
+    );
+  })
   .add("Mastercard", () => {
     return (
       <RegistredCreditCard
