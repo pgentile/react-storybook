@@ -4,10 +4,19 @@ import { action } from "@storybook/addon-actions";
 
 import RegistredCardCvvForm from "./RegistredCardCvvForm";
 
+const actions = {
+  onUseCard: action("use card"),
+  onCancel: action("hide CVV")
+};
+
 const stories = storiesOf("Payment / RegistredCardCvvForm", module);
 
 ["visa", "mastercard", "american-express", "maestro"].forEach(brand => {
   stories.add(brand, () => {
-    return <RegistredCardCvvForm brand={brand} onUseCard={action("use card")} onCancel={action("hide CVV")} />;
+    return <RegistredCardCvvForm brand={brand} {...actions} />;
   });
+});
+
+stories.add("disabled", () => {
+  return <RegistredCardCvvForm brand="visa" {...actions} disabled />;
 });

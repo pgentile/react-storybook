@@ -29,6 +29,7 @@ export default class RegistredCreditCard extends React.PureComponent {
     className: PropTypes.string,
     card: PropTypes.shape(registredCreditCardShape).isRequired,
     showCvv: PropTypes.bool,
+    disabled: PropTypes.bool,
     onShowCvv: PropTypes.func.isRequired,
     onHideCvv: PropTypes.func.isRequired,
     onUseCard: PropTypes.func.isRequired
@@ -67,7 +68,7 @@ export default class RegistredCreditCard extends React.PureComponent {
   };
 
   render() {
-    const { className, card, showCvv } = this.props;
+    const { className, card, showCvv, disabled } = this.props;
     const { maskedNumber, brand, expirationDate } = card;
     const [year, month] = expirationDate.split("-");
 
@@ -77,7 +78,12 @@ export default class RegistredCreditCard extends React.PureComponent {
     const cvvBlock = (
       <div className="registred-credit-card__cvv-container">
         <div className="registred-credit-card__cvv">
-          <RegistredCardCvvForm brand={brand} onUseCard={this.onUseCard} onCancel={this.onHideCvv} />
+          <RegistredCardCvvForm
+            brand={brand}
+            onUseCard={this.onUseCard}
+            onCancel={this.onHideCvv}
+            disabled={disabled}
+          />
         </div>
       </div>
     );
@@ -107,7 +113,7 @@ export default class RegistredCreditCard extends React.PureComponent {
             </p>
           </div>
           <div className="registred-credit-card__select">
-            <Button onClick={showCvv ? this.onHideCvv : this.onShowCvv} toggled={showCvv}>
+            <Button onClick={showCvv ? this.onHideCvv : this.onShowCvv} toggled={showCvv} disabled={disabled}>
               Utiliser cette carte
             </Button>
           </div>

@@ -38,6 +38,35 @@ storiesOf("Payment / RegistredCreditCard", module)
       />
     );
   })
+  .add("disabled", () => {
+    return (
+      <RegistredCreditCard
+        card={{
+          id: "1",
+          brand: "visa",
+          maskedNumber: "#### #### #### 111#",
+          expirationDate: "2031-01"
+        }}
+        disabled
+        {...actions}
+      />
+    );
+  })
+  .add("Visible CVV and disabled", () => {
+    return (
+      <RegistredCreditCard
+        card={{
+          id: "1",
+          brand: "visa",
+          maskedNumber: "#### #### #### 111#",
+          expirationDate: "2031-01"
+        }}
+        showCvv
+        disabled
+        {...actions}
+      />
+    );
+  })
   .add("Mastercard", () => {
     return (
       <RegistredCreditCard

@@ -13,6 +13,7 @@ import "./RegistredCardCvvForm.scss";
 class RegistredCardCvvForm extends React.PureComponent {
   static propTypes = {
     brand: PropTypes.string.isRequired,
+    disabled: PropTypes.bool,
     onCancel: PropTypes.func.isRequired,
     onUseCard: PropTypes.func.isRequired
   };
@@ -24,6 +25,7 @@ class RegistredCardCvvForm extends React.PureComponent {
   render() {
     const {
       brand,
+      disabled,
       values,
       errors,
       touched,
@@ -34,7 +36,7 @@ class RegistredCardCvvForm extends React.PureComponent {
       isSubmitting,
       isValid
     } = this.props;
-    const disableForm = isSubmitting;
+    const disableForm = isSubmitting || disabled;
 
     const cardBrandInfo = getTypeInfo(brand);
     const cvvLength = cardBrandInfo.code.size;
@@ -71,7 +73,7 @@ class RegistredCardCvvForm extends React.PureComponent {
           <Button type="submit" size="small" showDisabled={!isValid} disabled={disableForm}>
             Utiliser
           </Button>
-          <Button type="reset" size="small" onClick={this.onCancel}>
+          <Button type="reset" size="small" onClick={this.onCancel} disabled={disableForm}>
             Annuler
           </Button>
         </div>

@@ -76,6 +76,7 @@ export default class PaymentForm extends React.PureComponent {
                 expirationDate: "2029-01"
               }
             ]}
+            disabled={isSubmitting}
             onUseCard={this.onPay}
           />
         )}
