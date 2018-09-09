@@ -5,17 +5,21 @@ import "./Carousel.scss";
 
 export default class Carousel extends React.PureComponent {
   static propTypes = {
+    as: PropTypes.string,
+    className: PropTypes.string,
     items: PropTypes.arrayOf(PropTypes.node),
     selectedIndex: PropTypes.number
   };
 
   static defaultProps = {
+    as: "div",
+    className: "",
     items: [],
     selectedIndex: 0
   };
 
   render() {
-    const { items, selectedIndex } = this.props;
+    const { as: Element, className, items, selectedIndex } = this.props;
 
     const renderedItems = items.map((item, index) => {
       return (
@@ -32,11 +36,11 @@ export default class Carousel extends React.PureComponent {
     };
 
     return (
-      <div className="carousel">
+      <Element className={`carousel ${className}`}>
         <div className="carousel__items-container" style={contentStyle}>
           {renderedItems}
         </div>
-      </div>
+      </Element>
     );
   }
 }

@@ -1,14 +1,22 @@
 .carousel {
   overflow: hidden;
 
-  &__items-container{
+  padding: 0;
+
+  &__items-container {
     position: relative;
     display: flex;
+
+    margin: 0;
+    padding: 0;
 
     transition: left 0.5s linear;
   }
 
   &__item {
     width: 100%;
+
+    margin: 0;
+    padding: 0;
   }
 }
