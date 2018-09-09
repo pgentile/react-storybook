@@ -6,6 +6,7 @@ import creditCardType from "credit-card-type";
 
 import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
+import NumberInput from "../forms/NumberInput";
 import DateInput from "../forms/DateInput";
 import Button from "../buttons/Button";
 import Price from "../Price";
@@ -60,9 +61,9 @@ class CreditCardForm extends React.PureComponent {
         >
           {props => (
             <InputField
+              as={NumberInput}
               {...props}
               name="cardNumber"
-              inputMode="numeric"
               autoComplete="cc-number"
               maxLength={19}
               value={values.cardNumber}
@@ -102,9 +103,9 @@ class CreditCardForm extends React.PureComponent {
         >
           {props => (
             <InputField
+              as={NumberInput}
               {...props}
               name="cvv"
-              inputMode="numeric"
               autoComplete="cc-csc"
               maxLength={4}
               value={values.cvv}

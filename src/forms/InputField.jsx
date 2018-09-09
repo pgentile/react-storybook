@@ -7,20 +7,24 @@ import bemModifiers from "../utils/bemModifiers";
 
 export default class InputField extends React.PureComponent {
   static propTypes = {
+    as: PropTypes.any,
+    className: PropTypes.string,
     error: PropTypes.bool
   };
 
   static defaultProps = {
+    as: "input",
+    className: "",
     error: false
   };
 
   render() {
-    const { error, ...otherProps } = this.props;
+    const { as: Element, className, error, ...otherProps } = this.props;
 
-    const className = bemModifiers("form-input-field", {
+    const inputClassName = bemModifiers("form-input-field", {
       error
     });
 
-    return <input type="text" {...otherProps} className={className} />;
+    return <Element type="text" {...otherProps} className={`${inputClassName} ${className}`} />;
   }
 }

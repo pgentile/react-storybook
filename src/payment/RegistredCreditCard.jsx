@@ -7,6 +7,7 @@ import ExpandableCard from "../ExpandableCard";
 import Button from "../buttons/Button";
 import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
+import NumberInput from "../forms/NumberInput";
 
 import "./RegistredCreditCard.scss";
 
@@ -76,7 +77,16 @@ export default class RegistredCreditCard extends React.PureComponent {
       <div className="registred-credit-card__cvv-container">
         <div className="registred-credit-card__cvv">
           <FieldContainer label="Code de sécurité">
-            {props => <InputField {...props} value={cvv} onChange={this.onCvvChange} autoComplete="cc-csc" />}
+            {props => (
+              <InputField
+                as={NumberInput}
+                {...props}
+                value={cvv}
+                onChange={this.onCvvChange}
+                maxLength={4}
+                autoComplete="cc-csc"
+              />
+            )}
           </FieldContainer>
           <p>
             <Button size="small" onClick={this.onUseCard}>
