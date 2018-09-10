@@ -9,7 +9,12 @@ import "./DonationProposal.scss";
 
 export default class DonationProposal extends React.PureComponent {
   static propTypes = {
+    className: PropTypes.string,
     onAddDonation: PropTypes.func.isRequired
+  };
+
+  static defaultProps = {
+    className: ""
   };
 
   state = {
@@ -25,13 +30,14 @@ export default class DonationProposal extends React.PureComponent {
   };
 
   render() {
-    const { onAddDonation } = this.props;
+    const { className, onAddDonation } = this.props;
     const { showDetails } = this.state;
 
     return (
       <ExpandableCard
+        as="section"
         layer="flat"
-        className="donation-proposal"
+        className={"donation-proposal " + className}
         expandableContent={<p className="donation-proposal__more">En savoir plus sur URCT...</p>}
         expanded={showDetails}
       >

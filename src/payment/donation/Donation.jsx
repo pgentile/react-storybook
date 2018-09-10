@@ -25,11 +25,10 @@ export default class Donation extends React.PureComponent {
     const { className, selectedDonation, onAddDonation, onCancelDonation } = this.props;
     const hasDonationSelected = !!selectedDonation;
 
-    return (
-      <section className={className}>
-        {hasDonationSelected && <SelectedDonation donation={selectedDonation} onCancelDonation={onCancelDonation} />}
-        {!hasDonationSelected && <DonationProposal onAddDonation={onAddDonation} />}
-      </section>
+    return hasDonationSelected ? (
+      <SelectedDonation className={className} donation={selectedDonation} onCancelDonation={onCancelDonation} />
+    ) : (
+      <DonationProposal className={className} onAddDonation={onAddDonation} />
     );
   }
 }

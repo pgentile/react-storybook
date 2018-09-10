@@ -8,6 +8,7 @@ import "./SelectedDonation.scss";
 
 export default class SelectedDonation extends React.PureComponent {
   static propTypes = {
+    className: PropTypes.string,
     donation: PropTypes.shape({
       code: PropTypes.string.isRequired,
       association: PropTypes.string.isRequired
@@ -15,11 +16,15 @@ export default class SelectedDonation extends React.PureComponent {
     onCancelDonation: PropTypes.func.isRequired
   };
 
+  static defaultProps = {
+    className: ""
+  };
+
   render() {
-    const { donation, onCancelDonation } = this.props;
+    const { className, donation, onCancelDonation } = this.props;
 
     return (
-      <Card layer="flat" className="selected-donation">
+      <Card as="section" layer="flat" className={"selected-donation " + className}>
         <p className="selected-donation__thanks">
           Vous avez choisi de faire un don à <b>{donation.association}</b>. Nous vous en remercions&nbsp;!
         </p>
