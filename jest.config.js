@@ -2,8 +2,9 @@ module.exports = {
   rootDir: "./src",
   testURL: "http://localhost/",
   moduleNameMapper: {
-    "\\.(scss|css)$": "<rootDir>/__mocks__/styleMock.js"
+    "\\.(s?css)$": "<rootDir>/__mocks__/styleMock.js"
   },
+  setupTestFrameworkScriptFile: "<rootDir>/../setupTests.js",
   transformIgnorePatterns: ["/node_modules/(?!lodash-es)/"],
-  coverageDirectory: "../build/coverage"
+  coverageDirectory: "<rootDir>/../build/coverage"
 };
