@@ -1,7 +1,8 @@
 import { connect } from "react-redux";
 
 import PaymentForm from "./PaymentForm";
-import { pay, selectTotalAmount } from "../redux/reducers/payment";
+import { selectTotalAmount } from "../redux/reducers/order";
+import { pay } from "../redux/reducers/payment";
 import { selectCards } from "../redux/reducers/connectedUser";
 
 const mapStateToProps = state => ({

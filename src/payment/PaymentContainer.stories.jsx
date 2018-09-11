@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 
 import PaymentContainer from "./PaymentContainer";
 import { createDefaultStore } from "../redux/store";
-import { TICKET_TYPE, loadItems } from "../redux/reducers/payment";
+import { TICKET_TYPE, loadItems } from "../redux/reducers/order";
 import { loadCards } from "../redux/reducers/connectedUser";
 
 storiesOf("Payment / PaymentContainer", module)

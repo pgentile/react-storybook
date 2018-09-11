@@ -1,4 +1,5 @@
 import createStore from "./createStore";
+import order from "./reducers/order";
 import payment from "./reducers/payment";
 import loader, { loaderMiddleware } from "./reducers/loader";
 import navigatorStatus, { navigatorStatusMiddleware } from "./reducers/navigatorStatus";
@@ -9,6 +10,7 @@ import connectedUser from "./reducers/connectedUser";
 export function createDefaultStore() {
   const reducers = {
     loader,
+    order,
     payment,
     connectedUser,
     navigatorStatus

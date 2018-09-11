@@ -1,10 +1,10 @@
-import payment, {
+import order, {
   VOUCHER_TYPE,
   DONATION_TYPE,
   TICKET_TYPE,
-  selectPaymentItems,
-  selectPaymentItemsWithoutVoucher,
-  selectPaymentItemsWithoutDonation,
+  selectOrderItems,
+  selectItemsWithoutVoucher,
+  selectItemsWithoutDonation,
   selectVoucher,
   selectDonation,
   loadItems,
@@ -12,7 +12,7 @@ import payment, {
   cancelVoucher,
   addDonation,
   cancelDonation
-} from "./payment";
+} from "./order";
 
 import createStore from "../createStore";
 import captureStoreActions from "../testutils/captureStoreActions";
@@ -25,7 +25,7 @@ beforeEach(() => {
 
   store = createStore(
     {
-      payment
+      order
     },
     {
       extraMiddlewares: [storeActionsMiddleware]
@@ -38,7 +38,7 @@ describe("Selectors", () => {
     const items = [createItem({ type: TICKET_TYPE })];
 
     await store.dispatch(loadItems(items));
-    const selectedItems = selectPaymentItems(store.getState());
+    const selectedItems = selectOrderItems(store.getState());
 
     expect(selectedItems).toEqual(items);
   });
@@ -52,7 +52,7 @@ describe("Selectors", () => {
 
     await store.dispatch(loadItems(items));
 
-    const selectedItems = selectPaymentItemsWithoutVoucher(store.getState());
+    const selectedItems = selectItemsWithoutVoucher(store.getState());
 
     expect(selectedItems).toHaveLength(2);
   });
@@ -66,7 +66,7 @@ describe("Selectors", () => {
 
     await store.dispatch(loadItems(items));
 
-    const selectedItems = selectPaymentItemsWithoutDonation(store.getState());
+    const selectedItems = selectItemsWithoutDonation(store.getState());
 
     expect(selectedItems).toHaveLength(2);
   });
@@ -121,9 +121,9 @@ describe("Actions", () => {
     const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty("type", "PAYMENT/LOAD_ITEMS_PENDING");
+    expect(actions[0]).toHaveProperty("type", "ORDER/LOAD_ITEMS_PENDING");
 
-    expect(actions[1]).toHaveProperty("type", "PAYMENT/LOAD_ITEMS_FULFILLED");
+    expect(actions[1]).toHaveProperty("type", "ORDER/LOAD_ITEMS_FULFILLED");
     expect(actions[1]).toHaveProperty("payload.items", items);
   });
 
@@ -134,9 +134,9 @@ describe("Actions", () => {
     const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty("type", "PAYMENT/VOUCHER/ADD_PENDING");
+    expect(actions[0]).toHaveProperty("type", "ORDER/VOUCHER/ADD_PENDING");
 
-    expect(actions[1]).toHaveProperty("type", "PAYMENT/VOUCHER/ADD_FULFILLED");
+    expect(actions[1]).toHaveProperty("type", "ORDER/VOUCHER/ADD_FULFILLED");
     expect(actions[1]).toHaveProperty("payload.code", code);
   });
 
@@ -176,9 +176,9 @@ describe("Actions", () => {
     const actions = storeActionsMiddleware.drainActions();
     expect(actions).toHaveLength(2);
 
-    expect(actions[0]).toHaveProperty("type", "PAYMENT/DONATION/ADD_PENDING");
+    expect(actions[0]).toHaveProperty("type", "ORDER/DONATION/ADD_PENDING");
 
-    expect(actions[1]).toHaveProperty("type", "PAYMENT/DONATION/ADD_FULFILLED");
+    expect(actions[1]).toHaveProperty("type", "ORDER/DONATION/ADD_FULFILLED");
     expect(actions[1]).toHaveProperty("payload.code", code);
   });
 
