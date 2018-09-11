@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import PaymentContainer from "./PaymentContainer";
+import OrderEditor from "./OrderEditor";
 import {
   addVoucher,
   cancelVoucher,
@@ -8,15 +8,12 @@ import {
   cancelInsurance,
   addDonation,
   cancelDonation,
-  pay,
   selectPaymentItems,
   selectTotalAmount
 } from "../redux/reducers/payment";
-import { selectCards } from "../redux/reducers/connectedUser";
 
 const mapStateToProps = state => ({
   items: selectPaymentItems(state),
-  registredCards: selectCards(state),
   totalPrice: selectTotalAmount(state)
 });
 
@@ -26,11 +23,10 @@ const mapDispatchToProps = {
   onAddInsurance: price => addInsurance(price),
   onCancelInsurance: () => cancelInsurance(),
   onAddDonation: () => addDonation("TOTO"),
-  onCancelDonation: () => cancelDonation(),
-  onPay: details => pay(details)
+  onCancelDonation: () => cancelDonation()
 };
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(PaymentContainer);
+)(OrderEditor);

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
 import CreditCardForm from "./CreditCardForm";
 import RegistredCreditCardList from "./RegistredCreditCardList";
 import PaymentMeans from "./PaymentMeans";
+import PaymentProcessingModal from "./PaymentProcessingModal";
+import sleep from "../utils/sleep";
 
 import "./PaymentForm.scss";
 
@@ -23,16 +25,21 @@ export default class PaymentForm extends React.PureComponent {
   };
 
   state = {
-    isSubmitting: false,
-    mean: null
+    mean: null,
+    paymentModal: false
   };
 
   onPay = async values => {
-    this.setState({ isSubmitting: true });
+    this.setState({ paymentModal: true });
     try {
-      return await this.props.onPay(values);
+      const payPromise = this.props.onPay(values);
+      const delayForUserInformationPromise = sleep(10 * 1000);
+
+      await Promise.all([payPromise, delayForUserInformationPromise]);
+
+      return await payPromise;
     } finally {
-      this.setState({ isSubmitting: false });
+      this.setState({ paymentModal: false });
     }
   };
 
@@ -42,31 +49,34 @@ export default class PaymentForm extends React.PureComponent {
 
   render() {
     const { className, registredCards, totalPrice } = this.props;
-    const { isSubmitting, mean } = this.state;
+    const { mean, paymentModal } = this.state;
     const paymentMeanIsRegistredCards = mean === "registred-cards";
 
     return (
-      <div className={`payment-form ${className}`}>
-        <p className="payment-form__select-mean">Sélectionnez votre moyen de paiement&nbsp;:</p>
-        <PaymentMeans
-          className="payment-form__means"
-          means={["registred-cards", "visa", "mastercard", "maestro", "american-express"]}
-          selectedMean={mean}
-          onMeanChange={this.onMeanChange}
-          disabled={isSubmitting}
-        />
-        {paymentMeanIsRegistredCards && (
-          <RegistredCreditCardList
-            cards={registredCards}
-            totalPrice={totalPrice}
-            disabled={isSubmitting}
-            onUseCard={this.onPay}
+      <Fragment>
+        <section className={"payment-form " + className}>
+          <h1 className="payment-form__title">Payez en toute sécurité</h1>
+          <p className="payment-form__select-mean">Sélectionnez votre moyen de paiement&nbsp;:</p>
+          <PaymentMeans
+            className="payment-form__means"
+            means={["registred-cards", "visa", "mastercard", "maestro", "american-express"]}
+            selectedMean={mean}
+            onMeanChange={this.onMeanChange}
           />
-        )}
-        {!paymentMeanIsRegistredCards && (
-          <CreditCardForm className="payment-form__credit-card-form" totalPrice={totalPrice} onPay={this.onPay} />
-        )}
-      </div>
+          {paymentMeanIsRegistredCards && (
+            <RegistredCreditCardList
+              className="payment-form__registred-cards"
+              cards={registredCards}
+              totalPrice={totalPrice}
+              onUseCard={this.onPay}
+            />
+          )}
+          {!paymentMeanIsRegistredCards && (
+            <CreditCardForm className="payment-form__credit-card-form" totalPrice={totalPrice} onPay={this.onPay} />
+          )}
+        </section>
+        {paymentModal && <PaymentProcessingModal />}
+      </Fragment>
     );
   }
 }
