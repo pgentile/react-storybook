@@ -46,10 +46,9 @@ class CreditCardForm extends React.PureComponent {
 
     const cards = creditCardType(values.cardNumber);
     const isMaestro = cards && cards.length === 1 && cards[0].type === "maestro";
-    const cvvHelpMessage =
-      isMaestro && !values.cvv
-        ? "Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
-        : null;
+    const cvvHelpMessage = isMaestro
+      ? "Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
+      : null;
 
     return (
       <form className={`credit-card-form ${className}`} onSubmit={handleSubmit}>

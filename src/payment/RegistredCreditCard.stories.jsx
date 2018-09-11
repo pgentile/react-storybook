@@ -15,122 +15,35 @@ const totalPrice = {
   currency: "€"
 };
 
-storiesOf("Payment / RegistredCreditCard", module)
-  .add("Visa", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        card={{
-          id: "1",
-          brand: "visa",
-          maskedNumber: "#### #### #### 111#",
-          expirationDate: "2031-01"
-        }}
-        {...actions}
-      />
-    );
-  })
-  .add("Visible CVV", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        card={{
-          id: "1",
-          brand: "visa",
-          maskedNumber: "#### #### #### 111#",
-          expirationDate: "2031-01"
-        }}
-        showCvv
-        {...actions}
-      />
-    );
-  })
-  .add("disabled", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        card={{
-          id: "1",
-          brand: "visa",
-          maskedNumber: "#### #### #### 111#",
-          expirationDate: "2031-01"
-        }}
-        disabled
-        {...actions}
-      />
-    );
-  })
-  .add("Visible CVV and disabled", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        card={{
-          id: "1",
-          brand: "visa",
-          maskedNumber: "#### #### #### 111#",
-          expirationDate: "2031-01"
-        }}
-        showCvv
-        disabled
-        {...actions}
-      />
-    );
-  })
-  .add("Hide CVV disabled", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        hideCvvDisabled
-        showCvv
-        card={{
-          id: "1",
-          brand: "visa",
-          maskedNumber: "#### #### #### 111#",
-          expirationDate: "2031-01"
-        }}
-        {...actions}
-      />
-    );
-  })
-  .add("Mastercard", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        card={{
-          id: "1",
-          brand: "mastercard",
-          maskedNumber: "#### #### #### 111#",
-          expirationDate: "2031-01"
-        }}
-        {...actions}
-      />
-    );
-  })
-  .add("Maestro", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        card={{
-          id: "1",
-          brand: "maestro",
-          maskedNumber: "#### #### #### 111#",
-          expirationDate: "2031-01"
-        }}
-        {...actions}
-      />
-    );
-  })
-  .add("American Express", () => {
-    return (
-      <RegistredCreditCard
-        totalPrice={totalPrice}
-        card={{
-          id: "1",
-          brand: "american-express",
-          maskedNumber: "#### ###### #3342",
-          expirationDate: "2031-01"
-        }}
-        {...actions}
-      />
-    );
+const cardBrands = ["visa", "maestro"];
+
+const stories = storiesOf("Payment / RegistredCreditCard", module);
+
+cardBrands.forEach(cardBrand => {
+  const props = {
+    ...actions,
+    totalPrice,
+    card: {
+      id: "1",
+      brand: cardBrand,
+      maskedNumber: "#### #### #### 111#",
+      expirationDate: "2031-01"
+    }
+  };
+
+  stories.add(cardBrand, () => {
+    return <RegistredCreditCard {...props} />;
   });
+
+  stories.add(cardBrand + " / visible CVV", () => {
+    return <RegistredCreditCard {...props} showCvv />;
+  });
+
+  stories.add(cardBrand + " / disabled", () => {
+    return <RegistredCreditCard {...props} disabled />;
+  });
+
+  stories.add(cardBrand + " / visible CVV / disabled", () => {
+    return <RegistredCreditCard {...props} showCvv disabled />;
+  });
+});

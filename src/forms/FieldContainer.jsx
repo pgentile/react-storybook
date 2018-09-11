@@ -42,7 +42,7 @@ export default class FieldContainer extends React.PureComponent {
       readOnly
     } = this.props;
     const showErrorMessage = !!errorMessage && !disabled;
-    const showHelpMessage = !!helpMessage && !showErrorMessage && !disabled;
+    const showHelpMessage = !!helpMessage && !disabled;
     const inputId = id || this.generatedId;
 
     const fieldProps = {

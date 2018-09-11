@@ -40,9 +40,6 @@ storiesOf("Payment / RegistredCreditCardList", module)
   .add("main", () => {
     return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} onUseCard={action("use card")} />;
   })
-  .add("just one card", () => {
-    return <RegistredCreditCardList totalPrice={totalPrice} cards={cards.slice(0, 1)} onUseCard={action("use card")} />;
-  })
   .add("disabled", () => {
     return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} disabled onUseCard={action("use card")} />;
   });

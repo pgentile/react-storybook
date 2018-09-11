@@ -47,10 +47,9 @@ class RegistredCardCvvForm extends React.PureComponent {
     const cardBrandInfo = getTypeInfo(brand);
     const cvvLength = cardBrandInfo.code.size;
     const isMaestro = brand === "maestro";
-    const cvvHelpMessage =
-      isMaestro && !values.cvv
-        ? "Toutes les cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
-        : null;
+    const cvvHelpMessage = isMaestro
+      ? "Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ"
+      : null;
 
     return (
       <form className="registred-card-cvv-form" onSubmit={handleSubmit} onReset={handleReset}>
