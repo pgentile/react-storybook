@@ -8,7 +8,7 @@ import "./Expandable.scss";
 export default class Expandable extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node,
-    expanded: PropTypes.bool.isRequired
+    expanded: PropTypes.bool
   };
 
   static defaultProps = {

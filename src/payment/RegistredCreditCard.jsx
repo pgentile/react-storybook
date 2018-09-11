@@ -41,9 +41,7 @@ export default class RegistredCreditCard extends React.PureComponent {
   };
 
   static defaultProps = {
-    className: "",
-    showCvv: false,
-    hideCvvDisabled: false
+    className: ""
   };
 
   state = {

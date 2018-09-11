@@ -853,14 +853,12 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
 >
   <input
     className="form-date-input__input form-date-input__input--month"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="MM"
-    readOnly={false}
     type="tel"
     value="04"
   />
@@ -871,14 +869,12 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--year"
-    disabled={false}
     inputMode="numeric"
     maxLength={4}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="AAAA"
-    readOnly={false}
     type="tel"
     value="2018"
   />
@@ -891,14 +887,12 @@ exports[`Storyshots Forms / DateInput Mode year-month with small year 1`] = `
 >
   <input
     className="form-date-input__input form-date-input__input--month"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="MM"
-    readOnly={false}
     type="tel"
     value="06"
   />
@@ -909,14 +903,12 @@ exports[`Storyshots Forms / DateInput Mode year-month with small year 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="AA"
-    readOnly={false}
     type="tel"
     value="22"
   />
@@ -936,7 +928,6 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="JJ"
-    readOnly={false}
     type="tel"
     value="13"
   />
@@ -955,7 +946,6 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="MM"
-    readOnly={false}
     type="tel"
     value="02"
   />
@@ -973,7 +963,6 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="AAAA"
-    readOnly={false}
     type="tel"
     value="1990"
   />
@@ -986,14 +975,12 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
 >
   <input
     className="form-date-input__input form-date-input__input--day"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="JJ"
-    readOnly={false}
     type="tel"
     value=""
   />
@@ -1004,7 +991,6 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--month"
-    disabled={false}
     id={null}
     inputMode="numeric"
     maxLength={2}
@@ -1012,7 +998,6 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="MM"
-    readOnly={false}
     type="tel"
     value=""
   />
@@ -1023,14 +1008,12 @@ exports[`Storyshots Forms / DateInput dynamic 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--year"
-    disabled={false}
     inputMode="numeric"
     maxLength={4}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="AAAA"
-    readOnly={false}
     type="tel"
     value=""
   />
@@ -1043,14 +1026,12 @@ exports[`Storyshots Forms / DateInput error 1`] = `
 >
   <input
     className="form-date-input__input form-date-input__input--day"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="JJ"
-    readOnly={false}
     type="tel"
     value="13"
   />
@@ -1061,7 +1042,6 @@ exports[`Storyshots Forms / DateInput error 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--month"
-    disabled={false}
     id={null}
     inputMode="numeric"
     maxLength={2}
@@ -1069,7 +1049,6 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="MM"
-    readOnly={false}
     type="tel"
     value="02"
   />
@@ -1080,14 +1059,12 @@ exports[`Storyshots Forms / DateInput error 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--year"
-    disabled={false}
     inputMode="numeric"
     maxLength={4}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="AAAA"
-    readOnly={false}
     type="tel"
     value="1990"
   />
@@ -1100,14 +1077,12 @@ exports[`Storyshots Forms / DateInput main 1`] = `
 >
   <input
     className="form-date-input__input form-date-input__input--day"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="JJ"
-    readOnly={false}
     type="tel"
     value=""
   />
@@ -1118,7 +1093,6 @@ exports[`Storyshots Forms / DateInput main 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--month"
-    disabled={false}
     id={null}
     inputMode="numeric"
     maxLength={2}
@@ -1126,7 +1100,6 @@ exports[`Storyshots Forms / DateInput main 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="MM"
-    readOnly={false}
     type="tel"
     value=""
   />
@@ -1137,14 +1110,12 @@ exports[`Storyshots Forms / DateInput main 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--year"
-    disabled={false}
     inputMode="numeric"
     maxLength={4}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="AAAA"
-    readOnly={false}
     type="tel"
     value=""
   />
@@ -1157,7 +1128,6 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
 >
   <input
     className="form-date-input__input form-date-input__input--day"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -1175,7 +1145,6 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--month"
-    disabled={false}
     id={null}
     inputMode="numeric"
     maxLength={2}
@@ -1194,7 +1163,6 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--year"
-    disabled={false}
     inputMode="numeric"
     maxLength={4}
     onBlur={[Function]}
@@ -1214,14 +1182,12 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
 >
   <input
     className="form-date-input__input form-date-input__input--day"
-    disabled={false}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="JJ"
-    readOnly={false}
     type="tel"
     value="13"
   />
@@ -1232,7 +1198,6 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--month"
-    disabled={false}
     id={null}
     inputMode="numeric"
     maxLength={2}
@@ -1240,7 +1205,6 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="MM"
-    readOnly={false}
     type="tel"
     value="02"
   />
@@ -1251,14 +1215,12 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
   </span>
   <input
     className="form-date-input__input form-date-input__input--year"
-    disabled={false}
     inputMode="numeric"
     maxLength={4}
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="AAAA"
-    readOnly={false}
     type="tel"
     value="1990"
   />
@@ -1280,10 +1242,8 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
   >
     <input
       className="form-input-field "
-      disabled={false}
       id="form-field-2"
       placeholder="Valeur d'exemple"
-      readOnly={false}
       type="text"
     />
   </div>
@@ -1310,10 +1270,8 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
   >
     <input
       className="form-input-field form-input-field--error "
-      disabled={false}
       id="form-field-1"
       placeholder="Valeur d'exemple"
-      readOnly={false}
       type="text"
     />
   </div>
@@ -1340,10 +1298,8 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
   >
     <input
       className="form-input-field form-input-field--error "
-      disabled={false}
       id="form-field-3"
       placeholder="Valeur d'exemple"
-      readOnly={false}
       type="text"
     />
   </div>
@@ -1373,7 +1329,6 @@ exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
       disabled={true}
       id="form-field-4"
       placeholder="Valeur d'exemple"
-      readOnly={false}
       type="text"
     />
   </div>
@@ -1395,7 +1350,6 @@ exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
   >
     <input
       className="form-input-field "
-      disabled={false}
       id="form-field-5"
       placeholder="Valeur d'exemple"
       readOnly={true}
@@ -1420,10 +1374,8 @@ exports[`Storyshots Forms / FieldContainer main 1`] = `
   >
     <input
       className="form-input-field "
-      disabled={false}
       id="form-field-0"
       placeholder="Valeur d'exemple"
-      readOnly={false}
       type="text"
     />
   </div>
@@ -3067,7 +3019,6 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
         name="cardNumber"
         onBlur={[Function]}
         onChange={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -3099,7 +3050,6 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
           onChange={[Function]}
           onFocus={[Function]}
           placeholder="MM"
-          readOnly={false}
           type="tel"
           value=""
         />
@@ -3118,7 +3068,6 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
           onChange={[Function]}
           onFocus={[Function]}
           placeholder="AA"
-          readOnly={false}
           type="tel"
           value=""
         />
@@ -3147,7 +3096,6 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -5414,7 +5362,6 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 name="cardNumber"
                 onBlur={[Function]}
                 onChange={[Function]}
-                readOnly={false}
                 type="tel"
                 value=""
               />
@@ -5446,7 +5393,6 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                   onChange={[Function]}
                   onFocus={[Function]}
                   placeholder="MM"
-                  readOnly={false}
                   type="tel"
                   value=""
                 />
@@ -5465,7 +5411,6 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                   onChange={[Function]}
                   onFocus={[Function]}
                   placeholder="AA"
-                  readOnly={false}
                   type="tel"
                   value=""
                 />
@@ -5494,7 +5439,6 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 name="cvv"
                 onBlur={[Function]}
                 onChange={[Function]}
-                readOnly={false}
                 type="tel"
                 value=""
               />
@@ -5948,7 +5892,6 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 name="cardNumber"
                 onBlur={[Function]}
                 onChange={[Function]}
-                readOnly={false}
                 type="tel"
                 value=""
               />
@@ -5980,7 +5923,6 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                   onChange={[Function]}
                   onFocus={[Function]}
                   placeholder="MM"
-                  readOnly={false}
                   type="tel"
                   value=""
                 />
@@ -5999,7 +5941,6 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                   onChange={[Function]}
                   onFocus={[Function]}
                   placeholder="AA"
-                  readOnly={false}
                   type="tel"
                   value=""
                 />
@@ -6028,7 +5969,6 @@ exports[`Storyshots Payment / PaymentContainerConnected main 1`] = `
                 name="cvv"
                 onBlur={[Function]}
                 onChange={[Function]}
-                readOnly={false}
                 type="tel"
                 value=""
               />
@@ -6293,7 +6233,6 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           name="cardNumber"
           onBlur={[Function]}
           onChange={[Function]}
-          readOnly={false}
           type="tel"
           value=""
         />
@@ -6325,7 +6264,6 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="MM"
-            readOnly={false}
             type="tel"
             value=""
           />
@@ -6344,7 +6282,6 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="AA"
-            readOnly={false}
             type="tel"
             value=""
           />
@@ -6373,7 +6310,6 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           name="cvv"
           onBlur={[Function]}
           onChange={[Function]}
-          readOnly={false}
           type="tel"
           value=""
         />
@@ -6889,14 +6825,12 @@ exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
-        disabled={false}
         id="form-field-20"
         inputMode="numeric"
         maxLength={4}
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -6967,7 +6901,6 @@ exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -7038,14 +6971,12 @@ exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
-        disabled={false}
         id="form-field-21"
         inputMode="numeric"
         maxLength={3}
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -7114,14 +7045,12 @@ exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
-        disabled={false}
         id="form-field-19"
         inputMode="numeric"
         maxLength={3}
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -7185,14 +7114,12 @@ exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
-        disabled={false}
         id="form-field-18"
         inputMode="numeric"
         maxLength={3}
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -7347,14 +7274,12 @@ exports[`Storyshots Payment / RegistredCreditCard American Express 1`] = `
                     <input
                       autoComplete="cc-csc"
                       className="form-input-field "
-                      disabled={false}
                       id="form-field-30"
                       inputMode="numeric"
                       maxLength={4}
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -7506,14 +7431,12 @@ exports[`Storyshots Payment / RegistredCreditCard Hide CVV disabled 1`] = `
                     <input
                       autoComplete="cc-csc"
                       className="form-input-field "
-                      disabled={false}
                       id="form-field-27"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -7680,14 +7603,12 @@ exports[`Storyshots Payment / RegistredCreditCard Maestro 1`] = `
                     <input
                       autoComplete="cc-csc"
                       className="form-input-field "
-                      disabled={false}
                       id="form-field-29"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -7854,14 +7775,12 @@ exports[`Storyshots Payment / RegistredCreditCard Mastercard 1`] = `
                     <input
                       autoComplete="cc-csc"
                       className="form-input-field "
-                      disabled={false}
                       id="form-field-28"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -8023,14 +7942,12 @@ exports[`Storyshots Payment / RegistredCreditCard Visa 1`] = `
                     <input
                       autoComplete="cc-csc"
                       className="form-input-field "
-                      disabled={false}
                       id="form-field-23"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -8192,14 +8109,12 @@ exports[`Storyshots Payment / RegistredCreditCard Visible CVV 1`] = `
                     <input
                       autoComplete="cc-csc"
                       className="form-input-field "
-                      disabled={false}
                       id="form-field-24"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -8369,7 +8284,6 @@ exports[`Storyshots Payment / RegistredCreditCard Visible CVV and disabled 1`] =
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -8541,7 +8455,6 @@ exports[`Storyshots Payment / RegistredCreditCard disabled 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
-                      readOnly={false}
                       type="tel"
                       value=""
                     />
@@ -8716,7 +8629,6 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -8885,7 +8797,6 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -9054,7 +8965,6 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -9228,7 +9138,6 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -9386,14 +9295,12 @@ exports[`Storyshots Payment / RegistredCreditCardList just one card 1`] = `
                       <input
                         autoComplete="cc-csc"
                         className="form-input-field "
-                        disabled={false}
                         id="form-field-35"
                         inputMode="numeric"
                         maxLength={3}
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -9559,14 +9466,12 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       <input
                         autoComplete="cc-csc"
                         className="form-input-field "
-                        disabled={false}
                         id="form-field-31"
                         inputMode="numeric"
                         maxLength={3}
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -9725,14 +9630,12 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       <input
                         autoComplete="cc-csc"
                         className="form-input-field "
-                        disabled={false}
                         id="form-field-32"
                         inputMode="numeric"
                         maxLength={3}
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -9891,14 +9794,12 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       <input
                         autoComplete="cc-csc"
                         className="form-input-field "
-                        disabled={false}
                         id="form-field-33"
                         inputMode="numeric"
                         maxLength={4}
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -10062,14 +9963,12 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       <input
                         autoComplete="cc-csc"
                         className="form-input-field "
-                        disabled={false}
                         id="form-field-34"
                         inputMode="numeric"
                         maxLength={3}
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        readOnly={false}
                         type="tel"
                         value=""
                       />
@@ -10167,7 +10066,6 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
-          readOnly={false}
           spellCheck={false}
           type="text"
           value=""
@@ -10233,7 +10131,6 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
-          readOnly={false}
           spellCheck={false}
           type="text"
           value="EURO2016"
@@ -10299,7 +10196,6 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
-          readOnly={false}
           spellCheck={false}
           type="text"
           value="CODE21"
@@ -10365,7 +10261,6 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
-          readOnly={false}
           spellCheck={false}
           type="text"
           value="CODE21"

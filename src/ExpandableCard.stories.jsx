@@ -10,10 +10,6 @@ class ExpandableCardDemo extends React.PureComponent {
     expandable: PropTypes.bool
   };
 
-  static defaultProps = {
-    expandable: false
-  };
-
   state = {
     expanded: false,
     content: (

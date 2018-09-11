@@ -12,7 +12,7 @@ import "./ExpandableCard.scss";
 export default class ExpandableCard extends React.PureComponent {
   static propTypes = {
     ...Card.propTypes,
-    expanded: Expandable.propTypes.expanded,
+    expanded: PropTypes.bool,
     expandableContent: PropTypes.node,
     onFold: PropTypes.func
   };

@@ -18,7 +18,6 @@ export default class Label extends React.PureComponent {
   static defaultProps = {
     as: "label",
     className: "",
-    disabled: false,
     optional: false
   };
 

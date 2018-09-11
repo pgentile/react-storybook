@@ -8,8 +8,8 @@ import bemModifiers from "../utils/bemModifiers";
 
 export default class DateInput extends React.PureComponent {
   static propTypes = {
-    mode: PropTypes.oneOf(["date", "year-month"]).isRequired,
-    smallYear: PropTypes.bool.isRequired,
+    mode: PropTypes.oneOf(["date", "year-month"]),
+    smallYear: PropTypes.bool,
     className: PropTypes.string,
     id: PropTypes.string,
     error: PropTypes.bool,
@@ -26,8 +26,6 @@ export default class DateInput extends React.PureComponent {
     mode: "date",
     smallYear: false,
     className: "",
-    disabled: false,
-    readOnly: false,
     autoComplete: {}
   };
 

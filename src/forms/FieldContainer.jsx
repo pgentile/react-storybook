@@ -23,10 +23,7 @@ export default class FieldContainer extends React.PureComponent {
 
   static defaultProps = {
     as: "div",
-    className: "",
-    disabled: false,
-    optional: false,
-    readOnly: false
+    className: ""
   };
 
   generatedId = `form-field-${FieldContainer.count++}`;
