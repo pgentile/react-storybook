@@ -104,11 +104,16 @@ export function cancelVoucher() {
 }
 
 export function addInsurance(price) {
+  const addInsuranceOnServer = async () => {
+    await sleep(1500);
+
+    return {
+      price
+    };
+  };
   return {
     type: ADD_INSURANCE,
-    payload: Promise.resolve({
-      price
-    })
+    payload: addInsuranceOnServer()
   };
 }
 

@@ -3798,27 +3798,35 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
     className="card card--has-border card--layer-flat insurance order-editor__insurance"
   >
     <button
-      className="button button--size-normal button--flat insurance__question"
+      className="button button--size-normal button--flat progress-button insurance__question"
+      disabled={false}
       onClick={[Function]}
     >
-      Assurez votre voyage, à partir de 
-      <span
-        className="price "
+      <div
+        className="progress-button__content"
       >
+        Assurez votre voyage, à partir de 
         <span
-          className="price__units"
+          className="price "
         >
-          12
+          <span
+            className="price__units"
+          >
+            12
+          </span>
+          <span
+            className="price__remaining"
+          >
+            , 
+            90
+             
+            €
+          </span>
         </span>
-        <span
-          className="price__remaining"
-        >
-          , 
-          90
-           
-          €
-        </span>
-      </span>
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
     </button>
   </section>
   <section
@@ -4136,27 +4144,35 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
     className="card card--has-border card--layer-flat insurance order-editor__insurance"
   >
     <button
-      className="button button--size-normal button--flat insurance__question"
+      className="button button--size-normal button--flat progress-button insurance__question"
+      disabled={false}
       onClick={[Function]}
     >
-      Assurez votre voyage, à partir de 
-      <span
-        className="price "
+      <div
+        className="progress-button__content"
       >
+        Assurez votre voyage, à partir de 
         <span
-          className="price__units"
+          className="price "
         >
-          12
+          <span
+            className="price__units"
+          >
+            12
+          </span>
+          <span
+            className="price__remaining"
+          >
+            , 
+            90
+             
+            €
+          </span>
         </span>
-        <span
-          className="price__remaining"
-        >
-          , 
-          90
-           
-          €
-        </span>
-      </span>
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
     </button>
   </section>
   <section
@@ -4310,27 +4326,35 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
     className="card card--has-border card--layer-flat insurance order-editor__insurance"
   >
     <button
-      className="button button--size-normal button--flat insurance__question"
+      className="button button--size-normal button--flat progress-button insurance__question"
+      disabled={false}
       onClick={[Function]}
     >
-      Assurez votre voyage, à partir de 
-      <span
-        className="price "
+      <div
+        className="progress-button__content"
       >
+        Assurez votre voyage, à partir de 
         <span
-          className="price__units"
+          className="price "
         >
-          12
+          <span
+            className="price__units"
+          >
+            12
+          </span>
+          <span
+            className="price__remaining"
+          >
+            , 
+            90
+             
+            €
+          </span>
         </span>
-        <span
-          className="price__remaining"
-        >
-          , 
-          90
-           
-          €
-        </span>
-      </span>
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
     </button>
   </section>
   <section
@@ -5123,27 +5147,35 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
         className="card card--has-border card--layer-flat insurance order-editor__insurance"
       >
         <button
-          className="button button--size-normal button--flat insurance__question"
+          className="button button--size-normal button--flat progress-button insurance__question"
+          disabled={false}
           onClick={[Function]}
         >
-          Assurez votre voyage, à partir de 
-          <span
-            className="price "
+          <div
+            className="progress-button__content"
           >
+            Assurez votre voyage, à partir de 
             <span
-              className="price__units"
+              className="price "
             >
-              12
+              <span
+                className="price__units"
+              >
+                12
+              </span>
+              <span
+                className="price__remaining"
+              >
+                , 
+                90
+                 
+                €
+              </span>
             </span>
-            <span
-              className="price__remaining"
-            >
-              , 
-              90
-               
-              €
-            </span>
-          </span>
+          </div>
+          <div
+            className="progress-button__progress-bar"
+          />
         </button>
       </section>
       <section

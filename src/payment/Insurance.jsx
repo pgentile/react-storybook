@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import Card from "../Card";
 import Price from "../Price";
-import Button from "../buttons/Button";
+import ManagedProgressButton from "../buttons/ManagedProgressButton";
 
 import "./Insurance.scss";
 
@@ -20,9 +20,9 @@ export default class Insurance extends React.PureComponent {
     }
   };
 
-  onAddInsurance = () => {
+  onAddInsurance = async () => {
     const { price } = this.state;
-    this.props.onAddInsurance(price);
+    return await this.props.onAddInsurance(price);
   };
 
   render() {
@@ -31,9 +31,9 @@ export default class Insurance extends React.PureComponent {
 
     return (
       <Card as="section" layer="flat" className={`insurance ${className}`}>
-        <Button className="insurance__question" flat onClick={this.onAddInsurance}>
+        <ManagedProgressButton className="insurance__question" flat onClick={this.onAddInsurance}>
           Assurez votre voyage, à partir de <Price price={price} />
-        </Button>
+        </ManagedProgressButton>
       </Card>
     );
   }
