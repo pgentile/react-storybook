@@ -2997,6 +2997,61 @@ exports[`Storyshots LoaderDemo main 1`] = `
 </div>
 `;
 
+exports[`Storyshots Menu main 1`] = `
+<nav
+  className="menu "
+>
+  <ul
+    className="menu__list"
+  >
+    <li
+      className="menu__item menu__item--active"
+    >
+      <a
+        className="menu__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Mes cartes enregistrées
+      </a>
+    </li>
+    <li
+      className="menu__item"
+    >
+      <a
+        className="menu__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Carte de paiement
+      </a>
+    </li>
+    <li
+      className="menu__item"
+    >
+      <a
+        className="menu__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Paypal
+      </a>
+    </li>
+    <li
+      className="menu__item"
+    >
+      <a
+        className="menu__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Apple Pay
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
 exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
 <form
   className="credit-card-form "
