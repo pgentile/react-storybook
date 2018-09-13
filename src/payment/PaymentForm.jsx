@@ -5,7 +5,8 @@ import CreditCardForm from "./CreditCardForm";
 import RegistredCreditCardList from "./RegistredCreditCardList";
 import PaymentMeans from "./PaymentMeans";
 import PaymentProcessingModal from "./PaymentProcessingModal";
-import sleep from "../utils/sleep";
+
+import minDelay from "../utils/minDelay";
 
 import "./PaymentForm.scss";
 
@@ -21,7 +22,8 @@ export default class PaymentForm extends React.PureComponent {
   };
 
   static defaultProps = {
-    className: ""
+    className: "",
+    registredCards: []
   };
 
   state = {
@@ -33,11 +35,7 @@ export default class PaymentForm extends React.PureComponent {
     this.setState({ paymentModal: true });
     try {
       const payPromise = this.props.onPay(values);
-      const delayForUserInformationPromise = sleep(10 * 1000);
-
-      await Promise.all([payPromise, delayForUserInformationPromise]);
-
-      return await payPromise;
+      return await minDelay(10 * 1000, payPromise);
     } finally {
       this.setState({ paymentModal: false });
     }
