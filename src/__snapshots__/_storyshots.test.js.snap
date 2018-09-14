@@ -1784,6 +1784,30 @@ exports[`Storyshots Forms / SuperRadio without icon 1`] = `
 </div>
 `;
 
+exports[`Storyshots Forms / Toggle checked 1`] = `
+<div
+  className="toggle toggle--checked "
+  onClick={[Function]}
+  tabIndex={0}
+/>
+`;
+
+exports[`Storyshots Forms / Toggle demo 1`] = `
+<div
+  className="toggle "
+  onClick={[Function]}
+  tabIndex={0}
+/>
+`;
+
+exports[`Storyshots Forms / Toggle unchecked 1`] = `
+<div
+  className="toggle "
+  onClick={[Function]}
+  tabIndex={0}
+/>
+`;
+
 exports[`Storyshots JsonSchemaForm SearchInwardForm 1`] = `
 <form
   className="rjsf"

@@ -1,0 +1,48 @@
+.toggle {
+  $width: 4rem;
+  $height: 2rem;
+  $switch-margin: 6px;
+  $duration: 0.1s;
+
+  $switch-size: calc(#{$height} - #{$switch-margin});
+
+  position: relative;
+
+  width: $width;
+  height: $height;
+
+  border-radius: $height / 2;
+
+  background-color: #999;
+
+  cursor: pointer;
+
+  transition: background-color $duration linear;
+
+  &::before {
+    content: "";
+
+    transition: left $duration linear;
+
+    width: $switch-size;
+    height: $switch-size;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: $switch-margin / 2;
+    left: $switch-margin / 2;
+
+  }
+
+  &--checked {
+    background-color: lightblue;
+
+    &::before {
+      left: calc(100% - #{$switch-size} - (#{$switch-margin} / 2));
+    }
+  }
+
+}
