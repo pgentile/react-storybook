@@ -107,6 +107,7 @@ exports[`Storyshots AsyncLoader success 1`] = `
 
 exports[`Storyshots Buttons / Button Taille large 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-large "
   onClick={[Function]}
 >
@@ -116,6 +117,7 @@ exports[`Storyshots Buttons / Button Taille large 1`] = `
 
 exports[`Storyshots Buttons / Button Taille normal 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal "
   onClick={[Function]}
 >
@@ -125,6 +127,7 @@ exports[`Storyshots Buttons / Button Taille normal 1`] = `
 
 exports[`Storyshots Buttons / Button Taille small 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-small "
   onClick={[Function]}
 >
@@ -134,6 +137,7 @@ exports[`Storyshots Buttons / Button Taille small 1`] = `
 
 exports[`Storyshots Buttons / Button disabled 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal "
   disabled={true}
   onClick={[Function]}
@@ -144,6 +148,7 @@ exports[`Storyshots Buttons / Button disabled 1`] = `
 
 exports[`Storyshots Buttons / Button flat 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal button--flat "
   onClick={[Function]}
 >
@@ -153,6 +158,7 @@ exports[`Storyshots Buttons / Button flat 1`] = `
 
 exports[`Storyshots Buttons / Button main 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal "
   onClick={[Function]}
 >
@@ -162,6 +168,7 @@ exports[`Storyshots Buttons / Button main 1`] = `
 
 exports[`Storyshots Buttons / Button show disabled 1`] = `
 <button
+  aria-pressed={false}
   className="button button--disabled button--size-normal "
   onClick={[Function]}
 >
@@ -171,6 +178,7 @@ exports[`Storyshots Buttons / Button show disabled 1`] = `
 
 exports[`Storyshots Buttons / Button toggled 1`] = `
 <button
+  aria-pressed={true}
   className="button button--size-normal button--toggled "
   onClick={[Function]}
 >
@@ -180,6 +188,7 @@ exports[`Storyshots Buttons / Button toggled 1`] = `
 
 exports[`Storyshots Buttons / ManagedProgressButton fail 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal progress-button "
   disabled={false}
   onClick={[Function]}
@@ -197,6 +206,7 @@ exports[`Storyshots Buttons / ManagedProgressButton fail 1`] = `
 
 exports[`Storyshots Buttons / ManagedProgressButton success 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal progress-button "
   disabled={false}
   onClick={[Function]}
@@ -214,6 +224,7 @@ exports[`Storyshots Buttons / ManagedProgressButton success 1`] = `
 
 exports[`Storyshots Buttons / ProgressButton disabled 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal progress-button "
   disabled={true}
 >
@@ -230,6 +241,7 @@ exports[`Storyshots Buttons / ProgressButton disabled 1`] = `
 
 exports[`Storyshots Buttons / ProgressButton finished 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal progress-button "
   disabled={true}
 >
@@ -246,6 +258,7 @@ exports[`Storyshots Buttons / ProgressButton finished 1`] = `
 
 exports[`Storyshots Buttons / ProgressButton loading 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal progress-button "
   disabled={true}
 >
@@ -262,6 +275,7 @@ exports[`Storyshots Buttons / ProgressButton loading 1`] = `
 
 exports[`Storyshots Buttons / ProgressButton main 1`] = `
 <button
+  aria-pressed={false}
   className="button button--size-normal progress-button "
   disabled={false}
   onClick={[Function]}
@@ -1786,26 +1800,95 @@ exports[`Storyshots Forms / SuperRadio without icon 1`] = `
 
 exports[`Storyshots Forms / Toggle checked 1`] = `
 <div
+  aria-checked={true}
   className="toggle toggle--checked "
   onClick={[Function]}
+  onKeyPress={[Function]}
+  role="checkbox"
   tabIndex={0}
-/>
+>
+  <input
+    checked={true}
+    className="toggle__input"
+    onClick={[Function]}
+    tabIndex={-1}
+    type="checkbox"
+  />
+</div>
 `;
 
 exports[`Storyshots Forms / Toggle demo 1`] = `
 <div
+  aria-checked={false}
   className="toggle "
   onClick={[Function]}
+  onKeyPress={[Function]}
+  role="checkbox"
   tabIndex={0}
-/>
+>
+  <input
+    checked={false}
+    className="toggle__input"
+    onClick={[Function]}
+    tabIndex={-1}
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`Storyshots Forms / Toggle disabled 1`] = `
+<div
+  aria-disabled={true}
+  className="toggle "
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="checkbox"
+  tabIndex={0}
+>
+  <input
+    className="toggle__input"
+    disabled={true}
+    onClick={[Function]}
+    tabIndex={-1}
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`Storyshots Forms / Toggle readOnly 1`] = `
+<div
+  aria-readonly={true}
+  className="toggle "
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="checkbox"
+  tabIndex={0}
+>
+  <input
+    className="toggle__input"
+    onClick={[Function]}
+    readOnly={true}
+    tabIndex={-1}
+    type="checkbox"
+  />
+</div>
 `;
 
 exports[`Storyshots Forms / Toggle unchecked 1`] = `
 <div
   className="toggle "
   onClick={[Function]}
+  onKeyPress={[Function]}
+  role="checkbox"
   tabIndex={0}
-/>
+>
+  <input
+    className="toggle__input"
+    onClick={[Function]}
+    tabIndex={-1}
+    type="checkbox"
+  />
+</div>
 `;
 
 exports[`Storyshots JsonSchemaForm SearchInwardForm 1`] = `
@@ -3189,6 +3272,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
     className="credit-card-form__button"
   >
     <button
+      aria-pressed={false}
       className="button button--disabled button--size-large "
       disabled={false}
       type="submit"
@@ -3233,6 +3317,7 @@ exports[`Storyshots Payment / Donation / Donation donation selected 1`] = `
     className="selected-donation__cancel"
   >
     <button
+      aria-pressed={false}
       className="button button--size-small progress-button "
       disabled={false}
       onClick={[Function]}
@@ -3308,6 +3393,7 @@ exports[`Storyshots Payment / Donation / Donation no donation selected 1`] = `
       className="donation-proposal__button"
     >
       <button
+        aria-pressed={false}
         className="button button--size-small progress-button "
         disabled={false}
         onClick={[Function]}
@@ -3406,6 +3492,7 @@ exports[`Storyshots Payment / Donation / DonationProposal main 1`] = `
       className="donation-proposal__button"
     >
       <button
+        aria-pressed={false}
         className="button button--size-small progress-button "
         disabled={false}
         onClick={[Function]}
@@ -3463,6 +3550,7 @@ exports[`Storyshots Payment / Donation / SelectedDonation main 1`] = `
     className="selected-donation__cancel"
   >
     <button
+      aria-pressed={false}
       className="button button--size-small progress-button "
       disabled={false}
       onClick={[Function]}
@@ -3709,6 +3797,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         className="donation-proposal__button"
       >
         <button
+          aria-pressed={false}
           className="button button--size-small progress-button "
           disabled={false}
           onClick={[Function]}
@@ -3877,6 +3966,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
     className="card card--has-border card--layer-flat insurance order-editor__insurance"
   >
     <button
+      aria-pressed={false}
       className="button button--size-normal button--flat progress-button insurance__question"
       disabled={false}
       onClick={[Function]}
@@ -3912,6 +4002,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
     className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
   >
     <button
+      aria-pressed={false}
       className="button button--size-normal button--flat voucher-container__question"
       onClick={[Function]}
     >
@@ -3934,6 +4025,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
       className="selected-donation__cancel"
     >
       <button
+        aria-pressed={false}
         className="button button--size-small progress-button "
         disabled={false}
         onClick={[Function]}
@@ -4076,6 +4168,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
     className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
   >
     <button
+      aria-pressed={false}
       className="button button--size-normal button--flat voucher-container__question"
       onClick={[Function]}
     >
@@ -4139,6 +4232,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
         className="donation-proposal__button"
       >
         <button
+          aria-pressed={false}
           className="button button--size-small progress-button "
           disabled={false}
           onClick={[Function]}
@@ -4223,6 +4317,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
     className="card card--has-border card--layer-flat insurance order-editor__insurance"
   >
     <button
+      aria-pressed={false}
       className="button button--size-normal button--flat progress-button insurance__question"
       disabled={false}
       onClick={[Function]}
@@ -4258,6 +4353,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
     className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
   >
     <button
+      aria-pressed={false}
       className="button button--size-normal button--flat voucher-container__question"
       onClick={[Function]}
     >
@@ -4321,6 +4417,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
         className="donation-proposal__button"
       >
         <button
+          aria-pressed={false}
           className="button button--size-small progress-button "
           disabled={false}
           onClick={[Function]}
@@ -4405,6 +4502,7 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
     className="card card--has-border card--layer-flat insurance order-editor__insurance"
   >
     <button
+      aria-pressed={false}
       className="button button--size-normal button--flat progress-button insurance__question"
       disabled={false}
       onClick={[Function]}
@@ -4440,6 +4538,7 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
     className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
   >
     <button
+      aria-pressed={false}
       className="button button--size-normal button--flat voucher-container__question"
       onClick={[Function]}
     >
@@ -4503,6 +4602,7 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
         className="donation-proposal__button"
       >
         <button
+          aria-pressed={false}
           className="button button--size-small progress-button "
           disabled={false}
           onClick={[Function]}
@@ -5226,6 +5326,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
         className="card card--has-border card--layer-flat insurance order-editor__insurance"
       >
         <button
+          aria-pressed={false}
           className="button button--size-normal button--flat progress-button insurance__question"
           disabled={false}
           onClick={[Function]}
@@ -5261,6 +5362,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
         className="card card--has-border card--layer-flat voucher-container order-editor__voucher"
       >
         <button
+          aria-pressed={false}
           className="button button--size-normal button--flat voucher-container__question"
           onClick={[Function]}
         >
@@ -5324,6 +5426,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             className="donation-proposal__button"
           >
             <button
+              aria-pressed={false}
               className="button button--size-small progress-button "
               disabled={false}
               onClick={[Function]}
@@ -5671,6 +5774,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           className="credit-card-form__button"
         >
           <button
+            aria-pressed={false}
             className="button button--disabled button--size-large "
             disabled={false}
             type="submit"
@@ -6006,6 +6110,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
       className="credit-card-form__button"
     >
       <button
+        aria-pressed={false}
         className="button button--disabled button--size-large "
         disabled={false}
         type="submit"
@@ -6339,6 +6444,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
       className="credit-card-form__button"
     >
       <button
+        aria-pressed={false}
         className="button button--disabled button--size-large "
         disabled={false}
         type="submit"
@@ -6860,6 +6966,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
     className="registred-card-cvv-form__buttons"
   >
     <button
+      aria-pressed={false}
       className="button button--disabled button--size-small "
       type="submit"
     >
@@ -6883,6 +6990,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
       </span>
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small "
       onClick={[Function]}
       type="reset"
@@ -6930,6 +7038,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
     className="registred-card-cvv-form__buttons"
   >
     <button
+      aria-pressed={false}
       className="button button--disabled button--size-small "
       disabled={true}
       type="submit"
@@ -6954,6 +7063,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
       </span>
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small "
       disabled={true}
       onClick={[Function]}
@@ -7011,6 +7121,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
     className="registred-card-cvv-form__buttons"
   >
     <button
+      aria-pressed={false}
       className="button button--size-small "
       type="submit"
     >
@@ -7034,6 +7145,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
       </span>
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small "
       onClick={[Function]}
       type="reset"
@@ -7080,6 +7192,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
     className="registred-card-cvv-form__buttons"
   >
     <button
+      aria-pressed={false}
       className="button button--disabled button--size-small "
       type="submit"
     >
@@ -7103,6 +7216,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
       </span>
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small "
       onClick={[Function]}
       type="reset"
@@ -7149,6 +7263,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
     className="registred-card-cvv-form__buttons"
   >
     <button
+      aria-pressed={false}
       className="button button--disabled button--size-small "
       type="submit"
     >
@@ -7172,6 +7287,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
       </span>
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small "
       onClick={[Function]}
       type="reset"
@@ -7247,6 +7363,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={false}
           className="button button--size-normal "
           disabled={true}
           onClick={[Function]}
@@ -7316,6 +7433,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     type="submit"
@@ -7340,6 +7458,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     onClick={[Function]}
@@ -7423,6 +7542,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabl
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={true}
           className="button button--size-normal button--toggled "
           disabled={true}
           onClick={[Function]}
@@ -7492,6 +7612,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabl
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     type="submit"
@@ -7516,6 +7637,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabl
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     onClick={[Function]}
@@ -7599,6 +7721,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={true}
           className="button button--size-normal button--toggled "
           onClick={[Function]}
         >
@@ -7672,6 +7795,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={false}
                     type="submit"
@@ -7696,6 +7820,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={false}
                     onClick={[Function]}
@@ -7779,6 +7904,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={false}
           className="button button--size-normal "
           onClick={[Function]}
         >
@@ -7847,6 +7973,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     type="submit"
@@ -7871,6 +7998,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     onClick={[Function]}
@@ -7954,6 +8082,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={false}
           className="button button--size-normal "
           disabled={true}
           onClick={[Function]}
@@ -8018,6 +8147,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--disabled button--size-small "
                     disabled={true}
                     type="submit"
@@ -8042,6 +8172,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     onClick={[Function]}
@@ -8125,6 +8256,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={true}
           className="button button--size-normal button--toggled "
           disabled={true}
           onClick={[Function]}
@@ -8189,6 +8321,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--disabled button--size-small "
                     disabled={true}
                     type="submit"
@@ -8213,6 +8346,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     onClick={[Function]}
@@ -8296,6 +8430,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={true}
           className="button button--size-normal button--toggled "
           onClick={[Function]}
         >
@@ -8359,6 +8494,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--disabled button--size-small "
                     disabled={false}
                     type="submit"
@@ -8383,6 +8519,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={false}
                     onClick={[Function]}
@@ -8466,6 +8603,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
         className="registred-credit-card__select"
       >
         <button
+          aria-pressed={false}
           className="button button--size-normal "
           onClick={[Function]}
         >
@@ -8529,6 +8667,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
                   className="registred-card-cvv-form__buttons"
                 >
                   <button
+                    aria-pressed={false}
                     className="button button--disabled button--size-small "
                     disabled={true}
                     type="submit"
@@ -8553,6 +8692,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
                     </span>
                   </button>
                   <button
+                    aria-pressed={false}
                     className="button button--size-small "
                     disabled={true}
                     onClick={[Function]}
@@ -8639,6 +8779,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             disabled={true}
             onClick={[Function]}
@@ -8703,6 +8844,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--disabled button--size-small "
                       disabled={true}
                       type="submit"
@@ -8727,6 +8869,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -8807,6 +8950,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             disabled={true}
             onClick={[Function]}
@@ -8871,6 +9015,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--disabled button--size-small "
                       disabled={true}
                       type="submit"
@@ -8895,6 +9040,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -8975,6 +9121,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             disabled={true}
             onClick={[Function]}
@@ -9039,6 +9186,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--disabled button--size-small "
                       disabled={true}
                       type="submit"
@@ -9063,6 +9211,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -9143,6 +9292,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             disabled={true}
             onClick={[Function]}
@@ -9212,6 +9362,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       type="submit"
@@ -9236,6 +9387,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -9323,6 +9475,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             onClick={[Function]}
           >
@@ -9386,6 +9539,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--disabled button--size-small "
                       disabled={true}
                       type="submit"
@@ -9410,6 +9564,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -9490,6 +9645,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             onClick={[Function]}
           >
@@ -9553,6 +9709,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--disabled button--size-small "
                       disabled={true}
                       type="submit"
@@ -9577,6 +9734,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -9657,6 +9815,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             onClick={[Function]}
           >
@@ -9720,6 +9879,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--disabled button--size-small "
                       disabled={true}
                       type="submit"
@@ -9744,6 +9904,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -9824,6 +9985,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
           className="registred-credit-card__select"
         >
           <button
+            aria-pressed={false}
             className="button button--size-normal "
             onClick={[Function]}
           >
@@ -9892,6 +10054,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                     className="registred-card-cvv-form__buttons"
                   >
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       type="submit"
@@ -9916,6 +10079,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       </span>
                     </button>
                     <button
+                      aria-pressed={false}
                       className="button button--size-small "
                       disabled={true}
                       onClick={[Function]}
@@ -9940,6 +10104,7 @@ exports[`Storyshots Payment / VoucherContainer main 1`] = `
   className="card card--has-border card--layer-flat voucher-container "
 >
   <button
+    aria-pressed={false}
     className="button button--size-normal button--flat voucher-container__question"
     onClick={[Function]}
   >
@@ -9988,6 +10153,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
     className="voucher-form__line"
   >
     <button
+      aria-pressed={false}
       className="button button--disabled button--size-small progress-button voucher-form__button"
       disabled={false}
       type="submit"
@@ -10002,6 +10168,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
       />
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
@@ -10053,6 +10220,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
     className="voucher-form__line"
   >
     <button
+      aria-pressed={false}
       className="button button--size-small progress-button voucher-form__button"
       disabled={false}
       type="submit"
@@ -10067,6 +10235,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
       />
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
@@ -10118,6 +10287,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
     className="voucher-form__line"
   >
     <button
+      aria-pressed={false}
       className="button button--size-small progress-button voucher-form__button"
       disabled={false}
       type="submit"
@@ -10132,6 +10302,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
       />
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
@@ -10183,6 +10354,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
     className="voucher-form__line"
   >
     <button
+      aria-pressed={false}
       className="button button--size-small progress-button voucher-form__button"
       disabled={false}
       type="submit"
@@ -10197,6 +10369,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
       />
     </button>
     <button
+      aria-pressed={false}
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}

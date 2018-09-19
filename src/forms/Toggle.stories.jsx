@@ -12,6 +12,12 @@ storiesOf("Forms / Toggle", module)
   })
   .add("demo", () => {
     return <ToggleDemo />;
+  })
+  .add("disabled", () => {
+    return <Toggle disabled />;
+  })
+  .add("readOnly", () => {
+    return <Toggle readOnly />;
   });
 
 class ToggleDemo extends React.PureComponent {

@@ -36,7 +36,7 @@ export default class Button extends React.PureComponent {
     });
 
     return (
-      <Element className={`${realClassName} ${className}`} {...otherProps}>
+      <Element className={`${realClassName} ${className}`} {...otherProps} aria-pressed={toggled}>
         {children}
       </Element>
     );
