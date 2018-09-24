@@ -14,7 +14,7 @@
     "test": "jest",
     "test:update": "jest -u",
     "test:coverage": "jest --coverage",
-    "test:e2e": "jest --config=./e2e-test/jest.config.js",
+    "test:e2e:puppeteer": "jest --config=./e2e-test-puppeteer/jest.config.js",
     "build": "npm-run-all lint test test:coverage storybook:build",
     "browserslist": "browserslist"
   },
