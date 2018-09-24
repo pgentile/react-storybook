@@ -15,8 +15,10 @@
     "test:update": "jest -u",
     "test:coverage": "jest --coverage",
     "test:e2e:puppeteer": "jest --config=./e2e-test-puppeteer/jest.config.js",
+    "test:e2e:webdriverio": "jest --config=./e2e-test-webdriverio/jest.config.js",
     "build": "npm-run-all lint test test:coverage storybook:build",
-    "browserslist": "browserslist"
+    "browserslist": "browserslist",
+    "selenium-server": "selenium-server -port 4444"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
@@ -85,6 +87,7 @@
     "sass-loader": "^7.0.1",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.1",
+    "webdriverio": "^4.13.2",
     "webpack": "^4.5.0"
   },
   "browserslist": [
