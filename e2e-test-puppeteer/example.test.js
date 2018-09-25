@@ -1,5 +1,7 @@
 import puppeteer from "puppeteer";
 
+jest.setTimeout(30 * 1000);
+
 let browser;
 
 beforeAll(async () => {

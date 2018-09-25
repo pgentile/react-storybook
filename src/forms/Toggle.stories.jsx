@@ -34,6 +34,6 @@ class ToggleDemo extends React.PureComponent {
   render() {
     const { checked } = this.state;
 
-    return <Toggle checked={checked} onClick={this.onClick} />;
+    return <Toggle checked={checked} onClick={this.onClick} value="demo" />;
   }
 }

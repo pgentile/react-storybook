@@ -1832,6 +1832,7 @@ exports[`Storyshots Forms / Toggle demo 1`] = `
     onClick={[Function]}
     tabIndex={-1}
     type="checkbox"
+    value="demo"
   />
 </div>
 `;
