@@ -1,9 +1,10 @@
 import createStore from "./createStore";
 import order from "./reducers/order";
 import payment from "./reducers/payment";
+import connectedUser from "./reducers/connectedUser";
+import modals from "./reducers/modals";
 import loader, { loaderMiddleware } from "./reducers/loader";
 import navigatorStatus, { navigatorStatusMiddleware } from "./reducers/navigatorStatus";
-import connectedUser from "./reducers/connectedUser";
 
 // Export a created store
 
@@ -13,6 +14,7 @@ export function createDefaultStore() {
     order,
     payment,
     connectedUser,
+    modals,
     navigatorStatus
   };
 

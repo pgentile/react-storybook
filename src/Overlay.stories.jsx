@@ -1,11 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs/react";
+import { action } from "@storybook/addon-actions";
 
 import Overlay from "./Overlay";
 
 storiesOf("Overlay", module)
-  .addDecorator(withKnobs)
   .add("main", () => {
     return <Overlay />;
+  })
+  .add("clickable", () => {
+    return <Overlay onClick={action("click")} />;
   });

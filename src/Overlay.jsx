@@ -6,7 +6,8 @@ import "./Overlay.scss";
 
 export default class Overlay extends React.Component {
   static propTypes = {
-    children: PropTypes.node
+    children: PropTypes.node,
+    onClick: PropTypes.func
   };
 
   body = null;
@@ -36,8 +37,12 @@ export default class Overlay extends React.Component {
   }
 
   renderOverlay() {
-    const { children } = this.props;
+    const { children, onClick } = this.props;
 
-    return <div className="overlay">{children}</div>;
+    return (
+      <div className="overlay" onClick={onClick}>
+        {children}
+      </div>
+    );
   }
 }

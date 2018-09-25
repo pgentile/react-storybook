@@ -1,0 +1,36 @@
+@import "./styles/reset-button";
+
+.modal {
+  margin: 1rem;
+
+  &__card {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+
+    margin: 1rem;
+  }
+
+  &__title {
+    flex: 1 0;
+
+    margin: 0;
+  }
+
+  &__close {
+    @extend %button-resets;
+
+    cursor: pointer;
+
+    color: #AAA;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+}
