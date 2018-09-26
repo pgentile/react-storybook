@@ -186,6 +186,68 @@ exports[`Storyshots Buttons / Button toggled 1`] = `
 </button>
 `;
 
+exports[`Storyshots Buttons / ButtonGroup large 1`] = `
+<div
+  className="button-group "
+>
+  <button
+    aria-pressed={false}
+    className="button button--size-large button-group__button "
+  >
+    Button 1
+  </button>
+  <button
+    aria-pressed={false}
+    className="button button--size-large button-group__button "
+  >
+    Button 2
+  </button>
+  <button
+    aria-pressed={true}
+    className="button button--size-large button--toggled button-group__button "
+  >
+    Button 3
+  </button>
+  <button
+    aria-pressed={false}
+    className="button button--size-large button-group__button "
+  >
+    Button 4
+  </button>
+</div>
+`;
+
+exports[`Storyshots Buttons / ButtonGroup main 1`] = `
+<div
+  className="button-group "
+>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal button-group__button "
+  >
+    Button 1
+  </button>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal button-group__button "
+  >
+    Button 2
+  </button>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal button-group__button "
+  >
+    Button 3
+  </button>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal button-group__button "
+  >
+    Button 4
+  </button>
+</div>
+`;
+
 exports[`Storyshots Buttons / ManagedProgressButton fail 1`] = `
 <button
   aria-pressed={false}
