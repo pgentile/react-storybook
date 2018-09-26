@@ -355,7 +355,7 @@ exports[`Storyshots Buttons / ProgressButton main 1`] = `
 
 exports[`Storyshots Calendar / Calendar all options 1`] = `
 <table
-  className="calendar"
+  className="calendar "
 >
   <thead
     className="calendar__week-days"
@@ -984,7 +984,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
 
 exports[`Storyshots Calendar / Calendar main 1`] = `
 <table
-  className="calendar"
+  className="calendar "
 >
   <thead
     className="calendar__week-days"
@@ -1613,7 +1613,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
 
 exports[`Storyshots Calendar / Calendar max date 1`] = `
 <table
-  className="calendar"
+  className="calendar "
 >
   <thead
     className="calendar__week-days"
@@ -2242,7 +2242,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
 
 exports[`Storyshots Calendar / Calendar min date 1`] = `
 <table
-  className="calendar"
+  className="calendar "
 >
   <thead
     className="calendar__week-days"
@@ -2871,7 +2871,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
 
 exports[`Storyshots Calendar / Calendar selectable 1`] = `
 <table
-  className="calendar"
+  className="calendar "
 >
   <thead
     className="calendar__week-days"
@@ -3500,7 +3500,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
 
 exports[`Storyshots Calendar / Calendar selected date 1`] = `
 <table
-  className="calendar"
+  className="calendar "
 >
   <thead
     className="calendar__week-days"
@@ -4162,10 +4162,10 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
     </button>
   </div>
   <div
-    className="date-picker__calendar"
+    className="date-picker__calendar-container"
   >
     <table
-      className="calendar"
+      className="calendar date-picker__calendar"
     >
       <thead
         className="calendar__week-days"
@@ -4734,10 +4734,10 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
     </button>
   </div>
   <div
-    className="date-picker__calendar"
+    className="date-picker__calendar-container"
   >
     <table
-      className="calendar"
+      className="calendar date-picker__calendar"
     >
       <thead
         className="calendar__week-days"

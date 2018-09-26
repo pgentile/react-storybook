@@ -21,6 +21,7 @@ import "./Calendar.scss";
 
 export default class Calendar extends React.PureComponent {
   static propTypes = {
+    className: PropTypes.string,
     viewDate: PropTypes.any,
     selectedDate: PropTypes.any,
     minDate: PropTypes.any,
@@ -28,7 +29,9 @@ export default class Calendar extends React.PureComponent {
     onSelect: PropTypes.func
   };
 
-  static defaultProps = {};
+  static defaultProps = {
+    className: ""
+  };
 
   generateDataMemoized = memoizeOne(monthFirstDay => {
     const monthLastDay = endOfMonth(monthFirstDay);
@@ -82,6 +85,7 @@ export default class Calendar extends React.PureComponent {
 
   render() {
     const {
+      className,
       selectedDate: selectedDateInput,
       viewDate: viewDateInput,
       minDate: minDateInput,
@@ -137,7 +141,7 @@ export default class Calendar extends React.PureComponent {
     });
 
     return (
-      <table className="calendar">
+      <table className={"calendar " + className}>
         <thead className="calendar__week-days">
           <tr>{weekDayRows}</tr>
         </thead>

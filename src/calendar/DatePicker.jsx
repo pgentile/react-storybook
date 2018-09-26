@@ -73,8 +73,9 @@ export default class DatePicker extends React.PureComponent {
             Mois suivant
           </ButtonInGroup>
         </ButtonGroup>
-        <div className="date-picker__calendar">
+        <div className="date-picker__calendar-container">
           <Calendar
+            className="date-picker__calendar"
             viewDate={viewDate || value}
             selectedDate={value}
             minDate={minDate}

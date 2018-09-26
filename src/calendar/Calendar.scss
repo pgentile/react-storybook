@@ -1,6 +1,11 @@
 .calendar {
+  margin: 0;
+  padding: 0;
 
   border-collapse: collapse;
+
+  font-size: 1rem;
+  color: black;
 
   &__week-day, &__day {
     padding: 0.5rem;
