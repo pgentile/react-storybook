@@ -1,0 +1,51 @@
+.calendar {
+
+  border-collapse: collapse;
+
+  &__week-day, &__day {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  &__day {
+    border: 1px solid #999;
+  }
+
+  &__week-days {
+    font-weight: bold;
+  }
+
+  &__day {
+    color: #999;
+
+    &--current-month {
+      color: black;
+    }
+
+    &--selectable {
+      cursor: pointer;
+
+      &:hover, &:focus {
+        background-color: lightgreen;
+        color: black;
+      }
+    }
+
+    &--disabled {
+      background-color: #EEE;
+      color: #999;
+    }
+
+    &--selected {
+      background-color: darkblue;
+      color: white;
+
+      &:hover, &:focus {
+        background-color: darkblue;
+        color: white;
+      }
+    }
+
+  }
+
+}
