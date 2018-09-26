@@ -1318,6 +1318,7 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
   >
     <input
       className="form-input-field "
+      formNoValidate={true}
       id="form-field-2"
       placeholder="Valeur d'exemple"
       type="text"
@@ -1346,6 +1347,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
   >
     <input
       className="form-input-field form-input-field--error "
+      formNoValidate={true}
       id="form-field-1"
       placeholder="Valeur d'exemple"
       type="text"
@@ -1374,6 +1376,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
   >
     <input
       className="form-input-field form-input-field--error "
+      formNoValidate={true}
       id="form-field-3"
       placeholder="Valeur d'exemple"
       type="text"
@@ -1408,6 +1411,7 @@ exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
     <input
       className="form-input-field "
       disabled={true}
+      formNoValidate={true}
       id="form-field-4"
       placeholder="Valeur d'exemple"
       type="text"
@@ -1431,6 +1435,7 @@ exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
   >
     <input
       className="form-input-field "
+      formNoValidate={true}
       id="form-field-5"
       placeholder="Valeur d'exemple"
       readOnly={true}
@@ -1455,6 +1460,7 @@ exports[`Storyshots Forms / FieldContainer main 1`] = `
   >
     <input
       className="form-input-field "
+      formNoValidate={true}
       id="form-field-0"
       placeholder="Valeur d'exemple"
       type="text"
@@ -1467,6 +1473,7 @@ exports[`Storyshots Forms / InputField Avec erreur 1`] = `
 <input
   className="form-input-field form-input-field--error "
   defaultValue=""
+  formNoValidate={true}
   type="text"
 />
 `;
@@ -1475,6 +1482,7 @@ exports[`Storyshots Forms / InputField Avec placeholder 1`] = `
 <input
   className="form-input-field "
   defaultValue=""
+  formNoValidate={true}
   placeholder="Example"
   type="text"
 />
@@ -1484,6 +1492,7 @@ exports[`Storyshots Forms / InputField Avec valeur 1`] = `
 <input
   className="form-input-field "
   defaultValue="Example"
+  formNoValidate={true}
   type="text"
 />
 `;
@@ -1493,7 +1502,17 @@ exports[`Storyshots Forms / InputField Désactivé 1`] = `
   className="form-input-field "
   defaultValue="Example"
   disabled={true}
+  formNoValidate={true}
   type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Email 1`] = `
+<input
+  className="form-input-field "
+  formNoValidate={true}
+  placeholder="Adresse email"
+  type="email"
 />
 `;
 
@@ -1501,8 +1520,18 @@ exports[`Storyshots Forms / InputField Lecture seule 1`] = `
 <input
   className="form-input-field "
   defaultValue="Example"
+  formNoValidate={true}
   readOnly={true}
   type="text"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Mot de passe 1`] = `
+<input
+  className="form-input-field "
+  formNoValidate={true}
+  type="password"
+  value="password"
 />
 `;
 
@@ -1510,6 +1539,7 @@ exports[`Storyshots Forms / InputField main 1`] = `
 <input
   className="form-input-field "
   defaultValue=""
+  formNoValidate={true}
   type="text"
 />
 `;
@@ -3243,6 +3273,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
         autoComplete="cc-number"
         className="form-input-field "
         disabled={false}
+        formNoValidate={true}
         id="form-field-6"
         inputMode="numeric"
         maxLength={19}
@@ -3320,6 +3351,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
         autoComplete="cc-csc"
         className="form-input-field "
         disabled={false}
+        formNoValidate={true}
         id="form-field-8"
         inputMode="numeric"
         maxLength={4}
@@ -5745,6 +5777,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               autoComplete="cc-number"
               className="form-input-field "
               disabled={false}
+              formNoValidate={true}
               id="form-field-9"
               inputMode="numeric"
               maxLength={19}
@@ -5822,6 +5855,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               autoComplete="cc-csc"
               className="form-input-field "
               disabled={false}
+              formNoValidate={true}
               id="form-field-11"
               inputMode="numeric"
               maxLength={4}
@@ -6081,6 +6115,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           autoComplete="cc-number"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-12"
           inputMode="numeric"
           maxLength={19}
@@ -6158,6 +6193,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           autoComplete="cc-csc"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-14"
           inputMode="numeric"
           maxLength={4}
@@ -6415,6 +6451,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
           autoComplete="cc-number"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-15"
           inputMode="numeric"
           maxLength={19}
@@ -6492,6 +6529,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
           autoComplete="cc-csc"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-17"
           inputMode="numeric"
           maxLength={4}
@@ -7014,6 +7052,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
+        formNoValidate={true}
         id="form-field-20"
         inputMode="numeric"
         maxLength={4}
@@ -7086,6 +7125,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
         autoComplete="cc-csc"
         className="form-input-field "
         disabled={true}
+        formNoValidate={true}
         id="form-field-22"
         inputMode="numeric"
         maxLength={3}
@@ -7164,6 +7204,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
+        formNoValidate={true}
         id="form-field-21"
         inputMode="numeric"
         maxLength={3}
@@ -7240,6 +7281,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
+        formNoValidate={true}
         id="form-field-19"
         inputMode="numeric"
         maxLength={3}
@@ -7311,6 +7353,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
       <input
         autoComplete="cc-csc"
         className="form-input-field "
+        formNoValidate={true}
         id="form-field-18"
         inputMode="numeric"
         maxLength={3}
@@ -7481,6 +7524,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={true}
+                      formNoValidate={true}
                       id="form-field-29"
                       inputMode="numeric"
                       maxLength={3}
@@ -7660,6 +7704,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabl
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={true}
+                      formNoValidate={true}
                       id="form-field-30"
                       inputMode="numeric"
                       maxLength={3}
@@ -7838,6 +7883,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={false}
+                      formNoValidate={true}
                       id="form-field-28"
                       inputMode="numeric"
                       maxLength={3}
@@ -8021,6 +8067,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={true}
+                      formNoValidate={true}
                       id="form-field-27"
                       inputMode="numeric"
                       maxLength={3}
@@ -8195,6 +8242,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={true}
+                      formNoValidate={true}
                       id="form-field-25"
                       inputMode="numeric"
                       maxLength={3}
@@ -8369,6 +8417,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={true}
+                      formNoValidate={true}
                       id="form-field-26"
                       inputMode="numeric"
                       maxLength={3}
@@ -8542,6 +8591,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={false}
+                      formNoValidate={true}
                       id="form-field-24"
                       inputMode="numeric"
                       maxLength={3}
@@ -8715,6 +8765,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
                       autoComplete="cc-csc"
                       className="form-input-field "
                       disabled={true}
+                      formNoValidate={true}
                       id="form-field-23"
                       inputMode="numeric"
                       maxLength={3}
@@ -8892,6 +8943,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-35"
                         inputMode="numeric"
                         maxLength={3}
@@ -9063,6 +9115,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-36"
                         inputMode="numeric"
                         maxLength={3}
@@ -9234,6 +9287,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-37"
                         inputMode="numeric"
                         maxLength={4}
@@ -9410,6 +9464,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-38"
                         inputMode="numeric"
                         maxLength={3}
@@ -9587,6 +9642,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-31"
                         inputMode="numeric"
                         maxLength={3}
@@ -9757,6 +9813,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-32"
                         inputMode="numeric"
                         maxLength={3}
@@ -9927,6 +9984,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-33"
                         inputMode="numeric"
                         maxLength={4}
@@ -10102,6 +10160,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
+                        formNoValidate={true}
                         id="form-field-34"
                         inputMode="numeric"
                         maxLength={3}
@@ -10200,6 +10259,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-39"
           maxLength={16}
           name="code"
@@ -10267,6 +10327,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-40"
           maxLength={16}
           name="code"
@@ -10334,6 +10395,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-42"
           maxLength={16}
           name="code"
@@ -10401,6 +10463,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           autoComplete="off"
           className="form-input-field "
           disabled={false}
+          formNoValidate={true}
           id="form-field-41"
           maxLength={16}
           name="code"
@@ -11030,6 +11093,249 @@ Array [
     </section>
   </div>,
 ]
+`;
+
+exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
+<form
+  className="create-user-account-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="form-field-container create-user-account-form__firstname"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-43"
+    >
+      Prénom
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="given-name"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-43"
+        name="firstname"
+        onBlur={[Function]}
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-field-container create-user-account-form__lastname"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-44"
+    >
+      Nom de famille
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="family-name"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-44"
+        name="lastname"
+        onBlur={[Function]}
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-field-container create-user-account-form__birthdate"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-45"
+    >
+      Date de naissance
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <fieldset
+        className="form-date-input "
+      >
+        <input
+          autoComplete="bday-day"
+          className="form-date-input__input form-date-input__input--day"
+          disabled={false}
+          id="form-field-45"
+          inputMode="numeric"
+          maxLength={2}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="JJ"
+          type="tel"
+          value=""
+        />
+        <span
+          className="form-date-input__input-separator"
+        >
+          /
+        </span>
+        <input
+          autoComplete="bday-month"
+          className="form-date-input__input form-date-input__input--month"
+          disabled={false}
+          id={null}
+          inputMode="numeric"
+          maxLength={2}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="MM"
+          type="tel"
+          value=""
+        />
+        <span
+          className="form-date-input__input-separator"
+        >
+          /
+        </span>
+        <input
+          autoComplete="bday-year"
+          className="form-date-input__input form-date-input__input--year"
+          disabled={false}
+          inputMode="numeric"
+          maxLength={4}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="AAAA"
+          type="tel"
+          value=""
+        />
+      </fieldset>
+    </div>
+  </div>
+  <div
+    className="form-field-container create-user-account-form__email"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-46"
+    >
+      Email
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="email"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-46"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        type="email"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-field-container create-user-account-form__email-check"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-47"
+    >
+      Répétez l'email
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="email"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-47"
+        name="emailCheck"
+        onBlur={[Function]}
+        onChange={[Function]}
+        type="email"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-field-container create-user-account-form__password"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-48"
+    >
+      Mot de passe
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-48"
+        name="password"
+        onBlur={[Function]}
+        onChange={[Function]}
+        type="password"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-field-container create-user-account-form__password-check"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-49"
+    >
+      Répétez le mot de passe
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-49"
+        name="passwordCheck"
+        onBlur={[Function]}
+        onChange={[Function]}
+        type="password"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="create-user-account-form__button"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--disabled button--size-large "
+      disabled={false}
+      type="submit"
+    >
+      Créer le compte utilisateur
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Storyshots Wip main 1`] = `

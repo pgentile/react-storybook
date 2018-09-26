@@ -13,6 +13,12 @@ storiesOf("Forms / InputField", module)
   .add("Avec placeholder", () => {
     return <InputField defaultValue="" placeholder="Example" />;
   })
+  .add("Email", () => {
+    return <InputField type="email" placeholder="Adresse email" />;
+  })
+  .add("Mot de passe", () => {
+    return <InputField type="password" value="password" />;
+  })
   .add("Avec erreur", () => {
     return <InputField defaultValue="" error />;
   })

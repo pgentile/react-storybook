@@ -1,0 +1,47 @@
+@import "../styles/screen-sizes";
+
+.create-user-account-form {
+  $margin: 1rem;
+  $fields: firstname lastname birthdate email email-check password password-check;
+
+  margin: 0;
+  padding: 0;
+
+  @each $field in $fields {
+    &__#{$field} {
+      margin-bottom: $margin;
+    }
+  }
+
+  &__button {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  @include screen-min-small {
+
+    display: grid;
+    grid-gap: $margin;
+
+    grid-template-areas:
+    "firstname lastname"
+    "birthdate birthdate"
+    "email email-check"
+    "password password-check"
+    "button button"
+    ;
+    grid-template-columns: 1fr 1fr;
+
+    @each $field in $fields {
+      &__#{$field} {
+        margin-bottom: 0;
+        grid-area: $field;
+      }
+    }
+
+    &__button {
+      grid-area: button;
+    }
+  }
+
+}

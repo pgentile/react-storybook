@@ -9,13 +9,15 @@ export default class InputField extends React.PureComponent {
   static propTypes = {
     as: PropTypes.any,
     className: PropTypes.string,
-    error: PropTypes.bool
+    error: PropTypes.bool,
+    formNoValidate: PropTypes.bool
   };
 
   static defaultProps = {
     as: "input",
     className: "",
-    error: false
+    error: false,
+    formNoValidate: true
   };
 
   render() {
