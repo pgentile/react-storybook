@@ -1,0 +1,93 @@
+.date-picker-input {
+  $color: black;
+  $border-color: #EEE;
+  $bottom-border-color: darken($border-color, 20%);
+  $border-width: 1px;
+  $border-bottom-width: 3px;
+  $background-color: white;
+
+  $error-border-color: red;
+
+  $disabled-background-color: lighten($border-color, 5%);
+  $disabled-color: lighten($color, 60%);
+
+  $focus-border-color: darken($border-color, 40%);
+
+  $placeholder-color: lighten($color, 70%);
+
+  position: relative;
+  box-sizing: border-box;
+
+  &__field {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.5rem;
+    display: block;
+
+    background-color: $background-color;
+
+    border: $border-width solid $border-color;
+    border-bottom: $border-bottom-width solid $bottom-border-color;
+
+    font-size: 1rem;
+    color: $color;
+
+    cursor: pointer;
+
+    // Bien respecter l'ordre des classes pour un affichage correct
+    // des différents états
+
+    &--focus {
+      border-color: $focus-border-color;
+      outline: none;
+    }
+
+    &--error {
+      border-bottom-color: $error-border-color;
+    }
+
+    &--read-only {
+      transition: none;
+      cursor: default;
+
+      border-color: $border-color;
+    }
+
+    &--disabled {
+      transition: none;
+      cursor: default;
+
+      background-color: $disabled-background-color;
+      border-color: $border-color;
+    }
+
+    &--disabled {
+      color: $disabled-color;
+      user-select: none;
+    }
+
+  }
+
+  &__picker-panel {
+    box-sizing: border-box;
+    position: absolute;
+    min-width: 100%;
+    z-index: 900;
+
+    padding: 0.5rem;
+
+    background-color: white;
+
+    border: $focus-border-color solid 1px;
+
+    display: none;
+
+    &--focus {
+      display: block;
+
+      $layer-shadow-color: rgba(0, 0, 0, 0.2);
+      box-shadow: 0 12px 24px 0 $layer-shadow-color;
+    }
+  }
+
+}
