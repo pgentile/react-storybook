@@ -9,3 +9,5 @@ node_modules/
 yarn-*.log
 
 /build/
+
+/screenshot.png
