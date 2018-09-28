@@ -16,6 +16,7 @@
     "test:coverage": "jest --coverage",
     "test:e2e:puppeteer": "jest --runInBand --config=./e2e-test-puppeteer/jest.config.js",
     "test:e2e:webdriverio": "jest --runInBand --config=./e2e-test-webdriverio/jest.config.js",
+    "test:e2e:selenium": "jest --runInBand --config=./e2e-test-selenium/jest.config.js",
     "e2e-mock-pages": "http-server ./e2e-mock-pages -p 10101",
     "build": "npm-run-all lint test test:coverage storybook:build",
     "browserslist": "browserslist",
