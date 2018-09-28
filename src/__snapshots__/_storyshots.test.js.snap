@@ -363,45 +363,73 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
     <tr>
       <th
         className="calendar__week-day"
-        title="Lundi"
       >
-        Lu
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mardi"
       >
-        Ma
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mercredi"
       >
-        Me
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Jeudi"
       >
-        Je
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Vendredi"
       >
-        Ve
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Samedi"
       >
-        Sa
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Dimanche"
       >
-        Di
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
       </th>
     </tr>
   </thead>
@@ -499,7 +527,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-01"
         >
-          01
+          1
         </time>
       </td>
     </tr>
@@ -516,7 +544,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -529,7 +557,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -542,7 +570,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -555,7 +583,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-05"
         >
-          05
+          5
         </time>
       </td>
       <td
@@ -568,7 +596,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-06"
         >
-          06
+          6
         </time>
       </td>
       <td
@@ -581,7 +609,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-07"
         >
-          07
+          7
         </time>
       </td>
       <td
@@ -594,7 +622,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-08"
         >
-          08
+          8
         </time>
       </td>
     </tr>
@@ -611,7 +639,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-07-09"
         >
-          09
+          9
         </time>
       </td>
       <td
@@ -922,7 +950,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-08-01"
         >
-          01
+          1
         </time>
       </td>
       <td
@@ -935,7 +963,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-08-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -948,7 +976,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-08-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -961,7 +989,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-08-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -974,7 +1002,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         <time
           dateTime="2018-08-05"
         >
-          05
+          5
         </time>
       </td>
     </tr>
@@ -992,45 +1020,73 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
     <tr>
       <th
         className="calendar__week-day"
-        title="Lundi"
       >
-        Lu
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mardi"
       >
-        Ma
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mercredi"
       >
-        Me
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Jeudi"
       >
-        Je
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Vendredi"
       >
-        Ve
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Samedi"
       >
-        Sa
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Dimanche"
       >
-        Di
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
       </th>
     </tr>
   </thead>
@@ -1128,7 +1184,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-01"
         >
-          01
+          1
         </time>
       </td>
     </tr>
@@ -1145,7 +1201,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -1158,7 +1214,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -1171,7 +1227,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -1184,7 +1240,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-05"
         >
-          05
+          5
         </time>
       </td>
       <td
@@ -1197,7 +1253,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-06"
         >
-          06
+          6
         </time>
       </td>
       <td
@@ -1210,7 +1266,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-07"
         >
-          07
+          7
         </time>
       </td>
       <td
@@ -1223,7 +1279,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-08"
         >
-          08
+          8
         </time>
       </td>
     </tr>
@@ -1240,7 +1296,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-07-09"
         >
-          09
+          9
         </time>
       </td>
       <td
@@ -1551,7 +1607,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-08-01"
         >
-          01
+          1
         </time>
       </td>
       <td
@@ -1564,7 +1620,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-08-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -1577,7 +1633,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-08-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -1590,7 +1646,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-08-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -1603,7 +1659,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         <time
           dateTime="2018-08-05"
         >
-          05
+          5
         </time>
       </td>
     </tr>
@@ -1621,45 +1677,73 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
     <tr>
       <th
         className="calendar__week-day"
-        title="Lundi"
       >
-        Lu
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mardi"
       >
-        Ma
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mercredi"
       >
-        Me
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Jeudi"
       >
-        Je
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Vendredi"
       >
-        Ve
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Samedi"
       >
-        Sa
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Dimanche"
       >
-        Di
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
       </th>
     </tr>
   </thead>
@@ -1757,7 +1841,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-01"
         >
-          01
+          1
         </time>
       </td>
     </tr>
@@ -1774,7 +1858,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -1787,7 +1871,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -1800,7 +1884,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -1813,7 +1897,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-05"
         >
-          05
+          5
         </time>
       </td>
       <td
@@ -1826,7 +1910,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-06"
         >
-          06
+          6
         </time>
       </td>
       <td
@@ -1839,7 +1923,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-07"
         >
-          07
+          7
         </time>
       </td>
       <td
@@ -1852,7 +1936,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-08"
         >
-          08
+          8
         </time>
       </td>
     </tr>
@@ -1869,7 +1953,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-07-09"
         >
-          09
+          9
         </time>
       </td>
       <td
@@ -2180,7 +2264,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-08-01"
         >
-          01
+          1
         </time>
       </td>
       <td
@@ -2193,7 +2277,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-08-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -2206,7 +2290,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-08-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -2219,7 +2303,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-08-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -2232,7 +2316,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         <time
           dateTime="2018-08-05"
         >
-          05
+          5
         </time>
       </td>
     </tr>
@@ -2250,45 +2334,73 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
     <tr>
       <th
         className="calendar__week-day"
-        title="Lundi"
       >
-        Lu
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mardi"
       >
-        Ma
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mercredi"
       >
-        Me
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Jeudi"
       >
-        Je
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Vendredi"
       >
-        Ve
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Samedi"
       >
-        Sa
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Dimanche"
       >
-        Di
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
       </th>
     </tr>
   </thead>
@@ -2386,7 +2498,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-01"
         >
-          01
+          1
         </time>
       </td>
     </tr>
@@ -2403,7 +2515,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -2416,7 +2528,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -2429,7 +2541,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -2442,7 +2554,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-05"
         >
-          05
+          5
         </time>
       </td>
       <td
@@ -2455,7 +2567,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-06"
         >
-          06
+          6
         </time>
       </td>
       <td
@@ -2468,7 +2580,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-07"
         >
-          07
+          7
         </time>
       </td>
       <td
@@ -2481,7 +2593,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-08"
         >
-          08
+          8
         </time>
       </td>
     </tr>
@@ -2498,7 +2610,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-07-09"
         >
-          09
+          9
         </time>
       </td>
       <td
@@ -2809,7 +2921,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-08-01"
         >
-          01
+          1
         </time>
       </td>
       <td
@@ -2822,7 +2934,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-08-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -2835,7 +2947,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-08-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -2848,7 +2960,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-08-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -2861,7 +2973,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         <time
           dateTime="2018-08-05"
         >
-          05
+          5
         </time>
       </td>
     </tr>
@@ -2879,45 +2991,73 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
     <tr>
       <th
         className="calendar__week-day"
-        title="Lundi"
       >
-        Lu
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mardi"
       >
-        Ma
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mercredi"
       >
-        Me
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Jeudi"
       >
-        Je
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Vendredi"
       >
-        Ve
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Samedi"
       >
-        Sa
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Dimanche"
       >
-        Di
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
       </th>
     </tr>
   </thead>
@@ -3015,7 +3155,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-01"
         >
-          01
+          1
         </time>
       </td>
     </tr>
@@ -3032,7 +3172,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -3045,7 +3185,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -3058,7 +3198,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -3071,7 +3211,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-05"
         >
-          05
+          5
         </time>
       </td>
       <td
@@ -3084,7 +3224,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-06"
         >
-          06
+          6
         </time>
       </td>
       <td
@@ -3097,7 +3237,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-07"
         >
-          07
+          7
         </time>
       </td>
       <td
@@ -3110,7 +3250,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-08"
         >
-          08
+          8
         </time>
       </td>
     </tr>
@@ -3127,7 +3267,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-07-09"
         >
-          09
+          9
         </time>
       </td>
       <td
@@ -3438,7 +3578,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-08-01"
         >
-          01
+          1
         </time>
       </td>
       <td
@@ -3451,7 +3591,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-08-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -3464,7 +3604,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-08-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -3477,7 +3617,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-08-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -3490,7 +3630,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         <time
           dateTime="2018-08-05"
         >
-          05
+          5
         </time>
       </td>
     </tr>
@@ -3508,45 +3648,73 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
     <tr>
       <th
         className="calendar__week-day"
-        title="Lundi"
       >
-        Lu
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mardi"
       >
-        Ma
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Mercredi"
       >
-        Me
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Jeudi"
       >
-        Je
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Vendredi"
       >
-        Ve
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Samedi"
       >
-        Sa
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
       </th>
       <th
         className="calendar__week-day"
-        title="Dimanche"
       >
-        Di
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
       </th>
     </tr>
   </thead>
@@ -3644,7 +3812,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-01"
         >
-          01
+          1
         </time>
       </td>
     </tr>
@@ -3661,7 +3829,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -3674,7 +3842,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -3687,7 +3855,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -3700,7 +3868,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-05"
         >
-          05
+          5
         </time>
       </td>
       <td
@@ -3713,7 +3881,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-06"
         >
-          06
+          6
         </time>
       </td>
       <td
@@ -3726,7 +3894,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-07"
         >
-          07
+          7
         </time>
       </td>
       <td
@@ -3739,7 +3907,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-08"
         >
-          08
+          8
         </time>
       </td>
     </tr>
@@ -3756,7 +3924,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-07-09"
         >
-          09
+          9
         </time>
       </td>
       <td
@@ -4067,7 +4235,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-08-01"
         >
-          01
+          1
         </time>
       </td>
       <td
@@ -4080,7 +4248,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-08-02"
         >
-          02
+          2
         </time>
       </td>
       <td
@@ -4093,7 +4261,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-08-03"
         >
-          03
+          3
         </time>
       </td>
       <td
@@ -4106,7 +4274,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-08-04"
         >
-          04
+          4
         </time>
       </td>
       <td
@@ -4119,7 +4287,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         <time
           dateTime="2018-08-05"
         >
-          05
+          5
         </time>
       </td>
     </tr>
@@ -4131,39 +4299,41 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
 <section
   className="date-picker"
 >
-  <h1
-    className="date-picker__date"
-  >
-    janvier 2018
-  </h1>
   <div
-    className="button-group date-picker__selector"
+    className="date-picker__previous-month-container"
   >
     <button
       aria-pressed={false}
-      className="button button--size-small button-group__button "
+      className="button button--size-large "
       onClick={[Function]}
+      title="Mois précédent"
     >
-      Mois précédent
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small button-group__button "
-      onClick={[Function]}
-    >
-      Aujourd'hui
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small button-group__button "
-      onClick={[Function]}
-    >
-      Mois suivant
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+        data-icon="chevron-circle-left"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
     </button>
   </div>
   <div
     className="date-picker__calendar-container"
   >
+    <h1
+      className="date-picker__date"
+    >
+      janvier 2018
+    </h1>
     <table
       className="calendar date-picker__calendar"
     >
@@ -4173,45 +4343,73 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
         <tr>
           <th
             className="calendar__week-day"
-            title="Lundi"
           >
-            Lu
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Lundi"
+            >
+              Lu
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Mardi"
           >
-            Ma
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mardi"
+            >
+              Ma
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Mercredi"
           >
-            Me
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mercredi"
+            >
+              Me
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Jeudi"
           >
-            Je
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Jeudi"
+            >
+              Je
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Vendredi"
           >
-            Ve
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Vendredi"
+            >
+              Ve
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Samedi"
           >
-            Sa
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Samedi"
+            >
+              Sa
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Dimanche"
           >
-            Di
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Dimanche"
+            >
+              Di
+            </abbr>
           </th>
         </tr>
       </thead>
@@ -4231,7 +4429,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-01"
             >
-              01
+              1
             </time>
           </td>
           <td
@@ -4244,7 +4442,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-02"
             >
-              02
+              2
             </time>
           </td>
           <td
@@ -4257,7 +4455,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-03"
             >
-              03
+              3
             </time>
           </td>
           <td
@@ -4270,7 +4468,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-04"
             >
-              04
+              4
             </time>
           </td>
           <td
@@ -4283,7 +4481,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-05"
             >
-              05
+              5
             </time>
           </td>
           <td
@@ -4296,7 +4494,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-06"
             >
-              06
+              6
             </time>
           </td>
           <td
@@ -4309,7 +4507,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-07"
             >
-              07
+              7
             </time>
           </td>
         </tr>
@@ -4326,7 +4524,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-08"
             >
-              08
+              8
             </time>
           </td>
           <td
@@ -4339,7 +4537,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-01-09"
             >
-              09
+              9
             </time>
           </td>
           <td
@@ -4650,7 +4848,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-02-01"
             >
-              01
+              1
             </time>
           </td>
           <td
@@ -4663,7 +4861,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-02-02"
             >
-              02
+              2
             </time>
           </td>
           <td
@@ -4676,7 +4874,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-02-03"
             >
-              03
+              3
             </time>
           </td>
           <td
@@ -4689,12 +4887,39 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             <time
               dateTime="2018-02-04"
             >
-              04
+              4
             </time>
           </td>
         </tr>
       </tbody>
     </table>
+  </div>
+  <div
+    className="date-picker__next-month-container"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-large "
+      onClick={[Function]}
+      title="Mois suivant"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+        data-icon="chevron-circle-right"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
   </div>
 </section>
 `;
@@ -4703,39 +4928,41 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
 <section
   className="date-picker"
 >
-  <h1
-    className="date-picker__date"
-  >
-    janvier 2018
-  </h1>
   <div
-    className="button-group date-picker__selector"
+    className="date-picker__previous-month-container"
   >
     <button
       aria-pressed={false}
-      className="button button--size-small button-group__button "
+      className="button button--size-large "
       onClick={[Function]}
+      title="Mois précédent"
     >
-      Mois précédent
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small button-group__button "
-      onClick={[Function]}
-    >
-      Aujourd'hui
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small button-group__button "
-      onClick={[Function]}
-    >
-      Mois suivant
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+        data-icon="chevron-circle-left"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
     </button>
   </div>
   <div
     className="date-picker__calendar-container"
   >
+    <h1
+      className="date-picker__date"
+    >
+      janvier 2018
+    </h1>
     <table
       className="calendar date-picker__calendar"
     >
@@ -4745,45 +4972,73 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
         <tr>
           <th
             className="calendar__week-day"
-            title="Lundi"
           >
-            Lu
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Lundi"
+            >
+              Lu
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Mardi"
           >
-            Ma
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mardi"
+            >
+              Ma
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Mercredi"
           >
-            Me
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mercredi"
+            >
+              Me
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Jeudi"
           >
-            Je
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Jeudi"
+            >
+              Je
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Vendredi"
           >
-            Ve
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Vendredi"
+            >
+              Ve
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Samedi"
           >
-            Sa
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Samedi"
+            >
+              Sa
+            </abbr>
           </th>
           <th
             className="calendar__week-day"
-            title="Dimanche"
           >
-            Di
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Dimanche"
+            >
+              Di
+            </abbr>
           </th>
         </tr>
       </thead>
@@ -4803,7 +5058,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-01"
             >
-              01
+              1
             </time>
           </td>
           <td
@@ -4816,7 +5071,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-02"
             >
-              02
+              2
             </time>
           </td>
           <td
@@ -4829,7 +5084,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-03"
             >
-              03
+              3
             </time>
           </td>
           <td
@@ -4842,7 +5097,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-04"
             >
-              04
+              4
             </time>
           </td>
           <td
@@ -4855,7 +5110,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-05"
             >
-              05
+              5
             </time>
           </td>
           <td
@@ -4868,7 +5123,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-06"
             >
-              06
+              6
             </time>
           </td>
           <td
@@ -4881,7 +5136,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-07"
             >
-              07
+              7
             </time>
           </td>
         </tr>
@@ -4898,7 +5153,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-08"
             >
-              08
+              8
             </time>
           </td>
           <td
@@ -4911,7 +5166,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-01-09"
             >
-              09
+              9
             </time>
           </td>
           <td
@@ -5222,7 +5477,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-02-01"
             >
-              01
+              1
             </time>
           </td>
           <td
@@ -5235,7 +5490,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-02-02"
             >
-              02
+              2
             </time>
           </td>
           <td
@@ -5248,7 +5503,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-02-03"
             >
-              03
+              3
             </time>
           </td>
           <td
@@ -5261,12 +5516,39 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             <time
               dateTime="2018-02-04"
             >
-              04
+              4
             </time>
           </td>
         </tr>
       </tbody>
     </table>
+  </div>
+  <div
+    className="date-picker__next-month-container"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-large "
+      onClick={[Function]}
+      title="Mois suivant"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+        data-icon="chevron-circle-right"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
   </div>
 </section>
 `;
@@ -6238,39 +6520,41 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
     <section
       className="date-picker"
     >
-      <h1
-        className="date-picker__date"
-      >
-        février 1990
-      </h1>
       <div
-        className="button-group date-picker__selector"
+        className="date-picker__previous-month-container"
       >
         <button
           aria-pressed={false}
-          className="button button--size-small button-group__button "
+          className="button button--size-large "
           onClick={[Function]}
+          title="Mois précédent"
         >
-          Mois précédent
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Aujourd'hui
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Mois suivant
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            data-icon="chevron-circle-left"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
         </button>
       </div>
       <div
         className="date-picker__calendar-container"
       >
+        <h1
+          className="date-picker__date"
+        >
+          février 1990
+        </h1>
         <table
           className="calendar date-picker__calendar"
         >
@@ -6280,45 +6564,73 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
             <tr>
               <th
                 className="calendar__week-day"
-                title="Lundi"
               >
-                Lu
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Lundi"
+                >
+                  Lu
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mardi"
               >
-                Ma
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mardi"
+                >
+                  Ma
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mercredi"
               >
-                Me
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mercredi"
+                >
+                  Me
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Jeudi"
               >
-                Je
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Jeudi"
+                >
+                  Je
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Vendredi"
               >
-                Ve
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Vendredi"
+                >
+                  Ve
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Samedi"
               >
-                Sa
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Samedi"
+                >
+                  Sa
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Dimanche"
               >
-                Di
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Dimanche"
+                >
+                  Di
+                </abbr>
               </th>
             </tr>
           </thead>
@@ -6377,7 +6689,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -6390,7 +6702,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -6403,7 +6715,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -6416,7 +6728,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
@@ -6433,7 +6745,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-05"
                 >
-                  05
+                  5
                 </time>
               </td>
               <td
@@ -6446,7 +6758,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-06"
                 >
-                  06
+                  6
                 </time>
               </td>
               <td
@@ -6459,7 +6771,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-07"
                 >
-                  07
+                  7
                 </time>
               </td>
               <td
@@ -6472,7 +6784,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-08"
                 >
-                  08
+                  8
                 </time>
               </td>
               <td
@@ -6485,7 +6797,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-02-09"
                 >
-                  09
+                  9
                 </time>
               </td>
               <td
@@ -6757,7 +7069,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-03-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -6770,7 +7082,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-03-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -6783,7 +7095,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-03-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -6796,12 +7108,39 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 <time
                   dateTime="1990-03-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div
+        className="date-picker__next-month-container"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-large "
+          onClick={[Function]}
+          title="Mois suivant"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            data-icon="chevron-circle-right"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
       </div>
     </section>
   </div>
@@ -6825,39 +7164,41 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
     <section
       className="date-picker"
     >
-      <h1
-        className="date-picker__date"
-      >
-        février 1990
-      </h1>
       <div
-        className="button-group date-picker__selector"
+        className="date-picker__previous-month-container"
       >
         <button
           aria-pressed={false}
-          className="button button--size-small button-group__button "
+          className="button button--size-large "
           onClick={[Function]}
+          title="Mois précédent"
         >
-          Mois précédent
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Aujourd'hui
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Mois suivant
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            data-icon="chevron-circle-left"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
         </button>
       </div>
       <div
         className="date-picker__calendar-container"
       >
+        <h1
+          className="date-picker__date"
+        >
+          février 1990
+        </h1>
         <table
           className="calendar date-picker__calendar"
         >
@@ -6867,45 +7208,73 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
             <tr>
               <th
                 className="calendar__week-day"
-                title="Lundi"
               >
-                Lu
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Lundi"
+                >
+                  Lu
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mardi"
               >
-                Ma
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mardi"
+                >
+                  Ma
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mercredi"
               >
-                Me
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mercredi"
+                >
+                  Me
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Jeudi"
               >
-                Je
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Jeudi"
+                >
+                  Je
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Vendredi"
               >
-                Ve
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Vendredi"
+                >
+                  Ve
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Samedi"
               >
-                Sa
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Samedi"
+                >
+                  Sa
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Dimanche"
               >
-                Di
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Dimanche"
+                >
+                  Di
+                </abbr>
               </th>
             </tr>
           </thead>
@@ -6964,7 +7333,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -6977,7 +7346,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -6990,7 +7359,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -7003,7 +7372,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
@@ -7020,7 +7389,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-05"
                 >
-                  05
+                  5
                 </time>
               </td>
               <td
@@ -7033,7 +7402,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-06"
                 >
-                  06
+                  6
                 </time>
               </td>
               <td
@@ -7046,7 +7415,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-07"
                 >
-                  07
+                  7
                 </time>
               </td>
               <td
@@ -7059,7 +7428,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-08"
                 >
-                  08
+                  8
                 </time>
               </td>
               <td
@@ -7072,7 +7441,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-02-09"
                 >
-                  09
+                  9
                 </time>
               </td>
               <td
@@ -7344,7 +7713,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-03-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -7357,7 +7726,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-03-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -7370,7 +7739,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-03-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -7383,12 +7752,39 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 <time
                   dateTime="1990-03-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div
+        className="date-picker__next-month-container"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-large "
+          onClick={[Function]}
+          title="Mois suivant"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            data-icon="chevron-circle-right"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
       </div>
     </section>
   </div>
@@ -7412,39 +7808,41 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
     <section
       className="date-picker"
     >
-      <h1
-        className="date-picker__date"
-      >
-        février 1990
-      </h1>
       <div
-        className="button-group date-picker__selector"
+        className="date-picker__previous-month-container"
       >
         <button
           aria-pressed={false}
-          className="button button--size-small button-group__button "
+          className="button button--size-large "
           onClick={[Function]}
+          title="Mois précédent"
         >
-          Mois précédent
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Aujourd'hui
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Mois suivant
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            data-icon="chevron-circle-left"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
         </button>
       </div>
       <div
         className="date-picker__calendar-container"
       >
+        <h1
+          className="date-picker__date"
+        >
+          février 1990
+        </h1>
         <table
           className="calendar date-picker__calendar"
         >
@@ -7454,45 +7852,73 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
             <tr>
               <th
                 className="calendar__week-day"
-                title="Lundi"
               >
-                Lu
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Lundi"
+                >
+                  Lu
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mardi"
               >
-                Ma
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mardi"
+                >
+                  Ma
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mercredi"
               >
-                Me
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mercredi"
+                >
+                  Me
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Jeudi"
               >
-                Je
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Jeudi"
+                >
+                  Je
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Vendredi"
               >
-                Ve
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Vendredi"
+                >
+                  Ve
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Samedi"
               >
-                Sa
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Samedi"
+                >
+                  Sa
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Dimanche"
               >
-                Di
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Dimanche"
+                >
+                  Di
+                </abbr>
               </th>
             </tr>
           </thead>
@@ -7551,7 +7977,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -7564,7 +7990,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -7577,7 +8003,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -7590,7 +8016,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
@@ -7607,7 +8033,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-05"
                 >
-                  05
+                  5
                 </time>
               </td>
               <td
@@ -7620,7 +8046,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-06"
                 >
-                  06
+                  6
                 </time>
               </td>
               <td
@@ -7633,7 +8059,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-07"
                 >
-                  07
+                  7
                 </time>
               </td>
               <td
@@ -7646,7 +8072,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-08"
                 >
-                  08
+                  8
                 </time>
               </td>
               <td
@@ -7659,7 +8085,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-02-09"
                 >
-                  09
+                  9
                 </time>
               </td>
               <td
@@ -7931,7 +8357,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-03-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -7944,7 +8370,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-03-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -7957,7 +8383,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-03-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -7970,12 +8396,39 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 <time
                   dateTime="1990-03-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div
+        className="date-picker__next-month-container"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-large "
+          onClick={[Function]}
+          title="Mois suivant"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            data-icon="chevron-circle-right"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
       </div>
     </section>
   </div>
@@ -7999,39 +8452,41 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
     <section
       className="date-picker"
     >
-      <h1
-        className="date-picker__date"
-      >
-        février 1990
-      </h1>
       <div
-        className="button-group date-picker__selector"
+        className="date-picker__previous-month-container"
       >
         <button
           aria-pressed={false}
-          className="button button--size-small button-group__button "
+          className="button button--size-large "
           onClick={[Function]}
+          title="Mois précédent"
         >
-          Mois précédent
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Aujourd'hui
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Mois suivant
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            data-icon="chevron-circle-left"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
         </button>
       </div>
       <div
         className="date-picker__calendar-container"
       >
+        <h1
+          className="date-picker__date"
+        >
+          février 1990
+        </h1>
         <table
           className="calendar date-picker__calendar"
         >
@@ -8041,45 +8496,73 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
             <tr>
               <th
                 className="calendar__week-day"
-                title="Lundi"
               >
-                Lu
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Lundi"
+                >
+                  Lu
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mardi"
               >
-                Ma
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mardi"
+                >
+                  Ma
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mercredi"
               >
-                Me
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mercredi"
+                >
+                  Me
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Jeudi"
               >
-                Je
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Jeudi"
+                >
+                  Je
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Vendredi"
               >
-                Ve
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Vendredi"
+                >
+                  Ve
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Samedi"
               >
-                Sa
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Samedi"
+                >
+                  Sa
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Dimanche"
               >
-                Di
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Dimanche"
+                >
+                  Di
+                </abbr>
               </th>
             </tr>
           </thead>
@@ -8138,7 +8621,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -8151,7 +8634,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -8164,7 +8647,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -8177,7 +8660,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
@@ -8194,7 +8677,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-05"
                 >
-                  05
+                  5
                 </time>
               </td>
               <td
@@ -8207,7 +8690,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-06"
                 >
-                  06
+                  6
                 </time>
               </td>
               <td
@@ -8220,7 +8703,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-07"
                 >
-                  07
+                  7
                 </time>
               </td>
               <td
@@ -8233,7 +8716,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-08"
                 >
-                  08
+                  8
                 </time>
               </td>
               <td
@@ -8246,7 +8729,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-02-09"
                 >
-                  09
+                  9
                 </time>
               </td>
               <td
@@ -8518,7 +9001,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-03-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -8531,7 +9014,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-03-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -8544,7 +9027,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-03-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -8557,12 +9040,39 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 <time
                   dateTime="1990-03-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div
+        className="date-picker__next-month-container"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-large "
+          onClick={[Function]}
+          title="Mois suivant"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            data-icon="chevron-circle-right"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
       </div>
     </section>
   </div>
@@ -8586,39 +9096,41 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
     <section
       className="date-picker"
     >
-      <h1
-        className="date-picker__date"
-      >
-        février 1990
-      </h1>
       <div
-        className="button-group date-picker__selector"
+        className="date-picker__previous-month-container"
       >
         <button
           aria-pressed={false}
-          className="button button--size-small button-group__button "
+          className="button button--size-large "
           onClick={[Function]}
+          title="Mois précédent"
         >
-          Mois précédent
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Aujourd'hui
-        </button>
-        <button
-          aria-pressed={false}
-          className="button button--size-small button-group__button "
-          onClick={[Function]}
-        >
-          Mois suivant
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            data-icon="chevron-circle-left"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
         </button>
       </div>
       <div
         className="date-picker__calendar-container"
       >
+        <h1
+          className="date-picker__date"
+        >
+          février 1990
+        </h1>
         <table
           className="calendar date-picker__calendar"
         >
@@ -8628,45 +9140,73 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
             <tr>
               <th
                 className="calendar__week-day"
-                title="Lundi"
               >
-                Lu
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Lundi"
+                >
+                  Lu
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mardi"
               >
-                Ma
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mardi"
+                >
+                  Ma
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Mercredi"
               >
-                Me
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Mercredi"
+                >
+                  Me
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Jeudi"
               >
-                Je
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Jeudi"
+                >
+                  Je
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Vendredi"
               >
-                Ve
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Vendredi"
+                >
+                  Ve
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Samedi"
               >
-                Sa
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Samedi"
+                >
+                  Sa
+                </abbr>
               </th>
               <th
                 className="calendar__week-day"
-                title="Dimanche"
               >
-                Di
+                <abbr
+                  className="calendar__week-day-abbr"
+                  title="Dimanche"
+                >
+                  Di
+                </abbr>
               </th>
             </tr>
           </thead>
@@ -8725,7 +9265,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -8738,7 +9278,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -8751,7 +9291,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -8764,7 +9304,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
@@ -8781,7 +9321,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-05"
                 >
-                  05
+                  5
                 </time>
               </td>
               <td
@@ -8794,7 +9334,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-06"
                 >
-                  06
+                  6
                 </time>
               </td>
               <td
@@ -8807,7 +9347,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-07"
                 >
-                  07
+                  7
                 </time>
               </td>
               <td
@@ -8820,7 +9360,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-08"
                 >
-                  08
+                  8
                 </time>
               </td>
               <td
@@ -8833,7 +9373,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-02-09"
                 >
-                  09
+                  9
                 </time>
               </td>
               <td
@@ -9105,7 +9645,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-03-01"
                 >
-                  01
+                  1
                 </time>
               </td>
               <td
@@ -9118,7 +9658,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-03-02"
                 >
-                  02
+                  2
                 </time>
               </td>
               <td
@@ -9131,7 +9671,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-03-03"
                 >
-                  03
+                  3
                 </time>
               </td>
               <td
@@ -9144,12 +9684,39 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 <time
                   dateTime="1990-03-04"
                 >
-                  04
+                  4
                 </time>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div
+        className="date-picker__next-month-container"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-large "
+          onClick={[Function]}
+          title="Mois suivant"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            data-icon="chevron-circle-right"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
       </div>
     </section>
   </div>

@@ -1,28 +1,25 @@
 .date-picker {
-  font-family: sans-serif;
+  // font-family: sans-serif;
 
-  &__date, &__selector, &__calendar-container {
-    margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__calendar-container {
+    margin: 0 1rem;
+  }
+
+  &__date {
+    margin: 0;
+    // margin-bottom: 0.5rem;
     padding: 0;
+    padding-bottom: 0.5rem;
+
+    border-bottom: #999 solid 1px;
+
+    font-size: 1.2rem;
 
     text-align: center;
   }
 
-  &__date {
-    margin-top: 0;
-
-    font-size: 1rem;
-  }
-
-  &__selector {
-    display: block;
-  }
-
-  &__calendar-container {
-    margin-bottom: 0;
-  }
-
-  &__calendar {
-    margin: 0 auto;
-  }
 }

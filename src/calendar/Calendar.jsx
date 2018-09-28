@@ -47,7 +47,7 @@ export default class Calendar extends React.PureComponent {
       const day = {
         date,
         formattedDate: format(date, "YYYY-MM-DD"),
-        dayNumber: format(date, "DD"),
+        dayNumber: format(date, "D"),
         currentMonth: !isBefore(date, monthFirstDay) && !isAfter(date, monthLastDay)
       };
 
@@ -98,8 +98,8 @@ export default class Calendar extends React.PureComponent {
     const maxDate = parseDate(maxDateInput);
     const isDateBetweenMinMax = dateBetween(minDate, maxDate);
 
-    const rows = this.generateData(viewDate).map((days, index) => {
-      const columns = days.map(day => {
+    const rows = this.generateData(viewDate).map((weekDays, weekIndex) => {
+      const columns = weekDays.map((day, dayIndex) => {
         const disabled = !isDateBetweenMinMax(day.date);
         const selectable = !!onSelect && !disabled;
 
@@ -111,7 +111,7 @@ export default class Calendar extends React.PureComponent {
         });
         return (
           <td
-            key={day.formattedDate}
+            key={dayIndex}
             className={dayClassName}
             onClick={selectable ? () => this.onCellClick(day.formattedDate) : null}
             onKeyPress={selectable ? event => this.onCellKeyPress(event, day.formattedDate) : null}
@@ -124,7 +124,7 @@ export default class Calendar extends React.PureComponent {
       });
 
       return (
-        <tr key={index} className="calendar__week">
+        <tr key={weekIndex} className="calendar__week">
           {columns}
         </tr>
       );
@@ -134,8 +134,10 @@ export default class Calendar extends React.PureComponent {
 
     const weekDayRows = weekDays.map(weekDay => {
       return (
-        <th key={weekDay} title={weekDay} className="calendar__week-day">
-          {weekDay.substring(0, 2)}
+        <th key={weekDay} className="calendar__week-day">
+          <abbr className="calendar__week-day-abbr" title={weekDay}>
+            {weekDay.substring(0, 2)}
+          </abbr>
         </th>
       );
     });

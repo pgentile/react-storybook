@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { parse, addMonths, format } from "date-fns";
 import frLocale from "date-fns/locale/fr";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 import Calendar from "./Calendar";
-import ButtonGroup, { ButtonInGroup } from "../buttons/ButtonGroup";
+import Button from "../buttons/Button";
 
 import "./DatePicker.scss";
 
@@ -61,19 +63,13 @@ export default class DatePicker extends React.PureComponent {
 
     return (
       <section className="date-picker">
-        <h1 className="date-picker__date">{format(parsedViewDate, "MMMM YYYY", { locale: frLocale })}</h1>
-        <ButtonGroup className="date-picker__selector">
-          <ButtonInGroup size="small" onClick={this.onPreviousMonthClick}>
-            Mois précédent
-          </ButtonInGroup>
-          <ButtonInGroup size="small" onClick={this.onTodayClick}>
-            Aujourd&apos;hui
-          </ButtonInGroup>
-          <ButtonInGroup size="small" onClick={this.onNextMonthClick}>
-            Mois suivant
-          </ButtonInGroup>
-        </ButtonGroup>
+        <div className="date-picker__previous-month-container">
+          <Button onClick={this.onPreviousMonthClick} size="large" title="Mois précédent">
+            <FontAwesomeIcon icon={faChevronCircleLeft} />
+          </Button>
+        </div>
         <div className="date-picker__calendar-container">
+          <h1 className="date-picker__date">{format(parsedViewDate, "MMMM YYYY", { locale: frLocale })}</h1>
           <Calendar
             className="date-picker__calendar"
             viewDate={viewDate || value}
@@ -82,6 +78,11 @@ export default class DatePicker extends React.PureComponent {
             maxDate={maxDate}
             onSelect={this.onSelect}
           />
+        </div>
+        <div className="date-picker__next-month-container">
+          <Button onClick={this.onNextMonthClick} size="large" title="Mois suivant">
+            <FontAwesomeIcon icon={faChevronCircleRight} />
+          </Button>
         </div>
       </section>
     );
