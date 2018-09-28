@@ -10011,6 +10011,7 @@ exports[`Storyshots Forms / NumberInput main 1`] = `
   inputMode="numeric"
   onChange={[Function]}
   type="tel"
+  value=""
 />
 `;
 

@@ -14,7 +14,7 @@ describe("Mock page", () => {
 
   afterEach(async () => {
     await driver.sleep(300);
-    await writeScreenshot(driver, "screenshot.png");
+    await writeScreenshot("screenshot.png");
     await driver.close();
   });
 

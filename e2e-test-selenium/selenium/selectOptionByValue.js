@@ -9,7 +9,7 @@ function selectOptionByValue(expectedValue) {
 
   return async selectElement => {
     return selectElement
-      .findElements(By.tagName("option"))
+      .findElements(By.css("option"))
       .then(selectOption)
       .then(option => option.click())
       .catch(e => {

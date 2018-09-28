@@ -23,7 +23,7 @@ describe("OUI.sncf", () => {
     // await driver.close();
   });
 
-  test.skip("Search on OUI.sncf", async () => {
+  test("Search on OUI.sncf", async () => {
     const homePage = await OuiHomePage.init();
 
     const today = new Date();
@@ -45,7 +45,7 @@ describe("OUI.sncf", () => {
     prices.forEach(price => console.info("Price =", price));
   });
 
-  test.skip("Search on OUI.sncf 2", async () => {
+  test("Search on OUI.sncf 2", async () => {
     const homePage = await OuiHomePage.init();
 
     const today = new Date();
