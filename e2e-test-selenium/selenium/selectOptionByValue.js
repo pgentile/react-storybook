@@ -1,5 +1,3 @@
-const { By } = require("selenium-webdriver");
-
 const firstElementMatching = require("./firstElementMatching");
 const NoMatchError = require("./NoMatchError");
 

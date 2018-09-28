@@ -1,25 +1,15 @@
-import { Builder, By } from "selenium-webdriver";
-
 import writeScreenshot from "./selenium/writeScreenshot";
 
 jest.setTimeout(60 * 1000);
 
-describe("Tests with Selenium API", () => {
-  let driver;
-
-  beforeAll(async () => {
-    driver = await new Builder().forBrowser("safari").build();
-  });
-
-  afterAll(async () => {
-    await driver.quit();
-  });
-
+describe("Mock page", () => {
   beforeEach(async () => {
+    /*
     await driver
       .manage()
       .window()
       .maximize();
+    */
   });
 
   afterEach(async () => {

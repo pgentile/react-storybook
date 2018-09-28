@@ -4,7 +4,7 @@ const { Buffer } = require("buffer");
 
 const writeFileAsync = promisify(fs.writeFile);
 
-async function writeScreenshot(driver, path) {
+async function writeScreenshot(path) {
   const screenshotBase64Png = await driver.takeScreenshot();
   const data = Buffer.from(screenshotBase64Png, "base64");
 
