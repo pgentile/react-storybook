@@ -13,16 +13,28 @@ export default class ManagedProgressButton extends React.PureComponent {
     finished: false
   };
 
+  unmounted = false;
+
   onClick = async event => {
     this.setState({ loading: true });
     try {
       await this.props.onClick(event);
-      this.setState({ finished: true });
+      this.setStateIfMounted({ finished: true });
     } catch (e) {
-      this.setState({ loading: false });
+      this.setStateIfMounted({ loading: false });
       throw e;
     }
   };
+
+  setStateIfMounted(...args) {
+    if (!this.unmounted) {
+      this.setState(...args);
+    }
+  }
+
+  componentWillUnmount() {
+    this.unmounted = true;
+  }
 
   render() {
     return <ProgressButton {...this.props} {...this.state} onClick={this.onClick} />;
