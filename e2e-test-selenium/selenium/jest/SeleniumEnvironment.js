@@ -29,6 +29,12 @@ class SeleniumEnvironment extends NodeEnvironment {
     const driver = this.global.driver;
     if (driver) {
       try {
+        await driver.close();
+      } catch (e) {
+        console.warn("SeleniumEnvironment : Got an exception on driver close", e);
+      }
+
+      try {
         await driver.quit();
       } catch (e) {
         console.warn("SeleniumEnvironment : Got an exception on driver quit", e);

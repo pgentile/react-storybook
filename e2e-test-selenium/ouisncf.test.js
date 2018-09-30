@@ -11,6 +11,7 @@ jest.setTimeout(60 * 1000);
 describe("OUI.sncf", () => {
   beforeEach(async () => {
     await driver.get("about:blank");
+
     await driver
       .manage()
       .window()
@@ -20,7 +21,6 @@ describe("OUI.sncf", () => {
   afterEach(async () => {
     await driver.sleep(300);
     await writeScreenshot("screenshot.png");
-    // await driver.close();
   });
 
   test("Search on OUI.sncf", async () => {
@@ -37,9 +37,12 @@ describe("OUI.sncf", () => {
     await homePage.lessPassenger();
     await homePage.setTravelClass(1);
 
-    const proposalPage = await homePage.search();
+    await homePage.search();
+    await expect(homePage.hasErrors()).resolves.toBe(false);
+
+    const proposalPage = await homePage.waitForProposalPage();
     await proposalPage.waitForProposals();
-    await proposalPage.getMoreProposals();
+    // await proposalPage.getMoreProposals();
 
     const prices = await proposalPage.getPrices().then(applyOnElements(element => element.getText()));
     prices.forEach(price => console.info("Price =", price));
@@ -55,7 +58,10 @@ describe("OUI.sncf", () => {
     await homePage.selectDestination("Paris");
     await homePage.selectDepartureDate(departureDate);
 
-    const proposalPage = await homePage.search();
+    await homePage.search();
+    await expect(homePage.hasErrors()).resolves.toBe(false);
+
+    const proposalPage = await homePage.waitForProposalPage();
     await proposalPage.waitForProposals();
 
     const prices = await proposalPage.getPrices().then(applyOnElements(element => element.getText()));
@@ -69,17 +75,20 @@ describe("OUI.sncf", () => {
     const departureDate = setHours(addDays(today, 14), 7);
     await homePage.selectDepartureDate(departureDate);
 
-    await homePage.selectOrigin("Marseille");
     await homePage.selectDestination("Paris");
     await homePage.selectOrigin("Le Mans");
 
-    const proposalPage = await homePage.search();
+    await homePage.search();
+    await expect(homePage.hasErrors()).resolves.toBe(false);
+
+    const proposalPage = await homePage.waitForProposalPage();
     await proposalPage.waitForProposals();
 
     await driver.navigate().back();
 
     await homePage.selectOrigin("Rennes");
     await homePage.selectOrigin("Lille");
+    await homePage.search();
   });
 });
 
@@ -97,25 +106,41 @@ class OuiHomePage {
   }
 
   async getRidOfCookiePolicy() {
-    await driver
-      .wait(until.elementLocated(By.id("cookie-policy-popin")))
-      .findElement(By.id("cookie-policy-close"))
-      .click();
+    let cookiePopin = null;
+    try {
+      cookiePopin = await driver.wait(until.elementLocated(By.id("cookie-policy-popin")), 3000);
+    } catch (e) {
+      // Ignore exception
+    }
+
+    if (cookiePopin !== null) {
+      await cookiePopin.findElement(By.id("cookie-policy-close")).click();
+    }
   }
 
   async getRidOfOuibot() {
-    await driver
-      .wait(until.elementLocated(By.className("ouibot-ancrage")))
-      .findElement(By.className("ouibot-ancrage__close__close-icon"))
-      .click();
+    let ouibotPopin = null;
+    try {
+      ouibotPopin = await driver.wait(until.elementLocated(By.className("ouibot-ancrage")));
+      if (ouibotPopin !== null) {
+        await ouibotPopin.findElement(By.className("ouibot-ancrage__close__close-icon")).click();
+      }
+    } catch (e) {
+      // Ignore exception
+    }
   }
 
   async selectOrigin(origin) {
     const input = driver.findElement(By.id("vsb-origin-train"));
+
     await input.clear();
     await input.sendKeys(origin);
 
-    await driver.wait(until.elementLocated(By.css("#d2d-autocomplete-origin-train .vsb-dropdown-new__item"))).click();
+    const autocompleteItem = await driver.wait(
+      until.elementLocated(By.css("#d2d-autocomplete-origin-train .vsb-dropdown-new__item"))
+    );
+    await driver.wait(until.elementIsVisible(autocompleteItem));
+    await autocompleteItem.click();
   }
 
   async selectDestination(origin) {
@@ -123,9 +148,11 @@ class OuiHomePage {
     await input.clear();
     await input.sendKeys(origin);
 
-    await driver
-      .wait(until.elementLocated(By.css("#d2d-autocomplete-destination-train .vsb-dropdown-new__item")))
-      .click();
+    const autocompleteItem = await driver.wait(
+      until.elementLocated(By.css("#d2d-autocomplete-destination-train .vsb-dropdown-new__item"))
+    );
+    await driver.wait(until.elementIsVisible(autocompleteItem));
+    await autocompleteItem.click();
   }
 
   async selectDepartureDate(date) {
@@ -190,9 +217,15 @@ class OuiHomePage {
 
   async search() {
     await driver.findElement(By.id("vsb-booking-train-submit")).click();
+  }
 
+  async hasErrors() {
+    const errors = await driver.findElements(By.css("#alert-zone-train .vsb__MEA-message-content ul li"));
+    return errors.length > 0;
+  }
+
+  async waitForProposalPage() {
     await driver.wait(until.urlContains("/proposition"));
-
     return new OuiProposalPage(driver);
   }
 
