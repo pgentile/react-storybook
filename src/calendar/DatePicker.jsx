@@ -24,6 +24,23 @@ export default class DatePicker extends React.PureComponent {
     viewDate: null
   };
 
+  calendarRef = React.createRef();
+
+  focus() {
+    this.setState(
+      (prevState, props) => {
+        return {
+          viewDate: props.value
+        };
+      },
+      () => {
+        if (this.calendarRef.current) {
+          this.calendarRef.current.focus();
+        }
+      }
+    );
+  }
+
   onChangeViewMonth = amount => {
     this.setState((prevState, props) => {
       const { value } = props;
@@ -71,6 +88,7 @@ export default class DatePicker extends React.PureComponent {
         <div className="date-picker__calendar-container">
           <h1 className="date-picker__date">{format(parsedViewDate, "MMMM YYYY", { locale: frLocale })}</h1>
           <Calendar
+            ref={this.calendarRef}
             className="date-picker__calendar"
             viewDate={viewDate || value}
             selectedDate={value}

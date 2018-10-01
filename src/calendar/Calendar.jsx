@@ -33,6 +33,17 @@ export default class Calendar extends React.PureComponent {
     className: ""
   };
 
+  ref = React.createRef();
+
+  focus() {
+    if (this.ref.current) {
+      const selectedDayElements = this.ref.current.getElementsByClassName("calendar__day--selected");
+      if (selectedDayElements.length > 0) {
+        selectedDayElements[0].focus();
+      }
+    }
+  }
+
   generateDataMemoized = memoizeOne(monthFirstDay => {
     const monthLastDay = endOfMonth(monthFirstDay);
     const calendarFirstDay = startOfISOWeek(monthFirstDay);
@@ -98,6 +109,18 @@ export default class Calendar extends React.PureComponent {
     const maxDate = parseDate(maxDateInput);
     const isDateBetweenMinMax = dateBetween(minDate, maxDate);
 
+    const weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+    const weekDayRows = weekDays.map(weekDay => {
+      return (
+        <th key={weekDay} className="calendar__week-day">
+          <abbr className="calendar__week-day-abbr" title={weekDay}>
+            {weekDay.substring(0, 2)}
+          </abbr>
+        </th>
+      );
+    });
+
     const rows = this.generateData(viewDate).map((weekDays, weekIndex) => {
       const columns = weekDays.map((day, dayIndex) => {
         const disabled = !isDateBetweenMinMax(day.date);
@@ -130,20 +153,8 @@ export default class Calendar extends React.PureComponent {
       );
     });
 
-    const weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
-
-    const weekDayRows = weekDays.map(weekDay => {
-      return (
-        <th key={weekDay} className="calendar__week-day">
-          <abbr className="calendar__week-day-abbr" title={weekDay}>
-            {weekDay.substring(0, 2)}
-          </abbr>
-        </th>
-      );
-    });
-
     return (
-      <table className={"calendar " + className}>
+      <table className={"calendar " + className} ref={this.ref}>
         <thead className="calendar__week-days">
           <tr>{weekDayRows}</tr>
         </thead>

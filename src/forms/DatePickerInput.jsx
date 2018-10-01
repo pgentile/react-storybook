@@ -30,12 +30,19 @@ export default class DatePickerInput extends React.PureComponent {
     focus: false
   };
 
+  datePickerRef = React.createRef();
+
   onFieldClick = event => {
-    this.setState(prevState => {
-      return {
+    this.setState(
+      prevState => ({
         focus: !prevState.focus
-      };
-    });
+      }),
+      () => {
+        if (this.datePickerRef.current) {
+          this.datePickerRef.current.focus();
+        }
+      }
+    );
 
     const { onFocus } = this.props;
     if (onFocus) {
@@ -75,7 +82,7 @@ export default class DatePickerInput extends React.PureComponent {
           {format(value, "dddd DD MMMM YYYY", { locale: frLocale })}
         </div>
         <div className={pickerPanelClassName}>
-          <DatePicker value={value} onChange={this.onDatePickerChange} />
+          <DatePicker ref={this.datePickerRef} value={value} onChange={this.onDatePickerChange} />
         </div>
       </div>
     );
