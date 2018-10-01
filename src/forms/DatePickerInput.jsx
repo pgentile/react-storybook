@@ -30,35 +30,29 @@ export default class DatePickerInput extends React.PureComponent {
     focus: false
   };
 
+  ref = React.createRef();
+
   datePickerRef = React.createRef();
 
-  onFieldClick = event => {
-    this.setState(
-      prevState => ({
-        focus: !prevState.focus
-      }),
-      () => {
-        if (this.datePickerRef.current) {
-          this.datePickerRef.current.focus();
-        }
+  onInputFieldClick = () => {
+    this.setState({ focus: true }, () => {
+      if (this.datePickerRef.current) {
+        this.datePickerRef.current.focus();
       }
-    );
-
-    const { onFocus } = this.props;
-    if (onFocus) {
-      onFocus(event);
-    }
+    });
   };
 
   onDatePickerChange = value => {
-    this.setState({
-      focus: false
-    });
+    this.setState({ focus: false });
 
     const { onChange } = this.props;
     if (onChange) {
       onChange(value);
     }
+  };
+
+  onOverlayClick = () => {
+    this.setState({ focus: false });
   };
 
   render() {
@@ -77,13 +71,14 @@ export default class DatePickerInput extends React.PureComponent {
     });
 
     return (
-      <div className={`date-picker-input ${className}`} id={id}>
-        <div className={fieldClassName} onClick={this.onFieldClick} tabIndex={disabled ? -1 : tabIndex}>
+      <div className={`date-picker-input ${className}`} id={id} ref={this.ref}>
+        <div className={fieldClassName} onClick={this.onInputFieldClick} tabIndex={disabled ? -1 : tabIndex}>
           {format(value, "dddd DD MMMM YYYY", { locale: frLocale })}
         </div>
         <div className={pickerPanelClassName}>
           <DatePicker ref={this.datePickerRef} value={value} onChange={this.onDatePickerChange} />
         </div>
+        {focus && <div className="date-picker-input__overlay" onClick={this.onOverlayClick} />}
       </div>
     );
   }
