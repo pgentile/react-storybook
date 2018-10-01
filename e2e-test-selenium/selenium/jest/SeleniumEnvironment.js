@@ -31,13 +31,13 @@ class SeleniumEnvironment extends NodeEnvironment {
       try {
         await driver.close();
       } catch (e) {
-        console.warn("SeleniumEnvironment : Got an exception on driver close", e);
+        // Ignore close errors
       }
 
       try {
         await driver.quit();
       } catch (e) {
-        console.warn("SeleniumEnvironment : Got an exception on driver quit", e);
+        // Ignore quit errors
       }
     }
     await super.teardown();
