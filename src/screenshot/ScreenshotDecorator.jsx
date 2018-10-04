@@ -13,15 +13,21 @@ export default class ScreenshotDecorator extends React.Component {
   };
 
   state = {
-    enabled: isScreenshotEnabledInUrl()
+    ...getInitialStateFromUrl()
   };
 
   channel = addons.getChannel();
 
   constructor(props, context) {
     super(props, context);
+  }
 
-    this.channel.emit("screenshot/initialized");
+  async emit(eventName) {
+    this.channel.emit("screenshot/" + eventName);
+    if (this.ws) {
+      const realWs = await this.ws;
+      realWs.send(eventName);
+    }
   }
 
   onEnableScreenshot = () => {
@@ -33,18 +39,47 @@ export default class ScreenshotDecorator extends React.Component {
   };
 
   componentDidMount() {
+    const { eventWsUrl } = this.state;
+
+    if (eventWsUrl) {
+      this.ws = new Promise(async resolve => {
+        const ws = new WebSocket(eventWsUrl);
+
+        ws.onmessage = message => {
+          const name = message.data;
+          if (name === "enable") {
+            this.onEnableScreenshot();
+          } else if (name === "disable") {
+            this.onDisableScreenshot();
+          }
+        };
+
+        ws.onopen = () => {
+          ws.send("client-hello");
+          resolve(ws);
+        };
+      });
+    }
+
     this.channel.on("screenshot/enable", this.onEnableScreenshot);
     this.channel.on("screenshot/disable", this.onDisableScreenshot);
 
-    this.channel.emit("screenshot/mounted");
+    this.emit("screenshot/mounted");
 
     // TODO Allow customization of ready event
-    this.channel.emit("screenshot/ready");
+    this.emit("screenshot/ready");
   }
 
   componentWillUnmount() {
     this.channel.removeListener("screenshot/enable", this.onEnableScreenshot);
     this.channel.removeListener("screenshot/disable", this.onDisableScreenshot);
+
+    if (this.ws) {
+      this.ws.then(async ws => {
+        ws.send("client-bye-bye");
+        ws.close();
+      });
+    }
   }
 
   render() {
@@ -59,7 +94,10 @@ export default class ScreenshotDecorator extends React.Component {
   }
 }
 
-function isScreenshotEnabledInUrl() {
+function getInitialStateFromUrl() {
   const params = querystring.parse(window.location.search || "");
-  return params.screenshot === "true";
+  return {
+    screenshot: params.screenshot === "true",
+    eventWsUrl: params.eventWsUrl || null
+  };
 }
