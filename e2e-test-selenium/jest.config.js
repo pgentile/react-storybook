@@ -1,7 +1,6 @@
 module.exports = {
   rootDir: ".",
-  // globalSetup: "./selenium/jest/globalSetup.js",
-  // globalTeardown: "./selenium/jest/globalTeardown.js",
+  setupTestFrameworkScriptFile: "jest-extended",
   testEnvironment: "./selenium/jest/SeleniumEnvironment.js",
   testEnvironmentOptions: {
     capabilities: {
