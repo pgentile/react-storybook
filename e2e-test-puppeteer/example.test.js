@@ -28,9 +28,10 @@ describe("Test Puppeteer", () => {
     await page.click("input[name=q]");
     await page.type("input[name=q]", searchTerms);
     await page.click('input[value="Recherche Google"]');
+
     await page.waitForNavigation();
 
     const resultTitle = await page.title();
-    expect(resultTitle.includes(searchTerms)).toBeTruthy();
+    expect(resultTitle).toInclude(searchTerms);
   });
 });
