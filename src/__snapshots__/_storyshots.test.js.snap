@@ -5810,6 +5810,21 @@ exports[`Storyshots Encryption test 1`] = `
 </div>
 `;
 
+exports[`Storyshots FittedImage demo 1`] = `
+<div
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <img
+    className="fitted-image "
+    src="/images/beautiful-image.jpg"
+  />
+</div>
+`;
+
 exports[`Storyshots Flippable main 1`] = `
 <div
   className="flippable"
