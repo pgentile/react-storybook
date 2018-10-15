@@ -19123,6 +19123,12 @@ exports[`Storyshots Price Prix - Valeur de 46.5 € 1`] = `
 </span>
 `;
 
+exports[`Storyshots ReCaptcha main 1`] = `
+<div
+  className="recaptcha"
+/>
+`;
+
 exports[`Storyshots ResizableBlock main 1`] = `
 <div
   style={
