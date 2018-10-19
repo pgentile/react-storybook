@@ -34,7 +34,7 @@ export default class Price extends React.PureComponent {
     });
 
     return (
-      <Element className={`${realClassName} ${className}`}>
+      <Element className={`${realClassName} ${className}`} data-price-value={value} data-price-currency={currency}>
         <span className="price__units">{units}</span>
         <span className="price__remaining">
           ,&thinsp;

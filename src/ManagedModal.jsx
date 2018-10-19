@@ -20,11 +20,17 @@ export default class ManagedModal extends React.Component {
   static defaultProps = {};
 
   render() {
-    const { name, children } = this.props;
+    const { name, children, ...otherProps } = this.props;
     return (
       <ManagedModalContext.Consumer>
         {({ addModal, removeModal, currentModal }) => (
-          <RegistringModal name={name} currentModal={currentModal} addModal={addModal} removeModal={removeModal}>
+          <RegistringModal
+            {...otherProps}
+            name={name}
+            currentModal={currentModal}
+            addModal={addModal}
+            removeModal={removeModal}
+          >
             {children}
           </RegistringModal>
         )}
@@ -54,7 +60,7 @@ export class ManagedModalContainer extends React.Component {
   removeModal = name => {
     this.setState(prevState => {
       const { modals: prevModals } = prevState;
-      const modals = prevModals.filter(modal => modal === name);
+      const modals = prevModals.filter(modal => modal !== name);
 
       if (prevModals.length === modals.length) {
         return null;

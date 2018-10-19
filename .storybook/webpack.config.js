@@ -24,6 +24,7 @@ module.exports = {
             options: {
               modules: false,
               importLoaders: 2,
+              localIdentName: '[local]-[hash:base64:5]'
             },
           },
           {
