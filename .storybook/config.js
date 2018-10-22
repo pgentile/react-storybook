@@ -1,5 +1,6 @@
 import 'babel-polyfill';
 import { configure, addDecorator } from '@storybook/react';
+import 'loki/configure-react';
 
 import withScreenshot from "../src/screenshot/withScreenshot";
 
