@@ -199,6 +199,9 @@ export default withFormik({
     if (!values.email) {
       errors.email = "Email requis";
     }
+    if (!values.email.includes("@")) {
+      errors.email = "Email invalide";
+    }
 
     if (!values.birthdate) {
       errors.birthdate = "Date de naissance requise";
