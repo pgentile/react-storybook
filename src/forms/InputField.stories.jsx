@@ -3,6 +3,8 @@ import { storiesOf } from "@storybook/react";
 
 import InputField from "./InputField";
 
+import NumberInput from "./NumberInput";
+
 storiesOf("Forms / InputField", module)
   .add("main", () => {
     return <InputField defaultValue="" />;
@@ -18,6 +20,9 @@ storiesOf("Forms / InputField", module)
   })
   .add("Mot de passe", () => {
     return <InputField type="password" value="password" />;
+  })
+  .add("Nombre", () => {
+    return <InputField as={NumberInput} defaultValue="123" />;
   })
   .add("Avec erreur", () => {
     return <InputField defaultValue="" error />;

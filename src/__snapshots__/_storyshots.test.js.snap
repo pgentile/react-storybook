@@ -9970,6 +9970,17 @@ exports[`Storyshots Forms / InputField Mot de passe 1`] = `
 />
 `;
 
+exports[`Storyshots Forms / InputField Nombre 1`] = `
+<input
+  className="form-input-field "
+  defaultValue="123"
+  formNoValidate={true}
+  inputMode="numeric"
+  onChange={[Function]}
+  type="tel"
+/>
+`;
+
 exports[`Storyshots Forms / InputField main 1`] = `
 <input
   className="form-input-field "
