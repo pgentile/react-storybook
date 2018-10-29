@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import addons from "@storybook/addons";
 
 const initialState = Object.freeze({
   enabled: false,
@@ -10,21 +9,21 @@ const initialState = Object.freeze({
 
 export default class ScreenshotPanel extends React.PureComponent {
   static propTypes = {
+    active: PropTypes.bool.isRequired,
+    channel: PropTypes.object.isRequired,
     api: PropTypes.object.isRequired
   };
 
   state = initialState;
 
-  channel = addons.getChannel();
-
   onEnableScreenshot = () => {
-    this.channel.emit("screenshot/enable");
+    this.props.channel.emit("screenshot/enable");
 
     this.setState({ enabled: true });
   };
 
   onDisableScreenshot = () => {
-    this.channel.emit("screenshot/disable");
+    this.props.channel.emit("screenshot/disable");
 
     this.setState({ enabled: false });
   };
@@ -36,8 +35,8 @@ export default class ScreenshotPanel extends React.PureComponent {
   onStoryChange = () => this.setState(initialState);
 
   componentDidMount() {
-    this.channel.on("screenshot/mounted", this.onMounted);
-    this.channel.on("screenshot/ready", this.onReady);
+    this.props.channel.on("screenshot/mounted", this.onMounted);
+    this.props.channel.on("screenshot/ready", this.onReady);
 
     this.removeStoryChangeListener = this.props.api.onStory(this.onStoryChange);
   }
@@ -50,7 +49,13 @@ export default class ScreenshotPanel extends React.PureComponent {
   }
 
   render() {
+    const { active } = this.props;
     const { enabled, mounted, ready } = this.state;
+
+    if (!active) {
+      return null;
+    }
+
     return (
       <div>
         <div>

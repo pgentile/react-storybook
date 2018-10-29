@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, number } from "@storybook/addon-knobs/react";
+import { withKnobs, number } from "@storybook/addon-knobs";
 
 import FittedImage from "./FittedImage";
 

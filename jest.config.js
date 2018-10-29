@@ -5,6 +5,7 @@ module.exports = {
     "\\.(s?css)$": "<rootDir>/__mocks__/styleMock.js"
   },
   setupTestFrameworkScriptFile: "<rootDir>/../setupTests.js",
-  transformIgnorePatterns: ["/node_modules/(?!lodash-es)/"],
+  setupFiles: ["<rootDir>/../registerContext.js"],
+  transformIgnorePatterns: ["node_modules/(?!lodash-es)"],
   coverageDirectory: "<rootDir>/../build/coverage"
 };
