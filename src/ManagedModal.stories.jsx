@@ -7,10 +7,19 @@ storiesOf("ManagedModal", module).add("main", () => {
   return <ManagedModalDemo />;
 });
 
+const initialState = {
+  yo: true,
+  lo: true,
+  zo: false
+};
+
 class ManagedModalDemo extends React.PureComponent {
-  state = {
-    yo: true,
-    lo: true
+  state = initialState;
+
+  openModal = name => {
+    this.setState({
+      [name]: true
+    });
   };
 
   closeModal = name => {
@@ -19,10 +28,17 @@ class ManagedModalDemo extends React.PureComponent {
     });
   };
 
+  onReloadClick = () => {
+    this.setState(initialState);
+  };
+
   render() {
-    const { yo, lo } = this.state;
+    const { yo, lo, zo } = this.state;
     return (
       <ManagedModalContainer>
+        <div>
+          <button onClick={this.onReloadClick}>Reload</button>
+        </div>
         {yo && (
           <ManagedModal name="yo" title="yo" onClose={() => this.closeModal("yo")}>
             Yo
@@ -30,6 +46,14 @@ class ManagedModalDemo extends React.PureComponent {
         )}
         {lo && (
           <ManagedModal name="lo" title="lo" onClose={() => this.closeModal("lo")}>
+            <p>Lo</p>
+            <p>
+              <button onClick={() => this.openModal("zo")}>Reload</button>
+            </p>
+          </ManagedModal>
+        )}
+        {zo && (
+          <ManagedModal name="zo" title="zo" onClose={() => this.closeModal("zo")}>
             Lo
           </ManagedModal>
         )}

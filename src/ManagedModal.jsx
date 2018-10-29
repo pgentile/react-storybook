@@ -12,6 +12,8 @@ const ManagedModalContext = createContext({
 });
 
 export default class ManagedModal extends React.Component {
+  static contextType = ManagedModalContext;
+
   static propTypes = {
     name: PropTypes.string.isRequired,
     children: PropTypes.node
@@ -19,23 +21,27 @@ export default class ManagedModal extends React.Component {
 
   static defaultProps = {};
 
+  componentDidMount() {
+    const { name } = this.props;
+    const { addModal } = this.context;
+    addModal(name);
+  }
+
+  componentWillUnmount() {
+    const { name } = this.props;
+    const { removeModal } = this.context;
+    removeModal(name);
+  }
+
   render() {
     const { name, children, ...otherProps } = this.props;
-    return (
-      <ManagedModalContext.Consumer>
-        {({ addModal, removeModal, currentModal }) => (
-          <RegistringModal
-            {...otherProps}
-            name={name}
-            currentModal={currentModal}
-            addModal={addModal}
-            removeModal={removeModal}
-          >
-            {children}
-          </RegistringModal>
-        )}
-      </ManagedModalContext.Consumer>
-    );
+    const { currentModal } = this.context;
+
+    if (currentModal !== name) {
+      return null;
+    }
+
+    return <Modal {...otherProps}>{children}</Modal>;
   }
 }
 
@@ -45,8 +51,6 @@ export class ManagedModalContainer extends React.Component {
   };
 
   addModal = name => {
-    console.info("Add modal " + name);
-
     this.setState(prevState => {
       const { modals: prevModals } = prevState;
       const modals = uniq([...prevModals, name]);
@@ -85,38 +89,5 @@ export class ManagedModalContainer extends React.Component {
   render() {
     const { children } = this.props;
     return <ManagedModalContext.Provider value={this.state}>{children}</ManagedModalContext.Provider>;
-  }
-}
-
-class RegistringModal extends React.Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired,
-    children: PropTypes.node,
-    currentModal: PropTypes.string,
-    addModal: PropTypes.func.isRequired,
-    removeModal: PropTypes.func.isRequired
-  };
-
-  componentDidMount() {
-    this.props.addModal(this.props.name, this.props.children);
-  }
-
-  componentWillUnmount() {
-    this.props.removeModal(this.props.name);
-  }
-
-  render() {
-    const { name, currentModal, children, addModal, removeModal, ...otherProps } = this.props;
-    const displayModal = name === currentModal;
-
-    if (!displayModal) {
-      return null;
-    }
-
-    return (
-      <Modal {...otherProps}>
-        <p>{children}</p>
-      </Modal>
-    );
   }
 }
