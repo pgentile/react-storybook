@@ -8,7 +8,8 @@
   "parser": "babel-eslint",
   "plugins": [
     "react",
-    "jest"
+    "jest",
+    "react-hooks"
   ],
   "parserOptions": {
     "sourceType": "module",
@@ -39,6 +40,7 @@
         "ignoreRestSiblings": true
       }
     ],
-    "no-console": "warn"
+    "no-console": "warn",
+    "react-hooks/rules-of-hooks": "error"
   }
 }
