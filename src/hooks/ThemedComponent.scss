@@ -1,0 +1,25 @@
+.themed-component {
+
+  box-sizing: border-box;
+  margin: -1px;
+  padding: 1px;
+  border: 0;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  &--yellow {
+    background-color: lighten(yellow, 20%);
+    color: black;
+  }
+
+  &--red {
+    background-color: red;
+    color: white;
+  }
+
+  &__line {
+    margin: 1rem;
+  }
+
+}
