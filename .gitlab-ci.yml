@@ -1,0 +1,29 @@
+image: node:10
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - validate
+  - build
+
+lint:
+  stage: validate
+  before_script: yarn
+  script: yarn lint
+
+test:
+  stage: validate
+  before_script: yarn
+  script: yarn test
+
+test_coverage:
+  stage: validate
+  before_script: yarn
+  script: yarn test:coverage
+
+storybook:
+  stage: build
+  before_script: yarn
+  script: yarn storybook:build
