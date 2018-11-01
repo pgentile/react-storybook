@@ -5972,6 +5972,26 @@ exports[`Storyshots Carousel main 1`] = `
 </div>
 `;
 
+exports[`Storyshots CodeSplitted main 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="spinner"
+  >
+    <div
+      className="spinner__bounce"
+    />
+    <div
+      className="spinner__bounce"
+    />
+    <div
+      className="spinner__bounce"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Encryption test 1`] = `
 <div
   className="screenshot-decorator"

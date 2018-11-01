@@ -2,7 +2,7 @@ module.exports = api => {
   api.cache(true);
 
   return {
-    plugins: ["@babel/plugin-proposal-class-properties"],
+    plugins: ["@babel/plugin-proposal-class-properties", "@babel/plugin-syntax-dynamic-import"],
     presets: [
       [
         "@babel/preset-env",
@@ -24,7 +24,11 @@ module.exports = api => {
     ],
     env: {
       test: {
-        plugins: ["@babel/plugin-proposal-class-properties", "require-context-hook"],
+        plugins: [
+          "@babel/plugin-proposal-class-properties",
+          "@babel/plugin-syntax-dynamic-import",
+          "require-context-hook"
+        ],
         presets: [
           [
             "@babel/preset-env",
