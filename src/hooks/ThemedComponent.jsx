@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useCallback } from "react";
+import React, { createContext, useState, useContext, useCallback, useEffect } from "react";
 import { noop } from "lodash-es";
 
 import bemModifiers from "../utils/bemModifiers";
@@ -14,7 +14,14 @@ const ThemeContext = createContext({
 });
 
 export default function ThemedComponent() {
-  const [theme, setTheme] = useState(DEFAULT_THEME);
+  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || DEFAULT_THEME);
+
+  useEffect(
+    () => {
+      localStorage.setItem("theme", theme);
+    },
+    [theme]
+  );
 
   const switchTheme = useCallback(
     () => {

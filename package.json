@@ -27,13 +27,12 @@
     "visual-regression": "npm-run-all --continue-on-error loki:test reg-cli"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
     "@fortawesome/free-brands-svg-icons": "^5.1.0",
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
     "@fortawesome/react-fontawesome": "^0.1.0",
-    "babel-polyfill": "^6.26.0",
     "card-validator": "^6.0.0",
-    "core-js": "^2.5.7",
     "credit-card-type": "^8.0.0",
     "date-fns": "^1.29.0",
     "fast-memoize": "^2.5.1",
@@ -43,6 +42,7 @@
     "memoize-one": "^4.0.2",
     "prop-types": "^15.6.1",
     "react": "next",
+    "react-cache": "next",
     "react-dom": "next",
     "react-jsonschema-form": "^1.0.4",
     "react-redux": "^5.0.7",
@@ -62,7 +62,6 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "@babel/runtime-corejs2": "^7.1.2",
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-knobs": "^4.0.0",
     "@storybook/addon-links": "^4.0.0",
@@ -76,7 +75,6 @@
     "babel-jest": "^23.0.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-require-context-hook": "^1.0.0",
-    "babel-preset-env": "^1.6.1",
     "browserslist": "^4.0.0",
     "css-loader": "^1.0.0",
     "cssnano": "^4.1.4",
@@ -110,6 +108,7 @@
     "url-loader": "^1.1.1",
     "webdriverio": "^4.13.2",
     "webpack": "^4.5.0",
+    "webpack-manifest-plugin": "^2.0.4",
     "ws": "^6.0.0"
   },
   "browserslist": [

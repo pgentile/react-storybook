@@ -5,27 +5,36 @@ import bemModifiers from "../utils/bemModifiers";
 
 import "./Shake.scss";
 
-export default function Shake({ as: Element = "div", children, revision = null, ...otherProps }) {
+export default function Shake({ as: Element = "div", children, enabled = false, revision = null, ...otherProps }) {
+  const prevRevisionRef = useRef();
   const elementRef = useRef(null);
   const [active, setActive] = useState(false);
 
   useEffect(
     () => {
-      if (revision !== null) {
+      if (enabled && revision !== prevRevisionRef.current) {
+        prevRevisionRef.current = revision;
         setActive(true);
       }
     },
-    [revision]
+    [revision, enabled]
   );
 
-  useEffect(() => {
-    const animationEndListener = () => setActive(false);
+  useEffect(
+    () => {
+      if (!active) {
+        return;
+      }
 
-    const element = elementRef.current;
-    element.addEventListener("animationend", animationEndListener);
+      const animationEndListener = () => setActive(false);
 
-    return () => element.removeEventListener("animationend", animationEndListener);
-  }, []);
+      const element = elementRef.current;
+      element.addEventListener("animationend", animationEndListener);
+
+      return () => element.removeEventListener("animationend", animationEndListener);
+    },
+    [active]
+  );
 
   const className = bemModifiers("shake", { active });
 
@@ -37,7 +46,8 @@ export default function Shake({ as: Element = "div", children, revision = null, 
 }
 
 Shake.propTypes = {
-  as: PropTypes.string,
+  as: PropTypes.oneOf([PropTypes.element, PropTypes.String]),
   children: PropTypes.node,
+  enabled: PropTypes.bool,
   revision: PropTypes.number
 };

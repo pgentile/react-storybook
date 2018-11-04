@@ -14,8 +14,7 @@ module.exports = api => {
               "last 3 firefox versions",
               "last 2 safari versions",
               "last 2 edge versions"
-            ],
-            uglify: false
+            ]
           },
           useBuiltIns: "usage"
         }

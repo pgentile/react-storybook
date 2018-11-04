@@ -13,11 +13,14 @@ export default class Modal extends React.PureComponent {
 
   static propTypes = {
     title: PropTypes.node,
+    visible: PropTypes.bool,
     onClose: PropTypes.func,
     children: PropTypes.node
   };
 
-  static defaultProps = {};
+  static defaultProps = {
+    visible: true
+  };
 
   generatedId = `modal-${Modal.count++}`;
 
@@ -36,11 +39,11 @@ export default class Modal extends React.PureComponent {
   };
 
   render() {
-    const { title, children, onClose } = this.props;
+    const { title, children, onClose, visible } = this.props;
     const closeable = !!onClose;
 
     return (
-      <Overlay onClick={this.onOverlayClick}>
+      <Overlay onClick={this.onOverlayClick} visible={visible}>
         <div className="modal" onClick={this.onOverlayClick}>
           <Card
             className="modal__card"

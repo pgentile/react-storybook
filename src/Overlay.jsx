@@ -6,8 +6,13 @@ import "./Overlay.scss";
 
 export default class Overlay extends React.Component {
   static propTypes = {
+    visible: PropTypes.bool,
     children: PropTypes.node,
     onClick: PropTypes.func
+  };
+
+  static defaultProps = {
+    visible: true
   };
 
   body = null;
@@ -37,10 +42,10 @@ export default class Overlay extends React.Component {
   }
 
   renderOverlay() {
-    const { children, onClick } = this.props;
+    const { children, onClick, visible } = this.props;
 
     return (
-      <div className="overlay" onClick={onClick}>
+      <div className="overlay" onClick={onClick} hidden={!visible}>
         {children}
       </div>
     );

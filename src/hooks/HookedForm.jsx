@@ -1,137 +1,222 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { memo, useState, useMemo, useCallback } from "react";
+import noop from "lodash-es";
+// import PropTypes from "prop-types";
+
+function validateNotEmpty(value) {
+  return !!value;
+}
+
+function validateChecked(checked) {
+  return checked;
+}
+
+function validateName(name) {
+  return name.length >= 2;
+}
 
 export default function HookedForm() {
-  const firstName = useFormInput("firstName");
-  const lastName = useFormInput("lastName");
-  const acceptConditions = useCheckbox("acceptConditions");
+  const firstName = useFormInput("firstName", {
+    validate: validateName
+  });
 
-  const civilityState = useState();
-  const [civility] = civilityState;
-  const mr = useRadio(civilityState, "MR");
-  const mrs = useRadio(civilityState, "MRS");
+  const lastName = useFormInput("lastName", {
+    validate: validateName
+  });
+
+  const acceptConditions = useCheckbox("acceptConditions", {
+    validate: validateChecked
+  });
+
+  const civility = useRadio("civility", {
+    validate: validateNotEmpty
+  });
 
   const onSubmit = event => {
     event.preventDefault();
 
-    alert(
-      JSON.stringify({
-        firstName: firstName.value,
-        lastName: lastName.value,
-        civility
-      })
-    );
+    console.info("Form content", {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      civility: civility.value
+    });
   };
-
-  const submittable = firstName.hasValue && lastName.hasValue && acceptConditions.checked;
 
   return (
     <form onSubmit={onSubmit}>
+      <InputContainer {...civility}>
+        <Row>
+          <label>
+            <input type="radio" {...civility.propsFor("MR")} /> Monsieur
+          </label>{" "}
+          <label>
+            <input type="radio" {...civility.propsFor("MRS")} /> Madame
+          </label>
+        </Row>
+      </InputContainer>
+      <InputContainer {...firstName}>
+        <Row>
+          <label>
+            Prénom : <input type="text" {...firstName.props} />
+          </label>
+        </Row>
+      </InputContainer>
+      <InputContainer {...lastName}>
+        <Row>
+          <label>
+            Nom : <input type="text" {...lastName.props} />
+          </label>
+        </Row>
+      </InputContainer>
+      <InputContainer {...acceptConditions}>
+        <Row>
+          <label>
+            <input type="checkbox" {...acceptConditions.props} /> Accept conditions
+          </label>
+        </Row>
+      </InputContainer>
       <Row>
-        <label>
-          <input type="radio" {...mr.props} /> Monsieur
-        </label>{" "}
-        <label>
-          <input type="radio" {...mrs.props} /> Madame
-        </label>
+        <button type="submit">Send</button>
       </Row>
-      <Row>
-        <label>
-          Prénom : <input type="text" {...firstName.props} />
-        </label>
-      </Row>
-      <Row>
-        <label>
-          Nom : <input type="text" {...lastName.props} />
-        </label>
-      </Row>
-      <Row>
-        <label>
-          <input type="checkbox" {...acceptConditions.props} /> Accept conditions
-        </label>
-      </Row>
-      <Row>
-        <button type="submit" disabled={!submittable}>
-          Send
-        </button>
-      </Row>
+      <Row>{civility.valid && firstName.valid && lastName.valid && acceptConditions.valid ? "VALID" : "INVALID"}</Row>
     </form>
   );
 }
 
-function Row({ children }) {
-  return <p className="row">{children}</p>;
+const InputContainer = memo(function InputContainer({ valid, touched, children }) {
+  return (
+    <div className="input-container">
+      <div>{children}</div>
+      {touched && !valid ? <div>Invalid</div> : null}
+    </div>
+  );
+});
+
+const Row = memo(function Row({ children, className = "", ...otherProps }) {
+  return (
+    <div className={"row " + className} {...otherProps}>
+      {children}
+    </div>
+  );
+});
+
+function defaultValidate() {
+  return true;
 }
 
-Row.propTypes = {
-  children: PropTypes.node
-};
-
-function useFormInput(name, defaultValue = "") {
+function useFormInput(name, { defaultValue = "", validate = defaultValidate } = {}) {
   const [value, setValue] = useState(defaultValue);
-  const [touched, setTouched] = useState(false);
+  const { touched, touch } = useTouched();
 
-  const onChange = event => {
-    setValue(event.target.value);
-  };
+  const valid = useMemo(
+    () => {
+      return validate(value);
+    },
+    [validate, value]
+  );
 
-  const onBlur = () => {
-    if (!touched) {
-      setTouched(true);
-    }
-  };
+  const props = useMemo(
+    () => {
+      return {
+        name,
+        value,
+
+        onChange(event) {
+          setValue(event.target.value);
+        },
+
+        onBlur() {
+          touch();
+        }
+      };
+    },
+    [name, value, touched]
+  );
 
   return {
+    type: "input",
+    name,
     value,
     hasValue: !!value,
     touched,
-    props: {
-      name,
-      value,
-      onChange,
-      onBlur
-    }
+    valid,
+    props
   };
 }
 
-function useCheckbox(name, defaultChecked = false) {
+function useCheckbox(name, { defaultChecked = false, validate = defaultValidate } = {}) {
   const [checked, setChecked] = useState(defaultChecked);
-  const [touched, setTouched] = useState(false);
+  const { touched, touch } = useTouched();
 
-  const onChange = event => setChecked(event.target.checked);
+  const valid = useMemo(() => validate(checked), [validate, checked]);
 
-  const onBlur = () => {
-    if (!touched) {
-      setTouched(true);
-    }
-  };
+  const props = useMemo(
+    () => {
+      return {
+        name,
+        checked,
+
+        onChange(event) {
+          setChecked(event.target.checked);
+          touch();
+        }
+      };
+    },
+    [name, checked, touched]
+  );
 
   return {
+    type: "checkbox",
+    name,
     checked,
     touched,
-    props: {
-      name,
-      checked,
-      onChange,
-      onBlur
-    }
+    valid,
+    props
   };
 }
 
-function useRadio(state, defaultValue) {
-  const [value, setValue] = state;
+function useRadio(name, { defaultValue = "", validate = defaultValidate } = {}) {
+  const [value, setValue] = useState(defaultValue);
+  const { touched, touch } = useTouched();
 
-  const onChange = () => setValue(defaultValue);
+  const valid = useMemo(() => validate(value), [validate, value]);
 
-  const checked = value === defaultValue;
+  const propsFor = useCallback(
+    targetValue => {
+      return {
+        name,
+        value: targetValue,
+        checked: targetValue === value,
+
+        onChange(event) {
+          setValue(event.target.value);
+          touch();
+        }
+      };
+    },
+    [name, value, touched]
+  );
 
   return {
-    checked,
-    props: {
-      name,
-      value,
-      checked,
-      onChange
-    }
+    type: "radio",
+    name,
+    valid,
+    value,
+    hasValue: !!value,
+    touched,
+    propsFor
+  };
+}
+
+function useTouched() {
+  const [touched, setTouched] = useState(false);
+
+  let touch = noop;
+  if (!touched) {
+    touch = () => setTouched(true);
+  }
+
+  return {
+    touched,
+    touch
   };
 }

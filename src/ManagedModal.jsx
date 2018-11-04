@@ -36,12 +36,13 @@ export default class ManagedModal extends React.Component {
   render() {
     const { name, children, ...otherProps } = this.props;
     const { currentModal } = this.context;
+    const visible = currentModal === name;
 
-    if (currentModal !== name) {
-      return null;
-    }
-
-    return <Modal {...otherProps}>{children}</Modal>;
+    return (
+      <Modal {...otherProps} visible={visible}>
+        {children}
+      </Modal>
+    );
   }
 }
 

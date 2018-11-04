@@ -5,11 +5,12 @@
 // IMPORTANT
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
+const ManifestPlugin = require("webpack-manifest-plugin");
 
 
 module.exports = {
   plugins: [
-    // your custom plugins
+    new ManifestPlugin()
   ],
   module: {
     rules: [
