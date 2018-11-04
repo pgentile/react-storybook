@@ -1,0 +1,28 @@
+// TODO Sass file for Shake
+.shake {
+
+  &--active {
+    animation: 0.15s 5 shake;
+  }
+
+  @keyframes shake {
+    $translation: 10px;
+
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX($translation);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-$translation);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+}

@@ -6,13 +6,19 @@ export default function HookedForm() {
   const lastName = useFormInput("lastName");
   const acceptConditions = useCheckbox("acceptConditions");
 
+  const civilityState = useState();
+  const [civility] = civilityState;
+  const mr = useRadio(civilityState, "MR");
+  const mrs = useRadio(civilityState, "MRS");
+
   const onSubmit = event => {
     event.preventDefault();
 
     alert(
       JSON.stringify({
         firstName: firstName.value,
-        lastName: lastName.value
+        lastName: lastName.value,
+        civility
       })
     );
   };
@@ -23,12 +29,20 @@ export default function HookedForm() {
     <form onSubmit={onSubmit}>
       <Row>
         <label>
-          First Name : <input type="text" {...firstName.props} />
+          <input type="radio" {...mr.props} /> Monsieur
+        </label>{" "}
+        <label>
+          <input type="radio" {...mrs.props} /> Madame
         </label>
       </Row>
       <Row>
         <label>
-          Last Name : <input type="text" {...lastName.props} />
+          Prénom : <input type="text" {...firstName.props} />
+        </label>
+      </Row>
+      <Row>
+        <label>
+          Nom : <input type="text" {...lastName.props} />
         </label>
       </Row>
       <Row>
@@ -100,6 +114,24 @@ function useCheckbox(name, defaultChecked = false) {
       checked,
       onChange,
       onBlur
+    }
+  };
+}
+
+function useRadio(state, defaultValue) {
+  const [value, setValue] = state;
+
+  const onChange = () => setValue(defaultValue);
+
+  const checked = value === defaultValue;
+
+  return {
+    checked,
+    props: {
+      name,
+      value,
+      checked,
+      onChange
     }
   };
 }
