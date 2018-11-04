@@ -20346,6 +20346,118 @@ exports[`Storyshots Travel Multiples trajets 1`] = `
 </div>
 `;
 
+exports[`Storyshots TravelDetails main 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="travel-details"
+  >
+    <div
+      className="travel-details__segment travel-details__segment--train"
+    >
+      <p>
+        Clisson
+      </p>
+      <p
+        className="travel-details__segment-details"
+      >
+        <span>
+          SNCF
+        </span>
+         
+        <span>
+          TER
+        </span>
+         
+        <span>
+          30 minutes
+        </span>
+      </p>
+      <p>
+        Nantes
+      </p>
+    </div>
+    <div
+      className="travel-details__segment travel-details__segment--connection"
+    >
+      <p
+        className="travel-details__segment-connection-title"
+      >
+        Correspondance — 
+        25 minutes
+      </p>
+    </div>
+    <div
+      className="travel-details__segment travel-details__segment--train"
+    >
+      <p>
+        Nantes
+      </p>
+      <p
+        className="travel-details__segment-details"
+      >
+        <span>
+          SNCF
+        </span>
+         
+        <span>
+          TGV Atlantique
+        </span>
+         
+        <span>
+          2 heures 16 minutes
+        </span>
+      </p>
+      <p>
+        Paris Montparnasse
+      </p>
+    </div>
+    <div
+      className="travel-details__segment travel-details__segment--connection"
+    >
+      <p
+        className="travel-details__segment-connection-title"
+      >
+        Correspondance — 
+        1 heures 2 minutes
+      </p>
+      <p
+        className="travel-details__segment-station-change-warning"
+      >
+        Vous devez changer de gare pour aller à 
+        Paris Gare du Nord
+      </p>
+    </div>
+    <div
+      className="travel-details__segment travel-details__segment--train"
+    >
+      <p>
+        Paris Gare du Nord
+      </p>
+      <p
+        className="travel-details__segment-details"
+      >
+        <span>
+          Eurostar
+        </span>
+         
+        <span>
+          Eurostar
+        </span>
+         
+        <span>
+          2 heures 0 minutes
+        </span>
+      </p>
+      <p>
+        Londres
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
 <div
   className="screenshot-decorator"

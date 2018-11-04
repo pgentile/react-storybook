@@ -1,0 +1,74 @@
+.travel-details {
+  $border: 1px solid black;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  border: $border;
+  border-radius: 15px;
+
+  &__segment {
+    $background-color: white;
+
+    position: relative;
+
+    margin: 0;
+    padding: 1rem;
+
+    &:not(:last-child) {
+      border-bottom: $border;
+
+
+      &::after{
+        $size: 15px;
+
+        content: "";
+
+        position: absolute;
+        z-index: 100;
+        bottom: -($size / 2) - 1px;
+        left: 50%;
+
+        width: $size;
+        height: $size;
+
+        border-right: $border;
+        border-bottom: $border;
+
+        transform: rotateZ(45deg);
+      }
+
+    }
+
+    &--train {
+      $background-color: lightblue;
+
+      background-color: $background-color;
+
+      &::after {
+        background-color: $background-color;
+      }
+    }
+
+    &--connection {
+      $background-color: yellow;
+
+      background-color: $background-color;
+
+      &::after {
+        background-color: $background-color;
+      }
+    }
+  }
+
+  &__segment-connection-title {
+    text-align: center;
+  }
+
+  &__segment-station-change-warning {
+    text-align: center;
+  }
+
+}
