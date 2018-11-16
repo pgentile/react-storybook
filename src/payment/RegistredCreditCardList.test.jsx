@@ -5,7 +5,7 @@ import RegistredCreditCardList from "./RegistredCreditCardList";
 import RegistredCreditCard from "./RegistredCreditCard";
 import RegistredCardCvvForm from "./RegistredCardCvvForm";
 
-describe(RegistredCreditCardList.name, () => {
+describe(`${RegistredCreditCardList.name}`, () => {
   const cards = [
     {
       id: "1",
@@ -74,7 +74,7 @@ describe(RegistredCreditCardList.name, () => {
   });
 
   // Can't use the submit event on form...
-  xtest("Use some card", () => {
+  test.skip("Use some card", () => {
     const onUseCard = jest.fn();
     wrapper = mount(<RegistredCreditCardList totalPrice={totalPrice} cards={cards} onUseCard={onUseCard} />);
 

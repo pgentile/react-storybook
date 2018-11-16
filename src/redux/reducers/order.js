@@ -18,27 +18,45 @@ const scope = createScope(state => state.order);
 export const selectOrderItems = scope(order => order.items);
 
 export const selectTickets = scope(
-  createSelector(order => order.items, items => items.filter(item => item.type === TICKET_TYPE))
+  createSelector(
+    order => order.items,
+    items => items.filter(item => item.type === TICKET_TYPE)
+  )
 );
 
 export const selectItemsWithoutVoucher = scope(
-  createSelector(order => order.items, items => items.filter(item => item.type !== VOUCHER_TYPE))
+  createSelector(
+    order => order.items,
+    items => items.filter(item => item.type !== VOUCHER_TYPE)
+  )
 );
 
 export const selectItemsWithoutDonation = scope(
-  createSelector(order => order.items, items => items.filter(item => item.type !== DONATION_TYPE))
+  createSelector(
+    order => order.items,
+    items => items.filter(item => item.type !== DONATION_TYPE)
+  )
 );
 
 export const selectItemsWithoutInsurance = scope(
-  createSelector(order => order.items, items => items.filter(item => item.type !== INSURANCE_TYPE))
+  createSelector(
+    order => order.items,
+    items => items.filter(item => item.type !== INSURANCE_TYPE)
+  )
 );
 
 export const selectVoucher = scope(
-  createSelector(order => order.items, items => items.find(item => item.type === VOUCHER_TYPE) || null)
+  createSelector(
+    order => order.items,
+    items => items.find(item => item.type === VOUCHER_TYPE) || null
+  )
 );
 
 export const selectDonation = scope(
-  createSelector(order => order.items, items => items.find(item => item.type === DONATION_TYPE) || null)
+  createSelector(
+    order => order.items,
+    items => items.find(item => item.type === DONATION_TYPE) || null
+  )
 );
 
 const ZERO_EURO = Object.freeze({

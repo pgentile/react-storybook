@@ -10856,7 +10856,12 @@ exports[`Storyshots JsonSchemaForm SearchInwardForm 1`] = `
             <legend
               id="root_outwardProposals__title"
             >
-              Propositions aller*
+              Propositions aller
+              <span
+                className="required"
+              >
+                *
+              </span>
             </legend>
             <div
               className="row array-item-list"
@@ -10865,7 +10870,7 @@ exports[`Storyshots JsonSchemaForm SearchInwardForm 1`] = `
               className="row"
             >
               <p
-                className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                className="col-xs-3 col-xs-offset-9 text-right array-item-add"
               >
                 <button
                   className="btn btn-info btn-add col-xs-12"
@@ -10958,7 +10963,12 @@ exports[`Storyshots JsonSchemaForm SearchOutwardForm 1`] = `
             <legend
               id="root_origin__title"
             >
-              Origin*
+              Origin
+              <span
+                className="required"
+              >
+                *
+              </span>
             </legend>
             <div
               className="form-group field field-string"
@@ -11044,7 +11054,12 @@ exports[`Storyshots JsonSchemaForm SearchOutwardForm 1`] = `
             <legend
               id="root_destination__title"
             >
-              Destination*
+              Destination
+              <span
+                className="required"
+              >
+                *
+              </span>
             </legend>
             <div
               className="form-group field field-string"
@@ -11169,7 +11184,7 @@ exports[`Storyshots JsonSchemaForm SearchOutwardForm 1`] = `
               className="row"
             >
               <p
-                className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                className="col-xs-3 col-xs-offset-9 text-right array-item-add"
               >
                 <button
                   className="btn btn-info btn-add col-xs-12"
@@ -11415,7 +11430,7 @@ exports[`Storyshots JsonSchemaForm SearchOutwardForm 1`] = `
                             className="row"
                           >
                             <p
-                              className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                              className="col-xs-3 col-xs-offset-9 text-right array-item-add"
                             >
                               <button
                                 className="btn btn-info btn-add col-xs-12"
@@ -11452,7 +11467,7 @@ exports[`Storyshots JsonSchemaForm SearchOutwardForm 1`] = `
                             className="row"
                           >
                             <p
-                              className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                              className="col-xs-3 col-xs-offset-9 text-right array-item-add"
                             >
                               <button
                                 className="btn btn-info btn-add col-xs-12"
@@ -11543,7 +11558,7 @@ exports[`Storyshots JsonSchemaForm SearchOutwardForm 1`] = `
               className="row"
             >
               <p
-                className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                className="col-xs-3 col-xs-offset-9 text-right array-item-add"
               >
                 <button
                   className="btn btn-info btn-add col-xs-12"
@@ -11839,7 +11854,7 @@ exports[`Storyshots JsonSchemaForm UpdateOwnerForm 1`] = `
                   className="row"
                 >
                   <p
-                    className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                    className="col-xs-3 col-xs-offset-9 text-right array-item-add"
                   >
                     <button
                       className="btn btn-info btn-add col-xs-12"
@@ -11998,7 +12013,7 @@ exports[`Storyshots JsonSchemaForm UpdatePassengersForm 1`] = `
               className="row"
             >
               <p
-                className="col-xs-3 col-xs-offset-9 array-item-add text-right"
+                className="col-xs-3 col-xs-offset-9 text-right array-item-add"
               >
                 <button
                   className="btn btn-info btn-add col-xs-12"
