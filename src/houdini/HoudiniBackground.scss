@@ -1,0 +1,10 @@
+$pi: 3.14159265359;
+
+.houdini-background {
+  $angle: (45 / 360) * ($pi * 2);
+
+  height: 100px;
+
+  --angle: #{$angle};
+  background-image: paint(my-bg);
+}
