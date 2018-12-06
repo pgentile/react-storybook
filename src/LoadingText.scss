@@ -1,0 +1,44 @@
+$light-color: #DDD;
+$dark-color: #BBB;
+
+.loading-text {
+  &__line {
+    border-radius: 3px;
+
+    background-color: $light-color;
+
+    animation-name: loading-text;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+    width: 100%;
+
+    &:nth-child(2) {
+      width: 90%;
+    }
+
+    &:nth-child(3) {
+      width: 80%;
+    }
+
+    &:nth-child(4) {
+      width: 90%;
+    }
+
+    &:nth-child(5) {
+      width: 40%;
+    }
+  }
+
+}
+
+@keyframes loading-text {
+  from {
+    background-color: $light-color;
+  }
+  to {
+    background-color: $dark-color;
+  }
+}

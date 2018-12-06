@@ -3,6 +3,7 @@ import { addDays, setHours, format, parse } from "date-fns";
 import firstElementMatching from "./selenium/firstElementMatching";
 import selectOptionByValue from "./selenium/selectOptionByValue";
 import writeScreenshot from "./selenium/writeScreenshot";
+import writeHtmlContent from "./selenium/writeHtmlContent";
 import applyOnElements from "./selenium/applyOnElements";
 import elementsMatching from "./selenium/elementsMatching";
 
@@ -12,15 +13,18 @@ describe("OUI.sncf", () => {
   beforeEach(async () => {
     await driver.get("about:blank");
 
+    /*
     await driver
       .manage()
       .window()
       .maximize();
+    */
   });
 
   afterEach(async () => {
     await driver.sleep(300);
     await writeScreenshot("screenshot.png");
+    await writeHtmlContent("screenshot-content.html");
   });
 
   test("Search on OUI.sncf", async () => {
@@ -48,7 +52,7 @@ describe("OUI.sncf", () => {
     prices.forEach(price => console.info("Price =", price));
   });
 
-  test("Search on OUI.sncf 2", async () => {
+  test.skip("Search on OUI.sncf 2", async () => {
     const homePage = await OuiHomePage.init();
 
     const today = new Date();
@@ -68,7 +72,7 @@ describe("OUI.sncf", () => {
     prices.forEach(price => console.info("Price =", price));
   });
 
-  test("Retry search station on OUI.sncf 2", async () => {
+  test.skip("Retry search station on OUI.sncf 2", async () => {
     const homePage = await OuiHomePage.init();
 
     const today = new Date();
@@ -101,6 +105,7 @@ class OuiHomePage {
   }
 
   async getRidOfAnnoyingPopins() {
+    await this.getRidOfSurvey();
     await this.getRidOfCookiePolicy();
     await this.getRidOfOuibot();
   }
@@ -108,7 +113,7 @@ class OuiHomePage {
   async getRidOfCookiePolicy() {
     let cookiePopin = null;
     try {
-      cookiePopin = await driver.wait(until.elementLocated(By.id("cookie-policy-popin")), 3000);
+      cookiePopin = await driver.wait(until.elementLocated(By.id("cookie-policy-popin")), 2000);
     } catch (e) {
       // Ignore exception
     }
@@ -130,38 +135,57 @@ class OuiHomePage {
     }
   }
 
+  async getRidOfSurvey() {
+    let surveyPopin = null;
+    try {
+      surveyPopin = await driver.wait(until.elementLocated(By.css(".vsc__lightbox--survey")), 2000);
+    } catch (e) {
+      // Ignore exception
+    }
+
+    if (surveyPopin !== null) {
+      await surveyPopin.findElement(By.css("#survey-no")).click();
+    }
+  }
+
   async selectOrigin(origin) {
-    const input = driver.findElement(By.id("vsb-origin-train"));
+    console.info("selectOrigin =", origin);
+
+    const input = driver.findElement(By.id("vsb-origin-train-home"));
 
     await input.clear();
     await input.sendKeys(origin);
 
     const autocompleteItem = await driver.wait(
-      until.elementLocated(By.css("#d2d-autocomplete-origin-train .vsb-dropdown-new__item"))
+      until.elementLocated(By.css("#vsb-dropdown-inc-results .vsb-dropdown-inc__item"))
     );
     await driver.wait(until.elementIsVisible(autocompleteItem));
     await autocompleteItem.click();
   }
 
-  async selectDestination(origin) {
-    const input = driver.findElement(By.id("vsb-destination-train"));
+  async selectDestination(destination) {
+    console.info("selectDestination =", destination);
+
+    const input = driver.findElement(By.id("vsb-destination-train-home"));
     await input.clear();
-    await input.sendKeys(origin);
+    await input.sendKeys(destination);
 
     const autocompleteItem = await driver.wait(
-      until.elementLocated(By.css("#d2d-autocomplete-destination-train .vsb-dropdown-new__item"))
+      until.elementLocated(By.css("#vsb-dropdown-inc-results .vsb-dropdown-inc__item"))
     );
     await driver.wait(until.elementIsVisible(autocompleteItem));
     await autocompleteItem.click();
   }
 
   async selectDepartureDate(date) {
+    console.info("selectDepartureDate =", date);
+
     await this.selectDepartureDay(date);
     await this.selectDepartureHour(date);
   }
 
   async selectDepartureDay(date) {
-    await driver.findElement(By.id("vsb-departure-date-train")).click();
+    await driver.findElement(By.css("#vsb-departure-train-home-date-time")).click();
     await this._selectDayInCalendar(date);
   }
 
@@ -174,13 +198,13 @@ class OuiHomePage {
   }
 
   async setTravelDirect(travelDirect) {
-    const bookingForm = driver.findElement(By.className("booking__form"));
+    console.info("setTravelDirect =", travelDirect);
 
-    const checkbox = bookingForm.findElement(By.name("direct-travel"));
+    const checkbox = driver.findElement(By.name("direct-travel"));
     const checked = (await checkbox.getAttribute("checked")) || false;
 
     if (travelDirect !== checked) {
-      const label = bookingForm.findElement(By.className("booking__form-direct-travel"));
+      const label = driver.findElement(By.css('[for="vsb-direct-travel-train-home"]'));
       await label.click();
     }
   }
