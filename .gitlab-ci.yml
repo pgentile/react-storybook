@@ -6,11 +6,13 @@ cache:
     - node_modules/
 
 stages:
+  - install
   - validate
   - build
 
-before_script:
-  - yarn
+install:
+  stage: install
+  script: yarn
 
 lint:
   stage: validate
