@@ -1,10 +1,5 @@
 image: node:10
 
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-    - node_modules/
-
 stages:
   - setup
   - validate
@@ -13,6 +8,11 @@ stages:
 install:
   stage: setup
   script: yarn
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+    policy: push
 
 lint:
   stage: validate
@@ -20,6 +20,9 @@ lint:
     - yarn
   script: yarn lint
   cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
     policy: pull
 
 test:
@@ -28,6 +31,9 @@ test:
     - yarn
   script: yarn test
   cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
     policy: pull
 
 test_coverage:
@@ -36,6 +42,9 @@ test_coverage:
     - yarn
   script: yarn test:coverage
   cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
     policy: pull
 
 storybook:
@@ -44,4 +53,7 @@ storybook:
     - yarn
   script: yarn storybook:build
   cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
     policy: pull
