@@ -6,26 +6,42 @@ cache:
     - node_modules/
 
 stages:
-  - install
+  - setup
   - validate
   - build
 
 install:
-  stage: install
+  stage: setup
   script: yarn
 
 lint:
   stage: validate
+  before_script:
+    - yarn
   script: yarn lint
+  cache:
+    policy: pull
 
 test:
   stage: validate
+  before_script:
+    - yarn
   script: yarn test
+  cache:
+    policy: pull
 
 test_coverage:
   stage: build
+  before_script:
+    - yarn
   script: yarn test:coverage
+  cache:
+    policy: pull
 
 storybook:
   stage: build
+  before_script:
+    - yarn
   script: yarn storybook:build
+  cache:
+    policy: pull
