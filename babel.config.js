@@ -27,7 +27,7 @@ module.exports = api => {
               ">= 0.5% in GB"
             ]
           },
-          useBuiltIns: "usage"
+          useBuiltIns: "entry"
         }
       ],
       "@babel/preset-react"
@@ -47,7 +47,7 @@ module.exports = api => {
               targets: {
                 node: true
               },
-              useBuiltIns: "usage"
+              useBuiltIns: "entry"
             }
           ],
           "@babel/preset-react"
