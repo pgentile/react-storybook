@@ -14,11 +14,22 @@ install:
       - node_modules/
     policy: push
 
-lint:
+lint-js:
   stage: validate
   before_script:
     - yarn
-  script: yarn lint
+  script: yarn lint:js
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+    policy: pull
+
+lint-css:
+  stage: validate
+  before_script:
+    - yarn
+  script: yarn lint:css
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
@@ -46,6 +57,9 @@ test_coverage:
     paths:
       - node_modules/
     policy: pull
+  artifacts:
+    paths:
+      - build/coverage
 
 storybook:
   stage: build
@@ -57,3 +71,6 @@ storybook:
     paths:
       - node_modules/
     policy: pull
+  artifacts:
+    paths:
+      - build/storybook

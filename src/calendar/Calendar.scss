@@ -22,15 +22,12 @@
     text-decoration: none;
   }
 
-  &__day {
-    border: 1px solid #999;
-  }
-
   &__week-days {
     font-weight: bold;
   }
 
   &__day {
+    border: 1px solid #999;
     color: #999;
 
     &--current-month {
