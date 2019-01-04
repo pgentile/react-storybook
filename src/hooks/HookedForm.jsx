@@ -1,6 +1,6 @@
 import React, { memo, useState, useMemo, useCallback } from "react";
+import PropTypes from "prop-types";
 import noop from "lodash-es";
-// import PropTypes from "prop-types";
 
 function validateNotEmpty(value) {
   return !!value;
@@ -91,6 +91,12 @@ const InputContainer = memo(function InputContainer({ valid, touched, children }
   );
 });
 
+InputContainer.propTypes = {
+  valid: PropTypes.bool.isRequired,
+  touched: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired
+};
+
 const Row = memo(function Row({ children, className = "", ...otherProps }) {
   return (
     <div className={"row " + className} {...otherProps}>
@@ -98,6 +104,11 @@ const Row = memo(function Row({ children, className = "", ...otherProps }) {
     </div>
   );
 });
+
+Row.propTypes = {
+  className: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+};
 
 function defaultValidate() {
   return true;

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withFormik } from "formik";
+import { withFormik, Formik } from "formik";
 import cardValidator from "card-validator";
 import creditCardType from "credit-card-type";
 
@@ -15,6 +15,7 @@ import "./CreditCardForm.scss";
 
 class CreditCardForm extends React.PureComponent {
   static propTypes = {
+    ...Formik.propTypes,
     className: PropTypes.string,
     totalPrice: PropTypes.shape({
       value: PropTypes.number.isRequired,

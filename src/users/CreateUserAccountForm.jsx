@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withFormik } from "formik";
+import { withFormik, Formik } from "formik";
 
 import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
@@ -11,6 +11,7 @@ import "./CreateUserAccountForm.scss";
 
 class CreateUserAccountForm extends React.PureComponent {
   static propTypes = {
+    ...Formik.propTypes,
     className: PropTypes.string,
     onCreate: PropTypes.func.isRequired
   };

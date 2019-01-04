@@ -5,6 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "babel": "babel",
     "clean": "rimraf build .loki",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook --output-dir ./build/storybook",
@@ -27,7 +28,6 @@
     "visual-regression": "npm-run-all --continue-on-error loki:test reg-cli"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
     "@fortawesome/free-brands-svg-icons": "^5.1.0",
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
@@ -42,9 +42,9 @@
     "memoize-one": "^5.0.0",
     "pretty": "^2.0.0",
     "prop-types": "^15.6.1",
-    "react": "^16.7.0-alpha.2",
+    "react": "next",
     "react-cache": "next",
-    "react-dom": "^16.7.0-alpha.2",
+    "react-dom": "next",
     "react-jsonschema-form": "^1.0.4",
     "react-redux": "^6.0.0",
     "recompose": "^0.30.0",
@@ -112,23 +112,6 @@
     "webpack-manifest-plugin": "^2.0.4",
     "ws": "^6.0.0"
   },
-  "browserslist": [
-    "since 2015",
-    "last 3 chrome versions",
-    "last 3 firefox versions",
-    "last 3 safari versions",
-    "last 3 edge versions",
-    "last 3 ChromeAndroid versions",
-    "last 3 Android versions",
-    "last 3 iOS versions",
-    "ie 11",
-    "chrome >= 41",
-    ">= 0.5% in FR",
-    ">= 0.5% in CH",
-    ">= 0.5% in BE",
-    ">= 0.5% in DE",
-    ">= 0.5% in GB"
-  ],
   "loki": {
     "configurations": {
       "chrome.laptop": {

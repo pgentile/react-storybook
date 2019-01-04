@@ -1,4 +1,3 @@
-import "@babel/polyfill";
 import { configure, addDecorator } from "@storybook/react";
 import "loki/configure-react";
 

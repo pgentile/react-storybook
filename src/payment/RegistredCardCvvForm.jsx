@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { getTypeInfo } from "credit-card-type";
-import { withFormik } from "formik";
+import { withFormik, Formik } from "formik";
 
 import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
@@ -13,6 +13,7 @@ import "./RegistredCardCvvForm.scss";
 
 class RegistredCardCvvForm extends React.PureComponent {
   static propTypes = {
+    ...Formik.propTypes,
     brand: PropTypes.string.isRequired,
     totalPrice: PropTypes.shape({
       value: PropTypes.number.isRequired,
