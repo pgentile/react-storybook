@@ -65,7 +65,9 @@ storybook:
   stage: build
   before_script:
     - yarn
-  script: yarn storybook:build
+  script:
+    - yarn storybook:build
+    - "yarn es-check || true"
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
