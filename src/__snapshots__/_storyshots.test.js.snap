@@ -10953,6 +10953,34 @@ exports[`Storyshots Menu main 1`] = `
 </div>
 `;
 
+exports[`Storyshots NightMode main 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="night-mode"
+  >
+    <p
+      className="night-mode__controls"
+    >
+      <button
+        className="night-mode__switcher"
+        onClick={[Function]}
+      >
+        Enable
+         night mode
+      </button>
+    </p>
+    <h1>
+      Title
+    </h1>
+    <p>
+      This is a night mode enabled component
+    </p>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
 <div
   className="screenshot-decorator"
