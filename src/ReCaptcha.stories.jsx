@@ -4,12 +4,24 @@ import { action } from "@storybook/addon-actions";
 
 import ReCaptcha from "./ReCaptcha";
 
-storiesOf("ReCaptcha", module).add("main", () => {
-  return (
-    <ReCaptcha
-      siteKey="6LcpzDMUAAAAAD_A6gfUl30elxinl3uWkkLlVnmt"
-      onSuccess={action("success")}
-      onExpire={action("expire")}
-    />
-  );
-});
+const siteKey = "6LcpzDMUAAAAAD_A6gfUl30elxinl3uWkkLlVnmt";
+
+const onSuccess = action("success");
+const onExpire = action("expire");
+
+const props = {
+  siteKey,
+  onSuccess,
+  onExpire
+};
+
+storiesOf("ReCaptcha", module)
+  .add("main", () => {
+    return <ReCaptcha {...props} />;
+  })
+  .add("dark", () => {
+    return <ReCaptcha {...props} theme="dark" />;
+  })
+  .add("compact", () => {
+    return <ReCaptcha {...props} size="compact" />;
+  });

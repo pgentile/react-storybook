@@ -18754,6 +18754,26 @@ exports[`Storyshots Price Prix - Valeur de 46.5 € 1`] = `
 </div>
 `;
 
+exports[`Storyshots ReCaptcha compact 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="recaptcha"
+  />
+</div>
+`;
+
+exports[`Storyshots ReCaptcha dark 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="recaptcha"
+  />
+</div>
+`;
+
 exports[`Storyshots ReCaptcha main 1`] = `
 <div
   className="screenshot-decorator"

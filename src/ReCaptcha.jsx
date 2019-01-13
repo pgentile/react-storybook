@@ -19,6 +19,8 @@ class ReCaptchaLibLoader {
 
       // Add the reCaptcha script
       const reCaptchaScript = document.createElement("script");
+      reCaptchaScript.async = true;
+      reCaptchaScript.defer = true;
       reCaptchaScript.src = "https://www.google.com/recaptcha/api.js?render=explicit&onload=onReCaptchaLoadedV2";
       document.getElementsByTagName("head")[0].appendChild(reCaptchaScript);
     }
