@@ -4,6 +4,7 @@ stages:
   - setup
   - validate
   - build
+  - post-validate
 
 install:
   stage: setup
@@ -41,7 +42,7 @@ test:
   before_script:
     - yarn
   script: yarn test
-  cache:
+  cache: &cache
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
@@ -52,11 +53,7 @@ test_coverage:
   before_script:
     - yarn
   script: yarn test:coverage
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-    policy: pull
+  cache: *cache
   artifacts:
     paths:
       - build/coverage
@@ -67,12 +64,15 @@ storybook:
     - yarn
   script:
     - yarn storybook:build
-    - "yarn es-check || true"
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-    policy: pull
+  cache: *cache
   artifacts:
     paths:
       - build/storybook
+
+es-check:
+  stage: post-validate
+  before_script:
+    - yarn
+  script:
+    - yarn es-check
+  cache: *cache

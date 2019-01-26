@@ -32,12 +32,10 @@ export default class HoudiniBackground extends React.PureComponent {
   }
 }
 
-if (process.env.NODE_ENV !== "test") {
-  let loaded = false;
-  if (!loaded) {
-    if (CSS.paintWorklet) {
-      CSS.paintWorklet.addModule("/houdini/background.js");
-    }
-    loaded = true;
+let loaded = false;
+if (!loaded) {
+  if (window.CSS && window.CSS.paintWorklet) {
+    window.CSS.paintWorklet.addModule("/houdini/background.js");
   }
+  loaded = true;
 }
