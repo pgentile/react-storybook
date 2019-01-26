@@ -16,20 +16,14 @@ const ThemeContext = createContext({
 export default function ThemedComponent() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || DEFAULT_THEME);
 
-  useEffect(
-    () => {
-      localStorage.setItem("theme", theme);
-    },
-    [theme]
-  );
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
-  const switchTheme = useCallback(
-    () => {
-      const newTheme = theme === DEFAULT_THEME ? ALT_THEME : DEFAULT_THEME;
-      setTheme(newTheme);
-    },
-    [theme]
-  );
+  const switchTheme = useCallback(() => {
+    const newTheme = theme === DEFAULT_THEME ? ALT_THEME : DEFAULT_THEME;
+    setTheme(newTheme);
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, switchTheme }}>

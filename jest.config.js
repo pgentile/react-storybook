@@ -4,7 +4,7 @@ module.exports = {
   moduleNameMapper: {
     "\\.(s?css)$": "<rootDir>/__mocks__/styleMock.js"
   },
-  setupTestFrameworkScriptFile: "<rootDir>/../setupTests.js",
+  setupFilesAfterEnv: ["<rootDir>/../setupTests.js"],
   setupFiles: ["<rootDir>/../registerContext.js"],
   transformIgnorePatterns: ["node_modules/(?!lodash-es)"],
   coverageDirectory: "<rootDir>/../build/coverage"

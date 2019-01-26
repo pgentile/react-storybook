@@ -10,31 +10,25 @@ export default function Shake({ as: Element = "div", children, enabled = false, 
   const elementRef = useRef(null);
   const [active, setActive] = useState(false);
 
-  useEffect(
-    () => {
-      if (enabled && revision !== prevRevisionRef.current) {
-        prevRevisionRef.current = revision;
-        setActive(true);
-      }
-    },
-    [revision, enabled]
-  );
+  useEffect(() => {
+    if (enabled && revision !== prevRevisionRef.current) {
+      prevRevisionRef.current = revision;
+      setActive(true);
+    }
+  }, [revision, enabled]);
 
-  useEffect(
-    () => {
-      if (!active) {
-        return;
-      }
+  useEffect(() => {
+    if (!active) {
+      return;
+    }
 
-      const animationEndListener = () => setActive(false);
+    const animationEndListener = () => setActive(false);
 
-      const element = elementRef.current;
-      element.addEventListener("animationend", animationEndListener);
+    const element = elementRef.current;
+    element.addEventListener("animationend", animationEndListener);
 
-      return () => element.removeEventListener("animationend", animationEndListener);
-    },
-    [active]
-  );
+    return () => element.removeEventListener("animationend", animationEndListener);
+  }, [active]);
 
   const className = bemModifiers("shake", { active });
 

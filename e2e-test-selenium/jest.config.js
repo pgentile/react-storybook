@@ -1,6 +1,6 @@
 module.exports = {
   rootDir: ".",
-  setupTestFrameworkScriptFile: "jest-extended",
+  setupFilesAfterEnv: ["jest-extended"],
   testEnvironment: "./selenium/jest/SeleniumEnvironment.js",
   testEnvironmentOptions: {
     capabilities: {

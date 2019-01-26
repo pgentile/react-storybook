@@ -118,30 +118,24 @@ function useFormInput(name, { defaultValue = "", validate = defaultValidate } = 
   const [value, setValue] = useState(defaultValue);
   const { touched, touch } = useTouched();
 
-  const valid = useMemo(
-    () => {
-      return validate(value);
-    },
-    [validate, value]
-  );
+  const valid = useMemo(() => {
+    return validate(value);
+  }, [validate, value]);
 
-  const props = useMemo(
-    () => {
-      return {
-        name,
-        value,
+  const props = useMemo(() => {
+    return {
+      name,
+      value,
 
-        onChange(event) {
-          setValue(event.target.value);
-        },
+      onChange(event) {
+        setValue(event.target.value);
+      },
 
-        onBlur() {
-          touch();
-        }
-      };
-    },
-    [name, value, touched]
-  );
+      onBlur() {
+        touch();
+      }
+    };
+  }, [name, value, touched]);
 
   return {
     type: "input",
@@ -160,20 +154,17 @@ function useCheckbox(name, { defaultChecked = false, validate = defaultValidate 
 
   const valid = useMemo(() => validate(checked), [validate, checked]);
 
-  const props = useMemo(
-    () => {
-      return {
-        name,
-        checked,
+  const props = useMemo(() => {
+    return {
+      name,
+      checked,
 
-        onChange(event) {
-          setChecked(event.target.checked);
-          touch();
-        }
-      };
-    },
-    [name, checked, touched]
-  );
+      onChange(event) {
+        setChecked(event.target.checked);
+        touch();
+      }
+    };
+  }, [name, checked, touched]);
 
   return {
     type: "checkbox",
