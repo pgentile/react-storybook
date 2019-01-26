@@ -20,7 +20,7 @@ lint-js:
   before_script:
     - yarn
   script: yarn lint:js
-  cache:
+  cache: &cache
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
@@ -31,22 +31,14 @@ lint-css:
   before_script:
     - yarn
   script: yarn lint:css
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-    policy: pull
+  cache: *cache
 
 test:
   stage: validate
   before_script:
     - yarn
   script: yarn test
-  cache: &cache
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-    policy: pull
+  cache: *cache
 
 test_coverage:
   stage: build
@@ -62,8 +54,7 @@ storybook:
   stage: build
   before_script:
     - yarn
-  script:
-    - yarn storybook:build
+  script: yarn storybook:build
   cache: *cache
   artifacts:
     paths:
@@ -73,6 +64,5 @@ es-check:
   stage: post-validate
   before_script:
     - yarn
-  script:
-    - yarn es-check
+  script: yarn es-check
   cache: *cache
