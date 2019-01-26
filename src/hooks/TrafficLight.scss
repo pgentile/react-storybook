@@ -1,0 +1,20 @@
+.traffic-light {
+  &__light {
+    $size: 3rem;
+
+    width: $size;
+    height: $size;
+
+    margin: 0.5rem;
+
+    border-radius: 50%;
+
+    background-color: grey;
+
+    @each $color in red, orange, green {
+      &--color-#{$color} {
+        background-color: #{$color};
+      }
+    }
+  }
+}

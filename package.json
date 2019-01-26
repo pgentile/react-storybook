@@ -58,7 +58,8 @@
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "resize-observer-polyfill": "^1.5.0"
+    "resize-observer-polyfill": "^1.5.0",
+    "xstate": "^4.2.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
