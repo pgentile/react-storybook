@@ -10858,6 +10858,88 @@ exports[`Storyshots LoaderDemo main 1`] = `
 </div>
 `;
 
+exports[`Storyshots LoadingText 2 lines 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="loading-text"
+  >
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots LoadingText 10 lines 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="loading-text"
+  >
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+    <p
+      className="loading-text__line"
+    >
+       
+    </p>
+  </div>
+</div>
+`;
+
 exports[`Storyshots LoadingText main 1`] = `
 <div
   className="screenshot-decorator"

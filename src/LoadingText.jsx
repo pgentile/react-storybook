@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { range } from "lodash-es";
 
 import "./LoadingText.scss";
 
@@ -15,14 +16,13 @@ export default class LoadingText extends React.PureComponent {
   render() {
     const { count } = this.props;
 
-    const lines = [];
-    for (let i = 0; i < count; i++) {
-      lines.push(
-        <p key={i} className="loading-text__line">
+    const lines = range(count).map(index => {
+      return (
+        <p key={index} className="loading-text__line">
           &nbsp;
         </p>
       );
-    }
+    });
 
     return <div className="loading-text">{lines}</div>;
   }

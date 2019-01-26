@@ -60,7 +60,5 @@ module.exports = (storybookBaseConfig, configType) => {
     }
   ];
 
-  console.info("RULES ARE", storybookBaseConfig.module.rules);
-
   return storybookBaseConfig;
 };
