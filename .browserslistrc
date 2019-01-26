@@ -1,15 +1,14 @@
-since 2015
 last 3 chrome versions
 last 3 firefox versions
 last 3 safari versions
 last 3 edge versions
 last 3 ChromeAndroid versions
-last 3 Android versions
-last 3 iOS versions
+Android > 0 and since 2015
+iOS > 0 and since 2015
 ie 11
 chrome >= 41
->= 0.5% in FR
->= 0.5% in CH
->= 0.5% in BE
->= 0.5% in DE
->= 0.5% in GB
+>= 0.5% in FR and since 2017
+>= 0.5% in CH and since 2017
+>= 0.5% in BE and since 2017
+>= 0.5% in DE and since 2017
+>= 0.5% in GB and since 2017
