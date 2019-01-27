@@ -61,6 +61,16 @@
         background-color: $background-color;
       }
     }
+
+    &--boarding {
+      $background-color: orange;
+
+      background-color: $background-color;
+
+      &::after {
+        background-color: $background-color;
+      }
+    }
   }
 
   &__segment-connection-title {

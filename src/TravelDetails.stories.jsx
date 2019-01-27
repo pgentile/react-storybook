@@ -41,7 +41,10 @@ storiesOf("TravelDetails", module).add("main", () => {
       equipment: "Eurostar",
       origin: "Paris Gare du Nord",
       destination: "Londres",
-      duration: 60 * 2
+      duration: 60 * 2,
+      boardingCondition: {
+        minDelayBeforeDeparture: 30
+      }
     }
   ];
   return <TravelDetails segments={segments} />;

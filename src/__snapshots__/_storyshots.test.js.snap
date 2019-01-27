@@ -19382,13 +19382,22 @@ exports[`Storyshots TravelDetails main 1`] = `
         className="travel-details__segment-connection-title"
       >
         Correspondance — 
-        1 heures 2 minutes
+        1 heure 2 minutes
       </p>
       <p
         className="travel-details__segment-station-change-warning"
       >
         Vous devez changer de gare pour aller à 
         Paris Gare du Nord
+      </p>
+    </div>
+    <div
+      className="travel-details__segment travel-details__segment--boarding"
+    >
+      <p>
+        Embarquement prévu 
+        30 minutes
+         avant le départ du train
       </p>
     </div>
     <div
@@ -19409,7 +19418,7 @@ exports[`Storyshots TravelDetails main 1`] = `
         </span>
          
         <span>
-          2 heures 0 minutes
+          2 heures 0 minute
         </span>
       </p>
       <p>
@@ -19664,6 +19673,30 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
       </button>
     </div>
   </form>
+</div>
+`;
+
+exports[`Storyshots VectorImage main 1`] = `
+<div
+  className="screenshot-decorator"
+>
+  <div
+    className="vector-image"
+  >
+    <svg
+      className="vector-image__svg"
+      preserveAspectRatio="xMidYMid meet"
+      version="1.1"
+      viewBox="-50 -50 100 100"
+    >
+      <circle
+        cx="0"
+        cy="0"
+        fill="red"
+        r="49"
+      />
+    </svg>
+  </div>
 </div>
 `;
 

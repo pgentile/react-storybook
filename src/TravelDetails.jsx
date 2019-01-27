@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
 import "./TravelDetails.scss";
@@ -28,22 +28,38 @@ const segmentProps = {
   duration: PropTypes.number.isRequired
 };
 
-function TrainSegment({ transporter, equipment, origin, destination, duration }) {
+function TrainSegment({ transporter, equipment, origin, destination, duration, boardingCondition }) {
   return (
-    <div className="travel-details__segment travel-details__segment--train">
-      <p>{origin}</p>
-      <p className="travel-details__segment-details">
-        <span>{transporter}</span> <span>{equipment}</span> <span>{niceDuration(duration)}</span>
-      </p>
-      <p>{destination}</p>
-    </div>
+    <Fragment>
+      {boardingCondition && <BoardingCondition {...boardingCondition} />}
+      <div className="travel-details__segment travel-details__segment--train">
+        <p>{origin}</p>
+        <p className="travel-details__segment-details">
+          <span>{transporter}</span> <span>{equipment}</span> <span>{niceDuration(duration)}</span>
+        </p>
+        <p>{destination}</p>
+      </div>
+    </Fragment>
   );
 }
 
 TrainSegment.propTypes = {
   ...segmentProps,
   transporter: PropTypes.string.isRequired,
-  equipment: PropTypes.string.isRequired
+  equipment: PropTypes.string.isRequired,
+  boardingCondition: PropTypes.object
+};
+
+function BoardingCondition({ minDelayBeforeDeparture }) {
+  return (
+    <div className="travel-details__segment travel-details__segment--boarding">
+      <p>Embarquement prévu {niceDuration(minDelayBeforeDeparture)} avant le départ du train</p>
+    </div>
+  );
+}
+
+BoardingCondition.propTypes = {
+  minDelayBeforeDeparture: PropTypes.number.isRequired
 };
 
 function ConnectionSegment({ origin, destination, duration }) {
@@ -73,8 +89,12 @@ function niceDuration(duration) {
   }
 
   if (hours) {
-    return `${hours} heures ${remaining} minutes`;
+    return `${hours} ${plural(hours, "heure", "s")} ${remaining} ${plural(remaining, "minute", "s")}`;
   }
 
-  return `${remaining} minutes`;
+  return `${remaining} ${plural(remaining, "minute", "s")}`;
+}
+
+function plural(count, name, suffix) {
+  return count >= 2 ? name + suffix : name;
 }
