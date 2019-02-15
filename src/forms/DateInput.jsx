@@ -118,6 +118,7 @@ export default class DateInput extends React.PureComponent {
             value={day}
             disabled={disabled}
             readOnly={readOnly}
+            aria-invalid={error}
             onFocus={this.onFieldFocus}
             onBlur={this.onFieldBlur}
             onChange={this.onDayChange}
@@ -133,6 +134,7 @@ export default class DateInput extends React.PureComponent {
           value={month}
           disabled={disabled}
           readOnly={readOnly}
+          aria-invalid={error}
           onFocus={this.onFieldFocus}
           onBlur={this.onFieldBlur}
           onChange={this.onMonthChange}
@@ -146,6 +148,7 @@ export default class DateInput extends React.PureComponent {
           value={year}
           disabled={disabled}
           readOnly={readOnly}
+          aria-invalid={error}
           onFocus={this.onFieldFocus}
           onBlur={this.onFieldBlur}
           onChange={this.onYearChange}

@@ -72,7 +72,12 @@ export default class DatePickerInput extends React.PureComponent {
 
     return (
       <div className={`date-picker-input ${className}`} id={id} ref={this.ref}>
-        <div className={fieldClassName} onClick={this.onInputFieldClick} tabIndex={disabled ? -1 : tabIndex}>
+        <div
+          className={fieldClassName}
+          onClick={this.onInputFieldClick}
+          tabIndex={disabled ? -1 : tabIndex}
+          aria-invalid={error}
+        >
           {format(value, "dddd DD MMMM YYYY", { locale: frLocale })}
         </div>
         <div className={pickerPanelClassName}>

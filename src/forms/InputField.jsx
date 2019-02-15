@@ -27,6 +27,6 @@ export default class InputField extends React.PureComponent {
       error
     });
 
-    return <Element type="text" {...otherProps} className={`${inputClassName} ${className}`} />;
+    return <Element type="text" {...otherProps} className={`${inputClassName} ${className}`} aria-invalid={error} />;
   }
 }

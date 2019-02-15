@@ -6577,6 +6577,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
     className="form-date-input form-date-input--error "
   >
     <input
+      aria-invalid={true}
       className="form-date-input__input form-date-input__input--day"
       inputMode="numeric"
       maxLength={2}
@@ -6593,6 +6594,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
       /
     </span>
     <input
+      aria-invalid={true}
       className="form-date-input__input form-date-input__input--month"
       id={null}
       inputMode="numeric"
@@ -6610,6 +6612,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
       /
     </span>
     <input
+      aria-invalid={true}
       className="form-date-input__input form-date-input__input--year"
       inputMode="numeric"
       maxLength={4}
@@ -8100,6 +8103,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
     className="date-picker-input "
   >
     <div
+      aria-invalid={true}
       className="date-picker-input__field date-picker-input__field--error"
       onClick={[Function]}
       tabIndex={0}
@@ -10059,6 +10063,7 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
       className="form-field-container__field"
     >
       <input
+        aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
         id="form-field-2"
@@ -10092,6 +10097,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
       className="form-field-container__field"
     >
       <input
+        aria-invalid={true}
         className="form-input-field form-input-field--error "
         formNoValidate={true}
         id="form-field-1"
@@ -10125,6 +10131,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
       className="form-field-container__field"
     >
       <input
+        aria-invalid={true}
         className="form-input-field form-input-field--error "
         formNoValidate={true}
         id="form-field-3"
@@ -10163,6 +10170,7 @@ exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
       className="form-field-container__field"
     >
       <input
+        aria-invalid={false}
         className="form-input-field "
         disabled={true}
         formNoValidate={true}
@@ -10192,6 +10200,7 @@ exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
       className="form-field-container__field"
     >
       <input
+        aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
         id="form-field-5"
@@ -10221,6 +10230,7 @@ exports[`Storyshots Forms / FieldContainer main 1`] = `
       className="form-field-container__field"
     >
       <input
+        aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
         id="form-field-0"
@@ -10237,6 +10247,7 @@ exports[`Storyshots Forms / InputField Avec erreur 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={true}
     className="form-input-field form-input-field--error "
     defaultValue=""
     formNoValidate={true}
@@ -10250,6 +10261,7 @@ exports[`Storyshots Forms / InputField Avec placeholder 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     defaultValue=""
     formNoValidate={true}
@@ -10264,6 +10276,7 @@ exports[`Storyshots Forms / InputField Avec valeur 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     defaultValue="Example"
     formNoValidate={true}
@@ -10277,6 +10290,7 @@ exports[`Storyshots Forms / InputField Désactivé 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     defaultValue="Example"
     disabled={true}
@@ -10291,6 +10305,7 @@ exports[`Storyshots Forms / InputField Email 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     formNoValidate={true}
     placeholder="Adresse email"
@@ -10304,6 +10319,7 @@ exports[`Storyshots Forms / InputField Lecture seule 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     defaultValue="Example"
     formNoValidate={true}
@@ -10318,6 +10334,7 @@ exports[`Storyshots Forms / InputField Mot de passe 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     formNoValidate={true}
     type="password"
@@ -10331,6 +10348,7 @@ exports[`Storyshots Forms / InputField Nombre 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     defaultValue="123"
     formNoValidate={true}
@@ -10346,6 +10364,7 @@ exports[`Storyshots Forms / InputField main 1`] = `
   className="screenshot-decorator"
 >
   <input
+    aria-invalid={false}
     className="form-input-field "
     defaultValue=""
     formNoValidate={true}
@@ -11110,6 +11129,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="cc-number"
           className="form-input-field "
           disabled={false}
@@ -11141,6 +11161,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
           className="form-date-input "
         >
           <input
+            aria-invalid={false}
             autoComplete="cc-exp-month"
             className="form-date-input__input form-date-input__input--month"
             disabled={false}
@@ -11160,6 +11181,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
             /
           </span>
           <input
+            aria-invalid={false}
             autoComplete="cc-exp-year"
             className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
             disabled={false}
@@ -11188,6 +11210,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="cc-csc"
           className="form-input-field "
           disabled={false}
@@ -13765,6 +13788,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               className="form-field-container__field"
             >
               <input
+                aria-invalid={false}
                 autoComplete="cc-number"
                 className="form-input-field "
                 disabled={false}
@@ -13796,6 +13820,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                 className="form-date-input "
               >
                 <input
+                  aria-invalid={false}
                   autoComplete="cc-exp-month"
                   className="form-date-input__input form-date-input__input--month"
                   disabled={false}
@@ -13815,6 +13840,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
                   /
                 </span>
                 <input
+                  aria-invalid={false}
                   autoComplete="cc-exp-year"
                   className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
                   disabled={false}
@@ -13843,6 +13869,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
               className="form-field-container__field"
             >
               <input
+                aria-invalid={false}
                 autoComplete="cc-csc"
                 className="form-input-field "
                 disabled={false}
@@ -14114,6 +14141,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="cc-number"
             className="form-input-field "
             disabled={false}
@@ -14145,6 +14173,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
             className="form-date-input "
           >
             <input
+              aria-invalid={false}
               autoComplete="cc-exp-month"
               className="form-date-input__input form-date-input__input--month"
               disabled={false}
@@ -14164,6 +14193,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
               /
             </span>
             <input
+              aria-invalid={false}
               autoComplete="cc-exp-year"
               className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
               disabled={false}
@@ -14192,6 +14222,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="cc-csc"
             className="form-input-field "
             disabled={false}
@@ -14461,6 +14492,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="cc-number"
             className="form-input-field "
             disabled={false}
@@ -14492,6 +14524,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
             className="form-date-input "
           >
             <input
+              aria-invalid={false}
               autoComplete="cc-exp-month"
               className="form-date-input__input form-date-input__input--month"
               disabled={false}
@@ -14511,6 +14544,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
               /
             </span>
             <input
+              aria-invalid={false}
               autoComplete="cc-exp-year"
               className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
               disabled={false}
@@ -14539,6 +14573,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="cc-csc"
             className="form-input-field "
             disabled={false}
@@ -15097,6 +15132,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="cc-csc"
           className="form-input-field "
           formNoValidate={true}
@@ -15175,6 +15211,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="cc-csc"
           className="form-input-field "
           disabled={true}
@@ -15261,6 +15298,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="cc-csc"
           className="form-input-field "
           formNoValidate={true}
@@ -15344,6 +15382,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="cc-csc"
           className="form-input-field "
           formNoValidate={true}
@@ -15422,6 +15461,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="cc-csc"
           className="form-input-field "
           formNoValidate={true}
@@ -15599,6 +15639,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
@@ -15786,6 +15827,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabl
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
@@ -15972,6 +16014,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={false}
@@ -16163,6 +16206,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
@@ -16345,6 +16389,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
@@ -16527,6 +16572,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
@@ -16708,6 +16754,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={false}
@@ -16889,6 +16936,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
                       className="form-field-container__field"
                     >
                       <input
+                        aria-invalid={false}
                         autoComplete="cc-csc"
                         className="form-input-field "
                         disabled={true}
@@ -17074,6 +17122,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -17249,6 +17298,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -17424,6 +17474,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -17604,6 +17655,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -17789,6 +17841,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -17963,6 +18016,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -18137,6 +18191,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -18316,6 +18371,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                         className="form-field-container__field"
                       >
                         <input
+                          aria-invalid={false}
                           autoComplete="cc-csc"
                           className="form-input-field "
                           disabled={true}
@@ -18425,6 +18481,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="off"
             className="form-input-field "
             disabled={false}
@@ -18497,6 +18554,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="off"
             className="form-input-field "
             disabled={false}
@@ -18569,6 +18627,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="off"
             className="form-input-field "
             disabled={false}
@@ -18641,6 +18700,7 @@ exports[`Storyshots Payment / VoucherForm submit success 1`] = `
           className="form-field-container__field"
         >
           <input
+            aria-invalid={false}
             autoComplete="off"
             className="form-input-field "
             disabled={false}
@@ -19537,6 +19597,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="given-name"
           className="form-input-field "
           disabled={false}
@@ -19563,6 +19624,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="family-name"
           className="form-input-field "
           disabled={false}
@@ -19592,6 +19654,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
           className="form-date-input "
         >
           <input
+            aria-invalid={false}
             autoComplete="bday-day"
             className="form-date-input__input form-date-input__input--day"
             disabled={false}
@@ -19611,6 +19674,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
             /
           </span>
           <input
+            aria-invalid={false}
             autoComplete="bday-month"
             className="form-date-input__input form-date-input__input--month"
             disabled={false}
@@ -19630,6 +19694,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
             /
           </span>
           <input
+            aria-invalid={false}
             autoComplete="bday-year"
             className="form-date-input__input form-date-input__input--year"
             disabled={false}
@@ -19658,6 +19723,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="email"
           className="form-input-field "
           disabled={false}
@@ -19684,6 +19750,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           autoComplete="email"
           className="form-input-field "
           disabled={false}
@@ -19710,6 +19777,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
@@ -19735,6 +19803,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
         className="form-field-container__field"
       >
         <input
+          aria-invalid={false}
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
