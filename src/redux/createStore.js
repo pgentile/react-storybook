@@ -1,9 +1,9 @@
 import { createStore as createReduxStore, applyMiddleware, compose, combineReducers } from "redux";
-import promiseMiddleware from "redux-promise-middleware";
+import promise from "redux-promise-middleware";
 import thunkMiddleware from "redux-thunk";
 import freezeMiddleware from "redux-freeze";
 
-const middlewares = [thunkMiddleware, promiseMiddleware()];
+const middlewares = [thunkMiddleware, promise];
 
 let composeEnhancers = compose;
 

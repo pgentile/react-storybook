@@ -1,4 +1,3 @@
-import { FULFILLED } from "redux-promise-middleware";
 import { createSelector } from "reselect";
 
 import createScope from "./createScope";
@@ -178,14 +177,14 @@ export default (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case `${LOAD_ITEMS}_${FULFILLED}`: {
+    case `${LOAD_ITEMS}_FULFILLED`: {
       return {
         ...state,
         items: payload.items
       };
     }
 
-    case `${ADD_VOUCHER}_${FULFILLED}`: {
+    case `${ADD_VOUCHER}_FULFILLED`: {
       const { code } = payload;
 
       const tickets = selectTickets.withinScope(state);
@@ -207,14 +206,14 @@ export default (state = initialState, action) => {
       };
     }
 
-    case `${CANCEL_VOUCHER}_${FULFILLED}`: {
+    case `${CANCEL_VOUCHER}_FULFILLED`: {
       return {
         ...state,
         items: selectItemsWithoutVoucher.withinScope(state)
       };
     }
 
-    case `${ADD_DONATION}_${FULFILLED}`: {
+    case `${ADD_DONATION}_FULFILLED`: {
       const { code } = payload;
 
       const itemsWithNoDonation = selectItemsWithoutDonation.withinScope(state);
@@ -238,14 +237,14 @@ export default (state = initialState, action) => {
       };
     }
 
-    case `${CANCEL_DONATION}_${FULFILLED}`: {
+    case `${CANCEL_DONATION}_FULFILLED`: {
       return {
         ...state,
         items: selectItemsWithoutDonation.withinScope(state)
       };
     }
 
-    case `${ADD_INSURANCE}_${FULFILLED}`: {
+    case `${ADD_INSURANCE}_FULFILLED`: {
       const { price } = payload;
 
       const itemsWithoutInsurance = selectItemsWithoutInsurance.withinScope(state);
@@ -263,7 +262,7 @@ export default (state = initialState, action) => {
       };
     }
 
-    case `${CANCEL_INSURANCE}_${FULFILLED}`: {
+    case `${CANCEL_INSURANCE}_FULFILLED`: {
       return {
         ...state,
         items: selectItemsWithoutInsurance.withinScope(state)

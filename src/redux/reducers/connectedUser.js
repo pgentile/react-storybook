@@ -1,5 +1,3 @@
-import { FULFILLED } from "redux-promise-middleware";
-
 import createScope from "./createScope";
 
 // Selectors
@@ -31,7 +29,7 @@ export default (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case `${LOAD_CARDS}_${FULFILLED}`: {
+    case `${LOAD_CARDS}_FULFILLED`: {
       const { cards } = payload;
       return {
         ...state,

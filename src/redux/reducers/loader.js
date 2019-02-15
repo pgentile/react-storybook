@@ -1,4 +1,4 @@
-import { PENDING, FULFILLED, REJECTED } from "redux-promise-middleware";
+import { ActionType } from "redux-promise-middleware";
 
 // Selectors
 
@@ -47,13 +47,13 @@ export function loaderMiddleware(unloadExpirationDelay = 100) {
       return result;
     }
 
-    if (type.endsWith(PENDING)) {
+    if (type.endsWith(ActionType.Pending)) {
       if (loadingCounter === 0) {
         next(changeState(true));
       }
 
       loadingCounter++;
-    } else if (type.endsWith(FULFILLED) || type.endsWith(REJECTED)) {
+    } else if (type.endsWith(ActionType.Fulfilled) || type.endsWith(ActionType.Rejected)) {
       // Unload actions will be delayed.
       // This is useful for better loading indicator management.
       setTimeout(() => {
