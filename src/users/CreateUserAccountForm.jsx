@@ -5,6 +5,7 @@ import { withFormik, Formik } from "formik";
 import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
 import DateInput from "../forms/DateInput";
+import { withFormFocusOnError } from "../forms/FormFocusOnError";
 import Button from "../buttons/Button";
 
 import "./CreateUserAccountForm.scss";
@@ -176,57 +177,63 @@ class CreateUserAccountForm extends React.PureComponent {
   }
 }
 
-export default withFormik({
-  mapPropsToValues: () => ({
-    firstname: "",
-    lastname: "",
-    birthdate: "",
-    email: "",
-    emailCheck: "",
-    password: "",
-    passwordCheck: ""
-  }),
-  validate: values => {
-    const errors = {};
+export default withFormFocusOnError()(
+  withFormik({
+    mapPropsToValues: () => ({
+      firstname: "",
+      lastname: "",
+      birthdate: "",
+      email: "",
+      emailCheck: "",
+      password: "",
+      passwordCheck: ""
+    }),
+    validate: (values, props) => {
+      const errors = {};
 
-    if (!values.firstname) {
-      errors.firstname = "Prénom requis";
-    }
+      if (!values.firstname) {
+        errors.firstname = "Prénom requis";
+      }
 
-    if (!values.lastname) {
-      errors.lastname = "Nom requis";
-    }
+      if (!values.lastname) {
+        errors.lastname = "Nom requis";
+      }
 
-    if (!values.email) {
-      errors.email = "Email requis";
-    }
-    if (!values.email.includes("@")) {
-      errors.email = "Email invalide";
-    }
+      if (!values.email) {
+        errors.email = "Email requis";
+      }
+      if (!values.email.includes("@")) {
+        errors.email = "Email invalide";
+      }
 
-    if (!values.birthdate) {
-      errors.birthdate = "Date de naissance requise";
-    }
+      if (!values.birthdate) {
+        errors.birthdate = "Date de naissance requise";
+      }
 
-    if (!values.password) {
-      errors.password = "Mot de passe requis";
-    }
+      if (!values.password) {
+        errors.password = "Mot de passe requis";
+      }
 
-    if (values.email !== values.emailCheck) {
-      errors.emailCheck = "Vérifiez les adresses emails";
-    }
+      if (values.email !== values.emailCheck) {
+        errors.emailCheck = "Vérifiez les adresses emails";
+      }
 
-    if (values.password !== values.passwordCheck) {
-      errors.passwordCheck = "Vérifiez votre mot de passe";
-    }
+      if (values.password !== values.passwordCheck) {
+        errors.passwordCheck = "Vérifiez votre mot de passe";
+      }
 
-    return errors;
-  },
-  handleSubmit: async (values, { props, setSubmitting }) => {
-    try {
-      await props.onCreate(values);
-    } finally {
-      setSubmitting(false);
+      if (Object.keys(errors).length > 0) {
+        props.focusOnError();
+      }
+
+      return errors;
+    },
+    handleSubmit: async (values, { props, setSubmitting }) => {
+      try {
+        await props.onCreate(values);
+      } finally {
+        setSubmitting(false);
+      }
     }
-  }
-})(CreateUserAccountForm);
+  })(CreateUserAccountForm)
+);
