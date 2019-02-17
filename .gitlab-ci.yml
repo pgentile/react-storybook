@@ -53,6 +53,8 @@ post-validate:
 
 pages:
   stage: deploy
+  only:
+    - master
   before_script: *before_script
   script:
     - "cp -r build/storybook/* public/"
