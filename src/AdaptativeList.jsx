@@ -5,7 +5,7 @@ import "./AdaptativeList.scss";
 
 export default class AdaptativeList extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.string,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     items: PropTypes.arrayOf(PropTypes.node)
   };

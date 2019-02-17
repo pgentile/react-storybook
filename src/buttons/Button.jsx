@@ -7,7 +7,7 @@ import bemModifiers from "../utils/bemModifiers";
 
 export default class Button extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.string,
+    as: PropTypes.elementType,
     children: PropTypes.node,
     className: PropTypes.string,
     showDisabled: PropTypes.bool,

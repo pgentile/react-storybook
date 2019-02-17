@@ -5,7 +5,7 @@ import "./Carousel.scss";
 
 export default class Carousel extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.string,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     items: PropTypes.arrayOf(PropTypes.node),
     selectedIndex: PropTypes.number

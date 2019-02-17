@@ -9,7 +9,7 @@ export default class FieldContainer extends React.PureComponent {
   static count = 0;
 
   static propTypes = {
-    as: PropTypes.string,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     label: PropTypes.node,
     id: PropTypes.string,

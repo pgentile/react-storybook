@@ -4,7 +4,7 @@ import { getDisplayName } from "recompose";
 
 export default class FormFocusOnError extends React.Component {
   static propTypes = {
-    as: PropTypes.any,
+    as: PropTypes.elementType,
     children: PropTypes.func.isRequired
   };
 

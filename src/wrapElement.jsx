@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  as: PropTypes.any,
+  as: PropTypes.elementType,
   className: PropTypes.string
 };
 

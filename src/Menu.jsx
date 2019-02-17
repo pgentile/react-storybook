@@ -7,7 +7,7 @@ import "./Menu.scss";
 
 export default class Menu extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.string,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     selectedItemKey: PropTypes.any,
     items: PropTypes.arrayOf(

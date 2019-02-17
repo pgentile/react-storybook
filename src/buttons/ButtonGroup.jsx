@@ -7,7 +7,7 @@ import "./ButtonGroup.scss";
 
 export default class ButtonGroup extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.any,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     children: PropTypes.node
   };
@@ -25,7 +25,7 @@ export default class ButtonGroup extends React.PureComponent {
 
 export class ButtonInGroup extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.any,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     children: PropTypes.node
   };

@@ -40,7 +40,7 @@ export default function Shake({ as: Element = "div", children, enabled = false, 
 }
 
 Shake.propTypes = {
-  as: PropTypes.oneOf([PropTypes.element, PropTypes.String]),
+  as: PropTypes.elementType,
   children: PropTypes.node,
   enabled: PropTypes.bool,
   revision: PropTypes.number

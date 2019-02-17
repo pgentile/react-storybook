@@ -9,7 +9,7 @@ export default class Card extends React.PureComponent {
   static propTypes = {
     hasBorder: PropTypes.bool,
     layer: PropTypes.string,
-    as: PropTypes.any,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     children: PropTypes.node
   };

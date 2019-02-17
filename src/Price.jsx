@@ -6,7 +6,7 @@ import bemModifiers from "./utils/bemModifiers";
 
 export default class Price extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.any,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     noColor: PropTypes.bool,
     price: PropTypes.shape({

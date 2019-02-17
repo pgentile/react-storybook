@@ -7,7 +7,7 @@ import bemModifiers from "../utils/bemModifiers";
 
 export default class InputField extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.any,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     error: PropTypes.bool,
     formNoValidate: PropTypes.bool

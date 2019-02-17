@@ -7,7 +7,7 @@ import "./Label.scss";
 
 export default class Label extends React.PureComponent {
   static propTypes = {
-    as: PropTypes.string,
+    as: PropTypes.elementType,
     className: PropTypes.string,
     htmlFor: PropTypes.string,
     disabled: PropTypes.bool,
