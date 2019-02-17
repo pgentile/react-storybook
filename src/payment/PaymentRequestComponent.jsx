@@ -46,6 +46,7 @@ export default class PaymentRequestComponent extends React.PureComponent {
     onError: PropTypes.func.isRequired
   };
 
+  // eslint-disable-next-line compat/compat
   request = new PaymentRequest(supportedPaymentMethods, paymentDetails, options);
 
   componentDidMount() {

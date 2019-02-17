@@ -5,6 +5,7 @@ stages:
   - validate
   - build
   - post-validate
+  - deploy
 
 install:
   stage: setup
@@ -15,54 +16,46 @@ install:
       - node_modules/
     policy: push
 
-lint-js:
+lint:
   stage: validate
-  before_script:
+  before_script: &before_script
     - yarn
-  script: yarn lint:js
+  script: "yarn ci:validate:lint"
   cache: &cache
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
     policy: pull
 
-lint-css:
-  stage: validate
-  before_script:
-    - yarn
-  script: yarn lint:css
-  cache: *cache
-
 test:
   stage: validate
-  before_script:
-    - yarn
-  script: yarn test
-  cache: *cache
-
-test_coverage:
-  stage: build
-  before_script:
-    - yarn
-  script: yarn test:coverage
+  before_script: *before_script
+  script: "yarn ci:validate:test"
   cache: *cache
   artifacts:
     paths:
       - build/coverage
 
-storybook:
+build:
   stage: build
-  before_script:
-    - yarn
-  script: yarn storybook:build
+  before_script: *before_script
+  script: "yarn ci:build"
   cache: *cache
   artifacts:
     paths:
       - build/storybook
 
-es-check:
+post-validate:
   stage: post-validate
-  before_script:
-    - yarn
-  script: yarn es-check
+  before_script: *before_script
+  script: "yarn ci:post-validate"
   cache: *cache
+
+pages:
+  stage: deploy
+  before_script: *before_script
+  script: "cp -r build/storybook/* public/"
+  cache: *cache
+  artifacts:
+    paths:
+      - public

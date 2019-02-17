@@ -29,9 +29,14 @@
     "loki:update": "loki update",
     "loki:test": "loki test",
     "reg-cli": "reg-cli .loki/current .loki/reference .loki/difference -R build/reg-cli-report.html -J build/reg-cli-report.json",
-    "visual-regression": "npm-run-all --continue-on-error loki:test reg-cli"
+    "visual-regression": "npm-run-all --continue-on-error loki:test reg-cli",
+    "ci:validate:lint": "npm-run-all lint",
+    "ci:validate:test": "npm-run-all test:coverage",
+    "ci:build": "npm-run-all storybook:build",
+    "ci:post-validate": "npm-run-all es-check"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
     "@fortawesome/free-brands-svg-icons": "^5.1.0",
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
@@ -59,6 +64,7 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "resize-observer-polyfill": "^1.5.0",
+    "url-search-params-polyfill": "^5.0.0",
     "xstate": "^4.2.4"
   },
   "devDependencies": {
@@ -88,6 +94,7 @@
     "es-check": "^5.0.0",
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-compat": "^2.7.0",
     "eslint-plugin-jest": "^22.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.12.4",

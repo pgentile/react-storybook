@@ -8,8 +8,9 @@
   "parser": "babel-eslint",
   "plugins": [
     "react",
+    "react-hooks",
     "jest",
-    "react-hooks"
+    "compat"
   ],
   "parserOptions": {
     "sourceType": "module",
@@ -20,8 +21,11 @@
   },
   "settings": {
     "react": {
-      "version": "16.6"
-    }
+      "version": "16.8"
+    },
+    "polyfills": [
+      "urlsearchparams"
+    ]
   },
   "globals": {
     "module": true,
@@ -31,7 +35,8 @@
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:compat/recommended"
   ],
   "rules": {
     "no-unused-vars": [
