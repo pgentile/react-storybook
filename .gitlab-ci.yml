@@ -54,7 +54,12 @@ post-validate:
 pages:
   stage: deploy
   before_script: *before_script
-  script: "cp -r build/storybook/* public/"
+  script:
+    - "cp -r build/storybook/* public/"
+    - "gzip -k -6 $(find public -type f -name '*.js')"
+    - "gzip -k -6 $(find public -type f -name '*.css')"
+    - "gzip -k -6 $(find public -type f -name '*.html')"
+    - "gzip -k -6 $(find public -type f -name '*.svg')"
   cache: *cache
   artifacts:
     paths:
