@@ -3,6 +3,7 @@ workflow "Validate" {
   resolves = [
     "Test",
     "Build",
+    "Post-validate"
   ]
 }
 
