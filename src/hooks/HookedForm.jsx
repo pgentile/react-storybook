@@ -1,4 +1,4 @@
-import React, { memo, useState, useMemo, useCallback } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import PropTypes from "prop-types";
 import noop from "lodash-es";
 
@@ -82,14 +82,14 @@ export default function HookedForm() {
   );
 }
 
-const InputContainer = memo(function InputContainer({ valid, touched, children }) {
+const InputContainer = function InputContainer({ valid, touched, children }) {
   return (
     <div className="input-container">
       <div>{children}</div>
       {touched && !valid ? <div>Invalid</div> : null}
     </div>
   );
-});
+};
 
 InputContainer.propTypes = {
   valid: PropTypes.bool.isRequired,
@@ -97,16 +97,16 @@ InputContainer.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-const Row = memo(function Row({ children, className = "", ...otherProps }) {
+const Row = function Row({ children, className = "", ...otherProps }) {
   return (
     <div className={"row " + className} {...otherProps}>
       {children}
     </div>
   );
-});
+};
 
 Row.propTypes = {
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   children: PropTypes.node.isRequired
 };
 
