@@ -12,7 +12,7 @@ module.exports = (storybookBaseConfig, configType) => {
   storybookBaseConfig.module.rules = [
     {
       test: /\.jsx?$/,
-      include: /.*node_modules[/\\](query-string|strict-uri-encode|@storybook|loki).*/,
+      include: /.*node_modules[/\\](query-string|strict-uri-encode|@storybook|loki|react-use).*/,
       use: [
         {
           loader: "babel-loader?cacheDirectory"
