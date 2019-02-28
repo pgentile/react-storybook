@@ -3,9 +3,9 @@ import { useState, useMemo } from "react";
 import useTouched from "./useTouched";
 import defaultValidate from "./defaultValidate";
 
-export default function useCheckbox(name, { defaultChecked = false, validate = defaultValidate } = {}) {
+export default function useCheckbox(name, { defaultChecked = false, validate = defaultValidate, form } = {}) {
   const [checked, setChecked] = useState(defaultChecked);
-  const { touched, touch } = useTouched();
+  const { touched, touch } = useTouched({ form });
 
   const valid = useMemo(() => validate(checked), [validate, checked]);
 

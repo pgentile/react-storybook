@@ -1,7 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { useFormInput, useRadio, useCheckbox } from "./forms";
+import { useForm, useFormInput, useRadio, useCheckbox } from "./forms";
+import bemModifiers from "../utils/bemModifiers";
+
+import "./HookedForm.scss";
 
 function validateNotEmpty(value) {
   return !!value;
@@ -16,34 +19,40 @@ function validateName(name) {
 }
 
 export default function HookedForm() {
+  const form = useForm({
+    onSubmit: event => {
+      event.preventDefault();
+
+      console.info("Form content", {
+        firstName: firstName.value,
+        lastName: lastName.value,
+        civility: civility.value
+      });
+    }
+  });
+
   const firstName = useFormInput("firstName", {
+    form,
     validate: validateName
   });
 
   const lastName = useFormInput("lastName", {
+    form,
     validate: validateName
   });
 
   const acceptConditions = useCheckbox("acceptConditions", {
+    form,
     validate: validateChecked
   });
 
   const civility = useRadio("civility", {
+    form,
     validate: validateNotEmpty
   });
 
-  const onSubmit = event => {
-    event.preventDefault();
-
-    console.info("Form content", {
-      firstName: firstName.value,
-      lastName: lastName.value,
-      civility: civility.value
-    });
-  };
-
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={form.onSubmit}>
       <InputContainer {...civility}>
         <Row>
           <label>
@@ -78,16 +87,20 @@ export default function HookedForm() {
       <Row>
         <button type="submit">Send</button>
       </Row>
-      <Row>{civility.valid && firstName.valid && lastName.valid && acceptConditions.valid ? "VALID" : "INVALID"}</Row>
     </form>
   );
 }
 
 const InputContainer = function InputContainer({ valid, touched, children }) {
+  const error = touched && !valid;
+
+  const className = bemModifiers("input-container", {
+    error
+  });
+
   return (
-    <div className="input-container">
+    <div className={className}>
       <div>{children}</div>
-      {touched && !valid ? <div>Invalid</div> : null}
     </div>
   );
 };

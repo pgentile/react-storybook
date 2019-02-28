@@ -1,0 +1,7 @@
+.input-container {
+  border: transparent 2px solid;
+
+  &--error {
+    border-color: red;
+  }
+}

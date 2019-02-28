@@ -3,9 +3,9 @@ import { useState, useMemo } from "react";
 import useTouched from "./useTouched";
 import defaultValidate from "./defaultValidate";
 
-export default function useFormInput(name, { defaultValue = "", validate = defaultValidate } = {}) {
+export default function useFormInput(name, { defaultValue = "", validate = defaultValidate, form } = {}) {
   const [value, setValue] = useState(defaultValue);
-  const { touched, touch } = useTouched();
+  const { touched, touch } = useTouched({ form });
 
   const valid = useMemo(() => {
     return validate(value);
