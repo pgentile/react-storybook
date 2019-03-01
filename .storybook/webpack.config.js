@@ -12,7 +12,7 @@ module.exports = (storybookBaseConfig, configType) => {
   storybookBaseConfig.module.rules = [
     {
       test: /\.jsx?$/,
-      include: /.*node_modules[/\\](query-string|strict-uri-encode|@storybook|loki|react-use).*/,
+      include: /.*node_modules[/\\](query-string|strict-uri-encode|@storybook|loki|react-use|callbag-subscribe).*/,
       use: [
         {
           loader: "babel-loader?cacheDirectory"
@@ -59,6 +59,10 @@ module.exports = (storybookBaseConfig, configType) => {
       ]
     }
   ];
+
+  // storybookBaseConfig.optimization = {
+  //   minimize: false
+  // };
 
   return storybookBaseConfig;
 };
