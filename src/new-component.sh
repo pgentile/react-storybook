@@ -16,15 +16,13 @@ import PropTypes from "prop-types";
 
 import "./$name.scss";
 
-export default class $name extends React.PureComponent {
-  static propTypes = {};
-
-  static defaultProps = {};
-
-  render() {
-    return null;
-  }
+export default function $name() {
+  return null;
 }
+
+$name.propTypes = {};
+
+$name.defaultProps = {};
 EOF
 
 cat >$name.stories.jsx <<EOF
@@ -42,4 +40,3 @@ EOF
 cat >$name.scss <<EOF
 // TODO Sass file for $name
 EOF
-

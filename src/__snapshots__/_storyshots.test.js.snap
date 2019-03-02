@@ -105,6 +105,102 @@ exports[`Storyshots AsyncLoader success 1`] = `
 </div>
 `;
 
+exports[`Storyshots Auth / AuthAskPassword main 1`] = `
+<div
+  className="auth-askpassword"
+>
+  <div
+    className="auth-askpassword__password"
+  >
+    <label
+      className="label auth-askpassword__password-label"
+      htmlFor="random-id-1"
+    >
+      Mot de passe
+    </label>
+    <input
+      aria-invalid={false}
+      autoFocus={true}
+      className="form-input-field auth-askpassword__password-field"
+      formNoValidate={true}
+      id="random-id-1"
+      onChange={[Function]}
+      type="password"
+      value=""
+    />
+    <button
+      aria-pressed={false}
+      className="button button--size-normal auth-askpassword__validate-button"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Valider
+    </button>
+  </div>
+  <div
+    className="auth-askpassword__cancel"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-normal "
+      onClick={[Function]}
+    >
+      Annuler
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Auth / AuthIKnowYou main 1`] = `
+<div
+  className="auth-iknowyou"
+>
+  <div
+    className="auth-iknowyou__punchline"
+  >
+    On se connait ?
+  </div>
+  <div
+    className="auth-iknowyou__button"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-normal "
+      onClick={[Function]}
+    >
+      Me connecter
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Auth / AuthWidget main 1`] = `
+<div
+  className="card card--has-border card--layer-flat auth-widget"
+>
+  <div
+    className="auth-iknowyou"
+  >
+    <div
+      className="auth-iknowyou__punchline"
+    >
+      On se connait ?
+    </div>
+    <div
+      className="auth-iknowyou__button"
+    >
+      <button
+        aria-pressed={false}
+        className="button button--size-normal "
+        onClick={[Function]}
+      >
+        Me connecter
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Buttons / Button Taille large 1`] = `
 <button
   aria-pressed={false}
