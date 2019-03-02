@@ -122,7 +122,7 @@ export default class Calendar extends React.PureComponent {
     });
 
     const rows = this.generateData(viewDate).map((weekDays, weekIndex) => {
-      const columns = weekDays.map((day, dayIndex) => {
+      const columns = weekDays.map(day => {
         const disabled = !isDateBetweenMinMax(day.date);
         const selectable = !!onSelect && !disabled;
 
@@ -134,12 +134,12 @@ export default class Calendar extends React.PureComponent {
         });
         return (
           <td
-            key={dayIndex}
+            key={day.formattedDate}
             className={dayClassName}
             onClick={selectable ? () => this.onCellClick(day.formattedDate) : null}
             onKeyPress={selectable ? event => this.onCellKeyPress(event, day.formattedDate) : null}
-            role={!disabled ? "button" : null}
-            tabIndex={!disabled ? 0 : null}
+            role={!disabled && selectable ? "button" : null}
+            tabIndex={!disabled && selectable ? 0 : null}
           >
             <time dateTime={day.formattedDate}>{day.dayNumber}</time>
           </td>

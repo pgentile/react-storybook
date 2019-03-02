@@ -1100,8 +1100,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-25"
@@ -1113,8 +1113,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-26"
@@ -1126,8 +1126,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-27"
@@ -1139,8 +1139,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-28"
@@ -1152,8 +1152,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-29"
@@ -1165,8 +1165,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-30"
@@ -1178,8 +1178,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-01"
@@ -1195,8 +1195,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-02"
@@ -1208,8 +1208,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-03"
@@ -1221,8 +1221,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-04"
@@ -1234,8 +1234,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-05"
@@ -1247,8 +1247,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-06"
@@ -1260,8 +1260,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-07"
@@ -1273,8 +1273,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-08"
@@ -1290,8 +1290,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-09"
@@ -1303,8 +1303,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-10"
@@ -1316,8 +1316,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-11"
@@ -1329,8 +1329,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-12"
@@ -1342,8 +1342,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-13"
@@ -1355,8 +1355,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-14"
@@ -1368,8 +1368,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-15"
@@ -1385,8 +1385,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-16"
@@ -1398,8 +1398,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-17"
@@ -1411,8 +1411,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-18"
@@ -1424,8 +1424,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-19"
@@ -1437,8 +1437,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-20"
@@ -1450,8 +1450,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-21"
@@ -1463,8 +1463,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-22"
@@ -1480,8 +1480,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-23"
@@ -1493,8 +1493,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-24"
@@ -1506,8 +1506,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-25"
@@ -1519,8 +1519,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-26"
@@ -1532,8 +1532,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-27"
@@ -1545,8 +1545,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-28"
@@ -1558,8 +1558,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-29"
@@ -1575,8 +1575,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-30"
@@ -1588,8 +1588,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-31"
@@ -1601,8 +1601,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-01"
@@ -1614,8 +1614,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-02"
@@ -1627,8 +1627,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-03"
@@ -1640,8 +1640,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-04"
@@ -1653,8 +1653,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-05"
@@ -1757,8 +1757,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-25"
@@ -1770,8 +1770,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-26"
@@ -1783,8 +1783,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-27"
@@ -1796,8 +1796,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-28"
@@ -1809,8 +1809,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-29"
@@ -1822,8 +1822,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-30"
@@ -1835,8 +1835,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-01"
@@ -1852,8 +1852,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-02"
@@ -1865,8 +1865,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-03"
@@ -1878,8 +1878,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-04"
@@ -1891,8 +1891,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-05"
@@ -1904,8 +1904,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-06"
@@ -1917,8 +1917,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-07"
@@ -1930,8 +1930,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-08"
@@ -1947,8 +1947,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-09"
@@ -1960,8 +1960,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-10"
@@ -1973,8 +1973,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-11"
@@ -1986,8 +1986,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-12"
@@ -1999,8 +1999,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-13"
@@ -2012,8 +2012,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-14"
@@ -2025,8 +2025,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-15"
@@ -2042,8 +2042,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-16"
@@ -2055,8 +2055,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-17"
@@ -2068,8 +2068,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-18"
@@ -2081,8 +2081,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-19"
@@ -2094,8 +2094,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-20"
@@ -2107,8 +2107,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-21"
@@ -2120,8 +2120,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-22"
@@ -2137,8 +2137,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-23"
@@ -2150,8 +2150,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-24"
@@ -2163,8 +2163,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-25"
@@ -2176,8 +2176,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-26"
@@ -2189,8 +2189,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-27"
@@ -2574,8 +2574,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-07"
@@ -2587,8 +2587,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-08"
@@ -2604,8 +2604,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-09"
@@ -2617,8 +2617,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-10"
@@ -2630,8 +2630,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-11"
@@ -2643,8 +2643,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-12"
@@ -2656,8 +2656,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-13"
@@ -2669,8 +2669,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-14"
@@ -2682,8 +2682,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-15"
@@ -2699,8 +2699,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-16"
@@ -2712,8 +2712,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-17"
@@ -2725,8 +2725,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-18"
@@ -2738,8 +2738,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-19"
@@ -2751,8 +2751,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-20"
@@ -2764,8 +2764,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-21"
@@ -2777,8 +2777,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-22"
@@ -2794,8 +2794,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-23"
@@ -2807,8 +2807,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-24"
@@ -2820,8 +2820,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-25"
@@ -2833,8 +2833,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-26"
@@ -2846,8 +2846,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-27"
@@ -2859,8 +2859,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-28"
@@ -2872,8 +2872,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-29"
@@ -2889,8 +2889,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-30"
@@ -2902,8 +2902,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-31"
@@ -2915,8 +2915,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-01"
@@ -2928,8 +2928,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-02"
@@ -2941,8 +2941,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-03"
@@ -2954,8 +2954,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-04"
@@ -2967,8 +2967,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-05"
@@ -3728,8 +3728,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-25"
@@ -3741,8 +3741,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-26"
@@ -3754,8 +3754,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-27"
@@ -3767,8 +3767,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-28"
@@ -3780,8 +3780,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-29"
@@ -3793,8 +3793,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-06-30"
@@ -3806,8 +3806,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-01"
@@ -3823,8 +3823,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-02"
@@ -3836,8 +3836,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-03"
@@ -3849,8 +3849,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-04"
@@ -3862,8 +3862,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-05"
@@ -3875,8 +3875,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-06"
@@ -3888,8 +3888,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-07"
@@ -3901,8 +3901,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-08"
@@ -3918,8 +3918,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-09"
@@ -3931,8 +3931,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-10"
@@ -3944,8 +3944,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-11"
@@ -3957,8 +3957,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-12"
@@ -3970,8 +3970,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-13"
@@ -3983,8 +3983,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-14"
@@ -3996,8 +3996,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-15"
@@ -4013,8 +4013,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-16"
@@ -4026,8 +4026,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-17"
@@ -4039,8 +4039,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-18"
@@ -4052,8 +4052,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-19"
@@ -4065,8 +4065,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-20"
@@ -4078,8 +4078,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-21"
@@ -4091,8 +4091,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month calendar__day--selected"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-22"
@@ -4108,8 +4108,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-23"
@@ -4121,8 +4121,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-24"
@@ -4134,8 +4134,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-25"
@@ -4147,8 +4147,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-26"
@@ -4160,8 +4160,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-27"
@@ -4173,8 +4173,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-28"
@@ -4186,8 +4186,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-29"
@@ -4203,8 +4203,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-30"
@@ -4216,8 +4216,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-07-31"
@@ -4229,8 +4229,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-01"
@@ -4242,8 +4242,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-02"
@@ -4255,8 +4255,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-03"
@@ -4268,8 +4268,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-04"
@@ -4281,8 +4281,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
-        role="button"
-        tabIndex={0}
+        role={null}
+        tabIndex={null}
       >
         <time
           dateTime="2018-08-05"
