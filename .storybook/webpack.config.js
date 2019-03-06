@@ -8,61 +8,56 @@
 
 const path = require("path");
 
-module.exports = (storybookBaseConfig, configType) => {
-  storybookBaseConfig.module.rules = [
-    {
-      test: /\.jsx?$/,
-      include: /.*node_modules[/\\](query-string|strict-uri-encode|@storybook|loki|react-use|callbag-subscribe).*/,
-      use: [
-        {
-          loader: "babel-loader?cacheDirectory"
-        }
-      ]
-    },
-    ...storybookBaseConfig.module.rules,
-    {
-      test: /\.s?css$/,
-      use: [
-        {
-          loader: "style-loader",
-        },
-        {
-          loader: "css-loader",
-          options: {
-            modules: false,
-            importLoaders: 2,
-            localIdentName: '[local]-[hash:base64:5]'
-          },
-        },
-        {
-          loader: 'postcss-loader',
-          options: {
-            plugins: [
-              require('autoprefixer'),
-            ],
-          },
-        },
-        {
-          loader: "sass-loader", // compiles Sass to CSS
-        },
-      ],
-    },
-    {
-      test: /\.(svg|png|jpg|gif)$/,
-      use: [
-        {
-          loader: 'url-loader',
-          options: {
-            limit: 1024 * 8
-          }
-        }
-      ]
-    }
-  ];
+module.exports = ({config}) => {
+  config.module.rules.unshift({
+    test: /\.jsx?$/,
+    include: /.*node_modules[/\\](query-string|strict-uri-encode|@storybook|loki|react-use|callbag-subscribe).*/,
+    use: [
+      {
+        loader: "babel-loader?cacheDirectory"
+      }
+    ]
+  });
 
-  // storybookBaseConfig.optimization = {
-  //   minimize: false
-  // };
+  config.module.rules.push({
+    test: /\.s?css$/,
+    use: [
+      {
+        loader: "style-loader",
+      },
+      {
+        loader: "css-loader",
+        options: {
+          modules: false,
+          importLoaders: 2,
+          localIdentName: '[local]-[hash:base64:5]'
+        },
+      },
+      {
+        loader: 'postcss-loader',
+        options: {
+          plugins: [
+            require('autoprefixer'),
+          ],
+        },
+      },
+      {
+        loader: "sass-loader", // compiles Sass to CSS
+      },
+    ],
+  });
 
-  return storybookBaseConfig;
+  config.module.rules.push({
+    test: /\.(svg|png|jpg|gif)$/,
+    use: [
+      {
+        loader: 'url-loader',
+        options: {
+          limit: 1024 * 8
+        }
+      }
+    ]
+  });
+
+  return config;
 };
