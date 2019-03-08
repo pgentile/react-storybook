@@ -59,5 +59,9 @@ module.exports = ({config}) => {
     ]
   });
 
+  if (process.env.NODE_ENV === "production") {
+    config.devtool = "source-map";
+  }
+
   return config;
 };
