@@ -24,7 +24,8 @@
       "version": "16.8"
     },
     "polyfills": [
-      "urlsearchparams"
+      "URLSearchParams",
+      "ResizeObserver"
     ]
   },
   "globals": {
