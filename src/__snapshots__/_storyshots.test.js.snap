@@ -5928,25 +5928,31 @@ exports[`Storyshots Encryption test 1`] = `
 
 exports[`Storyshots ExchangeRate main 1`] = `
 Array [
-  <p>
+  <div
+    className="button-group "
+  >
     <button
+      aria-pressed={false}
+      className="button button--size-normal button-group__button "
       onClick={[Function]}
     >
       To CHF
     </button>
-     
     <button
+      aria-pressed={false}
+      className="button button--size-normal button-group__button "
       onClick={[Function]}
     >
       To EUR
     </button>
-     
     <button
+      aria-pressed={false}
+      className="button button--size-normal button-group__button "
       onClick={[Function]}
     >
       To GBP
     </button>
-  </p>,
+  </div>,
   <p>
     <span
       className="price "
