@@ -9,18 +9,20 @@ const ExchangeRateContext = createContext({
 });
 
 export default function ExchangeRate({ children, baseCurrency: defaultBaseCurrency }) {
-  const [baseCurrency, setBaseCurrency] = useState(defaultBaseCurrency || "EUR");
+  const [expectedCurrency, setExpectedCurrency] = useState(defaultBaseCurrency || "EUR");
+  const [baseCurrency, setBaseCurrency] = useState(expectedCurrency);
   const [rates, setRates] = useState({});
 
   useEffect(() => {
     const loadData = async () => {
-      const response = await fetch(`https://api.exchangeratesapi.io/latest?base=${baseCurrency}`);
+      const response = await fetch(`https://api.exchangeratesapi.io/latest?base=${expectedCurrency}`);
       const data = await response.json();
       setRates(data.rates);
+      setBaseCurrency(expectedCurrency);
     };
 
     loadData();
-  }, [baseCurrency]);
+  }, [expectedCurrency]);
 
   const computeRate = useCallback(
     ({ value, currency }) => {
@@ -38,7 +40,7 @@ export default function ExchangeRate({ children, baseCurrency: defaultBaseCurren
   );
 
   return (
-    <ExchangeRateContext.Provider value={{ baseCurrency, setBaseCurrency, computeRate }}>
+    <ExchangeRateContext.Provider value={{ currency: baseCurrency, setCurrency: setExpectedCurrency, computeRate }}>
       {children}
     </ExchangeRateContext.Provider>
   );
@@ -62,7 +64,7 @@ ExchangeRateConverter.propTypes = {
 export function ExchangeRateSwitcher({ children }) {
   return (
     <ExchangeRateContext.Consumer>
-      {({ baseCurrency, setBaseCurrency }) => children({ baseCurrency, setBaseCurrency })}
+      {({ currency, setCurrency }) => children({ currency, setCurrency })}
     </ExchangeRateContext.Consumer>
   );
 }

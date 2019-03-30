@@ -10,11 +10,11 @@ storiesOf("ExchangeRate", module).add("main", () => {
     <ExchangeRate>
       <p>
         <ExchangeRateSwitcher>
-          {({ setBaseCurrency }) => (
+          {({ setCurrency }) => (
             <Fragment>
-              <button onClick={() => setBaseCurrency("CHF")}>To CHF</button>{" "}
-              <button onClick={() => setBaseCurrency("EUR")}>To EUR</button>{" "}
-              <button onClick={() => setBaseCurrency("GBP")}>To GBP</button>
+              <button onClick={() => setCurrency("CHF")}>To CHF</button>{" "}
+              <button onClick={() => setCurrency("EUR")}>To EUR</button>{" "}
+              <button onClick={() => setCurrency("GBP")}>To GBP</button>
             </Fragment>
           )}
         </ExchangeRateSwitcher>
