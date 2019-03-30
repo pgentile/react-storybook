@@ -23,7 +23,7 @@ describe(`${RegistredCreditCardList.name}`, () => {
 
   const totalPrice = {
     value: 100,
-    currency: "€"
+    currency: "EUR"
   };
 
   let wrapper;

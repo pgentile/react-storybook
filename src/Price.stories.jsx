@@ -9,12 +9,12 @@ const stories = storiesOf("Price", module);
 
 values.forEach(value => {
   stories.add(`Prix - Valeur de ${value} €`, () => {
-    return <Price price={{ value, currency: "€" }} />;
+    return <Price price={{ value, currency: "EUR" }} />;
   });
 });
 
 stories.add(`Prix - En pounds`, () => {
-  return <Price price={{ value: 135.9, currency: "£" }} />;
+  return <Price price={{ value: 135.9, currency: "GBP" }} />;
 });
 
 stories.add(`Prix - En franc suisse`, () => {

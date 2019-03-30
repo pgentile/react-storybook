@@ -15,7 +15,7 @@ const billetsItem = {
   label: "Vos billets",
   price: {
     value: 109.8,
-    currency: "€"
+    currency: "EUR"
   }
 };
 
@@ -25,7 +25,7 @@ const assurancesItem = {
   label: "Vos assurances",
   price: {
     value: 5.9,
-    currency: "€"
+    currency: "EUR"
   }
 };
 
@@ -35,7 +35,7 @@ const voucherItem = {
   label: "Votre code promotion",
   price: {
     value: -2.0,
-    currency: "€"
+    currency: "EUR"
   },
   code: "RADIN",
   onCancel: cancelVoucher
@@ -47,7 +47,7 @@ const donationItem = {
   label: "Votre don",
   price: {
     value: 1.0,
-    currency: "€"
+    currency: "EUR"
   },
   code: "code",
   association: "Médecins sans frontières",
@@ -56,7 +56,7 @@ const donationItem = {
 
 const totalPrice = {
   value: 123,
-  currency: "€"
+  currency: "EUR"
 };
 
 const onActions = {

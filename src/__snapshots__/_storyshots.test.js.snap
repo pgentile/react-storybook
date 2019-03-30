@@ -5926,6 +5926,72 @@ exports[`Storyshots Encryption test 1`] = `
 </div>
 `;
 
+exports[`Storyshots ExchangeRate main 1`] = `
+Array [
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      To CHF
+    </button>
+     
+    <button
+      onClick={[Function]}
+    >
+      To EUR
+    </button>
+     
+    <button
+      onClick={[Function]}
+    >
+      To GBP
+    </button>
+  </p>,
+  <p>
+    <span
+      className="price "
+      data-price-currency="EUR"
+      data-price-value={10}
+    >
+      <span
+        className="price__units"
+      >
+        10
+      </span>
+      <span
+        className="price__remaining"
+      >
+        , 
+        00
+         
+        €
+      </span>
+    </span>
+  </p>,
+  <p>
+    <span
+      className="price "
+      data-price-currency="EUR"
+      data-price-value={10}
+    >
+      <span
+        className="price__units"
+      >
+        10
+      </span>
+      <span
+        className="price__remaining"
+      >
+        , 
+        00
+         
+        €
+      </span>
+    </span>
+  </p>,
+]
+`;
+
 exports[`Storyshots FittedImage demo 1`] = `
 <div
   style={
@@ -10968,7 +11034,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
       Payer 
       <span
         className="price price--no-color "
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={98}
       >
         <span
@@ -11285,7 +11351,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         </span>
         <span
           className="price order-summary__item-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={109.8}
         >
           <span
@@ -11340,7 +11406,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         </a>
         <span
           className="price order-summary__item-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={-2}
         >
           <span
@@ -11391,7 +11457,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         </a>
         <span
           className="price order-summary__item-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={5.9}
         >
           <span
@@ -11423,7 +11489,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
       </span>
       <span
         className="price order-summary__total-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={123}
       >
         <span
@@ -11567,7 +11633,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
         </span>
         <span
           className="price order-summary__item-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={109.8}
         >
           <span
@@ -11621,7 +11687,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
         </a>
         <span
           className="price order-summary__item-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={1}
         >
           <span
@@ -11653,7 +11719,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
       </span>
       <span
         className="price order-summary__total-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={123}
       >
         <span
@@ -11687,7 +11753,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
         Assurez votre voyage, à partir de 
         <span
           className="price "
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={12.9}
         >
           <span
@@ -11781,7 +11847,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
         </span>
         <span
           className="price order-summary__item-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={109.8}
         >
           <span
@@ -11832,7 +11898,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
         </a>
         <span
           className="price order-summary__item-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={5.9}
         >
           <span
@@ -11864,7 +11930,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
       </span>
       <span
         className="price order-summary__total-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={123}
       >
         <span
@@ -12016,7 +12082,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
       </span>
       <span
         className="price order-summary__total-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={123}
       >
         <span
@@ -12050,7 +12116,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
         Assurez votre voyage, à partir de 
         <span
           className="price "
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={12.9}
         >
           <span
@@ -12206,7 +12272,7 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
       </span>
       <span
         className="price order-summary__total-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={0}
       >
         <span
@@ -12240,7 +12306,7 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
         Assurez votre voyage, à partir de 
         <span
           className="price "
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={12.9}
         >
           <span
@@ -12391,7 +12457,7 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
       </span>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={109.8}
       >
         <span
@@ -12442,7 +12508,7 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
       </a>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={-2}
       >
         <span
@@ -12493,7 +12559,7 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
       </a>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={5.9}
       >
         <span
@@ -12525,7 +12591,7 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
     </span>
     <span
       className="price order-summary__total-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={123}
     >
       <span
@@ -12563,7 +12629,7 @@ exports[`Storyshots Payment / OrderSummary Avec un don 1`] = `
       </span>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={109.8}
       >
         <span
@@ -12614,7 +12680,7 @@ exports[`Storyshots Payment / OrderSummary Avec un don 1`] = `
       </a>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={1}
       >
         <span
@@ -12646,7 +12712,7 @@ exports[`Storyshots Payment / OrderSummary Avec un don 1`] = `
     </span>
     <span
       className="price order-summary__total-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={123}
     >
       <span
@@ -12684,7 +12750,7 @@ exports[`Storyshots Payment / OrderSummary Billets & assurances 1`] = `
       </span>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={109.8}
       >
         <span
@@ -12735,7 +12801,7 @@ exports[`Storyshots Payment / OrderSummary Billets & assurances 1`] = `
       </a>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={5.9}
       >
         <span
@@ -12767,7 +12833,7 @@ exports[`Storyshots Payment / OrderSummary Billets & assurances 1`] = `
     </span>
     <span
       className="price order-summary__total-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={123}
     >
       <span
@@ -12802,7 +12868,7 @@ exports[`Storyshots Payment / OrderSummary Billets uniquement 1`] = `
     </span>
     <span
       className="price order-summary__total-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={123}
     >
       <span
@@ -12840,7 +12906,7 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
       </span>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={109.8}
       >
         <span
@@ -12891,7 +12957,7 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
       </a>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={-2}
       >
         <span
@@ -12942,7 +13008,7 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
       </a>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={5.9}
       >
         <span
@@ -12993,7 +13059,7 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
       </a>
       <span
         className="price order-summary__item-price"
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={1}
       >
         <span
@@ -13025,7 +13091,7 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
     </span>
     <span
       className="price order-summary__total-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={123}
     >
       <span
@@ -13074,7 +13140,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
           </span>
           <span
             className="price order-summary__total-price"
-            data-price-currency="€"
+            data-price-currency="EUR"
             data-price-value={0}
           >
             <span
@@ -13108,7 +13174,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             Assurez votre voyage, à partir de 
             <span
               className="price "
-              data-price-currency="€"
+              data-price-currency="EUR"
               data-price-value={12.9}
             >
               <span
@@ -13567,7 +13633,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             Payer 
             <span
               className="price price--no-color "
-              data-price-currency="€"
+              data-price-currency="EUR"
               data-price-value={0}
             >
               <span
@@ -14263,7 +14329,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
         Payer 
         <span
           className="price price--no-color "
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={0}
         >
           <span
@@ -14800,7 +14866,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
       Payer 
       <span
         className="price price--no-color "
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={100}
       >
         <span
@@ -14877,7 +14943,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
       Payer 
       <span
         className="price price--no-color "
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={100}
       >
         <span
@@ -14963,7 +15029,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
       Payer 
       <span
         className="price price--no-color "
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={100}
       >
         <span
@@ -15038,7 +15104,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
       Payer 
       <span
         className="price price--no-color "
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={100}
       >
         <span
@@ -15113,7 +15179,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
       Payer 
       <span
         className="price price--no-color "
-        data-price-currency="€"
+        data-price-currency="EUR"
         data-price-value={100}
       >
         <span
@@ -15289,7 +15355,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -15473,7 +15539,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabl
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -15661,7 +15727,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -15844,7 +15910,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -16023,7 +16089,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -16202,7 +16268,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -16380,7 +16446,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -16558,7 +16624,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
                     Payer 
                     <span
                       className="price price--no-color "
-                      data-price-currency="€"
+                      data-price-currency="EUR"
                       data-price-value={100}
                     >
                       <span
@@ -16740,7 +16806,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -16916,7 +16982,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -17092,7 +17158,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -17273,7 +17339,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -17455,7 +17521,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -17630,7 +17696,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -17805,7 +17871,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -17985,7 +18051,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
                       Payer 
                       <span
                         className="price price--no-color "
-                        data-price-currency="€"
+                        data-price-currency="EUR"
                         data-price-value={100}
                       >
                         <span
@@ -18339,7 +18405,7 @@ exports[`Storyshots Price Prix - En franc suisse 1`] = `
 exports[`Storyshots Price Prix - En pounds 1`] = `
 <span
   className="price "
-  data-price-currency="£"
+  data-price-currency="GBP"
   data-price-value={135.9}
 >
   <span
@@ -18361,7 +18427,7 @@ exports[`Storyshots Price Prix - En pounds 1`] = `
 exports[`Storyshots Price Prix - Valeur de -10.9 € 1`] = `
 <span
   className="price "
-  data-price-currency="€"
+  data-price-currency="EUR"
   data-price-value={-10.9}
 >
   <span
@@ -18383,7 +18449,7 @@ exports[`Storyshots Price Prix - Valeur de -10.9 € 1`] = `
 exports[`Storyshots Price Prix - Valeur de -45.2 € 1`] = `
 <span
   className="price "
-  data-price-currency="€"
+  data-price-currency="EUR"
   data-price-value={-45.2}
 >
   <span
@@ -18405,7 +18471,7 @@ exports[`Storyshots Price Prix - Valeur de -45.2 € 1`] = `
 exports[`Storyshots Price Prix - Valeur de 0 € 1`] = `
 <span
   className="price "
-  data-price-currency="€"
+  data-price-currency="EUR"
   data-price-value={0}
 >
   <span
@@ -18427,7 +18493,7 @@ exports[`Storyshots Price Prix - Valeur de 0 € 1`] = `
 exports[`Storyshots Price Prix - Valeur de 12 € 1`] = `
 <span
   className="price "
-  data-price-currency="€"
+  data-price-currency="EUR"
   data-price-value={12}
 >
   <span
@@ -18449,7 +18515,7 @@ exports[`Storyshots Price Prix - Valeur de 12 € 1`] = `
 exports[`Storyshots Price Prix - Valeur de 21.9 € 1`] = `
 <span
   className="price "
-  data-price-currency="€"
+  data-price-currency="EUR"
   data-price-value={21.9}
 >
   <span
@@ -18471,7 +18537,7 @@ exports[`Storyshots Price Prix - Valeur de 21.9 € 1`] = `
 exports[`Storyshots Price Prix - Valeur de 35.2 € 1`] = `
 <span
   className="price "
-  data-price-currency="€"
+  data-price-currency="EUR"
   data-price-value={35.2}
 >
   <span
@@ -18493,7 +18559,7 @@ exports[`Storyshots Price Prix - Valeur de 35.2 € 1`] = `
 exports[`Storyshots Price Prix - Valeur de 46.5 € 1`] = `
 <span
   className="price "
-  data-price-currency="€"
+  data-price-currency="EUR"
   data-price-value={46.5}
 >
   <span
@@ -18586,7 +18652,7 @@ exports[`Storyshots Travel Aller simple 1`] = `
     </h1>
     <p
       className="price travel__header-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={105.6}
     >
       <span
@@ -18640,7 +18706,7 @@ exports[`Storyshots Travel Aller-retour 1`] = `
     </h1>
     <p
       className="price travel__header-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={105.6}
     >
       <span
@@ -18703,7 +18769,7 @@ exports[`Storyshots Travel Aller-retour asymétrique 1`] = `
     </h1>
     <p
       className="price travel__header-price"
-      data-price-currency="€"
+      data-price-currency="EUR"
       data-price-value={105.6}
     >
       <span
@@ -18773,7 +18839,7 @@ Array [
         </h1>
         <p
           className="price travel__header-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={105.6}
         >
           <span
@@ -18832,7 +18898,7 @@ Array [
         </h1>
         <p
           className="price travel__header-price"
-          data-price-currency="€"
+          data-price-currency="EUR"
           data-price-value={105.6}
         >
           <span
@@ -18900,7 +18966,7 @@ Array [
         </h1>
         <p
           className="price travel__header-price"
-          data-price-currency="£"
+          data-price-currency="GBP"
           data-price-value={98.5}
         >
           <span

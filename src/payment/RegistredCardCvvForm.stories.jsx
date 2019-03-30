@@ -11,7 +11,7 @@ const actions = {
 
 const totalPrice = {
   value: 100,
-  currency: "€"
+  currency: "EUR"
 };
 
 const stories = storiesOf("Payment / RegistredCardCvvForm", module);

@@ -1,4 +1,5 @@
-import "url-search-params-polyfill";
+import "core-js";
+import "regenerator-runtime/runtime";
 
 import { configure } from "@storybook/react";
 import "loki/configure-react";

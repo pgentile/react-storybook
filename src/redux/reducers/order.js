@@ -60,7 +60,7 @@ export const selectDonation = scope(
 
 const ZERO_EURO = Object.freeze({
   value: 0,
-  currency: "€"
+  currency: "EUR"
 });
 
 export const selectTotalAmount = scope(
@@ -225,7 +225,7 @@ export default (state = initialState, action) => {
         label: `Votre don pour ${association}`,
         price: {
           value: 1,
-          currency: "€"
+          currency: "EUR"
         },
         code,
         association

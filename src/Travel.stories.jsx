@@ -24,12 +24,12 @@ const inwardTrip2 = {
 
 const price = {
   value: 105.6,
-  currency: "€"
+  currency: "EUR"
 };
 
 const price2 = {
   value: 98.5,
-  currency: "£"
+  currency: "GBP"
 };
 
 storiesOf("Travel", module)

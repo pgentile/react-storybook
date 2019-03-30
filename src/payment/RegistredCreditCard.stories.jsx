@@ -12,7 +12,7 @@ const actions = {
 
 const totalPrice = {
   value: 100,
-  currency: "€"
+  currency: "EUR"
 };
 
 const cardBrands = ["visa", "maestro"];

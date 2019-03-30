@@ -18,7 +18,7 @@ storiesOf("Payment / OrderEditorConnected", module)
           label: "Vos billets",
           price: {
             value: 55.6,
-            currency: "€"
+            currency: "EUR"
           }
         }
       ])

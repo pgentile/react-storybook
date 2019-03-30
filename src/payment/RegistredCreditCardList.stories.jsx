@@ -33,7 +33,7 @@ const cards = [
 
 const totalPrice = {
   value: 100,
-  currency: "€"
+  currency: "EUR"
 };
 
 storiesOf("Payment / RegistredCreditCardList", module)

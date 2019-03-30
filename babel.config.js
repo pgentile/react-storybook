@@ -8,7 +8,8 @@ module.exports = api => {
         "@babel/preset-env",
         {
           modules: false,
-          useBuiltIns: "entry"
+          useBuiltIns: "entry",
+          corejs: 2
         }
       ],
       "@babel/preset-react"
@@ -28,7 +29,8 @@ module.exports = api => {
               targets: {
                 node: true
               },
-              useBuiltIns: "entry"
+              useBuiltIns: "entry",
+              corejs: 2
             }
           ],
           "@babel/preset-react"

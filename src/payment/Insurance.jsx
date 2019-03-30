@@ -16,7 +16,7 @@ export default class Insurance extends React.PureComponent {
   state = {
     price: {
       value: 12.9,
-      currency: "€"
+      currency: "EUR"
     }
   };
 

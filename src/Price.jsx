@@ -40,9 +40,20 @@ export default class Price extends React.PureComponent {
           ,&thinsp;
           {centsDisplay}
           &nbsp;
-          {currency}
+          {currencyToSymbol(currency)}
         </span>
       </Element>
     );
+  }
+}
+
+function currencyToSymbol(currency) {
+  switch (currency) {
+    case "EUR":
+      return "€";
+    case "GBP":
+      return "£";
+    default:
+      return currency;
   }
 }

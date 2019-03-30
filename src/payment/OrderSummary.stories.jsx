@@ -15,7 +15,7 @@ const ticketItem = {
   label: "Vos billets",
   price: {
     value: 109.8,
-    currency: "€"
+    currency: "EUR"
   }
 };
 
@@ -25,7 +25,7 @@ const insuranceItem = {
   label: "Vos assurances",
   price: {
     value: 5.9,
-    currency: "€"
+    currency: "EUR"
   },
   onCancel: cancelInsurance
 };
@@ -36,7 +36,7 @@ const voucherItem = {
   label: "Votre code promotion",
   price: {
     value: -2.0,
-    currency: "€"
+    currency: "EUR"
   },
   onCancel: cancelVoucher
 };
@@ -47,7 +47,7 @@ const donationItem = {
   label: "Votre don",
   price: {
     value: 1.0,
-    currency: "€"
+    currency: "EUR"
   },
   donationDetails: {
     code: "code",
@@ -58,7 +58,7 @@ const donationItem = {
 
 const totalPrice = {
   value: 123,
-  currency: "€"
+  currency: "EUR"
 };
 
 storiesOf("Payment / OrderSummary", module)

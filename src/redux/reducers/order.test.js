@@ -219,7 +219,7 @@ function createItem({ id, type, name, price, ...extraProps } = {}) {
     name: name || "This is an item",
     price: price || {
       amount: 15.6,
-      currency: "€"
+      currency: "EUR"
     },
     ...extraProps
   };
