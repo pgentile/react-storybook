@@ -5932,25 +5932,36 @@ Array [
     className="button-group "
   >
     <button
-      aria-pressed={false}
-      className="button button--size-normal button-group__button "
+      aria-pressed={true}
+      className="button button--size-normal button--toggled button-group__button "
       onClick={[Function]}
     >
-      To CHF
+      To 
+      EUR
     </button>
     <button
       aria-pressed={false}
       className="button button--size-normal button-group__button "
       onClick={[Function]}
     >
-      To EUR
+      To 
+      CHF
     </button>
     <button
       aria-pressed={false}
       className="button button--size-normal button-group__button "
       onClick={[Function]}
     >
-      To GBP
+      To 
+      GBP
+    </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-normal button-group__button "
+      onClick={[Function]}
+    >
+      To 
+      USD
     </button>
   </div>,
   <p>

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useCallback } from "react";
+import React, { createContext, useState, useEffect, useCallback, useContext } from "react";
 import PropTypes from "prop-types";
 
 import "./ExchangeRate.scss";
@@ -53,22 +53,12 @@ ExchangeRate.propTypes = {
 
 ExchangeRate.defaultProps = {};
 
-export function ExchangeRateConverter({ children }) {
-  return <ExchangeRateContext.Consumer>{({ computeRate }) => children(computeRate)}</ExchangeRateContext.Consumer>;
+export function useComputeRate() {
+  const { computeRate } = useContext(ExchangeRateContext);
+  return computeRate;
 }
 
-ExchangeRateConverter.propTypes = {
-  children: PropTypes.func.isRequired
-};
-
-export function ExchangeRateSwitcher({ children }) {
-  return (
-    <ExchangeRateContext.Consumer>
-      {({ currency, setCurrency }) => children({ currency, setCurrency })}
-    </ExchangeRateContext.Consumer>
-  );
+export function useCurrency() {
+  const { currency, setCurrency } = useContext(ExchangeRateContext);
+  return [currency, setCurrency];
 }
-
-ExchangeRateSwitcher.propTypes = {
-  children: PropTypes.func.isRequired
-};
