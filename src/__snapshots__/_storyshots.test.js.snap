@@ -5896,6 +5896,121 @@ exports[`Storyshots Carousel main 1`] = `
 </div>
 `;
 
+exports[`Storyshots Cars / Heated seats / HeatedSeatButton main 1`] = `
+<div
+  className="heated-seat-button"
+  onClick={[Function]}
+>
+  <div
+    className="level-indicator heated-seat-button__cold"
+  >
+    <div
+      className="led-indicator led-indicator--color-blue level-indicator__led"
+    />
+    <div
+      className="led-indicator led-indicator--color-blue level-indicator__led"
+    />
+    <div
+      className="led-indicator led-indicator--color-blue level-indicator__led"
+    />
+  </div>
+  <div
+    className="heated-seat-button__title"
+  >
+    Seat temp.
+  </div>
+  <div
+    className="level-indicator heated-seat-button__heat"
+  >
+    <div
+      className="led-indicator led-indicator--color-red level-indicator__led"
+    />
+    <div
+      className="led-indicator led-indicator--color-red level-indicator__led"
+    />
+    <div
+      className="led-indicator led-indicator--color-red level-indicator__led"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cars / Heated seats / LedIndicator enabled 1`] = `
+<div
+  className="led-indicator led-indicator--color-blue led-indicator--enabled "
+/>
+`;
+
+exports[`Storyshots Cars / Heated seats / LedIndicator main 1`] = `
+<div
+  className="led-indicator led-indicator--color-red "
+/>
+`;
+
+exports[`Storyshots Cars / Heated seats / LevelIndicator level 0 1`] = `
+<div
+  className="level-indicator "
+>
+  <div
+    className="led-indicator led-indicator--color-blue level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue level-indicator__led"
+  />
+</div>
+`;
+
+exports[`Storyshots Cars / Heated seats / LevelIndicator level 1 1`] = `
+<div
+  className="level-indicator "
+>
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue level-indicator__led"
+  />
+</div>
+`;
+
+exports[`Storyshots Cars / Heated seats / LevelIndicator level 2 1`] = `
+<div
+  className="level-indicator "
+>
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue level-indicator__led"
+  />
+</div>
+`;
+
+exports[`Storyshots Cars / Heated seats / LevelIndicator level 3 1`] = `
+<div
+  className="level-indicator "
+>
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  />
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  />
+</div>
+`;
+
 exports[`Storyshots CodeSplitted main 1`] = `
 <div
   className="spinner"
