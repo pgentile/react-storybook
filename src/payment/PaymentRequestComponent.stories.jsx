@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 
 import PaymentRequestComponent from "./PaymentRequestComponent";
 
-storiesOf("Payment / PaymentRequestComponent", module).add("main", () => {
+storiesOf("Payment | PaymentRequestComponent", module).add("main", () => {
   return <Story />;
 });
 

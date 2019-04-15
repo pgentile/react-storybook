@@ -68,7 +68,7 @@ const onActions = {
   onCancelDonation: cancelDonation
 };
 
-storiesOf("Payment / OrderEditor", module)
+storiesOf("Payment | OrderEditor", module)
   .add("Billets uniquement", () => {
     return <OrderEditor items={[billetsItem]} totalPrice={totalPrice} {...onActions} />;
   })

@@ -5896,7 +5896,7 @@ exports[`Storyshots Carousel main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars / Heated seats / HeatedSeatButton main 1`] = `
+exports[`Storyshots Cars | Heated seats / HeatedSeatButton main 1`] = `
 <div
   className="heated-seat-button"
   onClick={[Function]}
@@ -5935,19 +5935,19 @@ exports[`Storyshots Cars / Heated seats / HeatedSeatButton main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars / Heated seats / LedIndicator enabled 1`] = `
+exports[`Storyshots Cars | Heated seats / LedIndicator enabled 1`] = `
 <div
   className="led-indicator led-indicator--color-blue led-indicator--enabled "
 />
 `;
 
-exports[`Storyshots Cars / Heated seats / LedIndicator main 1`] = `
+exports[`Storyshots Cars | Heated seats / LedIndicator main 1`] = `
 <div
   className="led-indicator led-indicator--color-red "
 />
 `;
 
-exports[`Storyshots Cars / Heated seats / LevelIndicator level 0 1`] = `
+exports[`Storyshots Cars | Heated seats / LevelIndicator level 0 1`] = `
 <div
   className="level-indicator "
 >
@@ -5963,7 +5963,7 @@ exports[`Storyshots Cars / Heated seats / LevelIndicator level 0 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars / Heated seats / LevelIndicator level 1 1`] = `
+exports[`Storyshots Cars | Heated seats / LevelIndicator level 1 1`] = `
 <div
   className="level-indicator "
 >
@@ -5979,7 +5979,7 @@ exports[`Storyshots Cars / Heated seats / LevelIndicator level 1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars / Heated seats / LevelIndicator level 2 1`] = `
+exports[`Storyshots Cars | Heated seats / LevelIndicator level 2 1`] = `
 <div
   className="level-indicator "
 >
@@ -5995,7 +5995,7 @@ exports[`Storyshots Cars / Heated seats / LevelIndicator level 2 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars / Heated seats / LevelIndicator level 3 1`] = `
+exports[`Storyshots Cars | Heated seats / LevelIndicator level 3 1`] = `
 <div
   className="level-indicator "
 >
@@ -11039,7 +11039,7 @@ exports[`Storyshots NightMode main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
+exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
 <form
   className="credit-card-form "
   onSubmit={[Function]}
@@ -11188,7 +11188,7 @@ exports[`Storyshots Payment / CreditCardForm Défaut 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / Donation / Donation donation selected 1`] = `
+exports[`Storyshots Payment | Donation / Donation donation selected 1`] = `
 <section
   className="card card--has-border card--layer-flat selected-donation "
 >
@@ -11223,7 +11223,7 @@ exports[`Storyshots Payment / Donation / Donation donation selected 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / Donation / Donation no donation selected 1`] = `
+exports[`Storyshots Payment | Donation / Donation no donation selected 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card donation-proposal "
 >
@@ -11238,7 +11238,7 @@ exports[`Storyshots Payment / Donation / Donation no donation selected 1`] = `
       >
         <img
           alt="Logo URCT"
-          src="/images/urct-logo.svg"
+          src="/static/mocks/images/payment/donation/urct-logo.svg"
         />
       </div>
       <div
@@ -11323,7 +11323,7 @@ exports[`Storyshots Payment / Donation / Donation no donation selected 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / Donation / DonationProposal main 1`] = `
+exports[`Storyshots Payment | Donation / DonationProposal main 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card donation-proposal "
 >
@@ -11338,7 +11338,7 @@ exports[`Storyshots Payment / Donation / DonationProposal main 1`] = `
       >
         <img
           alt="Logo URCT"
-          src="/images/urct-logo.svg"
+          src="/static/mocks/images/payment/donation/urct-logo.svg"
         />
       </div>
       <div
@@ -11423,7 +11423,7 @@ exports[`Storyshots Payment / Donation / DonationProposal main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / Donation / SelectedDonation main 1`] = `
+exports[`Storyshots Payment | Donation / SelectedDonation main 1`] = `
 <section
   className="card card--has-border card--layer-flat selected-donation "
 >
@@ -11458,7 +11458,7 @@ exports[`Storyshots Payment / Donation / SelectedDonation main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
+exports[`Storyshots Payment | OrderEditor Avec un code promo 1`] = `
 <section
   className="order-editor"
 >
@@ -11654,7 +11654,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
         >
           <img
             alt="Logo URCT"
-            src="/images/urct-logo.svg"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
           />
         </div>
         <div
@@ -11740,7 +11740,7 @@ exports[`Storyshots Payment / OrderEditor Avec un code promo 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
+exports[`Storyshots Payment | OrderEditor Avec un don 1`] = `
 <section
   className="order-editor"
 >
@@ -11954,7 +11954,7 @@ exports[`Storyshots Payment / OrderEditor Avec un don 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
+exports[`Storyshots Payment | OrderEditor Billets & assurances 1`] = `
 <section
   className="order-editor"
 >
@@ -12106,7 +12106,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
         >
           <img
             alt="Logo URCT"
-            src="/images/urct-logo.svg"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
           />
         </div>
         <div
@@ -12192,7 +12192,7 @@ exports[`Storyshots Payment / OrderEditor Billets & assurances 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
+exports[`Storyshots Payment | OrderEditor Billets uniquement 1`] = `
 <section
   className="order-editor"
 >
@@ -12296,7 +12296,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
         >
           <img
             alt="Logo URCT"
-            src="/images/urct-logo.svg"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
           />
         </div>
         <div
@@ -12382,7 +12382,7 @@ exports[`Storyshots Payment / OrderEditor Billets uniquement 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
+exports[`Storyshots Payment | OrderEditorConnected main 1`] = `
 <section
   className="order-editor"
 >
@@ -12486,7 +12486,7 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
         >
           <img
             alt="Logo URCT"
-            src="/images/urct-logo.svg"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
           />
         </div>
         <div
@@ -12572,7 +12572,7 @@ exports[`Storyshots Payment / OrderEditorConnected main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
+exports[`Storyshots Payment | OrderSummary Avec un code promo 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12744,7 +12744,7 @@ exports[`Storyshots Payment / OrderSummary Avec un code promo 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderSummary Avec un don 1`] = `
+exports[`Storyshots Payment | OrderSummary Avec un don 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12865,7 +12865,7 @@ exports[`Storyshots Payment / OrderSummary Avec un don 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderSummary Billets & assurances 1`] = `
+exports[`Storyshots Payment | OrderSummary Billets & assurances 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12986,7 +12986,7 @@ exports[`Storyshots Payment / OrderSummary Billets & assurances 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderSummary Billets uniquement 1`] = `
+exports[`Storyshots Payment | OrderSummary Billets uniquement 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -13021,7 +13021,7 @@ exports[`Storyshots Payment / OrderSummary Billets uniquement 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
+exports[`Storyshots Payment | OrderSummary Tous les types 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -13244,7 +13244,7 @@ exports[`Storyshots Payment / OrderSummary Tous les types 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / PaymentContainer main 1`] = `
+exports[`Storyshots Payment | PaymentContainer main 1`] = `
 <section
   className="payment-container"
 >
@@ -13354,7 +13354,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
             >
               <img
                 alt="Logo URCT"
-                src="/images/urct-logo.svg"
+                src="/static/mocks/images/payment/donation/urct-logo.svg"
               />
             </div>
             <div
@@ -13790,7 +13790,7 @@ exports[`Storyshots Payment / PaymentContainer main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
+exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
 <section
   className="payment-form "
 >
@@ -14137,7 +14137,7 @@ exports[`Storyshots Payment / PaymentForm Défaut 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
+exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
 <section
   className="payment-form "
 >
@@ -14484,7 +14484,7 @@ exports[`Storyshots Payment / PaymentFormConnected main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / PaymentMeans disabled 1`] = `
+exports[`Storyshots Payment | PaymentMeans disabled 1`] = `
 <div
   className="payment-means "
 >
@@ -14643,7 +14643,7 @@ exports[`Storyshots Payment / PaymentMeans disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment / PaymentMeans main 1`] = `
+exports[`Storyshots Payment | PaymentMeans main 1`] = `
 <div
   className="payment-means "
 >
@@ -14794,7 +14794,7 @@ exports[`Storyshots Payment / PaymentMeans main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment / PaymentMeans selected 1`] = `
+exports[`Storyshots Payment | PaymentMeans selected 1`] = `
 <div
   className="payment-means "
 >
@@ -14945,7 +14945,7 @@ exports[`Storyshots Payment / PaymentMeans selected 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment / PaymentRequestComponent main 1`] = `
+exports[`Storyshots Payment | PaymentRequestComponent main 1`] = `
 <button
   onClick={[Function]}
 >
@@ -14953,7 +14953,7 @@ exports[`Storyshots Payment / PaymentRequestComponent main 1`] = `
 </button>
 `;
 
-exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
+exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
 <form
   className="registred-card-cvv-form"
   onReset={[Function]}
@@ -15028,7 +15028,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
+exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
 <form
   className="registred-card-cvv-form"
   onReset={[Function]}
@@ -15106,7 +15106,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
+exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
 <form
   className="registred-card-cvv-form"
   onReset={[Function]}
@@ -15191,7 +15191,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
+exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
 <form
   className="registred-card-cvv-form"
   onReset={[Function]}
@@ -15266,7 +15266,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
+exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
 <form
   className="registred-card-cvv-form"
   onReset={[Function]}
@@ -15341,7 +15341,7 @@ exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -15525,7 +15525,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabled 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabled 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -15709,7 +15709,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabl
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -15897,7 +15897,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -16080,7 +16080,7 @@ exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -16259,7 +16259,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -16438,7 +16438,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -16616,7 +16616,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
+exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card registred-credit-card "
 >
@@ -16794,7 +16794,7 @@ exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
+exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
 <div
   className="registred-credit-card-list "
 >
@@ -17510,7 +17510,7 @@ exports[`Storyshots Payment / RegistredCreditCardList disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
+exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
 <div
   className="registred-credit-card-list "
 >
@@ -18222,7 +18222,7 @@ exports[`Storyshots Payment / RegistredCreditCardList main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment / VoucherContainer main 1`] = `
+exports[`Storyshots Payment | VoucherContainer main 1`] = `
 <section
   className="card card--has-border card--layer-flat voucher-container "
 >
@@ -18236,7 +18236,7 @@ exports[`Storyshots Payment / VoucherContainer main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
+exports[`Storyshots Payment | VoucherForm Défaut 1`] = `
 <form
   className="voucher-form "
   onSubmit={[Function]}
@@ -18305,7 +18305,7 @@ exports[`Storyshots Payment / VoucherForm Défaut 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / VoucherForm initial code 1`] = `
+exports[`Storyshots Payment | VoucherForm initial code 1`] = `
 <form
   className="voucher-form "
   onSubmit={[Function]}
@@ -18374,7 +18374,7 @@ exports[`Storyshots Payment / VoucherForm initial code 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / VoucherForm submit error 1`] = `
+exports[`Storyshots Payment | VoucherForm submit error 1`] = `
 <form
   className="voucher-form "
   onSubmit={[Function]}
@@ -18443,7 +18443,7 @@ exports[`Storyshots Payment / VoucherForm submit error 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment / VoucherForm submit success 1`] = `
+exports[`Storyshots Payment | VoucherForm submit success 1`] = `
 <form
   className="voucher-form "
   onSubmit={[Function]}

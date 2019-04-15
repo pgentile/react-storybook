@@ -36,7 +36,7 @@ const totalPrice = {
   currency: "EUR"
 };
 
-storiesOf("Payment / RegistredCreditCardList", module)
+storiesOf("Payment | RegistredCreditCardList", module)
   .add("main", () => {
     return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} onUseCard={action("use card")} />;
   })

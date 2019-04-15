@@ -6,7 +6,7 @@ import OrderEditorConnected from "./OrderEditorConnected";
 import { createDefaultStore } from "../redux/store";
 import { TICKET_TYPE, loadItems } from "../redux/reducers/order";
 
-storiesOf("Payment / OrderEditorConnected", module)
+storiesOf("Payment | OrderEditorConnected", module)
   .addDecorator(story => {
     const store = createDefaultStore();
 

@@ -7,7 +7,7 @@ import { createDefaultStore } from "../redux/store";
 import { TICKET_TYPE, loadItems } from "../redux/reducers/order";
 import { loadCards } from "../redux/reducers/connectedUser";
 
-storiesOf("Payment / PaymentContainer", module)
+storiesOf("Payment | PaymentContainer", module)
   .addDecorator(story => {
     const store = createDefaultStore();
 

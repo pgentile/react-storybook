@@ -12,6 +12,6 @@ const actions = {
   }
 };
 
-storiesOf("Payment / CreditCardForm", module).add("Défaut", () => {
+storiesOf("Payment | CreditCardForm", module).add("Défaut", () => {
   return <CreditCardForm {...actions} totalPrice={{ value: 98, currency: "EUR" }} />;
 });

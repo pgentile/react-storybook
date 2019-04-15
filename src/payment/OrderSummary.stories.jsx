@@ -61,7 +61,7 @@ const totalPrice = {
   currency: "EUR"
 };
 
-storiesOf("Payment / OrderSummary", module)
+storiesOf("Payment | OrderSummary", module)
   .add("Billets uniquement", () => {
     return <OrderSummary items={[ticketItem]} totalPrice={totalPrice} />;
   })

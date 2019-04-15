@@ -47,6 +47,7 @@ module.exports = ({config}) => {
     ],
   });
 
+  /*
   config.module.rules.push({
     test: /\.(svg|png|jpg|gif)$/,
     use: [
@@ -58,6 +59,7 @@ module.exports = ({config}) => {
       }
     ]
   });
+  */
 
   if (process.env.NODE_ENV === "production") {
     config.devtool = "source-map";

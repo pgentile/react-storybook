@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 
 import SelectedDonation from "./SelectedDonation";
 
-storiesOf("Payment / Donation / SelectedDonation", module).add("main", () => {
+storiesOf("Payment | Donation / SelectedDonation", module).add("main", () => {
   return (
     <SelectedDonation
       donation={{ code: "SPA", association: "Société protectrice des animaux" }}

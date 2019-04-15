@@ -10,7 +10,7 @@ const actions = {
   onCancel: action("cancel")
 };
 
-storiesOf("Payment / VoucherForm", module)
+storiesOf("Payment | VoucherForm", module)
   .add("Défaut", () => {
     return <VoucherForm {...actions} />;
   })

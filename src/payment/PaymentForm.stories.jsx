@@ -33,6 +33,6 @@ const registredCards = [
   }
 ];
 
-storiesOf("Payment / PaymentForm", module).add("Défaut", () => {
+storiesOf("Payment | PaymentForm", module).add("Défaut", () => {
   return <PaymentForm {...actions} registredCards={registredCards} totalPrice={{ value: 98, currency: "€" }} />;
 });

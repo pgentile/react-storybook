@@ -17,7 +17,7 @@ const totalPrice = {
 
 const cardBrands = ["visa", "maestro"];
 
-const stories = storiesOf("Payment / RegistredCreditCard", module);
+const stories = storiesOf("Payment | RegistredCreditCard", module);
 
 cardBrands.forEach(cardBrand => {
   const props = {

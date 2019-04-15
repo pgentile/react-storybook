@@ -5,6 +5,8 @@ import ManagedProgressButton from "../../buttons/ManagedProgressButton";
 import ExpandableCard from "../../ExpandableCard";
 import ExpandableIcon from "../../ExpandableIcon";
 
+import urctLogo from "./urct-logo.svg";
+
 import "./DonationProposal.scss";
 
 export default class DonationProposal extends React.PureComponent {
@@ -43,7 +45,7 @@ export default class DonationProposal extends React.PureComponent {
       >
         <div className="donation-proposal__content">
           <div className="donation-proposal__logo">
-            <img src="/images/urct-logo.svg" alt="Logo URCT" />
+            <img src={urctLogo} alt="Logo URCT" />
           </div>
           <div className="donation-proposal__punchline">
             <h3>Donner, c&apos;est facile avec un rien c&apos;est tout</h3>

@@ -10,7 +10,7 @@ const actions = {
   onMeanChange: action("mean change")
 };
 
-storiesOf("Payment / PaymentMeans", module)
+storiesOf("Payment | PaymentMeans", module)
   .add("main", () => {
     return <PaymentMeans means={means} {...actions} />;
   })

@@ -9,7 +9,7 @@ const actions = {
   onCancelDonation: action("cancel donation")
 };
 
-storiesOf("Payment / Donation / Donation", module)
+storiesOf("Payment | Donation / Donation", module)
   .add("no donation selected", () => {
     return <Donation {...actions} />;
   })
