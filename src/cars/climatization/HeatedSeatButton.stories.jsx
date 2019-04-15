@@ -3,6 +3,6 @@ import { storiesOf } from "@storybook/react";
 
 import HeatedSeatButton from "./HeatedSeatButton";
 
-storiesOf("Cars | Heated seats / HeatedSeatButton", module).add("main", () => {
+storiesOf("Cars | Climatization / HeatedSeatButton", module).add("main", () => {
   return <HeatedSeatButton />;
 });

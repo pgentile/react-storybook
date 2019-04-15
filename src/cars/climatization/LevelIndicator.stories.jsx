@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 
 import LevelIndicator from "./LevelIndicator";
 
-storiesOf("Cars | Heated seats / LevelIndicator", module)
+storiesOf("Cars | Core / LevelIndicator", module)
   .add("level 0", () => {
     return <LevelIndicator color="blue" />;
   })

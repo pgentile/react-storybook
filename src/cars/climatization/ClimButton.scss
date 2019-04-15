@@ -1,0 +1,29 @@
+@import "../../styles/_reset-button";
+@import './led';
+
+.clim-button {
+  $padding: 5px;
+  $size: 80px;
+
+  @extend %button-resets;
+
+  background: #000;
+
+  &__grid {
+    display: grid;
+    grid-gap: $padding;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: $led-min-size auto $led-min-size;
+
+    width: $size;
+    height: $size;
+    padding: $padding;
+  }
+
+  &__title {
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+  }
+}

@@ -1,13 +1,13 @@
+@import './led';
+
 .level-indicator {
   // Supprimer les marges autour des LED (pour display inline-block)
   font-size: 0;
 
   &__led {
-    $space: 5px;
-
     display: inline-block;
 
-    margin-right: $space;
+    margin-right: $led-inter-space;
 
     &:last-child {
       margin-right: 0;

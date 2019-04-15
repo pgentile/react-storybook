@@ -5896,117 +5896,432 @@ exports[`Storyshots Carousel main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Heated seats / HeatedSeatButton main 1`] = `
-<div
-  className="heated-seat-button"
+exports[`Storyshots Cars | Climatization / AutoClimButton main 1`] = `
+<button
+  className="clim-button"
   onClick={[Function]}
 >
   <div
-    className="level-indicator heated-seat-button__cold"
+    className="clim-button__grid"
   >
     <div
-      className="led-indicator led-indicator--color-blue level-indicator__led"
-    />
+      className="clim-button__top-led"
+    >
+      <div
+        className="led-indicator led-indicator--color-green led-indicator--size-large "
+      />
+    </div>
     <div
-      className="led-indicator led-indicator--color-blue level-indicator__led"
-    />
+      className="clim-button__title"
+    >
+      Auto
+    </div>
     <div
-      className="led-indicator led-indicator--color-blue level-indicator__led"
+      className="clim-button__bottom-led"
     />
   </div>
+</button>
+`;
+
+exports[`Storyshots Cars | Climatization / ClimButton main 1`] = `
+<button
+  className="clim-button"
+  onClick={null}
+>
   <div
-    className="heated-seat-button__title"
-  >
-    Seat temp.
-  </div>
-  <div
-    className="level-indicator heated-seat-button__heat"
+    className="clim-button__grid"
   >
     <div
-      className="led-indicator led-indicator--color-red level-indicator__led"
+      className="clim-button__top-led"
     />
     <div
-      className="led-indicator led-indicator--color-red level-indicator__led"
-    />
+      className="clim-button__title"
+    >
+      Button
+    </div>
     <div
-      className="led-indicator led-indicator--color-red level-indicator__led"
+      className="clim-button__bottom-led"
     />
   </div>
+</button>
+`;
+
+exports[`Storyshots Cars | Climatization / ClimPanel main 1`] = `
+<div
+  className="clim-panel"
+>
+  <button
+    className="clim-button"
+    onClick={[Function]}
+  >
+    <div
+      className="clim-button__grid"
+    >
+      <div
+        className="clim-button__top-led"
+      >
+        <div
+          className="level-indicator "
+        >
+          <span
+            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+          />
+        </div>
+      </div>
+      <div
+        className="clim-button__title"
+      >
+        Seat temp.
+      </div>
+      <div
+        className="clim-button__bottom-led"
+      >
+        <div
+          className="level-indicator "
+        >
+          <span
+            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+          />
+        </div>
+      </div>
+    </div>
+  </button>
+  <button
+    className="clim-button"
+    onClick={[Function]}
+  >
+    <div
+      className="clim-button__grid"
+    >
+      <div
+        className="clim-button__top-led"
+      >
+        <div
+          className="led-indicator led-indicator--color-green led-indicator--size-large "
+        />
+      </div>
+      <div
+        className="clim-button__title"
+      >
+        Auto
+      </div>
+      <div
+        className="clim-button__bottom-led"
+      />
+    </div>
+  </button>
+  <button
+    className="clim-button"
+    onClick={[Function]}
+  >
+    <div
+      className="clim-button__grid"
+    >
+      <div
+        className="clim-button__top-led"
+      >
+        <div
+          className="led-indicator led-indicator--color-green led-indicator--size-large "
+        />
+      </div>
+      <div
+        className="clim-button__title"
+      >
+        Sync
+      </div>
+      <div
+        className="clim-button__bottom-led"
+      />
+    </div>
+  </button>
+  <button
+    className="clim-button"
+    onClick={[Function]}
+  >
+    <div
+      className="clim-button__grid"
+    >
+      <div
+        className="clim-button__top-led"
+      >
+        <div
+          className="led-indicator led-indicator--color-orange led-indicator--size-large "
+        />
+      </div>
+      <div
+        className="clim-button__title"
+      >
+        Windshield
+      </div>
+      <div
+        className="clim-button__bottom-led"
+      />
+    </div>
+  </button>
+  <button
+    className="clim-button"
+    onClick={[Function]}
+  >
+    <div
+      className="clim-button__grid"
+    >
+      <div
+        className="clim-button__top-led"
+      >
+        <div
+          className="level-indicator "
+        >
+          <span
+            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+          />
+        </div>
+      </div>
+      <div
+        className="clim-button__title"
+      >
+        Seat temp.
+      </div>
+      <div
+        className="clim-button__bottom-led"
+      >
+        <div
+          className="level-indicator "
+        >
+          <span
+            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+          />
+          <span
+            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+          />
+        </div>
+      </div>
+    </div>
+  </button>
 </div>
 `;
 
-exports[`Storyshots Cars | Heated seats / LedIndicator enabled 1`] = `
+exports[`Storyshots Cars | Climatization / HeatedSeatButton main 1`] = `
+<button
+  className="clim-button"
+  onClick={[Function]}
+>
+  <div
+    className="clim-button__grid"
+  >
+    <div
+      className="clim-button__top-led"
+    >
+      <div
+        className="level-indicator "
+      >
+        <span
+          className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+        />
+        <span
+          className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+        />
+        <span
+          className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+        />
+      </div>
+    </div>
+    <div
+      className="clim-button__title"
+    >
+      Seat temp.
+    </div>
+    <div
+      className="clim-button__bottom-led"
+    >
+      <div
+        className="level-indicator "
+      >
+        <span
+          className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+        />
+        <span
+          className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+        />
+        <span
+          className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+        />
+      </div>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Cars | Climatization / SyncButton main 1`] = `
+<button
+  className="clim-button"
+  onClick={[Function]}
+>
+  <div
+    className="clim-button__grid"
+  >
+    <div
+      className="clim-button__top-led"
+    >
+      <div
+        className="led-indicator led-indicator--color-green led-indicator--size-large "
+      />
+    </div>
+    <div
+      className="clim-button__title"
+    >
+      Sync
+    </div>
+    <div
+      className="clim-button__bottom-led"
+    />
+  </div>
+</button>
+`;
+
+exports[`Storyshots Cars | Climatization / WindshieldButton main 1`] = `
+<button
+  className="clim-button"
+  onClick={[Function]}
+>
+  <div
+    className="clim-button__grid"
+  >
+    <div
+      className="clim-button__top-led"
+    >
+      <div
+        className="led-indicator led-indicator--color-orange led-indicator--size-large "
+      />
+    </div>
+    <div
+      className="clim-button__title"
+    >
+      Windshield
+    </div>
+    <div
+      className="clim-button__bottom-led"
+    />
+  </div>
+</button>
+`;
+
+exports[`Storyshots Cars | Core / LedIndicator blink 1`] = `
 <div
-  className="led-indicator led-indicator--color-blue led-indicator--enabled "
+  className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled led-indicator--blink "
 />
 `;
 
-exports[`Storyshots Cars | Heated seats / LedIndicator main 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator enabled 1`] = `
 <div
-  className="led-indicator led-indicator--color-red "
+  className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled "
 />
 `;
 
-exports[`Storyshots Cars | Heated seats / LevelIndicator level 0 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator green 1`] = `
+<div
+  className="led-indicator led-indicator--color-green led-indicator--size-normal led-indicator--enabled "
+/>
+`;
+
+exports[`Storyshots Cars | Core / LedIndicator large 1`] = `
+<div
+  className="led-indicator led-indicator--color-blue led-indicator--size-large led-indicator--enabled "
+/>
+`;
+
+exports[`Storyshots Cars | Core / LedIndicator main 1`] = `
+<div
+  className="led-indicator led-indicator--color-red led-indicator--size-normal "
+/>
+`;
+
+exports[`Storyshots Cars | Core / LedIndicator normal 1`] = `
+<div
+  className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled "
+/>
+`;
+
+exports[`Storyshots Cars | Core / LevelIndicator level 0 1`] = `
 <div
   className="level-indicator "
 >
-  <div
-    className="led-indicator led-indicator--color-blue level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
   />
 </div>
 `;
 
-exports[`Storyshots Cars | Heated seats / LevelIndicator level 1 1`] = `
+exports[`Storyshots Cars | Core / LevelIndicator level 1 1`] = `
 <div
   className="level-indicator "
 >
-  <div
-    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
   />
 </div>
 `;
 
-exports[`Storyshots Cars | Heated seats / LevelIndicator level 2 1`] = `
+exports[`Storyshots Cars | Core / LevelIndicator level 2 1`] = `
 <div
   className="level-indicator "
 >
-  <div
-    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
   />
 </div>
 `;
 
-exports[`Storyshots Cars | Heated seats / LevelIndicator level 3 1`] = `
+exports[`Storyshots Cars | Core / LevelIndicator level 3 1`] = `
 <div
   className="level-indicator "
 >
-  <div
-    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled level-indicator__led"
   />
-  <div
-    className="led-indicator led-indicator--color-blue led-indicator--enabled level-indicator__led"
+  <span
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled level-indicator__led"
   />
 </div>
 `;

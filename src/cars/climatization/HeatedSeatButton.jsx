@@ -1,24 +1,21 @@
 import React, { useReducer, useCallback, useDebugValue } from "react";
-import PropTypes from "prop-types";
 
+import ClimButton from "./ClimButton";
 import LevelIndicator from "./LevelIndicator";
 
-import "./HeatedSeatButton.scss";
-
-export default function HeatedSeatButton({ as: Element = "div" }) {
+export default function HeatedSeatButton() {
   const { coldLevel, heatLevel, change } = useLevels();
   return (
-    <Element className="heated-seat-button" onClick={() => change()}>
-      <LevelIndicator className="heated-seat-button__cold" color="blue" level={coldLevel} />
-      <div className="heated-seat-button__title">Seat temp.</div>
-      <LevelIndicator className="heated-seat-button__heat" color="red" level={heatLevel} />
-    </Element>
+    <ClimButton
+      onClick={() => change()}
+      topLed={<LevelIndicator color="blue" level={coldLevel} />}
+      title="Seat temp."
+      bottomLed={<LevelIndicator color="red" level={heatLevel} />}
+    />
   );
 }
 
-HeatedSeatButton.propTypes = {
-  as: PropTypes.elementType
-};
+HeatedSeatButton.propTypes = {};
 
 function useLevels() {
   const [state, dispatch] = useReducer(reducer, defaultState);
