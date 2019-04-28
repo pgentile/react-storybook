@@ -1,8 +1,6 @@
 import getStoryUrl from "./getStoryUrl";
 import writeScreenshot from "../selenium/writeScreenshot";
 
-jest.setTimeout(30 * 1000);
-
 describe("NumberInput", () => {
   afterEach(async () => {
     await driver.sleep(300);

@@ -7,8 +7,6 @@ import writeHtmlContent from "./selenium/writeHtmlContent";
 import applyOnElements from "./selenium/applyOnElements";
 import elementsMatching from "./selenium/elementsMatching";
 
-jest.setTimeout(60 * 1000);
-
 describe("OUI.sncf", () => {
   beforeEach(async () => {
     await driver.get("about:blank");

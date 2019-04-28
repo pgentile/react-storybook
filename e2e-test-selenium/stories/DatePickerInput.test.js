@@ -1,8 +1,6 @@
 import getStoryUrl from "./getStoryUrl";
 import writeElementScreenshot from "../selenium/writeElementScreenshot";
 
-jest.setTimeout(30 * 1000);
-
 describe("DatePickerInput", () => {
   it("should display the calendar on click", async () => {
     await driver.get(getStoryUrl("Forms / DatePickerInput", "demo"));

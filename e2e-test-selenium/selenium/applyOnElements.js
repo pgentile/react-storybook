@@ -1,12 +1,10 @@
-function applyOnElements(fn) {
-  return elementsOrPromise => {
-    return Promise.resolve(elementsOrPromise).then(elements => {
-      const results = elements.map(async (element, index) => {
-        return await fn(element, index);
-      });
-      return Promise.all(results);
-    });
-  };
-}
+import maybePromise from "./maybePromise";
 
-module.exports = applyOnElements;
+export default function applyOnElements(fn) {
+  return maybePromise(elements => {
+    const results = elements.map(async (element, index) => {
+      return await fn(element, index);
+    });
+    return Promise.all(results);
+  });
+}

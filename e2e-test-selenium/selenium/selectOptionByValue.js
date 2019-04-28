@@ -1,7 +1,7 @@
-const firstElementMatching = require("./firstElementMatching");
-const NoMatchError = require("./NoMatchError");
+import firstElementMatching from "./firstElementMatching";
+import NoMatchError from "./NoMatchError";
 
-function selectOptionByValue(expectedValue) {
+export default function selectOptionByValue(expectedValue) {
   const selectOption = firstElementMatching(async element => {
     const value = await element.getAttribute("value");
     return value === expectedValue;
@@ -20,5 +20,3 @@ function selectOptionByValue(expectedValue) {
       });
   };
 }
-
-module.exports = selectOptionByValue;

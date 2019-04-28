@@ -1,7 +1,5 @@
 import querystring from "query-string";
 
-jest.setTimeout(60 * 1000);
-
 export default function getStoryUrl(selectedKind, selectedStory, eventWsUrl) {
   const q = querystring.stringify({
     selectedKind,

@@ -2,8 +2,6 @@ import getStoryUrl from "./getStoryUrl";
 import writeScreenshot from "../selenium/writeScreenshot";
 import firstElementMatching from "../selenium/firstElementMatching";
 
-jest.setTimeout(30 * 1000);
-
 describe("Payment / PaymentContainer", () => {
   afterEach(async () => {
     await driver.sleep(300);
@@ -13,6 +11,7 @@ describe("Payment / PaymentContainer", () => {
 
   test("Pay with Visa card", async () => {
     await driver.get(getStoryUrl("Payment / PaymentContainer", "main"));
+    await driver.sleep(2 * 1000); // Need to wait elements on page for Firefox...
 
     await driver
       .findElements(By.css(".payment-means__mean"))
@@ -37,6 +36,7 @@ describe("Payment / PaymentContainer", () => {
 
   test("Pay with Mastercard card", async () => {
     await driver.get(getStoryUrl("Payment / PaymentContainer", "main"));
+    await driver.sleep(2 * 1000); // Need to wait elements on page for Firefox...
 
     await driver
       .findElements(By.css(".payment-means__mean"))
@@ -61,6 +61,7 @@ describe("Payment / PaymentContainer", () => {
 
   test("Pay with registred card", async () => {
     await driver.get(getStoryUrl("Payment / PaymentContainer", "main"));
+    await driver.sleep(2 * 1000); // Need to wait elements on page for Firefox...
 
     await driver
       .findElements(By.css(".payment-means__mean"))

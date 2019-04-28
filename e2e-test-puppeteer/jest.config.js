@@ -1,5 +1,5 @@
 module.exports = {
   rootDir: ".",
-  testURL: "https://google.fr",
+  testEnvironment: "node",
   setupFilesAfterEnv: ["jest-extended"]
 };

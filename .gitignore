@@ -11,6 +11,7 @@ yarn-*.log
 /build/
 
 /screenshot*.png
+/screenshot*.html
 
 /.loki/
 /.cache/
