@@ -453,6 +453,11 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
 <table
   className="calendar "
 >
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
   <thead
     className="calendar__week-days"
   >
@@ -536,6 +541,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -549,6 +556,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -562,6 +571,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -575,6 +586,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -588,6 +601,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -601,6 +616,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -614,6 +631,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 1er juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -631,6 +650,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -644,6 +665,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -657,6 +680,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -670,6 +695,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -683,6 +710,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -696,6 +725,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -709,6 +740,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -726,6 +759,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -739,6 +774,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -752,6 +789,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -765,6 +804,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -778,6 +819,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -791,6 +834,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -804,6 +849,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -821,6 +868,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -834,6 +883,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -847,6 +898,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -860,6 +913,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -873,6 +928,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -886,6 +943,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -899,6 +958,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -916,6 +977,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current="date"
+        aria-label="lundi 23 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -929,6 +992,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -942,6 +1007,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -955,6 +1022,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -968,6 +1037,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -981,6 +1052,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -994,6 +1067,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1011,6 +1086,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1024,6 +1101,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1037,6 +1116,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 1er août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1050,6 +1131,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1063,6 +1146,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1076,6 +1161,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1089,6 +1176,8 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -1110,6 +1199,11 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
 <table
   className="calendar "
 >
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
   <thead
     className="calendar__week-days"
   >
@@ -1193,6 +1287,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1206,6 +1302,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1219,6 +1317,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1232,6 +1332,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1245,6 +1347,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1258,6 +1362,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1271,6 +1377,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 1er juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1288,6 +1396,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1301,6 +1411,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1314,6 +1426,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1327,6 +1441,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1340,6 +1456,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1353,6 +1471,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1366,6 +1486,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1383,6 +1505,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1396,6 +1520,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1409,6 +1535,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1422,6 +1550,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1435,6 +1565,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1448,6 +1580,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1461,6 +1595,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1478,6 +1614,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1491,6 +1629,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1504,6 +1644,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1517,6 +1659,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1530,6 +1674,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1543,6 +1689,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1556,6 +1704,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1573,6 +1723,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1586,6 +1738,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1599,6 +1753,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1612,6 +1768,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1625,6 +1783,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1638,6 +1798,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1651,6 +1813,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1668,6 +1832,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1681,6 +1847,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1694,6 +1862,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 1er août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1707,6 +1877,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1720,6 +1892,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1733,6 +1907,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1746,6 +1922,8 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1767,6 +1945,11 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
 <table
   className="calendar "
 >
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
   <thead
     className="calendar__week-days"
   >
@@ -1850,6 +2033,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1863,6 +2048,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1876,6 +2063,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1889,6 +2078,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1902,6 +2093,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1915,6 +2108,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -1928,6 +2123,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 1er juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1945,6 +2142,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1958,6 +2157,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1971,6 +2172,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1984,6 +2187,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -1997,6 +2202,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2010,6 +2217,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2023,6 +2232,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2040,6 +2251,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2053,6 +2266,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2066,6 +2281,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2079,6 +2296,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2092,6 +2311,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2105,6 +2326,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2118,6 +2341,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2135,6 +2360,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2148,6 +2375,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2161,6 +2390,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2174,6 +2405,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2187,6 +2420,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2200,6 +2435,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2213,6 +2450,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2230,6 +2469,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2243,6 +2484,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2256,6 +2499,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2269,6 +2514,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2282,6 +2529,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2295,6 +2544,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2308,6 +2559,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2325,6 +2578,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2338,6 +2593,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2351,6 +2608,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 1er août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2364,6 +2623,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2377,6 +2638,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2390,6 +2653,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2403,6 +2668,8 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2424,6 +2691,11 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
 <table
   className="calendar "
 >
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
   <thead
     className="calendar__week-days"
   >
@@ -2507,6 +2779,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2520,6 +2794,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2533,6 +2809,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2546,6 +2824,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2559,6 +2839,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2572,6 +2854,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
         className="calendar__day calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2585,6 +2869,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 1er juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2602,6 +2888,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2615,6 +2903,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2628,6 +2918,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2641,6 +2933,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2654,6 +2948,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--disabled"
         onClick={null}
         onKeyPress={null}
@@ -2667,6 +2963,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2680,6 +2978,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2697,6 +2997,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2710,6 +3012,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2723,6 +3027,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2736,6 +3042,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2749,6 +3057,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2762,6 +3072,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2775,6 +3087,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2792,6 +3106,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2805,6 +3121,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2818,6 +3136,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2831,6 +3151,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2844,6 +3166,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2857,6 +3181,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2870,6 +3196,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2887,6 +3215,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2900,6 +3230,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2913,6 +3245,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2926,6 +3260,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2939,6 +3275,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2952,6 +3290,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2965,6 +3305,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2982,6 +3324,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -2995,6 +3339,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3008,6 +3354,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 1er août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3021,6 +3369,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3034,6 +3384,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3047,6 +3399,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3060,6 +3414,8 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3081,6 +3437,11 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
 <table
   className="calendar "
 >
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
   <thead
     className="calendar__week-days"
   >
@@ -3164,6 +3525,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3177,6 +3540,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3190,6 +3555,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3203,6 +3570,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3216,6 +3585,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3229,6 +3600,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3242,6 +3615,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 1er juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3259,6 +3634,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3272,6 +3649,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3285,6 +3664,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3298,6 +3679,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3311,6 +3694,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3324,6 +3709,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3337,6 +3724,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3354,6 +3743,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3367,6 +3758,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3380,6 +3773,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3393,6 +3788,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3406,6 +3803,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3419,6 +3818,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3432,6 +3833,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3449,6 +3852,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3462,6 +3867,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3475,6 +3882,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3488,6 +3897,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3501,6 +3912,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3514,6 +3927,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3527,6 +3942,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3544,6 +3961,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3557,6 +3976,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3570,6 +3991,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3583,6 +4006,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3596,6 +4021,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3609,6 +4036,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3622,6 +4051,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3639,6 +4070,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3652,6 +4085,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3665,6 +4100,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 1er août 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3678,6 +4115,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3691,6 +4130,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3704,6 +4145,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3717,6 +4160,8 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
         className="calendar__day calendar__day--selectable"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -3738,6 +4183,11 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
 <table
   className="calendar "
 >
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
   <thead
     className="calendar__week-days"
   >
@@ -3821,6 +4271,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3834,6 +4286,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3847,6 +4301,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3860,6 +4316,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3873,6 +4331,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3886,6 +4346,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -3899,6 +4361,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 1er juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3916,6 +4380,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3929,6 +4395,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3942,6 +4410,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3955,6 +4425,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3968,6 +4440,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3981,6 +4455,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -3994,6 +4470,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4011,6 +4489,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4024,6 +4504,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4037,6 +4519,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4050,6 +4534,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4063,6 +4549,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4076,6 +4564,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4089,6 +4579,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4106,6 +4598,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4119,6 +4613,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4132,6 +4628,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4145,6 +4643,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4158,6 +4658,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4171,6 +4673,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4184,6 +4688,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current="date"
+        aria-label="dimanche 22 juillet 2018"
         className="calendar__day calendar__day--current-month calendar__day--selected"
         onClick={null}
         onKeyPress={null}
@@ -4201,6 +4707,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4214,6 +4722,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4227,6 +4737,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4240,6 +4752,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4253,6 +4767,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4266,6 +4782,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4279,6 +4797,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4296,6 +4816,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
       className="calendar__week"
     >
       <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4309,6 +4831,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
         className="calendar__day calendar__day--current-month"
         onClick={null}
         onKeyPress={null}
@@ -4322,6 +4846,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="mercredi 1er août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -4335,6 +4861,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -4348,6 +4876,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -4361,6 +4891,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -4374,6 +4906,8 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
         </time>
       </td>
       <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
         className="calendar__day"
         onClick={null}
         onKeyPress={null}
@@ -4426,14 +4960,14 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
   <div
     className="date-picker__calendar-container"
   >
-    <h1
-      className="date-picker__date"
-    >
-      janvier 2018
-    </h1>
     <table
       className="calendar date-picker__calendar"
     >
+      <caption
+        className="calendar__month"
+      >
+        janvier 2018
+      </caption>
       <thead
         className="calendar__week-days"
       >
@@ -4517,6 +5051,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 1er janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4530,6 +5066,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 2 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4543,6 +5081,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 3 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4556,6 +5096,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 4 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4569,6 +5111,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 5 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4582,6 +5126,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 6 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4595,6 +5141,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current="date"
+            aria-label="dimanche 7 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4612,6 +5160,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 8 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4625,6 +5175,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 9 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4638,6 +5190,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 10 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4651,6 +5205,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 11 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4664,6 +5220,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 12 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4677,6 +5235,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 13 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4690,6 +5250,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 14 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4707,6 +5269,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 15 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4720,6 +5284,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 16 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4733,6 +5299,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 17 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4746,6 +5314,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 18 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4759,6 +5329,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 19 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4772,6 +5344,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 20 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4785,6 +5359,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 21 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4802,6 +5378,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 22 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4815,6 +5393,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 23 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4828,6 +5408,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 24 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4841,6 +5423,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 25 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4854,6 +5438,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 26 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4867,6 +5453,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 27 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4880,6 +5468,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 28 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4897,6 +5487,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 29 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4910,6 +5502,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 30 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4923,6 +5517,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 31 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4936,6 +5532,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 1er février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4949,6 +5547,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 2 février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4962,6 +5562,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 3 février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -4975,6 +5577,8 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 4 février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5057,14 +5661,14 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
   <div
     className="date-picker__calendar-container"
   >
-    <h1
-      className="date-picker__date"
-    >
-      janvier 2018
-    </h1>
     <table
       className="calendar date-picker__calendar"
     >
+      <caption
+        className="calendar__month"
+      >
+        janvier 2018
+      </caption>
       <thead
         className="calendar__week-days"
       >
@@ -5148,6 +5752,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 1er janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5161,6 +5767,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 2 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5174,6 +5782,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 3 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5187,6 +5797,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 4 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5200,6 +5812,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 5 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5213,6 +5827,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 6 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5226,6 +5842,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current="date"
+            aria-label="dimanche 7 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5243,6 +5861,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 8 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5256,6 +5876,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 9 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5269,6 +5891,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 10 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5282,6 +5906,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 11 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5295,6 +5921,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 12 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5308,6 +5936,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 13 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5321,6 +5951,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 14 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5338,6 +5970,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 15 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5351,6 +5985,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 16 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5364,6 +6000,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 17 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5377,6 +6015,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 18 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5390,6 +6030,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 19 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5403,6 +6045,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 20 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5416,6 +6060,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 21 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5433,6 +6079,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 22 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5446,6 +6094,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 23 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5459,6 +6109,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 24 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5472,6 +6124,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 25 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5485,6 +6139,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 26 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5498,6 +6154,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 27 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5511,6 +6169,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 28 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5528,6 +6188,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
           className="calendar__week"
         >
           <td
+            aria-current={null}
+            aria-label="lundi 29 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5541,6 +6203,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mardi 30 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5554,6 +6218,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="mercredi 31 janvier 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5567,6 +6233,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="jeudi 1er février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5580,6 +6248,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="vendredi 2 février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5593,6 +6263,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="samedi 3 février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -5606,6 +6278,8 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
             </time>
           </td>
           <td
+            aria-current={null}
+            aria-label="dimanche 4 février 2018"
             className="calendar__day calendar__day--selectable"
             onClick={[Function]}
             onKeyPress={[Function]}
@@ -7206,14 +7880,14 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
       <div
         className="date-picker__calendar-container"
       >
-        <h1
-          className="date-picker__date"
-        >
-          février 1990
-        </h1>
         <table
           className="calendar date-picker__calendar"
         >
+          <caption
+            className="calendar__month"
+          >
+            février 1990
+          </caption>
           <thead
             className="calendar__week-days"
           >
@@ -7297,6 +7971,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 29 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7310,6 +7986,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 30 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7323,6 +8001,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 31 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7336,6 +8016,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7349,6 +8031,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7362,6 +8046,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7375,6 +8061,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7392,6 +8080,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 5 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7405,6 +8095,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 6 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7418,6 +8110,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 7 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7431,6 +8125,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 8 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7444,6 +8140,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 9 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7457,6 +8155,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 10 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7470,6 +8170,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 11 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7487,6 +8189,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 12 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7500,6 +8204,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current="date"
+                aria-label="mardi 13 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7513,6 +8219,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 14 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7526,6 +8234,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 15 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7539,6 +8249,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 16 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7552,6 +8264,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 17 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7565,6 +8279,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 18 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7582,6 +8298,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 19 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7595,6 +8313,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 20 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7608,6 +8328,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 21 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7621,6 +8343,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 22 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7634,6 +8358,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 23 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7647,6 +8373,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 24 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7660,6 +8388,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 25 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7677,6 +8407,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 26 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7690,6 +8422,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 27 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7703,6 +8437,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 28 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7716,6 +8452,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7729,6 +8467,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7742,6 +8482,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7755,6 +8497,8 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7852,14 +8596,14 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
       <div
         className="date-picker__calendar-container"
       >
-        <h1
-          className="date-picker__date"
-        >
-          février 1990
-        </h1>
         <table
           className="calendar date-picker__calendar"
         >
+          <caption
+            className="calendar__month"
+          >
+            février 1990
+          </caption>
           <thead
             className="calendar__week-days"
           >
@@ -7943,6 +8687,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 29 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7956,6 +8702,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 30 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7969,6 +8717,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 31 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7982,6 +8732,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -7995,6 +8747,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8008,6 +8762,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8021,6 +8777,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8038,6 +8796,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 5 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8051,6 +8811,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 6 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8064,6 +8826,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 7 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8077,6 +8841,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 8 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8090,6 +8856,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 9 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8103,6 +8871,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 10 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8116,6 +8886,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 11 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8133,6 +8905,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 12 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8146,6 +8920,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current="date"
+                aria-label="mardi 13 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8159,6 +8935,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 14 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8172,6 +8950,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 15 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8185,6 +8965,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 16 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8198,6 +8980,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 17 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8211,6 +8995,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 18 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8228,6 +9014,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 19 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8241,6 +9029,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 20 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8254,6 +9044,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 21 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8267,6 +9059,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 22 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8280,6 +9074,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 23 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8293,6 +9089,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 24 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8306,6 +9104,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 25 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8323,6 +9123,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 26 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8336,6 +9138,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 27 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8349,6 +9153,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 28 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8362,6 +9168,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8375,6 +9183,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8388,6 +9198,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8401,6 +9213,8 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8499,14 +9313,14 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
       <div
         className="date-picker__calendar-container"
       >
-        <h1
-          className="date-picker__date"
-        >
-          février 1990
-        </h1>
         <table
           className="calendar date-picker__calendar"
         >
+          <caption
+            className="calendar__month"
+          >
+            février 1990
+          </caption>
           <thead
             className="calendar__week-days"
           >
@@ -8590,6 +9404,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 29 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8603,6 +9419,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 30 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8616,6 +9434,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 31 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8629,6 +9449,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8642,6 +9464,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8655,6 +9479,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8668,6 +9494,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8685,6 +9513,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 5 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8698,6 +9528,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 6 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8711,6 +9543,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 7 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8724,6 +9558,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 8 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8737,6 +9573,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 9 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8750,6 +9588,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 10 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8763,6 +9603,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 11 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8780,6 +9622,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 12 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8793,6 +9637,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current="date"
+                aria-label="mardi 13 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8806,6 +9652,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 14 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8819,6 +9667,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 15 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8832,6 +9682,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 16 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8845,6 +9697,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 17 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8858,6 +9712,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 18 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8875,6 +9731,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 19 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8888,6 +9746,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 20 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8901,6 +9761,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 21 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8914,6 +9776,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 22 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8927,6 +9791,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 23 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8940,6 +9806,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 24 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8953,6 +9821,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 25 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8970,6 +9840,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 26 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8983,6 +9855,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 27 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -8996,6 +9870,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 28 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9009,6 +9885,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9022,6 +9900,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9035,6 +9915,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9048,6 +9930,8 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9145,14 +10029,14 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
       <div
         className="date-picker__calendar-container"
       >
-        <h1
-          className="date-picker__date"
-        >
-          février 1990
-        </h1>
         <table
           className="calendar date-picker__calendar"
         >
+          <caption
+            className="calendar__month"
+          >
+            février 1990
+          </caption>
           <thead
             className="calendar__week-days"
           >
@@ -9236,6 +10120,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 29 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9249,6 +10135,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 30 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9262,6 +10150,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 31 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9275,6 +10165,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9288,6 +10180,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9301,6 +10195,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9314,6 +10210,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9331,6 +10229,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 5 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9344,6 +10244,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 6 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9357,6 +10259,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 7 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9370,6 +10274,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 8 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9383,6 +10289,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 9 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9396,6 +10304,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 10 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9409,6 +10319,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 11 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9426,6 +10338,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 12 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9439,6 +10353,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current="date"
+                aria-label="mardi 13 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9452,6 +10368,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 14 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9465,6 +10383,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 15 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9478,6 +10398,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 16 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9491,6 +10413,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 17 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9504,6 +10428,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 18 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9521,6 +10447,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 19 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9534,6 +10462,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 20 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9547,6 +10477,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 21 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9560,6 +10492,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 22 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9573,6 +10507,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 23 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9586,6 +10522,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 24 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9599,6 +10537,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 25 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9616,6 +10556,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 26 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9629,6 +10571,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 27 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9642,6 +10586,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 28 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9655,6 +10601,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9668,6 +10616,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9681,6 +10631,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9694,6 +10646,8 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9791,14 +10745,14 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
       <div
         className="date-picker__calendar-container"
       >
-        <h1
-          className="date-picker__date"
-        >
-          février 1990
-        </h1>
         <table
           className="calendar date-picker__calendar"
         >
+          <caption
+            className="calendar__month"
+          >
+            février 1990
+          </caption>
           <thead
             className="calendar__week-days"
           >
@@ -9882,6 +10836,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 29 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9895,6 +10851,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 30 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9908,6 +10866,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 31 janvier 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9921,6 +10881,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9934,6 +10896,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9947,6 +10911,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9960,6 +10926,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9977,6 +10945,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 5 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -9990,6 +10960,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 6 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10003,6 +10975,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 7 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10016,6 +10990,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 8 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10029,6 +11005,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 9 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10042,6 +11020,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 10 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10055,6 +11035,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 11 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10072,6 +11054,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 12 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10085,6 +11069,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current="date"
+                aria-label="mardi 13 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10098,6 +11084,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 14 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10111,6 +11099,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 15 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10124,6 +11114,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 16 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10137,6 +11129,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 17 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10150,6 +11144,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 18 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10167,6 +11163,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 19 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10180,6 +11178,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 20 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10193,6 +11193,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 21 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10206,6 +11208,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 22 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10219,6 +11223,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 23 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10232,6 +11238,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 24 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10245,6 +11253,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 25 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10262,6 +11272,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
               className="calendar__week"
             >
               <td
+                aria-current={null}
+                aria-label="lundi 26 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10275,6 +11287,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mardi 27 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10288,6 +11302,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="mercredi 28 février 1990"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10301,6 +11317,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="jeudi 1er mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10314,6 +11332,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="vendredi 2 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10327,6 +11347,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="samedi 3 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}
@@ -10340,6 +11362,8 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
                 </time>
               </td>
               <td
+                aria-current={null}
+                aria-label="dimanche 4 mars 1990"
                 className="calendar__day calendar__day--selectable"
                 onClick={[Function]}
                 onKeyPress={[Function]}

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { parse, addMonths, format } from "date-fns";
-import frLocale from "date-fns/locale/fr";
+import { parse, addMonths } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -76,8 +75,6 @@ export default class DatePicker extends React.PureComponent {
     const { value, minDate, maxDate } = this.props;
     const { viewDate } = this.state;
 
-    const parsedViewDate = parse(viewDate || value);
-
     return (
       <section className="date-picker">
         <div className="date-picker__previous-month-container">
@@ -86,7 +83,6 @@ export default class DatePicker extends React.PureComponent {
           </Button>
         </div>
         <div className="date-picker__calendar-container">
-          <h1 className="date-picker__date">{format(parsedViewDate, "MMMM YYYY", { locale: frLocale })}</h1>
           <Calendar
             ref={this.calendarRef}
             className="date-picker__calendar"

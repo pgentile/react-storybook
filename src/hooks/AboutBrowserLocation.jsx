@@ -1,9 +1,9 @@
-import React, { memo, useMemo } from "react";
+import React, { useMemo } from "react";
 import useLocation from "react-use/lib/useLocation";
 
 import "./AboutBrowserLocation.scss";
 
-export default memo(function AboutBrowserLocation() {
+export default function AboutBrowserLocation() {
   const location = useLocation();
   const searchParams = useURLSearchParams();
 
@@ -30,7 +30,7 @@ export default memo(function AboutBrowserLocation() {
       </p>
     </div>
   );
-});
+}
 
 function useURLSearchParams() {
   const location = useLocation();

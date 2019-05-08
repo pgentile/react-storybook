@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect, useDebugValue } from "react";
+import React, { useState, useEffect, useDebugValue } from "react";
 import { Machine } from "xstate";
 import { interpret } from "xstate/lib/interpreter";
 
@@ -39,7 +39,7 @@ const MACHINE = Machine({
 
 const LIGHT_COLORS = ["red", "orange", "green"];
 
-export default memo(function TrafficLight() {
+export default function TrafficLight() {
   const [current] = useMachine(MACHINE);
 
   const lights = LIGHT_COLORS.map(color => {
@@ -51,7 +51,7 @@ export default memo(function TrafficLight() {
   });
 
   return <div className="traffic-light">{lights}</div>;
-});
+}
 
 export function useMachine(machine) {
   // Keep track of the current machine state

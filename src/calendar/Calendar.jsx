@@ -13,6 +13,7 @@ import {
   parse,
   isSameDay
 } from "date-fns";
+import frLocale from "date-fns/locale/fr";
 import memoizeOne from "memoize-one";
 
 import bemModifiers from "../utils/bemModifiers";
@@ -58,6 +59,7 @@ export default class Calendar extends React.PureComponent {
       const day = {
         date,
         formattedDate: format(date, "YYYY-MM-DD"),
+        label: format(date, "dddd Do MMMM YYYY", { locale: frLocale }),
         dayNumber: format(date, "D"),
         currentMonth: !isBefore(date, monthFirstDay) && !isAfter(date, monthLastDay)
       };
@@ -125,12 +127,13 @@ export default class Calendar extends React.PureComponent {
       const columns = weekDays.map(day => {
         const disabled = !isDateBetweenMinMax(day.date);
         const selectable = !!onSelect && !disabled;
+        const sameDate = isSameDay(day.date, selectedDate);
 
         const dayClassName = bemModifiers("calendar__day", {
           "current-month": day.currentMonth,
           selectable: !!onSelect && !disabled,
           disabled,
-          selected: selectedDate ? isSameDay(day.date, selectedDate) : false
+          selected: selectedDate ? sameDate : false
         });
         return (
           <td
@@ -140,6 +143,8 @@ export default class Calendar extends React.PureComponent {
             onKeyPress={selectable ? event => this.onCellKeyPress(event, day.formattedDate) : null}
             role={!disabled && selectable ? "button" : null}
             tabIndex={!disabled && selectable ? 0 : null}
+            aria-current={sameDate ? "date" : null}
+            aria-label={day.label}
           >
             <time dateTime={day.formattedDate}>{day.dayNumber}</time>
           </td>
@@ -155,6 +160,7 @@ export default class Calendar extends React.PureComponent {
 
     return (
       <table className={"calendar " + className} ref={this.ref}>
+        <caption className="calendar__month">{format(viewDate, "MMMM YYYY", { locale: frLocale })}</caption>
         <thead className="calendar__week-days">
           <tr>{weekDayRows}</tr>
         </thead>

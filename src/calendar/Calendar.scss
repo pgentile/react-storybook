@@ -13,6 +13,20 @@
     font-size: 1rem;
   }
 
+  &__month {
+    margin: 0;
+    // margin-bottom: 0.5rem;
+    padding: 0;
+    padding-bottom: 0.5rem;
+
+    border-bottom: #999 solid 1px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    text-align: center;
+  }
+
   &__week-day, &__day {
     padding: 0.5rem;
     text-align: center;
