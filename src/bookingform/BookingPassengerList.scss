@@ -1,0 +1,9 @@
+.booking-passenger-list {
+  &__passenger {
+    padding: 1rem;
+
+    &--even {
+      background-color: #EEE;
+    }
+  }
+}

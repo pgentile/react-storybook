@@ -201,6 +201,511 @@ exports[`Storyshots Auth / AuthWidget main 1`] = `
 </div>
 `;
 
+exports[`Storyshots Booking form | BookingPassenger base 1`] = `
+<section
+  className="booking-passenger "
+>
+  <h1
+    className="booking-passenger__title"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-user fa-w-14 "
+      data-icon="user"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+     Passager n°
+    1
+     
+  </h1>
+  <div
+    className="booking-passenger__spec"
+  >
+    <p
+      className="booking-passenger__age"
+    >
+      Âge
+    </p>
+    <p
+      className="booking-passenger__fare-profile"
+    >
+      Profil tarifaire
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Booking form | BookingPassenger name 1`] = `
+<section
+  className="booking-passenger "
+>
+  <h1
+    className="booking-passenger__title"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-user fa-w-14 "
+      data-icon="user"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+     Passager n°
+    1
+     
+    <span
+      className="booking-passenger__name"
+    >
+      — 
+      Jean Bon
+    </span>
+  </h1>
+  <div
+    className="booking-passenger__spec"
+  >
+    <p
+      className="booking-passenger__age"
+    >
+      Âge
+    </p>
+    <p
+      className="booking-passenger__fare-profile"
+    >
+      Profil tarifaire
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Booking form | BookingPassengerList main 1`] = `
+<section
+  className="booking-passenger-list "
+>
+  <section
+    className="booking-passenger booking-passenger-list__passenger"
+  >
+    <h1
+      className="booking-passenger__title"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 "
+        data-icon="user"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+       Passager n°
+      1
+       
+      <span
+        className="booking-passenger__name"
+      >
+        — 
+        Jean Bon
+      </span>
+    </h1>
+    <div
+      className="booking-passenger__spec"
+    >
+      <p
+        className="booking-passenger__age"
+      >
+        Âge
+      </p>
+      <p
+        className="booking-passenger__fare-profile"
+      >
+        Profil tarifaire
+      </p>
+    </div>
+  </section>
+  <section
+    className="booking-passenger booking-passenger-list__passenger booking-passenger-list__passenger--even"
+  >
+    <h1
+      className="booking-passenger__title"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 "
+        data-icon="user"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+       Passager n°
+      2
+       
+      <span
+        className="booking-passenger__name"
+      >
+        — 
+        Debbie Loss
+      </span>
+    </h1>
+    <div
+      className="booking-passenger__spec"
+    >
+      <p
+        className="booking-passenger__age"
+      >
+        Âge
+      </p>
+      <p
+        className="booking-passenger__fare-profile"
+      >
+        Profil tarifaire
+      </p>
+    </div>
+  </section>
+  <section
+    className="booking-passenger booking-passenger-list__passenger"
+  >
+    <h1
+      className="booking-passenger__title"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 "
+        data-icon="user"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+       Passager n°
+      3
+       
+    </h1>
+    <div
+      className="booking-passenger__spec"
+    >
+      <p
+        className="booking-passenger__age"
+      >
+        Âge
+      </p>
+      <p
+        className="booking-passenger__fare-profile"
+      >
+        Profil tarifaire
+      </p>
+    </div>
+  </section>
+   
+</section>
+`;
+
+exports[`Storyshots Booking form | BookingPassengers main 1`] = `
+<section
+  className="booking-passengers"
+>
+  <div
+    className="booking-passengers__controls"
+  >
+    5 passager(s)
+     
+    <button
+      aria-pressed={false}
+      className="button button--size-normal "
+      disabled={false}
+      onClick={[Function]}
+    >
+      Ajouter un passager
+    </button>
+     
+    <button
+      aria-pressed={false}
+      className="button button--size-normal "
+      disabled={false}
+      onClick={[Function]}
+    >
+      Supprimer un passager
+    </button>
+  </div>
+  <section
+    className="booking-passenger-list booking-passengers__list"
+  >
+    <section
+      className="booking-passenger booking-passenger-list__passenger"
+    >
+      <h1
+        className="booking-passenger__title"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 "
+          data-icon="user"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         Passager n°
+        1
+         
+        <span
+          className="booking-passenger__name"
+        >
+          — 
+          Jean Bon
+        </span>
+      </h1>
+      <div
+        className="booking-passenger__spec"
+      >
+        <p
+          className="booking-passenger__age"
+        >
+          Âge
+        </p>
+        <p
+          className="booking-passenger__fare-profile"
+        >
+          Profil tarifaire
+        </p>
+      </div>
+    </section>
+    <section
+      className="booking-passenger booking-passenger-list__passenger booking-passenger-list__passenger--even"
+    >
+      <h1
+        className="booking-passenger__title"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 "
+          data-icon="user"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         Passager n°
+        2
+         
+        <span
+          className="booking-passenger__name"
+        >
+          — 
+          Debbie Loss
+        </span>
+      </h1>
+      <div
+        className="booking-passenger__spec"
+      >
+        <p
+          className="booking-passenger__age"
+        >
+          Âge
+        </p>
+        <p
+          className="booking-passenger__fare-profile"
+        >
+          Profil tarifaire
+        </p>
+      </div>
+    </section>
+    <section
+      className="booking-passenger booking-passenger-list__passenger"
+    >
+      <h1
+        className="booking-passenger__title"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 "
+          data-icon="user"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         Passager n°
+        3
+         
+      </h1>
+      <div
+        className="booking-passenger__spec"
+      >
+        <p
+          className="booking-passenger__age"
+        >
+          Âge
+        </p>
+        <p
+          className="booking-passenger__fare-profile"
+        >
+          Profil tarifaire
+        </p>
+      </div>
+    </section>
+    <section
+      className="booking-passenger booking-passenger-list__passenger booking-passenger-list__passenger--even"
+    >
+      <h1
+        className="booking-passenger__title"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 "
+          data-icon="user"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         Passager n°
+        4
+         
+        <span
+          className="booking-passenger__name"
+        >
+          — 
+          Guy Gnol
+        </span>
+      </h1>
+      <div
+        className="booking-passenger__spec"
+      >
+        <p
+          className="booking-passenger__age"
+        >
+          Âge
+        </p>
+        <p
+          className="booking-passenger__fare-profile"
+        >
+          Profil tarifaire
+        </p>
+      </div>
+    </section>
+    <section
+      className="booking-passenger booking-passenger-list__passenger"
+    >
+      <h1
+        className="booking-passenger__title"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 "
+          data-icon="user"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         Passager n°
+        5
+         
+      </h1>
+      <div
+        className="booking-passenger__spec"
+      >
+        <p
+          className="booking-passenger__age"
+        >
+          Âge
+        </p>
+        <p
+          className="booking-passenger__fare-profile"
+        >
+          Profil tarifaire
+        </p>
+      </div>
+    </section>
+     
+  </section>
+</section>
+`;
+
 exports[`Storyshots Buttons / Button Taille large 1`] = `
 <button
   aria-pressed={false}

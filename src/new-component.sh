@@ -21,8 +21,6 @@ export default function $name() {
 }
 
 $name.propTypes = {};
-
-$name.defaultProps = {};
 EOF
 
 cat >$name.stories.jsx <<EOF
