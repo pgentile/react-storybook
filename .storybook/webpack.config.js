@@ -9,9 +9,29 @@
 const path = require("path");
 
 module.exports = ({config}) => {
+
+  // Need to debug a ES5 transpilation error? Enable the following lines
+  // config.optimization = {
+  //   ...(config.optimization || {}),
+  //   minimize: false,
+  //   namedModules: true
+  // };
+
+  const modulesToTranspile = [
+    "query-string",
+    "strict-uri-encode",
+    "@storybook",
+    "loki",
+    "react-use",
+    "callbag-subscribe",
+    "react-spring"
+  ];
+
+  const modulesToTranspilePattern = `[/\\]node_modules[/\\](${modulesToTranspile.join("|")})[/\\]`;
+
   config.module.rules.unshift({
     test: /\.jsx?$/,
-    include: /.*node_modules[/\\](query-string|strict-uri-encode|@storybook|loki|react-use|callbag-subscribe).*/,
+    include: new RegExp(modulesToTranspilePattern),
     use: [
       {
         loader: "babel-loader?cacheDirectory"
