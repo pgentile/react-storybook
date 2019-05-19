@@ -27,7 +27,7 @@ module.exports = ({config}) => {
     "react-spring"
   ];
 
-  const modulesToTranspilePattern = `[/\\]node_modules[/\\](${modulesToTranspile.join("|")})[/\\]`;
+  const modulesToTranspilePattern = `[/\\\\]node_modules[/\\\\](${modulesToTranspile.join("|")})[/\\\\]`;
 
   config.module.rules.unshift({
     test: /\.jsx?$/,
