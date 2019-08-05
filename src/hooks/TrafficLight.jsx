@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useDebugValue } from "react";
+import React from "react";
 import { Machine } from "xstate";
-import { interpret } from "xstate/lib/interpreter";
+import { useMachine } from "@xstate/react";
 
 import bemModifiers from "../utils/bemModifiers";
 
@@ -51,22 +51,4 @@ export default function TrafficLight() {
   });
 
   return <div className="traffic-light">{lights}</div>;
-}
-
-export function useMachine(machine) {
-  // Keep track of the current machine state
-  const [current, setCurrent] = useState(machine.initialState);
-
-  const [service] = useState(() => {
-    return interpret(machine).onTransition(state => setCurrent(state));
-  });
-
-  useEffect(() => {
-    service.start();
-    return () => service.stop();
-  }, []);
-
-  useDebugValue(`Current state is ${current.value}`);
-
-  return [current, service.send];
 }
