@@ -40,8 +40,7 @@ class RegistredCardCvvForm extends React.PureComponent {
       handleBlur,
       handleSubmit,
       handleReset,
-      isSubmitting,
-      isValid
+      isSubmitting
     } = this.props;
     const disableForm = isSubmitting || disabled;
 
@@ -76,7 +75,7 @@ class RegistredCardCvvForm extends React.PureComponent {
           )}
         </FieldContainer>
         <div className="registred-card-cvv-form__buttons">
-          <Button type="submit" size="small" showDisabled={!isValid} disabled={disableForm}>
+          <Button type="submit" size="small" disabled={disableForm}>
             Payer&nbsp;
             <Price noColor price={totalPrice} />
           </Button>

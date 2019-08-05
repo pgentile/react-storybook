@@ -32,13 +32,12 @@ class CreateUserAccountForm extends React.PureComponent {
       handleSubmit,
       isSubmitting,
       setFieldValue,
-      setFieldTouched,
-      isValid
+      setFieldTouched
     } = this.props;
     const disableForm = isSubmitting;
 
     return (
-      <form className={`create-user-account-form ${className}`} onSubmit={handleSubmit}>
+      <form className={`create-user-account-form ${className}`} onSubmit={handleSubmit} noValidate>
         <FieldContainer
           label="Prénom"
           className="create-user-account-form__firstname"
@@ -168,7 +167,7 @@ class CreateUserAccountForm extends React.PureComponent {
         </FieldContainer>
 
         <div className="create-user-account-form__button">
-          <Button size="large" type="submit" showDisabled={!isValid} disabled={disableForm}>
+          <Button size="large" type="submit" disabled={disableForm}>
             Créer le compte utilisateur
           </Button>
         </div>

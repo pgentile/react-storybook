@@ -21,13 +21,6 @@ const stories = storiesOf("Buttons / Button", module)
       </Button>
     );
   })
-  .add("show disabled", () => {
-    return (
-      <Button {...actions} showDisabled>
-        Mon bouton
-      </Button>
-    );
-  })
   .add("flat", () => {
     return (
       <Button {...actions} flat>

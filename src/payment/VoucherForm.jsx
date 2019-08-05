@@ -34,7 +34,6 @@ class VoucherForm extends React.PureComponent {
       handleBlur,
       handleSubmit,
       isSubmitting,
-      isValid,
       status
     } = this.props;
     const { submissionStatus, errorMessage } = status || {};
@@ -67,7 +66,6 @@ class VoucherForm extends React.PureComponent {
             className="voucher-form__button"
             type="submit"
             size="small"
-            showDisabled={!isValid}
             disabled={disableForm}
             loading={isSubmitting}
             finished={success}

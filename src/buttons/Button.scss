@@ -35,7 +35,7 @@
     background-color: darken($background-color, 10%);
   }
 
-  &:disabled, &--disabled {
+  &:disabled {
     transition: none;
 
     border-color: $border-color;

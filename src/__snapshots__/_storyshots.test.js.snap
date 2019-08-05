@@ -767,16 +767,6 @@ exports[`Storyshots Buttons / Button main 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons / Button show disabled 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--disabled button--size-normal "
-  onClick={[Function]}
->
-  Mon bouton
-</button>
-`;
-
 exports[`Storyshots Buttons / Button toggled 1`] = `
 <button
   aria-pressed={true}
@@ -13055,7 +13045,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
   >
     <button
       aria-pressed={false}
-      className="button button--disabled button--size-large "
+      className="button button--size-large "
       disabled={false}
       type="submit"
     >
@@ -15654,7 +15644,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
         >
           <button
             aria-pressed={false}
-            className="button button--disabled button--size-large "
+            className="button button--size-large "
             disabled={false}
             type="submit"
           >
@@ -16003,7 +15993,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
     >
       <button
         aria-pressed={false}
-        className="button button--disabled button--size-large "
+        className="button button--size-large "
         disabled={false}
         type="submit"
       >
@@ -16350,7 +16340,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
     >
       <button
         aria-pressed={false}
-        className="button button--disabled button--size-large "
+        className="button button--size-large "
         disabled={false}
         type="submit"
       >
@@ -16888,7 +16878,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
   >
     <button
       aria-pressed={false}
-      className="button button--disabled button--size-small "
+      className="button button--size-small "
       type="submit"
     >
       Payer 
@@ -16964,7 +16954,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
   >
     <button
       aria-pressed={false}
-      className="button button--disabled button--size-small "
+      className="button button--size-small "
       disabled={true}
       type="submit"
     >
@@ -17126,7 +17116,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
   >
     <button
       aria-pressed={false}
-      className="button button--disabled button--size-small "
+      className="button button--size-small "
       type="submit"
     >
       Payer 
@@ -17201,7 +17191,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
   >
     <button
       aria-pressed={false}
-      className="button button--disabled button--size-small "
+      className="button button--size-small "
       type="submit"
     >
       Payer 
@@ -18110,7 +18100,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
                 >
                   <button
                     aria-pressed={false}
-                    className="button button--disabled button--size-small "
+                    className="button button--size-small "
                     disabled={true}
                     type="submit"
                   >
@@ -18289,7 +18279,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
                 >
                   <button
                     aria-pressed={false}
-                    className="button button--disabled button--size-small "
+                    className="button button--size-small "
                     disabled={true}
                     type="submit"
                   >
@@ -18467,7 +18457,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
                 >
                   <button
                     aria-pressed={false}
-                    className="button button--disabled button--size-small "
+                    className="button button--size-small "
                     disabled={false}
                     type="submit"
                   >
@@ -18645,7 +18635,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
                 >
                   <button
                     aria-pressed={false}
-                    className="button button--disabled button--size-small "
+                    className="button button--size-small "
                     disabled={true}
                     type="submit"
                   >
@@ -18827,7 +18817,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
                   >
                     <button
                       aria-pressed={false}
-                      className="button button--disabled button--size-small "
+                      className="button button--size-small "
                       disabled={true}
                       type="submit"
                     >
@@ -19003,7 +18993,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
                   >
                     <button
                       aria-pressed={false}
-                      className="button button--disabled button--size-small "
+                      className="button button--size-small "
                       disabled={true}
                       type="submit"
                     >
@@ -19179,7 +19169,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
                   >
                     <button
                       aria-pressed={false}
-                      className="button button--disabled button--size-small "
+                      className="button button--size-small "
                       disabled={true}
                       type="submit"
                     >
@@ -19542,7 +19532,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
                   >
                     <button
                       aria-pressed={false}
-                      className="button button--disabled button--size-small "
+                      className="button button--size-small "
                       disabled={true}
                       type="submit"
                     >
@@ -19717,7 +19707,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
                   >
                     <button
                       aria-pressed={false}
-                      className="button button--disabled button--size-small "
+                      className="button button--size-small "
                       disabled={true}
                       type="submit"
                     >
@@ -19892,7 +19882,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
                   >
                     <button
                       aria-pressed={false}
-                      className="button button--disabled button--size-small "
+                      className="button button--size-small "
                       disabled={true}
                       type="submit"
                     >
@@ -20175,7 +20165,7 @@ exports[`Storyshots Payment | VoucherForm Défaut 1`] = `
   >
     <button
       aria-pressed={false}
-      className="button button--disabled button--size-small progress-button voucher-form__button"
+      className="button button--size-small progress-button voucher-form__button"
       disabled={false}
       type="submit"
     >
@@ -21165,6 +21155,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
 <div>
   <form
     className="create-user-account-form "
+    noValidate={true}
     onSubmit={[Function]}
   >
     <div
@@ -21404,7 +21395,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
     >
       <button
         aria-pressed={false}
-        className="button button--disabled button--size-large "
+        className="button button--size-large "
         disabled={false}
         type="submit"
       >

@@ -40,8 +40,7 @@ class CreditCardForm extends React.PureComponent {
       handleSubmit,
       setFieldValue,
       setFieldTouched,
-      isSubmitting,
-      isValid
+      isSubmitting
     } = this.props;
     const disableForm = isSubmitting;
 
@@ -116,7 +115,7 @@ class CreditCardForm extends React.PureComponent {
         </FieldContainer>
 
         <div className="credit-card-form__button">
-          <Button size="large" type="submit" showDisabled={!isValid} disabled={disableForm}>
+          <Button size="large" type="submit" disabled={disableForm}>
             Payer&nbsp;
             <Price noColor price={totalPrice} />
           </Button>
