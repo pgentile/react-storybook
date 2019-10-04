@@ -210,7 +210,7 @@ exports[`Storyshots Booking form | BookingPassenger base 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-user fa-w-14 "
+      className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
       data-icon="user"
       data-prefix="fas"
       focusable="false"
@@ -255,7 +255,7 @@ exports[`Storyshots Booking form | BookingPassenger name 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-user fa-w-14 "
+      className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
       data-icon="user"
       data-prefix="fas"
       focusable="false"
@@ -309,7 +309,7 @@ exports[`Storyshots Booking form | BookingPassengerList main 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 "
+        className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
         data-icon="user"
         data-prefix="fas"
         focusable="false"
@@ -357,7 +357,7 @@ exports[`Storyshots Booking form | BookingPassengerList main 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 "
+        className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
         data-icon="user"
         data-prefix="fas"
         focusable="false"
@@ -405,7 +405,7 @@ exports[`Storyshots Booking form | BookingPassengerList main 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 "
+        className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
         data-icon="user"
         data-prefix="fas"
         focusable="false"
@@ -481,7 +481,7 @@ exports[`Storyshots Booking form | BookingPassengers main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 "
+          className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="user"
           data-prefix="fas"
           focusable="false"
@@ -529,7 +529,7 @@ exports[`Storyshots Booking form | BookingPassengers main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 "
+          className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="user"
           data-prefix="fas"
           focusable="false"
@@ -577,7 +577,7 @@ exports[`Storyshots Booking form | BookingPassengers main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 "
+          className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="user"
           data-prefix="fas"
           focusable="false"
@@ -619,7 +619,7 @@ exports[`Storyshots Booking form | BookingPassengers main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 "
+          className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="user"
           data-prefix="fas"
           focusable="false"
@@ -667,7 +667,7 @@ exports[`Storyshots Booking form | BookingPassengers main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 "
+          className="svg-inline--fa fa-user fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="user"
           data-prefix="fas"
           focusable="false"
@@ -5435,7 +5435,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+        className="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-null fa-rotate-null fa-pull-null "
         data-icon="chevron-circle-left"
         data-prefix="fas"
         focusable="false"
@@ -6101,7 +6101,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+        className="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-null fa-rotate-null fa-pull-null "
         data-icon="chevron-circle-right"
         data-prefix="fas"
         focusable="false"
@@ -6136,7 +6136,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+        className="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-null fa-rotate-null fa-pull-null "
         data-icon="chevron-circle-left"
         data-prefix="fas"
         focusable="false"
@@ -6802,7 +6802,7 @@ exports[`Storyshots Calendar / DatePicker main 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+        className="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-null fa-rotate-null fa-pull-null "
         data-icon="chevron-circle-right"
         data-prefix="fas"
         focusable="false"
@@ -7727,7 +7727,7 @@ exports[`Storyshots Forms / CheckableImageInput checked 1`] = `
   />
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
     data-icon="cc-visa"
     data-prefix="fab"
     focusable="false"
@@ -7764,7 +7764,7 @@ exports[`Storyshots Forms / CheckableImageInput disabled 1`] = `
   />
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
     data-icon="cc-visa"
     data-prefix="fab"
     focusable="false"
@@ -7803,7 +7803,7 @@ exports[`Storyshots Forms / CheckableImageInput disabled and checked 1`] = `
   />
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
     data-icon="cc-visa"
     data-prefix="fab"
     focusable="false"
@@ -7841,7 +7841,7 @@ Array [
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-visa"
       data-prefix="fab"
       focusable="false"
@@ -7873,7 +7873,7 @@ Array [
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-mastercard"
       data-prefix="fab"
       focusable="false"
@@ -7905,7 +7905,7 @@ Array [
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-amex"
       data-prefix="fab"
       focusable="false"
@@ -7943,7 +7943,7 @@ exports[`Storyshots Forms / CheckableImageInput readOnly 1`] = `
   />
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
     data-icon="cc-visa"
     data-prefix="fab"
     focusable="false"
@@ -7978,7 +7978,7 @@ exports[`Storyshots Forms / CheckableImageInput unchecked 1`] = `
   />
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+    className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
     data-icon="cc-visa"
     data-prefix="fab"
     focusable="false"
@@ -8407,7 +8407,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-left"
             data-prefix="fas"
             focusable="false"
@@ -9073,7 +9073,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-right"
             data-prefix="fas"
             focusable="false"
@@ -9123,7 +9123,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-left"
             data-prefix="fas"
             focusable="false"
@@ -9789,7 +9789,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-right"
             data-prefix="fas"
             focusable="false"
@@ -9840,7 +9840,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-left"
             data-prefix="fas"
             focusable="false"
@@ -10506,7 +10506,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-right"
             data-prefix="fas"
             focusable="false"
@@ -10556,7 +10556,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-left"
             data-prefix="fas"
             focusable="false"
@@ -11222,7 +11222,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-right"
             data-prefix="fas"
             focusable="false"
@@ -11272,7 +11272,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-left"
             data-prefix="fas"
             focusable="false"
@@ -11938,7 +11938,7 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+            className="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-null fa-rotate-null fa-pull-null "
             data-icon="chevron-circle-right"
             data-prefix="fas"
             focusable="false"
@@ -12352,7 +12352,7 @@ exports[`Storyshots Forms / SuperRadio checked 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
+            className="svg-inline--fa fa-coffee fa-w-20 fa-3x fa-rotate-null fa-pull-null "
             data-icon="coffee"
             data-prefix="fas"
             focusable="false"
@@ -12422,7 +12422,7 @@ exports[`Storyshots Forms / SuperRadio help 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
+            className="svg-inline--fa fa-coffee fa-w-20 fa-3x fa-rotate-null fa-pull-null "
             data-icon="coffee"
             data-prefix="fas"
             focusable="false"
@@ -12466,7 +12466,7 @@ exports[`Storyshots Forms / SuperRadio help 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-question-circle fa-w-16 fa-1x super-radio__help-icon"
+            className="svg-inline--fa fa-question-circle fa-w-16 fa-1x fa-rotate-null fa-pull-null super-radio__help-icon"
             data-icon="question-circle"
             data-prefix="fas"
             focusable="false"
@@ -12538,7 +12538,7 @@ exports[`Storyshots Forms / SuperRadio main 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
+            className="svg-inline--fa fa-coffee fa-w-20 fa-3x fa-rotate-null fa-pull-null "
             data-icon="coffee"
             data-prefix="fas"
             focusable="false"
@@ -13144,7 +13144,7 @@ exports[`Storyshots Payment | Donation / Donation no donation selected 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-null fa-rotate-null fa-pull-null expandable-icon "
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -13244,7 +13244,7 @@ exports[`Storyshots Payment | Donation / DonationProposal main 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-null fa-rotate-null fa-pull-null expandable-icon "
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -13406,7 +13406,7 @@ exports[`Storyshots Payment | OrderEditor Avec un code promo 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
             data-icon="trash-alt"
             data-prefix="fas"
             focusable="false"
@@ -13457,7 +13457,7 @@ exports[`Storyshots Payment | OrderEditor Avec un code promo 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
             data-icon="trash-alt"
             data-prefix="fas"
             focusable="false"
@@ -13560,7 +13560,7 @@ exports[`Storyshots Payment | OrderEditor Avec un code promo 1`] = `
               <span>
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-null fa-rotate-null fa-pull-null expandable-icon "
                   data-icon="angle-up"
                   data-prefix="fas"
                   focusable="false"
@@ -13687,7 +13687,7 @@ exports[`Storyshots Payment | OrderEditor Avec un don 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
             data-icon="trash-alt"
             data-prefix="fas"
             focusable="false"
@@ -13898,7 +13898,7 @@ exports[`Storyshots Payment | OrderEditor Billets & assurances 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
+            className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
             data-icon="trash-alt"
             data-prefix="fas"
             focusable="false"
@@ -14012,7 +14012,7 @@ exports[`Storyshots Payment | OrderEditor Billets & assurances 1`] = `
               <span>
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-null fa-rotate-null fa-pull-null expandable-icon "
                   data-icon="angle-up"
                   data-prefix="fas"
                   focusable="false"
@@ -14202,7 +14202,7 @@ exports[`Storyshots Payment | OrderEditor Billets uniquement 1`] = `
               <span>
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-null fa-rotate-null fa-pull-null expandable-icon "
                   data-icon="angle-up"
                   data-prefix="fas"
                   focusable="false"
@@ -14392,7 +14392,7 @@ exports[`Storyshots Payment | OrderEditorConnected main 1`] = `
               <span>
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-null fa-rotate-null fa-pull-null expandable-icon "
                   data-icon="angle-up"
                   data-prefix="fas"
                   focusable="false"
@@ -14508,7 +14508,7 @@ exports[`Storyshots Payment | OrderSummary Avec un code promo 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="trash-alt"
           data-prefix="fas"
           focusable="false"
@@ -14559,7 +14559,7 @@ exports[`Storyshots Payment | OrderSummary Avec un code promo 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="trash-alt"
           data-prefix="fas"
           focusable="false"
@@ -14680,7 +14680,7 @@ exports[`Storyshots Payment | OrderSummary Avec un don 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="trash-alt"
           data-prefix="fas"
           focusable="false"
@@ -14801,7 +14801,7 @@ exports[`Storyshots Payment | OrderSummary Billets & assurances 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="trash-alt"
           data-prefix="fas"
           focusable="false"
@@ -14957,7 +14957,7 @@ exports[`Storyshots Payment | OrderSummary Tous les types 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="trash-alt"
           data-prefix="fas"
           focusable="false"
@@ -15008,7 +15008,7 @@ exports[`Storyshots Payment | OrderSummary Tous les types 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="trash-alt"
           data-prefix="fas"
           focusable="false"
@@ -15059,7 +15059,7 @@ exports[`Storyshots Payment | OrderSummary Tous les types 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-trash-alt fa-w-14 "
+          className="svg-inline--fa fa-trash-alt fa-w-14 fa-null fa-rotate-null fa-pull-null "
           data-icon="trash-alt"
           data-prefix="fas"
           focusable="false"
@@ -15260,7 +15260,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
                   <span>
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-angle-up fa-w-10 expandable-icon "
+                      className="svg-inline--fa fa-angle-up fa-w-10 fa-null fa-rotate-null fa-pull-null expandable-icon "
                       data-icon="angle-up"
                       data-prefix="fas"
                       focusable="false"
@@ -15364,7 +15364,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+            className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
             data-icon="credit-card"
             data-prefix="fas"
             focusable="false"
@@ -15400,7 +15400,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+            className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
             data-icon="cc-visa"
             data-prefix="fab"
             focusable="false"
@@ -15436,7 +15436,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x "
+            className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x fa-rotate-null fa-pull-null "
             data-icon="cc-mastercard"
             data-prefix="fab"
             focusable="false"
@@ -15472,7 +15472,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+            className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
             data-icon="credit-card"
             data-prefix="fas"
             focusable="false"
@@ -15508,7 +15508,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x "
+            className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x fa-rotate-null fa-pull-null "
             data-icon="cc-amex"
             data-prefix="fab"
             focusable="false"
@@ -15713,7 +15713,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -15749,7 +15749,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+        className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="cc-visa"
         data-prefix="fab"
         focusable="false"
@@ -15785,7 +15785,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x "
+        className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="cc-mastercard"
         data-prefix="fab"
         focusable="false"
@@ -15821,7 +15821,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -15857,7 +15857,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x "
+        className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="cc-amex"
         data-prefix="fab"
         focusable="false"
@@ -16060,7 +16060,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -16096,7 +16096,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+        className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="cc-visa"
         data-prefix="fab"
         focusable="false"
@@ -16132,7 +16132,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x "
+        className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="cc-mastercard"
         data-prefix="fab"
         focusable="false"
@@ -16168,7 +16168,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -16204,7 +16204,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x "
+        className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x fa-rotate-null fa-pull-null "
         data-icon="cc-amex"
         data-prefix="fab"
         focusable="false"
@@ -16396,7 +16396,7 @@ exports[`Storyshots Payment | PaymentMeans disabled 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-visa"
       data-prefix="fab"
       focusable="false"
@@ -16434,7 +16434,7 @@ exports[`Storyshots Payment | PaymentMeans disabled 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-mastercard"
       data-prefix="fab"
       focusable="false"
@@ -16472,7 +16472,7 @@ exports[`Storyshots Payment | PaymentMeans disabled 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+      className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="credit-card"
       data-prefix="fas"
       focusable="false"
@@ -16510,7 +16510,7 @@ exports[`Storyshots Payment | PaymentMeans disabled 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-amex"
       data-prefix="fab"
       focusable="false"
@@ -16553,7 +16553,7 @@ exports[`Storyshots Payment | PaymentMeans main 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-visa"
       data-prefix="fab"
       focusable="false"
@@ -16589,7 +16589,7 @@ exports[`Storyshots Payment | PaymentMeans main 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-mastercard"
       data-prefix="fab"
       focusable="false"
@@ -16625,7 +16625,7 @@ exports[`Storyshots Payment | PaymentMeans main 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+      className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="credit-card"
       data-prefix="fas"
       focusable="false"
@@ -16661,7 +16661,7 @@ exports[`Storyshots Payment | PaymentMeans main 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-amex"
       data-prefix="fab"
       focusable="false"
@@ -16704,7 +16704,7 @@ exports[`Storyshots Payment | PaymentMeans selected 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-visa fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-visa"
       data-prefix="fab"
       focusable="false"
@@ -16740,7 +16740,7 @@ exports[`Storyshots Payment | PaymentMeans selected 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-mastercard"
       data-prefix="fab"
       focusable="false"
@@ -16776,7 +16776,7 @@ exports[`Storyshots Payment | PaymentMeans selected 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-credit-card fa-w-18 fa-2x "
+      className="svg-inline--fa fa-credit-card fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="credit-card"
       data-prefix="fas"
       focusable="false"
@@ -16812,7 +16812,7 @@ exports[`Storyshots Payment | PaymentMeans selected 1`] = `
     />
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x "
+      className="svg-inline--fa fa-cc-amex fa-w-18 fa-2x fa-rotate-null fa-pull-null "
       data-icon="cc-amex"
       data-prefix="fab"
       focusable="false"
@@ -17239,7 +17239,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -17423,7 +17423,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -17607,7 +17607,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -17795,7 +17795,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-credit-card fa-w-18 "
+        className="svg-inline--fa fa-credit-card fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="credit-card"
         data-prefix="fas"
         focusable="false"
@@ -17978,7 +17978,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-visa fa-w-18 "
+        className="svg-inline--fa fa-cc-visa fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="cc-visa"
         data-prefix="fab"
         focusable="false"
@@ -18157,7 +18157,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-visa fa-w-18 "
+        className="svg-inline--fa fa-cc-visa fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="cc-visa"
         data-prefix="fab"
         focusable="false"
@@ -18336,7 +18336,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-visa fa-w-18 "
+        className="svg-inline--fa fa-cc-visa fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="cc-visa"
         data-prefix="fab"
         focusable="false"
@@ -18514,7 +18514,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-cc-visa fa-w-18 "
+        className="svg-inline--fa fa-cc-visa fa-w-18 fa-null fa-rotate-null fa-pull-null "
         data-icon="cc-visa"
         data-prefix="fab"
         focusable="false"
@@ -18695,7 +18695,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-cc-visa fa-w-18 "
+          className="svg-inline--fa fa-cc-visa fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="cc-visa"
           data-prefix="fab"
           focusable="false"
@@ -18871,7 +18871,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-cc-mastercard fa-w-18 "
+          className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="cc-mastercard"
           data-prefix="fab"
           focusable="false"
@@ -19047,7 +19047,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-cc-amex fa-w-18 "
+          className="svg-inline--fa fa-cc-amex fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="cc-amex"
           data-prefix="fab"
           focusable="false"
@@ -19223,7 +19223,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-credit-card fa-w-18 "
+          className="svg-inline--fa fa-credit-card fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="credit-card"
           data-prefix="fas"
           focusable="false"
@@ -19411,7 +19411,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-cc-visa fa-w-18 "
+          className="svg-inline--fa fa-cc-visa fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="cc-visa"
           data-prefix="fab"
           focusable="false"
@@ -19586,7 +19586,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-cc-mastercard fa-w-18 "
+          className="svg-inline--fa fa-cc-mastercard fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="cc-mastercard"
           data-prefix="fab"
           focusable="false"
@@ -19761,7 +19761,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-cc-amex fa-w-18 "
+          className="svg-inline--fa fa-cc-amex fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="cc-amex"
           data-prefix="fab"
           focusable="false"
@@ -19936,7 +19936,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-credit-card fa-w-18 "
+          className="svg-inline--fa fa-credit-card fa-w-18 fa-null fa-rotate-null fa-pull-null "
           data-icon="credit-card"
           data-prefix="fas"
           focusable="false"
