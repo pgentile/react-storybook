@@ -42,7 +42,7 @@ export default class ScreenshotDecorator extends React.Component {
     const { eventWsUrl } = this.state;
 
     if (eventWsUrl) {
-      this.ws = new Promise(async resolve => {
+      this.ws = new Promise(resolve => {
         const ws = new WebSocket(eventWsUrl);
 
         ws.onmessage = message => {
