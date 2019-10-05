@@ -48,9 +48,11 @@ module.exports = ({config}) => {
       {
         loader: "css-loader",
         options: {
-          modules: false,
+          modules: {
+            mode: "global",
+            localIdentName: "[local]-[hash:base64:5]"
+          },
           importLoaders: 2,
-          localIdentName: '[local]-[hash:base64:5]'
         },
       },
       {
