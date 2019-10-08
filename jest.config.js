@@ -8,7 +8,7 @@ module.exports = {
     "\\.jsx?$": "babel-jest",
     "\\.svg$": "<rootDir>/__mocks__/imageMock.js"
   },
-  setupFilesAfterEnv: ["<rootDir>/../setupTests.js"],
+  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
   setupFiles: ["<rootDir>/../registerContext.js"],
   transformIgnorePatterns: ["node_modules/(?!lodash-es)"],
   coverageDirectory: "<rootDir>/../build/coverage"
