@@ -80,7 +80,7 @@
     "@storybook/addons": "^5.0.0",
     "@storybook/cli": "^5.2.3",
     "@storybook/react": "^5.2.3",
-    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
     "autoprefixer": "^9.6.4",
     "babel-eslint": "^10.0.1",
