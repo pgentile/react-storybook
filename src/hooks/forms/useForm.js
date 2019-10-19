@@ -1,33 +1,53 @@
-import { useMemo } from "react";
+import { useMemo, useRef, useEffect } from "react";
 import noop from "lodash-es";
 
 export default function useForm({ onSubmit = noop } = {}) {
-  // const [onSubmitCallbacks, setOnSubmitCallbacks] = useState([]);
+  const onSubmitRef = useRef(onSubmit);
 
-  const form = useMemo(() => {
+  useEffect(() => {
+    onSubmitRef.current = onSubmit;
+  }, [onSubmit]);
+
+  return useMemo(() => {
+    const collectDataFns = {};
     const submitCallbacks = [];
 
+    const registerCollectDataFn = (name, f) => {
+      collectDataFns[name] = f;
+    };
+
+    const deregisterCollectDataFn = name => {
+      delete collectDataFns[name];
+    };
+
     const registerOnSubmit = f => {
-      console.info("Coucou:", f);
       submitCallbacks.push(f);
     };
 
     const deregisterOnSubmit = f => {
-      console.info("Au revoir:", f);
+      console.info("FIXME Please", f);
     };
 
     const onSubmitCallback = event => {
+      console.info("Submit", event);
+
       submitCallbacks.forEach(f => f());
 
-      onSubmit(event);
+      const data = {};
+      Object.entries(collectDataFns).forEach(entry => {
+        const [key, fn] = entry;
+        data[key] = fn();
+      });
+
+      onSubmitRef.current(event, data);
     };
 
     return {
+      registerCollectDataFn,
+      deregisterCollectDataFn,
       registerOnSubmit,
       deregisterOnSubmit,
       onSubmit: onSubmitCallback
     };
   }, []);
-
-  return form;
 }

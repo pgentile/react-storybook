@@ -8,7 +8,7 @@ import sleep from "../utils/sleep";
 export default function HooksComments({ referenceId }) {
   const { comments, loadComments } = useComments();
 
-  useEffect(() => loadComments(referenceId), [referenceId]);
+  useEffect(() => loadComments(referenceId), [referenceId, loadComments]);
 
   const commentElements = comments.map(comment => {
     return <li key={comment.id}>{comment.text}</li>;
@@ -58,7 +58,7 @@ function useComments() {
     } finally {
       dispatch({ fetching: false, fetched: true });
     }
-  });
+  }, []);
 
   return {
     comments: state.comments,

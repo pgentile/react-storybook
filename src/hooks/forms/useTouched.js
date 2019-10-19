@@ -1,13 +1,9 @@
-import { useState, useEffect } from "react";
-import noop from "lodash-es";
+import { useState, useEffect, useCallback, useMemo } from "react";
 
 export default function useTouched({ form } = {}) {
   const [touched, setTouched] = useState(false);
 
-  let touch = noop;
-  if (!touched) {
-    touch = () => setTouched(true);
-  }
+  const touch = useCallback(() => setTouched(true), []);
 
   useEffect(() => {
     const touchOnSubmit = () => touch();
@@ -16,10 +12,12 @@ export default function useTouched({ form } = {}) {
       form.registerOnSubmit(touchOnSubmit);
       return () => form.deregisterOnSubmit(touchOnSubmit);
     }
-  }, []);
+  }, [form, touch]);
 
-  return {
-    touched,
-    touch
-  };
+  return useMemo(() => {
+    return {
+      touched,
+      touch
+    };
+  }, [touch, touched]);
 }

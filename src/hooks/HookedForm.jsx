@@ -19,16 +19,16 @@ function validateName(name) {
 }
 
 export default function HookedForm() {
-  const form = useForm({
-    onSubmit: event => {
-      event.preventDefault();
+  const onSubmit = (event, data) => {
+    console.info("Submitting form");
 
-      console.info("Form content", {
-        firstName: firstName.value,
-        lastName: lastName.value,
-        civility: civility.value
-      });
-    }
+    event.preventDefault();
+
+    console.info("Form content", data);
+  };
+
+  const form = useForm({
+    onSubmit
   });
 
   const firstName = useFormInput("firstName", {

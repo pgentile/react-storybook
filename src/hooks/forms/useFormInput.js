@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 
 import useTouched from "./useTouched";
 import defaultValidate from "./defaultValidate";
@@ -7,32 +7,37 @@ export default function useFormInput(name, { defaultValue = "", validate = defau
   const [value, setValue] = useState(defaultValue);
   const { touched, touch } = useTouched({ form });
 
+  useEffect(() => {
+    form.registerCollectDataFn(name, () => value);
+    return () => form.deregisterCollectDataFn(name);
+  }, [form, name, value]);
+
   const valid = useMemo(() => {
     return validate(value);
   }, [validate, value]);
+
+  const onChange = useCallback(event => setValue(event.target.value), []);
+
+  const onBlur = useCallback(() => touch(), [touch]);
 
   const props = useMemo(() => {
     return {
       name,
       value,
-
-      onChange(event) {
-        setValue(event.target.value);
-      },
-
-      onBlur() {
-        touch();
-      }
+      onChange,
+      onBlur
     };
-  }, [name, value, touched]);
+  }, [name, value, onChange, onBlur]);
 
-  return {
-    type: "input",
-    name,
-    value,
-    hasValue: !!value,
-    touched,
-    valid,
-    props
-  };
+  return useMemo(() => {
+    return {
+      type: "input",
+      name,
+      value,
+      hasValue: !!value,
+      touched,
+      valid,
+      props
+    };
+  }, [name, props, touched, valid, value]);
 }
