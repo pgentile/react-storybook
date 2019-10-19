@@ -2,16 +2,15 @@ name: Build
 
 on: [push]
 
+env:
+  CI: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
-
     container:
       image: "node:10"
-
-    env:
-      CI: true
-
+      
     steps:
       - uses: actions/checkout@v1
       - name: setup
@@ -20,3 +19,17 @@ jobs:
         run: "yarn ci:validate:lint"
       - name: test
         run: "yarn ci:validate:test"
+        
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: "node:10"
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: setup
+        run: "yarn"
+      - name: build
+        run: "yarn ci:build"
+      - name: post-validate
+        run: "yarn ci:post-validate"
