@@ -1,0 +1,22 @@
+name: Build
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    container:
+      image: "node:10"
+
+    env:
+      CI: true
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: setup
+        run: "yarn"
+      - name: lint
+        run: "yarn ci:validate:lint"
+      - name: test
+        run: "yarn ci:validate:test"
