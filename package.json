@@ -110,7 +110,7 @@
     "prettier": "^1.16.1",
     "puppeteer": "^1.14.0",
     "query-string": "^6.1.0",
-    "react-test-renderer": "^16.6.3",
+    "react-test-renderer": "^16.11.0",
     "reg-cli": "^0.14.1",
     "regenerator-runtime": "^0.13.2",
     "rimraf": "^3.0.0",
