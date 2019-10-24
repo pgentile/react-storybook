@@ -121,7 +121,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-recommended-scss": "^4.0.0",
     "stylelint-no-unsupported-browser-features": "^3.0.2",
-    "stylelint-scss": "^3.6.1",
+    "stylelint-scss": "^3.12.0",
     "url-loader": "^2.2.0",
     "webdriverio": "^4.13.2",
     "webpack": "^4.31.0",
