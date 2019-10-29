@@ -126,7 +126,7 @@
     "webdriverio": "^4.13.2",
     "webpack": "^4.31.0",
     "webpack-manifest-plugin": "^2.0.4",
-    "ws": "^7.0.0"
+    "ws": "^7.2.0"
   },
   "loki": {
     "configurations": {
