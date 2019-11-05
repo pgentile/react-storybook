@@ -20640,6 +20640,8 @@ exports[`Storyshots ResizableBlock main 1`] = `
 </div>
 `;
 
+exports[`Storyshots ResizeDetector main 1`] = `"NON"`;
+
 exports[`Storyshots Spinner main 1`] = `
 <div
   className="spinner"
