@@ -26,7 +26,4 @@ const mapDispatchToProps = {
   onCancelDonation: () => cancelDonation()
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(OrderEditor);
+export default connect(mapStateToProps, mapDispatchToProps)(OrderEditor);

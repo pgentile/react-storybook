@@ -116,7 +116,4 @@ const mapStateToProps = state => ({
   loading: selectIsLoading(state)
 });
 
-const LoaderDemoConnected = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(LoaderDemo);
+const LoaderDemoConnected = connect(mapStateToProps, mapDispatchToProps)(LoaderDemo);

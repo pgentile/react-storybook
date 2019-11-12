@@ -11,7 +11,4 @@ const mapDispatchToProps = {
   onClose: hideModal
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ModalContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(ModalContainer);
