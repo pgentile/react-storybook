@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { parse, addMonths } from "date-fns";
+import { parse, format, addMonths } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,7 +11,7 @@ import "./DatePicker.scss";
 
 export default class DatePicker extends React.PureComponent {
   static propTypes = {
-    value: PropTypes.any.isRequired,
+    value: PropTypes.string.isRequired,
     minDate: PropTypes.any,
     maxDate: PropTypes.any,
     onChange: PropTypes.func.isRequired
@@ -45,10 +45,10 @@ export default class DatePicker extends React.PureComponent {
       const { value } = props;
       const { viewDate } = prevState;
       const currentDate = viewDate || value;
-      const nextViewDate = addMonths(parse(currentDate), amount);
+      const nextViewDate = addMonths(parse(currentDate, "yyyy-MM-dd", new Date()), amount);
 
       return {
-        viewDate: nextViewDate
+        viewDate: format(nextViewDate, "yyyy-MM-dd")
       };
     });
   };

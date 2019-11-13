@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { format } from "date-fns";
+import { format, parse } from "date-fns";
 import frLocale from "date-fns/locale/fr";
 
 import bemModifiers from "../utils/bemModifiers";
@@ -57,6 +57,7 @@ export default class DatePickerInput extends React.PureComponent {
 
   render() {
     const { id, className, tabIndex, error, disabled, readOnly, value } = this.props;
+    const dateValue = parse(value, "yyyy-MM-dd", new Date());
     const { focus } = this.state;
 
     const fieldClassName = bemModifiers("date-picker-input__field", {
@@ -78,10 +79,10 @@ export default class DatePickerInput extends React.PureComponent {
           tabIndex={disabled ? -1 : tabIndex}
           aria-invalid={error}
         >
-          {format(value, "dddd DD MMMM YYYY", { locale: frLocale })}
+          {format(dateValue, "EEEE dd MMMM yyyy", { locale: frLocale })}
         </div>
         <div className={pickerPanelClassName}>
-          <DatePicker ref={this.datePickerRef} value={value} onChange={this.onDatePickerChange} />
+          {focus && <DatePicker ref={this.datePickerRef} value={value} onChange={this.onDatePickerChange} />}
         </div>
         {focus && <div className="date-picker-input__overlay" onClick={this.onOverlayClick} />}
       </div>

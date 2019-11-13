@@ -258,7 +258,7 @@ class OuiHomePage {
 
   async _selectDayInCalendar(anyDate) {
     const date = parse(anyDate);
-    const day = format(date, "D");
+    const day = format(date, "dd");
 
     await driver
       .wait(until.elementLocated(By.className("date-selector")))

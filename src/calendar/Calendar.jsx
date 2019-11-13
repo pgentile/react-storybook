@@ -5,7 +5,7 @@ import {
   startOfISOWeek,
   endOfMonth,
   endOfISOWeek,
-  eachDay,
+  eachDayOfInterval,
   format,
   isEqual,
   isBefore,
@@ -23,10 +23,10 @@ import "./Calendar.scss";
 export default class Calendar extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    viewDate: PropTypes.any,
-    selectedDate: PropTypes.any,
-    minDate: PropTypes.any,
-    maxDate: PropTypes.any,
+    viewDate: PropTypes.string,
+    selectedDate: PropTypes.string,
+    minDate: PropTypes.string,
+    maxDate: PropTypes.string,
     onSelect: PropTypes.func
   };
 
@@ -55,12 +55,12 @@ export default class Calendar extends React.PureComponent {
     let count = 0;
     let days = [];
 
-    eachDay(calendarFirstDay, calendarLastDay).forEach(date => {
+    eachDayOfInterval({ start: calendarFirstDay, end: calendarLastDay }).forEach(date => {
       const day = {
         date,
-        formattedDate: format(date, "YYYY-MM-DD"),
-        label: format(date, "dddd Do MMMM YYYY", { locale: frLocale }),
-        dayNumber: format(date, "D"),
+        formattedDate: format(date, "yyyy-MM-dd"),
+        label: format(date, "EEEE d MMMM yyyy", { locale: frLocale }),
+        dayNumber: format(date, "d"),
         currentMonth: !isBefore(date, monthFirstDay) && !isAfter(date, monthLastDay)
       };
 
@@ -160,7 +160,7 @@ export default class Calendar extends React.PureComponent {
 
     return (
       <table className={"calendar " + className} ref={this.ref}>
-        <caption className="calendar__month">{format(viewDate, "MMMM YYYY", { locale: frLocale })}</caption>
+        <caption className="calendar__month">{format(viewDate, "LLLL yyyy", { locale: frLocale })}</caption>
         <thead className="calendar__week-days">
           <tr>{weekDayRows}</tr>
         </thead>
@@ -174,7 +174,7 @@ function parseDate(date) {
   if (!date) {
     return null;
   }
-  return parse(date);
+  return parse(date, "yyyy-MM-dd", new Date());
 }
 
 function parseDateOrToday(date) {
@@ -182,7 +182,7 @@ function parseDateOrToday(date) {
   if (!parsed) {
     return new Date();
   }
-  return date;
+  return parsed;
 }
 
 function dateBetween(minDate, maxDate) {
