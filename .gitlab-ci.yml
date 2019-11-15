@@ -17,6 +17,7 @@ install:
   stage: setup
   script: yarn
   cache:
+    <<: *cache
     policy: push
 
 lint:
