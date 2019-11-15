@@ -1,7 +1,6 @@
 module.exports = {
   rootDir: ".",
-  setupFiles: ["./selenium/jest/timeout.js"],
-  setupFilesAfterEnv: ["jest-extended"],
+  setupFilesAfterEnv: ["jest-extended", "./jest.setup.js"],
   testEnvironment: "./selenium/jest/SeleniumEnvironment.js",
   testEnvironmentOptions: {
     capabilities: {
