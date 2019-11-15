@@ -1,4 +1,10 @@
-image: node:10
+default:
+  image: node:10
+  cache: &cache
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+    policy: pull
 
 stages:
   - setup
@@ -11,9 +17,6 @@ install:
   stage: setup
   script: yarn
   cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
     policy: push
 
 lint:
@@ -21,17 +24,11 @@ lint:
   before_script: &before_script
     - yarn
   script: "yarn ci:validate:lint"
-  cache: &cache
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-    policy: pull
 
 test:
   stage: validate
   before_script: *before_script
   script: "yarn ci:validate:test"
-  cache: *cache
   artifacts:
     paths:
       - build/coverage
@@ -40,7 +37,6 @@ build:
   stage: build
   before_script: *before_script
   script: "yarn ci:build"
-  cache: *cache
   artifacts:
     paths:
       - build/storybook
@@ -49,7 +45,6 @@ post-validate:
   stage: post-validate
   before_script: *before_script
   script: "yarn ci:post-validate"
-  cache: *cache
 
 pages:
   stage: deploy
@@ -62,7 +57,6 @@ pages:
     - "gzip -k -6 $(find public -type f -name '*.css')"
     - "gzip -k -6 $(find public -type f -name '*.html')"
     - "gzip -k -6 $(find public -type f -name '*.svg')"
-  cache: *cache
   artifacts:
     paths:
       - public
@@ -78,3 +72,4 @@ deploy-fake-env:
     - "echo"
   environment:
     name: stage
+  cache: {}
