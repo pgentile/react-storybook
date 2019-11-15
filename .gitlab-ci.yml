@@ -66,3 +66,15 @@ pages:
   artifacts:
     paths:
       - public
+
+deploy-fake-env:
+  stage: deploy
+  only:
+    - master
+  script:
+    - "echo Fake depoy"
+    - "echo"
+    - "env | sort"
+    - "echo"
+  environment:
+    name: stage
