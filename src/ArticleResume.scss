@@ -1,0 +1,36 @@
+.article-resume {
+  box-sizing: border-box;
+  position: relative;
+
+  &__content {
+    &--hidden {
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(transparent, white);
+  }
+
+  &__button-wrapper {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    padding: 10px;
+  }
+
+  &__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
