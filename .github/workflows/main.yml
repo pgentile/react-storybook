@@ -1,32 +1,43 @@
 name: Build
 
-on: [push]
+on:
+  - push
 
 env:
-  CI: true
+  CI: "true"
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     container:
       image: "node:10"
-      
+
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - name: setup
         run: "yarn"
       - name: lint
         run: "yarn ci:validate:lint"
       - name: test
         run: "yarn ci:validate:test"
-        
+
   build:
+    needs: validate
+
     runs-on: ubuntu-latest
     container:
       image: "node:10"
 
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - name: setup
         run: "yarn"
       - name: build
