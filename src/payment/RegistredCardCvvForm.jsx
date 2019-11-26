@@ -92,10 +92,7 @@ export default withFormik({
   mapPropsToValues: () => ({
     cvv: ""
   }),
-  isInitialValid: props => {
-    const { brand } = props;
-    return brand === "maestro";
-  },
+  validateOnMount: true,
   validate: (values, props) => {
     const { brand } = props;
 

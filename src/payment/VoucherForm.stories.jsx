@@ -15,13 +15,13 @@ storiesOf("Payment | VoucherForm", module)
     return <VoucherForm {...actions} />;
   })
   .add("initial code", () => {
-    return <VoucherForm isInitialValid code="EURO2016" {...actions} />;
+    return <VoucherForm code="EURO2016" {...actions} />;
   })
   .add("submit success", () => {
-    return <VoucherForm isInitialValid code="CODE21" {...actions} onAddVoucher={addVoucherWithSuccess} />;
+    return <VoucherForm code="CODE21" {...actions} onAddVoucher={addVoucherWithSuccess} />;
   })
   .add("submit error", () => {
-    return <VoucherForm isInitialValid code="CODE21" {...actions} onAddVoucher={addVoucherWithFailure} />;
+    return <VoucherForm code="CODE21" {...actions} onAddVoucher={addVoucherWithFailure} />;
   });
 
 async function addVoucherWithSuccess() {
