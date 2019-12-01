@@ -15408,10 +15408,10 @@ xmlbuilder@~11.0.0:
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
   integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
 
-xstate@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.7.0.tgz#5572227db3fd757edc5e684d4896309670fec14e"
-  integrity sha512-imBgV+W/2ZHivqp6JeEmtSv6OgVokjnqabHEN9JeolV10mBQuKiigr9CsjPgGHFBR+715egOiDDYi7DNEzb9eA==
+xstate@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.7.1.tgz#6c57eed1709ebed12f52443a6dd5a7987c53f4f0"
+  integrity sha512-tT5lyXGpRSIqsbDw+H5cavIENTAaeN3Iw5+svPFEhCh1pj6kbywaqE52ZUin3maBYkzeepexFj45URkPNgIOkg==
 
 "xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   version "4.0.2"
