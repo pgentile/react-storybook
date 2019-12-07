@@ -12,9 +12,9 @@ function bold(...chunks) {
 function loadMessages(locale) {
   if (locale.startsWith("en")) {
     return {
-      hello: "Hello, {name}!",
-      "hello.formatted": "Hello, <b>{name}</b>!",
-      personal_infos: "Enter your <b>last name</b>, <b>first name</b> et <b>birthdate</b>",
+      hello: "Hello, {userName}!",
+      "hello.formatted": "Hello, <b>{userName}</b>!",
+      personal_infos: "Enter your <b>last name</b>, <b>first name</b> and <b>birthdate</b>",
       your_trips: `
         {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b>{tripCount} trips</b>}}
       `,
@@ -36,18 +36,18 @@ export default function I18nMessages({ userName, tripCount, cardCount }) {
         <FormattedMessage
           id="hello"
           description="Hello"
-          defaultMessage="Salut, {name}&nbsp;!"
-          values={{ name: userName }}
+          defaultMessage="Salut, {userName}&nbsp;!"
+          values={{ userName }}
         />
       </p>
       <p>
         <FormattedMessage
           id="hello.formatted"
           description="Hello"
-          defaultMessage="Salut, <b>{name}</b>"
+          defaultMessage="Salut, <b>{userName}</b>&nbsp;!"
           values={{
             b: bold,
-            name: userName
+            userName
           }}
         />
       </p>

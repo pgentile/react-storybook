@@ -9245,6 +9245,47 @@ exports[`Storyshots Forms / Toggle unchecked 1`] = `
 </div>
 `;
 
+exports[`Storyshots I18n | I18nLocaleSelector main 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <ul>
+    <li>
+      <label
+        onClick={[Function]}
+      >
+        <input
+          checked={true}
+          name="locale"
+          onChange={[Function]}
+          type="radio"
+          value="fr-FR"
+        />
+        🇫🇷
+         
+        France
+      </label>
+    </li>
+    <li>
+      <label
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          name="locale"
+          onChange={[Function]}
+          type="radio"
+          value="en-GB"
+        />
+        🇬🇧
+         
+        United Kingdom
+      </label>
+    </li>
+  </ul>
+</form>
+`;
+
 exports[`Storyshots I18n | I18nMessages main 1`] = `
 Array [
   <form
@@ -9293,6 +9334,7 @@ Array [
     <b>
       Jean
     </b>
+     !
   </p>,
   <p>
     Entrez vos 
@@ -9330,47 +9372,6 @@ Array [
           
   </p>,
 ]
-`;
-
-exports[`Storyshots I18nLocaleSelector main 1`] = `
-<form
-  onSubmit={[Function]}
->
-  <ul>
-    <li>
-      <label
-        onClick={[Function]}
-      >
-        <input
-          checked={true}
-          name="locale"
-          onChange={[Function]}
-          type="radio"
-          value="fr-FR"
-        />
-        🇫🇷
-         
-        France
-      </label>
-    </li>
-    <li>
-      <label
-        onClick={[Function]}
-      >
-        <input
-          checked={false}
-          name="locale"
-          onChange={[Function]}
-          type="radio"
-          value="en-GB"
-        />
-        🇬🇧
-         
-        United Kingdom
-      </label>
-    </li>
-  </ul>
-</form>
 `;
 
 exports[`Storyshots LoaderDemo main 1`] = `

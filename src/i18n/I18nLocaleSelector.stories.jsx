@@ -3,6 +3,6 @@ import { storiesOf } from "@storybook/react";
 
 import I18nLocaleSelector from "./I18nLocaleSelector";
 
-storiesOf("I18nLocaleSelector", module).add("main", () => {
+storiesOf("I18n | I18nLocaleSelector", module).add("main", () => {
   return <I18nLocaleSelector />;
 });
