@@ -1,5 +1,193 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Accordion many panels expandable 1`] = `
+<div
+  className="accordion"
+>
+  <div
+    className="accordion__panel"
+  >
+    <div
+      className="accordion__panel-title"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      Panel 1
+    </div>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <div
+            className="accordion__panel-content"
+          >
+            This is the first panel
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="accordion__panel"
+  >
+    <div
+      className="accordion__panel-title"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      Panel 2
+    </div>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <div
+            className="accordion__panel-content"
+          >
+            This is the second panel
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="accordion__panel"
+  >
+    <div
+      className="accordion__panel-title"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      Panel 3
+    </div>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <div
+            className="accordion__panel-content"
+          >
+            This is the third panel
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Accordion only one panel expandable 1`] = `
+<div
+  className="accordion"
+>
+  <div
+    className="accordion__panel"
+  >
+    <div
+      className="accordion__panel-title"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      Panel 1
+    </div>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <div
+            className="accordion__panel-content"
+          >
+            This is the first panel
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="accordion__panel"
+  >
+    <div
+      className="accordion__panel-title"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      Panel 2
+    </div>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <div
+            className="accordion__panel-content"
+          >
+            This is the second panel
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="accordion__panel"
+  >
+    <div
+      className="accordion__panel-title"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      Panel 3
+    </div>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <div
+            className="accordion__panel-content"
+          >
+            This is the third panel
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Adaptative main 1`] = `
 <div
   className="adaptative"
