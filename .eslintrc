@@ -10,7 +10,8 @@
     "react",
     "react-hooks",
     "jest",
-    "compat"
+    "compat",
+    "formatjs"
   ],
   "parserOptions": {
     "sourceType": "module",
@@ -47,6 +48,8 @@
     ],
     "no-console": "warn",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "formatjs/enforce-description": "error",
+    "formatjs/enforce-placeholders": "error"
   }
 }

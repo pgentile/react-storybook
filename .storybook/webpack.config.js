@@ -24,7 +24,8 @@ module.exports = ({config}) => {
     "loki",
     "react-use",
     "callbag-subscribe",
-    "react-spring"
+    "react-spring",
+    "react-intl"
   ];
 
   const modulesToTranspilePattern = `[/\\\\]node_modules[/\\\\](${modulesToTranspile.join("|")})[/\\\\]`;

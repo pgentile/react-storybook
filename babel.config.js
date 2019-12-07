@@ -2,7 +2,17 @@ module.exports = api => {
   api.cache(true);
 
   return {
-    plugins: ["@babel/plugin-proposal-class-properties", "@babel/plugin-syntax-dynamic-import"],
+    plugins: [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-syntax-dynamic-import",
+      [
+        "react-intl",
+        {
+          messagesDir: "./build/messages",
+          extractSourceLocation: true
+        }
+      ]
+    ],
     presets: [
       [
         "@babel/preset-env",

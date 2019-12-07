@@ -2060,7 +2060,7 @@
     "@testing-library/dom" "^6.3.0"
     "@types/testing-library__react" "^9.1.0"
 
-"@types/babel__core@^7.1.0":
+"@types/babel__core@^7.1.0", "@types/babel__core@^7.1.3":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.3.tgz#e441ea7df63cd080dfcd02ab199e6d16a735fc30"
   integrity sha512-8fBo0UR2CcwWxeX7WIIgJ7lXjasFxoYgRnFHUj+hRvKkpiBJbxhdAPTCY6/ZKM0uxANFVzt4yObSLuTiTnazDA==
@@ -2097,6 +2097,11 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+
+"@types/emoji-regex@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@types/emoji-regex/-/emoji-regex-8.0.0.tgz#df215c9ff818e071087fb8e7e6e74c4cb42a1303"
+  integrity sha512-iacbaYN9IWWrGWTwlYLVOeUtN/e4cjN9Uh6v7Yo1Qa/vJzeSQeh10L/erBBSl53BTmbnQ07vsWp8mmNHGI4WbQ==
 
 "@types/events@*":
   version "3.0.0"
@@ -2233,6 +2238,11 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
+
+"@types/schema-utils@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/schema-utils/-/schema-utils-1.0.0.tgz#295d36f01e2cb8bc3207ca1d9a68e210db6b40cb"
+  integrity sha512-YesPanU1+WCigC/Aj1Mga8UCOjHIfMNHZ3zzDsUY7lI8GlKnh/Kv2QwJOQ+jNQ36Ru7IfzSedlG14hppYaN13A==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -3267,6 +3277,19 @@ babel-plugin-react-docgen@^3.0.0:
     lodash "^4.17.15"
     react-docgen "^4.1.1"
     recast "^0.14.7"
+
+babel-plugin-react-intl@^5.1.11:
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-5.1.11.tgz#b7f189d4f5e014d7e628f7518f3dae06cccb884b"
+  integrity sha512-yUGcYAcqrLZJICBlhSMQ5W6EHVOI91h3P3bgPLHjXnFKqZlpIYNgpvV3b/LiJ6L/kqszkwx898CQulFNG0CzyQ==
+  dependencies:
+    "@babel/core" "^7.7.2"
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@types/babel__core" "^7.1.3"
+    "@types/schema-utils" "^1.0.0"
+    fs-extra "^8.0.1"
+    intl-messageformat-parser "^3.5.1"
+    schema-utils "^2.2.0"
 
 babel-plugin-require-context-hook@^1.0.0:
   version "1.0.0"
@@ -5650,6 +5673,15 @@ eslint-plugin-eslint-plugin@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-plugin/-/eslint-plugin-eslint-plugin-2.1.0.tgz#a7a00f15a886957d855feacaafee264f039e62d5"
   integrity sha512-kT3A/ZJftt28gbl/Cv04qezb/NQ1dwYIbi8lyf806XMxkus7DvOVCLIfTXMrorp322Pnoez7+zabXH29tADIDg==
+
+eslint-plugin-formatjs@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-1.5.4.tgz#26dd7267948f337de64312c30fe48217e571ab00"
+  integrity sha512-ZTnbXJeRVA1dPiGHLyYThQcmnx7Qheyzv2SA2wMjN/digJF7S6hAtSSavolF3TNn/rXZArSLnNyYB0TM9P0TUA==
+  dependencies:
+    "@types/emoji-regex" "^8.0.0"
+    emoji-regex "^8.0.0"
+    intl-messageformat-parser "^3.5.1"
 
 eslint-plugin-jest@^23.1.1:
   version "23.1.1"
@@ -13099,7 +13131,7 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-schema-utils@^2.0.1, schema-utils@^2.1.0, schema-utils@^2.5.0, schema-utils@^2.6.0:
+schema-utils@^2.0.1, schema-utils@^2.1.0, schema-utils@^2.2.0, schema-utils@^2.5.0, schema-utils@^2.6.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.6.1.tgz#eb78f0b945c7bcfa2082b3565e8db3548011dc4f"
   integrity sha512-0WXHDs1VDJyo+Zqs9TKLKyD/h7yDpHUhEFsM2CzkICFdoX1av+GBq/J2xRTFfsQO5kBfhZzANf2VcIm84jqDbg==
