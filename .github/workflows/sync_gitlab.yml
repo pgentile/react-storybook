@@ -11,8 +11,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-        with:
-          ref: master
       - name: Configure Gitlab access
         env:
           GITLAB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}
@@ -29,4 +27,4 @@ jobs:
           git remote add gitlab https://gitlab.com/pgentile/react-storybook.git
 
       - name: Push to Gitlab
-        run: git push gitlab master
+        run: git push gitlab HEAD:master
