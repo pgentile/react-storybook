@@ -1,0 +1,31 @@
+name: Sync Gitlab repository
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  push-to-gitlab:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Configure Gitlab access
+        env:
+          GITLAB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}
+        run: |
+          git config --global credential.helper cache
+
+          git credential-store store <<EOF
+          protocol=https
+          host=gitlab.com
+          username=pgentile
+          password=$GITLAB_PERSONAL_ACCESS_TOKEN
+          EOF
+
+          git remote add gitlab https://gitlab.com/pgentile/react-storybook.git
+
+      - name: Push to Gitlab
+        run: git push gitlab {{ github.ref }}
+
