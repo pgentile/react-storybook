@@ -52,6 +52,7 @@
     "react": "^16.8.2",
     "react-cache": "next",
     "react-dom": "^16.8.2",
+    "react-intl": "^3.9.1",
     "react-jsonschema-form": "^1.2.0",
     "react-redux": "^7.0.1",
     "react-spring": "^8.0.20",
