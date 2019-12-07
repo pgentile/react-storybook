@@ -27,5 +27,4 @@ jobs:
           git remote add gitlab https://gitlab.com/pgentile/react-storybook.git
 
       - name: Push to Gitlab
-        run: git push gitlab ${{ github.ref }}
-
+        run: git push gitlab master
