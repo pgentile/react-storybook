@@ -15,7 +15,7 @@ jobs:
         env:
           GITLAB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}
         run: |
-          git config --global credential.helper cache
+          git config --global credential.helper store
 
           git credential-store store <<EOF
           protocol=https
