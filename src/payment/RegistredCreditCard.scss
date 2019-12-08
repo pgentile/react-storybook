@@ -1,8 +1,9 @@
 @import "../styles/_screen-sizes";
+@import "../styles/_colors";
 
 .registred-credit-card {
   $margin: 1rem;
-  $border-color: #BBB;
+  $border-color: $border-default-color;
 
   &__title {
     margin: $margin;

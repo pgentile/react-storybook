@@ -1,5 +1,23 @@
+@import "./styles/_colors";
+
 .accordion {
+  $margin: 10px;
+
   &__panel-title {
+    padding-top: $margin;
+    padding-bottom: $margin;
+    border-bottom: $border-default-color 1px solid;
+
     cursor: pointer;
+
+    display: flex;
+  }
+
+  &__panel-content {
+    border-bottom: $border-default-color 1px solid;
+  }
+
+  &__panel-title-content {
+    flex-grow: 1;
   }
 }

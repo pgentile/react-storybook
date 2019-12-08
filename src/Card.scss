@@ -1,9 +1,11 @@
+@import "./styles/_colors";
+
 .card {
 
   $background-color: white;
   $layer-shadow-color: rgba(0, 0, 0, 0.2);
   $border-width: 1px;
-  $border-color: #BBB;
+  $border-color: $border-default-color;
 
   background-color: $background-color;
 

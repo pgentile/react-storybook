@@ -1,7 +1,10 @@
+@import "./styles/_colors";
+
 $light-color: #DDD;
-$dark-color: #BBB;
+$dark-color: $border-default-color;
 
 .loading-text {
+
   &__line {
     border-radius: 3px;
 

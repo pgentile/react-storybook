@@ -1,8 +1,9 @@
 @import "./styles/_screen-sizes";
+@import "./styles/_colors";
 
 .adaptative-list {
   $margin: 1rem;
-  $border-color: #BBB;
+  $border-color:$border-default-color;
 
   &__separator {
     display: none;

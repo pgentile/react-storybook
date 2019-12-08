@@ -16,13 +16,13 @@ function AccordionDemo({ uniqueExpandable }) {
   return (
     <Accordion uniqueExpandable={uniqueExpandable}>
       <AccordionPanel id="panel1" title="Panel 1" initiallyExpanded>
-        This is the first panel
+        <p>This is the first panel</p>
       </AccordionPanel>
       <AccordionPanel id="panel2" title="Panel 2">
-        This is the second panel
+        <p>This is the second panel</p>
       </AccordionPanel>
       <AccordionPanel id="panel3" title="Panel 3">
-        This is the third panel
+        <p>This is the third panel</p>
       </AccordionPanel>
     </Accordion>
   );

@@ -1,7 +1,9 @@
+@import "./styles/_colors";
+
 .expandable-card {
 
   $background-color: #EEE;
-  $border-color: #BBB;
+  $border-color: $border-default-color;
 
   &__expandable {
 

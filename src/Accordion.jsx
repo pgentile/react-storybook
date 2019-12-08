@@ -4,6 +4,7 @@ import { useEffectOnce } from "react-use";
 import noop from "lodash-es";
 
 import Expandable from "./Expandable";
+import ExpandableIcon from "./ExpandableIcon";
 
 import "./Accordion.scss";
 
@@ -59,12 +60,17 @@ export function AccordionPanel({ id, title, children, initiallyExpanded }) {
 
   const onTitleClick = useCallback(() => toggleExpanded(id), [toggleExpanded, id]);
 
+  const expanded = isExpanded(id);
+
   return (
     <div className="accordion__panel">
       <div className="accordion__panel-title" tabIndex={0} onClick={onTitleClick}>
-        {title}
+        <div className="accordion__panel-title-content">{title}</div>
+        <div className="accordion__panel-title-icon">
+          <ExpandableIcon expanded={expanded} />
+        </div>
       </div>
-      <Expandable expanded={isExpanded(id)}>
+      <Expandable expanded={expanded}>
         <div className="accordion__panel-content">{children}</div>
       </Expandable>
     </div>

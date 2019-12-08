@@ -1,3 +1,5 @@
+@import "../styles/colors";
+
 .order-summary {
   $margin: 0.5rem;
 
@@ -71,7 +73,7 @@
   &__separator {
     margin: $margin;
 
-    border-top: 1px solid #BBB;
+    border-top: 1px solid $border-default-color;
   }
 
 }
