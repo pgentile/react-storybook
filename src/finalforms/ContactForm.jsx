@@ -8,6 +8,7 @@ import { FormattedMessage, defineMessages, useIntl } from "react-intl";
 
 import Button from "../buttons/Button";
 import InputField from "../forms/InputField";
+import FieldContainer from "../forms/FieldContainer";
 import { I18nProvider } from "../i18n/I18nContext";
 import Expandable from "../Expandable";
 
@@ -32,11 +33,11 @@ export default function ContactForm() {
   }));
 
   const onFormSubmit = useCallback(formData => {
-    if (!formData.acceptConditions) {
+    if (Math.random() < 0.5) {
       return {
         // FIXME No i18n context here
-        [FORM_ERROR]: messages.missingAcceptConditions.defaultMessage,
-        "acceptConditions": messages.missingAcceptConditions.defaultMessage
+        [FORM_ERROR]: "Impossible d'envoyer le formulaire",
+        acceptConditions: "Conditons vraiement acceptées ?"
       };
     }
 
@@ -91,25 +92,23 @@ function RecipientForm() {
   });
 
   return (
-    <>
-      <FormattedMessage {...messages.recipient} />
-      <p>
-        <InputField
-          {...firstName.input}
-          placeholder={formatMessage(messages.firstName)}
-          error={Boolean(firstName.meta.touched && firstName.meta.error)}
-        />
-      </p>
-      <p>{firstName.meta.touched && firstName.meta.error}</p>
-      <p>
-        <InputField
-          {...lastName.input}
-          placeholder={formatMessage(messages.lastName)}
-          error={Boolean(lastName.meta.invalid && lastName.meta.touched && lastName.meta.error)}
-        />
-      </p>
-      <p>{lastName.meta.touched && lastName.meta.error}</p>
-    </>
+    <section>
+      <h1>
+        <FormattedMessage {...messages.recipient} />
+      </h1>
+      <FieldContainer
+        label={formatMessage(messages.firstName)}
+        errorMessage={firstName.meta.touched && firstName.meta.invalid ? firstName.meta.error : null}
+      >
+        {fieldProps => <InputField {...fieldProps} {...firstName.input} />}
+      </FieldContainer>
+      <FieldContainer
+        label={formatMessage(messages.lastName)}
+        errorMessage={lastName.meta.touched && lastName.meta.invalid ? lastName.meta.error : null}
+      >
+        {fieldProps => <InputField {...fieldProps} {...lastName.input} />}
+      </FieldContainer>
+    </section>
   );
 }
 
@@ -127,15 +126,12 @@ function PassengerForm({ passengerIndex }) {
     value: "station"
   });
 
-  const validateNameIfETicket = useCallback(
-    (name, allFields) => {
-      const deliveryMode = allFields.passengers[passengerIndex].deliveryMode;
-      if (deliveryMode === "eticket") {
-        return validateName(formatMessage)(name);
-      }
-    },
-    [formatMessage, passengerIndex]
-  );
+  const validateNameIfETicket = (name, allFields) => {
+    const deliveryMode = allFields.passengers[passengerIndex].deliveryMode;
+    if (deliveryMode === "eticket") {
+      return validateName(formatMessage)(name);
+    }
+  };
 
   const firstName = useField(`passengers.${passengerIndex}.firstName`, {
     validate: validateNameIfETicket
@@ -146,64 +142,63 @@ function PassengerForm({ passengerIndex }) {
   });
 
   return (
-    <>
-      <FormattedMessage {...messages.passengerByIndex} values={{ passengerCount: passengerIndex + 1 }} />
+    <section>
+      <h1>
+        <FormattedMessage {...messages.passengerByIndex} values={{ passengerCount: passengerIndex + 1 }} />
+      </h1>
       <p>
         <label>
-          <input {...eticketDeliveryMode.input} />
-          {" "}
-          <FormattedMessage {...messages.eTicket} />
-        </label>
-        {" "}
+          <input {...eticketDeliveryMode.input} /> <FormattedMessage {...messages.eTicket} />
+        </label>{" "}
         <label>
-          <input {...stationDeliveryMode.input} />
-          {" "}
-          <FormattedMessage {...messages.ticketAtStation} />
+          <input {...stationDeliveryMode.input} /> <FormattedMessage {...messages.ticketAtStation} />
         </label>
       </p>
       <Expandable expanded={eticketDeliveryMode.input.checked}>
-        <p>
-          <InputField
-            {...firstName.input}
-            placeholder={formatMessage(messages.firstName)}
-            error={Boolean(firstName.meta.touched && firstName.meta.error)}
-          />
-        </p>
-        <p>{firstName.meta.touched && firstName.meta.error}</p>
-        <p>
-          <InputField
-            {...lastName.input}
-            placeholder={formatMessage(messages.lastName)}
-            error={Boolean(lastName.meta.touched && lastName.meta.error)}
-          />
-        </p>
-        <p>{lastName.meta.touched && lastName.meta.error}</p>
+        <FieldContainer
+          label={formatMessage(messages.firstName)}
+          errorMessage={firstName.meta.touched && firstName.meta.invalid ? firstName.meta.error : null}
+        >
+          {fieldProps => <InputField {...fieldProps} {...firstName.input} />}
+        </FieldContainer>
+        <FieldContainer
+          label={formatMessage(messages.lastName)}
+          errorMessage={lastName.meta.touched && lastName.meta.invalid ? lastName.meta.error : null}
+        >
+          {fieldProps => <InputField {...fieldProps} {...lastName.input} />}
+        </FieldContainer>
       </Expandable>
-    </>
+    </section>
   );
 }
 
 // eslint-disable-next-line react/prop-types
 function AcceptConditionsForm() {
+  const { formatMessage } = useIntl();
+
   const acceptConditions = useField("acceptConditions", {
-    type: "checkbox"
+    type: "checkbox",
+    validate: value => {
+      if (!value) {
+        return formatMessage(messages.missingAcceptConditions);
+      }
+    }
   });
 
   return (
-    <>
+    <section>
       <p>
         <label>
           <input
             {...acceptConditions.input}
             error={Boolean(acceptConditions.meta.touched && acceptConditions.meta.error)}
-          />
-          {" "}
+          />{" "}
           <FormattedMessage {...messages.acceptConditions} />
         </label>
       </p>
       <p>{acceptConditions.meta.submitFailed && acceptConditions.meta.submitError}</p>
       <p>{acceptConditions.meta.touched && acceptConditions.meta.error}</p>
-    </>
+    </section>
   );
 }
 
