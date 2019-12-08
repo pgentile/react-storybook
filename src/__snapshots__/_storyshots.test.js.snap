@@ -8047,6 +8047,234 @@ exports[`Storyshots Experiments | Translation3D main 1`] = `
 </div>
 `;
 
+exports[`Storyshots Final Forms | ContactForm main 1`] = `
+Array [
+  <form
+    onSubmit={[Function]}
+  >
+    Récepteur
+    <p>
+      <input
+        aria-invalid={false}
+        className="form-input-field "
+        formNoValidate={true}
+        name="recipient.firstName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Prénom"
+        type="text"
+        value="Jean"
+      />
+    </p>
+    <p />
+    <p>
+      <input
+        aria-invalid={false}
+        className="form-input-field "
+        formNoValidate={true}
+        name="recipient.lastName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Nom"
+        type="text"
+        value="Bon"
+      />
+    </p>
+    <p />
+    Passager n°1
+    <p>
+      <label>
+        <input
+          checked={true}
+          name="passengers.0.deliveryMode"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value="eticket"
+        />
+         
+        Billet électronique
+      </label>
+       
+      <label>
+        <input
+          checked={false}
+          name="passengers.0.deliveryMode"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value="station"
+        />
+         
+        Billet en gare
+      </label>
+    </p>
+    <div
+      aria-hidden={false}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <p>
+            <input
+              aria-invalid={false}
+              className="form-input-field "
+              formNoValidate={true}
+              name="passengers.0.firstName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Prénom"
+              type="text"
+              value=""
+            />
+          </p>
+          <p />
+          <p>
+            <input
+              aria-invalid={false}
+              className="form-input-field "
+              formNoValidate={true}
+              name="passengers.0.lastName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Nom"
+              type="text"
+              value=""
+            />
+          </p>
+          <p />
+        </div>
+      </div>
+    </div>
+    Passager n°2
+    <p>
+      <label>
+        <input
+          checked={false}
+          name="passengers.1.deliveryMode"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value="eticket"
+        />
+         
+        Billet électronique
+      </label>
+       
+      <label>
+        <input
+          checked={true}
+          name="passengers.1.deliveryMode"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+          value="station"
+        />
+         
+        Billet en gare
+      </label>
+    </p>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <p>
+            <input
+              aria-invalid={false}
+              className="form-input-field "
+              formNoValidate={true}
+              name="passengers.1.firstName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Prénom"
+              type="text"
+              value=""
+            />
+          </p>
+          <p />
+          <p>
+            <input
+              aria-invalid={false}
+              className="form-input-field "
+              formNoValidate={true}
+              name="passengers.1.lastName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Nom"
+              type="text"
+              value=""
+            />
+          </p>
+          <p />
+        </div>
+      </div>
+    </div>
+    <p>
+      <label>
+        <input
+          checked={false}
+          error={false}
+          name="acceptConditions"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+        />
+         
+        Accepter les conditions de vente
+      </label>
+    </p>
+    <p />
+    <p />
+    <p>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal "
+      >
+        Envoyer
+      </button>
+    </p>
+  </form>,
+  <hr />,
+  <pre>
+    {
+  "recipient": {
+    "firstName": "Jean",
+    "lastName": "Bon"
+  },
+  "passengers": [
+    {
+      "deliveryMode": "eticket"
+    },
+    {
+      "deliveryMode": "station"
+    }
+  ]
+}
+  </pre>,
+]
+`;
+
 exports[`Storyshots FittedImage demo 1`] = `
 <div
   style={

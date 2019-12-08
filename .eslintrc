@@ -49,7 +49,7 @@
     "no-console": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "formatjs/enforce-description": "error",
+    "formatjs/enforce-description": "off",
     "formatjs/enforce-placeholders": "error"
   }
 }

@@ -122,5 +122,5 @@ I18nMessages.propTypes = {
   userName: PropTypes.string.isRequired,
   tripCount: PropTypes.number.isRequired,
   cardCount: PropTypes.number.isRequired,
-  gender: PropTypes.oneOf("male", "female").isRequired
+  gender: PropTypes.oneOf(["male", "female"]).isRequired
 };
