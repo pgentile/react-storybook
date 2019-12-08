@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, text, number } from "@storybook/addon-knobs";
+import { withKnobs, text, number, select } from "@storybook/addon-knobs";
 
 import I18nMessages from "./I18nMessages";
 
@@ -12,6 +12,7 @@ storiesOf("I18n | I18nMessages", module)
         userName={text("userName", "Jean")}
         tripCount={number("tripCount", 1)}
         cardCount={number("cardCount", 1)}
+        gender={select("gender", ["male", "female"], "male")}
       />
     );
   });

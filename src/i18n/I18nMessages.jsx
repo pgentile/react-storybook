@@ -19,12 +19,22 @@ function loadMessages(locale) {
           "hello.formatted": "Hello, <b>{userName}</b>!",
           personal_infos: "Enter your <b>last name</b>, <b>first name</b> and <b>birthdate</b>",
           your_trips: `
-            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b>{tripCount} trips</b>}}
+            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b># trips</b>}}
           `,
           your_trips_and_cards: `
-            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b>{tripCount} trips</b>}}
+            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b># trips</b>}}
             and
-            {cardCount, plural, =0 {no card} one {your <b>card</b>} other {your <b>{cardCount} cards</b>}}
+            {cardCount, plural, =0 {no card} one {your <b>card</b>} other {your <b># cards</b>}}
+          `,
+          recipient_with_gender: `
+            {gender, select, female {She} other {He}}
+            will receive
+            {gender, select, female {her} other {his}}
+            {tripCount, plural, one {ticket} other {# tickets}}
+            in a couple of days.
+            {gender, select, female {Her} other {His}}
+            {tripCount, plural, one {ticket} other {tickets}}
+            will be delivered by post.
           `
         };
       }
@@ -34,7 +44,7 @@ function loadMessages(locale) {
   });
 }
 
-export default function I18nMessages({ userName, tripCount, cardCount }) {
+export default function I18nMessages({ userName, tripCount, cardCount, gender }) {
   return (
     <I18nProvider loadMessages={loadMessages} defaultLocale="fr-FR">
       <I18nLocaleSelector />
@@ -69,7 +79,7 @@ export default function I18nMessages({ userName, tripCount, cardCount }) {
         <FormattedMessage
           id="your_trips"
           description="User trips count"
-          defaultMessage="{tripCount, plural, =0 {Aucun voyage} one {Votre <b>voyage</b>} other {Vos <b>{tripCount} voyages</b>}}"
+          defaultMessage="{tripCount, plural, =0 {Aucun voyage} one {Votre <b>voyage</b>} other {Vos <b># voyages</b>}}"
           values={{ b: bold, tripCount }}
         />
       </p>
@@ -78,13 +88,32 @@ export default function I18nMessages({ userName, tripCount, cardCount }) {
           id="your_trips_and_cards"
           description="User trips count"
           defaultMessage={`
-            {tripCount, plural, =0 {Aucun voyage} one {Votre <b>voyage</b>} other {Vos <b>{tripCount} voyages</b>}}
+            {tripCount, plural, =0 {Aucun voyage} one {Votre <b>voyage</b>} other {Vos <b># voyages</b>}}
             et
-            {cardCount, plural, =0 {aucune carte} one {votre <b>carte</b>} other {vos <b>{cardCount} cartes</b>}}
+            {cardCount, plural, =0 {aucune carte} one {votre <b>carte</b>} other {vos <b># cartes</b>}}
           `}
           values={{ b: bold, tripCount, cardCount }}
         />
       </p>
+      {tripCount > 0 && (
+        <p>
+          <FormattedMessage
+            id="recipient_with_gender"
+            description="Recipient with gender"
+            defaultMessage={`
+            {gender, select, female {Elle} other {Il}}
+            recevra
+            {tripCount, plural, one {son billet} other {ses # billets}}
+            dans une dizaine de jours.
+            {tripCount, plural, one {Son billet} other {Ses billets}}
+            lui
+            {tripCount, plural, one {sera} other {seront}}
+            remis par courrier.
+          `}
+            values={{ gender, tripCount }}
+          />
+        </p>
+      )}
     </I18nProvider>
   );
 }
@@ -92,5 +121,6 @@ export default function I18nMessages({ userName, tripCount, cardCount }) {
 I18nMessages.propTypes = {
   userName: PropTypes.string.isRequired,
   tripCount: PropTypes.number.isRequired,
-  cardCount: PropTypes.number.isRequired
+  cardCount: PropTypes.number.isRequired,
+  gender: PropTypes.oneOf("male", "female").isRequired
 };
