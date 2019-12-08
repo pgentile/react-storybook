@@ -49,8 +49,6 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
   }));
 
   const load = async () => {
-    console.info("Loading for locale", locale);
-
     setState({
       ...state,
       loading: true
@@ -65,8 +63,6 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
       messages
     });
     setReady(true);
-
-    console.info("Done loading for locale", locale);
   };
 
   useEffect(() => {

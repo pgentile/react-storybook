@@ -4,7 +4,6 @@ module.exports = api => {
   return {
     plugins: [
       "@babel/plugin-proposal-class-properties",
-      "@babel/plugin-syntax-dynamic-import",
       [
         "react-intl",
         {
@@ -26,11 +25,7 @@ module.exports = api => {
     ],
     env: {
       test: {
-        plugins: [
-          "@babel/plugin-proposal-class-properties",
-          "@babel/plugin-syntax-dynamic-import",
-          "require-context-hook"
-        ],
+        plugins: ["@babel/plugin-proposal-class-properties", "require-context-hook"],
         presets: [
           [
             "@babel/preset-env",
