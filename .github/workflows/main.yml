@@ -10,7 +10,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     container:
-      image: "node:10"
+      image: "node:lts"
 
     steps:
       - uses: actions/checkout@v1
@@ -30,7 +30,7 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: "node:10"
+      image: "node:lts"
 
     steps:
       - uses: actions/checkout@v1
