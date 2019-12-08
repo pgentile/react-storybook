@@ -10,27 +10,33 @@ function bold(...chunks) {
 }
 
 function loadMessages(locale) {
-  if (locale.startsWith("en")) {
-    return {
-      hello: "Hello, {userName}!",
-      "hello.formatted": "Hello, <b>{userName}</b>!",
-      personal_infos: "Enter your <b>last name</b>, <b>first name</b> and <b>birthdate</b>",
-      your_trips: `
-        {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b>{tripCount} trips</b>}}
-      `,
-      your_trips_and_cards: `
-        {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b>{tripCount} trips</b>}}
-        and
-        {cardCount, plural, =0 {no card} one {your <b>card</b>} other {your <b>{cardCount} cards</b>}}
-      `
-    };
-  }
-  return {};
+  return new Promise(resolve => {
+    setTimeout(() => {
+      let messages = {};
+      if (locale === "en") {
+        messages = {
+          hello: "Hello, {userName}!",
+          "hello.formatted": "Hello, <b>{userName}</b>!",
+          personal_infos: "Enter your <b>last name</b>, <b>first name</b> and <b>birthdate</b>",
+          your_trips: `
+            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b>{tripCount} trips</b>}}
+          `,
+          your_trips_and_cards: `
+            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b>{tripCount} trips</b>}}
+            and
+            {cardCount, plural, =0 {no card} one {your <b>card</b>} other {your <b>{cardCount} cards</b>}}
+          `
+        };
+      }
+
+      resolve(messages);
+    }, 500);
+  });
 }
 
 export default function I18nMessages({ userName, tripCount, cardCount }) {
   return (
-    <I18nProvider loadMessages={loadMessages}>
+    <I18nProvider loadMessages={loadMessages} defaultLocale="fr-FR">
       <I18nLocaleSelector />
       <p>
         <FormattedMessage

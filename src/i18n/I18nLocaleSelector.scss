@@ -1,1 +1,25 @@
-// TODO Sass file for I18nLocaleSelector
+.i18n-locale-selector {
+  $space: 10px;
+
+  &__list {
+    display: flex;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: $space;
+      padding-right: $space;
+      border-right: 1px solid #999;
+    }
+  }
+
+  &__radio {
+    margin-right: $space;
+  }
+}

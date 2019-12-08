@@ -18,7 +18,7 @@ const LOCALES = [
 ];
 
 export default function I18nLocaleSelector() {
-  const { locale: currentLocale, setLocale } = useLocale();
+  const { locale: currentLocale, setLocale, loading } = useLocale();
 
   const onFormSubmit = useCallback(event => event.preventDefault(), []);
 
@@ -27,13 +27,15 @@ export default function I18nLocaleSelector() {
   const items = LOCALES.map(({ locale, flag, description }) => {
     const onClick = () => setLocale(locale);
     return (
-      <li key={locale}>
+      <li key={locale} className="i18n-locale-selector__item">
         <label onClick={onClick}>
           <input
+            className="i18n-locale-selector__radio"
             type="radio"
             name="locale"
             value={locale}
             checked={locale === currentLocale}
+            disabled={loading}
             onChange={onLocaleChange}
           />
           {flag}&nbsp;{description}
@@ -43,8 +45,8 @@ export default function I18nLocaleSelector() {
   });
 
   return (
-    <form onSubmit={onFormSubmit}>
-      <ul>{items}</ul>
+    <form onSubmit={onFormSubmit} className="i18n-locale-selector">
+      <ul className="i18n-locale-selector__list">{items}</ul>
     </form>
   );
 }
