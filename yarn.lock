@@ -12255,10 +12255,10 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-use@^13.12.0:
-  version "13.12.0"
-  resolved "https://registry.yarnpkg.com/react-use/-/react-use-13.12.0.tgz#876dc43e566c33f1c2c63fefb9109ea3525c7894"
-  integrity sha512-e7lrBob5REHBes1loxZhE3EEGwlYKDJljWsKYX/3cp7eE90JnXv2OsCCWTqdCuIKWT2gGmweV/px/8MYX1k7cg==
+react-use@^13.12.1:
+  version "13.12.1"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-13.12.1.tgz#d9605cab031e0cb3f55af065598ec20328e449c1"
+  integrity sha512-G8hon+wrMqUa9eJKxdR8YHHhVamALDXQMP+15edc1oSMCccs22o0XXQhgaqEH9qT0SRaMG9a1hLld/KjuTm7UQ==
   dependencies:
     "@xobotyi/scrollbar-width" "1.5.0"
     copy-to-clipboard "^3.2.0"
