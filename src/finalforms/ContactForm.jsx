@@ -24,9 +24,15 @@ export default function ContactForm() {
     },
     passengers: [
       {
+        passengerId: "aaa-111",
         deliveryMode: "eticket"
       },
       {
+        passengerId: "bbb-222",
+        deliveryMode: "station"
+      },
+      {
+        passengerId: "ccc-333",
         deliveryMode: "station"
       }
     ]
@@ -51,33 +57,43 @@ export default function ContactForm() {
   return (
     <I18nProvider defaultLocale="fr-FR" loadMessages={noop}>
       <Form onSubmit={onFormSubmit} decorators={[focusOnErrors]} initialValues={contactInfos} render={render} />
-      <hr />
-      <pre>{JSON.stringify(contactInfos, undefined, 2)}</pre>
     </I18nProvider>
   );
 }
 
 // eslint-disable-next-line react/prop-types
 function ContactFormInternal({ handleSubmit }) {
-  const { submitFailed, submitError } = useFormState({
+  const { submitFailed, submitError, initialValues } = useFormState({
     subscription: {
       submitFailed: true,
-      submitError: true
+      submitError: true,
+      initialValues: true
     }
   });
 
   return (
-    <form onSubmit={handleSubmit}>
-      {submitFailed && <p style={{ color: "red" }}>{submitError}</p>}
-      <RecipientForm />
-      <PassengerForm passengerIndex={0} />
-      <PassengerForm passengerIndex={1} />
-      <AcceptConditionsForm />
-      <p>
-        <Button>Envoyer</Button>
-      </p>
-    </form>
+    <>
+      <form onSubmit={handleSubmit}>
+        {submitFailed && <p style={{ color: "red" }}>{submitError}</p>}
+        <RecipientForm />
+        {initialValues.passengers.map((passenger, passengerIndex) => (
+          <PassengerForm key={passenger.passengerId} passengerIndex={passengerIndex} />
+        ))}
+        <AcceptConditionsForm />
+        <p>
+          <Button>Envoyer</Button>
+        </p>
+      </form>
+      <hr />
+      <DebugFormState />
+    </>
   );
+}
+
+function DebugFormState() {
+  const formState = useFormState();
+
+  return <pre>{JSON.stringify(formState, undefined, 2)}</pre>;
 }
 
 function RecipientForm() {
@@ -189,11 +205,7 @@ function AcceptConditionsForm() {
     <section>
       <p>
         <label>
-          <input
-            {...acceptConditions.input}
-            error={Boolean(acceptConditions.meta.touched && acceptConditions.meta.error)}
-          />{" "}
-          <FormattedMessage {...messages.acceptConditions} />
+          <input {...acceptConditions.input} /> <FormattedMessage {...messages.acceptConditions} />
         </label>
       </p>
       <p>{acceptConditions.meta.submitFailed && acceptConditions.meta.submitError}</p>
