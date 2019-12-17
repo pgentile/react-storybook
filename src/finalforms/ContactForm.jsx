@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */
-import React, { useCallback, useState } from "react";
-import { Form, useField, useFormState } from "react-final-form";
-import { FORM_ERROR } from "final-form";
+import React, { useCallback, useState, useEffect, useRef } from "react";
+import { Form, useField, useFormState, useForm } from "react-final-form";
+import { FORM_ERROR, getIn } from "final-form";
 import createDecorator from "final-form-focus";
 import { noop } from "lodash-es";
 import { FormattedMessage, defineMessages, useIntl } from "react-intl";
@@ -143,7 +142,7 @@ function PassengerForm({ passengerIndex }) {
   });
 
   const validateNameIfETicket = (name, allFields) => {
-    const deliveryMode = allFields.passengers[passengerIndex].deliveryMode;
+    const deliveryMode = getIn(allFields, `passengers.${passengerIndex}.deliveryMode`);
     if (deliveryMode === "eticket") {
       return validateName(formatMessage)(name);
     }
@@ -155,6 +154,24 @@ function PassengerForm({ passengerIndex }) {
 
   const lastName = useField(`passengers.${passengerIndex}.lastName`, {
     validate: validateNameIfETicket
+  });
+
+  const form = useForm();
+
+  const passengerFirstNameVisited = useVisitedField(`passengers.${passengerIndex}.firstName`);
+  const passengerLastNameVisited = useVisitedField(`passengers.${passengerIndex}.lastName`);
+  const passengerNameVisited = passengerFirstNameVisited || passengerLastNameVisited;
+
+  useFieldValueListener("recipient.firstName", newValue => {
+    if (!passengerNameVisited) {
+      form.change(`passengers.${passengerIndex}.firstName`, newValue);
+    }
+  });
+
+  useFieldValueListener("recipient.lastName", newValue => {
+    if (!passengerNameVisited) {
+      form.change(`passengers.${passengerIndex}.lastName`, newValue);
+    }
   });
 
   return (
@@ -276,3 +293,44 @@ const messages = defineMessages({
   }
 });
 /* eslint-enable formatjs/enforce-placeholders */
+
+function useVisitedField(fieldName) {
+  const visitedRef = useRef(false);
+  const form = useForm();
+
+  useEffect(() => {
+    const unregister = form.registerField(
+      fieldName,
+      fieldState => {
+        visitedRef.current = fieldState.visited;
+      },
+      {
+        visited: true
+      }
+    );
+
+    return () => unregister();
+  }, [form, fieldName]);
+
+  return visitedRef.current;
+}
+
+function useFieldValueListener(fieldName, listener) {
+  const listenerRef = useRef(listener);
+  listenerRef.current = listener;
+
+  const form = useForm();
+
+  useEffect(() => {
+    const unregister = form.registerField(
+      fieldName,
+      fieldState => {
+        listenerRef.current(fieldState.value);
+      },
+      {
+        value: true
+      }
+    );
+    return () => unregister();
+  }, [form, fieldName]);
+}
