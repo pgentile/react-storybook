@@ -158,8 +158,8 @@ function PassengerForm({ passengerIndex }) {
 
   const form = useForm();
 
-  const passengerFirstNameVisited = useVisitedField(`passengers.${passengerIndex}.firstName`);
-  const passengerLastNameVisited = useVisitedField(`passengers.${passengerIndex}.lastName`);
+  const passengerFirstNameVisited = useFieldVisitedState(`passengers.${passengerIndex}.firstName`);
+  const passengerLastNameVisited = useFieldVisitedState(`passengers.${passengerIndex}.lastName`);
   const passengerNameVisited = passengerFirstNameVisited || passengerLastNameVisited;
 
   useFieldValueListener("recipient.firstName", newValue => {
@@ -294,9 +294,9 @@ const messages = defineMessages({
 });
 /* eslint-enable formatjs/enforce-placeholders */
 
-function useVisitedField(fieldName) {
-  const visitedRef = useRef(false);
+function useFieldVisitedState(fieldName) {
   const form = useForm();
+  const visitedRef = useRef(false);
 
   useEffect(() => {
     const unregister = form.registerField(
@@ -316,8 +316,11 @@ function useVisitedField(fieldName) {
 }
 
 function useFieldValueListener(fieldName, listener) {
-  const listenerRef = useRef(listener);
-  listenerRef.current = listener;
+  const listenerRef = useRef();
+
+  useEffect(() => {
+    listenerRef.current = listener;
+  }, [listener]);
 
   const form = useForm();
 
