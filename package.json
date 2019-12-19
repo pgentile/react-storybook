@@ -130,7 +130,7 @@
     "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-scss": "^3.6.1",
     "url-loader": "^3.0.0",
-    "webdriverio": "^4.13.2",
+    "webdriverio": "^5.17.0",
     "webpack": "^4.41.4",
     "webpack-manifest-plugin": "^2.0.4",
     "ws": "^7.2.1"
