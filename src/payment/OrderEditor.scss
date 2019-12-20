@@ -12,8 +12,9 @@
     font-size: 1.8rem;
   }
 
-  &__insurance, &__voucher, &__donation {
+  &__insurance,
+  &__voucher,
+  &__donation {
     margin-top: $margin;
   }
-
 }

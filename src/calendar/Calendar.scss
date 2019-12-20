@@ -27,7 +27,8 @@
     text-align: center;
   }
 
-  &__week-day, &__day {
+  &__week-day,
+  &__day {
     padding: 0.5rem;
     text-align: center;
   }
@@ -51,14 +52,15 @@
     &--selectable {
       cursor: pointer;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: lightgreen;
         color: black;
       }
     }
 
     &--disabled {
-      background-color: #EEE;
+      background-color: #eee;
       color: #999;
     }
 
@@ -66,12 +68,11 @@
       background-color: darkblue;
       color: white;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: darkblue;
         color: white;
       }
     }
-
   }
-
 }

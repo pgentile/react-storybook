@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-
   }
 
   &__logo {
@@ -15,7 +14,8 @@
   }
 
   &__punchline {
-    h3, p {
+    h3,
+    p {
       margin: $margin;
     }
   }
@@ -28,5 +28,4 @@
   &__more {
     margin: $margin;
   }
-
 }

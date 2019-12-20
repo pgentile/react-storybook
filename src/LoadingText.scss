@@ -1,10 +1,9 @@
 @import "./styles/_colors";
 
-$light-color: #DDD;
+$light-color: #ddd;
 $dark-color: $border-default-color;
 
 .loading-text {
-
   &__line {
     border-radius: 3px;
 
@@ -34,7 +33,6 @@ $dark-color: $border-default-color;
       width: 40%;
     }
   }
-
 }
 
 @keyframes loading-text {

@@ -1,6 +1,6 @@
 .form-date-input {
   $color: black;
-  $border-color: #EEE;
+  $border-color: #eee;
   $bottom-border-color: darken($border-color, 20%);
   $border-width: 1px;
   $border-bottom-width: 3px;
@@ -28,7 +28,6 @@
   transition: border-color 0.2s ease-in;
 
   &__input {
-
     display: inline-block;
     margin: 0;
     padding: 0.5rem;
@@ -40,7 +39,8 @@
     color: $color;
     text-align: center;
 
-    &--day, &--month {
+    &--day,
+    &--month {
       width: 3rem;
     }
 
@@ -66,11 +66,9 @@
       color: $placeholder-color;
       font-style: italic;
     }
-
   }
 
   &__input-separator {
-
     display: inline-block;
     box-sizing: border-box;
     margin: 0;
@@ -82,7 +80,6 @@
     font-size: 1rem;
     color: $placeholder-color;
     text-align: center;
-
   }
 
   // Bien respecter l'ordre des classes pour un affichage correct
@@ -108,5 +105,4 @@
     background-color: $disabled-background-color;
     border-color: $border-color;
   }
-
 }

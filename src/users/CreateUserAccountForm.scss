@@ -19,17 +19,15 @@
   }
 
   @include screen-min-small {
-
     display: grid;
     grid-gap: $margin;
 
     grid-template-areas:
-    "firstname lastname"
-    "birthdate birthdate"
-    "email email-check"
-    "password password-check"
-    "button button"
-    ;
+      "firstname lastname"
+      "birthdate birthdate"
+      "email email-check"
+      "password password-check"
+      "button button";
     grid-template-columns: 1fr 1fr;
 
     @each $field in $fields {
@@ -43,5 +41,4 @@
       grid-area: button;
     }
   }
-
 }

@@ -23,7 +23,6 @@
   }
 
   @include screen-min-small {
-
     &__details-container {
       display: flex;
       flex-direction: row;
@@ -40,7 +39,6 @@
     &__select {
       margin-right: $margin;
     }
-
   }
 
   &__cvv-container {
@@ -51,5 +49,4 @@
     margin: 0 auto;
     max-width: 20rem;
   }
-
 }

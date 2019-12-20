@@ -1,5 +1,4 @@
 .price {
-
   $base-color: black;
 
   font-size: 1em;
@@ -7,11 +6,10 @@
 
   &__remaining {
     font-size: 0.8em;
-    color:  lighten($base-color, 30%);
+    color: lighten($base-color, 30%);
   }
 
   &--no-color {
-
     color: inherit;
 
     .price {
@@ -19,7 +17,5 @@
         color: inherit;
       }
     }
-
   }
-
 }

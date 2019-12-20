@@ -1,12 +1,10 @@
 @import "./styles/_colors";
 
 .expandable-card {
-
-  $background-color: #EEE;
+  $background-color: #eee;
   $border-color: $border-default-color;
 
   &__expandable {
-
     // Fix for content margins...
     border: 0.01rem solid transparent;
     background-clip: border-box;
@@ -17,7 +15,7 @@
       darken($background-color, 5%),
       $background-color 10px,
       $background-color
-      );
+    );
   }
 
   &__fold-button {
@@ -31,7 +29,5 @@
     &:hover {
       background-color: darken($background-color, 10%);
     }
-
   }
-
 }

@@ -39,14 +39,12 @@
   }
 
   &__help {
-      // top | right | bottom | left
-      margin: $description-margin 0 $description-margin $description-margin;
-      flex-grow: 0;
+    // top | right | bottom | left
+    margin: $description-margin 0 $description-margin $description-margin;
+    flex-grow: 0;
   }
 
   &__help-link {
     cursor: pointer;
   }
-
 }
-

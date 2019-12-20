@@ -1,5 +1,4 @@
 .travel {
-
   $margin: 0.5rem;
 
   &__header {
@@ -12,13 +11,13 @@
       flex: 1 0;
     }
 
-    &-title, &-price {
+    &-title,
+    &-price {
       margin: $margin;
       padding: 0;
 
       font-size: $font-size;
     }
-
   }
 
   &__details {
@@ -27,14 +26,13 @@
 
     margin-top: $margin / 2;
 
-    &-date, &-passengers {
+    &-date,
+    &-passengers {
       margin: $margin;
       padding: 0;
 
       font-size: 1rem;
       font-weight: normal;
     }
-
   }
-
 }

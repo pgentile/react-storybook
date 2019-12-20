@@ -1,6 +1,5 @@
 @import "../styles/_screen-sizes";
 
-
 .payment-container {
   $margin: 1rem;
 
@@ -17,8 +16,8 @@
     max-width: 1200px;
   }
 
-  &__voucher-form, &__donation {
+  &__voucher-form,
+  &__donation {
     margin-top: $margin;
   }
-
 }

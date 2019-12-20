@@ -1,6 +1,6 @@
 .date-picker-input {
   $color: black;
-  $border-color: #EEE;
+  $border-color: #eee;
   $bottom-border-color: darken($border-color, 20%);
   $border-width: 1px;
   $border-bottom-width: 3px;
@@ -63,7 +63,6 @@
       color: $disabled-color;
       user-select: none;
     }
-
   }
 
   &__picker-panel {
@@ -97,5 +96,4 @@
 
     z-index: 900;
   }
-
 }

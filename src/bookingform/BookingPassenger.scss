@@ -1,5 +1,7 @@
 .booking-passenger {
-  &__title, &__age, &__fare-profile {
+  &__title,
+  &__age,
+  &__fare-profile {
     margin: 0;
     padding: 0;
   }

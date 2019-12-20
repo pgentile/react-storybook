@@ -1,6 +1,6 @@
 .checkable-image-input {
   $layer-shadow-color: rgba(0, 0, 0, 0.2);
-  $border-color: #EEE;
+  $border-color: #eee;
   $border-width: 1px;
 
   $checked-border-color: green;
@@ -69,7 +69,6 @@
     &::after {
       background-image: url("./CheckableImageInput-checked-disabled.svg");
     }
-
   }
 
   &__input {
@@ -85,5 +84,4 @@
     overflow: hidden;
     opacity: 0;
   }
-
 }

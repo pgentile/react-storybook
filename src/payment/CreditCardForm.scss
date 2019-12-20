@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0;
 
-  &__card-number, &__expiration-date, &__cvv {
+  &__card-number,
+  &__expiration-date,
+  &__cvv {
     margin-bottom: $margin;
   }
 
@@ -15,7 +17,6 @@
   }
 
   @include screen-min-small {
-
     display: grid;
     grid-gap: $margin;
 
@@ -25,7 +26,9 @@
       "button button";
     grid-template-columns: 1fr 1fr;
 
-    &__card-number, &__expiration-date, &__cvv {
+    &__card-number,
+    &__expiration-date,
+    &__cvv {
       margin-bottom: 0;
     }
 
@@ -44,7 +47,5 @@
     &__button {
       grid-area: button;
     }
-
   }
-
 }

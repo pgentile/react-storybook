@@ -1,11 +1,10 @@
 @import "../styles/_reset-button";
 
-
 .button {
   @extend %button-resets;
 
   $color: black;
-  $border-color: #EEE;
+  $border-color: #eee;
   $background-color: white;
 
   box-sizing: border-box;
@@ -50,7 +49,6 @@
   }
 
   &--size {
-
     &-small {
       padding: 0.3rem 0.8rem;
       font-size: 0.8rem;
@@ -60,12 +58,10 @@
       font-size: 1.5rem;
       padding: 0.5rem 1.5rem;
     }
-
   }
 
   &--flat {
     border: none;
     border-radius: 0;
   }
-
 }

@@ -1,7 +1,6 @@
 @import "./styles/_colors";
 
 .card {
-
   $background-color: white;
   $layer-shadow-color: rgba(0, 0, 0, 0.2);
   $border-width: 1px;
@@ -54,5 +53,4 @@
     box-shadow: 0 12px 24px 0 $layer-shadow-color;
     border-color: $border-color;
   }
-
 }

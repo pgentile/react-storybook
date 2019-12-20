@@ -3,7 +3,7 @@
 
 .adaptative-list {
   $margin: 1rem;
-  $border-color:$border-default-color;
+  $border-color: $border-default-color;
 
   &__separator {
     display: none;
@@ -16,7 +16,7 @@
       margin-top: 0;
     }
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -39,11 +39,9 @@
         margin-left: 0;
       }
 
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
-
   }
-
 }

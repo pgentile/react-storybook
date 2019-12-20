@@ -30,7 +30,8 @@
 
     transition: border-color 0.2s ease-out, background-color 0.2s ease-out;
 
-    &--active, &:hover {
+    &--active,
+    &:hover {
       border-color: darken($border-color, 30%);
     }
   }
@@ -46,5 +47,4 @@
 
     color: black;
   }
-
 }

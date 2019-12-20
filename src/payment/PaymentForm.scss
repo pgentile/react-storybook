@@ -13,13 +13,16 @@
     font-size: 1.8rem;
   }
 
-  &__select-mean, &__means, &__credit-card-form, &__registred-cards {
+  &__select-mean,
+  &__means,
+  &__credit-card-form,
+  &__registred-cards {
     margin: 0;
     margin-top: $margin;
   }
 
-  &__select-mean, &__means {
+  &__select-mean,
+  &__means {
     text-align: center;
   }
-
 }

@@ -1,4 +1,4 @@
-@import './led';
+@import "./led";
 
 .level-indicator {
   // Supprimer les marges autour des LED (pour display inline-block)
@@ -12,7 +12,5 @@
     &:last-child {
       margin-right: 0;
     }
-
   }
-
 }
