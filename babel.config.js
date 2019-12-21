@@ -1,9 +1,13 @@
+const basicPlugins = ["@babel/plugin-proposal-class-properties"];
+
+const basicPresets = ["@babel/preset-typescript"];
+
 module.exports = api => {
   api.cache(true);
 
   return {
     plugins: [
-      "@babel/plugin-proposal-class-properties",
+      ...basicPlugins,
       [
         "react-intl",
         {
@@ -13,6 +17,7 @@ module.exports = api => {
       ]
     ],
     presets: [
+      ...basicPresets,
       [
         "@babel/preset-env",
         {
@@ -25,8 +30,9 @@ module.exports = api => {
     ],
     env: {
       test: {
-        plugins: ["@babel/plugin-proposal-class-properties", "require-context-hook"],
+        plugins: [...basicPlugins, "require-context-hook"],
         presets: [
+          ...basicPresets,
           [
             "@babel/preset-env",
             {

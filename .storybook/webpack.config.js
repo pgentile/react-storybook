@@ -17,6 +17,12 @@ module.exports = ({config}) => {
   //   namedModules: true
   // };
 
+  config.resolve.extensions = [
+    ...config.resolve.extensions,
+    ".ts",
+    ".tsx"
+  ];
+
   const modulesToTranspile = [
     "query-string",
     "strict-uri-encode",
@@ -31,7 +37,16 @@ module.exports = ({config}) => {
   const modulesToTranspilePattern = `[/\\\\]node_modules[/\\\\](${modulesToTranspile.join("|")})[/\\\\]`;
 
   config.module.rules.unshift({
-    test: /\.jsx?$/,
+    test: /\.tsx?$/,
+    exclude: /node_modules/,
+    use: [
+      {
+        loader: "babel-loader?cacheDirectory"
+      }
+    ]
+  });
+  config.module.rules.unshift({
+    test: /\.[jt]sx?$/,
     include: new RegExp(modulesToTranspilePattern),
     use: [
       {

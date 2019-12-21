@@ -5,7 +5,7 @@ module.exports = {
     "\\.s?css$": "<rootDir>/__mocks__/styleMock.js"
   },
   transform: {
-    "\\.jsx?$": "babel-jest",
+    "\\.[jt]sx?$": "babel-jest",
     "\\.svg$": "<rootDir>/__mocks__/imageMock.js"
   },
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
