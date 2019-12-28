@@ -1,0 +1,12 @@
+.night-mode-preference {
+  --background-color: white;
+  --color: black;
+
+  background-color: var(--background-color);
+  color: var(--color);
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #222;
+    --color: #ddd;
+  }
+}

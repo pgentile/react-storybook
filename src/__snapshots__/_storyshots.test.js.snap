@@ -10469,6 +10469,27 @@ exports[`Storyshots NightMode main 1`] = `
 </div>
 `;
 
+exports[`Storyshots NightModePreference main 1`] = `
+<section
+  className="night-mode-preference"
+>
+  <h1>
+    Hello
+  </h1>
+  <p>
+    Utilisation du night mode de l'OS ?
+  </p>
+  <p>
+    OS en 
+    <i>
+      dark mode
+    </i>
+     ? 
+    non
+  </p>
+</section>
+`;
+
 exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
 <form
   className="credit-card-form "
