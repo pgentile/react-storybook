@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import PropTypes from "prop-types";
 
 import bemModifiers from "./utils/bemModifiers";
@@ -8,13 +8,13 @@ import "./NightMode.scss";
 export default function NightMode({ children }) {
   const [enabled, setEnabled] = useState(false);
 
+  const onSwitchClick = useCallback(() => {
+    setEnabled(prevValue => !prevValue);
+  }, []);
+
   const className = bemModifiers("night-mode", {
     enabled
   });
-
-  const onSwitchClick = () => {
-    setEnabled(!enabled);
-  };
 
   return (
     <div className={className}>
