@@ -8,8 +8,13 @@ exports[`Storyshots Accordion many panels expandable 1`] = `
     className="accordion__panel"
   >
     <div
+      aria-controls="accordion-unique-id-4"
+      aria-expanded="false"
+      aria-pressed="false"
       className="accordion__panel-title"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
       tabIndex={0}
     >
       <div
@@ -66,8 +71,13 @@ exports[`Storyshots Accordion many panels expandable 1`] = `
     className="accordion__panel"
   >
     <div
+      aria-controls="accordion-unique-id-5"
+      aria-expanded="false"
+      aria-pressed="false"
       className="accordion__panel-title"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
       tabIndex={0}
     >
       <div
@@ -124,8 +134,13 @@ exports[`Storyshots Accordion many panels expandable 1`] = `
     className="accordion__panel"
   >
     <div
+      aria-controls="accordion-unique-id-6"
+      aria-expanded="false"
+      aria-pressed="false"
       className="accordion__panel-title"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
       tabIndex={0}
     >
       <div
@@ -189,8 +204,13 @@ exports[`Storyshots Accordion only one panel expandable 1`] = `
     className="accordion__panel"
   >
     <div
+      aria-controls="accordion-unique-id-1"
+      aria-expanded="false"
+      aria-pressed="false"
       className="accordion__panel-title"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
       tabIndex={0}
     >
       <div
@@ -247,8 +267,13 @@ exports[`Storyshots Accordion only one panel expandable 1`] = `
     className="accordion__panel"
   >
     <div
+      aria-controls="accordion-unique-id-2"
+      aria-expanded="false"
+      aria-pressed="false"
       className="accordion__panel-title"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
       tabIndex={0}
     >
       <div
@@ -305,8 +330,13 @@ exports[`Storyshots Accordion only one panel expandable 1`] = `
     className="accordion__panel"
   >
     <div
+      aria-controls="accordion-unique-id-3"
+      aria-expanded="false"
+      aria-pressed="false"
       className="accordion__panel-title"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
       tabIndex={0}
     >
       <div
