@@ -14,6 +14,9 @@
 
   background-color: $disabled-color;
 
+  transition-property: background-color box-shadow;
+  transition-duration: 250ms;
+
   @each $color-name, $color in $colors {
     &--color-#{$color-name}#{&}--enabled {
       background-color: $color;
