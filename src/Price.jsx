@@ -53,6 +53,8 @@ function currencyToSymbol(currency) {
       return "€";
     case "GBP":
       return "£";
+    case "USD":
+      return "$";
     default:
       return currency;
   }
