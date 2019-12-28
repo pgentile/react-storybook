@@ -34,7 +34,7 @@ export default function ExchangeRate({ children, baseCurrency: defaultBaseCurren
         return { value, currency };
       }
 
-      return { value: rate * value, currency: baseCurrency };
+      return { value: value / rate, currency: baseCurrency };
     },
     [baseCurrency, rates]
   );
