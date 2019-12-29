@@ -18,7 +18,6 @@ export default function ArticleResume({ children }) {
   return (
     <div className="article-resume">
       <div className={contentClass}>{children}</div>
-      {hidden && <div className="article-resume__overlay" />}
       {hidden && (
         <div className="article-resume__button-wrapper">
           <button className="article-resume__button" onClick={onShowClick}>
