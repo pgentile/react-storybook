@@ -1,0 +1,20 @@
+.sticky {
+  height: 300vh;
+
+  background-color: grey;
+
+  &__container {
+    height: 120vh;
+    padding: 1rem;
+
+    background-color: pink;
+  }
+
+  &__element {
+    position: sticky;
+
+    padding: 1rem;
+
+    background-color: greenyellow;
+  }
+}

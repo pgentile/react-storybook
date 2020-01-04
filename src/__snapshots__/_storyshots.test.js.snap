@@ -1358,6 +1358,30 @@ exports[`Storyshots Buttons / ProgressButton main 1`] = `
 </button>
 `;
 
+exports[`Storyshots CSS | StickyElement main 1`] = `
+<div
+  className="sticky"
+>
+  Root element
+  <div
+    className="sticky__container"
+  >
+    Container element start
+    <div
+      className="sticky__element"
+      style={
+        Object {
+          "top": "0px",
+        }
+      }
+    >
+      This is the sticky element
+    </div>
+    Container element end
+  </div>
+</div>
+`;
+
 exports[`Storyshots Calendar / Calendar all options 1`] = `
 <table
   className="calendar "
