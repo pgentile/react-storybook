@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import ReCaptcha from "./ReCaptcha";
@@ -15,13 +14,13 @@ const props = {
   onExpire
 };
 
-storiesOf("ReCaptcha", module)
-  .add("main", () => {
-    return <ReCaptcha {...props} />;
-  })
-  .add("dark", () => {
-    return <ReCaptcha {...props} theme="dark" />;
-  })
-  .add("compact", () => {
-    return <ReCaptcha {...props} size="compact" />;
-  });
+export default {
+  title: "ReCaptcha",
+  component: ReCaptcha
+};
+
+export const main = () => <ReCaptcha {...props} />;
+
+export const dark = () => <ReCaptcha {...props} theme="dark" />;
+
+export const compact = () => <ReCaptcha {...props} size="compact" />;
