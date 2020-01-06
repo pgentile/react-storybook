@@ -1206,12 +1206,7 @@
     "@formatjs/intl-utils" "^2.0.2"
     unicode-12.1.0 "0.8"
 
-"@formatjs/intl-utils@^2.0.0", "@formatjs/intl-utils@^2.0.1", "@formatjs/intl-utils@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.0.2.tgz#5861bc4be8cdd06484a713122026d1e4065849eb"
-  integrity sha512-FpMVkOKg73soaA019turLO3kCPW9CbIViYgyUtR4uyNvJS9wH1QCbdPIcjDMskjIzQV+FG3+hW1VvrI8begmKQ==
-
-"@formatjs/intl-utils@^2.0.2":
+"@formatjs/intl-utils@^2.0.0", "@formatjs/intl-utils@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.0.2.tgz#5861bc4be8cdd06484a713122026d1e4065849eb"
   integrity sha512-FpMVkOKg73soaA019turLO3kCPW9CbIViYgyUtR4uyNvJS9wH1QCbdPIcjDMskjIzQV+FG3+hW1VvrI8begmKQ==
