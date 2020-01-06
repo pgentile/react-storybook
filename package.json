@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.7.7",
-    "@formatjs/intl-pluralrules": "^1.4.1",
+    "@formatjs/intl-pluralrules": "^1.4.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
