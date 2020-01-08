@@ -29,10 +29,12 @@ import { storiesOf } from "@storybook/react";
 
 import $name from "./$name";
 
-storiesOf("$name", module)
-  .add("main", () => {
-    return <$name />;
-  });
+export default {
+  title: "$name",
+  component: $name
+};
+
+export const main = () => <$name />;
 EOF
 
 cat >$name.scss <<EOF
