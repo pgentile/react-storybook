@@ -1,9 +1,13 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import TravelDetails from "./TravelDetails";
 
-storiesOf("TravelDetails", module).add("main", () => {
+export default {
+  title: "TravelDetails",
+  component: TravelDetails
+};
+
+export const main = () => {
   const segments = [
     {
       type: "train",
@@ -48,4 +52,4 @@ storiesOf("TravelDetails", module).add("main", () => {
     }
   ];
   return <TravelDetails segments={segments} />;
-});
+};

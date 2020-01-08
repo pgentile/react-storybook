@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import I18nLocaleSelector from "./I18nLocaleSelector";
 
-storiesOf("I18n | I18nLocaleSelector", module).add("main", () => {
+export default {
+  title: "I18n | I18nLocaleSelector",
+  component: I18nLocaleSelector
+};
+
+export const main = () => {
   return <I18nLocaleSelector />;
-});
+};

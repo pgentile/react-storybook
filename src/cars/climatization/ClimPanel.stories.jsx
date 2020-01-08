@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ClimPanel from "./ClimPanel";
 
-storiesOf("Cars | Climatization / ClimPanel", module).add("main", () => {
+export default {
+  title: "Cars | Climatization / ClimPanel",
+  component: ClimPanel
+};
+
+export const main = () => {
   return <ClimPanel />;
-});
+};

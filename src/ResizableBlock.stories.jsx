@@ -1,9 +1,13 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ResizableBlock from "./ResizableBlock";
 
-storiesOf("ResizableBlock", module).add("main", () => {
+export default {
+  title: "ResizableBlock",
+  component: ResizableBlock
+};
+
+export const main = () => {
   const breakpoints = [
     {
       name: "M",
@@ -32,4 +36,4 @@ storiesOf("ResizableBlock", module).add("main", () => {
       </ResizableBlock>
     </div>
   );
-});
+};

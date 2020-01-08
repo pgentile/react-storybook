@@ -1,9 +1,13 @@
 import React, { Fragment } from "react";
-import { storiesOf } from "@storybook/react";
 
 import AdaptativeList from "./AdaptativeList";
 
-storiesOf("AdaptativeList", module).add("main", () => {
+export default {
+  title: "AdaptativeList",
+  component: AdaptativeList
+};
+
+export const main = () => {
   const items = [
     "Ligne 1",
     <p key={2} style={{ margin: "1rem" }}>
@@ -17,4 +21,4 @@ storiesOf("AdaptativeList", module).add("main", () => {
   ];
 
   return <AdaptativeList items={items} />;
-});
+};

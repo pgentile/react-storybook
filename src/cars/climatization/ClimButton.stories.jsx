@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ClimButton from "./ClimButton";
 
-storiesOf("Cars | Climatization / ClimButton", module).add("main", () => {
+export default {
+  title: "Cars | Climatization / ClimButton",
+  component: ClimButton
+};
+
+export const main = () => {
   return <ClimButton title="Button" />;
-});
+};

@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ElapsedTime from "./ElapsedTime";
 
-storiesOf("Hooks / ElapsedTime", module).add("main", () => {
+export default {
+  title: "Hooks / ElapsedTime",
+  component: ElapsedTime
+};
+
+export const main = () => {
   return <ElapsedTime />;
-});
+};

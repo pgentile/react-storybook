@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Accordion many panels expandable 1`] = `
+exports[`Storyshots Accordion Many Panels Expandable 1`] = `
 <div
   className="accordion"
 >
@@ -196,7 +196,7 @@ exports[`Storyshots Accordion many panels expandable 1`] = `
 </div>
 `;
 
-exports[`Storyshots Accordion only one panel expandable 1`] = `
+exports[`Storyshots Accordion Only One Panel Expandable 1`] = `
 <div
   className="accordion"
 >
@@ -419,7 +419,7 @@ exports[`Storyshots Adaptative Main 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdaptativeList main 1`] = `
+exports[`Storyshots AdaptativeList Main 1`] = `
 <div
   className="adaptative-list "
 >
@@ -465,7 +465,7 @@ exports[`Storyshots AdaptativeList main 1`] = `
 </div>
 `;
 
-exports[`Storyshots ArticleResume main 1`] = `
+exports[`Storyshots ArticleResume Main 1`] = `
 <div
   className="article-resume"
 >
@@ -487,7 +487,7 @@ exports[`Storyshots ArticleResume main 1`] = `
 </div>
 `;
 
-exports[`Storyshots AsyncLoader error 1`] = `
+exports[`Storyshots AsyncLoader Error Story 1`] = `
 <div
   className="spinner"
 >
@@ -503,7 +503,7 @@ exports[`Storyshots AsyncLoader error 1`] = `
 </div>
 `;
 
-exports[`Storyshots AsyncLoader success 1`] = `
+exports[`Storyshots AsyncLoader Success 1`] = `
 <div
   className="spinner"
 >
@@ -519,7 +519,7 @@ exports[`Storyshots AsyncLoader success 1`] = `
 </div>
 `;
 
-exports[`Storyshots Auth / AuthAskPassword main 1`] = `
+exports[`Storyshots Auth / AuthAskPassword Main 1`] = `
 <div
   className="auth-askpassword"
 >
@@ -565,7 +565,7 @@ exports[`Storyshots Auth / AuthAskPassword main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Auth / AuthIKnowYou main 1`] = `
+exports[`Storyshots Auth / AuthIKnowYou Main 1`] = `
 <div
   className="auth-iknowyou"
 >
@@ -588,7 +588,7 @@ exports[`Storyshots Auth / AuthIKnowYou main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Auth / AuthWidget main 1`] = `
+exports[`Storyshots Auth / AuthWidget Main 1`] = `
 <div
   className="card card--has-border card--layer-flat auth-widget"
 >
@@ -615,7 +615,7 @@ exports[`Storyshots Auth / AuthWidget main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Booking form | BookingPassenger base 1`] = `
+exports[`Storyshots Booking form | BookingPassenger Base 1`] = `
 <section
   className="booking-passenger "
 >
@@ -660,7 +660,7 @@ exports[`Storyshots Booking form | BookingPassenger base 1`] = `
 </section>
 `;
 
-exports[`Storyshots Booking form | BookingPassenger name 1`] = `
+exports[`Storyshots Booking form | BookingPassenger Name Story 1`] = `
 <section
   className="booking-passenger "
 >
@@ -711,7 +711,7 @@ exports[`Storyshots Booking form | BookingPassenger name 1`] = `
 </section>
 `;
 
-exports[`Storyshots Booking form | BookingPassengerList main 1`] = `
+exports[`Storyshots Booking form | BookingPassengerList Main 1`] = `
 <section
   className="booking-passenger-list "
 >
@@ -857,7 +857,7 @@ exports[`Storyshots Booking form | BookingPassengerList main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Booking form | BookingPassengers main 1`] = `
+exports[`Storyshots Booking form | BookingPassengers Main 1`] = `
 <section
   className="booking-passengers"
 >
@@ -1191,7 +1191,7 @@ exports[`Storyshots Buttons / Button toggled 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons / ButtonGroup large 1`] = `
+exports[`Storyshots Buttons / ButtonGroup Large 1`] = `
 <div
   className="button-group "
 >
@@ -1222,7 +1222,7 @@ exports[`Storyshots Buttons / ButtonGroup large 1`] = `
 </div>
 `;
 
-exports[`Storyshots Buttons / ButtonGroup main 1`] = `
+exports[`Storyshots Buttons / ButtonGroup Main 1`] = `
 <div
   className="button-group "
 >
@@ -1253,7 +1253,7 @@ exports[`Storyshots Buttons / ButtonGroup main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Buttons / ManagedProgressButton fail 1`] = `
+exports[`Storyshots Buttons / ManagedProgressButton Fail Story 1`] = `
 <button
   aria-pressed={false}
   className="button button--size-normal progress-button "
@@ -1271,7 +1271,7 @@ exports[`Storyshots Buttons / ManagedProgressButton fail 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons / ManagedProgressButton success 1`] = `
+exports[`Storyshots Buttons / ManagedProgressButton Success Story 1`] = `
 <button
   aria-pressed={false}
   className="button button--size-normal progress-button "
@@ -1289,7 +1289,7 @@ exports[`Storyshots Buttons / ManagedProgressButton success 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons / ProgressButton disabled 1`] = `
+exports[`Storyshots Buttons / ProgressButton Disabled Story 1`] = `
 <button
   aria-pressed={false}
   className="button button--size-normal progress-button "
@@ -1306,7 +1306,7 @@ exports[`Storyshots Buttons / ProgressButton disabled 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons / ProgressButton finished 1`] = `
+exports[`Storyshots Buttons / ProgressButton Finished Story 1`] = `
 <button
   aria-pressed={false}
   className="button button--size-normal progress-button "
@@ -1323,7 +1323,7 @@ exports[`Storyshots Buttons / ProgressButton finished 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons / ProgressButton loading 1`] = `
+exports[`Storyshots Buttons / ProgressButton Loading Story 1`] = `
 <button
   aria-pressed={false}
   className="button button--size-normal progress-button "
@@ -1340,7 +1340,7 @@ exports[`Storyshots Buttons / ProgressButton loading 1`] = `
 </button>
 `;
 
-exports[`Storyshots Buttons / ProgressButton main 1`] = `
+exports[`Storyshots Buttons / ProgressButton Main 1`] = `
 <button
   aria-pressed={false}
   className="button button--size-normal progress-button "
@@ -1358,7 +1358,7 @@ exports[`Storyshots Buttons / ProgressButton main 1`] = `
 </button>
 `;
 
-exports[`Storyshots CSS | StickyElement main 1`] = `
+exports[`Storyshots CSS | StickyElement Main 1`] = `
 <div
   className="sticky"
 >
@@ -1382,7 +1382,7 @@ exports[`Storyshots CSS | StickyElement main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Calendar / Calendar all options 1`] = `
+exports[`Storyshots Calendar / Calendar All Options 1`] = `
 <table
   className="calendar "
 >
@@ -2128,7 +2128,7 @@ exports[`Storyshots Calendar / Calendar all options 1`] = `
 </table>
 `;
 
-exports[`Storyshots Calendar / Calendar main 1`] = `
+exports[`Storyshots Calendar / Calendar Main 1`] = `
 <table
   className="calendar "
 >
@@ -2874,7 +2874,7 @@ exports[`Storyshots Calendar / Calendar main 1`] = `
 </table>
 `;
 
-exports[`Storyshots Calendar / Calendar max date 1`] = `
+exports[`Storyshots Calendar / Calendar Max Date 1`] = `
 <table
   className="calendar "
 >
@@ -3620,7 +3620,7 @@ exports[`Storyshots Calendar / Calendar max date 1`] = `
 </table>
 `;
 
-exports[`Storyshots Calendar / Calendar min date 1`] = `
+exports[`Storyshots Calendar / Calendar Min Date 1`] = `
 <table
   className="calendar "
 >
@@ -4366,7 +4366,7 @@ exports[`Storyshots Calendar / Calendar min date 1`] = `
 </table>
 `;
 
-exports[`Storyshots Calendar / Calendar selectable 1`] = `
+exports[`Storyshots Calendar / Calendar Selectable 1`] = `
 <table
   className="calendar "
 >
@@ -5112,7 +5112,7 @@ exports[`Storyshots Calendar / Calendar selectable 1`] = `
 </table>
 `;
 
-exports[`Storyshots Calendar / Calendar selected date 1`] = `
+exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
 <table
   className="calendar "
 >
@@ -5858,7 +5858,7 @@ exports[`Storyshots Calendar / Calendar selected date 1`] = `
 </table>
 `;
 
-exports[`Storyshots Calendar / DatePicker demo 1`] = `
+exports[`Storyshots Calendar / DatePicker Demo 1`] = `
 <section
   className="date-picker"
 >
@@ -6559,7 +6559,7 @@ exports[`Storyshots Calendar / DatePicker demo 1`] = `
 </section>
 `;
 
-exports[`Storyshots Calendar / DatePicker main 1`] = `
+exports[`Storyshots Calendar / DatePicker Main 1`] = `
 <section
   className="date-picker"
 >
@@ -7459,7 +7459,7 @@ exports[`Storyshots Card Carte simple 1`] = `
 </div>
 `;
 
-exports[`Storyshots Carousel main 1`] = `
+exports[`Storyshots Carousel Main 1`] = `
 <div
   className="carousel "
 >
@@ -7503,7 +7503,7 @@ exports[`Storyshots Carousel main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Climatization / AutoClimButton main 1`] = `
+exports[`Storyshots Cars | Climatization / AutoClimButton Main 1`] = `
 <button
   className="clim-button"
   onClick={[Function]}
@@ -7530,7 +7530,7 @@ exports[`Storyshots Cars | Climatization / AutoClimButton main 1`] = `
 </button>
 `;
 
-exports[`Storyshots Cars | Climatization / ClimButton main 1`] = `
+exports[`Storyshots Cars | Climatization / ClimButton Main 1`] = `
 <button
   className="clim-button"
   onClick={null}
@@ -7553,7 +7553,7 @@ exports[`Storyshots Cars | Climatization / ClimButton main 1`] = `
 </button>
 `;
 
-exports[`Storyshots Cars | Climatization / ClimPanel main 1`] = `
+exports[`Storyshots Cars | Climatization / ClimPanel Main 1`] = `
 <div
   className="clim-panel"
 >
@@ -7728,7 +7728,7 @@ exports[`Storyshots Cars | Climatization / ClimPanel main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Climatization / HeatedSeatButton main 1`] = `
+exports[`Storyshots Cars | Climatization / HeatedSeatButton Main 1`] = `
 <button
   className="clim-button"
   onClick={[Function]}
@@ -7779,7 +7779,7 @@ exports[`Storyshots Cars | Climatization / HeatedSeatButton main 1`] = `
 </button>
 `;
 
-exports[`Storyshots Cars | Climatization / SyncButton main 1`] = `
+exports[`Storyshots Cars | Climatization / SyncButton Main 1`] = `
 <button
   className="clim-button"
   onClick={[Function]}
@@ -7806,7 +7806,7 @@ exports[`Storyshots Cars | Climatization / SyncButton main 1`] = `
 </button>
 `;
 
-exports[`Storyshots Cars | Climatization / WindshieldButton main 1`] = `
+exports[`Storyshots Cars | Climatization / WindshieldButton Main 1`] = `
 <button
   className="clim-button"
   onClick={[Function]}
@@ -7833,43 +7833,43 @@ exports[`Storyshots Cars | Climatization / WindshieldButton main 1`] = `
 </button>
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator blink 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator Blink 1`] = `
 <div
   className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled led-indicator--blink "
 />
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator enabled 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator Enabled 1`] = `
 <div
   className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled "
 />
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator green 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator Green 1`] = `
 <div
   className="led-indicator led-indicator--color-green led-indicator--size-normal led-indicator--enabled "
 />
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator large 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator Large 1`] = `
 <div
   className="led-indicator led-indicator--color-blue led-indicator--size-large led-indicator--enabled "
 />
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator main 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator Main 1`] = `
 <div
   className="led-indicator led-indicator--color-red led-indicator--size-normal "
 />
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator normal 1`] = `
+exports[`Storyshots Cars | Core / LedIndicator Normal 1`] = `
 <div
   className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled "
 />
 `;
 
-exports[`Storyshots Cars | Core / LevelIndicator level 0 1`] = `
+exports[`Storyshots Cars | Core / LevelIndicator Level 0 1`] = `
 <div
   className="level-indicator "
 >
@@ -7885,7 +7885,7 @@ exports[`Storyshots Cars | Core / LevelIndicator level 0 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LevelIndicator level 1 1`] = `
+exports[`Storyshots Cars | Core / LevelIndicator Level 1 1`] = `
 <div
   className="level-indicator "
 >
@@ -7901,7 +7901,7 @@ exports[`Storyshots Cars | Core / LevelIndicator level 1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LevelIndicator level 2 1`] = `
+exports[`Storyshots Cars | Core / LevelIndicator Level 2 1`] = `
 <div
   className="level-indicator "
 >
@@ -7917,7 +7917,7 @@ exports[`Storyshots Cars | Core / LevelIndicator level 2 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LevelIndicator level 3 1`] = `
+exports[`Storyshots Cars | Core / LevelIndicator Level 3 1`] = `
 <div
   className="level-indicator "
 >
@@ -7958,7 +7958,7 @@ exports[`Storyshots Counter Main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Encryption test 1`] = `
+exports[`Storyshots Encryption Test 1`] = `
 <div
   style={
     Object {
@@ -7972,7 +7972,7 @@ exports[`Storyshots Encryption test 1`] = `
 </div>
 `;
 
-exports[`Storyshots ExchangeRate main 1`] = `
+exports[`Storyshots ExchangeRate Main 1`] = `
 Array [
   <div
     className="button-group "
@@ -8055,7 +8055,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Experiments | Translation3D main 1`] = `
+exports[`Storyshots Experiments | Translation3D Main 1`] = `
 <div
   className="translation-3d"
   style={
@@ -8107,7 +8107,7 @@ exports[`Storyshots Experiments | Translation3D main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Final Forms | ContactForm main 1`] = `
+exports[`Storyshots Final Forms | ContactForm Main 1`] = `
 Array [
   <form
     onSubmit={[Function]}
@@ -8121,7 +8121,7 @@ Array [
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-0"
+          htmlFor="form-field-16"
         >
           Prénom
         </label>
@@ -8132,7 +8132,7 @@ Array [
             aria-invalid={false}
             className="form-input-field "
             formNoValidate={true}
-            id="form-field-0"
+            id="form-field-16"
             name="recipient.firstName"
             onBlur={[Function]}
             onChange={[Function]}
@@ -8147,7 +8147,7 @@ Array [
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-1"
+          htmlFor="form-field-17"
         >
           Nom
         </label>
@@ -8158,7 +8158,7 @@ Array [
             aria-invalid={false}
             className="form-input-field "
             formNoValidate={true}
-            id="form-field-1"
+            id="form-field-17"
             name="recipient.lastName"
             onBlur={[Function]}
             onChange={[Function]}
@@ -8217,7 +8217,7 @@ Array [
             >
               <label
                 className="label form-field-container__label"
-                htmlFor="form-field-2"
+                htmlFor="form-field-18"
               >
                 Prénom
               </label>
@@ -8228,7 +8228,7 @@ Array [
                   aria-invalid={false}
                   className="form-input-field "
                   formNoValidate={true}
-                  id="form-field-2"
+                  id="form-field-18"
                   name="passengers.0.firstName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8243,7 +8243,7 @@ Array [
             >
               <label
                 className="label form-field-container__label"
-                htmlFor="form-field-3"
+                htmlFor="form-field-19"
               >
                 Nom
               </label>
@@ -8254,7 +8254,7 @@ Array [
                   aria-invalid={false}
                   className="form-input-field "
                   formNoValidate={true}
-                  id="form-field-3"
+                  id="form-field-19"
                   name="passengers.0.lastName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8316,7 +8316,7 @@ Array [
             >
               <label
                 className="label form-field-container__label"
-                htmlFor="form-field-4"
+                htmlFor="form-field-20"
               >
                 Prénom
               </label>
@@ -8327,7 +8327,7 @@ Array [
                   aria-invalid={false}
                   className="form-input-field "
                   formNoValidate={true}
-                  id="form-field-4"
+                  id="form-field-20"
                   name="passengers.1.firstName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8342,7 +8342,7 @@ Array [
             >
               <label
                 className="label form-field-container__label"
-                htmlFor="form-field-5"
+                htmlFor="form-field-21"
               >
                 Nom
               </label>
@@ -8353,7 +8353,7 @@ Array [
                   aria-invalid={false}
                   className="form-input-field "
                   formNoValidate={true}
-                  id="form-field-5"
+                  id="form-field-21"
                   name="passengers.1.lastName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8415,7 +8415,7 @@ Array [
             >
               <label
                 className="label form-field-container__label"
-                htmlFor="form-field-6"
+                htmlFor="form-field-22"
               >
                 Prénom
               </label>
@@ -8426,7 +8426,7 @@ Array [
                   aria-invalid={false}
                   className="form-input-field "
                   formNoValidate={true}
-                  id="form-field-6"
+                  id="form-field-22"
                   name="passengers.2.firstName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8441,7 +8441,7 @@ Array [
             >
               <label
                 className="label form-field-container__label"
-                htmlFor="form-field-7"
+                htmlFor="form-field-23"
               >
                 Nom
               </label>
@@ -8452,7 +8452,7 @@ Array [
                   aria-invalid={false}
                   className="form-input-field "
                   formNoValidate={true}
-                  id="form-field-7"
+                  id="form-field-23"
                   name="passengers.2.lastName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8557,7 +8557,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots FittedImage demo 1`] = `
+exports[`Storyshots FittedImage Demo 1`] = `
 <div
   style={
     Object {
@@ -8572,7 +8572,7 @@ exports[`Storyshots FittedImage demo 1`] = `
 </div>
 `;
 
-exports[`Storyshots Flippable main 1`] = `
+exports[`Storyshots Flippable Main 1`] = `
 <div
   className="flippable"
 >
@@ -8605,7 +8605,7 @@ exports[`Storyshots Flippable main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / CheckableImageInput checked 1`] = `
+exports[`Storyshots Forms / CheckableImageInput Checked 1`] = `
 <span
   aria-checked={true}
   className="checkable-image-input checkable-image-input--checked "
@@ -8642,7 +8642,7 @@ exports[`Storyshots Forms / CheckableImageInput checked 1`] = `
 </span>
 `;
 
-exports[`Storyshots Forms / CheckableImageInput disabled 1`] = `
+exports[`Storyshots Forms / CheckableImageInput Disabled 1`] = `
 <span
   aria-disabled={true}
   className="checkable-image-input checkable-image-input--disabled "
@@ -8679,7 +8679,7 @@ exports[`Storyshots Forms / CheckableImageInput disabled 1`] = `
 </span>
 `;
 
-exports[`Storyshots Forms / CheckableImageInput disabled and checked 1`] = `
+exports[`Storyshots Forms / CheckableImageInput Disabled And Checked 1`] = `
 <span
   aria-checked={true}
   aria-disabled={true}
@@ -8718,7 +8718,7 @@ exports[`Storyshots Forms / CheckableImageInput disabled and checked 1`] = `
 </span>
 `;
 
-exports[`Storyshots Forms / CheckableImageInput many 1`] = `
+exports[`Storyshots Forms / CheckableImageInput Many 1`] = `
 Array [
   <span
     aria-checked={true}
@@ -8821,7 +8821,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Forms / CheckableImageInput readOnly 1`] = `
+exports[`Storyshots Forms / CheckableImageInput Read Only 1`] = `
 <span
   aria-readonly={true}
   className="checkable-image-input checkable-image-input--read-only "
@@ -8858,7 +8858,7 @@ exports[`Storyshots Forms / CheckableImageInput readOnly 1`] = `
 </span>
 `;
 
-exports[`Storyshots Forms / CheckableImageInput unchecked 1`] = `
+exports[`Storyshots Forms / CheckableImageInput Unchecked 1`] = `
 <span
   className="checkable-image-input "
   onClick={[Function]}
@@ -8893,12 +8893,29 @@ exports[`Storyshots Forms / CheckableImageInput unchecked 1`] = `
 </span>
 `;
 
-exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
+exports[`Storyshots Forms / DateInput Demo 1`] = `
 <fieldset
   className="form-date-input "
 >
   <input
+    className="form-date-input__input form-date-input__input--day"
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="JJ"
+    type="tel"
+    value=""
+  />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
+  <input
     className="form-date-input__input form-date-input__input--month"
+    id={null}
     inputMode="numeric"
     maxLength={2}
     onBlur={[Function]}
@@ -8906,7 +8923,7 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
     onFocus={[Function]}
     placeholder="MM"
     type="tel"
-    value="04"
+    value=""
   />
   <span
     className="form-date-input__input-separator"
@@ -8922,46 +8939,12 @@ exports[`Storyshots Forms / DateInput Mode year-month 1`] = `
     onFocus={[Function]}
     placeholder="AAAA"
     type="tel"
-    value="2018"
+    value=""
   />
 </fieldset>
 `;
 
-exports[`Storyshots Forms / DateInput Mode year-month with small year 1`] = `
-<fieldset
-  className="form-date-input "
->
-  <input
-    className="form-date-input__input form-date-input__input--month"
-    inputMode="numeric"
-    maxLength={2}
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    placeholder="MM"
-    type="tel"
-    value="06"
-  />
-  <span
-    className="form-date-input__input-separator"
-  >
-    /
-  </span>
-  <input
-    className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-    inputMode="numeric"
-    maxLength={2}
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    placeholder="AA"
-    type="tel"
-    value="22"
-  />
-</fieldset>
-`;
-
-exports[`Storyshots Forms / DateInput disabled 1`] = `
+exports[`Storyshots Forms / DateInput Disabled 1`] = `
 <fieldset
   className="form-date-input form-date-input--disabled "
 >
@@ -9015,58 +8998,7 @@ exports[`Storyshots Forms / DateInput disabled 1`] = `
 </fieldset>
 `;
 
-exports[`Storyshots Forms / DateInput dynamic 1`] = `
-<fieldset
-  className="form-date-input "
->
-  <input
-    className="form-date-input__input form-date-input__input--day"
-    inputMode="numeric"
-    maxLength={2}
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    placeholder="JJ"
-    type="tel"
-    value=""
-  />
-  <span
-    className="form-date-input__input-separator"
-  >
-    /
-  </span>
-  <input
-    className="form-date-input__input form-date-input__input--month"
-    id={null}
-    inputMode="numeric"
-    maxLength={2}
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    placeholder="MM"
-    type="tel"
-    value=""
-  />
-  <span
-    className="form-date-input__input-separator"
-  >
-    /
-  </span>
-  <input
-    className="form-date-input__input form-date-input__input--year"
-    inputMode="numeric"
-    maxLength={4}
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    placeholder="AAAA"
-    type="tel"
-    value=""
-  />
-</fieldset>
-`;
-
-exports[`Storyshots Forms / DateInput error 1`] = `
+exports[`Storyshots Forms / DateInput Error 1`] = `
 <fieldset
   className="form-date-input form-date-input--error "
 >
@@ -9120,7 +9052,7 @@ exports[`Storyshots Forms / DateInput error 1`] = `
 </fieldset>
 `;
 
-exports[`Storyshots Forms / DateInput main 1`] = `
+exports[`Storyshots Forms / DateInput Main 1`] = `
 <fieldset
   className="form-date-input "
 >
@@ -9171,7 +9103,75 @@ exports[`Storyshots Forms / DateInput main 1`] = `
 </fieldset>
 `;
 
-exports[`Storyshots Forms / DateInput read-only 1`] = `
+exports[`Storyshots Forms / DateInput Mode Year Month 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    className="form-date-input__input form-date-input__input--month"
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="MM"
+    type="tel"
+    value="04"
+  />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
+  <input
+    className="form-date-input__input form-date-input__input--year"
+    inputMode="numeric"
+    maxLength={4}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="AAAA"
+    type="tel"
+    value="2018"
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput Mode Year Month With Small Year 1`] = `
+<fieldset
+  className="form-date-input "
+>
+  <input
+    className="form-date-input__input form-date-input__input--month"
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="MM"
+    type="tel"
+    value="06"
+  />
+  <span
+    className="form-date-input__input-separator"
+  >
+    /
+  </span>
+  <input
+    className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+    inputMode="numeric"
+    maxLength={2}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="AA"
+    type="tel"
+    value="22"
+  />
+</fieldset>
+`;
+
+exports[`Storyshots Forms / DateInput Read Only 1`] = `
 <fieldset
   className="form-date-input form-date-input--read-only "
 >
@@ -9225,7 +9225,7 @@ exports[`Storyshots Forms / DateInput read-only 1`] = `
 </fieldset>
 `;
 
-exports[`Storyshots Forms / DateInput with value 1`] = `
+exports[`Storyshots Forms / DateInput With Value 1`] = `
 <fieldset
   className="form-date-input "
 >
@@ -9276,7 +9276,7 @@ exports[`Storyshots Forms / DateInput with value 1`] = `
 </fieldset>
 `;
 
-exports[`Storyshots Forms / DatePickerInput demo 1`] = `
+exports[`Storyshots Forms / DatePickerInput Demo 1`] = `
 <div
   className="date-picker-input "
 >
@@ -9293,7 +9293,7 @@ exports[`Storyshots Forms / DatePickerInput demo 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
+exports[`Storyshots Forms / DatePickerInput Disabled Story 1`] = `
 <div
   className="date-picker-input "
 >
@@ -9310,7 +9310,7 @@ exports[`Storyshots Forms / DatePickerInput disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / DatePickerInput error 1`] = `
+exports[`Storyshots Forms / DatePickerInput Error Story 1`] = `
 <div
   className="date-picker-input "
 >
@@ -9328,7 +9328,7 @@ exports[`Storyshots Forms / DatePickerInput error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / DatePickerInput main 1`] = `
+exports[`Storyshots Forms / DatePickerInput Main 1`] = `
 <div
   className="date-picker-input "
 >
@@ -9345,7 +9345,7 @@ exports[`Storyshots Forms / DatePickerInput main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
+exports[`Storyshots Forms / DatePickerInput Read Only Story 1`] = `
 <div
   className="date-picker-input "
 >
@@ -9362,13 +9362,13 @@ exports[`Storyshots Forms / DatePickerInput read-only 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
+exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
 <div
   className="form-field-container "
 >
   <label
-    className="label form-field-container__label"
-    htmlFor="form-field-10"
+    className="label label--disabled form-field-container__label"
+    htmlFor="form-field-28"
   >
     Example
   </label>
@@ -9378,27 +9378,23 @@ exports[`Storyshots Forms / FieldContainer Avec aide 1`] = `
     <input
       aria-invalid={false}
       className="form-input-field "
+      disabled={true}
       formNoValidate={true}
-      id="form-field-10"
+      id="form-field-28"
       placeholder="Valeur d'exemple"
       type="text"
     />
   </div>
-  <p
-    className="form-field-container__help"
-  >
-    Un peu d'aide, ça ne fait pas de mal
-  </p>
 </div>
 `;
 
-exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
+exports[`Storyshots Forms / FieldContainer Error 1`] = `
 <div
   className="form-field-container "
 >
   <label
     className="label form-field-container__label"
-    htmlFor="form-field-9"
+    htmlFor="form-field-25"
   >
     Example
   </label>
@@ -9409,7 +9405,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
       aria-invalid={true}
       className="form-input-field form-input-field--error "
       formNoValidate={true}
-      id="form-field-9"
+      id="form-field-25"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -9422,13 +9418,13 @@ exports[`Storyshots Forms / FieldContainer Avec erreur 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
+exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
 <div
   className="form-field-container "
 >
   <label
     className="label form-field-container__label"
-    htmlFor="form-field-11"
+    htmlFor="form-field-27"
   >
     Example
   </label>
@@ -9439,7 +9435,7 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
       aria-invalid={true}
       className="form-input-field form-input-field--error "
       formNoValidate={true}
-      id="form-field-11"
+      id="form-field-27"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -9457,13 +9453,13 @@ exports[`Storyshots Forms / FieldContainer Avec erreur et aide 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
+exports[`Storyshots Forms / FieldContainer Help 1`] = `
 <div
   className="form-field-container "
 >
   <label
-    className="label label--disabled form-field-container__label"
-    htmlFor="form-field-12"
+    className="label form-field-container__label"
+    htmlFor="form-field-26"
   >
     Example
   </label>
@@ -9473,9 +9469,38 @@ exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
     <input
       aria-invalid={false}
       className="form-input-field "
-      disabled={true}
       formNoValidate={true}
-      id="form-field-12"
+      id="form-field-26"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+  <p
+    className="form-field-container__help"
+  >
+    Un peu d'aide, ça ne fait pas de mal
+  </p>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Main 1`] = `
+<div
+  className="form-field-container "
+>
+  <label
+    className="label form-field-container__label"
+    htmlFor="form-field-24"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      formNoValidate={true}
+      id="form-field-24"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -9483,13 +9508,13 @@ exports[`Storyshots Forms / FieldContainer Désactivé 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
+exports[`Storyshots Forms / FieldContainer Read Only 1`] = `
 <div
   className="form-field-container "
 >
   <label
     className="label form-field-container__label"
-    htmlFor="form-field-13"
+    htmlFor="form-field-29"
   >
     Example
   </label>
@@ -9500,7 +9525,7 @@ exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
       aria-invalid={false}
       className="form-input-field "
       formNoValidate={true}
-      id="form-field-13"
+      id="form-field-29"
       placeholder="Valeur d'exemple"
       readOnly={true}
       type="text"
@@ -9509,32 +9534,7 @@ exports[`Storyshots Forms / FieldContainer Lecture seule 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / FieldContainer main 1`] = `
-<div
-  className="form-field-container "
->
-  <label
-    className="label form-field-container__label"
-    htmlFor="form-field-8"
-  >
-    Example
-  </label>
-  <div
-    className="form-field-container__field"
-  >
-    <input
-      aria-invalid={false}
-      className="form-input-field "
-      formNoValidate={true}
-      id="form-field-8"
-      placeholder="Valeur d'exemple"
-      type="text"
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Forms / FormFocusOnError main 1`] = `
+exports[`Storyshots Forms / FormFocusOnError Main 1`] = `
 <div>
   <div>
     <p>
@@ -9577,17 +9577,7 @@ exports[`Storyshots Forms / FormFocusOnError main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / InputField Avec erreur 1`] = `
-<input
-  aria-invalid={true}
-  className="form-input-field form-input-field--error "
-  defaultValue=""
-  formNoValidate={true}
-  type="text"
-/>
-`;
-
-exports[`Storyshots Forms / InputField Avec placeholder 1`] = `
+exports[`Storyshots Forms / InputField Avec Placeholplaceholderder 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
@@ -9598,7 +9588,7 @@ exports[`Storyshots Forms / InputField Avec placeholder 1`] = `
 />
 `;
 
-exports[`Storyshots Forms / InputField Avec valeur 1`] = `
+exports[`Storyshots Forms / InputField Default Value 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
@@ -9608,7 +9598,7 @@ exports[`Storyshots Forms / InputField Avec valeur 1`] = `
 />
 `;
 
-exports[`Storyshots Forms / InputField Désactivé 1`] = `
+exports[`Storyshots Forms / InputField Disabled 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
@@ -9629,28 +9619,27 @@ exports[`Storyshots Forms / InputField Email 1`] = `
 />
 `;
 
-exports[`Storyshots Forms / InputField Lecture seule 1`] = `
+exports[`Storyshots Forms / InputField Error 1`] = `
 <input
-  aria-invalid={false}
-  className="form-input-field "
-  defaultValue="Example"
+  aria-invalid={true}
+  className="form-input-field form-input-field--error "
+  defaultValue=""
   formNoValidate={true}
-  readOnly={true}
   type="text"
 />
 `;
 
-exports[`Storyshots Forms / InputField Mot de passe 1`] = `
+exports[`Storyshots Forms / InputField Main 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
+  defaultValue=""
   formNoValidate={true}
-  type="password"
-  value="password"
+  type="text"
 />
 `;
 
-exports[`Storyshots Forms / InputField Nombre 1`] = `
+exports[`Storyshots Forms / InputField Number 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
@@ -9662,17 +9651,28 @@ exports[`Storyshots Forms / InputField Nombre 1`] = `
 />
 `;
 
-exports[`Storyshots Forms / InputField main 1`] = `
+exports[`Storyshots Forms / InputField Password 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
-  defaultValue=""
   formNoValidate={true}
+  type="password"
+  value="password"
+/>
+`;
+
+exports[`Storyshots Forms / InputField Read Only 1`] = `
+<input
+  aria-invalid={false}
+  className="form-input-field "
+  defaultValue="Example"
+  formNoValidate={true}
+  readOnly={true}
   type="text"
 />
 `;
 
-exports[`Storyshots Forms / Label disabled 1`] = `
+exports[`Storyshots Forms / Label Disabled Story 1`] = `
 <label
   className="label label--disabled "
 >
@@ -9680,7 +9680,7 @@ exports[`Storyshots Forms / Label disabled 1`] = `
 </label>
 `;
 
-exports[`Storyshots Forms / Label main 1`] = `
+exports[`Storyshots Forms / Label Main 1`] = `
 <label
   className="label "
 >
@@ -9688,20 +9688,7 @@ exports[`Storyshots Forms / Label main 1`] = `
 </label>
 `;
 
-exports[`Storyshots Forms / Label optional 1`] = `
-<label
-  className="label "
->
-  Label
-  <span
-    className="label__optional"
-  >
-     (facultatif)
-  </span>
-</label>
-`;
-
-exports[`Storyshots Forms / Label optional and disabled 1`] = `
+exports[`Storyshots Forms / Label Optional And Disabled 1`] = `
 <label
   className="label label--disabled "
 >
@@ -9714,7 +9701,20 @@ exports[`Storyshots Forms / Label optional and disabled 1`] = `
 </label>
 `;
 
-exports[`Storyshots Forms / NumberInput main 1`] = `
+exports[`Storyshots Forms / Label Optional Story 1`] = `
+<label
+  className="label "
+>
+  Label
+  <span
+    className="label__optional"
+  >
+     (facultatif)
+  </span>
+</label>
+`;
+
+exports[`Storyshots Forms / NumberInput Main 1`] = `
 <input
   inputMode="numeric"
   onChange={[Function]}
@@ -9723,7 +9723,7 @@ exports[`Storyshots Forms / NumberInput main 1`] = `
 />
 `;
 
-exports[`Storyshots Forms / SuperRadio checked 1`] = `
+exports[`Storyshots Forms / SuperRadio Checked Story 1`] = `
 <div
   className="card card--has-border card--layer-flat expandable-card super-radio super-radio--checked"
 >
@@ -9794,7 +9794,7 @@ exports[`Storyshots Forms / SuperRadio checked 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / SuperRadio help 1`] = `
+exports[`Storyshots Forms / SuperRadio Help Story 1`] = `
 <div
   className="card card--has-border card--layer-flat expandable-card super-radio"
 >
@@ -9910,7 +9910,7 @@ exports[`Storyshots Forms / SuperRadio help 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / SuperRadio main 1`] = `
+exports[`Storyshots Forms / SuperRadio Main 1`] = `
 <div
   className="card card--has-border card--layer-flat expandable-card super-radio"
 >
@@ -9980,7 +9980,7 @@ exports[`Storyshots Forms / SuperRadio main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / SuperRadio without icon 1`] = `
+exports[`Storyshots Forms / SuperRadio Without Icon 1`] = `
 <div
   className="card card--has-border card--layer-flat expandable-card super-radio"
 >
@@ -10023,7 +10023,7 @@ exports[`Storyshots Forms / SuperRadio without icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / Toggle checked 1`] = `
+exports[`Storyshots Forms / Toggle Checked Story 1`] = `
 <div
   aria-checked={true}
   className="toggle toggle--checked "
@@ -10042,7 +10042,7 @@ exports[`Storyshots Forms / Toggle checked 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / Toggle demo 1`] = `
+exports[`Storyshots Forms / Toggle Demo 1`] = `
 <div
   aria-checked={false}
   className="toggle "
@@ -10062,7 +10062,7 @@ exports[`Storyshots Forms / Toggle demo 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / Toggle disabled 1`] = `
+exports[`Storyshots Forms / Toggle Disabled Story 1`] = `
 <div
   aria-disabled={true}
   className="toggle "
@@ -10081,7 +10081,7 @@ exports[`Storyshots Forms / Toggle disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / Toggle readOnly 1`] = `
+exports[`Storyshots Forms / Toggle Read Only Story 1`] = `
 <div
   aria-readonly={true}
   className="toggle "
@@ -10100,7 +10100,7 @@ exports[`Storyshots Forms / Toggle readOnly 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / Toggle unchecked 1`] = `
+exports[`Storyshots Forms / Toggle Unchecked 1`] = `
 <div
   className="toggle "
   onClick={[Function]}
@@ -10117,7 +10117,7 @@ exports[`Storyshots Forms / Toggle unchecked 1`] = `
 </div>
 `;
 
-exports[`Storyshots I18n | I18nLocaleSelector main 1`] = `
+exports[`Storyshots I18n | I18nLocaleSelector Main 1`] = `
 <form
   className="i18n-locale-selector"
   onSubmit={[Function]}
@@ -10169,7 +10169,7 @@ exports[`Storyshots I18n | I18nLocaleSelector main 1`] = `
 </form>
 `;
 
-exports[`Storyshots I18n | I18nMessages main 1`] = `
+exports[`Storyshots I18n | I18nMessages Main 1`] = `
 Array [
   <form
     className="i18n-locale-selector"
@@ -10280,7 +10280,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots LoaderDemo main 1`] = `
+exports[`Storyshots LoaderDemo Main 1`] = `
 <div>
   <button
     onClick={[Function]}
@@ -10305,7 +10305,7 @@ exports[`Storyshots LoaderDemo main 1`] = `
 </div>
 `;
 
-exports[`Storyshots LoadingText 2 lines 1`] = `
+exports[`Storyshots LoadingText Few Lines 1`] = `
 <div
   className="loading-text"
 >
@@ -10322,64 +10322,7 @@ exports[`Storyshots LoadingText 2 lines 1`] = `
 </div>
 `;
 
-exports[`Storyshots LoadingText 10 lines 1`] = `
-<div
-  className="loading-text"
->
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-  <p
-    className="loading-text__line"
-  >
-     
-  </p>
-</div>
-`;
-
-exports[`Storyshots LoadingText main 1`] = `
+exports[`Storyshots LoadingText Main 1`] = `
 <div
   className="loading-text"
 >
@@ -10411,7 +10354,64 @@ exports[`Storyshots LoadingText main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Menu main 1`] = `
+exports[`Storyshots LoadingText Many Lines 1`] = `
+<div
+  className="loading-text"
+>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+</div>
+`;
+
+exports[`Storyshots Menu Main 1`] = `
 <nav
   className="menu "
 >
@@ -10466,7 +10466,7 @@ exports[`Storyshots Menu main 1`] = `
 </nav>
 `;
 
-exports[`Storyshots NightMode main 1`] = `
+exports[`Storyshots NightMode Main 1`] = `
 <div
   className="night-mode"
 >
@@ -10490,7 +10490,7 @@ exports[`Storyshots NightMode main 1`] = `
 </div>
 `;
 
-exports[`Storyshots NightModePreference main 1`] = `
+exports[`Storyshots NightModePreference Main 1`] = `
 <section
   className="night-mode-preference"
 >
@@ -10511,7 +10511,7 @@ exports[`Storyshots NightModePreference main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
+exports[`Storyshots Payment | CreditCardForm Main 1`] = `
 <form
   className="credit-card-form "
   onSubmit={[Function]}
@@ -10521,7 +10521,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-14"
+      htmlFor="form-field-30"
     >
       Numéro de carte
     </label>
@@ -10534,7 +10534,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
         className="form-input-field "
         disabled={false}
         formNoValidate={true}
-        id="form-field-14"
+        id="form-field-30"
         inputMode="numeric"
         maxLength={19}
         name="cardNumber"
@@ -10550,7 +10550,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-15"
+      htmlFor="form-field-31"
     >
       Date d'expiration
     </label>
@@ -10565,7 +10565,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
           autoComplete="cc-exp-month"
           className="form-date-input__input form-date-input__input--month"
           disabled={false}
-          id="form-field-15"
+          id="form-field-31"
           inputMode="numeric"
           maxLength={2}
           onBlur={[Function]}
@@ -10602,7 +10602,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-16"
+      htmlFor="form-field-32"
     >
       Code de sécurité
     </label>
@@ -10615,7 +10615,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
         className="form-input-field "
         disabled={false}
         formNoValidate={true}
-        id="form-field-16"
+        id="form-field-32"
         inputMode="numeric"
         maxLength={4}
         name="cvv"
@@ -10660,7 +10660,7 @@ exports[`Storyshots Payment | CreditCardForm Défaut 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment | Donation / Donation donation selected 1`] = `
+exports[`Storyshots Payment | Donation / Donation Donation Selected 1`] = `
 <section
   className="card card--has-border card--layer-flat selected-donation "
 >
@@ -10695,7 +10695,7 @@ exports[`Storyshots Payment | Donation / Donation donation selected 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | Donation / Donation no donation selected 1`] = `
+exports[`Storyshots Payment | Donation / Donation No Donation Selected 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card donation-proposal "
 >
@@ -10795,7 +10795,7 @@ exports[`Storyshots Payment | Donation / Donation no donation selected 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | Donation / DonationProposal main 1`] = `
+exports[`Storyshots Payment | Donation / DonationProposal Main 1`] = `
 <section
   className="card card--has-border card--layer-flat expandable-card donation-proposal "
 >
@@ -10895,7 +10895,7 @@ exports[`Storyshots Payment | Donation / DonationProposal main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | Donation / SelectedDonation main 1`] = `
+exports[`Storyshots Payment | Donation / SelectedDonation Main 1`] = `
 <section
   className="card card--has-border card--layer-flat selected-donation "
 >
@@ -10930,7 +10930,7 @@ exports[`Storyshots Payment | Donation / SelectedDonation main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderEditor Avec un code promo 1`] = `
+exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
 <section
   className="order-editor"
 >
@@ -11212,7 +11212,7 @@ exports[`Storyshots Payment | OrderEditor Avec un code promo 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderEditor Avec un don 1`] = `
+exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
 <section
   className="order-editor"
 >
@@ -11426,7 +11426,7 @@ exports[`Storyshots Payment | OrderEditor Avec un don 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderEditor Billets & assurances 1`] = `
+exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
 <section
   className="order-editor"
 >
@@ -11664,7 +11664,7 @@ exports[`Storyshots Payment | OrderEditor Billets & assurances 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderEditor Billets uniquement 1`] = `
+exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
 <section
   className="order-editor"
 >
@@ -12044,7 +12044,7 @@ exports[`Storyshots Payment | OrderEditorConnected main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderSummary Avec un code promo 1`] = `
+exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12216,7 +12216,7 @@ exports[`Storyshots Payment | OrderSummary Avec un code promo 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderSummary Avec un don 1`] = `
+exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12337,7 +12337,7 @@ exports[`Storyshots Payment | OrderSummary Avec un don 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderSummary Billets & assurances 1`] = `
+exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12458,7 +12458,7 @@ exports[`Storyshots Payment | OrderSummary Billets & assurances 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderSummary Billets uniquement 1`] = `
+exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12493,7 +12493,7 @@ exports[`Storyshots Payment | OrderSummary Billets uniquement 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | OrderSummary Tous les types 1`] = `
+exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
 <section
   className="card card--has-border card--layer-raised order-summary"
 >
@@ -12716,7 +12716,7 @@ exports[`Storyshots Payment | OrderSummary Tous les types 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | PaymentContainer main 1`] = `
+exports[`Storyshots Payment | PaymentContainer Main 1`] = `
 <section
   className="payment-container"
 >
@@ -13120,7 +13120,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
         >
           <label
             className="label form-field-container__label"
-            htmlFor="form-field-17"
+            htmlFor="form-field-33"
           >
             Numéro de carte
           </label>
@@ -13133,7 +13133,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
               className="form-input-field "
               disabled={false}
               formNoValidate={true}
-              id="form-field-17"
+              id="form-field-33"
               inputMode="numeric"
               maxLength={19}
               name="cardNumber"
@@ -13149,7 +13149,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
         >
           <label
             className="label form-field-container__label"
-            htmlFor="form-field-18"
+            htmlFor="form-field-34"
           >
             Date d'expiration
           </label>
@@ -13164,7 +13164,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
                 autoComplete="cc-exp-month"
                 className="form-date-input__input form-date-input__input--month"
                 disabled={false}
-                id="form-field-18"
+                id="form-field-34"
                 inputMode="numeric"
                 maxLength={2}
                 onBlur={[Function]}
@@ -13201,7 +13201,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
         >
           <label
             className="label form-field-container__label"
-            htmlFor="form-field-19"
+            htmlFor="form-field-35"
           >
             Code de sécurité
           </label>
@@ -13214,7 +13214,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
               className="form-input-field "
               disabled={false}
               formNoValidate={true}
-              id="form-field-19"
+              id="form-field-35"
               inputMode="numeric"
               maxLength={4}
               name="cvv"
@@ -13262,7 +13262,7 @@ exports[`Storyshots Payment | PaymentContainer main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
+exports[`Storyshots Payment | PaymentForm Main 1`] = `
 <section
   className="payment-form "
 >
@@ -13469,7 +13469,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-20"
+        htmlFor="form-field-36"
       >
         Numéro de carte
       </label>
@@ -13482,7 +13482,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-20"
+          id="form-field-36"
           inputMode="numeric"
           maxLength={19}
           name="cardNumber"
@@ -13498,7 +13498,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-21"
+        htmlFor="form-field-37"
       >
         Date d'expiration
       </label>
@@ -13513,7 +13513,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
             autoComplete="cc-exp-month"
             className="form-date-input__input form-date-input__input--month"
             disabled={false}
-            id="form-field-21"
+            id="form-field-37"
             inputMode="numeric"
             maxLength={2}
             onBlur={[Function]}
@@ -13550,7 +13550,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-22"
+        htmlFor="form-field-38"
       >
         Code de sécurité
       </label>
@@ -13563,7 +13563,7 @@ exports[`Storyshots Payment | PaymentForm Défaut 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-22"
+          id="form-field-38"
           inputMode="numeric"
           maxLength={4}
           name="cvv"
@@ -13816,7 +13816,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-23"
+        htmlFor="form-field-0"
       >
         Numéro de carte
       </label>
@@ -13829,7 +13829,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-23"
+          id="form-field-0"
           inputMode="numeric"
           maxLength={19}
           name="cardNumber"
@@ -13845,7 +13845,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-24"
+        htmlFor="form-field-1"
       >
         Date d'expiration
       </label>
@@ -13860,7 +13860,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
             autoComplete="cc-exp-month"
             className="form-date-input__input form-date-input__input--month"
             disabled={false}
-            id="form-field-24"
+            id="form-field-1"
             inputMode="numeric"
             maxLength={2}
             onBlur={[Function]}
@@ -13897,7 +13897,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-25"
+        htmlFor="form-field-2"
       >
         Code de sécurité
       </label>
@@ -13910,7 +13910,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-25"
+          id="form-field-2"
           inputMode="numeric"
           maxLength={4}
           name="cvv"
@@ -13956,7 +13956,7 @@ exports[`Storyshots Payment | PaymentFormConnected main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | PaymentMeans disabled 1`] = `
+exports[`Storyshots Payment | PaymentMeans Disabled Story 1`] = `
 <div
   className="payment-means "
 >
@@ -14115,7 +14115,7 @@ exports[`Storyshots Payment | PaymentMeans disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | PaymentMeans main 1`] = `
+exports[`Storyshots Payment | PaymentMeans Main 1`] = `
 <div
   className="payment-means "
 >
@@ -14266,7 +14266,7 @@ exports[`Storyshots Payment | PaymentMeans main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | PaymentMeans selected 1`] = `
+exports[`Storyshots Payment | PaymentMeans Selected 1`] = `
 <div
   className="payment-means "
 >
@@ -14417,7 +14417,7 @@ exports[`Storyshots Payment | PaymentMeans selected 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | PaymentRequestComponent main 1`] = `
+exports[`Storyshots Payment | PaymentRequestComponent Main 1`] = `
 <button
   onClick={[Function]}
 >
@@ -14436,7 +14436,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-28"
+      htmlFor="form-field-5"
     >
       Code de sécurité
     </label>
@@ -14448,7 +14448,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
         autoComplete="cc-csc"
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-28"
+        id="form-field-5"
         inputMode="numeric"
         maxLength={4}
         name="cvv"
@@ -14511,7 +14511,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
   >
     <label
       className="label label--disabled form-field-container__label"
-      htmlFor="form-field-30"
+      htmlFor="form-field-7"
     >
       Code de sécurité
     </label>
@@ -14524,7 +14524,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
         className="form-input-field "
         disabled={true}
         formNoValidate={true}
-        id="form-field-30"
+        id="form-field-7"
         inputMode="numeric"
         maxLength={3}
         name="cvv"
@@ -14589,7 +14589,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-29"
+      htmlFor="form-field-6"
     >
       Code de sécurité
       <span
@@ -14606,7 +14606,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
         autoComplete="cc-csc"
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-29"
+        id="form-field-6"
         inputMode="numeric"
         maxLength={3}
         name="cvv"
@@ -14674,7 +14674,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-27"
+      htmlFor="form-field-4"
     >
       Code de sécurité
     </label>
@@ -14686,7 +14686,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
         autoComplete="cc-csc"
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-27"
+        id="form-field-4"
         inputMode="numeric"
         maxLength={3}
         name="cvv"
@@ -14749,7 +14749,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-26"
+      htmlFor="form-field-3"
     >
       Code de sécurité
     </label>
@@ -14761,7 +14761,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
         autoComplete="cc-csc"
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-26"
+        id="form-field-3"
         inputMode="numeric"
         maxLength={3}
         name="cvv"
@@ -14918,7 +14918,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
                 >
                   <label
                     className="label label--disabled form-field-container__label"
-                    htmlFor="form-field-37"
+                    htmlFor="form-field-14"
                   >
                     Code de sécurité
                     <span
@@ -14936,7 +14936,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
                       className="form-input-field "
                       disabled={true}
                       formNoValidate={true}
-                      id="form-field-37"
+                      id="form-field-14"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -15102,7 +15102,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
                 >
                   <label
                     className="label label--disabled form-field-container__label"
-                    htmlFor="form-field-38"
+                    htmlFor="form-field-15"
                   >
                     Code de sécurité
                     <span
@@ -15120,7 +15120,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
                       className="form-input-field "
                       disabled={true}
                       formNoValidate={true}
-                      id="form-field-38"
+                      id="form-field-15"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -15285,7 +15285,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
                 >
                   <label
                     className="label form-field-container__label"
-                    htmlFor="form-field-36"
+                    htmlFor="form-field-13"
                   >
                     Code de sécurité
                     <span
@@ -15303,7 +15303,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
                       className="form-input-field "
                       disabled={false}
                       formNoValidate={true}
-                      id="form-field-36"
+                      id="form-field-13"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -15473,7 +15473,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
                 >
                   <label
                     className="label label--disabled form-field-container__label"
-                    htmlFor="form-field-35"
+                    htmlFor="form-field-12"
                   >
                     Code de sécurité
                     <span
@@ -15491,7 +15491,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
                       className="form-input-field "
                       disabled={true}
                       formNoValidate={true}
-                      id="form-field-35"
+                      id="form-field-12"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -15657,7 +15657,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
                 >
                   <label
                     className="label label--disabled form-field-container__label"
-                    htmlFor="form-field-33"
+                    htmlFor="form-field-10"
                   >
                     Code de sécurité
                   </label>
@@ -15670,7 +15670,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
                       className="form-input-field "
                       disabled={true}
                       formNoValidate={true}
-                      id="form-field-33"
+                      id="form-field-10"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -15836,7 +15836,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
                 >
                   <label
                     className="label label--disabled form-field-container__label"
-                    htmlFor="form-field-34"
+                    htmlFor="form-field-11"
                   >
                     Code de sécurité
                   </label>
@@ -15849,7 +15849,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
                       className="form-input-field "
                       disabled={true}
                       formNoValidate={true}
-                      id="form-field-34"
+                      id="form-field-11"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -16014,7 +16014,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
                 >
                   <label
                     className="label form-field-container__label"
-                    htmlFor="form-field-32"
+                    htmlFor="form-field-9"
                   >
                     Code de sécurité
                   </label>
@@ -16027,7 +16027,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
                       className="form-input-field "
                       disabled={false}
                       formNoValidate={true}
-                      id="form-field-32"
+                      id="form-field-9"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -16192,7 +16192,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
                 >
                   <label
                     className="label label--disabled form-field-container__label"
-                    htmlFor="form-field-31"
+                    htmlFor="form-field-8"
                   >
                     Code de sécurité
                   </label>
@@ -16205,7 +16205,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
                       className="form-input-field "
                       disabled={true}
                       formNoValidate={true}
-                      id="form-field-31"
+                      id="form-field-8"
                       inputMode="numeric"
                       maxLength={3}
                       name="cvv"
@@ -16266,7 +16266,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
+exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
 <div
   className="registred-credit-card-list "
 >
@@ -16982,7 +16982,7 @@ exports[`Storyshots Payment | RegistredCreditCardList disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
+exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
 <div
   className="registred-credit-card-list "
 >
@@ -17694,7 +17694,7 @@ exports[`Storyshots Payment | RegistredCreditCardList main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | VoucherContainer main 1`] = `
+exports[`Storyshots Payment | VoucherContainer Main 1`] = `
 <section
   className="card card--has-border card--layer-flat voucher-container "
 >
@@ -17708,76 +17708,7 @@ exports[`Storyshots Payment | VoucherContainer main 1`] = `
 </section>
 `;
 
-exports[`Storyshots Payment | VoucherForm Défaut 1`] = `
-<form
-  className="voucher-form "
-  onSubmit={[Function]}
->
-  <div
-    className="voucher-form__line"
-  >
-    <div
-      className="form-field-container "
-    >
-      <label
-        className="label form-field-container__label"
-        htmlFor="form-field-47"
-      >
-        Code promo
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <input
-          aria-invalid={false}
-          autoComplete="off"
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="form-field-47"
-          maxLength={16}
-          name="code"
-          onBlur={[Function]}
-          onChange={[Function]}
-          spellCheck={false}
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="voucher-form__line"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-small progress-button voucher-form__button"
-      disabled={false}
-      type="submit"
-    >
-      <div
-        className="progress-button__content"
-      >
-        Ajouter le code promo
-      </div>
-      <div
-        className="progress-button__progress-bar"
-      />
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small voucher-form__button"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Annuler
-    </button>
-  </div>
-</form>
-`;
-
-exports[`Storyshots Payment | VoucherForm initial code 1`] = `
+exports[`Storyshots Payment | VoucherForm Initial Code 1`] = `
 <form
   className="voucher-form "
   onSubmit={[Function]}
@@ -17846,7 +17777,76 @@ exports[`Storyshots Payment | VoucherForm initial code 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment | VoucherForm submit error 1`] = `
+exports[`Storyshots Payment | VoucherForm Main 1`] = `
+<form
+  className="voucher-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="voucher-form__line"
+  >
+    <div
+      className="form-field-container "
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-47"
+      >
+        Code promo
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="off"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-47"
+          maxLength={16}
+          name="code"
+          onBlur={[Function]}
+          onChange={[Function]}
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="voucher-form__line"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-small progress-button voucher-form__button"
+      disabled={false}
+      type="submit"
+    >
+      <div
+        className="progress-button__content"
+      >
+        Ajouter le code promo
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-small voucher-form__button"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment | VoucherForm Submit Error 1`] = `
 <form
   className="voucher-form "
   onSubmit={[Function]}
@@ -17915,7 +17915,7 @@ exports[`Storyshots Payment | VoucherForm submit error 1`] = `
 </form>
 `;
 
-exports[`Storyshots Payment | VoucherForm submit success 1`] = `
+exports[`Storyshots Payment | VoucherForm Submit Success 1`] = `
 <form
   className="voucher-form "
   onSubmit={[Function]}
@@ -18200,7 +18200,7 @@ exports[`Storyshots ReCaptcha Main 1`] = `
 />
 `;
 
-exports[`Storyshots ResizableBlock main 1`] = `
+exports[`Storyshots ResizableBlock Main 1`] = `
 <div
   style={
     Object {
@@ -18226,9 +18226,9 @@ exports[`Storyshots ResizableBlock main 1`] = `
 </div>
 `;
 
-exports[`Storyshots ResizeDetector main 1`] = `"NON"`;
+exports[`Storyshots ResizeDetector Main 1`] = `"NON"`;
 
-exports[`Storyshots Spinner main 1`] = `
+exports[`Storyshots Spinner Main 1`] = `
 <div
   className="spinner"
 >
@@ -18244,61 +18244,7 @@ exports[`Storyshots Spinner main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Travel Aller simple 1`] = `
-<section
-  className="travel"
->
-  <div
-    className="travel__header"
-  >
-    <h1
-      className="travel__header-title"
-    >
-      Lille ➝ Nantes
-    </h1>
-    <p
-      className="price travel__header-price"
-      data-price-currency="EUR"
-      data-price-value={105.6}
-    >
-      <span
-        className="price__units"
-      >
-        105
-      </span>
-      <span
-        className="price__remaining"
-      >
-        , 
-        60
-         
-        €
-      </span>
-    </p>
-  </div>
-  <div
-    className="travel__details"
-  >
-    <h2
-      className="travel__details-date"
-    >
-      Départ le 
-      <b>
-        12/09/2018 à 10h35
-      </b>
-    </h2>
-    <p
-      className="travel__details-passengers"
-    >
-      1
-       
-      passager
-    </p>
-  </div>
-</section>
-`;
-
-exports[`Storyshots Travel Aller-retour 1`] = `
+exports[`Storyshots Travel Aller Retour 1`] = `
 <section
   className="travel"
 >
@@ -18360,7 +18306,7 @@ exports[`Storyshots Travel Aller-retour 1`] = `
 </section>
 `;
 
-exports[`Storyshots Travel Aller-retour asymétrique 1`] = `
+exports[`Storyshots Travel Aller Retour Asymetrique 1`] = `
 <section
   className="travel"
 >
@@ -18423,7 +18369,61 @@ exports[`Storyshots Travel Aller-retour asymétrique 1`] = `
 </section>
 `;
 
-exports[`Storyshots Travel Multiples trajets 1`] = `
+exports[`Storyshots Travel Aller Simple 1`] = `
+<section
+  className="travel"
+>
+  <div
+    className="travel__header"
+  >
+    <h1
+      className="travel__header-title"
+    >
+      Lille ➝ Nantes
+    </h1>
+    <p
+      className="price travel__header-price"
+      data-price-currency="EUR"
+      data-price-value={105.6}
+    >
+      <span
+        className="price__units"
+      >
+        105
+      </span>
+      <span
+        className="price__remaining"
+      >
+        , 
+        60
+         
+        €
+      </span>
+    </p>
+  </div>
+  <div
+    className="travel__details"
+  >
+    <h2
+      className="travel__details-date"
+    >
+      Départ le 
+      <b>
+        12/09/2018 à 10h35
+      </b>
+    </h2>
+    <p
+      className="travel__details-passengers"
+    >
+      1
+       
+      passager
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Travel Multiples Trajets 1`] = `
 Array [
   <div
     style={
@@ -18622,7 +18622,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots TravelDetails main 1`] = `
+exports[`Storyshots TravelDetails Main 1`] = `
 <div
   className="travel-details"
 >
@@ -18739,7 +18739,7 @@ exports[`Storyshots TravelDetails main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
+exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
 <div>
   <form
     className="create-user-account-form "
@@ -18994,7 +18994,7 @@ exports[`Storyshots Users / CreateUserAccountForm main 1`] = `
 </div>
 `;
 
-exports[`Storyshots VectorImage main 1`] = `
+exports[`Storyshots VectorImage Main 1`] = `
 <div
   className="vector-image"
 >
@@ -19014,7 +19014,7 @@ exports[`Storyshots VectorImage main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Wip main 1`] = `
+exports[`Storyshots Wip Main 1`] = `
 <div
   className="wip"
 >

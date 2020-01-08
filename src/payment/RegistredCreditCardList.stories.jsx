@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import RegistredCreditCardList from "./RegistredCreditCardList";
@@ -36,10 +35,15 @@ const totalPrice = {
   currency: "EUR"
 };
 
-storiesOf("Payment | RegistredCreditCardList", module)
-  .add("main", () => {
-    return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} onUseCard={action("use card")} />;
-  })
-  .add("disabled", () => {
-    return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} disabled onUseCard={action("use card")} />;
-  });
+export default {
+  title: "Payment | RegistredCreditCardList",
+  component: RegistredCreditCardList
+};
+
+export const main = () => {
+  return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} onUseCard={action("use card")} />;
+};
+
+export const disabledStory = () => {
+  return <RegistredCreditCardList totalPrice={totalPrice} cards={cards} disabled onUseCard={action("use card")} />;
+};

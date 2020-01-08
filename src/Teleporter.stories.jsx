@@ -1,9 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
-import { storiesOf } from "@storybook/react";
 
 import { TeleporterProvider, TeleporterSource, TeleporterTarget } from "./Teleporter";
 
-storiesOf("Teleporter", module).add("main", () => {
+export default {
+  title: "Teleporter",
+  component: TeleporterProvider
+};
+
+export const main = () => <Demo />;
+
+function Demo() {
   const [text, setText] = useState("");
   return (
     <TeleporterProvider>
@@ -30,7 +36,7 @@ storiesOf("Teleporter", module).add("main", () => {
       </div>
     </TeleporterProvider>
   );
-});
+}
 
 function Random() {
   const [value, setValue] = useState(() => Math.round(Math.random() * 100));

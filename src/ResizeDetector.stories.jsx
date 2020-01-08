@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ResizeDetector from "./ResizeDetector";
 
-storiesOf("ResizeDetector", module).add("main", () => {
+export default {
+  title: "ResizeDetector",
+  component: ResizeDetector
+};
+
+export const main = () => {
   return <ResizeDetector />;
-});
+};

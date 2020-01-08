@@ -1,18 +1,24 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import LevelIndicator from "./LevelIndicator";
 
-storiesOf("Cars | Core / LevelIndicator", module)
-  .add("level 0", () => {
-    return <LevelIndicator color="blue" />;
-  })
-  .add("level 1", () => {
-    return <LevelIndicator color="blue" level={1} />;
-  })
-  .add("level 2", () => {
-    return <LevelIndicator color="blue" level={2} />;
-  })
-  .add("level 3", () => {
-    return <LevelIndicator color="blue" level={3} />;
-  });
+export default {
+  title: "Cars | Core / LevelIndicator",
+  component: LevelIndicator
+};
+
+export const level0 = () => {
+  return <LevelIndicator color="blue" />;
+};
+
+export const level1 = () => {
+  return <LevelIndicator color="blue" level={1} />;
+};
+
+export const level2 = () => {
+  return <LevelIndicator color="blue" level={2} />;
+};
+
+export const level3 = () => {
+  return <LevelIndicator color="blue" level={3} />;
+};

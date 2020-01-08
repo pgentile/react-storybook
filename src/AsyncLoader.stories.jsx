@@ -1,16 +1,20 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import AsyncLoader from "./AsyncLoader";
 import sleep from "./utils/sleep";
 
-storiesOf("AsyncLoader", module)
-  .add("success", () => {
-    return <AsyncLoader loader={loader} error={error} />;
-  })
-  .add("error", () => {
-    return <AsyncLoader loader={loaderError} error={error} />;
-  });
+export default {
+  title: "AsyncLoader",
+  component: AsyncLoader
+};
+
+export const success = () => {
+  return <AsyncLoader loader={loader} error={error} />;
+};
+
+export const errorStory = () => {
+  return <AsyncLoader loader={loaderError} error={error} />;
+};
 
 async function loader() {
   await sleep(3000);

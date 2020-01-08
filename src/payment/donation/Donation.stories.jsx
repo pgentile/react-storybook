@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import Donation from "./Donation";
@@ -9,10 +8,15 @@ const actions = {
   onCancelDonation: action("cancel donation")
 };
 
-storiesOf("Payment | Donation / Donation", module)
-  .add("no donation selected", () => {
-    return <Donation {...actions} />;
-  })
-  .add("donation selected", () => {
-    return <Donation {...actions} selectedDonation={{ code: "SPA", association: "Société protectrice des animaux" }} />;
-  });
+export default {
+  title: "Payment | Donation / Donation",
+  component: Donation
+};
+
+export const noDonationSelected = () => {
+  return <Donation {...actions} />;
+};
+
+export const donationSelected = () => {
+  return <Donation {...actions} selectedDonation={{ code: "SPA", association: "Société protectrice des animaux" }} />;
+};

@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import PaymentForm from "./PaymentForm";
@@ -33,6 +32,11 @@ const registredCards = [
   }
 ];
 
-storiesOf("Payment | PaymentForm", module).add("Défaut", () => {
+export default {
+  title: "Payment | PaymentForm",
+  component: PaymentForm
+};
+
+export const main = () => {
   return <PaymentForm {...actions} registredCards={registredCards} totalPrice={{ value: 98, currency: "€" }} />;
-});
+};

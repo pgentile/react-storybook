@@ -1,18 +1,23 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ExpandableIcon from "./ExpandableIcon";
 
-storiesOf("ExpandableIcon", module)
-  .add("Replié", () => {
-    return <ExpandableIcon />;
-  })
-  .add("Déplié", () => {
-    return <ExpandableIcon expanded />;
-  })
-  .add("Démo", () => {
-    return <ExpandableIconDemo />;
-  });
+export default {
+  title: "ExpandableIcon",
+  component: ExpandableIcon
+};
+
+export const folded = () => {
+  return <ExpandableIcon />;
+};
+
+export const unfolded = () => {
+  return <ExpandableIcon expanded />;
+};
+
+export const demo = () => {
+  return <ExpandableIconDemo />;
+};
 
 class ExpandableIconDemo extends React.PureComponent {
   state = {

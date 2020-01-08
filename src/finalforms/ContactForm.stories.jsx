@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ContactForm from "./ContactForm";
 
-storiesOf("Final Forms | ContactForm", module).add("main", () => {
+export default {
+  title: "Final Forms | ContactForm",
+  component: ContactForm
+};
+
+export const main = () => {
   return <ContactForm />;
-});
+};

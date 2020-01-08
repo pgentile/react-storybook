@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import ManagedProgressButton from "./ManagedProgressButton";
@@ -16,10 +15,15 @@ async function fail() {
   throw new Error("Failure");
 }
 
-storiesOf("Buttons / ManagedProgressButton", module)
-  .add("success", () => {
-    return <ManagedProgressButton onClick={success}>Click me</ManagedProgressButton>;
-  })
-  .add("fail", () => {
-    return <ManagedProgressButton onClick={fail}>Click me</ManagedProgressButton>;
-  });
+export default {
+  title: "Buttons / ManagedProgressButton",
+  component: ManagedProgressButton
+};
+
+export const successStory = () => {
+  return <ManagedProgressButton onClick={success}>Click me</ManagedProgressButton>;
+};
+
+export const failStory = () => {
+  return <ManagedProgressButton onClick={fail}>Click me</ManagedProgressButton>;
+};

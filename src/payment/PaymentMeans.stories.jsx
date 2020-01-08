@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import PaymentMeans from "./PaymentMeans";
 import { action } from "@storybook/addon-actions";
@@ -10,13 +9,19 @@ const actions = {
   onMeanChange: action("mean change")
 };
 
-storiesOf("Payment | PaymentMeans", module)
-  .add("main", () => {
-    return <PaymentMeans means={means} {...actions} />;
-  })
-  .add("disabled", () => {
-    return <PaymentMeans means={means} disabled {...actions} />;
-  })
-  .add("selected", () => {
-    return <PaymentMeans selectedMean="mastercard" means={means} {...actions} />;
-  });
+export default {
+  title: "Payment | PaymentMeans",
+  component: PaymentMeans
+};
+
+export const main = () => {
+  return <PaymentMeans means={means} {...actions} />;
+};
+
+export const disabledStory = () => {
+  return <PaymentMeans means={means} disabled {...actions} />;
+};
+
+export const selected = () => {
+  return <PaymentMeans selectedMean="mastercard" means={means} {...actions} />;
+};

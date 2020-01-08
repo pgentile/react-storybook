@@ -1,16 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { storiesOf } from "@storybook/react";
 
 import Accordion, { AccordionPanel } from "./Accordion";
 
-storiesOf("Accordion", module)
-  .add("only one panel expandable", () => {
-    return <AccordionDemo uniqueExpandable />;
-  })
-  .add("many panels expandable", () => {
-    return <AccordionDemo uniqueExpandable={false} />;
-  });
+export default {
+  title: "Accordion",
+  component: Accordion
+};
+
+export const onlyOnePanelExpandable = () => {
+  return <AccordionDemo uniqueExpandable />;
+};
+
+export const manyPanelsExpandable = () => {
+  return <AccordionDemo uniqueExpandable={false} />;
+};
 
 function AccordionDemo({ uniqueExpandable }) {
   return (

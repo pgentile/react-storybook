@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { storiesOf } from "@storybook/react";
 
 import ExchangeRate, { useComputeRate, useCurrency } from "./ExchangeRate";
 import Price from "./Price";
 import ButtonGroup, { ButtonInGroup } from "./buttons/ButtonGroup";
 
-storiesOf("ExchangeRate", module).add("main", () => {
+export default {
+  title: "ExchangeRate",
+  component: ExchangeRate
+};
+
+export const main = () => {
   const price = { value: 10, currency: "EUR" };
   return (
     <ExchangeRate>
@@ -19,7 +23,7 @@ storiesOf("ExchangeRate", module).add("main", () => {
       </p>
     </ExchangeRate>
   );
-});
+};
 
 function ExchangeRateSwitcher() {
   const currencies = ["EUR", "CHF", "GBP", "USD"];

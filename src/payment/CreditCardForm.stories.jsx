@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import CreditCardForm from "./CreditCardForm";
@@ -12,6 +11,10 @@ const actions = {
   }
 };
 
-storiesOf("Payment | CreditCardForm", module).add("Défaut", () => {
+export default {
+  title: "Payment | CreditCardForm"
+};
+
+export const main = () => {
   return <CreditCardForm {...actions} totalPrice={{ value: 98, currency: "EUR" }} />;
-});
+};

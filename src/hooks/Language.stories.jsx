@@ -1,16 +1,20 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import Language, { useLanguage } from "./Language";
 
-storiesOf("Hooks / Language", module).add("main", () => {
+export default {
+  title: "Hooks / Language",
+  component: Language
+};
+
+export const main = () => {
   return (
     <Language>
       <DisplayLanguage />
       <SwitchLanguage />
     </Language>
   );
-});
+};
 
 function DisplayLanguage() {
   const { language } = useLanguage();

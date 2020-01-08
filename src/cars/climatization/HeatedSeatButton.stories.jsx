@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import HeatedSeatButton from "./HeatedSeatButton";
 
-storiesOf("Cars | Climatization / HeatedSeatButton", module).add("main", () => {
+export default {
+  title: "Cars | Climatization / HeatedSeatButton",
+  component: HeatedSeatButton
+};
+
+export const main = () => {
   return <HeatedSeatButton />;
-});
+};

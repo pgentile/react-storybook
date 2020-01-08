@@ -2,25 +2,29 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Provider } from "react-redux";
-import { storiesOf } from "@storybook/react";
 
 import createStore from "./redux/createStore";
 import loader, { loaderMiddleware, selectIsLoading } from "./redux/reducers/loader";
 import Spinner from "./Spinner";
 import sleep from "./utils/sleep";
 
-storiesOf("LoaderDemo", module)
-  .addDecorator(story => {
-    const reducers = { loader };
-    const store = createStore(reducers, {
-      extraMiddlewares: [loaderMiddleware()]
-    });
+export default {
+  title: "LoaderDemo",
+  decorators: [
+    story => {
+      const reducers = { loader };
+      const store = createStore(reducers, {
+        extraMiddlewares: [loaderMiddleware()]
+      });
 
-    return <Provider store={store}>{story()}</Provider>;
-  })
-  .add("main", () => {
-    return <LoaderDemoConnected />;
-  });
+      return <Provider store={store}>{story()}</Provider>;
+    }
+  ]
+};
+
+export const main = () => {
+  return <LoaderDemoConnected />;
+};
 
 class LoaderDemo extends React.PureComponent {
   static propTypes = {

@@ -1,11 +1,15 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import Menu from "./Menu";
 
-storiesOf("Menu", module).add("main", () => {
+export default {
+  title: "Menu",
+  component: Menu
+};
+
+export const main = () => {
   return <MenuDemo />;
-});
+};
 
 class MenuDemo extends React.PureComponent {
   state = {

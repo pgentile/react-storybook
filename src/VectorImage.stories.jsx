@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import VectorImage from "./VectorImage";
 
-storiesOf("VectorImage", module).add("main", () => {
+export default {
+  title: "VectorImage",
+  component: VectorImage
+};
+
+export const main = () => {
   return <VectorImage />;
-});
+};

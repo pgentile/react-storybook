@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
 
 import Shake from "./Shake";
 
-storiesOf("Hooks / Shake", module).add("main", () => {
-  return <SkakeStory />;
-});
+export default {
+  title: "Hooks / Shake",
+  component: Shake
+};
 
-function SkakeStory() {
+export const main = () => {
+  return <Demo />;
+};
+
+function Demo() {
   const [revision, setRevision] = useState(null);
 
   const onClick = () => {

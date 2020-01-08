@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import SuspenseDemo from "./SuspenseDemo";
 
-storiesOf("Suspense / SuspenseDemo", module).add("main", () => {
+export default {
+  title: "Suspense / SuspenseDemo",
+  component: SuspenseDemo
+};
+
+export const main = () => {
   return <SuspenseDemo />;
-});
+};

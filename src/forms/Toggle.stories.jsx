@@ -1,39 +1,37 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React, { useState, useCallback } from "react";
 
 import Toggle from "./Toggle";
 
-storiesOf("Forms / Toggle", module)
-  .add("unchecked", () => {
-    return <Toggle />;
-  })
-  .add("checked", () => {
-    return <Toggle checked />;
-  })
-  .add("demo", () => {
-    return <ToggleDemo />;
-  })
-  .add("disabled", () => {
-    return <Toggle disabled />;
-  })
-  .add("readOnly", () => {
-    return <Toggle readOnly />;
-  });
+export default {
+  title: "Forms / Toggle",
+  component: Toggle
+};
 
-class ToggleDemo extends React.PureComponent {
-  state = {
-    checked: false
-  };
+export const unchecked = () => {
+  return <Toggle />;
+};
 
-  onClick = () => {
-    this.setState(({ checked }) => ({
-      checked: !checked
-    }));
-  };
+export const checkedStory = () => {
+  return <Toggle checked />;
+};
 
-  render() {
-    const { checked } = this.state;
+export const demo = () => {
+  return <ToggleDemo />;
+};
 
-    return <Toggle checked={checked} onClick={this.onClick} value="demo" />;
-  }
+export const disabledStory = () => {
+  return <Toggle disabled />;
+};
+
+export const readOnlyStory = () => {
+  return <Toggle readOnly />;
+};
+
+function ToggleDemo() {
+  const [checked, setChecked] = useState(false);
+  const onClick = useCallback(() => {
+    setChecked(currentValue => !currentValue);
+  }, []);
+
+  return <Toggle checked={checked} onClick={onClick} value="demo" />;
 }

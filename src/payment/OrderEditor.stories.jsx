@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import OrderEditor from "./OrderEditor";
@@ -68,16 +67,38 @@ const onActions = {
   onCancelDonation: cancelDonation
 };
 
-storiesOf("Payment | OrderEditor", module)
-  .add("Billets uniquement", () => {
-    return <OrderEditor items={[billetsItem]} totalPrice={totalPrice} {...onActions} />;
-  })
-  .add("Billets & assurances", () => {
-    return <OrderEditor items={[billetsItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
-  })
-  .add("Avec un code promo", () => {
-    return <OrderEditor items={[billetsItem, voucherItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
-  })
-  .add("Avec un don", () => {
-    return <OrderEditor items={[billetsItem, donationItem]} totalPrice={totalPrice} {...onActions} />;
-  });
+export default {
+  title: "Payment | OrderEditor"
+};
+
+export const billetsUniquement = () => {
+  return <OrderEditor items={[billetsItem]} totalPrice={totalPrice} {...onActions} />;
+};
+
+billetsUniquement.story = {
+  name: "Billets uniquement"
+};
+
+export const billetsAssurances = () => {
+  return <OrderEditor items={[billetsItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
+};
+
+billetsAssurances.story = {
+  name: "Billets & assurances"
+};
+
+export const avecUnCodePromo = () => {
+  return <OrderEditor items={[billetsItem, voucherItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
+};
+
+avecUnCodePromo.story = {
+  name: "Avec un code promo"
+};
+
+export const avecUnDon = () => {
+  return <OrderEditor items={[billetsItem, donationItem]} totalPrice={totalPrice} {...onActions} />;
+};
+
+avecUnDon.story = {
+  name: "Avec un don"
+};

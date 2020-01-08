@@ -1,11 +1,15 @@
 import React, { Fragment } from "react";
-import { storiesOf } from "@storybook/react";
 
 import PaymentRequestComponent from "./PaymentRequestComponent";
 
-storiesOf("Payment | PaymentRequestComponent", module).add("main", () => {
+export default {
+  title: "Payment | PaymentRequestComponent",
+  component: PaymentRequestComponent
+};
+
+export const main = () => {
   return <Story />;
-});
+};
 
 class Story extends React.PureComponent {
   state = {

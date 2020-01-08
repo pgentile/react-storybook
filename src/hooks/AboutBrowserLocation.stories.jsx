@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import AboutBrowserLocation from "./AboutBrowserLocation";
 
-storiesOf("Hooks / AboutBrowserLocation", module).add("main", () => {
+export default {
+  title: "Hooks / AboutBrowserLocation",
+  component: AboutBrowserLocation
+};
+
+export const main = () => {
   return <AboutBrowserLocation />;
-});
+};

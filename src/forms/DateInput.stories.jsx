@@ -1,50 +1,50 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React, { useState, useCallback } from "react";
 import { action } from "@storybook/addon-actions";
 
 import DateInput from "./DateInput";
 
-storiesOf("Forms / DateInput", module)
-  .add("main", () => {
-    return <DateInput />;
-  })
-  .add("with value", () => {
-    return <DateInput value="1990-02-13" />;
-  })
-  .add("dynamic", () => {
-    return <DynamicForm />;
-  })
-  .add("error", () => {
-    return <DateInput value="1990-02-13" error />;
-  })
-  .add("disabled", () => {
-    return <DateInput value="1990-02-13" disabled />;
-  })
-  .add("read-only", () => {
-    return <DateInput value="1990-02-13" readOnly />;
-  })
-  .add("Mode year-month", () => {
-    return <DateInput value="2018-04" mode="year-month" />;
-  })
-  .add("Mode year-month with small year", () => {
-    return <DateInput value="22-06" mode="year-month" smallYear />;
-  });
+export default {
+  title: "Forms / DateInput",
+  component: DateInput
+};
 
-class DynamicForm extends React.PureComponent {
-  state = {
-    value: ""
-  };
+export const main = () => {
+  return <DateInput />;
+};
 
-  onChange = (value, ...args) => {
-    this.setState({
-      value
-    });
+export const withValue = () => {
+  return <DateInput value="1990-02-13" />;
+};
 
-    action("change")(value, ...args);
-  };
+export const demo = () => {
+  return <DateInputDemo />;
+};
 
-  render() {
-    const { value } = this.state;
-    return <DateInput value={value} onChange={this.onChange} />;
-  }
+export const error = () => {
+  return <DateInput value="1990-02-13" error />;
+};
+
+export const disabled = () => {
+  return <DateInput value="1990-02-13" disabled />;
+};
+
+export const readOnly = () => {
+  return <DateInput value="1990-02-13" readOnly />;
+};
+
+export const modeYearMonth = () => {
+  return <DateInput value="2018-04" mode="year-month" />;
+};
+
+export const modeYearMonthWithSmallYear = () => {
+  return <DateInput value="22-06" mode="year-month" smallYear />;
+};
+
+function DateInputDemo() {
+  const [value, setValue] = useState("");
+  const onChange = useCallback((newValue, ...args) => {
+    setValue(newValue);
+    action("change")(newValue, ...args);
+  }, []);
+  return <DateInput value={value} onChange={onChange} />;
 }

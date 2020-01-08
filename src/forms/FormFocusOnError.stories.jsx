@@ -1,9 +1,13 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import FormFocusOnError from "./FormFocusOnError";
 
-storiesOf("Forms / FormFocusOnError", module).add("main", () => {
+export default {
+  title: "Forms / FormFocusOnError",
+  component: FormFocusOnError
+};
+
+export const main = () => {
   return (
     <FormFocusOnError>
       {focusOnError => {
@@ -26,4 +30,4 @@ storiesOf("Forms / FormFocusOnError", module).add("main", () => {
       }}
     </FormFocusOnError>
   );
-});
+};

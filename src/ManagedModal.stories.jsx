@@ -1,11 +1,15 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ManagedModal, { ManagedModalContainer } from "./ManagedModal";
 
-storiesOf("ManagedModal", module).add("main", () => {
+export default {
+  title: "ManagedModal",
+  component: ManagedModal
+};
+
+export const main = () => {
   return <ManagedModalDemo />;
-});
+};
 
 const initialState = {
   yo: true,

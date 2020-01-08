@@ -1,11 +1,15 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import NumberInput from "./NumberInput";
 
-storiesOf("Forms / NumberInput", module).add("main", () => {
+export default {
+  title: "Forms / NumberInput",
+  component: NumberInput
+};
+
+export const main = () => {
   return <NumberInputDemo />;
-});
+};
 
 class NumberInputDemo extends React.PureComponent {
   state = {

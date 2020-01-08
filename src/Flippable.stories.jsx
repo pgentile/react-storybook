@@ -1,14 +1,18 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import Flippable from "./Flippable";
 import Card from "./Card";
 
 import "./Flippable.stories.scss";
 
-storiesOf("Flippable", module).add("main", () => {
+export default {
+  title: "Flippable",
+  component: Flippable
+};
+
+export const main = () => {
   return <FlippableDemo />;
-});
+};
 
 class FlippableDemo extends React.PureComponent {
   state = {

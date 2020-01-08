@@ -1,22 +1,28 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import ProgressButton from "./ProgressButton";
 import sleep from "../utils/sleep";
 
-storiesOf("Buttons / ProgressButton", module)
-  .add("main", () => {
-    return <ProgressButtonDemo />;
-  })
-  .add("loading", () => {
-    return <ProgressButton loading>Payer</ProgressButton>;
-  })
-  .add("finished", () => {
-    return <ProgressButton finished>Payer</ProgressButton>;
-  })
-  .add("disabled", () => {
-    return <ProgressButton disabled>Payer</ProgressButton>;
-  });
+export default {
+  title: "Buttons / ProgressButton",
+  component: ProgressButton
+};
+
+export const main = () => {
+  return <ProgressButtonDemo />;
+};
+
+export const loadingStory = () => {
+  return <ProgressButton loading>Payer</ProgressButton>;
+};
+
+export const finishedStory = () => {
+  return <ProgressButton finished>Payer</ProgressButton>;
+};
+
+export const disabledStory = () => {
+  return <ProgressButton disabled>Payer</ProgressButton>;
+};
 
 class ProgressButtonDemo extends React.PureComponent {
   state = {

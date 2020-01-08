@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import BookingPassengerList from "./BookingPassengerList";
 
@@ -17,6 +16,11 @@ const passengers = [
   }
 ];
 
-storiesOf("Booking form | BookingPassengerList", module).add("main", () => {
+export default {
+  title: "Booking form | BookingPassengerList",
+  component: BookingPassengerList
+};
+
+export const main = () => {
   return <BookingPassengerList passengers={passengers} />;
-});
+};

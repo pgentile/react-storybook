@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import NightModePreference from "./NightModePreference";
 
-storiesOf("NightModePreference", module).add("main", () => {
+export default {
+  title: "NightModePreference",
+  component: NightModePreference
+};
+
+export const main = () => {
   return <NightModePreference />;
-});
+};

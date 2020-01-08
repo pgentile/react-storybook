@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import { storiesOf } from "@storybook/react";
 
 import ExpandableCard from "./ExpandableCard";
 import ExpandableIcon from "./ExpandableIcon";
@@ -60,10 +59,15 @@ class ExpandableCardDemo extends React.PureComponent {
   }
 }
 
-storiesOf("ExpandableCard", module)
-  .add("main", () => {
-    return <ExpandableCardDemo />;
-  })
-  .add("Avec bouton pour repliage", () => {
-    return <ExpandableCardDemo expandable />;
-  });
+export default {
+  title: "ExpandableCard",
+  component: ExpandableCard
+};
+
+export const main = () => {
+  return <ExpandableCardDemo />;
+};
+
+export const foldButton = () => {
+  return <ExpandableCardDemo expandable />;
+};

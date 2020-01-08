@@ -1,5 +1,4 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import SearchOutwardForm from "./SearchOutwardForm";
@@ -12,16 +11,22 @@ const actions = {
   onBlur: action("blur")
 };
 
-storiesOf("JsonSchemaForm", module)
-  .add("SearchOutwardForm", () => {
-    return <SearchOutwardForm {...actions} />;
-  })
-  .add("SearchInwardForm", () => {
-    return <SearchInwardForm {...actions} />;
-  })
-  .add("UpdateOwnerForm", () => {
-    return <UpdateOwnerForm {...actions} />;
-  })
-  .add("UpdatePassengersForm", () => {
-    return <UpdatePassengersForm {...actions} />;
-  });
+export default {
+  title: "JsonSchemaForm"
+};
+
+export const searchOutwardForm = () => {
+  return <SearchOutwardForm {...actions} />;
+};
+
+export const searchInwardForm = () => {
+  return <SearchInwardForm {...actions} />;
+};
+
+export const updateOwnerForm = () => {
+  return <UpdateOwnerForm {...actions} />;
+};
+
+export const updatePassengersForm = () => {
+  return <UpdatePassengersForm {...actions} />;
+};

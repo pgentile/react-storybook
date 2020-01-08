@@ -1,8 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import AboutMediaDevices from "./AboutMediaDevices";
 
-storiesOf("Hooks / AboutMediaDevices", module).add("main", () => {
+export default {
+  title: "Hooks / AboutMediaDevices",
+  component: AboutMediaDevices
+};
+
+export const main = () => {
   return <AboutMediaDevices />;
-});
+};
