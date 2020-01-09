@@ -68,37 +68,22 @@ const onActions = {
 };
 
 export default {
-  title: "Payment | OrderEditor"
+  title: "Payment | OrderEditor",
+  component: OrderEditor
 };
 
 export const billetsUniquement = () => {
   return <OrderEditor items={[billetsItem]} totalPrice={totalPrice} {...onActions} />;
 };
 
-billetsUniquement.story = {
-  name: "Billets uniquement"
-};
-
 export const billetsAssurances = () => {
   return <OrderEditor items={[billetsItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
-};
-
-billetsAssurances.story = {
-  name: "Billets & assurances"
 };
 
 export const avecUnCodePromo = () => {
   return <OrderEditor items={[billetsItem, voucherItem, assurancesItem]} totalPrice={totalPrice} {...onActions} />;
 };
 
-avecUnCodePromo.story = {
-  name: "Avec un code promo"
-};
-
 export const avecUnDon = () => {
   return <OrderEditor items={[billetsItem, donationItem]} totalPrice={totalPrice} {...onActions} />;
-};
-
-avecUnDon.story = {
-  name: "Avec un don"
 };

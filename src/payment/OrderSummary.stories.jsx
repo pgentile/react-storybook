@@ -61,45 +61,26 @@ const totalPrice = {
 };
 
 export default {
-  title: "Payment | OrderSummary"
+  title: "Payment | OrderSummary",
+  component: OrderSummary
 };
 
 export const billetsUniquement = () => {
   return <OrderSummary items={[ticketItem]} totalPrice={totalPrice} />;
 };
 
-billetsUniquement.story = {
-  name: "Billets uniquement"
-};
-
 export const billetsAssurances = () => {
   return <OrderSummary items={[ticketItem, insuranceItem]} totalPrice={totalPrice} />;
-};
-
-billetsAssurances.story = {
-  name: "Billets & assurances"
 };
 
 export const avecUnCodePromo = () => {
   return <OrderSummary items={[ticketItem, voucherItem, insuranceItem]} totalPrice={totalPrice} />;
 };
 
-avecUnCodePromo.story = {
-  name: "Avec un code promo"
-};
-
 export const avecUnDon = () => {
   return <OrderSummary items={[ticketItem, donationItem]} totalPrice={totalPrice} />;
 };
 
-avecUnDon.story = {
-  name: "Avec un don"
-};
-
 export const tousLesTypes = () => {
   return <OrderSummary items={[ticketItem, voucherItem, insuranceItem, donationItem]} totalPrice={totalPrice} />;
-};
-
-tousLesTypes.story = {
-  name: "Tous les types"
 };

@@ -34,8 +34,8 @@ const reCaptchaLibLoader = new ReCaptchaLibLoader();
 export default class ReCaptcha extends React.PureComponent {
   static propTypes = {
     siteKey: PropTypes.string.isRequired,
-    theme: PropTypes.string.isRequired,
-    size: PropTypes.string.isRequired,
+    theme: PropTypes.oneOf(["light", "dark"]).isRequired,
+    size: PropTypes.oneOf(["normal", "compact"]).isRequired,
     type: PropTypes.string.isRequired,
     badge: PropTypes.string.isRequired,
     onSuccess: PropTypes.func,
