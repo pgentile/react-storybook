@@ -7431,10 +7431,10 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-4.0.4.tgz#f4aaee536c5bd0e4618451d0615f46b43a94816c"
-  integrity sha512-AS9ZyA1nRpPGe85MJIhPw73eXeOWt18NJ7C9lu8EcoiHH7HOv2aYzou9m7fme+hesv/ISsomXfhbOrM6Il94bg==
+husky@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-4.0.5.tgz#c089bc249585b7c6ba54542e13b570402bae8d6f"
+  integrity sha512-SU78iMkYCsGQh4+9LXfLr1cKPHl8kmZ/upMKcGIj2DinNf4PQtVfvauIP686FyUJBKWmGtL1zfFWdLwsdwrB/Q==
   dependencies:
     chalk "^3.0.0"
     ci-info "^2.0.0"
@@ -7765,7 +7765,7 @@ intl-locales-supported@^1.8.4:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.4.tgz#e1d19812afa50dc2e2a2b4741ceb4030522d45b1"
   integrity sha512-wO0JhDqhshhkq8Pa9CLcstqd1aCXjfMgfMzjD6mDreS3mTSDbjGiMU+07O8BdJGxed7Q0Wf3TFVjGq0W3Y0n1w==
 
-intl-messageformat-parser@^3.5.2, intl-messageformat-parser@^3.6.0, intl-messageformat-parser@^3.6.1, intl-messageformat-parser@^3.6.2:
+intl-messageformat-parser@^3.5.2, intl-messageformat-parser@^3.6.0, intl-messageformat-parser@^3.6.2:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-3.6.2.tgz#03138f6f11ea499268cc63384b7a752d20de44a2"
   integrity sha512-+uQVyN+Ip71s9IzbKEZi3HDFhXKcjJhK1JnbaFNMrOh4YqNAuEoRhcqPP/e80vyTm6atNF424y7ga9K9dseG/g==
