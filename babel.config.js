@@ -21,16 +21,17 @@ module.exports = api => {
       [
         "@babel/preset-env",
         {
+          debug: false,
           modules: false,
           useBuiltIns: "entry",
-          corejs: 2
+          corejs: 3
         }
       ],
       "@babel/preset-react"
     ],
     env: {
       test: {
-        plugins: [...basicPlugins, "require-context-hook"],
+        plugins: [...basicPlugins],
         presets: [
           ...basicPresets,
           [

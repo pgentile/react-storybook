@@ -25,7 +25,6 @@
       "version": "16.8"
     },
     "polyfills": [
-      "URLSearchParams",
       "ResizeObserver"
     ]
   },
@@ -50,6 +49,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "formatjs/enforce-description": "off",
-    "formatjs/enforce-placeholders": "error"
+    "formatjs/enforce-placeholders": "error",
+    "compat/compat": "warn"
   }
 }

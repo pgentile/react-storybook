@@ -7,8 +7,9 @@ Android >= 0 and since 2016
 iOS >= 0 and since 2016
 ie 11
 chrome >= 41
->= 0.5% in FR and since 2017
->= 0.5% in CH and since 2017
->= 0.5% in BE and since 2017
->= 0.5% in DE and since 2017
->= 0.5% in GB and since 2017
+# Not working with Babel 7.8...
+# >= 0.5% in FR and since 2017
+# >= 0.5% in CH and since 2017
+# >= 0.5% in BE and since 2017
+# >= 0.5% in DE and since 2017
+# >= 0.5% in GB and since 2017
