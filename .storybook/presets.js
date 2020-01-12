@@ -1,1 +1,1 @@
-module.exports = ["@storybook/addon-docs"];
+module.exports = ["@storybook/addon-docs/preset"];
