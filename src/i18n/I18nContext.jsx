@@ -22,7 +22,7 @@ async function loadPolyfills(locale) {
     const language = getLanguage(locale);
     await import(
       /* webpackChunkName: "intl-pluralrules-locale-data" */
-      /* webpackInclude: /[fr|en]\.js$/ */
+      /* webpackInclude: /(fr|en)\.js$/ */
       /* webpackMode: "lazy" */
       `@formatjs/intl-pluralrules/dist/locale-data/${language}`
     );
