@@ -2059,17 +2059,17 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/react@^5.3.6":
-  version "5.3.6"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-5.3.6.tgz#95dbcba137895846ac23bb6eebb0593673574e42"
-  integrity sha512-+LeAuIQLx83bZUGyefvpU6L2AOaXkHgXYRPm6TYpsugwIhTtwsvSowQLufwuUbxsoUNswDX337NMjPeWWUS94g==
+"@storybook/react@^5.3.7":
+  version "5.3.7"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-5.3.7.tgz#70c3f8c01a28d4d18fe32d1b353be5353ef8898f"
+  integrity sha512-Hv8vM8LAMwC50pQX2XY4m3QdEtjx8PjYGxPchocbLrkmCd0NJF0BCYqLUnVQQPDL98x2jcv8+WsqxumULPMv/g==
   dependencies:
     "@babel/plugin-transform-react-constant-elements" "^7.6.3"
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
-    "@storybook/addons" "5.3.6"
-    "@storybook/core" "5.3.6"
-    "@storybook/node-logger" "5.3.6"
+    "@storybook/addons" "5.3.7"
+    "@storybook/core" "5.3.7"
+    "@storybook/node-logger" "5.3.7"
     "@svgr/webpack" "^4.0.3"
     "@types/webpack-env" "^1.15.0"
     babel-plugin-add-react-displayname "^0.0.5"
