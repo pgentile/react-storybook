@@ -86,7 +86,7 @@
     "@storybook/addon-storyshots": "^5.3.6",
     "@storybook/addons": "^5.3.5",
     "@storybook/cli": "^5.3.6",
-    "@storybook/react": "^5.3.6",
+    "@storybook/react": "^5.3.7",
     "@testing-library/jest-dom": "^5.0.0",
     "@testing-library/react": "^9.4.0",
     "autoprefixer": "^9.7.4",
