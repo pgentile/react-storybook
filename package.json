@@ -94,7 +94,7 @@
     "babel-jest": "^24.0.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-react-intl": "^5.1.16",
-    "browserslist": "^4.8.4",
+    "browserslist": "^4.8.5",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.4",
     "es-check": "^5.1.0",
