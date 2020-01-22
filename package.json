@@ -33,7 +33,7 @@
     "ci:post-validate": "run-s es-check"
   },
   "dependencies": {
-    "@formatjs/intl-pluralrules": "^1.5.0",
+    "@formatjs/intl-pluralrules": "^1.5.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
