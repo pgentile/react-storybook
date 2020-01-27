@@ -91,7 +91,7 @@
     "@testing-library/react": "^9.4.0",
     "autoprefixer": "^9.7.4",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.0.0",
+    "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-react-intl": "^5.1.18",
     "browserslist": "^4.8.5",
