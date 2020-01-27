@@ -1143,6 +1143,11 @@
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.2.0.tgz#ba6e12fe64ff7fd160be392007c47d24b7ae5c75"
   integrity sha512-+Az7tR1av1DHZu9668D8uh9atT6vp+FFmEF8BrEssv0OqzpVjpVBGVmcgPzQP8k2PQjVlm/h2w8cTt0knn132w==
 
+"@formatjs/intl-utils@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.2.0.tgz#ba6e12fe64ff7fd160be392007c47d24b7ae5c75"
+  integrity sha512-+Az7tR1av1DHZu9668D8uh9atT6vp+FFmEF8BrEssv0OqzpVjpVBGVmcgPzQP8k2PQjVlm/h2w8cTt0knn132w==
+
 "@formatjs/macro@^0.2.6":
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@formatjs/macro/-/macro-0.2.6.tgz#eb173658d803416a43210778b2f5c04c5a240bb6"
@@ -5997,14 +6002,14 @@ eslint-plugin-compat@^3.0.1:
     mdn-browser-compat-data "^0.0.84"
     semver "^6.1.2"
 
-eslint-plugin-formatjs@^1.5.10:
-  version "1.5.10"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-1.5.10.tgz#ebfbcafd66fa916f75292c37490d240bf13380a9"
-  integrity sha512-wMz9xDcgQ8Mw1UcB1VpuUigigggyiLQUeIJMJoDgMd3oS2jo5ZUAB7qrqZzQBdsK7BUAvvq9aoLZvs8gbyelZA==
+eslint-plugin-formatjs@^1.5.11:
+  version "1.5.11"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-1.5.11.tgz#2a06d4a63d8ed9c19fdd183e561e838865c06757"
+  integrity sha512-83W85Nnw9OQQg46J3xGq5CTkX/240L35TIozEtVNBOA6BZhTMUSYM/0qSqMoIE7SBMCazXoifJ9ynY0Iq4pKAQ==
   dependencies:
     "@types/emoji-regex" "^8.0.0"
     emoji-regex "^8.0.0"
-    intl-messageformat-parser "^3.6.3"
+    intl-messageformat-parser "^3.6.4"
 
 eslint-plugin-jest@^23.4.0:
   version "23.6.0"
