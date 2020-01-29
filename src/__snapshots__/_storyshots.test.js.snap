@@ -18228,6 +18228,18 @@ exports[`Storyshots ResizableBlock Main 1`] = `
 
 exports[`Storyshots ResizeDetector Main 1`] = `"NON"`;
 
+exports[`Storyshots Samples | WebShareSample Main 1`] = `
+<div
+  className="web-share"
+>
+  <button
+    onClick={[Function]}
+  >
+    Partager
+  </button>
+</div>
+`;
+
 exports[`Storyshots Spinner Main 1`] = `
 <div
   className="spinner"
