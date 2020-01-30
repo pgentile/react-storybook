@@ -1,3 +1,7 @@
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+
 module.exports = {
   stories: [
     "../src/**/*.stories.(js|jsx|ts|tsx|mdx)"
@@ -95,7 +99,32 @@ module.exports = {
     }
 
     config.optimization = config.optimization || {};
-    config.optimization.minimize = false;
+    config.optimization.minimize = true;
+
+    config.optimization.splitChunks.cacheGroups = {
+      corejs: {
+        test: /[\\/]node_modules[\\/]core-js/,
+        name: "polyfills",
+        chunks: "all"
+      },
+      react: {
+        test: /[\\/]node_modules[\\/](react|react-dom)\//,
+        name: "react",
+        chunks: "all"
+      }
+    };
+
+    config.plugins = [
+      ...config.plugins,
+      new CleanWebpackPlugin(),
+      new BundleAnalyzerPlugin({
+        analyzerMode: "static",
+        generateStatsFile: true,
+        openAnalyzer: false,
+        reportFilename: path.resolve(__dirname, "../build/analyzer/report.html"),
+        statsFilename: path.resolve(__dirname, "../build/analyzer/stats.json")
+      })
+    ];
 
     return config;
   }

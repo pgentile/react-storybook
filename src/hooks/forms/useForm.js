@@ -1,5 +1,5 @@
 import { useMemo, useRef, useEffect } from "react";
-import noop from "lodash-es";
+import { noop } from "lodash-es";
 
 export default function useForm({ onSubmit = noop } = {}) {
   const onSubmitRef = useRef(onSubmit);
