@@ -94,12 +94,9 @@ module.exports = {
     });
     */
 
-    if (process.env.NODE_ENV === "production") {
+    if (configType === "PRODUCTION") {
       config.devtool = "source-map";
     }
-
-    config.optimization = config.optimization || {};
-    config.optimization.minimize = true;
 
     config.optimization.splitChunks.cacheGroups = {
       corejs: {
@@ -114,16 +111,23 @@ module.exports = {
       }
     };
 
+    let productionPlugins = [];
+    if (configType === "PRODUCTION") {
+      productionPlugins = [
+        new CleanWebpackPlugin(),
+        new BundleAnalyzerPlugin({
+          analyzerMode: "static",
+          generateStatsFile: true,
+          openAnalyzer: false,
+          reportFilename: path.resolve(__dirname, "../build/analyzer/report.html"),
+          statsFilename: path.resolve(__dirname, "../build/analyzer/stats.json")
+        })
+      ];
+    }
+
     config.plugins = [
       ...config.plugins,
-      new CleanWebpackPlugin(),
-      new BundleAnalyzerPlugin({
-        analyzerMode: "static",
-        generateStatsFile: true,
-        openAnalyzer: false,
-        reportFilename: path.resolve(__dirname, "../build/analyzer/report.html"),
-        statsFilename: path.resolve(__dirname, "../build/analyzer/stats.json")
-      })
+      ...productionPlugins
     ];
 
     return config;
