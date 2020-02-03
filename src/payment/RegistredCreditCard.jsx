@@ -24,105 +24,91 @@ export const registredCreditCardShape = {
   expirationDate: PropTypes.string.isRequired
 };
 
-export default class RegistredCreditCard extends React.PureComponent {
-  static propTypes = {
-    className: PropTypes.string,
-    card: PropTypes.shape(registredCreditCardShape).isRequired,
-    totalPrice: PropTypes.shape({
-      value: PropTypes.number.isRequired,
-      currency: PropTypes.string.isRequired
-    }).isRequired,
-    showCvv: PropTypes.bool,
-    disabled: PropTypes.bool,
-    onShowCvv: PropTypes.func.isRequired,
-    onHideCvv: PropTypes.func.isRequired,
-    onUseCard: PropTypes.func.isRequired
-  };
+export default function RegistredCreditCard({
+  className = "",
+  card,
+  totalPrice,
+  showCvv,
+  showCvvToggle = true,
+  disabled,
+  onShowCvv,
+  onHideCvv,
+  onUseCard
+}) {
+  const { maskedNumber, brand, expirationDate } = card;
+  const [year, month] = expirationDate.split("-");
 
-  static defaultProps = {
-    className: ""
-  };
+  const cardBrandInfo = getTypeInfo(brand);
+  const brandName = cardBrandInfo.niceType;
 
-  state = {
-    cvv: ""
-  };
-
-  onShowCvv = () => {
-    this.props.onShowCvv();
-  };
-
-  onHideCvv = () => {
-    this.setState({ cvv: "" });
-    this.props.onHideCvv();
-  };
-
-  onUseCard = ({ cvv }) => {
-    const { card, onUseCard } = this.props;
+  const onUseCardCallback = ({ cvv }) => {
     onUseCard({
       id: card.id,
       cvv
     });
   };
 
-  onCvvChange = event => {
-    this.setState({
-      cvv: event.target.value
-    });
-  };
-
-  render() {
-    const { className, card, totalPrice, showCvv, disabled } = this.props;
-    const { maskedNumber, brand, expirationDate } = card;
-    const [year, month] = expirationDate.split("-");
-
-    const cardBrandInfo = getTypeInfo(brand);
-    const brandName = cardBrandInfo.niceType;
-
-    const cvvBlock = (
-      <div className="registred-credit-card__cvv-container">
-        <div className="registred-credit-card__cvv">
-          <RegistredCardCvvForm
-            brand={brand}
-            totalPrice={totalPrice}
-            onUseCard={this.onUseCard}
-            onCancel={this.onHideCvv}
-            disabled={disabled || !showCvv}
-          />
-        </div>
+  const cvvBlock = (
+    <div className="registred-credit-card__cvv-container">
+      <div className="registred-credit-card__cvv">
+        <RegistredCardCvvForm
+          brand={brand}
+          totalPrice={totalPrice}
+          onUseCard={onUseCardCallback}
+          onCancel={onHideCvv}
+          disabled={disabled || !showCvv}
+        />
       </div>
-    );
+    </div>
+  );
 
-    return (
-      <ExpandableCard
-        expanded={showCvv}
-        expandableContent={cvvBlock}
-        as="section"
-        layer="flat"
-        className={`registred-credit-card ${className}`}
-      >
-        <h1 className="registred-credit-card__title">
-          <FontAwesomeIcon icon={brandIcons[brand] || faCreditCard} />{" "}
-          <span className="registred-credit-card__brand">Carte {brandName}</span>
-        </h1>
+  return (
+    <ExpandableCard
+      expanded={showCvv}
+      expandableContent={cvvBlock}
+      as="section"
+      layer="flat"
+      className={`registred-credit-card ${className}`}
+    >
+      <h1 className="registred-credit-card__title">
+        <FontAwesomeIcon icon={brandIcons[brand] || faCreditCard} />{" "}
+        <span className="registred-credit-card__brand">Carte {brandName}</span>
+      </h1>
 
-        <div className="registred-credit-card__details-container">
-          <div className="registred-credit-card__details">
-            <p className="registred-credit-card__details-line">
-              <b>N° de carte&nbsp;:</b> {maskedNumber}
-            </p>
-            <p className="registred-credit-card__details-line">
-              <b>Date d&apos;expiration&nbsp;:</b> {month}
-              &thinsp;/&thinsp;
-              {year}
-            </p>
-          </div>
+      <div className="registred-credit-card__details-container">
+        <div className="registred-credit-card__details">
+          <p className="registred-credit-card__details-line">
+            <b>N° de carte&nbsp;:</b> {maskedNumber}
+          </p>
+          <p className="registred-credit-card__details-line">
+            <b>Date d&apos;expiration&nbsp;:</b> {month}
+            &thinsp;/&thinsp;
+            {year}
+          </p>
+        </div>
+        {showCvvToggle && (
           <div className="registred-credit-card__select">
-            <Button onClick={showCvv ? this.onHideCvv : this.onShowCvv} toggled={showCvv} disabled={disabled}>
+            <Button onClick={showCvv ? onHideCvv : onShowCvv} toggled={showCvv} disabled={disabled}>
               Utiliser cette carte
             </Button>
           </div>
-        </div>
-      </ExpandableCard>
-    );
-  }
+        )}
+      </div>
+    </ExpandableCard>
+  );
 }
+
+RegistredCreditCard.propTypes = {
+  className: PropTypes.string,
+  card: PropTypes.shape(registredCreditCardShape).isRequired,
+  totalPrice: PropTypes.shape({
+    value: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired
+  }).isRequired,
+  showCvv: PropTypes.bool,
+  showCvvToggle: PropTypes.bool,
+  disabled: PropTypes.bool,
+  onShowCvv: PropTypes.func.isRequired,
+  onHideCvv: PropTypes.func.isRequired,
+  onUseCard: PropTypes.func.isRequired
+};

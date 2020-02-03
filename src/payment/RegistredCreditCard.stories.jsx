@@ -46,4 +46,12 @@ cardBrands.forEach(cardBrand => {
   stories.add(cardBrand + " / visible CVV / disabled", () => {
     return <RegistredCreditCard {...props} showCvv disabled />;
   });
+
+  stories.add(cardBrand + " / can't show CVV", () => {
+    return <RegistredCreditCard {...props} showCvvToggle={false} />;
+  });
+
+  stories.add(cardBrand + " / visible CVV / can't show CVV", () => {
+    return <RegistredCreditCard {...props} showCvvToggle={false} showCvv />;
+  });
 });
