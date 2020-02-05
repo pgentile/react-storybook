@@ -1677,15 +1677,15 @@
     qs "^6.6.0"
     ts-dedent "^1.1.0"
 
-"@storybook/addon-storyshots@^5.3.11":
-  version "5.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-5.3.11.tgz#ef2e51f51173968ee3ab938e2f310d95f9251650"
-  integrity sha512-veuuICqJWYX6P6XJ2dOqkshAlJrImAfQ8YwqYJAy34ekI+3hR075Yu7OcsQp4phsBvhETzYvklMZ8AVdw5aW8w==
+"@storybook/addon-storyshots@^5.3.12":
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-5.3.12.tgz#1e85dc96f88ad4ab24370e00a7a620b3fb784be2"
+  integrity sha512-KnxTHJdrRV2v9qdJ7NmQGpOFINbp+OdPZh9pOQF6LdxuclWTfzKZvN2Ib2QB3uJ6fe7R3jtrJJ5q4UCpffwjLA==
   dependencies:
     "@jest/transform" "^24.9.0"
-    "@storybook/addons" "5.3.11"
-    "@storybook/client-api" "5.3.11"
-    "@storybook/core" "5.3.11"
+    "@storybook/addons" "5.3.12"
+    "@storybook/client-api" "5.3.12"
+    "@storybook/core" "5.3.12"
     "@types/glob" "^7.1.1"
     "@types/jest" "^24.0.16"
     "@types/jest-specific-snapshot" "^0.5.3"
