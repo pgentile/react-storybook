@@ -36,7 +36,7 @@
     "@formatjs/intl-pluralrules": "^1.5.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
-    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@xstate/react": "^0.8.1",
     "card-validator": "^6.0.0",
