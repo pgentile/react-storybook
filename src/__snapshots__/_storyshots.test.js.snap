@@ -10467,6 +10467,12 @@ exports[`Storyshots Menu Main 1`] = `
 </nav>
 `;
 
+exports[`Storyshots MicroFrontend | MicroFrontend Main 1`] = `
+<div
+  id="micro-frontend-root-sample"
+/>
+`;
+
 exports[`Storyshots NightMode Main 1`] = `
 <div
   className="night-mode"
