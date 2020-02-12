@@ -121,7 +121,7 @@
     "puppeteer": "^2.1.1",
     "query-string": "^6.10.1",
     "react-test-renderer": "^16.6.3",
-    "reg-cli": "^0.15.13",
+    "reg-cli": "^0.16.0",
     "regenerator-runtime": "^0.13.2",
     "rimraf": "^3.0.2",
     "sass-loader": "^8.0.2",
