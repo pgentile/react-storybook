@@ -9,7 +9,6 @@ module.exports = {
     "\\.svg$": "<rootDir>/__mocks__/imageMock.js"
   },
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
-  setupFiles: ["<rootDir>/../registerContext.js"],
   transformIgnorePatterns: ["node_modules/(?!lodash-es)"],
   coverageDirectory: "<rootDir>/../build/coverage"
 };
