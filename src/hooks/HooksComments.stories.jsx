@@ -8,7 +8,10 @@ import Spinner from "../Spinner";
 export default {
   title: "Hooks / HooksComments",
   component: HooksComments,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => {

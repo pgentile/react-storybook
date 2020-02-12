@@ -4,7 +4,10 @@ import { TeleporterProvider, TeleporterSource, TeleporterTarget } from "./Telepo
 
 export default {
   title: "Teleporter",
-  component: TeleporterProvider
+  component: TeleporterProvider,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => <Demo />;

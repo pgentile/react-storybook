@@ -10118,6 +10118,281 @@ exports[`Storyshots Forms / Toggle Unchecked 1`] = `
 </div>
 `;
 
+exports[`Storyshots Hooks / AboutBrowserLocation Main 1`] = `
+<div>
+  <p>
+    <b>
+      Location:
+    </b>
+  </p>
+  <pre>
+    {
+  "trigger": "load",
+  "state": null,
+  "length": 1,
+  "hash": "",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "http://localhost/",
+  "origin": "http://localhost",
+  "pathname": "/",
+  "port": "",
+  "protocol": "http:",
+  "search": ""
+}
+  </pre>
+  <p>
+    <b>
+      Search params:
+    </b>
+  </p>
+  <pre>
+    
+  </pre>
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      Push param
+    </button>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Hooks / AboutMediaDevices Main 1`] = `
+<pre>
+  {}
+</pre>
+`;
+
+exports[`Storyshots Hooks / Counter Main 1`] = `
+<div
+  className="counter"
+>
+  <p>
+    <b>
+      0
+    </b>
+  </p>
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      Increment
+    </button>
+  </p>
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      Decrement
+    </button>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Hooks / ElapsedTime Main 1`] = `
+<div
+  className="elapsed-time"
+>
+  <p>
+    Il s'est écoulé 
+    <b>
+      0
+    </b>
+     secondes.
+  </p>
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Hooks / HookedForm Main 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="input-container"
+  >
+    <div>
+      <div
+        className="row "
+      >
+        <label>
+          <input
+            checked={false}
+            name="civility"
+            onChange={[Function]}
+            type="radio"
+            value="MR"
+          />
+           Monsieur
+        </label>
+         
+        <label>
+          <input
+            checked={false}
+            name="civility"
+            onChange={[Function]}
+            type="radio"
+            value="MRS"
+          />
+           Madame
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="input-container"
+  >
+    <div>
+      <div
+        className="row "
+      >
+        <label>
+          Prénom : 
+          <input
+            name="firstName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="input-container"
+  >
+    <div>
+      <div
+        className="row "
+      >
+        <label>
+          Nom : 
+          <input
+            name="lastName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="input-container"
+  >
+    <div>
+      <div
+        className="row "
+      >
+        <label>
+          <input
+            checked={false}
+            name="acceptConditions"
+            onChange={[Function]}
+            type="checkbox"
+          />
+           Accept conditions
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row "
+  >
+    <button
+      type="submit"
+    >
+      Send
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Hooks / Language Main 1`] = `
+Array [
+  <p>
+    <b>
+      Language:
+    </b>
+     
+    🇩🇪
+  </p>,
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      🇫🇷
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      🇬🇧
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      🇩🇪
+    </button>
+  </p>,
+]
+`;
+
+exports[`Storyshots Hooks / Shake Main 1`] = `
+<div
+  className="shake"
+  onClick={[Function]}
+>
+  This element must shake
+</div>
+`;
+
+exports[`Storyshots Hooks / ThemedComponent Main 1`] = `
+<section
+  className="themed-component themed-component--yellow"
+>
+  <p
+    className="themed-component__line"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Switch theme
+    </button>
+  </p>
+  <p
+    className="themed-component__line"
+  >
+    Hello, my friend
+  </p>
+</section>
+`;
+
+exports[`Storyshots Hooks / TrafficLight Main 1`] = `
+<div
+  className="traffic-light"
+>
+  <div
+    className="traffic-light__light traffic-light__light--color-red"
+  />
+  <div
+    className="traffic-light__light"
+  />
+  <div
+    className="traffic-light__light"
+  />
+</div>
+`;
+
 exports[`Storyshots I18n | I18nLocaleSelector Main 1`] = `
 <form
   className="i18n-locale-selector"

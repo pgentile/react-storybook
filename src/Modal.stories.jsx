@@ -5,7 +5,10 @@ import Modal from "./Modal";
 
 export default {
   title: "Modal",
-  component: Modal
+  component: Modal,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => {

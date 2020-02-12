@@ -4,7 +4,10 @@ import ExpandableIcon from "./ExpandableIcon";
 
 export default {
   title: "ExpandableIcon",
-  component: ExpandableIcon
+  component: ExpandableIcon,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const folded = () => {

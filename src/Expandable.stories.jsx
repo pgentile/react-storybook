@@ -6,7 +6,10 @@ import Expandable from "./Expandable";
 export default {
   title: "Expandable",
   component: Expandable,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const exemple = () => {

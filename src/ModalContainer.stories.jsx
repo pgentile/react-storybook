@@ -5,7 +5,10 @@ import { action } from "@storybook/addon-actions";
 
 export default {
   title: "ModalContainer",
-  component: ModalContainer
+  component: ModalContainer,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const empty = () => {

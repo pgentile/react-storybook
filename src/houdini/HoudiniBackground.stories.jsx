@@ -4,7 +4,10 @@ import HoudiniBackground from "./HoudiniBackground";
 
 export default {
   title: "Houdini / HoudiniBackground",
-  component: HoudiniBackground
+  component: HoudiniBackground,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => {

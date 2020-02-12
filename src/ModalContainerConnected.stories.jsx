@@ -26,7 +26,10 @@ export default {
 
       return <Provider store={store}>{story()}</Provider>;
     }
-  ]
+  ],
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => {

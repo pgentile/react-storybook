@@ -61,7 +61,10 @@ class ExpandableCardDemo extends React.PureComponent {
 
 export default {
   title: "ExpandableCard",
-  component: ExpandableCard
+  component: ExpandableCard,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => {

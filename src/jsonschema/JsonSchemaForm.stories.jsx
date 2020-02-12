@@ -12,7 +12,10 @@ const actions = {
 };
 
 export default {
-  title: "JsonSchemaForm"
+  title: "JsonSchemaForm",
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const searchOutwardForm = () => {

@@ -4,7 +4,10 @@ import ManagedModal, { ManagedModalContainer } from "./ManagedModal";
 
 export default {
   title: "ManagedModal",
-  component: ManagedModal
+  component: ManagedModal,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => {
