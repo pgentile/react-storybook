@@ -1,53 +1,41 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
 
 import "./Overlay.scss";
 
-export default class Overlay extends React.Component {
-  static propTypes = {
-    visible: PropTypes.bool,
-    children: PropTypes.node,
-    onClick: PropTypes.func
-  };
+export default function Overlay({ visible = true, children, onClick }) {
+  const elementRef = useRef();
 
-  static defaultProps = {
-    visible: true
-  };
+  const getElement = () => {
+    let element = elementRef.current;
+    if (!element) {
+      element = document.createElement("div");
+      element.className = "overlay-container";
 
-  body = null;
-  element = null;
-
-  constructor() {
-    super();
-
-    this.element = document.createElement("div");
-    this.element.className = "overlay-container";
-
-    this.body = document.getElementsByTagName("body")[0];
-    this.body.appendChild(this.element);
-  }
-
-  componentWillUnmount() {
-    this.body.removeChild(this.element);
-  }
-
-  render() {
-    if (this.element) {
-      const overlay = this.renderOverlay();
-      return createPortal(overlay, this.element);
+      elementRef.current = element;
     }
+    return element;
+  };
 
-    return null;
-  }
+  useEffect(() => {
+    const element = getElement();
+    document.body.appendChild(element);
 
-  renderOverlay() {
-    const { children, onClick, visible } = this.props;
+    return () => document.body.removeChild(element);
+  }, []);
 
-    return (
-      <div className="overlay" onClick={onClick} hidden={!visible}>
-        {children}
-      </div>
-    );
-  }
+  const overlay = (
+    <div className="overlay" onClick={onClick} hidden={!visible}>
+      {children}
+    </div>
+  );
+
+  return createPortal(overlay, getElement());
 }
+
+Overlay.propTypes = {
+  visible: PropTypes.bool,
+  children: PropTypes.node,
+  onClick: PropTypes.func
+};
