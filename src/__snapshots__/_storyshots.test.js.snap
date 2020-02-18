@@ -10822,6 +10822,7 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
         name="cardNumber"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         type="tel"
         value=""
       />
@@ -10839,44 +10840,21 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
     <div
       className="form-field-container__field"
     >
-      <fieldset
-        className="form-date-input "
-      >
-        <input
-          aria-invalid={false}
-          autoComplete="cc-exp-month"
-          className="form-date-input__input form-date-input__input--month"
-          disabled={false}
-          id="form-field-32"
-          inputMode="numeric"
-          maxLength={2}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="MM"
-          type="tel"
-          value=""
-        />
-        <span
-          className="form-date-input__input-separator"
-        >
-          /
-        </span>
-        <input
-          aria-invalid={false}
-          autoComplete="cc-exp-year"
-          className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-          disabled={false}
-          inputMode="numeric"
-          maxLength={2}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="AA"
-          type="tel"
-          value=""
-        />
-      </fieldset>
+      <input
+        aria-invalid={false}
+        autoComplete="cc-exp"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-32"
+        maxLength={5}
+        name="expirationDate"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
     </div>
   </div>
   <div
@@ -10903,6 +10881,7 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         type="tel"
         value=""
       />
@@ -13484,6 +13463,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               name="cardNumber"
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="tel"
               value=""
             />
@@ -13501,44 +13481,21 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
           <div
             className="form-field-container__field"
           >
-            <fieldset
-              className="form-date-input "
-            >
-              <input
-                aria-invalid={false}
-                autoComplete="cc-exp-month"
-                className="form-date-input__input form-date-input__input--month"
-                disabled={false}
-                id="form-field-35"
-                inputMode="numeric"
-                maxLength={2}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="MM"
-                type="tel"
-                value=""
-              />
-              <span
-                className="form-date-input__input-separator"
-              >
-                /
-              </span>
-              <input
-                aria-invalid={false}
-                autoComplete="cc-exp-year"
-                className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-                disabled={false}
-                inputMode="numeric"
-                maxLength={2}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="AA"
-                type="tel"
-                value=""
-              />
-            </fieldset>
+            <input
+              aria-invalid={false}
+              autoComplete="cc-exp"
+              className="form-input-field "
+              disabled={false}
+              formNoValidate={true}
+              id="form-field-35"
+              maxLength={5}
+              name="expirationDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              value=""
+            />
           </div>
         </div>
         <div
@@ -13565,6 +13522,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               name="cvv"
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               type="tel"
               value=""
             />
@@ -13833,6 +13791,7 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
           name="cardNumber"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           type="tel"
           value=""
         />
@@ -13850,44 +13809,21 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
       <div
         className="form-field-container__field"
       >
-        <fieldset
-          className="form-date-input "
-        >
-          <input
-            aria-invalid={false}
-            autoComplete="cc-exp-month"
-            className="form-date-input__input form-date-input__input--month"
-            disabled={false}
-            id="form-field-38"
-            inputMode="numeric"
-            maxLength={2}
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="MM"
-            type="tel"
-            value=""
-          />
-          <span
-            className="form-date-input__input-separator"
-          >
-            /
-          </span>
-          <input
-            aria-invalid={false}
-            autoComplete="cc-exp-year"
-            className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-            disabled={false}
-            inputMode="numeric"
-            maxLength={2}
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="AA"
-            type="tel"
-            value=""
-          />
-        </fieldset>
+        <input
+          aria-invalid={false}
+          autoComplete="cc-exp"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-38"
+          maxLength={5}
+          name="expirationDate"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
       </div>
     </div>
     <div
@@ -13914,6 +13850,7 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
           name="cvv"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           type="tel"
           value=""
         />
@@ -14180,6 +14117,7 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
           name="cardNumber"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           type="tel"
           value=""
         />
@@ -14197,44 +14135,21 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
       <div
         className="form-field-container__field"
       >
-        <fieldset
-          className="form-date-input "
-        >
-          <input
-            aria-invalid={false}
-            autoComplete="cc-exp-month"
-            className="form-date-input__input form-date-input__input--month"
-            disabled={false}
-            id="form-field-41"
-            inputMode="numeric"
-            maxLength={2}
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="MM"
-            type="tel"
-            value=""
-          />
-          <span
-            className="form-date-input__input-separator"
-          >
-            /
-          </span>
-          <input
-            aria-invalid={false}
-            autoComplete="cc-exp-year"
-            className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-            disabled={false}
-            inputMode="numeric"
-            maxLength={2}
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="AA"
-            type="tel"
-            value=""
-          />
-        </fieldset>
+        <input
+          aria-invalid={false}
+          autoComplete="cc-exp"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-41"
+          maxLength={5}
+          name="expirationDate"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
       </div>
     </div>
     <div
@@ -14261,6 +14176,7 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
           name="cvv"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           type="tel"
           value=""
         />

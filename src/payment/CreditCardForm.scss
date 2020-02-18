@@ -6,10 +6,15 @@
   margin: 0;
   padding: 0;
 
+  &__error,
   &__card-number,
   &__expiration-date,
   &__cvv {
     margin-bottom: $margin;
+  }
+
+  &__error {
+    padding: $margin;
   }
 
   &__button {
@@ -21,15 +26,21 @@
     grid-gap: $margin;
 
     grid-template-areas:
+      "error error"
       "card-number card-number"
       "expiration-date cvv"
       "button button";
     grid-template-columns: 1fr 1fr;
 
+    &__error,
     &__card-number,
     &__expiration-date,
     &__cvv {
       margin-bottom: 0;
+    }
+
+    &__error {
+      grid-area: error;
     }
 
     &__card-number {
