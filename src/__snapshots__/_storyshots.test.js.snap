@@ -11376,18 +11376,18 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
       <span
         className="price order-summary__total-price"
         data-price-currency="EUR"
-        data-price-value={123}
+        data-price-value={113.7}
       >
         <span
           className="price__units"
         >
-          123
+          113
         </span>
         <span
           className="price__remaining"
         >
           , 
-          00
+          70
            
           €
         </span>
@@ -11606,18 +11606,18 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
       <span
         className="price order-summary__total-price"
         data-price-currency="EUR"
-        data-price-value={123}
+        data-price-value={110.8}
       >
         <span
           className="price__units"
         >
-          123
+          110
         </span>
         <span
           className="price__remaining"
         >
           , 
-          00
+          80
            
           €
         </span>
@@ -11817,18 +11817,18 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
       <span
         className="price order-summary__total-price"
         data-price-currency="EUR"
-        data-price-value={123}
+        data-price-value={115.7}
       >
         <span
           className="price__units"
         >
-          123
+          115
         </span>
         <span
           className="price__remaining"
         >
           , 
-          00
+          70
            
           €
         </span>
@@ -11969,18 +11969,18 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
       <span
         className="price order-summary__total-price"
         data-price-currency="EUR"
-        data-price-value={123}
+        data-price-value={109.8}
       >
         <span
           className="price__units"
         >
-          123
+          109
         </span>
         <span
           className="price__remaining"
         >
           , 
-          00
+          80
            
           €
         </span>
@@ -12478,18 +12478,18 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
     <span
       className="price order-summary__total-price"
       data-price-currency="EUR"
-      data-price-value={123}
+      data-price-value={113.7}
     >
       <span
         className="price__units"
       >
-        123
+        113
       </span>
       <span
         className="price__remaining"
       >
         , 
-        00
+        70
          
         €
       </span>
@@ -12599,18 +12599,18 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
     <span
       className="price order-summary__total-price"
       data-price-currency="EUR"
-      data-price-value={123}
+      data-price-value={110.8}
     >
       <span
         className="price__units"
       >
-        123
+        110
       </span>
       <span
         className="price__remaining"
       >
         , 
-        00
+        80
          
         €
       </span>
@@ -12720,18 +12720,18 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
     <span
       className="price order-summary__total-price"
       data-price-currency="EUR"
-      data-price-value={123}
+      data-price-value={115.7}
     >
       <span
         className="price__units"
       >
-        123
+        115
       </span>
       <span
         className="price__remaining"
       >
         , 
-        00
+        70
          
         €
       </span>
@@ -12755,18 +12755,53 @@ exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
     <span
       className="price order-summary__total-price"
       data-price-currency="EUR"
-      data-price-value={123}
+      data-price-value={109.8}
     >
       <span
         className="price__units"
       >
-        123
+        109
       </span>
       <span
         className="price__remaining"
       >
         , 
-        00
+        80
+         
+        €
+      </span>
+    </span>
+  </p>
+</section>
+`;
+
+exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
+<section
+  className="card card--has-border card--layer-raised order-summary"
+>
+  <p
+    className="order-summary__total"
+  >
+    <span
+      className="order-summary__total-label"
+    >
+      Total de votre commande
+    </span>
+    <span
+      className="price order-summary__total-price"
+      data-price-currency="EUR"
+      data-price-value={75.8}
+    >
+      <span
+        className="price__units"
+      >
+        75
+      </span>
+      <span
+        className="price__remaining"
+      >
+        , 
+        80
          
         €
       </span>
@@ -12799,6 +12834,34 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
           className="price__units"
         >
           109
+        </span>
+        <span
+          className="price__remaining"
+        >
+          , 
+          80
+           
+          €
+        </span>
+      </span>
+    </li>
+    <li
+      className="order-summary__item"
+    >
+      <span
+        className="order-summary__item-label"
+      >
+        Vos cartes de réduction
+      </span>
+      <span
+        className="price order-summary__item-price"
+        data-price-currency="EUR"
+        data-price-value={75.8}
+      >
+        <span
+          className="price__units"
+        >
+          75
         </span>
         <span
           className="price__remaining"
@@ -12978,18 +13041,18 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
     <span
       className="price order-summary__total-price"
       data-price-currency="EUR"
-      data-price-value={123}
+      data-price-value={190.5}
     >
       <span
         className="price__units"
       >
-        123
+        190
       </span>
       <span
         className="price__remaining"
       >
         , 
-        00
+        50
          
         €
       </span>

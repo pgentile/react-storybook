@@ -8,13 +8,11 @@ import {
   cancelInsurance,
   addDonation,
   cancelDonation,
-  selectOrderItems,
-  selectTotalAmount
+  selectOrderItems
 } from "../redux/reducers/order";
 
 const mapStateToProps = state => ({
-  items: selectOrderItems(state),
-  totalPrice: selectTotalAmount(state)
+  items: selectOrderItems(state)
 });
 
 const mapDispatchToProps = {

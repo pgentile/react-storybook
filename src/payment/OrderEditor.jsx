@@ -12,7 +12,6 @@ import "./OrderEditor.scss";
 export default class OrderEditor extends React.PureComponent {
   static propTypes = {
     items: OrderSummary.propTypes.items,
-    totalPrice: OrderSummary.propTypes.totalPrice,
     onAddVoucher: VoucherContainer.propTypes.onAddVoucher,
     onCancelVoucher: PropTypes.func.isRequired,
     onAddInsurance: InsuranceContainer.propTypes.onAddInsurance,
@@ -24,7 +23,6 @@ export default class OrderEditor extends React.PureComponent {
   render() {
     const {
       items,
-      totalPrice,
       onAddVoucher,
       onCancelVoucher,
       onAddInsurance,
@@ -72,7 +70,7 @@ export default class OrderEditor extends React.PureComponent {
       <section className="order-editor">
         <h1 className="order-editor__title">Récapitulatif</h1>
 
-        <OrderSummary className="order-editor__summary" items={itemsWithActions} totalPrice={totalPrice} />
+        <OrderSummary className="order-editor__summary" items={itemsWithActions} />
 
         {!hasInsurance && (
           <InsuranceContainer

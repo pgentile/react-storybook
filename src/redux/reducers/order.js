@@ -9,6 +9,7 @@ export const TICKET_TYPE = "TICKET";
 export const INSURANCE_TYPE = "INSURANCE";
 export const VOUCHER_TYPE = "VOUCHER";
 export const DONATION_TYPE = "DONATION";
+export const CARD_TYPE = "CARD";
 
 // Selectors
 

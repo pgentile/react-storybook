@@ -2,7 +2,7 @@ import React from "react";
 import { action } from "@storybook/addon-actions";
 
 import OrderSummary from "./OrderSummary";
-import { TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE } from "../redux/reducers/order";
+import { TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE, CARD_TYPE } from "../redux/reducers/order";
 
 const cancelVoucher = action("cancel voucher");
 const cancelInsurance = action("cancel insurance");
@@ -14,6 +14,16 @@ const ticketItem = {
   label: "Vos billets",
   price: {
     value: 109.8,
+    currency: "EUR"
+  }
+};
+
+const cardItem = {
+  id: "card",
+  type: CARD_TYPE,
+  label: "Vos cartes de réduction",
+  price: {
+    value: 75.8,
     currency: "EUR"
   }
 };
@@ -55,32 +65,31 @@ const donationItem = {
   onCancel: cancelDonation
 };
 
-const totalPrice = {
-  value: 123,
-  currency: "EUR"
-};
-
 export default {
   title: "Payment | OrderSummary",
   component: OrderSummary
 };
 
 export const billetsUniquement = () => {
-  return <OrderSummary items={[ticketItem]} totalPrice={totalPrice} />;
+  return <OrderSummary items={[ticketItem]} />;
+};
+
+export const cartesUniquement = () => {
+  return <OrderSummary items={[cardItem]} />;
 };
 
 export const billetsAssurances = () => {
-  return <OrderSummary items={[ticketItem, insuranceItem]} totalPrice={totalPrice} />;
+  return <OrderSummary items={[ticketItem, insuranceItem]} />;
 };
 
 export const avecUnCodePromo = () => {
-  return <OrderSummary items={[ticketItem, voucherItem, insuranceItem]} totalPrice={totalPrice} />;
+  return <OrderSummary items={[ticketItem, voucherItem, insuranceItem]} />;
 };
 
 export const avecUnDon = () => {
-  return <OrderSummary items={[ticketItem, donationItem]} totalPrice={totalPrice} />;
+  return <OrderSummary items={[ticketItem, donationItem]} />;
 };
 
 export const tousLesTypes = () => {
-  return <OrderSummary items={[ticketItem, voucherItem, insuranceItem, donationItem]} totalPrice={totalPrice} />;
+  return <OrderSummary items={[ticketItem, cardItem, voucherItem, insuranceItem, donationItem]} />;
 };
