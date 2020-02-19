@@ -10748,6 +10748,17 @@ exports[`Storyshots MicroFrontend | MicroFrontend Main 1`] = `
 />
 `;
 
+exports[`Storyshots MicroFrontend | MicroFrontend Multiple Frontends 1`] = `
+Array [
+  <div
+    id="micro-frontend-root-sample1"
+  />,
+  <div
+    id="micro-frontend-root-sample2"
+  />,
+]
+`;
+
 exports[`Storyshots NightMode Main 1`] = `
 <div
   className="night-mode"
