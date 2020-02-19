@@ -23,11 +23,6 @@ export default function CreditCardForm({ className = "", totalPrice, onPay }) {
 
   return (
     <Form
-      initialValues={{
-        cardNumber: "",
-        expirationDate: "",
-        cvv: ""
-      }}
       decorators={[focusOnErrors]}
       onSubmit={onSubmit}
       render={({ handleSubmit }) => (
@@ -49,7 +44,13 @@ CreditCardForm.propTypes = {
 };
 
 function InternalCreditCardForm({ totalPrice }) {
-  const { submitting, hasSubmitErrors, submitError } = useFormState();
+  const { submitting, hasSubmitErrors, submitError } = useFormState({
+    subscription: {
+      submitting: true,
+      hasSubmitErrors: true,
+      submitError: true
+    }
+  });
 
   const cardNumber = useField("cardNumber", {
     validate: value => {
@@ -71,7 +72,7 @@ function InternalCreditCardForm({ totalPrice }) {
 
   const expirationDate = useField("expirationDate", {
     validate: value => {
-      const [year, month] = value.split("-");
+      const [year, month] = (value ?? "").split("-");
       if (!cardValidator.expirationDate({ year, month }).isValid) {
         return "Date d'expiration invalide";
       }
@@ -80,8 +81,7 @@ function InternalCreditCardForm({ totalPrice }) {
   });
 
   const cvv = useField("cvv", {
-    validate: (value, allValues) => {
-      const { cardNumber } = allValues;
+    validate: (value, { cardNumber }) => {
       const cardValidation = cardValidator.number(cardNumber);
 
       if (value) {
@@ -117,7 +117,7 @@ function InternalCreditCardForm({ totalPrice }) {
         label="Numéro de carte"
         className="credit-card-form__card-number"
         disabled={submitting}
-        errorMessage={cardNumber.meta.touched && cardNumber.meta.error}
+        errorMessage={getFieldError(cardNumber)}
       >
         {props => (
           <InputField as={NumberInput} {...cardNumber.input} {...props} autoComplete="cc-number" maxLength={19} />
@@ -128,7 +128,8 @@ function InternalCreditCardForm({ totalPrice }) {
         label="Date d'expiration"
         className="credit-card-form__expiration-date"
         disabled={submitting}
-        errorMessage={expirationDate.meta.touched && expirationDate.meta.error}
+        errorMessage={getFieldError(expirationDate)}
+        helpMessage="Date au format AA-MM"
       >
         {props => <InputField {...expirationDate.input} {...props} autoComplete="cc-exp" maxLength={5} />}
       </FieldContainer>
@@ -137,7 +138,7 @@ function InternalCreditCardForm({ totalPrice }) {
         label="Code de sécurité"
         className="credit-card-form__cvv"
         disabled={submitting}
-        errorMessage={cvv.meta.touched && cvv.meta.error}
+        errorMessage={getFieldError(cvv)}
         helpMessage={cvvHelpMessage}
         optional={isMaestro}
       >
@@ -162,3 +163,13 @@ InternalCreditCardForm.propTypes = {
     currency: PropTypes.string.isRequired
   }).isRequired
 };
+
+function getFieldError(field) {
+  const { touched, error, submitError, pristine } = field.meta;
+  if (touched && error) {
+    return error;
+  }
+  if (submitError && pristine) {
+    return submitError;
+  }
+}

@@ -10856,6 +10856,11 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
         value=""
       />
     </div>
+    <p
+      className="form-field-container__help"
+    >
+      Date au format AA-MM
+    </p>
   </div>
   <div
     className="form-field-container credit-card-form__cvv"
@@ -13497,6 +13502,11 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               value=""
             />
           </div>
+          <p
+            className="form-field-container__help"
+          >
+            Date au format AA-MM
+          </p>
         </div>
         <div
           className="form-field-container credit-card-form__cvv"
@@ -13825,6 +13835,11 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
           value=""
         />
       </div>
+      <p
+        className="form-field-container__help"
+      >
+        Date au format AA-MM
+      </p>
     </div>
     <div
       className="form-field-container credit-card-form__cvv"
@@ -14151,6 +14166,11 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
           value=""
         />
       </div>
+      <p
+        className="form-field-container__help"
+      >
+        Date au format AA-MM
+      </p>
     </div>
     <div
       className="form-field-container credit-card-form__cvv"
