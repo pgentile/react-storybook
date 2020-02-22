@@ -14720,7 +14720,6 @@ exports[`Storyshots Payment | PaymentRequestComponent Main 1`] = `
 exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
 <form
   className="registred-card-cvv-form"
-  onReset={[Function]}
   onSubmit={[Function]}
 >
   <div
@@ -14746,6 +14745,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         type="tel"
         value=""
       />
@@ -14795,7 +14795,6 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
 exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
 <form
   className="registred-card-cvv-form"
-  onReset={[Function]}
   onSubmit={[Function]}
 >
   <div
@@ -14822,6 +14821,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         type="tel"
         value=""
       />
@@ -14873,7 +14873,6 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
 exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
 <form
   className="registred-card-cvv-form"
-  onReset={[Function]}
   onSubmit={[Function]}
 >
   <div
@@ -14904,6 +14903,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         type="tel"
         value=""
       />
@@ -14958,7 +14958,6 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
 exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
 <form
   className="registred-card-cvv-form"
-  onReset={[Function]}
   onSubmit={[Function]}
 >
   <div
@@ -14984,6 +14983,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         type="tel"
         value=""
       />
@@ -15033,7 +15033,6 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
 exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
 <form
   className="registred-card-cvv-form"
-  onReset={[Function]}
   onSubmit={[Function]}
 >
   <div
@@ -15059,6 +15058,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
         name="cvv"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         type="tel"
         value=""
       />
@@ -15190,7 +15190,6 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -15222,6 +15221,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -15374,7 +15374,6 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -15406,6 +15405,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -15546,7 +15546,6 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -15578,6 +15577,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -15735,7 +15735,6 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -15767,6 +15766,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -15918,7 +15918,6 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -15950,6 +15949,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -16106,7 +16106,6 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -16138,6 +16137,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -16278,7 +16278,6 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -16305,6 +16304,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -16457,7 +16457,6 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -16484,6 +16483,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -16624,7 +16624,6 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -16651,6 +16650,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -16803,7 +16803,6 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -16830,6 +16829,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -16981,7 +16981,6 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -17008,6 +17007,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -17159,7 +17159,6 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
             >
               <form
                 className="registred-card-cvv-form"
-                onReset={[Function]}
                 onSubmit={[Function]}
               >
                 <div
@@ -17186,6 +17185,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
                       name="cvv"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocus={[Function]}
                       type="tel"
                       value=""
                     />
@@ -17341,7 +17341,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -17368,6 +17367,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
@@ -17517,7 +17517,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -17544,6 +17543,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
@@ -17693,7 +17693,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -17720,6 +17719,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
@@ -17869,7 +17869,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -17901,6 +17900,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
@@ -18056,7 +18056,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -18083,6 +18082,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
@@ -18231,7 +18231,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -18258,6 +18257,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
@@ -18406,7 +18406,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -18433,6 +18432,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
@@ -18581,7 +18581,6 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
               >
                 <form
                   className="registred-card-cvv-form"
-                  onReset={[Function]}
                   onSubmit={[Function]}
                 >
                   <div
@@ -18613,6 +18612,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         name="cvv"
                         onBlur={[Function]}
                         onChange={[Function]}
+                        onFocus={[Function]}
                         type="tel"
                         value=""
                       />
