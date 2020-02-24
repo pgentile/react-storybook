@@ -61,7 +61,7 @@
     "react-jsonschema-form": "^1.8.1",
     "react-redux": "^7.2.0",
     "react-spring": "^8.0.20",
-    "react-use": "^13.24.1",
+    "react-use": "^13.26.2",
     "recompose": "^0.30.0",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.1",
