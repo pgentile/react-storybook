@@ -11,6 +11,8 @@ const ManagedModalContext = createContext({
   removeModal: noop
 });
 
+ManagedModalContext.displayName = "ManagedModal";
+
 export default class ManagedModal extends React.Component {
   static contextType = ManagedModalContext;
 

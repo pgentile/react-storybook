@@ -8,6 +8,8 @@ const Context = createContext({
   setNodes: () => {}
 });
 
+Context.displayName = "Teleporter";
+
 export function TeleporterProvider({ children }) {
   const [nodes, setNodes] = useState(null);
   return <Context.Provider value={{ nodes, setNodes }}>{children}</Context.Provider>;

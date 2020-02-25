@@ -8,6 +8,8 @@ const ExchangeRateContext = createContext({
   computeRate: () => null
 });
 
+ExchangeRateContext.displayName = "ExchangeRate";
+
 export default function ExchangeRate({ children, baseCurrency: defaultBaseCurrency }) {
   const [expectedCurrency, setExpectedCurrency] = useState(defaultBaseCurrency || "EUR");
   const [baseCurrency, setBaseCurrency] = useState(expectedCurrency);

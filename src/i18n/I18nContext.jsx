@@ -39,6 +39,8 @@ export const I18nContext = createContext({
   loading: false
 });
 
+I18nContext.displayName = "I18n";
+
 export function I18nProvider({ defaultLocale, loadMessages, children }) {
   const [ready, setReady] = useState(ALWAYS_READY);
   const [locale, setLocale] = useState(defaultLocale);

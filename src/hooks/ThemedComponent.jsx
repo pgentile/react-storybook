@@ -13,6 +13,8 @@ const ThemeContext = createContext({
   switchTheme: noop
 });
 
+ThemeContext.displayName = "Theme";
+
 export default function ThemedComponent() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || DEFAULT_THEME);
 

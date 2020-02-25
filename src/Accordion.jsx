@@ -13,6 +13,8 @@ const Context = createContext({
   isExpanded: () => false
 });
 
+Context.displayName = "Accordion";
+
 export default function Accordion({ children, uniqueExpandable }) {
   const [expandedPanels, setExpandedPanels] = useState([]);
 

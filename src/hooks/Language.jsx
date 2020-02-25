@@ -8,6 +8,8 @@ const LanguageContext = createContext({
   setLanguage: noop
 });
 
+LanguageContext.displayName = "Language";
+
 export function useLanguage() {
   return useContext(LanguageContext);
 }
