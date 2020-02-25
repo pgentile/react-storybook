@@ -13,5 +13,4 @@ yarn-*.log
 /screenshot*.png
 /screenshot*.html
 
-/.loki/
 /.cache/

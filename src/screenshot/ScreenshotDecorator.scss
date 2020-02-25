@@ -1,9 +1,0 @@
-.screenshot-decorator {
-  &--enabled {
-    // Disable all animations
-    * {
-      transition: none !important;
-      animation: none !important;
-    }
-  }
-}

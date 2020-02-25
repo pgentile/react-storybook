@@ -22,7 +22,6 @@ module.exports = {
       "query-string",
       "strict-uri-encode",
       "@storybook",
-      "loki",
       "react-use",
       "callbag-subscribe",
       "react-spring",
