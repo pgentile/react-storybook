@@ -15,7 +15,7 @@
   ],
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
       "jsx": true
     }
@@ -25,7 +25,11 @@
       "version": "16.8"
     },
     "polyfills": [
-      "ResizeObserver"
+      "URLSearchParams",
+      "ResizeObserver",
+      "Promise",
+      "Object.entries",
+      "Math.trunc"
     ]
   },
   "globals": {
