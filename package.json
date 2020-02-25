@@ -9,8 +9,8 @@
     "clean": "rimraf build .loki",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook --output-dir ./build/storybook",
-    "lint:js": "eslint --ext .jsx,.js,.ts,.tsx ./src ./e2e-test-*",
-    "lint:js:fix": "eslint --fix --ext .jsx,.js,.ts,.tsx ./src ./e2e-test-*",
+    "lint:js": "eslint --ext .jsx,.js,.ts,.tsx --ignore-pattern '**/*.d.ts' ./src ./e2e-test-*",
+    "lint:js:fix": "eslint --fix --ext .jsx,.js,.ts,.tsx --ignore-pattern '**/*.d.ts' ./src ./e2e-test-*",
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,scss}'",
     "lint:css": "stylelint --syntax scss 'src/**/*.scss'",
     "lint:css:fix": "stylelint --syntax scss --fix 'src/**/*.scss'",
@@ -157,7 +157,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx}": "eslint --ignore-pattern '**/*.d.ts' --fix",
     "*.css": "stylelint --fix",
     "*.scss": "stylelint --syntax scss --fix"
   }
