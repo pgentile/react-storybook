@@ -1,0 +1,5 @@
+// Bug in the eslint parser...
+
+type ColorScheme = "dark" | "light";
+
+export default function useColorScheme(defaultScheme : ColorScheme = "light"): ColorScheme;

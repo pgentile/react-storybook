@@ -1,23 +1,12 @@
-import React, { useState } from "react";
-import { useEffectOnce } from "react-use";
+import React from "react";
+
+import useColorScheme from "./useColorScheme";
 
 import "./NightModePreference.scss";
 
 export default function NightModePreference() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffectOnce(() => {
-    if (!window.matchMedia) {
-      return;
-    }
-
-    const query = window.matchMedia("(prefers-color-scheme: dark)");
-    setDarkMode(query.matches);
-
-    const handler = event => setDarkMode(event.matches);
-    query.addEventListener("change", handler);
-    return () => query.removeEventListener("change", handler);
-  });
+  const colorScheme = useColorScheme();
+  const darkMode = colorScheme === "dark";
 
   return (
     <section className="night-mode-preference">

@@ -10783,6 +10783,12 @@ exports[`Storyshots NightMode Main 1`] = `
 </div>
 `;
 
+exports[`Storyshots NightModeDemo Main 1`] = `
+<div
+  className="recaptcha"
+/>
+`;
+
 exports[`Storyshots NightModePreference Main 1`] = `
 <section
   className="night-mode-preference"
