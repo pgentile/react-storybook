@@ -10813,6 +10813,7 @@ exports[`Storyshots NightModePreference Main 1`] = `
 exports[`Storyshots OwnerForm | OwnerForm Main 1`] = `
 <form
   className="owner-form"
+  noValidate={true}
   onSubmit={[Function]}
 >
   <div

@@ -27,7 +27,7 @@ export default function OwnerForm() {
       onSubmit={onSubmit}
       render={({ handleSubmit }) => {
         return (
-          <form className="owner-form" onSubmit={handleSubmit}>
+          <form className="owner-form" onSubmit={handleSubmit} noValidate>
             <InternalOwnerForm />
           </form>
         );
@@ -114,8 +114,8 @@ function useEmailCheck() {
             known: email.endsWith(".com")
           }
         });
-      }, 500);
-    }, 200),
+      }, 1000);
+    }, 400),
     []
   );
 
