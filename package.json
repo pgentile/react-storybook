@@ -112,7 +112,7 @@
     "postcss-loader": "^3.0.0",
     "prettier": "^1.16.1",
     "query-string": "^6.11.0",
-    "react-test-renderer": "^16.6.3",
+    "react-test-renderer": "^16.13.0",
     "reg-cli": "^0.16.0",
     "rimraf": "^3.0.2",
     "sass-loader": "^8.0.2",
