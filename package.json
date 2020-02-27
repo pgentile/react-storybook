@@ -5,7 +5,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "babel": "babel",
     "clean": "rimraf build",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook --output-dir ./build/storybook",
@@ -16,6 +15,7 @@
     "lint:css:fix": "stylelint --syntax scss --fix 'src/**/*.scss'",
     "lint": "run-s lint:js lint:css",
     "test": "jest",
+    "validate": "run-s lint test",
     "test:update": "jest -u",
     "test:coverage": "jest --coverage",
     "es-check": "es-check es5 'build/storybook/*.js'",
