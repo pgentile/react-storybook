@@ -9,7 +9,8 @@ module.exports = {
   addons: [
     "@storybook/addon-knobs",
     "@storybook/addon-actions",
-    "@storybook/addon-docs"
+    "@storybook/addon-docs",
+    "@storybook/addon-viewport"
   ],
   webpack: async (config, { configType }) => {
     config.resolve.extensions = [
