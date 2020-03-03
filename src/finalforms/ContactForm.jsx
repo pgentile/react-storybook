@@ -8,9 +8,9 @@ import { FormattedMessage, defineMessages, useIntl } from "react-intl";
 
 import { I18nProvider } from "../i18n/I18nContext";
 import InputField from "../forms/InputField";
-import FieldContainer from "../forms/FieldContainer";
 import Expandable from "../Expandable";
 import FinalButton from "../ff/FinalButton";
+import FinalFieldContainer from "../ff/FinalFieldContainer";
 
 import "./ContactForm.scss";
 
@@ -72,21 +72,19 @@ function ContactFormInternal({ handleSubmit }) {
   });
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        {submitFailed && <p style={{ color: "red" }}>{submitError}</p>}
-        <RecipientForm />
-        {initialValues.passengers.map((passenger, passengerIndex) => (
-          <PassengerForm key={passenger.passengerId} passengerIndex={passengerIndex} />
-        ))}
-        <AcceptConditionsForm />
-        <p>
-          <FinalButton type="submit">Envoyer</FinalButton>
-        </p>
-      </form>
+    <form onSubmit={handleSubmit}>
+      {submitFailed && <p style={{ color: "red" }}>{submitError}</p>}
+      <RecipientForm />
+      {initialValues.passengers.map((passenger, passengerIndex) => (
+        <PassengerForm key={passenger.passengerId} passengerIndex={passengerIndex} />
+      ))}
+      <AcceptConditionsForm />
+      <p>
+        <FinalButton type="submit">Envoyer</FinalButton>
+      </p>
       <hr />
       <DebugFormState />
-    </>
+    </form>
   );
 }
 
@@ -99,11 +97,11 @@ function DebugFormState() {
 function RecipientForm() {
   const { formatMessage } = useIntl();
 
-  const firstName = useField("recipient.firstName", {
+  useField("recipient.firstName", {
     validate: validateName(formatMessage)
   });
 
-  const lastName = useField("recipient.lastName", {
+  useField("recipient.lastName", {
     validate: validateName(formatMessage)
   });
 
@@ -113,18 +111,12 @@ function RecipientForm() {
         <FormattedMessage {...messages.recipient} />
       </h1>
       <CivilityForm fieldName="recipient.civility" validate={validateCivility(formatMessage)} />
-      <FieldContainer
-        label={formatMessage(messages.firstName)}
-        errorMessage={firstName.meta.touched && firstName.meta.invalid ? firstName.meta.error : null}
-      >
-        {fieldProps => <InputField {...fieldProps} {...firstName.input} />}
-      </FieldContainer>
-      <FieldContainer
-        label={formatMessage(messages.lastName)}
-        errorMessage={lastName.meta.touched && lastName.meta.invalid ? lastName.meta.error : null}
-      >
-        {fieldProps => <InputField {...fieldProps} {...lastName.input} />}
-      </FieldContainer>
+      <FinalFieldContainer name="recipient.firstName" label={formatMessage(messages.firstName)}>
+        {fieldProps => <InputField {...fieldProps} />}
+      </FinalFieldContainer>
+      <FinalFieldContainer name="recipient.lastName" label={formatMessage(messages.lastName)}>
+        {fieldProps => <InputField {...fieldProps} />}
+      </FinalFieldContainer>
     </section>
   );
 }
@@ -157,11 +149,11 @@ function PassengerForm({ passengerIndex }) {
     }
   };
 
-  const firstName = useField(`passengers.${passengerIndex}.firstName`, {
+  useField(`passengers.${passengerIndex}.firstName`, {
     validate: validateNameIfETicket
   });
 
-  const lastName = useField(`passengers.${passengerIndex}.lastName`, {
+  useField(`passengers.${passengerIndex}.lastName`, {
     validate: validateNameIfETicket
   });
 
@@ -198,18 +190,12 @@ function PassengerForm({ passengerIndex }) {
       </p>
       <Expandable expanded={eticketDeliveryMode.input.checked}>
         <CivilityForm fieldName={`passengers.${passengerIndex}.civility`} validate={validateCivilityIfETicket} />
-        <FieldContainer
-          label={formatMessage(messages.firstName)}
-          errorMessage={firstName.meta.touched && firstName.meta.invalid ? firstName.meta.error : null}
-        >
-          {fieldProps => <InputField {...fieldProps} {...firstName.input} />}
-        </FieldContainer>
-        <FieldContainer
-          label={formatMessage(messages.lastName)}
-          errorMessage={lastName.meta.touched && lastName.meta.invalid ? lastName.meta.error : null}
-        >
-          {fieldProps => <InputField {...fieldProps} {...lastName.input} />}
-        </FieldContainer>
+        <FinalFieldContainer name={`passengers.${passengerIndex}.firstName`} label={formatMessage(messages.firstName)}>
+          {fieldProps => <InputField {...fieldProps} />}
+        </FinalFieldContainer>
+        <FinalFieldContainer name={`passengers.${passengerIndex}.lastName`} label={formatMessage(messages.lastName)}>
+          {fieldProps => <InputField {...fieldProps} />}
+        </FinalFieldContainer>
       </Expandable>
     </section>
   );
