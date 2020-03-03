@@ -6,11 +6,11 @@ import createDecorator from "final-form-focus";
 import { noop } from "lodash-es";
 import { FormattedMessage, defineMessages, useIntl } from "react-intl";
 
-import Button from "../buttons/Button";
+import { I18nProvider } from "../i18n/I18nContext";
 import InputField from "../forms/InputField";
 import FieldContainer from "../forms/FieldContainer";
-import { I18nProvider } from "../i18n/I18nContext";
 import Expandable from "../Expandable";
+import FinalButton from "../ff/FinalButton";
 
 import "./ContactForm.scss";
 
@@ -81,7 +81,7 @@ function ContactFormInternal({ handleSubmit }) {
         ))}
         <AcceptConditionsForm />
         <p>
-          <Button>Envoyer</Button>
+          <FinalButton type="submit">Envoyer</FinalButton>
         </p>
       </form>
       <hr />

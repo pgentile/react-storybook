@@ -5,10 +5,10 @@ import createDecorator from "final-form-focus";
 import cardValidator from "card-validator";
 import creditCardType from "credit-card-type";
 
+import FinalButton from "../ff/FinalButton";
 import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
 import NumberInput from "../forms/NumberInput";
-import Button from "../buttons/Button";
 import Price from "../Price";
 import Card from "../Card";
 
@@ -148,10 +148,10 @@ function InternalCreditCardForm({ totalPrice }) {
       </FieldContainer>
 
       <div className="credit-card-form__button">
-        <Button size="large" type="submit" disabled={submitting}>
+        <FinalButton size="large" type="submit">
           Payer&nbsp;
           <Price noColor price={totalPrice} />
-        </Button>
+        </FinalButton>
       </div>
     </>
   );

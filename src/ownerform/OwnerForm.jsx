@@ -1,11 +1,10 @@
 import React, { useReducer, useEffect, useCallback } from "react";
-import PropTypes from "prop-types";
-import { Form, useField, useForm, useFormState } from "react-final-form";
+import { Form, useField, useForm } from "react-final-form";
 import { debounce } from "lodash-es";
 
-import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
-import Button from "../buttons/Button";
+import FinalFieldContainer from "../ff/FinalFieldContainer";
+import FinalButton from "../ff/FinalButton";
 import sleep from "../utils/sleep";
 
 import "./OwnerForm.scss";
@@ -103,8 +102,6 @@ function useEmailCheck() {
 
   const checkEmail = useCallback(
     debounce(email => {
-      console.info("Validating email:", email);
-
       // Simulate a late response
       setTimeout(() => {
         dispatch({
@@ -179,57 +176,5 @@ function emailCheckReducer(state, action) {
 
     default:
       return state;
-  }
-}
-
-function FinalFieldContainer({ type = "text", name, label, children, disabled = false }) {
-  const field = useField(name, {
-    type,
-    subscription: {
-      value: true,
-      error: true,
-      submitError: true,
-      submitting: true,
-      touched: true,
-      pristine: true
-    }
-  });
-
-  return (
-    <FieldContainer label={label} disabled={disabled || field.meta.submitting} errorMessage={getFieldError(field)}>
-      {props => children({ ...field.input, ...props })}
-    </FieldContainer>
-  );
-}
-
-FinalFieldContainer.propTypes = {
-  type: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  label: PropTypes.node.isRequired,
-  children: PropTypes.func.isRequired,
-  disabled: PropTypes.bool
-};
-
-function FinalButton({ disabled, ...otherProps }) {
-  const { submitting } = useFormState({
-    subscription: {
-      submitting: true
-    }
-  });
-
-  return <Button {...otherProps} disabled={disabled || submitting} />;
-}
-
-FinalButton.propTypes = {
-  disabled: PropTypes.bool
-};
-
-function getFieldError(field) {
-  const { touched, error, submitError, pristine } = field.meta;
-  if (touched && error) {
-    return error;
-  }
-  if (submitError && pristine) {
-    return submitError;
   }
 }
