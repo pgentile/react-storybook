@@ -33,7 +33,7 @@ const loadMessagesForLocale = async (loadMessagesFn, locale) => {
   return loadMessagesFn(getLanguage(locale));
 };
 
-export const I18nContext = createContext({
+const I18nContext = createContext({
   locale: "fr-FR",
   setLocale: noop,
   loading: false
