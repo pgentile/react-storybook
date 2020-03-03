@@ -1,4 +1,5 @@
 import React, { useCallback, useState, useEffect, useRef } from "react";
+import { PropTypes } from "prop-types";
 import { Form, useField, useFormState, useForm } from "react-final-form";
 import { FORM_ERROR, getIn } from "final-form";
 import createDecorator from "final-form-focus";
@@ -111,6 +112,7 @@ function RecipientForm() {
       <h1>
         <FormattedMessage {...messages.recipient} />
       </h1>
+      <CivilityForm fieldName="recipient.civility" validate={validateCivility(formatMessage)} />
       <FieldContainer
         label={formatMessage(messages.firstName)}
         errorMessage={firstName.meta.touched && firstName.meta.invalid ? firstName.meta.error : null}
@@ -145,6 +147,13 @@ function PassengerForm({ passengerIndex }) {
     const deliveryMode = getIn(allFields, `passengers.${passengerIndex}.deliveryMode`);
     if (deliveryMode === "eticket") {
       return validateName(formatMessage)(name);
+    }
+  };
+
+  const validateCivilityIfETicket = (name, allFields) => {
+    const deliveryMode = getIn(allFields, `passengers.${passengerIndex}.deliveryMode`);
+    if (deliveryMode === "eticket") {
+      return validateCivility(formatMessage)(name);
     }
   };
 
@@ -188,6 +197,7 @@ function PassengerForm({ passengerIndex }) {
         </label>
       </p>
       <Expandable expanded={eticketDeliveryMode.input.checked}>
+        <CivilityForm fieldName={`passengers.${passengerIndex}.civility`} validate={validateCivilityIfETicket} />
         <FieldContainer
           label={formatMessage(messages.firstName)}
           errorMessage={firstName.meta.touched && firstName.meta.invalid ? firstName.meta.error : null}
@@ -229,6 +239,60 @@ function AcceptConditionsForm() {
       <p>{acceptConditions.meta.touched && acceptConditions.meta.error}</p>
     </section>
   );
+}
+
+function CivilityForm({ fieldName, validate }) {
+  const form = useForm();
+
+  const civility = useField(fieldName, {
+    validate,
+    validateFields: []
+  });
+
+  const civilityVisited = civility.meta.visited;
+  const isRecipient = fieldName === "recipient.civility";
+  useFieldValueListener("recipient.civility", newValue => {
+    if (!isRecipient && !civilityVisited) {
+      form.change(fieldName, newValue);
+    }
+  });
+
+  const mister = useField(fieldName, {
+    type: "radio",
+    value: "MISTER"
+  });
+
+  const madam = useField(fieldName, {
+    type: "radio",
+    value: "MADAM"
+  });
+
+  return (
+    <>
+      <p>
+        <label>
+          <input {...mister.input} value="MISTER" /> Monsieur
+        </label>{" "}
+        <label>
+          <input {...madam.input} value="MADAM" /> Madame
+        </label>
+      </p>
+      <p>{civility.meta.touched && civility.meta.error}</p>
+    </>
+  );
+}
+
+CivilityForm.propTypes = {
+  fieldName: PropTypes.string.isRequired,
+  validate: PropTypes.func.isRequired
+};
+
+function validateCivility(formatMessage) {
+  return civility => {
+    if (!civility) {
+      return formatMessage(messages.civilityUndefined);
+    }
+  };
 }
 
 function validateName(formatMessage) {
@@ -290,9 +354,12 @@ const messages = defineMessages({
   missingAcceptConditions: {
     id: "missingAcceptConditions",
     defaultMessage: "Vous devez accepter les conditions de vente"
+  },
+  civilityUndefined: {
+    id: "civilityUndefined",
+    defaultMessage: "Civilité non définie"
   }
 });
-/* eslint-enable formatjs/enforce-placeholders */
 
 function useFieldVisitedState(fieldName) {
   const form = useForm();
