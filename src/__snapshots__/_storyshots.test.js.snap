@@ -8107,6 +8107,14 @@ exports[`Storyshots Experiments | Translation3D Main 1`] = `
 </div>
 `;
 
+exports[`Storyshots FieldError Main 1`] = `
+<p
+  className="field-error "
+>
+  Quelle belle erreur
+</p>
+`;
+
 exports[`Storyshots Final Forms | ContactForm Main 1`] = `
 <form
   onSubmit={[Function]}
@@ -8142,7 +8150,9 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
          Madame
       </label>
     </p>
-    <p />
+    <p
+      className="field-error "
+    />
     <div
       className="form-field-container "
     >
@@ -8268,7 +8278,9 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
                Madame
             </label>
           </p>
-          <p />
+          <p
+            className="field-error "
+          />
           <div
             className="form-field-container "
           >
@@ -8397,7 +8409,9 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
                Madame
             </label>
           </p>
-          <p />
+          <p
+            className="field-error "
+          />
           <div
             className="form-field-container "
           >
@@ -8526,7 +8540,9 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
                Madame
             </label>
           </p>
-          <p />
+          <p
+            className="field-error "
+          />
           <div
             className="form-field-container "
           >
@@ -8600,8 +8616,12 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
         Accepter les conditions de vente
       </label>
     </p>
-    <p />
-    <p />
+    <p
+      className="field-error "
+    />
+    <p
+      className="field-error "
+    />
   </section>
   <p>
     <button
@@ -9532,7 +9552,7 @@ exports[`Storyshots Forms / FieldContainer Error 1`] = `
     />
   </div>
   <p
-    className="form-field-container__error"
+    className="field-error form-field-container__error"
   >
     Nom inconnu
   </p>
@@ -9562,7 +9582,7 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
     />
   </div>
   <p
-    className="form-field-container__error"
+    className="field-error form-field-container__error"
   >
     Données invalides
   </p>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import Label from "./Label";
+import FieldError from "./FieldError";
 
 import "./FieldContainer.scss";
 
@@ -42,7 +43,7 @@ export default function FieldContainer({
 
       <div className="form-field-container__field">{children(fieldProps)}</div>
 
-      {showErrorMessage && <p className="form-field-container__error">{errorMessage}</p>}
+      {showErrorMessage && <FieldError className="form-field-container__error">{errorMessage}</FieldError>}
 
       {showHelpMessage && <p className="form-field-container__help">{helpMessage}</p>}
     </Element>
