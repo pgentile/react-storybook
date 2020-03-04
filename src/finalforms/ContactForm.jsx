@@ -8,10 +8,10 @@ import { FormattedMessage, defineMessages, useIntl } from "react-intl";
 
 import { I18nProvider } from "../i18n/I18nContext";
 import InputField from "../forms/InputField";
-import FieldError from "../forms/FieldError";
 import Expandable from "../Expandable";
 import FinalButton from "../ff/FinalButton";
 import FinalFieldContainer from "../ff/FinalFieldContainer";
+import FinalFieldError from "../ff/FinalFieldError";
 import sleep from "../utils/sleep";
 
 import "./ContactForm.scss";
@@ -224,8 +224,7 @@ function AcceptConditionsForm() {
           <input {...acceptConditions.input} /> <FormattedMessage {...messages.acceptConditions} />
         </label>
       </p>
-      <FieldError>{acceptConditions.meta.submitFailed && acceptConditions.meta.submitError}</FieldError>
-      <FieldError>{acceptConditions.meta.touched && acceptConditions.meta.error}</FieldError>
+      <FinalFieldError name="acceptConditions" />
     </section>
   );
 }
@@ -266,7 +265,7 @@ function CivilityForm({ fieldName, validate }) {
           <input {...madam.input} value="MADAM" /> Madame
         </label>
       </p>
-      <FieldError>{civility.meta.touched && civility.meta.error}</FieldError>
+      <FinalFieldError name={fieldName} />
     </>
   );
 }

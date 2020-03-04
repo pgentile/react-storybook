@@ -3,15 +3,9 @@ import PropTypes from "prop-types";
 import { useField } from "react-final-form";
 
 import FieldContainer from "../forms/FieldContainer";
+import getFieldError from "./getFieldError";
 
-export default function FinalFieldContainer({
-  type = "text",
-  name,
-  label,
-  children,
-  disabled = false,
-  className = ""
-}) {
+export default function FinalFieldContainer({ type = "text", name, label, children, disabled = false, ...otherProps }) {
   const field = useField(name, {
     type,
     subscription: {
@@ -29,7 +23,7 @@ export default function FinalFieldContainer({
       label={label}
       disabled={disabled || field.meta.submitting}
       errorMessage={getFieldError(field)}
-      className={className}
+      {...otherProps}
     >
       {props => children({ ...field.input, ...props })}
     </FieldContainer>
@@ -44,13 +38,3 @@ FinalFieldContainer.propTypes = {
   disabled: PropTypes.bool,
   className: PropTypes.string
 };
-
-function getFieldError(field) {
-  const { touched, error, submitError, pristine } = field.meta;
-  if (touched && error) {
-    return error;
-  }
-  if (submitError && pristine) {
-    return submitError;
-  }
-}

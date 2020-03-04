@@ -8150,9 +8150,6 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
          Madame
       </label>
     </p>
-    <p
-      className="field-error "
-    />
     <div
       className="form-field-container "
     >
@@ -8278,9 +8275,6 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
                Madame
             </label>
           </p>
-          <p
-            className="field-error "
-          />
           <div
             className="form-field-container "
           >
@@ -8409,9 +8403,6 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
                Madame
             </label>
           </p>
-          <p
-            className="field-error "
-          />
           <div
             className="form-field-container "
           >
@@ -8540,9 +8531,6 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
                Madame
             </label>
           </p>
-          <p
-            className="field-error "
-          />
           <div
             className="form-field-container "
           >
@@ -8616,12 +8604,6 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
         Accepter les conditions de vente
       </label>
     </p>
-    <p
-      className="field-error "
-    />
-    <p
-      className="field-error "
-    />
   </section>
   <p>
     <button
