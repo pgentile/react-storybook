@@ -11,7 +11,8 @@
     "react-hooks",
     "jest",
     "compat",
-    "formatjs"
+    "formatjs",
+    "emotion"
   ],
   "parserOptions": {
     "sourceType": "module",
