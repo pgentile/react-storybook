@@ -8,5 +8,9 @@ export default {
 };
 
 export const main = () => {
-  return <Wip>Work in progress</Wip>;
+  return <Wip>Terminer ce composant</Wip>;
+};
+
+export const empty = () => {
+  return <Wip />;
 };

@@ -1,4 +1,4 @@
-const basicPlugins = ["@babel/plugin-proposal-class-properties"];
+const basicPlugins = ["@babel/plugin-proposal-class-properties", "macros"];
 
 const basicPresets = ["@babel/preset-typescript"];
 
@@ -38,9 +38,6 @@ module.exports = api => {
             "@babel/preset-env",
             {
               modules: "commonjs",
-              targets: {
-                node: true
-              },
               useBuiltIns: "entry",
               corejs: 2
             }

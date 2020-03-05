@@ -20171,14 +20171,26 @@ exports[`Storyshots Vibrator Main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Wip Main 1`] = `
+exports[`Storyshots Wip Empty 1`] = `
 <div
-  className="wip"
+  className="css-1n0dyl3-wipClass"
 >
   <div
-    className="wip__container"
+    className="css-101h4ki-wipContainerClass"
   >
     Work in progress
+  </div>
+</div>
+`;
+
+exports[`Storyshots Wip Main 1`] = `
+<div
+  className="css-1n0dyl3-wipClass"
+>
+  <div
+    className="css-101h4ki-wipContainerClass"
+  >
+    Terminer ce composant
   </div>
 </div>
 `;
