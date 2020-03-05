@@ -4,44 +4,43 @@ import { FormattedMessage } from "react-intl";
 
 import { I18nProvider } from "./I18nContext";
 import I18nLocaleSelector from "./I18nLocaleSelector";
+import sleep from "../utils/sleep";
 
 function b(...chunks) {
   return <strong>{chunks}</strong>;
 }
 
-function loadMessages(locale) {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      let messages = {};
-      if (locale === "en") {
-        messages = {
-          hello: "Hello, {userName}!",
-          "hello.formatted": "Hello, <b>{userName}</b>!",
-          personal_infos: "Enter your <b>last name</b>, <b>first name</b> and <b>birthdate</b>",
-          your_trips: `
-            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b># trips</b>}}
-          `,
-          your_trips_and_cards: `
-            {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b># trips</b>}}
-            and
-            {cardCount, plural, =0 {no card} one {your <b>card</b>} other {your <b># cards</b>}}
-          `,
-          recipient_with_gender: `
-            {gender, select, female {She} other {He}}
-            will receive
-            {gender, select, female {her} other {his}}
-            {tripCount, plural, one {ticket} other {# tickets}}
-            in a couple of days.
-            {gender, select, female {Her} other {His}}
-            {tripCount, plural, one {ticket} other {tickets}}
-            will be delivered by post.
-          `
-        };
-      }
+async function loadMessages(locale) {
+  let messages = {};
+  if (locale === "en") {
+    await sleep(500);
 
-      resolve(messages);
-    }, 500);
-  });
+    messages = {
+      hello: "Hello, {userName}!",
+      "hello.formatted": "Hello, <b>{userName}</b>!",
+      personal_infos: "Enter your <b>last name</b>, <b>first name</b> and <b>birthdate</b>",
+      your_trips: `
+        {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b># trips</b>}}
+      `,
+      your_trips_and_cards: `
+        {tripCount, plural, =0 {No trip} one {Your <b>trip</b>} other {Your <b># trips</b>}}
+        and
+        {cardCount, plural, =0 {no card} one {your <b>card</b>} other {your <b># cards</b>}}
+      `,
+      recipient_with_gender: `
+        {gender, select, female {She} other {He}}
+        will receive
+        {gender, select, female {her} other {his}}
+        {tripCount, plural, one {ticket} other {# tickets}}
+        in a couple of days.
+        {gender, select, female {Her} other {His}}
+        {tripCount, plural, one {ticket} other {tickets}}
+        will be delivered by post.
+      `
+    };
+  }
+
+  return messages;
 }
 
 export default function I18nMessages({ userName, tripCount, cardCount, gender }) {

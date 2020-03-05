@@ -28,6 +28,7 @@ export default class Price extends React.PureComponent {
     const units = Math.trunc(value);
     const cents = Math.abs(Math.trunc((value * 100) % 100));
     const centsDisplay = cents < 10 ? `0${cents}` : cents.toString();
+    const hasCents = cents > 0;
 
     const realClassName = bemModifiers("price", {
       "no-color": noColor
@@ -37,9 +38,8 @@ export default class Price extends React.PureComponent {
       <Element className={`${realClassName} ${className}`} data-price-value={value} data-price-currency={currency}>
         <span className="price__units">{units}</span>
         <span className="price__remaining">
-          ,&thinsp;
-          {centsDisplay}
-          &nbsp;
+          {hasCents && <>,&thinsp;{centsDisplay}</>}
+          &thinsp;
           {currencyToSymbol(currency)}
         </span>
       </Element>

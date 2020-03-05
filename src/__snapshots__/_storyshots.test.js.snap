@@ -8024,9 +8024,7 @@ Array [
       <span
         className="price__remaining"
       >
-        , 
-        00
-         
+         
         €
       </span>
     </span>
@@ -8045,9 +8043,7 @@ Array [
       <span
         className="price__remaining"
       >
-        , 
-        00
-         
+         
         €
       </span>
     </span>
@@ -11129,9 +11125,7 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -11448,7 +11442,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
           >
             , 
             80
-             
+             
             €
           </span>
         </span>
@@ -11501,9 +11495,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
           <span
             className="price__remaining"
           >
-            , 
-            00
-             
+             
             €
           </span>
         </span>
@@ -11554,7 +11546,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
           >
             , 
             90
-             
+             
             €
           </span>
         </span>
@@ -11586,7 +11578,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
         >
           , 
           70
-           
+           
           €
         </span>
       </span>
@@ -11730,7 +11722,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
           >
             , 
             80
-             
+             
             €
           </span>
         </span>
@@ -11782,9 +11774,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
           <span
             className="price__remaining"
           >
-            , 
-            00
-             
+             
             €
           </span>
         </span>
@@ -11816,7 +11806,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
         >
           , 
           80
-           
+           
           €
         </span>
       </span>
@@ -11850,7 +11840,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
           >
             , 
             90
-             
+             
             €
           </span>
         </span>
@@ -11944,7 +11934,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
           >
             , 
             80
-             
+             
             €
           </span>
         </span>
@@ -11995,7 +11985,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
           >
             , 
             90
-             
+             
             €
           </span>
         </span>
@@ -12027,7 +12017,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
         >
           , 
           70
-           
+           
           €
         </span>
       </span>
@@ -12179,7 +12169,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
         >
           , 
           80
-           
+           
           €
         </span>
       </span>
@@ -12213,7 +12203,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
           >
             , 
             90
-             
+             
             €
           </span>
         </span>
@@ -12367,9 +12357,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -12403,7 +12391,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
           >
             , 
             90
-             
+             
             €
           </span>
         </span>
@@ -12554,7 +12542,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
         >
           , 
           80
-           
+           
           €
         </span>
       </span>
@@ -12603,9 +12591,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -12656,7 +12642,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
         >
           , 
           90
-           
+           
           €
         </span>
       </span>
@@ -12688,7 +12674,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
       >
         , 
         70
-         
+         
         €
       </span>
     </span>
@@ -12726,7 +12712,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
         >
           , 
           80
-           
+           
           €
         </span>
       </span>
@@ -12775,9 +12761,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -12809,7 +12793,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
       >
         , 
         80
-         
+         
         €
       </span>
     </span>
@@ -12847,7 +12831,7 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
         >
           , 
           80
-           
+           
           €
         </span>
       </span>
@@ -12898,7 +12882,7 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
         >
           , 
           90
-           
+           
           €
         </span>
       </span>
@@ -12930,7 +12914,7 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
       >
         , 
         70
-         
+         
         €
       </span>
     </span>
@@ -12965,7 +12949,7 @@ exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
       >
         , 
         80
-         
+         
         €
       </span>
     </span>
@@ -13000,7 +12984,7 @@ exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
       >
         , 
         80
-         
+         
         €
       </span>
     </span>
@@ -13038,7 +13022,7 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         >
           , 
           80
-           
+           
           €
         </span>
       </span>
@@ -13066,7 +13050,7 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         >
           , 
           80
-           
+           
           €
         </span>
       </span>
@@ -13115,9 +13099,7 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -13168,7 +13150,7 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         >
           , 
           90
-           
+           
           €
         </span>
       </span>
@@ -13217,9 +13199,7 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -13251,7 +13231,7 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
       >
         , 
         50
-         
+         
         €
       </span>
     </span>
@@ -13298,9 +13278,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
             <span
               className="price__remaining"
             >
-              , 
-              00
-               
+               
               €
             </span>
           </span>
@@ -13334,7 +13312,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               >
                 , 
                 90
-                 
+                 
                 €
               </span>
             </span>
@@ -13775,9 +13753,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               <span
                 className="price__remaining"
               >
-                , 
-                00
-                 
+                 
                 €
               </span>
             </span>
@@ -14108,9 +14084,7 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
           <span
             className="price__remaining"
           >
-            , 
-            00
-             
+             
             €
           </span>
         </span>
@@ -14439,9 +14413,7 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
           <span
             className="price__remaining"
           >
-            , 
-            00
-             
+             
             €
           </span>
         </span>
@@ -14976,9 +14948,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -15053,9 +15023,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -15139,9 +15107,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -15214,9 +15180,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -15289,9 +15253,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
         <span
           className="price__remaining"
         >
-          , 
-          00
-           
+           
           €
         </span>
       </span>
@@ -15453,9 +15415,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -15637,9 +15597,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -15814,9 +15772,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -15998,9 +15954,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -16186,9 +16140,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -16369,9 +16321,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -16536,9 +16486,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -16715,9 +16663,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -16882,9 +16828,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -17061,9 +17005,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -17239,9 +17181,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -17417,9 +17357,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
                       <span
                         className="price__remaining"
                       >
-                        , 
-                        00
-                         
+                         
                         €
                       </span>
                     </span>
@@ -17599,9 +17537,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -17775,9 +17711,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -17951,9 +17885,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -18132,9 +18064,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -18314,9 +18244,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -18489,9 +18417,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -18664,9 +18590,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -18844,9 +18768,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         <span
                           className="price__remaining"
                         >
-                          , 
-                          00
-                           
+                           
                           €
                         </span>
                       </span>
@@ -19178,7 +19100,7 @@ exports[`Storyshots Price Prix - En franc suisse 1`] = `
   >
     , 
     90
-     
+     
     CHF
   </span>
 </span>
@@ -19200,7 +19122,7 @@ exports[`Storyshots Price Prix - En pounds 1`] = `
   >
     , 
     90
-     
+     
     £
   </span>
 </span>
@@ -19222,7 +19144,7 @@ exports[`Storyshots Price Prix - Valeur de -10.9 € 1`] = `
   >
     , 
     90
-     
+     
     €
   </span>
 </span>
@@ -19244,7 +19166,7 @@ exports[`Storyshots Price Prix - Valeur de -45.2 € 1`] = `
   >
     , 
     20
-     
+     
     €
   </span>
 </span>
@@ -19264,9 +19186,7 @@ exports[`Storyshots Price Prix - Valeur de 0 € 1`] = `
   <span
     className="price__remaining"
   >
-    , 
-    00
-     
+     
     €
   </span>
 </span>
@@ -19286,9 +19206,7 @@ exports[`Storyshots Price Prix - Valeur de 12 € 1`] = `
   <span
     className="price__remaining"
   >
-    , 
-    00
-     
+     
     €
   </span>
 </span>
@@ -19310,7 +19228,7 @@ exports[`Storyshots Price Prix - Valeur de 21.9 € 1`] = `
   >
     , 
     90
-     
+     
     €
   </span>
 </span>
@@ -19332,7 +19250,7 @@ exports[`Storyshots Price Prix - Valeur de 35.2 € 1`] = `
   >
     , 
     20
-     
+     
     €
   </span>
 </span>
@@ -19354,7 +19272,7 @@ exports[`Storyshots Price Prix - Valeur de 46.5 € 1`] = `
   >
     , 
     50
-     
+     
     €
   </span>
 </span>
@@ -19461,7 +19379,7 @@ exports[`Storyshots Travel Aller Retour 1`] = `
       >
         , 
         60
-         
+         
         €
       </span>
     </p>
@@ -19524,7 +19442,7 @@ exports[`Storyshots Travel Aller Retour Asymetrique 1`] = `
       >
         , 
         60
-         
+         
         €
       </span>
     </p>
@@ -19586,7 +19504,7 @@ exports[`Storyshots Travel Aller Simple 1`] = `
       >
         , 
         60
-         
+         
         €
       </span>
     </p>
@@ -19648,7 +19566,7 @@ Array [
           >
             , 
             60
-             
+             
             €
           </span>
         </p>
@@ -19707,7 +19625,7 @@ Array [
           >
             , 
             60
-             
+             
             €
           </span>
         </p>
@@ -19775,7 +19693,7 @@ Array [
           >
             , 
             50
-             
+             
             £
           </span>
         </p>
