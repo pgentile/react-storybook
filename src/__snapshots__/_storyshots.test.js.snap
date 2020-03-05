@@ -20173,7 +20173,7 @@ exports[`Storyshots Vibrator Main 1`] = `
 
 exports[`Storyshots Wip Empty 1`] = `
 <div
-  className="css-1n0dyl3-wipClass"
+  className="css-jfyhqj-wipClass"
 >
   <div
     className="css-101h4ki-wipContainerClass"
@@ -20185,7 +20185,7 @@ exports[`Storyshots Wip Empty 1`] = `
 
 exports[`Storyshots Wip Main 1`] = `
 <div
-  className="css-1n0dyl3-wipClass"
+  className="css-jfyhqj-wipClass"
 >
   <div
     className="css-101h4ki-wipContainerClass"
