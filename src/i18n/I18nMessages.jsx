@@ -5,8 +5,8 @@ import { FormattedMessage } from "react-intl";
 import { I18nProvider } from "./I18nContext";
 import I18nLocaleSelector from "./I18nLocaleSelector";
 
-function bold(...chunks) {
-  return <b>{chunks}</b>;
+function b(...chunks) {
+  return <strong>{chunks}</strong>;
 }
 
 function loadMessages(locale) {
@@ -53,7 +53,7 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
           id="hello"
           description="Hello"
           defaultMessage="Salut, {userName}&nbsp;!"
-          values={{ userName }}
+          values={{ userName: <em>{userName}</em> }}
         />
       </p>
       <p>
@@ -62,7 +62,7 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
           description="Hello"
           defaultMessage="Salut, <b>{userName}</b>&nbsp;!"
           values={{
-            b: bold,
+            b,
             userName
           }}
         />
@@ -72,7 +72,7 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
           id="personal_infos"
           description="Ask user its personal informations"
           defaultMessage="Entrez vos <b>nom</b>, <b>prénom</b> et <b>date de naissance</b>"
-          values={{ b: bold }}
+          values={{ b }}
         />
       </p>
       <p>
@@ -80,7 +80,7 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
           id="your_trips"
           description="User trips count"
           defaultMessage="{tripCount, plural, =0 {Aucun voyage} one {Votre <b>voyage</b>} other {Vos <b># voyages</b>}}"
-          values={{ b: bold, tripCount }}
+          values={{ b, tripCount }}
         />
       </p>
       <p>
@@ -92,7 +92,7 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
             et
             {cardCount, plural, =0 {aucune carte} one {votre <b>carte</b>} other {vos <b># cartes</b>}}
           `}
-          values={{ b: bold, tripCount, cardCount }}
+          values={{ b, tripCount, cardCount }}
         />
       </p>
       {tripCount > 0 && (

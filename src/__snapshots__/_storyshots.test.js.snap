@@ -10619,47 +10619,51 @@ Array [
     </ul>
   </form>,
   <p>
-    Salut, Jean !
+    Salut, 
+    <em>
+      Jean
+    </em>
+     !
   </p>,
   <p>
     Salut, 
-    <b>
+    <strong>
       Jean
-    </b>
+    </strong>
      !
   </p>,
   <p>
     Entrez vos 
-    <b>
+    <strong>
       nom
-    </b>
+    </strong>
     , 
-    <b>
+    <strong>
       prénom
-    </b>
+    </strong>
      et 
-    <b>
+    <strong>
       date de naissance
-    </b>
+    </strong>
   </p>,
   <p>
     Votre 
-    <b>
+    <strong>
       voyage
-    </b>
+    </strong>
   </p>,
   <p>
     
             Votre 
-    <b>
+    <strong>
       voyage
-    </b>
+    </strong>
     
             et
             votre 
-    <b>
+    <strong>
       carte
-    </b>
+    </strong>
     
           
   </p>,
