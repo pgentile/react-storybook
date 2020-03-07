@@ -8,7 +8,7 @@ module.exports = api => {
         {
           messagesDir: "./build/messages",
           extractSourceLocation: true,
-          removeDefaultMessage: !api.env("test")
+          removeDefaultMessage: false
         }
       ]
     ],
@@ -20,7 +20,7 @@ module.exports = api => {
         {
           debug: false,
           modules: api.env("test") ? "commonjs" : false,
-          useBuiltIns: "usage",
+          useBuiltIns: "entry",
           corejs: 3
         }
       ]
