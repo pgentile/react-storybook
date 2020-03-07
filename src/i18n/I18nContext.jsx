@@ -84,7 +84,7 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
         locale={state.locale}
         defaultLocale={defaultLocale}
         messages={state.messages}
-        onError={onTransationError}
+        _onError={onTransationError}
       >
         {children}
       </IntlProvider>
@@ -103,7 +103,7 @@ export function useLocale() {
 }
 
 function onTransationError(error) {
-  const shouldLogError = process.env.NODE_ENV !== "test" || error.code !== "MISSING_TRANSLATION";
+  const shouldLogError = error.code !== "MISSING_TRANSLATION";
   if (shouldLogError) {
     console.error("Transation error", error);
   }

@@ -14,6 +14,36 @@ const LOCALES = [
     locale: "en-GB",
     flag: "🇬🇧",
     description: "United Kingdom"
+  },
+  {
+    locale: "nl-NL",
+    flag: "🇳🇱",
+    description: "Nederland"
+  },
+  {
+    locale: "it-IT",
+    flag: "🇮🇹",
+    description: "Italia"
+  },
+  {
+    locale: "fr-BE",
+    flag: "🇧🇪",
+    description: "Belgique"
+  },
+  {
+    locale: "nl-BE",
+    flag: "🇧🇪",
+    description: "België"
+  },
+  {
+    locale: "de-BE",
+    flag: "🇧🇪",
+    description: "Belgien"
+  },
+  {
+    locale: "de-DE",
+    flag: "🇩🇪",
+    description: "Deutschland"
   }
 ];
 
