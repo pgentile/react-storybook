@@ -1,3 +1,7 @@
+/* eslint-env node */
+
+const path = require("path");
+
 module.exports = {
   rootDir: "./src",
   testURL: "http://localhost/",
@@ -10,5 +14,6 @@ module.exports = {
   },
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
   transformIgnorePatterns: ["node_modules/(?!lodash-es)"],
-  coverageDirectory: "<rootDir>/../build/coverage"
+  coverageDirectory: "<rootDir>/../build/coverage",
+  cacheDirectory: path.join(__dirname, "node_modules/.cache/jest")
 };

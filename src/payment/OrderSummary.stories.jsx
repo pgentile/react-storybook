@@ -2,7 +2,6 @@ import React from "react";
 import { action } from "@storybook/addon-actions";
 
 import OrderSummary from "./OrderSummary";
-import { TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE, CARD_TYPE } from "../redux/reducers/order";
 
 const cancelVoucher = action("cancel voucher");
 const cancelInsurance = action("cancel insurance");
@@ -10,7 +9,6 @@ const cancelDonation = action("cancel donation");
 
 const ticketItem = {
   id: "billets",
-  type: TICKET_TYPE,
   label: "Vos billets",
   price: {
     value: 109.8,
@@ -20,7 +18,6 @@ const ticketItem = {
 
 const cardItem = {
   id: "card",
-  type: CARD_TYPE,
   label: "Vos cartes de réduction",
   price: {
     value: 75.8,
@@ -30,7 +27,6 @@ const cardItem = {
 
 const insuranceItem = {
   id: "assurances",
-  type: INSURANCE_TYPE,
   label: "Vos assurances",
   price: {
     value: 5.9,
@@ -41,7 +37,6 @@ const insuranceItem = {
 
 const voucherItem = {
   id: "voucher",
-  type: VOUCHER_TYPE,
   label: "Votre code promotion",
   price: {
     value: -2.0,
@@ -52,7 +47,6 @@ const voucherItem = {
 
 const donationItem = {
   id: "donation",
-  type: DONATION_TYPE,
   label: "Votre don",
   price: {
     value: 1.0,

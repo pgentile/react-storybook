@@ -1,50 +1,29 @@
-const basicPlugins = ["@babel/plugin-proposal-class-properties", "macros"];
-
-const basicPresets = ["@babel/preset-typescript"];
-
 module.exports = api => {
-  api.cache(true);
-
   return {
     plugins: [
-      ...basicPlugins,
+      "@babel/plugin-proposal-class-properties",
+      "macros",
       [
         "react-intl",
         {
           messagesDir: "./build/messages",
-          extractSourceLocation: true
+          extractSourceLocation: true,
+          removeDefaultMessage: !api.env("test")
         }
       ]
     ],
     presets: [
-      ...basicPresets,
+      "@babel/preset-react",
+      "@babel/preset-typescript",
       [
         "@babel/preset-env",
         {
           debug: false,
-          modules: false,
-          useBuiltIns: "entry",
+          modules: api.env("test") ? "commonjs" : false,
+          useBuiltIns: "usage",
           corejs: 3
         }
-      ],
-      "@babel/preset-react"
-    ],
-    env: {
-      test: {
-        plugins: [...basicPlugins],
-        presets: [
-          ...basicPresets,
-          [
-            "@babel/preset-env",
-            {
-              modules: "commonjs",
-              useBuiltIns: "entry",
-              corejs: 2
-            }
-          ],
-          "@babel/preset-react"
-        ]
-      }
-    }
+      ]
+    ]
   };
 };

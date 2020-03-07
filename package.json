@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "clean": "rimraf build",
+    "clean": "rimraf build node_modules/.cache",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook --output-dir ./build/storybook",
     "lint:js": "eslint --ext .jsx,.js,.ts,.tsx --ignore-pattern '**/*.d.ts' ./src",
@@ -25,7 +25,8 @@
     "ci:build": "run-s storybook:build",
     "ci:post-validate": "run-s es-check",
     "babel:development": "cross-env NODE_ENV=development babel",
-    "babel:production": "cross-env NODE_ENV=production babel"
+    "babel:production": "cross-env NODE_ENV=production babel",
+    "babel:test": "cross-env NODE_ENV=test babel"
   },
   "dependencies": {
     "@formatjs/intl-pluralrules": "^1.5.2",
@@ -119,6 +120,7 @@
     "prettier": "^1.16.1",
     "query-string": "^6.11.1",
     "react-test-renderer": "^16.13.0",
+    "recursive-readdir": "^2.2.2",
     "reg-cli": "^0.16.0",
     "rimraf": "^3.0.2",
     "sass-loader": "^8.0.2",

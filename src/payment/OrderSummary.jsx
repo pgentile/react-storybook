@@ -5,13 +5,11 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 import Price from "../Price";
 import Card from "../Card";
-import { TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE, CARD_TYPE } from "../redux/reducers/order";
 
 import "./OrderSummary.scss";
 
 export const orderItemPropType = PropTypes.shape({
   id: PropTypes.string.isRequired,
-  type: PropTypes.oneOf([TICKET_TYPE, INSURANCE_TYPE, DONATION_TYPE, VOUCHER_TYPE, CARD_TYPE]),
   label: PropTypes.node.isRequired,
   price: Price.propTypes.price,
   onCancel: PropTypes.func

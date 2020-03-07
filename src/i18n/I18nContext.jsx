@@ -79,7 +79,13 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
 
   return (
     <I18nContext.Provider value={{ locale, setLocale, loading: state.loading }}>
-      <IntlProvider key={locale} locale={state.locale} defaultLocale={defaultLocale} messages={state.messages}>
+      <IntlProvider
+        key={locale}
+        locale={state.locale}
+        defaultLocale={defaultLocale}
+        messages={state.messages}
+        onError={onTransationError}
+      >
         {children}
       </IntlProvider>
     </I18nContext.Provider>
@@ -94,4 +100,11 @@ I18nProvider.propTypes = {
 
 export function useLocale() {
   return useContext(I18nContext);
+}
+
+function onTransationError(error) {
+  const shouldLogError = process.env.NODE_ENV !== "test" || error.code !== "MISSING_TRANSLATION";
+  if (shouldLogError) {
+    console.error("Transation error", error);
+  }
 }
