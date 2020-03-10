@@ -16,6 +16,11 @@ const LOCALES = [
     description: "United Kingdom"
   },
   {
+    locale: "en-US",
+    flag: "🇺🇸",
+    description: "USA"
+  },
+  {
     locale: "nl-NL",
     flag: "🇳🇱",
     description: "Nederland"
@@ -44,6 +49,21 @@ const LOCALES = [
     locale: "de-DE",
     flag: "🇩🇪",
     description: "Deutschland"
+  },
+  {
+    locale: "fr-CH",
+    flag: "🇨🇭",
+    description: "Suisse"
+  },
+  {
+    locale: "de-CH",
+    flag: "🇨🇭",
+    description: "Schweiz"
+  },
+  {
+    locale: "es-ES",
+    flag: "🇪🇸",
+    description: "España"
   }
 ];
 

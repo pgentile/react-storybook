@@ -2,17 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 
-import { I18nProvider } from "./I18nContext";
+import { I18nProvider, useLocale } from "./I18nContext";
 import I18nLocaleSelector from "./I18nLocaleSelector";
 import sleep from "../utils/sleep";
 
-function b(...chunks) {
-  return <strong>{chunks}</strong>;
-}
-
-async function loadMessages(locale) {
+async function loadMessages(language) {
   let messages = {};
-  if (locale === "en") {
+  if (language === "en") {
     await sleep(500);
 
     messages = {
@@ -36,6 +32,10 @@ async function loadMessages(locale) {
         {gender, select, female {Her} other {His}}
         {tripCount, plural, one {ticket} other {tickets}}
         will be delivered by post.
+      `,
+      terms_of_service: `
+        If you validate this page, this means that you accept
+        our <termsOfServiceLink>terms of service</termsOfServiceLink>.
       `
     };
   }
@@ -113,6 +113,17 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
           />
         </p>
       )}
+      <p>
+        <FormattedMessage
+          id="terms_of_service"
+          description="Terms of service"
+          defaultMessage={`
+          En validant la page, vous acceptez nos
+          <termsOfServiceLink>conditions générales d'utilisation</termsOfServiceLink>.
+        `}
+          values={{ termsOfServiceLink }}
+        />
+      </p>
     </I18nProvider>
   );
 }
@@ -122,4 +133,24 @@ I18nMessages.propTypes = {
   tripCount: PropTypes.number.isRequired,
   cardCount: PropTypes.number.isRequired,
   gender: PropTypes.oneOf(["male", "female"]).isRequired
+};
+
+function b(...chunks) {
+  return <strong>{chunks}</strong>;
+}
+
+function termsOfServiceLink(...chunks) {
+  return <TermsOfServiceLink>{chunks}</TermsOfServiceLink>;
+}
+
+function TermsOfServiceLink({ children }) {
+  const { locale } = useLocale();
+
+  const url = `https://example.org/content/${locale}/cgu.html`;
+
+  return <a href={url}>{children}</a>;
+}
+
+TermsOfServiceLink.propTypes = {
+  children: PropTypes.node
 };

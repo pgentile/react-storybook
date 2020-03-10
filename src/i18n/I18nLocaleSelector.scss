@@ -3,16 +3,22 @@
 
   font-size: 0.8rem;
 
+  // border: red 1px solid;
+
   &__list {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 
     padding: 0;
     margin: 0;
+    margin-top: -$space;
   }
 
   &__item {
     display: inline-block;
+
+    margin-top: $space;
 
     &:not(:last-of-type) {
       margin-right: $space;

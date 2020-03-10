@@ -84,7 +84,7 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
         locale={state.locale}
         defaultLocale={defaultLocale}
         messages={state.messages}
-        _onError={onTransationError}
+        onError={onTransationError}
       >
         {children}
       </IntlProvider>
