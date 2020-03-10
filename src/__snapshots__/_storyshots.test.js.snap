@@ -19577,6 +19577,7 @@ exports[`Storyshots Payment | VoucherForm Initial Code 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           spellCheck={false}
           type="text"
           value="EURO2016"
@@ -19607,7 +19608,7 @@ exports[`Storyshots Payment | VoucherForm Initial Code 1`] = `
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
-      type="button"
+      type="reset"
     >
       Annuler
     </button>
@@ -19646,6 +19647,7 @@ exports[`Storyshots Payment | VoucherForm Main 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           spellCheck={false}
           type="text"
           value=""
@@ -19676,7 +19678,7 @@ exports[`Storyshots Payment | VoucherForm Main 1`] = `
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
-      type="button"
+      type="reset"
     >
       Annuler
     </button>
@@ -19715,6 +19717,7 @@ exports[`Storyshots Payment | VoucherForm Submit Error 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           spellCheck={false}
           type="text"
           value="CODE21"
@@ -19745,7 +19748,7 @@ exports[`Storyshots Payment | VoucherForm Submit Error 1`] = `
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
-      type="button"
+      type="reset"
     >
       Annuler
     </button>
@@ -19784,6 +19787,7 @@ exports[`Storyshots Payment | VoucherForm Submit Success 1`] = `
           name="code"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           spellCheck={false}
           type="text"
           value="CODE21"
@@ -19814,7 +19818,7 @@ exports[`Storyshots Payment | VoucherForm Submit Success 1`] = `
       className="button button--size-small voucher-form__button"
       disabled={false}
       onClick={[Function]}
-      type="button"
+      type="reset"
     >
       Annuler
     </button>

@@ -1,121 +1,81 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withFormik, Formik } from "formik";
+import { Form, useField } from "react-final-form";
+import createDecorator from "final-form-focus";
 
-import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
-import Button from "../buttons/Button";
-import ProgressButton from "../buttons/ProgressButton";
+import FinalButton from "../ff/FinalButton";
+import FinalFieldContainer from "../ff/FinalFieldContainer";
+import FinalProgressButton from "../ff/FinalProgressButton";
 
 import "./VoucherForm.scss";
 
-class VoucherForm extends React.PureComponent {
-  static propTypes = {
-    ...Formik.propTypes,
-    className: PropTypes.string,
-    onCancel: PropTypes.func.isRequired
+const focusOnErrors = createDecorator();
+
+export default function VoucherForm({ code, className, onAddVoucher, onCancel }) {
+  const onFormSubmit = async values => {
+    try {
+      await onAddVoucher(values.code);
+    } catch (e) {
+      return {
+        code: "Nous n'avons pas réussi à prendre en compte votre code promo"
+      };
+    }
   };
 
-  static defaultProps = {
-    className: ""
-  };
-
-  onCancel = () => {
-    this.props.onCancel();
-  };
-
-  render() {
-    const {
-      className,
-      values,
-      errors,
-      touched,
-      handleChange,
-      handleBlur,
-      handleSubmit,
-      isSubmitting,
-      status
-    } = this.props;
-    const { submissionStatus, errorMessage } = status || {};
-
-    const success = submissionStatus === "SUCCESS";
-    const disableForm = isSubmitting || success;
-
-    return (
-      <form className={`voucher-form ${className}`} onSubmit={handleSubmit}>
-        <div className="voucher-form__line">
-          <FieldContainer label="Code promo" errorMessage={(touched.code && errors.code) || errorMessage}>
-            {props => (
-              <InputField
-                {...props}
-                name="code"
-                autoComplete="off"
-                spellCheck={false}
-                maxLength={16}
-                disabled={disableForm}
-                value={values.code}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            )}
-          </FieldContainer>
-        </div>
-
-        <div className="voucher-form__line">
-          <ProgressButton
-            className="voucher-form__button"
-            type="submit"
-            size="small"
-            disabled={disableForm}
-            loading={isSubmitting}
-            finished={success}
-          >
-            Ajouter le code promo
-          </ProgressButton>
-          <Button
-            className="voucher-form__button"
-            type="button"
-            size="small"
-            disabled={disableForm}
-            onClick={this.onCancel}
-          >
-            Annuler
-          </Button>
-        </div>
-      </form>
-    );
-  }
+  return (
+    <Form
+      onSubmit={onFormSubmit}
+      decorators={[focusOnErrors]}
+      initialValues={{ code }}
+      render={({ handleSubmit }) => (
+        <VoucherFormInternal handleSubmit={handleSubmit} onCancel={onCancel} className={className} />
+      )}
+    />
+  );
 }
 
-export default withFormik({
-  validateOnBlur: false,
-  mapPropsToValues: props => ({
-    code: props.code || ""
-  }),
-  validate: values => {
-    const errors = {};
+VoucherForm.propTypes = {
+  code: PropTypes.string,
+  className: PropTypes.string,
+  onAddVoucher: PropTypes.func.isRequired,
+  onCancel: PropTypes.func.isRequired
+};
 
-    if (values.code.length < 6) {
-      errors.code = "Votre code est trop court";
+function VoucherFormInternal({ handleSubmit, className = "", onCancel }) {
+  useField("code", {
+    subscription: {},
+    validate: value => {
+      if (!value) {
+        return "Vous n'avez pas renseigné votre code";
+      }
+      if (value.length < 6) {
+        return "Votre code est trop court";
+      }
     }
+  });
 
-    return errors;
-  },
-  handleSubmit: async (values, { props, setSubmitting, setStatus, setErrors }) => {
-    try {
-      await props.onAddVoucher(values.code);
-      setStatus({
-        submissionStatus: "SUCCESS"
-      });
-    } catch (e) {
-      setErrors({
-        code: "Nous n'avons pas réussi à prendre en compte votre code promo"
-      });
-      setStatus({
-        submissionStatus: "FAILED"
-      });
-    } finally {
-      setSubmitting(false);
-    }
-  }
-})(VoucherForm);
+  return (
+    <form className={`voucher-form ${className}`} onSubmit={handleSubmit}>
+      <div className="voucher-form__line">
+        <FinalFieldContainer name="code" label="Code promo">
+          {fieldProps => <InputField {...fieldProps} autoComplete="off" spellCheck={false} maxLength={16} />}
+        </FinalFieldContainer>
+      </div>
+      <div className="voucher-form__line">
+        <FinalProgressButton className="voucher-form__button" type="submit" size="small">
+          Ajouter le code promo
+        </FinalProgressButton>
+        <FinalButton className="voucher-form__button" type="reset" size="small" onClick={onCancel}>
+          Annuler
+        </FinalButton>
+      </div>
+    </form>
+  );
+}
+
+VoucherFormInternal.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+  onCancel: PropTypes.func.isRequired,
+  className: PropTypes.string
+};
