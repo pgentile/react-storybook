@@ -51,7 +51,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.13.1",
     "react-cache": "next",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.13.1",
     "react-final-form": "^6.3.5",
     "react-intl": "^4.1.1",
     "react-jsonschema-form": "^1.8.1",
