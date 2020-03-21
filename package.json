@@ -132,7 +132,7 @@
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-prettier": "^1.1.2",
-    "stylelint-scss": "^3.14.2",
+    "stylelint-scss": "^3.16.0",
     "url-loader": "^4.0.0",
     "webpack": "^4.42.0",
     "webpack-bundle-analyzer": "^3.6.1",
