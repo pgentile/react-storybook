@@ -7,7 +7,10 @@ import ButtonGroup, { ButtonInGroup } from "./buttons/ButtonGroup";
 
 export default {
   title: "ExchangeRate",
-  component: ExchangeRate
+  component: ExchangeRate,
+  parameters: {
+    storyshots: false
+  }
 };
 
 export const main = () => {
