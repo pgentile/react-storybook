@@ -25,5 +25,5 @@ BookingPassenger.propTypes = {
   as: PropTypes.elementType,
   className: PropTypes.string,
   index: PropTypes.number.isRequired,
-  name: PropTypes.string
+  name: PropTypes.string,
 };

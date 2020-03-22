@@ -9,13 +9,13 @@ export default class ResizableBlock extends React.PureComponent {
     breakpoints: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,
-        minWidth: PropTypes.number.isRequired
+        minWidth: PropTypes.number.isRequired,
       })
-    ).isRequired
+    ).isRequired,
   };
 
   static defaultProps = {
-    breakpoints: []
+    breakpoints: [],
   };
 
   blockRef = createRef();
@@ -24,7 +24,7 @@ export default class ResizableBlock extends React.PureComponent {
     super(props);
 
     this.state = {
-      breakpoint: props.defaultBreakpoint
+      breakpoint: props.defaultBreakpoint,
     };
   }
 
@@ -32,7 +32,7 @@ export default class ResizableBlock extends React.PureComponent {
     const { defaultBreakpoint, breakpoints } = this.props;
 
     let currentBreakpoint = defaultBreakpoint;
-    breakpoints.forEach(breakpoint => {
+    breakpoints.forEach((breakpoint) => {
       const { name, minWidth } = breakpoint;
       if (width >= minWidth) {
         currentBreakpoint = name;
@@ -45,12 +45,12 @@ export default class ResizableBlock extends React.PureComponent {
   componentDidMount() {
     const { current } = this.blockRef;
     if (current) {
-      this.observer = new ResizeObserver(entries => {
-        entries.forEach(entry => {
+      this.observer = new ResizeObserver((entries) => {
+        entries.forEach((entry) => {
           const { width } = entry.contentRect;
           const breakpoint = this.computeCurrentBreakpoint(width);
 
-          this.setState(state => {
+          this.setState((state) => {
             if (state.breakpoint !== breakpoint) {
               return { breakpoint };
             }

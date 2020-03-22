@@ -29,7 +29,7 @@ function useLevels() {
   return {
     coldLevel: mode === "cold" ? level : 0,
     heatLevel: mode === "heat" ? level : 0,
-    change
+    change,
   };
 }
 
@@ -59,7 +59,7 @@ function reducer(state, action) {
 
     return {
       mode,
-      level
+      level,
     };
   }
 
@@ -68,5 +68,5 @@ function reducer(state, action) {
 
 const defaultState = {
   mode: "cold",
-  level: 0
+  level: 0,
 };

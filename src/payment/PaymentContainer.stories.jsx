@@ -10,7 +10,7 @@ export default {
   title: "Payment | PaymentContainer",
   component: PaymentContainer,
   decorators: [
-    story => {
+    (story) => {
       const store = createDefaultStore();
 
       store.dispatch(
@@ -21,9 +21,9 @@ export default {
             label: "Vos billets",
             price: {
               value: 55.6,
-              currency: "EUR"
-            }
-          }
+              currency: "EUR",
+            },
+          },
         ])
       );
 
@@ -33,26 +33,26 @@ export default {
             id: "1",
             brand: "visa",
             maskedNumber: "#### #### #### 1111",
-            expirationDate: "2031-07"
+            expirationDate: "2031-07",
           },
           {
             id: "2",
             brand: "mastercard",
             maskedNumber: "#### #### #### 1113",
-            expirationDate: "2029-01"
+            expirationDate: "2029-01",
           },
           {
             id: "3",
             brand: "maestro",
             maskedNumber: "#### #### #### 1113",
-            expirationDate: "2029-01"
-          }
+            expirationDate: "2029-01",
+          },
         ])
       );
 
       return <Provider store={store}>{story()}</Provider>;
-    }
-  ]
+    },
+  ],
 };
 
 export const main = () => {

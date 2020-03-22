@@ -4,7 +4,7 @@ import OwnerForm from "./OwnerForm";
 
 export default {
   title: "OwnerForm | OwnerForm",
-  component: OwnerForm
+  component: OwnerForm,
 };
 
 export const main = () => <OwnerForm />;

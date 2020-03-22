@@ -14,14 +14,14 @@ import "./RegistredCreditCard.scss";
 const brandIcons = {
   visa: faCcVisa,
   mastercard: faCcMastercard,
-  "american-express": faCcAmex
+  "american-express": faCcAmex,
 };
 
 export const registredCreditCardShape = {
   id: PropTypes.string.isRequired,
   maskedNumber: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
-  expirationDate: PropTypes.string.isRequired
+  expirationDate: PropTypes.string.isRequired,
 };
 
 export default function RegistredCreditCard({
@@ -33,7 +33,7 @@ export default function RegistredCreditCard({
   disabled,
   onShowCvv,
   onHideCvv,
-  onUseCard
+  onUseCard,
 }) {
   const { maskedNumber, brand, expirationDate } = card;
   const [year, month] = expirationDate.split("-");
@@ -44,7 +44,7 @@ export default function RegistredCreditCard({
   const onUseCardCallback = ({ cvv }) => {
     onUseCard({
       id: card.id,
-      cvv
+      cvv,
     });
   };
 
@@ -103,12 +103,12 @@ RegistredCreditCard.propTypes = {
   card: PropTypes.shape(registredCreditCardShape).isRequired,
   totalPrice: PropTypes.shape({
     value: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired
+    currency: PropTypes.string.isRequired,
   }).isRequired,
   showCvv: PropTypes.bool,
   showCvvToggle: PropTypes.bool,
   disabled: PropTypes.bool,
   onShowCvv: PropTypes.func.isRequired,
   onHideCvv: PropTypes.func.isRequired,
-  onUseCard: PropTypes.func.isRequired
+  onUseCard: PropTypes.func.isRequired,
 };

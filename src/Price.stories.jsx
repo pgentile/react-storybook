@@ -7,7 +7,7 @@ const values = [0, 12, 21.9, 35.2, 46.5, -10.9, -45.2];
 
 const stories = storiesOf("Price", module);
 
-values.forEach(value => {
+values.forEach((value) => {
   stories.add(`Prix - Valeur de ${value} €`, () => {
     return <Price price={{ value, currency: "EUR" }} />;
   });

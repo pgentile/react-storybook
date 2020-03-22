@@ -12,7 +12,7 @@ export default function useColorScheme(defaultScheme = "light") {
     const query = window.matchMedia("(prefers-color-scheme: dark)");
     setColorScheme(query.matches ? "dark" : "light");
 
-    const handler = event => setColorScheme(event.matches ? "dark" : "light");
+    const handler = (event) => setColorScheme(event.matches ? "dark" : "light");
     query.addEventListener("change", handler);
     return () => query.removeEventListener("change", handler);
   });

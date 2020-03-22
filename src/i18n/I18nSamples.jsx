@@ -23,7 +23,7 @@ export default function I18nSamples(props) {
 
 I18nSamples.propTypes = {
   number: PropTypes.number.isRequired,
-  currency: PropTypes.string.isRequired
+  currency: PropTypes.string.isRequired,
 };
 
 function InternalI18nSamples({ sampleNumber, currency }) {
@@ -65,7 +65,7 @@ function InternalI18nSamples({ sampleNumber, currency }) {
 }
 
 InternalI18nSamples.propTypes = {
-  ...I18nSamples.propTypes
+  ...I18nSamples.propTypes,
 };
 
 function displayParts(parts) {

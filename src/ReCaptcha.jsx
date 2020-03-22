@@ -10,7 +10,7 @@ class ReCaptchaLibLoader {
     if (!this.started) {
       this.started = true;
 
-      this.lib = new Promise(resolve => {
+      this.lib = new Promise((resolve) => {
         window.onReCaptchaLoadedV2 = () => {
           delete window.onReCaptchaLoadedV2;
           resolve(window.grecaptcha);
@@ -39,7 +39,7 @@ export default class ReCaptcha extends React.PureComponent {
     type: PropTypes.string.isRequired,
     badge: PropTypes.string.isRequired,
     onSuccess: PropTypes.func,
-    onExpire: PropTypes.func
+    onExpire: PropTypes.func,
   };
 
   static defaultProps = {
@@ -48,7 +48,7 @@ export default class ReCaptcha extends React.PureComponent {
     type: "image",
     badge: "bottomright",
     onSuccess: noop,
-    onExpire: noop
+    onExpire: noop,
   };
 
   containerElement = React.createRef();
@@ -56,7 +56,7 @@ export default class ReCaptcha extends React.PureComponent {
   widgetId = null;
 
   state = {
-    loaded: false
+    loaded: false,
   };
 
   cleanContainerElement() {
@@ -71,7 +71,7 @@ export default class ReCaptcha extends React.PureComponent {
     return renderingElement;
   }
 
-  onSuccess = token => {
+  onSuccess = (token) => {
     this.props.onSuccess(token);
   };
 
@@ -80,11 +80,11 @@ export default class ReCaptcha extends React.PureComponent {
   };
 
   componentDidMount() {
-    reCaptchaLibLoader.get().then(captchaApi => {
+    reCaptchaLibLoader.get().then((captchaApi) => {
       this.captchaApi = captchaApi;
 
       this.setState({
-        loaded: true
+        loaded: true,
       });
     });
   }
@@ -110,7 +110,7 @@ export default class ReCaptcha extends React.PureComponent {
         size,
         badge: "inline",
         callback: this.onSuccess,
-        "expired-callback": this.onExpire
+        "expired-callback": this.onExpire,
       });
     }
   }

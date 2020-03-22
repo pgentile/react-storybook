@@ -7,8 +7,8 @@ export default {
   title: "ModalContainer",
   component: ModalContainer,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const empty = () => {

@@ -15,5 +15,5 @@ export default function FinalFieldError({ name }) {
 }
 
 FinalFieldError.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
 };

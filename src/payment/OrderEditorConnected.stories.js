@@ -9,7 +9,7 @@ export default {
   title: "Payment | OrderEditorConnected",
   component: OrderEditorConnected,
   decorators: [
-    story => {
+    (story) => {
       const store = createDefaultStore();
 
       store.dispatch(
@@ -20,15 +20,15 @@ export default {
             label: "Vos billets",
             price: {
               value: 55.6,
-              currency: "EUR"
-            }
-          }
+              currency: "EUR",
+            },
+          },
         ])
       );
 
       return <Provider store={store}>{story()}</Provider>;
-    }
-  ]
+    },
+  ],
 };
 
 export const main = () => <OrderEditorConnected />;

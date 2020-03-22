@@ -6,7 +6,7 @@ import schema from "./schemas/searchOutward.request.json";
 
 export default class SearchOutwardForm extends React.PureComponent {
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
   };
 
   render() {
@@ -15,18 +15,18 @@ export default class SearchOutwardForm extends React.PureComponent {
     const formData = {
       origin: {
         type: "RESARAIL",
-        code: "FRNTE"
+        code: "FRNTE",
       },
       destination: {
         type: "RESARAIL",
-        code: "FRLIL"
+        code: "FRLIL",
       },
       departureDate: "2018-12-24T06:00:00Z",
       passengers: [
         {
-          type: "HUMAN"
-        }
-      ]
+          type: "HUMAN",
+        },
+      ],
     };
 
     return <Form schema={schema} formData={formData} onSubmit={onSubmit} />;

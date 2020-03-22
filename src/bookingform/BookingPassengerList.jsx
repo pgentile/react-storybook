@@ -9,7 +9,7 @@ import "./BookingPassengerList.scss";
 export default function BookingPassengerList({ as: Element = "section", className = "", passengers }) {
   const passengerElements = passengers.map((passenger, index) => {
     const className = bemModifiers("booking-passenger-list__passenger", {
-      even: (index + 1) % 2 == 0
+      even: (index + 1) % 2 == 0,
     });
     return <BookingPassenger key={passenger.id} className={className} index={index} name={passenger.name} />;
   });
@@ -23,7 +23,7 @@ BookingPassengerList.propTypes = {
   passengers: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      name: PropTypes.string
+      name: PropTypes.string,
     })
-  ).isRequired
+  ).isRequired,
 };

@@ -11,7 +11,7 @@ import {
   isBefore,
   isAfter,
   parse,
-  isSameDay
+  isSameDay,
 } from "date-fns";
 import frLocale from "date-fns/locale/fr";
 import memoizeOne from "memoize-one";
@@ -27,11 +27,11 @@ export default class Calendar extends React.PureComponent {
     selectedDate: PropTypes.string,
     minDate: PropTypes.string,
     maxDate: PropTypes.string,
-    onSelect: PropTypes.func
+    onSelect: PropTypes.func,
   };
 
   static defaultProps = {
-    className: ""
+    className: "",
   };
 
   ref = React.createRef();
@@ -45,7 +45,7 @@ export default class Calendar extends React.PureComponent {
     }
   }
 
-  generateDataMemoized = memoizeOne(monthFirstDay => {
+  generateDataMemoized = memoizeOne((monthFirstDay) => {
     const monthLastDay = endOfMonth(monthFirstDay);
     const calendarFirstDay = startOfISOWeek(monthFirstDay);
     const calendarLastDay = endOfISOWeek(monthLastDay);
@@ -55,13 +55,13 @@ export default class Calendar extends React.PureComponent {
     let count = 0;
     let days = [];
 
-    eachDayOfInterval({ start: calendarFirstDay, end: calendarLastDay }).forEach(date => {
+    eachDayOfInterval({ start: calendarFirstDay, end: calendarLastDay }).forEach((date) => {
       const day = {
         date,
         formattedDate: format(date, "yyyy-MM-dd"),
         label: format(date, "EEEE d MMMM yyyy", { locale: frLocale }),
         dayNumber: format(date, "d"),
-        currentMonth: !isBefore(date, monthFirstDay) && !isAfter(date, monthLastDay)
+        currentMonth: !isBefore(date, monthFirstDay) && !isAfter(date, monthLastDay),
       };
 
       days.push(day);
@@ -82,7 +82,7 @@ export default class Calendar extends React.PureComponent {
     return this.generateDataMemoized(monthFirstDay);
   }
 
-  onCellClick = value => {
+  onCellClick = (value) => {
     if (this.props.onSelect) {
       this.props.onSelect(value);
     }
@@ -103,7 +103,7 @@ export default class Calendar extends React.PureComponent {
       viewDate: viewDateInput,
       minDate: minDateInput,
       maxDate: maxDateInput,
-      onSelect
+      onSelect,
     } = this.props;
     const selectedDate = parseDate(selectedDateInput);
     const viewDate = parseDateOrToday(viewDateInput);
@@ -113,7 +113,7 @@ export default class Calendar extends React.PureComponent {
 
     const weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 
-    const weekDayRows = weekDays.map(weekDay => {
+    const weekDayRows = weekDays.map((weekDay) => {
       return (
         <th key={weekDay} className="calendar__week-day">
           <abbr className="calendar__week-day-abbr" title={weekDay}>
@@ -124,7 +124,7 @@ export default class Calendar extends React.PureComponent {
     });
 
     const rows = this.generateData(viewDate).map((weekDays, weekIndex) => {
-      const columns = weekDays.map(day => {
+      const columns = weekDays.map((day) => {
         const disabled = !isDateBetweenMinMax(day.date);
         const selectable = !!onSelect && !disabled;
         const sameDate = isSameDay(day.date, selectedDate);
@@ -133,14 +133,14 @@ export default class Calendar extends React.PureComponent {
           "current-month": day.currentMonth,
           selectable: !!onSelect && !disabled,
           disabled,
-          selected: selectedDate ? sameDate : false
+          selected: selectedDate ? sameDate : false,
         });
         return (
           <td
             key={day.formattedDate}
             className={dayClassName}
             onClick={selectable ? () => this.onCellClick(day.formattedDate) : null}
-            onKeyPress={selectable ? event => this.onCellKeyPress(event, day.formattedDate) : null}
+            onKeyPress={selectable ? (event) => this.onCellKeyPress(event, day.formattedDate) : null}
             role={!disabled && selectable ? "button" : null}
             tabIndex={!disabled && selectable ? 0 : null}
             aria-current={sameDate ? "date" : null}
@@ -187,9 +187,9 @@ function parseDateOrToday(date) {
 
 function dateBetween(minDate, maxDate) {
   if (minDate || maxDate) {
-    const acceptMinDate = minDate ? date => isAfter(date, minDate) || isEqual(date, minDate) : alwaysTrue;
-    const acceptMaxDate = maxDate ? date => isBefore(date, maxDate) || isEqual(date, maxDate) : alwaysTrue;
-    return date => acceptMinDate(date) && acceptMaxDate(date);
+    const acceptMinDate = minDate ? (date) => isAfter(date, minDate) || isEqual(date, minDate) : alwaysTrue;
+    const acceptMaxDate = maxDate ? (date) => isBefore(date, maxDate) || isEqual(date, maxDate) : alwaysTrue;
+    return (date) => acceptMinDate(date) && acceptMaxDate(date);
   }
   return alwaysTrue;
 }

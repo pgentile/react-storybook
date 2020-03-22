@@ -8,7 +8,7 @@ import sleep from "../utils/sleep";
 
 export default {
   title: "Final Forms components | FinalProgressButton",
-  component: FinalProgressButton
+  component: FinalProgressButton,
 };
 
 export const main = () => {
@@ -34,5 +34,5 @@ function Demo({ handleSubmit, form }) {
 
 Demo.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
-  form: PropTypes.object.isRequired
+  form: PropTypes.object.isRequired,
 };

@@ -7,9 +7,9 @@ const supportedPaymentMethods = [
   {
     supportedMethods: "basic-card",
     data: {
-      supportedNetworks: ["visa", "mastercard", "amex", "cb", "maestro"]
-    }
-  }
+      supportedNetworks: ["visa", "mastercard", "amex", "cb", "maestro"],
+    },
+  },
 ];
 
 const paymentDetails = {
@@ -17,25 +17,25 @@ const paymentDetails = {
     label: "Total",
     amount: {
       currency: "EUR",
-      value: 85
-    }
+      value: 85,
+    },
   },
   displayItems: [
     {
       label: "TER Clisson → Nantes — 2 passagers",
       amount: {
         currency: "EUR",
-        value: 5
-      }
+        value: 5,
+      },
     },
     {
       label: "TGV Nantes → Paris — 2 passagers",
       amount: {
         currency: "EUR",
-        value: 80
-      }
-    }
-  ]
+        value: 80,
+      },
+    },
+  ],
 };
 
 const options = {};
@@ -43,7 +43,7 @@ const options = {};
 export default class PaymentRequestComponent extends React.PureComponent {
   static propTypes = {
     onSuccess: PropTypes.func.isRequired,
-    onError: PropTypes.func.isRequired
+    onError: PropTypes.func.isRequired,
   };
 
   // eslint-disable-next-line compat/compat

@@ -4,7 +4,7 @@ import Language, { useLanguage } from "./Language";
 
 export default {
   title: "Hooks / Language",
-  component: Language
+  component: Language,
 };
 
 export const main = () => {

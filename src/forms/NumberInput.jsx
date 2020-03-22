@@ -5,10 +5,10 @@ import isDigits from "../utils/isDigits";
 
 export default class NumberInput extends React.PureComponent {
   static propTypes = {
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
   };
 
-  onChange = event => {
+  onChange = (event) => {
     // Interdire autre chose que des chiffres
     if (!isDigits(event.target.value)) {
       event.preventDefault();

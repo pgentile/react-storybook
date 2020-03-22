@@ -12,22 +12,22 @@ import "./DonationProposal.scss";
 export default class DonationProposal extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    onAddDonation: PropTypes.func.isRequired
+    onAddDonation: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    className: ""
+    className: "",
   };
 
   state = {
-    showDetails: false
+    showDetails: false,
   };
 
-  onDetailsClick = event => {
+  onDetailsClick = (event) => {
     event.preventDefault();
 
-    this.setState(state => ({
-      showDetails: !state.showDetails
+    this.setState((state) => ({
+      showDetails: !state.showDetails,
     }));
   };
 

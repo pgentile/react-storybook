@@ -10,5 +10,5 @@ export default function FieldError({ as: Element = "p", className = "", children
 FieldError.propTypes = {
   as: PropTypes.elementType,
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };

@@ -11,7 +11,7 @@ import order, {
   addVoucher,
   cancelVoucher,
   addDonation,
-  cancelDonation
+  cancelDonation,
 } from "./order";
 
 import createStore from "../createStore";
@@ -25,10 +25,10 @@ beforeEach(() => {
 
   store = createStore(
     {
-      order
+      order,
     },
     {
-      extraMiddlewares: [storeActionsMiddleware]
+      extraMiddlewares: [storeActionsMiddleware],
     }
   );
 });
@@ -47,7 +47,7 @@ describe("Selectors", () => {
     const items = [
       createItem({ type: TICKET_TYPE }),
       createItem({ type: VOUCHER_TYPE }),
-      createItem({ type: DONATION_TYPE })
+      createItem({ type: DONATION_TYPE }),
     ];
 
     await store.dispatch(loadItems(items));
@@ -61,7 +61,7 @@ describe("Selectors", () => {
     const items = [
       createItem({ type: TICKET_TYPE }),
       createItem({ type: VOUCHER_TYPE }),
-      createItem({ type: DONATION_TYPE })
+      createItem({ type: DONATION_TYPE }),
     ];
 
     await store.dispatch(loadItems(items));
@@ -219,8 +219,8 @@ function createItem({ id, type, name, price, ...extraProps } = {}) {
     name: name || "This is an item",
     price: price || {
       amount: 15.6,
-      currency: "EUR"
+      currency: "EUR",
     },
-    ...extraProps
+    ...extraProps,
   };
 }

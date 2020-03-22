@@ -5,34 +5,34 @@ import Travel from "./Travel";
 const outwardTrip = {
   origin: "Lille",
   destination: "Nantes",
-  departureDate: "12/09/2018 à 10h35"
+  departureDate: "12/09/2018 à 10h35",
 };
 
 const inwardTrip = {
   origin: "Nantes",
   destination: "Lille",
-  departureDate: "14/09/2018 à 18h12"
+  departureDate: "14/09/2018 à 18h12",
 };
 
 const inwardTrip2 = {
   origin: "Nantes",
   destination: "Paris",
-  departureDate: "18/09/2018 à 18h12"
+  departureDate: "18/09/2018 à 18h12",
 };
 
 const price = {
   value: 105.6,
-  currency: "EUR"
+  currency: "EUR",
 };
 
 const price2 = {
   value: 98.5,
-  currency: "GBP"
+  currency: "GBP",
 };
 
 export default {
   title: "Travel",
-  component: Travel
+  component: Travel,
 };
 
 export const allerSimple = () => {

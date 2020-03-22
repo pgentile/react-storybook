@@ -10,8 +10,8 @@ export default {
   component: HooksComments,
   decorators: [withKnobs],
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {

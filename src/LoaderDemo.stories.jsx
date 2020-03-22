@@ -11,15 +11,15 @@ import sleep from "./utils/sleep";
 export default {
   title: "LoaderDemo",
   decorators: [
-    story => {
+    (story) => {
       const reducers = { loader };
       const store = createStore(reducers, {
-        extraMiddlewares: [loaderMiddleware()]
+        extraMiddlewares: [loaderMiddleware()],
       });
 
       return <Provider store={store}>{story()}</Provider>;
-    }
-  ]
+    },
+  ],
 };
 
 export const main = () => {
@@ -32,7 +32,7 @@ class LoaderDemo extends React.PureComponent {
     loadOne: PropTypes.func.isRequired,
     loadParallel: PropTypes.func.isRequired,
     loadSequential: PropTypes.func.isRequired,
-    loadOneNoIndicator: PropTypes.func.isRequired
+    loadOneNoIndicator: PropTypes.func.isRequired,
   };
 
   onLoadOne = () => {
@@ -74,15 +74,15 @@ class LoaderDemo extends React.PureComponent {
 }
 
 function loadOne() {
-  return dispatch => dispatch(loadSomething());
+  return (dispatch) => dispatch(loadSomething());
 }
 
 function loadOneNoIndicator() {
-  return dispatch => dispatch(loadSomething(true));
+  return (dispatch) => dispatch(loadSomething(true));
 }
 
 function loadParallel() {
-  return dispatch => {
+  return (dispatch) => {
     for (let i = 0; i < 10; i++) {
       dispatch(loadSomething());
     }
@@ -90,7 +90,7 @@ function loadParallel() {
 }
 
 function loadSequential() {
-  return async dispatch => {
+  return async (dispatch) => {
     for (let i = 0; i < 5; i++) {
       await dispatch(loadSomething());
     }
@@ -103,9 +103,9 @@ function loadSomething(ignoreLoader = false) {
     payload: sleep(1000),
     meta: {
       loader: {
-        ignore: ignoreLoader
-      }
-    }
+        ignore: ignoreLoader,
+      },
+    },
   };
 }
 
@@ -113,11 +113,11 @@ const mapDispatchToProps = {
   loadOne,
   loadParallel,
   loadSequential,
-  loadOneNoIndicator
+  loadOneNoIndicator,
 };
 
-const mapStateToProps = state => ({
-  loading: selectIsLoading(state)
+const mapStateToProps = (state) => ({
+  loading: selectIsLoading(state),
 });
 
 const LoaderDemoConnected = connect(mapStateToProps, mapDispatchToProps)(LoaderDemo);

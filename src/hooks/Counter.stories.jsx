@@ -4,7 +4,7 @@ import Counter from "./Counter";
 
 export default {
   title: "Hooks / Counter",
-  component: Counter
+  component: Counter,
 };
 
 export const main = () => {

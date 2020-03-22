@@ -10,21 +10,21 @@ export default class InputField extends React.PureComponent {
     as: PropTypes.elementType,
     className: PropTypes.string,
     error: PropTypes.bool,
-    formNoValidate: PropTypes.bool
+    formNoValidate: PropTypes.bool,
   };
 
   static defaultProps = {
     as: "input",
     className: "",
     error: false,
-    formNoValidate: true
+    formNoValidate: true,
   };
 
   render() {
     const { as: Element, className, error, ...otherProps } = this.props;
 
     const inputClassName = bemModifiers("form-input-field", {
-      error
+      error,
     });
 
     return <Element type="text" {...otherProps} className={`${inputClassName} ${className}`} aria-invalid={error} />;

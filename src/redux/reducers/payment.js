@@ -14,16 +14,16 @@ export function pay() {
     payload: payOnServer(),
     meta: {
       loader: {
-        ignore: true
-      }
-    }
+        ignore: true,
+      },
+    },
   };
 }
 
 // Reducer
 
 const initialState = {
-  items: []
+  items: [],
 };
 
 export default (state = initialState, action) => {

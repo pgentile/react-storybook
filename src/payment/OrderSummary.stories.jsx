@@ -12,8 +12,8 @@ const ticketItem = {
   label: "Vos billets",
   price: {
     value: 109.8,
-    currency: "EUR"
-  }
+    currency: "EUR",
+  },
 };
 
 const cardItem = {
@@ -21,8 +21,8 @@ const cardItem = {
   label: "Vos cartes de réduction",
   price: {
     value: 75.8,
-    currency: "EUR"
-  }
+    currency: "EUR",
+  },
 };
 
 const insuranceItem = {
@@ -30,9 +30,9 @@ const insuranceItem = {
   label: "Vos assurances",
   price: {
     value: 5.9,
-    currency: "EUR"
+    currency: "EUR",
   },
-  onCancel: cancelInsurance
+  onCancel: cancelInsurance,
 };
 
 const voucherItem = {
@@ -40,9 +40,9 @@ const voucherItem = {
   label: "Votre code promotion",
   price: {
     value: -2.0,
-    currency: "EUR"
+    currency: "EUR",
   },
-  onCancel: cancelVoucher
+  onCancel: cancelVoucher,
 };
 
 const donationItem = {
@@ -50,18 +50,18 @@ const donationItem = {
   label: "Votre don",
   price: {
     value: 1.0,
-    currency: "EUR"
+    currency: "EUR",
   },
   donationDetails: {
     code: "code",
-    association: "Médecins sans frontières"
+    association: "Médecins sans frontières",
   },
-  onCancel: cancelDonation
+  onCancel: cancelDonation,
 };
 
 export default {
   title: "Payment | OrderSummary",
-  component: OrderSummary
+  component: OrderSummary,
 };
 
 export const billetsUniquement = () => {

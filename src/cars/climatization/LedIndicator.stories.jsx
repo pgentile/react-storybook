@@ -4,7 +4,7 @@ import LedIndicator from "./LedIndicator";
 
 export default {
   title: "Cars | Core / LedIndicator",
-  component: LedIndicator
+  component: LedIndicator,
 };
 
 export const main = () => {

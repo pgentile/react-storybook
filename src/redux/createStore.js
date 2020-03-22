@@ -23,14 +23,14 @@ export default function createStore(reducers, options = {}) {
   const realOptions = {
     initialState: {},
     extraMiddlewares: [],
-    ...options
+    ...options,
   };
 
   const enhancer = composeEnhancers(applyMiddleware(...middlewares, ...realOptions.extraMiddlewares));
 
   return createReduxStore(
     combineReducers({
-      ...reducers
+      ...reducers,
     }),
     realOptions.initialState,
     enhancer

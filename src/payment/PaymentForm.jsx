@@ -12,22 +12,22 @@ export default class PaymentForm extends React.PureComponent {
     className: PropTypes.string,
     totalPrice: PropTypes.shape({
       value: PropTypes.number.isRequired,
-      currency: PropTypes.string.isRequired
+      currency: PropTypes.string.isRequired,
     }).isRequired,
     registredCards: RegistredCreditCardList.propTypes.cards,
-    onPay: PropTypes.func.isRequired
+    onPay: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
     className: "",
-    registredCards: []
+    registredCards: [],
   };
 
   state = {
-    mean: null
+    mean: null,
   };
 
-  onMeanChange = mean => {
+  onMeanChange = (mean) => {
     this.setState({ mean });
   };
 

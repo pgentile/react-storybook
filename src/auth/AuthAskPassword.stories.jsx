@@ -8,7 +8,7 @@ const onValidate = action("onValidate");
 
 export default {
   title: "Auth / AuthAskPassword",
-  component: AuthAskPassword
+  component: AuthAskPassword,
 };
 
 export const main = () => {

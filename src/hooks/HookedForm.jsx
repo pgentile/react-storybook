@@ -28,27 +28,27 @@ export default function HookedForm() {
   };
 
   const form = useForm({
-    onSubmit
+    onSubmit,
   });
 
   const firstName = useFormInput("firstName", {
     form,
-    validate: validateName
+    validate: validateName,
   });
 
   const lastName = useFormInput("lastName", {
     form,
-    validate: validateName
+    validate: validateName,
   });
 
   const acceptConditions = useCheckbox("acceptConditions", {
     form,
-    validate: validateChecked
+    validate: validateChecked,
   });
 
   const civility = useRadio("civility", {
     form,
-    validate: validateNotEmpty
+    validate: validateNotEmpty,
   });
 
   return (
@@ -95,7 +95,7 @@ const InputContainer = function InputContainer({ valid, touched, children }) {
   const error = touched && !valid;
 
   const className = bemModifiers("input-container", {
-    error
+    error,
   });
 
   return (
@@ -108,7 +108,7 @@ const InputContainer = function InputContainer({ valid, touched, children }) {
 InputContainer.propTypes = {
   valid: PropTypes.bool.isRequired,
   touched: PropTypes.bool.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 const Row = function Row({ children, className = "", ...otherProps }) {
@@ -121,5 +121,5 @@ const Row = function Row({ children, className = "", ...otherProps }) {
 
 Row.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };

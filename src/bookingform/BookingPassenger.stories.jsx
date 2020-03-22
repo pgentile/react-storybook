@@ -3,12 +3,12 @@ import React from "react";
 import BookingPassenger from "./BookingPassenger";
 
 const defaultParams = {
-  index: 0
+  index: 0,
 };
 
 export default {
   title: "Booking form | BookingPassenger",
-  component: BookingPassenger
+  component: BookingPassenger,
 };
 
 export const base = () => {

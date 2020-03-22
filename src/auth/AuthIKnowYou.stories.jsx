@@ -7,7 +7,7 @@ const onConnectClick = action("onConnectClick");
 
 export default {
   title: "Auth / AuthIKnowYou",
-  component: AuthIKnowYou
+  component: AuthIKnowYou,
 };
 
 export const main = () => {

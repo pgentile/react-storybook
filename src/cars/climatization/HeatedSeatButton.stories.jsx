@@ -4,7 +4,7 @@ import HeatedSeatButton from "./HeatedSeatButton";
 
 export default {
   title: "Cars | Climatization / HeatedSeatButton",
-  component: HeatedSeatButton
+  component: HeatedSeatButton,
 };
 
 export const main = () => {

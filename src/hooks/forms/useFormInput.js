@@ -16,7 +16,7 @@ export default function useFormInput(name, { defaultValue = "", validate = defau
     return validate(value);
   }, [validate, value]);
 
-  const onChange = useCallback(event => setValue(event.target.value), []);
+  const onChange = useCallback((event) => setValue(event.target.value), []);
 
   const onBlur = useCallback(() => touch(), [touch]);
 
@@ -25,7 +25,7 @@ export default function useFormInput(name, { defaultValue = "", validate = defau
       name,
       value,
       onChange,
-      onBlur
+      onBlur,
     };
   }, [name, value, onChange, onBlur]);
 
@@ -37,7 +37,7 @@ export default function useFormInput(name, { defaultValue = "", validate = defau
       hasValue: !!value,
       touched,
       valid,
-      props
+      props,
     };
   }, [name, props, touched, valid, value]);
 }

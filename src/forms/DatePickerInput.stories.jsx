@@ -5,7 +5,7 @@ import DatePickerInput from "./DatePickerInput";
 
 export default {
   title: "Forms / DatePickerInput",
-  component: DatePickerInput
+  component: DatePickerInput,
 };
 
 export const main = () => {
@@ -30,6 +30,6 @@ export const demo = () => {
 
 function DatePickerInputDemo() {
   const [value, setValue] = useState("1990-02-13");
-  const onChange = useCallback(newValue => setValue(newValue), []);
+  const onChange = useCallback((newValue) => setValue(newValue), []);
   return <DatePickerInput value={value} onChange={onChange} />;
 }

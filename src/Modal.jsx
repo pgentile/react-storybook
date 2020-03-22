@@ -15,23 +15,23 @@ export default class Modal extends React.PureComponent {
     title: PropTypes.node,
     visible: PropTypes.bool,
     onClose: PropTypes.func,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {
-    visible: true
+    visible: true,
   };
 
   generatedId = `modal-${Modal.count++}`;
 
-  onOverlayClick = event => {
+  onOverlayClick = (event) => {
     if (this.props.onClose && event.target === event.currentTarget) {
       event.stopPropagation();
       this.props.onClose();
     }
   };
 
-  onCloseButtonClick = event => {
+  onCloseButtonClick = (event) => {
     if (this.props.onClose) {
       event.stopPropagation();
       this.props.onClose();

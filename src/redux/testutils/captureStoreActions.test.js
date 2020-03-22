@@ -5,7 +5,7 @@ import captureStoreActions from "./captureStoreActions";
 test("Capture dispatched actions", () => {
   const storeActionsMiddleware = captureStoreActions();
 
-  const reducer = state => state;
+  const reducer = (state) => state;
   const initialState = {};
   const store = createStore(reducer, initialState, applyMiddleware(storeActionsMiddleware));
 
@@ -15,7 +15,7 @@ test("Capture dispatched actions", () => {
   const actions = storeActionsMiddleware.drainActions();
   expect(actions).toHaveLength(2);
 
-  const actionTypes = actions.map(action => action.type);
+  const actionTypes = actions.map((action) => action.type);
   expect(actionTypes).toEqual(["TEST1", "TEST2"]);
 
   // The first drainActions should clear captured actions

@@ -19,13 +19,13 @@ export default function TravelDetails({ segments }) {
 }
 
 TravelDetails.propTypes = {
-  segments: PropTypes.array.isRequired
+  segments: PropTypes.array.isRequired,
 };
 
 const segmentProps = {
   origin: PropTypes.string.isRequired,
   destination: PropTypes.string.isRequired,
-  duration: PropTypes.number.isRequired
+  duration: PropTypes.number.isRequired,
 };
 
 function TrainSegment({ transporter, equipment, origin, destination, duration, boardingCondition }) {
@@ -47,7 +47,7 @@ TrainSegment.propTypes = {
   ...segmentProps,
   transporter: PropTypes.string.isRequired,
   equipment: PropTypes.string.isRequired,
-  boardingCondition: PropTypes.object
+  boardingCondition: PropTypes.object,
 };
 
 function BoardingCondition({ minDelayBeforeDeparture }) {
@@ -59,7 +59,7 @@ function BoardingCondition({ minDelayBeforeDeparture }) {
 }
 
 BoardingCondition.propTypes = {
-  minDelayBeforeDeparture: PropTypes.number.isRequired
+  minDelayBeforeDeparture: PropTypes.number.isRequired,
 };
 
 function ConnectionSegment({ origin, destination, duration }) {
@@ -77,7 +77,7 @@ function ConnectionSegment({ origin, destination, duration }) {
 }
 
 ConnectionSegment.propTypes = {
-  ...segmentProps
+  ...segmentProps,
 };
 
 function niceDuration(duration) {

@@ -5,7 +5,7 @@ import DonationProposal from "./DonationProposal";
 
 export default {
   title: "Payment | Donation / DonationProposal",
-  component: DonationProposal
+  component: DonationProposal,
 };
 
 export const main = () => {

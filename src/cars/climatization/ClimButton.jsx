@@ -19,5 +19,5 @@ ClimButton.propTypes = {
   topLed: PropTypes.node,
   title: PropTypes.string.isRequired,
   bottomLed: PropTypes.node,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };

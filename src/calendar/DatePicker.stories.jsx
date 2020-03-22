@@ -5,7 +5,7 @@ import DatePicker from "./DatePicker";
 
 export default {
   title: "Calendar / DatePicker",
-  component: DatePicker
+  component: DatePicker,
 };
 
 export const main = () => {
@@ -18,10 +18,10 @@ export const demo = () => {
 
 class DatePickerDemo extends React.PureComponent {
   state = {
-    value: "2018-01-07"
+    value: "2018-01-07",
   };
 
-  onChange = value => {
+  onChange = (value) => {
     this.setState({ value });
   };
 

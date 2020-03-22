@@ -8,13 +8,13 @@ export default function FinalProgressButton(props) {
   const { submitting, submitSucceeded } = useFormState({
     subscription: {
       submitting: true,
-      submitSucceeded: true
-    }
+      submitSucceeded: true,
+    },
   });
 
   return <ProgressButton {...props} loading={submitting} finished={submitSucceeded} />;
 }
 
 FinalProgressButton.propTypes = {
-  ...Button.propTypes
+  ...Button.propTypes,
 };

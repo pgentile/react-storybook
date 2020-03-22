@@ -7,8 +7,8 @@ export default {
   title: "I18n | I18nSamples",
   component: I18nSamples,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => (

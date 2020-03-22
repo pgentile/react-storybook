@@ -17,7 +17,7 @@ export default function useTouched({ form } = {}) {
   return useMemo(() => {
     return {
       touched,
-      touch
+      touch,
     };
   }, [touch, touched]);
 }

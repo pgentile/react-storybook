@@ -5,7 +5,7 @@ import VoucherContainer from "./VoucherContainer";
 
 export default {
   title: "Payment | VoucherContainer",
-  component: VoucherContainer
+  component: VoucherContainer,
 };
 
 export const main = () => {

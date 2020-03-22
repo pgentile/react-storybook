@@ -14,12 +14,12 @@ export default class ExpandableCard extends React.PureComponent {
     ...Card.propTypes,
     expanded: PropTypes.bool,
     expandableContent: PropTypes.node,
-    onFold: PropTypes.func
+    onFold: PropTypes.func,
   };
 
   static defaultProps = {
     ...Card.defaultProps,
-    expanded: false
+    expanded: false,
   };
 
   onFold = () => {

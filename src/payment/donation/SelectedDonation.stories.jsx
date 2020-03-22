@@ -5,7 +5,7 @@ import SelectedDonation from "./SelectedDonation";
 
 export default {
   title: "Payment | Donation / SelectedDonation",
-  component: SelectedDonation
+  component: SelectedDonation,
 };
 
 export const main = () => {

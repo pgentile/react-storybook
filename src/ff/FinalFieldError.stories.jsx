@@ -8,7 +8,7 @@ import sleep from "../utils/sleep";
 
 export default {
   title: "Final Forms components | FinalFieldError",
-  component: FinalFieldError
+  component: FinalFieldError,
 };
 
 export const main = () => {
@@ -16,7 +16,7 @@ export const main = () => {
     await sleep(500);
     if (!name || name.length <= 3) {
       return {
-        name: "Moins de trois caractères"
+        name: "Moins de trois caractères",
       };
     }
   };
@@ -26,17 +26,17 @@ export const main = () => {
 
 function Demo({ handleSubmit }) {
   useField("name", {
-    validate: value => {
+    validate: (value) => {
       if (!value || value.length <= 2) {
         return "Moins de deux caractères";
       }
-    }
+    },
   });
 
   return (
     <form onSubmit={handleSubmit}>
       <FinalFieldContainer name="name" label="Nom">
-        {props => <input {...props} autoComplete="off" autoCorrect="off" />}
+        {(props) => <input {...props} autoComplete="off" autoCorrect="off" />}
       </FinalFieldContainer>
       <FinalFieldError name="name" />
     </form>
@@ -44,5 +44,5 @@ function Demo({ handleSubmit }) {
 }
 
 Demo.propTypes = {
-  handleSubmit: PropTypes.func.isRequired
+  handleSubmit: PropTypes.func.isRequired,
 };

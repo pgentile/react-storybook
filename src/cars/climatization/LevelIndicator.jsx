@@ -7,7 +7,7 @@ import LedIndicator from "./LedIndicator";
 import "./LevelIndicator.scss";
 
 export default function LevelIndicator({ as: Element = "div", className = "", level = 0, color }) {
-  const leds = range(0, 3).map(index => {
+  const leds = range(0, 3).map((index) => {
     return (
       <LedIndicator key={index} as="span" className="level-indicator__led" color={color} enabled={index < level} />
     );
@@ -20,5 +20,5 @@ LevelIndicator.propTypes = {
   as: PropTypes.elementType,
   className: PropTypes.string,
   color: PropTypes.oneOf(["red", "blue", "green", "orange"]).isRequired,
-  level: PropTypes.number
+  level: PropTypes.number,
 };

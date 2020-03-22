@@ -5,7 +5,7 @@ import "./Teleporter.scss";
 
 const Context = createContext({
   nodes: null,
-  setNodes: () => {}
+  setNodes: () => {},
 });
 
 Context.displayName = "Teleporter";
@@ -16,7 +16,7 @@ export function TeleporterProvider({ children }) {
 }
 
 TeleporterProvider.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export function TeleporterSource({ children }) {
@@ -28,7 +28,7 @@ export function TeleporterSource({ children }) {
 }
 
 TeleporterSource.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export function TeleporterTarget() {

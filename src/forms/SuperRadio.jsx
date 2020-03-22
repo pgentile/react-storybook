@@ -15,19 +15,19 @@ export default class SuperRadio extends React.PureComponent {
     description: PropTypes.node,
     help: PropTypes.node,
     checked: PropTypes.bool,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
   };
 
   static counter = 0;
 
   state = {
-    showHelp: false
+    showHelp: false,
   };
 
   inputRef = createRef();
   inputId = `super-radio-${++SuperRadio.counter}`;
 
-  selectRadio = event => {
+  selectRadio = (event) => {
     event.stopPropagation();
 
     const input = this.inputRef.current;
@@ -37,17 +37,17 @@ export default class SuperRadio extends React.PureComponent {
     }
   };
 
-  toggleHelp = event => {
+  toggleHelp = (event) => {
     event.stopPropagation();
 
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return {
-        showHelp: !prevState.showHelp
+        showHelp: !prevState.showHelp,
       };
     });
   };
 
-  stopPropagation = event => {
+  stopPropagation = (event) => {
     event.stopPropagation();
   };
 
@@ -56,7 +56,7 @@ export default class SuperRadio extends React.PureComponent {
     const { showHelp } = this.state;
 
     const realClassName = bemModifiers("super-radio", {
-      checked
+      checked,
     });
 
     return (

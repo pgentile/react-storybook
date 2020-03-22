@@ -7,7 +7,7 @@ import "./Flippable.stories.scss";
 
 export default {
   title: "Flippable",
-  component: Flippable
+  component: Flippable,
 };
 
 export const main = () => {
@@ -16,13 +16,13 @@ export const main = () => {
 
 class FlippableDemo extends React.PureComponent {
   state = {
-    flipped: false
+    flipped: false,
   };
 
   onToggleFace = () => {
-    this.setState(state => {
+    this.setState((state) => {
       return {
-        flipped: !state.flipped
+        flipped: !state.flipped,
       };
     });
   };

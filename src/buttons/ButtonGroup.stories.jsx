@@ -4,7 +4,7 @@ import ButtonGroup, { ButtonInGroup } from "./ButtonGroup";
 
 export default {
   title: "Buttons / ButtonGroup",
-  component: ButtonGroup
+  component: ButtonGroup,
 };
 
 export const main = () => {

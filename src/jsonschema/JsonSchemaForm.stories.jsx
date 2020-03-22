@@ -8,14 +8,14 @@ import UpdatePassengersForm from "./UpdatePassengersForm";
 
 const actions = {
   onSubmit: action("submit"),
-  onBlur: action("blur")
+  onBlur: action("blur"),
 };
 
 export default {
   title: "JsonSchemaForm",
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const searchOutwardForm = () => {

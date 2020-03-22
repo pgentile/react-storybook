@@ -8,18 +8,18 @@ export default class Flippable extends React.PureComponent {
   static propTypes = {
     foreground: PropTypes.node.isRequired,
     background: PropTypes.node.isRequired,
-    flipped: PropTypes.bool
+    flipped: PropTypes.bool,
   };
 
   static defaultProps = {
-    flipped: false
+    flipped: false,
   };
 
   render() {
     const { foreground, background, flipped } = this.props;
 
     const realClassName = bemModifiers("flippable", {
-      flipped
+      flipped,
     });
 
     return (

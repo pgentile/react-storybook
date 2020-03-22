@@ -15,7 +15,7 @@ export default function useRadio(name, { defaultValue = "", validate = defaultVa
   const valid = useMemo(() => validate(value), [validate, value]);
 
   const onChange = useCallback(
-    event => {
+    (event) => {
       setValue(event.target.value);
       touch();
     },
@@ -23,12 +23,12 @@ export default function useRadio(name, { defaultValue = "", validate = defaultVa
   );
 
   const propsFor = useCallback(
-    targetValue => {
+    (targetValue) => {
       return {
         name,
         value: targetValue,
         checked: targetValue === value,
-        onChange
+        onChange,
       };
     },
     [name, value, onChange]
@@ -42,7 +42,7 @@ export default function useRadio(name, { defaultValue = "", validate = defaultVa
       value,
       hasValue: !!value,
       touched,
-      propsFor
+      propsFor,
     };
   }, [name, propsFor, touched, valid, value]);
 }

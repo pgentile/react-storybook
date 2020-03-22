@@ -14,13 +14,13 @@ export default class DatePicker extends React.PureComponent {
     value: PropTypes.string.isRequired,
     minDate: PropTypes.any,
     maxDate: PropTypes.any,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
   };
 
   static defaultProps = {};
 
   state = {
-    viewDate: null
+    viewDate: null,
   };
 
   calendarRef = React.createRef();
@@ -29,7 +29,7 @@ export default class DatePicker extends React.PureComponent {
     this.setState(
       (prevState, props) => {
         return {
-          viewDate: props.value
+          viewDate: props.value,
         };
       },
       () => {
@@ -40,7 +40,7 @@ export default class DatePicker extends React.PureComponent {
     );
   }
 
-  onChangeViewMonth = amount => {
+  onChangeViewMonth = (amount) => {
     this.setState((prevState, props) => {
       const { value } = props;
       const { viewDate } = prevState;
@@ -48,7 +48,7 @@ export default class DatePicker extends React.PureComponent {
       const nextViewDate = addMonths(parse(currentDate, "yyyy-MM-dd", new Date()), amount);
 
       return {
-        viewDate: format(nextViewDate, "yyyy-MM-dd")
+        viewDate: format(nextViewDate, "yyyy-MM-dd"),
       };
     });
   };
@@ -59,13 +59,13 @@ export default class DatePicker extends React.PureComponent {
 
   onTodayClick = () => {
     this.setState({
-      viewDate: new Date()
+      viewDate: new Date(),
     });
   };
 
-  onSelect = date => {
+  onSelect = (date) => {
     this.setState({
-      viewDate: date
+      viewDate: date,
     });
 
     this.props.onChange(date);

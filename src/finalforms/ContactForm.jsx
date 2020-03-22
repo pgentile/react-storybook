@@ -22,31 +22,31 @@ export default function ContactForm() {
   const [contactInfos, setContactInfos] = useState(() => ({
     recipient: {
       firstName: "Jean",
-      lastName: "Bon"
+      lastName: "Bon",
     },
     passengers: [
       {
         passengerId: "aaa-111",
-        deliveryMode: "eticket"
+        deliveryMode: "eticket",
       },
       {
         passengerId: "bbb-222",
-        deliveryMode: "station"
+        deliveryMode: "station",
       },
       {
         passengerId: "ccc-333",
-        deliveryMode: "station"
-      }
-    ]
+        deliveryMode: "station",
+      },
+    ],
   }));
 
-  const onFormSubmit = useCallback(async formData => {
+  const onFormSubmit = useCallback(async (formData) => {
     await sleep(800);
     if (Math.random() < 0.5) {
       return {
         // FIXME No i18n context here
         [FORM_ERROR]: "Impossible d'envoyer le formulaire",
-        acceptConditions: "Conditions vraiment acceptées ?"
+        acceptConditions: "Conditions vraiment acceptées ?",
       };
     }
 
@@ -70,8 +70,8 @@ function ContactFormInternal({ handleSubmit }) {
     subscription: {
       submitFailed: true,
       submitError: true,
-      initialValues: true
-    }
+      initialValues: true,
+    },
   });
 
   return (
@@ -101,11 +101,11 @@ function RecipientForm() {
   const { formatMessage } = useIntl();
 
   useField("recipient.firstName", {
-    validate: validateName(formatMessage)
+    validate: validateName(formatMessage),
   });
 
   useField("recipient.lastName", {
-    validate: validateName(formatMessage)
+    validate: validateName(formatMessage),
   });
 
   return (
@@ -115,10 +115,10 @@ function RecipientForm() {
       </h1>
       <CivilityForm fieldName="recipient.civility" validate={validateCivility(formatMessage)} />
       <FinalFieldContainer name="recipient.firstName" label={formatMessage(messages.firstName)}>
-        {fieldProps => <InputField {...fieldProps} />}
+        {(fieldProps) => <InputField {...fieldProps} />}
       </FinalFieldContainer>
       <FinalFieldContainer name="recipient.lastName" label={formatMessage(messages.lastName)}>
-        {fieldProps => <InputField {...fieldProps} />}
+        {(fieldProps) => <InputField {...fieldProps} />}
       </FinalFieldContainer>
     </section>
   );
@@ -131,11 +131,11 @@ function PassengerForm({ passengerIndex }) {
   const deliveryModeFieldName = `passengers.${passengerIndex}.deliveryMode`;
   const eticketDeliveryMode = useField(deliveryModeFieldName, {
     type: "radio",
-    value: "eticket"
+    value: "eticket",
   });
   const stationDeliveryMode = useField(deliveryModeFieldName, {
     type: "radio",
-    value: "station"
+    value: "station",
   });
 
   const validateNameIfETicket = (name, allFields) => {
@@ -153,11 +153,11 @@ function PassengerForm({ passengerIndex }) {
   };
 
   useField(`passengers.${passengerIndex}.firstName`, {
-    validate: validateNameIfETicket
+    validate: validateNameIfETicket,
   });
 
   useField(`passengers.${passengerIndex}.lastName`, {
-    validate: validateNameIfETicket
+    validate: validateNameIfETicket,
   });
 
   const form = useForm();
@@ -166,13 +166,13 @@ function PassengerForm({ passengerIndex }) {
   const passengerLastNameVisited = useFieldVisitedState(`passengers.${passengerIndex}.lastName`);
   const passengerNameVisited = passengerFirstNameVisited || passengerLastNameVisited;
 
-  useFieldValueListener("recipient.firstName", newValue => {
+  useFieldValueListener("recipient.firstName", (newValue) => {
     if (!passengerNameVisited) {
       form.change(`passengers.${passengerIndex}.firstName`, newValue);
     }
   });
 
-  useFieldValueListener("recipient.lastName", newValue => {
+  useFieldValueListener("recipient.lastName", (newValue) => {
     if (!passengerNameVisited) {
       form.change(`passengers.${passengerIndex}.lastName`, newValue);
     }
@@ -194,10 +194,10 @@ function PassengerForm({ passengerIndex }) {
       <Expandable expanded={eticketDeliveryMode.input.checked}>
         <CivilityForm fieldName={`passengers.${passengerIndex}.civility`} validate={validateCivilityIfETicket} />
         <FinalFieldContainer name={`passengers.${passengerIndex}.firstName`} label={formatMessage(messages.firstName)}>
-          {fieldProps => <InputField {...fieldProps} />}
+          {(fieldProps) => <InputField {...fieldProps} />}
         </FinalFieldContainer>
         <FinalFieldContainer name={`passengers.${passengerIndex}.lastName`} label={formatMessage(messages.lastName)}>
-          {fieldProps => <InputField {...fieldProps} />}
+          {(fieldProps) => <InputField {...fieldProps} />}
         </FinalFieldContainer>
       </Expandable>
     </section>
@@ -210,11 +210,11 @@ function AcceptConditionsForm() {
 
   const acceptConditions = useField("acceptConditions", {
     type: "checkbox",
-    validate: value => {
+    validate: (value) => {
       if (!value) {
         return formatMessage(messages.missingAcceptConditions);
       }
-    }
+    },
   });
 
   return (
@@ -234,12 +234,12 @@ function CivilityForm({ fieldName, validate }) {
 
   const civility = useField(fieldName, {
     validate,
-    validateFields: []
+    validateFields: [],
   });
 
   const civilityVisited = civility.meta.visited;
   const isRecipient = fieldName === "recipient.civility";
-  useFieldValueListener("recipient.civility", newValue => {
+  useFieldValueListener("recipient.civility", (newValue) => {
     if (!isRecipient && !civilityVisited) {
       form.change(fieldName, newValue);
     }
@@ -247,12 +247,12 @@ function CivilityForm({ fieldName, validate }) {
 
   const mister = useField(fieldName, {
     type: "radio",
-    value: "MISTER"
+    value: "MISTER",
   });
 
   const madam = useField(fieldName, {
     type: "radio",
-    value: "MADAM"
+    value: "MADAM",
   });
 
   return (
@@ -272,11 +272,11 @@ function CivilityForm({ fieldName, validate }) {
 
 CivilityForm.propTypes = {
   fieldName: PropTypes.string.isRequired,
-  validate: PropTypes.func.isRequired
+  validate: PropTypes.func.isRequired,
 };
 
 function validateCivility(formatMessage) {
-  return civility => {
+  return (civility) => {
     if (!civility) {
       return formatMessage(messages.civilityUndefined);
     }
@@ -284,7 +284,7 @@ function validateCivility(formatMessage) {
 }
 
 function validateName(formatMessage) {
-  return name => {
+  return (name) => {
     if (!name) {
       return formatMessage(messages.nameCantBeEmpty);
     }
@@ -301,52 +301,52 @@ function validateName(formatMessage) {
 const messages = defineMessages({
   firstName: {
     id: "firstName",
-    defaultMessage: "Prénom"
+    defaultMessage: "Prénom",
   },
   lastName: {
     id: "lastName",
-    defaultMessage: "Nom"
+    defaultMessage: "Nom",
   },
   passengerByIndex: {
     id: "passenger.byIndex",
-    defaultMessage: "Passager n°{passengerCount}"
+    defaultMessage: "Passager n°{passengerCount}",
   },
   recipient: {
     id: "recipient",
-    defaultMessage: "Récepteur"
+    defaultMessage: "Récepteur",
   },
   nameCantBeEmpty: {
     id: "nameCantBeEmpty",
-    defaultMessage: "Le nom ne peut pas être vide"
+    defaultMessage: "Le nom ne peut pas être vide",
   },
   nameTooSmall: {
     id: "nameTooSmall",
-    defaultMessage: "Nom trop petit"
+    defaultMessage: "Nom trop petit",
   },
   nameTooLong: {
     id: "nameTooLong",
-    defaultMessage: "Nom trop long"
+    defaultMessage: "Nom trop long",
   },
   eTicket: {
     id: "ticket.eticket",
-    defaultMessage: "Billet électronique"
+    defaultMessage: "Billet électronique",
   },
   ticketAtStation: {
     id: "ticket.atStation",
-    defaultMessage: "Billet en gare"
+    defaultMessage: "Billet en gare",
   },
   acceptConditions: {
     id: "acceptConditions",
-    defaultMessage: "Accepter les conditions de vente"
+    defaultMessage: "Accepter les conditions de vente",
   },
   missingAcceptConditions: {
     id: "missingAcceptConditions",
-    defaultMessage: "Vous devez accepter les conditions de vente"
+    defaultMessage: "Vous devez accepter les conditions de vente",
   },
   civilityUndefined: {
     id: "civilityUndefined",
-    defaultMessage: "Civilité non définie"
-  }
+    defaultMessage: "Civilité non définie",
+  },
 });
 
 function useFieldVisitedState(fieldName) {
@@ -356,11 +356,11 @@ function useFieldVisitedState(fieldName) {
   useEffect(() => {
     const unregister = form.registerField(
       fieldName,
-      fieldState => {
+      (fieldState) => {
         visitedRef.current = fieldState.visited;
       },
       {
-        visited: true
+        visited: true,
       }
     );
 
@@ -382,11 +382,11 @@ function useFieldValueListener(fieldName, listener) {
   useEffect(() => {
     const unregister = form.registerField(
       fieldName,
-      fieldState => {
+      (fieldState) => {
         listenerRef.current(fieldState.value);
       },
       {
-        value: true
+        value: true,
       }
     );
     return () => unregister();

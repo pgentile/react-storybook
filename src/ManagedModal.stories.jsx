@@ -6,8 +6,8 @@ export default {
   title: "ManagedModal",
   component: ManagedModal,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {
@@ -17,21 +17,21 @@ export const main = () => {
 const initialState = {
   yo: true,
   lo: true,
-  zo: false
+  zo: false,
 };
 
 class ManagedModalDemo extends React.PureComponent {
   state = initialState;
 
-  openModal = name => {
+  openModal = (name) => {
     this.setState({
-      [name]: true
+      [name]: true,
     });
   };
 
-  closeModal = name => {
+  closeModal = (name) => {
     this.setState({
-      [name]: false
+      [name]: false,
     });
   };
 

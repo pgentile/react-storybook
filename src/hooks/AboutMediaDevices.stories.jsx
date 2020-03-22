@@ -4,7 +4,7 @@ import AboutMediaDevices from "./AboutMediaDevices";
 
 export default {
   title: "Hooks / AboutMediaDevices",
-  component: AboutMediaDevices
+  component: AboutMediaDevices,
 };
 
 export const main = () => {

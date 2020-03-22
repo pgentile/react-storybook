@@ -9,7 +9,7 @@ export default {
   title: "ModalContainerConnected",
   component: ModalContainerConnected,
   decorators: [
-    story => {
+    (story) => {
       const store = createDefaultStore();
 
       setTimeout(() => {
@@ -25,11 +25,11 @@ export default {
       }, 30 * 1000);
 
       return <Provider store={store}>{story()}</Provider>;
-    }
+    },
   ],
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {

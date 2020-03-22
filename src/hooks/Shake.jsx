@@ -43,5 +43,5 @@ Shake.propTypes = {
   as: PropTypes.elementType,
   children: PropTypes.node,
   enabled: PropTypes.bool,
-  revision: PropTypes.number
+  revision: PropTypes.number,
 };

@@ -5,7 +5,7 @@ import "./ExchangeRate.scss";
 
 const ExchangeRateContext = createContext({
   baseCurrency: null,
-  computeRate: () => null
+  computeRate: () => null,
 });
 
 ExchangeRateContext.displayName = "ExchangeRate";
@@ -50,7 +50,7 @@ export default function ExchangeRate({ children, baseCurrency: defaultBaseCurren
 
 ExchangeRate.propTypes = {
   children: PropTypes.node,
-  baseCurrency: PropTypes.string
+  baseCurrency: PropTypes.string,
 };
 
 ExchangeRate.defaultProps = {};

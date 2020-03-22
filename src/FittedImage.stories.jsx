@@ -6,7 +6,7 @@ import FittedImage from "./FittedImage";
 export default {
   title: "FittedImage",
   component: FittedImage,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const demo = () => {

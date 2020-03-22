@@ -2,9 +2,9 @@ import createScope from "./createScope";
 
 // Selectors
 
-const scope = createScope(state => state.connectedUser);
+const scope = createScope((state) => state.connectedUser);
 
-export const selectCards = scope(connectedUser => connectedUser.cards);
+export const selectCards = scope((connectedUser) => connectedUser.cards);
 
 // Actions
 
@@ -14,15 +14,15 @@ export function loadCards(cards) {
   return {
     type: LOAD_CARDS,
     payload: Promise.resolve({
-      cards
-    })
+      cards,
+    }),
   };
 }
 
 // Reducer
 
 const initialState = {
-  cards: []
+  cards: [],
 };
 
 export default (state = initialState, action) => {
@@ -33,7 +33,7 @@ export default (state = initialState, action) => {
       const { cards } = payload;
       return {
         ...state,
-        cards
+        cards,
       };
     }
     default:

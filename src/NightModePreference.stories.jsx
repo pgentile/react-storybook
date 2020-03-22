@@ -4,7 +4,7 @@ import NightModePreference from "./NightModePreference";
 
 export default {
   title: "NightModePreference",
-  component: NightModePreference
+  component: NightModePreference,
 };
 
 export const main = () => {

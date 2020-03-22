@@ -7,19 +7,19 @@ import RegistredCreditCard from "./RegistredCreditCard";
 const actions = {
   onShowCvv: action("show CVV"),
   onHideCvv: action("hide CVV"),
-  onUseCard: action("use card")
+  onUseCard: action("use card"),
 };
 
 const totalPrice = {
   value: 100,
-  currency: "EUR"
+  currency: "EUR",
 };
 
 const cardBrands = ["visa", "maestro"];
 
 const stories = storiesOf("Payment | RegistredCreditCard", module);
 
-cardBrands.forEach(cardBrand => {
+cardBrands.forEach((cardBrand) => {
   const props = {
     ...actions,
     totalPrice,
@@ -27,8 +27,8 @@ cardBrands.forEach(cardBrand => {
       id: "1",
       brand: cardBrand,
       maskedNumber: "#### #### #### 111#",
-      expirationDate: "2031-01"
-    }
+      expirationDate: "2031-01",
+    },
   };
 
   stories.add(cardBrand, () => {

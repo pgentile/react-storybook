@@ -4,7 +4,7 @@ import Toggle from "./Toggle";
 
 export default {
   title: "Forms / Toggle",
-  component: Toggle
+  component: Toggle,
 };
 
 export const unchecked = () => {
@@ -30,7 +30,7 @@ export const readOnlyStory = () => {
 function ToggleDemo() {
   const [checked, setChecked] = useState(false);
   const onClick = useCallback(() => {
-    setChecked(currentValue => !currentValue);
+    setChecked((currentValue) => !currentValue);
   }, []);
 
   return <Toggle checked={checked} onClick={onClick} value="demo" />;

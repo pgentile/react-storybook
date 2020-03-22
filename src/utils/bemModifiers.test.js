@@ -11,7 +11,7 @@ describe("BEM modifiers class name generator", () => {
     const className = bemModifiers("toto", {
       tutu: true,
       tata: false,
-      tete: true
+      tete: true,
     });
 
     expect(className).toEqual("toto toto--tutu toto--tete");

@@ -4,7 +4,7 @@ import LevelIndicator from "./LevelIndicator";
 
 export default {
   title: "Cars | Core / LevelIndicator",
-  component: LevelIndicator
+  component: LevelIndicator,
 };
 
 export const level0 = () => {

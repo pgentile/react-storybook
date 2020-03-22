@@ -4,7 +4,7 @@ import WindshieldButton from "./WindshieldButton";
 
 export default {
   title: "Cars | Climatization / WindshieldButton",
-  component: WindshieldButton
+  component: WindshieldButton,
 };
 
 export const main = () => {

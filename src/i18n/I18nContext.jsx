@@ -36,7 +36,7 @@ const loadMessagesForLocale = async (loadMessagesFn, locale) => {
 const I18nContext = createContext({
   locale: "fr-FR",
   setLocale: noop,
-  loading: false
+  loading: false,
 });
 
 I18nContext.displayName = "I18n";
@@ -47,13 +47,13 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
   const [state, setState] = useState(() => ({
     loading: !ALWAYS_READY,
     locale: defaultLocale,
-    messages: {}
+    messages: {},
   }));
 
   const load = async () => {
     setState({
       ...state,
-      loading: true
+      loading: true,
     });
 
     await loadPolyfills(locale);
@@ -62,7 +62,7 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
     setState({
       loading: false,
       locale,
-      messages
+      messages,
     });
     setReady(true);
   };
@@ -95,7 +95,7 @@ export function I18nProvider({ defaultLocale, loadMessages, children }) {
 I18nProvider.propTypes = {
   defaultLocale: PropTypes.string.isRequired,
   loadMessages: PropTypes.func,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export function useLocale() {

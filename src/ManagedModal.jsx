@@ -8,7 +8,7 @@ const ManagedModalContext = createContext({
   modals: [],
   currentModal: null,
   addModal: noop,
-  removeModal: noop
+  removeModal: noop,
 });
 
 ManagedModalContext.displayName = "ManagedModal";
@@ -18,7 +18,7 @@ export default class ManagedModal extends React.Component {
 
   static propTypes = {
     name: PropTypes.string.isRequired,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {};
@@ -50,24 +50,24 @@ export default class ManagedModal extends React.Component {
 
 export class ManagedModalContainer extends React.Component {
   static propTypes = {
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
-  addModal = name => {
-    this.setState(prevState => {
+  addModal = (name) => {
+    this.setState((prevState) => {
       const { modals: prevModals } = prevState;
       const modals = uniq([...prevModals, name]);
       return {
         modals,
-        currentModal: name
+        currentModal: name,
       };
     });
   };
 
-  removeModal = name => {
-    this.setState(prevState => {
+  removeModal = (name) => {
+    this.setState((prevState) => {
       const { modals: prevModals } = prevState;
-      const modals = prevModals.filter(modal => modal !== name);
+      const modals = prevModals.filter((modal) => modal !== name);
 
       if (prevModals.length === modals.length) {
         return null;
@@ -77,7 +77,7 @@ export class ManagedModalContainer extends React.Component {
 
       return {
         modals,
-        currentModal
+        currentModal,
       };
     });
   };
@@ -86,7 +86,7 @@ export class ManagedModalContainer extends React.Component {
     modals: [],
     currentModal: null,
     addModal: this.addModal,
-    removeModal: this.removeModal
+    removeModal: this.removeModal,
   };
 
   render() {

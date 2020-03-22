@@ -4,7 +4,7 @@ import AdaptativeList from "./AdaptativeList";
 
 export default {
   title: "AdaptativeList",
-  component: AdaptativeList
+  component: AdaptativeList,
 };
 
 export const main = () => {
@@ -17,7 +17,7 @@ export const main = () => {
     <Fragment key={4}>
       Ligne 4<br />
       Et une sous-ligne
-    </Fragment>
+    </Fragment>,
   ];
 
   return <AdaptativeList items={items} />;

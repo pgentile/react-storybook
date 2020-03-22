@@ -5,7 +5,7 @@ import DateInput from "./DateInput";
 
 export default {
   title: "Forms / DateInput",
-  component: DateInput
+  component: DateInput,
 };
 
 export const main = () => {

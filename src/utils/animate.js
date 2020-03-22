@@ -1,8 +1,8 @@
 export default async function animate(duration, callback) {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     let startTime = null;
 
-    const step = timestamp => {
+    const step = (timestamp) => {
       if (startTime === null) {
         startTime = timestamp;
       }

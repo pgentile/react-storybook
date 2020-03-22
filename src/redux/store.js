@@ -15,11 +15,11 @@ export function createDefaultStore() {
     payment,
     connectedUser,
     modals,
-    navigatorStatus
+    navigatorStatus,
   };
 
   return createStore(reducers, {
-    extraMiddlewares: [loaderMiddleware(), navigatorStatusMiddleware()]
+    extraMiddlewares: [loaderMiddleware(), navigatorStatusMiddleware()],
   });
 }
 

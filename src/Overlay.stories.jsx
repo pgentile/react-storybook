@@ -7,8 +7,8 @@ export default {
   title: "Overlay",
   component: Overlay,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {

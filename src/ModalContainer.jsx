@@ -7,7 +7,7 @@ import PaymentProcessingModal from "./payment/PaymentProcessingModal";
 export default class ModalContainer extends React.PureComponent {
   static propTypes = {
     currentModal: PropTypes.string,
-    onClose: PropTypes.func.isRequired
+    onClose: PropTypes.func.isRequired,
   };
 
   onClose = () => {

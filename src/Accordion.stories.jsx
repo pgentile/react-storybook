@@ -5,7 +5,7 @@ import Accordion, { AccordionPanel } from "./Accordion";
 
 export default {
   title: "Accordion",
-  component: Accordion
+  component: Accordion,
 };
 
 export const onlyOnePanelExpandable = () => {
@@ -33,5 +33,5 @@ function AccordionDemo({ uniqueExpandable }) {
 }
 
 AccordionDemo.propTypes = {
-  uniqueExpandable: PropTypes.bool.isRequired
+  uniqueExpandable: PropTypes.bool.isRequired,
 };

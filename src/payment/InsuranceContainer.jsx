@@ -6,7 +6,7 @@ import Insurance from "./Insurance";
 export default class InsuranceContainer extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    onAddInsurance: Insurance.propTypes.onAddInsurance
+    onAddInsurance: Insurance.propTypes.onAddInsurance,
   };
 
   render() {

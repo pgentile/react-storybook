@@ -10,7 +10,7 @@ const ALT_THEME = "red";
 
 const ThemeContext = createContext({
   theme: DEFAULT_THEME,
-  switchTheme: noop
+  switchTheme: noop,
 });
 
 ThemeContext.displayName = "Theme";
@@ -38,7 +38,7 @@ function ThemedContainer() {
   const { theme, switchTheme } = useContext(ThemeContext);
 
   const className = bemModifiers("themed-component", {
-    [theme]: true
+    [theme]: true,
   });
 
   return (

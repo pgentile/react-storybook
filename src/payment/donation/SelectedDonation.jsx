@@ -11,13 +11,13 @@ export default class SelectedDonation extends React.PureComponent {
     className: PropTypes.string,
     donation: PropTypes.shape({
       code: PropTypes.string.isRequired,
-      association: PropTypes.string.isRequired
+      association: PropTypes.string.isRequired,
     }).isRequired,
-    onCancelDonation: PropTypes.func.isRequired
+    onCancelDonation: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    className: ""
+    className: "",
   };
 
   render() {

@@ -5,27 +5,27 @@ import BookingPassengers from "./BookingPassengers";
 const initialPassengers = [
   {
     id: "1",
-    name: "Jean Bon"
+    name: "Jean Bon",
   },
   {
     id: "2",
-    name: "Debbie Loss"
+    name: "Debbie Loss",
   },
   {
-    id: "3"
+    id: "3",
   },
   {
     id: "4",
-    name: "Guy Gnol"
+    name: "Guy Gnol",
   },
   {
-    id: "5"
-  }
+    id: "5",
+  },
 ];
 
 export default {
   title: "Booking form | BookingPassengers",
-  component: BookingPassengers
+  component: BookingPassengers,
 };
 
 export const main = () => {

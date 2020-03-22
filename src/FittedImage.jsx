@@ -5,11 +5,11 @@ import "./FittedImage.scss";
 
 export default class FittedImage extends React.PureComponent {
   static propTypes = {
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
-    className: ""
+    className: "",
   };
 
   render() {

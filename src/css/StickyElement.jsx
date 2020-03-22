@@ -19,5 +19,5 @@ export default function StickyElement({ top = 0 }) {
 }
 
 StickyElement.propTypes = {
-  top: PropTypes.number.isRequired
+  top: PropTypes.number.isRequired,
 };

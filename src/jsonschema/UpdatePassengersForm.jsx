@@ -6,7 +6,7 @@ import schema from "./schemas/updatePassengers.request.json";
 
 export default class UpdatePassengersForm extends React.PureComponent {
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
   };
 
   render() {

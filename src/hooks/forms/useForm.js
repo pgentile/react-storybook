@@ -16,25 +16,25 @@ export default function useForm({ onSubmit = noop } = {}) {
       collectDataFns[name] = f;
     };
 
-    const deregisterCollectDataFn = name => {
+    const deregisterCollectDataFn = (name) => {
       delete collectDataFns[name];
     };
 
-    const registerOnSubmit = f => {
+    const registerOnSubmit = (f) => {
       submitCallbacks.push(f);
     };
 
-    const deregisterOnSubmit = f => {
+    const deregisterOnSubmit = (f) => {
       console.info("FIXME Please", f);
     };
 
-    const onSubmitCallback = event => {
+    const onSubmitCallback = (event) => {
       console.info("Submit", event);
 
-      submitCallbacks.forEach(f => f());
+      submitCallbacks.forEach((f) => f());
 
       const data = {};
-      Object.entries(collectDataFns).forEach(entry => {
+      Object.entries(collectDataFns).forEach((entry) => {
         const [key, fn] = entry;
         data[key] = fn();
       });
@@ -47,7 +47,7 @@ export default function useForm({ onSubmit = noop } = {}) {
       deregisterCollectDataFn,
       registerOnSubmit,
       deregisterOnSubmit,
-      onSubmit: onSubmitCallback
+      onSubmit: onSubmitCallback,
     };
   }, []);
 }

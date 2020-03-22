@@ -4,7 +4,7 @@ import AutoClimButton from "./AutoClimButton";
 
 export default {
   title: "Cars | Climatization / AutoClimButton",
-  component: AutoClimButton
+  component: AutoClimButton,
 };
 
 export const main = () => {

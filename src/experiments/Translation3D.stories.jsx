@@ -6,7 +6,7 @@ import Translation3D from "./Translation3D";
 export default {
   title: "Experiments | Translation3D",
   component: Translation3D,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const main = () => {

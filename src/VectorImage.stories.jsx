@@ -4,7 +4,7 @@ import VectorImage from "./VectorImage";
 
 export default {
   title: "VectorImage",
-  component: VectorImage
+  component: VectorImage,
 };
 
 export const main = () => {

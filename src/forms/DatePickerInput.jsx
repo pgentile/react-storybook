@@ -18,16 +18,16 @@ export default class DatePickerInput extends React.PureComponent {
     readOnly: PropTypes.bool,
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func,
-    onFocus: PropTypes.func
+    onFocus: PropTypes.func,
   };
 
   static defaultProps = {
     className: "",
-    tabIndex: 0
+    tabIndex: 0,
   };
 
   state = {
-    focus: false
+    focus: false,
   };
 
   ref = React.createRef();
@@ -42,7 +42,7 @@ export default class DatePickerInput extends React.PureComponent {
     });
   };
 
-  onDatePickerChange = value => {
+  onDatePickerChange = (value) => {
     this.setState({ focus: false });
 
     const { onChange } = this.props;
@@ -64,11 +64,11 @@ export default class DatePickerInput extends React.PureComponent {
       error,
       disabled,
       focus,
-      "read-only": readOnly
+      "read-only": readOnly,
     });
 
     const pickerPanelClassName = bemModifiers("date-picker-input__picker-panel", {
-      focus: focus && !disabled & !readOnly
+      focus: focus && !disabled & !readOnly,
     });
 
     return (

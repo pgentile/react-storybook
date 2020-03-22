@@ -14,8 +14,8 @@ const billetsItem = {
   label: "Vos billets",
   price: {
     value: 109.8,
-    currency: "EUR"
-  }
+    currency: "EUR",
+  },
 };
 
 const assurancesItem = {
@@ -24,8 +24,8 @@ const assurancesItem = {
   label: "Vos assurances",
   price: {
     value: 5.9,
-    currency: "EUR"
-  }
+    currency: "EUR",
+  },
 };
 
 const voucherItem = {
@@ -34,10 +34,10 @@ const voucherItem = {
   label: "Votre code promotion",
   price: {
     value: -2.0,
-    currency: "EUR"
+    currency: "EUR",
   },
   code: "RADIN",
-  onCancel: cancelVoucher
+  onCancel: cancelVoucher,
 };
 
 const donationItem = {
@@ -46,11 +46,11 @@ const donationItem = {
   label: "Votre don",
   price: {
     value: 1.0,
-    currency: "EUR"
+    currency: "EUR",
   },
   code: "code",
   association: "Médecins sans frontières",
-  onCancel: cancelDonation
+  onCancel: cancelDonation,
 };
 
 const onActions = {
@@ -59,12 +59,12 @@ const onActions = {
   onAddInsurance: action("add insurance"),
   onCancelInsurance: cancelInsurance,
   onAddDonation: action("add donation"),
-  onCancelDonation: cancelDonation
+  onCancelDonation: cancelDonation,
 };
 
 export default {
   title: "Payment | OrderEditor",
-  component: OrderEditor
+  component: OrderEditor,
 };
 
 export const billetsUniquement = () => {

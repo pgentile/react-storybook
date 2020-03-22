@@ -4,7 +4,7 @@ import Label from "./Label";
 
 export default {
   title: "Forms / Label",
-  component: Label
+  component: Label,
 };
 
 export const main = () => {

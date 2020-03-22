@@ -10,7 +10,7 @@ export default function HooksComments({ referenceId }) {
 
   useEffect(() => loadComments(referenceId), [referenceId, loadComments]);
 
-  const commentElements = comments.map(comment => {
+  const commentElements = comments.map((comment) => {
     return <li key={comment.id}>{comment.text}</li>;
   });
 
@@ -18,7 +18,7 @@ export default function HooksComments({ referenceId }) {
 }
 
 HooksComments.propTypes = {
-  referenceId: PropTypes.string.isRequired
+  referenceId: PropTypes.string.isRequired,
 };
 
 function useComments() {
@@ -26,10 +26,10 @@ function useComments() {
     comments: [],
     fetching: false,
     fetched: false,
-    failed: false
+    failed: false,
   });
 
-  const loadComments = useCallback(async referenceId => {
+  const loadComments = useCallback(async (referenceId) => {
     dispatch({ fetching: true, failed: false });
     try {
       await sleep(3000);
@@ -37,16 +37,16 @@ function useComments() {
       const comments = [
         {
           id: "abc",
-          text: "Hello, " + referenceId
+          text: "Hello, " + referenceId,
         },
         {
           id: "def",
-          text: "Coucou"
+          text: "Coucou",
         },
         {
           id: "ghi",
-          text: "Barlou"
-        }
+          text: "Barlou",
+        },
       ];
 
       dispatch({ comments });
@@ -62,7 +62,7 @@ function useComments() {
 
   return {
     comments: state.comments,
-    loadComments
+    loadComments,
   };
 }
 

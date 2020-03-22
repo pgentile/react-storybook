@@ -36,7 +36,7 @@ async function loadMessages(language) {
       terms_of_service: `
         If you validate this page, this means that you accept
         our <termsOfServiceLink>terms of service</termsOfServiceLink>.
-      `
+      `,
     };
   }
 
@@ -62,7 +62,7 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
           defaultMessage="Salut, <b>{userName}</b>&nbsp;!"
           values={{
             b,
-            userName
+            userName,
           }}
         />
       </p>
@@ -132,7 +132,7 @@ I18nMessages.propTypes = {
   userName: PropTypes.string.isRequired,
   tripCount: PropTypes.number.isRequired,
   cardCount: PropTypes.number.isRequired,
-  gender: PropTypes.oneOf(["male", "female"]).isRequired
+  gender: PropTypes.oneOf(["male", "female"]).isRequired,
 };
 
 function b(...chunks) {
@@ -152,5 +152,5 @@ function TermsOfServiceLink({ children }) {
 }
 
 TermsOfServiceLink.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

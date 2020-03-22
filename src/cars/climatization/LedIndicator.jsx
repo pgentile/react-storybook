@@ -11,13 +11,13 @@ export default function LedIndicator({
   enabled = false,
   size = "normal",
   blink = false,
-  color
+  color,
 }) {
   const elementClassName = bemModifiers("led-indicator", {
     ["color-" + color]: true,
     ["size-" + size]: true,
     enabled,
-    blink
+    blink,
   });
   return <Element className={elementClassName + " " + className} />;
 }
@@ -28,5 +28,5 @@ LedIndicator.propTypes = {
   enabled: PropTypes.bool,
   size: PropTypes.oneOf(["normal", "large"]),
   color: PropTypes.oneOf(["red", "blue", "green", "orange"]).isRequired,
-  blink: PropTypes.bool
+  blink: PropTypes.bool,
 };

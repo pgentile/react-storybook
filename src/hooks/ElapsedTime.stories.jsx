@@ -4,7 +4,7 @@ import ElapsedTime from "./ElapsedTime";
 
 export default {
   title: "Hooks / ElapsedTime",
-  component: ElapsedTime
+  component: ElapsedTime,
 };
 
 export const main = () => {

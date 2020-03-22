@@ -13,7 +13,7 @@ export default function BookingPassengers({ as: Element = "section", initialPass
 
   const addPassenger = () => {
     const newPassenger = {
-      id: `new-pax-${passengers.length + 1}`
+      id: `new-pax-${passengers.length + 1}`,
     };
     const newPassengers = [...passengers, newPassenger];
     setPassengers(newPassengers);
@@ -57,7 +57,7 @@ BookingPassengers.propTypes = {
   initialPassengers: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      name: PropTypes.string
+      name: PropTypes.string,
     })
-  ).isRequired
+  ).isRequired,
 };

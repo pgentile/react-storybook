@@ -13,61 +13,61 @@ export const CARD_TYPE = "CARD";
 
 // Selectors
 
-const scope = createScope(state => state.order);
+const scope = createScope((state) => state.order);
 
-export const selectOrderItems = scope(order => order.items);
+export const selectOrderItems = scope((order) => order.items);
 
 export const selectTickets = scope(
   createSelector(
-    order => order.items,
-    items => items.filter(item => item.type === TICKET_TYPE)
+    (order) => order.items,
+    (items) => items.filter((item) => item.type === TICKET_TYPE)
   )
 );
 
 export const selectItemsWithoutVoucher = scope(
   createSelector(
-    order => order.items,
-    items => items.filter(item => item.type !== VOUCHER_TYPE)
+    (order) => order.items,
+    (items) => items.filter((item) => item.type !== VOUCHER_TYPE)
   )
 );
 
 export const selectItemsWithoutDonation = scope(
   createSelector(
-    order => order.items,
-    items => items.filter(item => item.type !== DONATION_TYPE)
+    (order) => order.items,
+    (items) => items.filter((item) => item.type !== DONATION_TYPE)
   )
 );
 
 export const selectItemsWithoutInsurance = scope(
   createSelector(
-    order => order.items,
-    items => items.filter(item => item.type !== INSURANCE_TYPE)
+    (order) => order.items,
+    (items) => items.filter((item) => item.type !== INSURANCE_TYPE)
   )
 );
 
 export const selectVoucher = scope(
   createSelector(
-    order => order.items,
-    items => items.find(item => item.type === VOUCHER_TYPE) || null
+    (order) => order.items,
+    (items) => items.find((item) => item.type === VOUCHER_TYPE) || null
   )
 );
 
 export const selectDonation = scope(
   createSelector(
-    order => order.items,
-    items => items.find(item => item.type === DONATION_TYPE) || null
+    (order) => order.items,
+    (items) => items.find((item) => item.type === DONATION_TYPE) || null
   )
 );
 
 const ZERO_EURO = Object.freeze({
   value: 0,
-  currency: "EUR"
+  currency: "EUR",
 });
 
 export const selectTotalAmount = scope(
   createSelector(
-    order => order.items,
-    items => {
+    (order) => order.items,
+    (items) => {
       if (items.length === 0) {
         return ZERO_EURO;
       }
@@ -77,7 +77,7 @@ export const selectTotalAmount = scope(
 
       return {
         value,
-        currency
+        currency,
       };
     }
   )
@@ -100,8 +100,8 @@ export function loadItems(items) {
   return {
     type: LOAD_ITEMS,
     payload: Promise.resolve({
-      items
-    })
+      items,
+    }),
   };
 }
 
@@ -109,15 +109,15 @@ export function addVoucher(code) {
   return {
     type: ADD_VOUCHER,
     payload: Promise.resolve({
-      code
-    })
+      code,
+    }),
   };
 }
 
 export function cancelVoucher() {
   return {
     type: CANCEL_VOUCHER,
-    payload: Promise.resolve()
+    payload: Promise.resolve(),
   };
 }
 
@@ -126,19 +126,19 @@ export function addInsurance(price) {
     await sleep(1500);
 
     return {
-      price
+      price,
     };
   };
   return {
     type: ADD_INSURANCE,
-    payload: addInsuranceOnServer()
+    payload: addInsuranceOnServer(),
   };
 }
 
 export function cancelInsurance() {
   return {
     type: CANCEL_INSURANCE,
-    payload: Promise.resolve()
+    payload: Promise.resolve(),
   };
 }
 
@@ -147,13 +147,13 @@ export function addDonation(code) {
     await sleep(1500);
 
     return {
-      code
+      code,
     };
   };
 
   return {
     type: ADD_DONATION,
-    payload: donateOnServer()
+    payload: donateOnServer(),
   };
 }
 
@@ -164,14 +164,14 @@ export function cancelDonation() {
 
   return {
     type: CANCEL_DONATION,
-    payload: cancelDonationOnServer()
+    payload: cancelDonationOnServer(),
   };
 }
 
 // Reducer
 
 const initialState = {
-  items: []
+  items: [],
 };
 
 export default (state = initialState, action) => {
@@ -181,7 +181,7 @@ export default (state = initialState, action) => {
     case `${LOAD_ITEMS}_FULFILLED`: {
       return {
         ...state,
-        items: payload.items
+        items: payload.items,
       };
     }
 
@@ -195,22 +195,22 @@ export default (state = initialState, action) => {
       }
 
       const ticketPrice = {
-        value: tickets.map(ticket => ticket.price.value).reduce((left, right) => left + right, 0),
-        currency: tickets[0].price.currency
+        value: tickets.map((ticket) => ticket.price.value).reduce((left, right) => left + right, 0),
+        currency: tickets[0].price.currency,
       };
 
       const voucherItem = computeVoucher(ticketPrice, code);
 
       return {
         ...state,
-        items: [...selectItemsWithoutVoucher.withinScope(state), voucherItem]
+        items: [...selectItemsWithoutVoucher.withinScope(state), voucherItem],
       };
     }
 
     case `${CANCEL_VOUCHER}_FULFILLED`: {
       return {
         ...state,
-        items: selectItemsWithoutVoucher.withinScope(state)
+        items: selectItemsWithoutVoucher.withinScope(state),
       };
     }
 
@@ -226,22 +226,22 @@ export default (state = initialState, action) => {
         label: `Votre don pour ${association}`,
         price: {
           value: 1,
-          currency: "EUR"
+          currency: "EUR",
         },
         code,
-        association
+        association,
       };
 
       return {
         ...state,
-        items: [...itemsWithNoDonation, donationItem]
+        items: [...itemsWithNoDonation, donationItem],
       };
     }
 
     case `${CANCEL_DONATION}_FULFILLED`: {
       return {
         ...state,
-        items: selectItemsWithoutDonation.withinScope(state)
+        items: selectItemsWithoutDonation.withinScope(state),
       };
     }
 
@@ -254,19 +254,19 @@ export default (state = initialState, action) => {
         id: "insurance",
         type: INSURANCE_TYPE,
         label: "Vos assurances",
-        price
+        price,
       };
 
       return {
         ...state,
-        items: [...itemsWithoutInsurance, insuranceItem]
+        items: [...itemsWithoutInsurance, insuranceItem],
       };
     }
 
     case `${CANCEL_INSURANCE}_FULFILLED`: {
       return {
         ...state,
-        items: selectItemsWithoutInsurance.withinScope(state)
+        items: selectItemsWithoutInsurance.withinScope(state),
       };
     }
 
@@ -282,7 +282,7 @@ function computeVoucher(ticketPrice, code) {
     id: `voucher-${code}`,
     type: VOUCHER_TYPE,
     label: `Votre code promo ${code}`,
-    code
+    code,
   };
 
   switch (code) {
@@ -295,8 +295,8 @@ function computeVoucher(ticketPrice, code) {
         voucherPercentage,
         price: {
           value: -ticketPrice.value * (voucherPercentage / 100),
-          currency
-        }
+          currency,
+        },
       };
     }
 
@@ -309,8 +309,8 @@ function computeVoucher(ticketPrice, code) {
         voucherPercentage,
         price: {
           value: -ticketPrice.value * (voucherPercentage / 100),
-          currency
-        }
+          currency,
+        },
       };
     }
 
@@ -322,12 +322,12 @@ function computeVoucher(ticketPrice, code) {
         voucherType: "AMOUNT",
         voucherAmount: {
           value: voucherAmount,
-          currency
+          currency,
         },
         price: {
           value: -voucherAmount,
-          currency
-        }
+          currency,
+        },
       };
     }
   }

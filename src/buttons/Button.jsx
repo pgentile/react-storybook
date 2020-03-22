@@ -12,7 +12,7 @@ export default class Button extends React.PureComponent {
     className: PropTypes.string,
     size: PropTypes.oneOf(["small", "normal", "large"]),
     flat: PropTypes.bool,
-    toggled: PropTypes.bool
+    toggled: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -20,7 +20,7 @@ export default class Button extends React.PureComponent {
     className: "",
     size: "normal",
     flat: false,
-    toggled: false
+    toggled: false,
   };
 
   render() {
@@ -29,7 +29,7 @@ export default class Button extends React.PureComponent {
     const realClassName = bemModifiers("button", {
       [`size-${size}`]: true,
       flat,
-      toggled
+      toggled,
     });
 
     return (

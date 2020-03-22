@@ -8,14 +8,14 @@ export default class Carousel extends React.PureComponent {
     as: PropTypes.elementType,
     className: PropTypes.string,
     items: PropTypes.arrayOf(PropTypes.node),
-    selectedIndex: PropTypes.number
+    selectedIndex: PropTypes.number,
   };
 
   static defaultProps = {
     as: "div",
     className: "",
     items: [],
-    selectedIndex: 0
+    selectedIndex: 0,
   };
 
   render() {
@@ -32,7 +32,7 @@ export default class Carousel extends React.PureComponent {
     const currentIndex = Math.max(0, Math.min(selectedIndex, items.length - 1));
     const contentStyle = {
       width: `${items.length * 100}%`,
-      left: `${currentIndex * -100}%`
+      left: `${currentIndex * -100}%`,
     };
 
     return (

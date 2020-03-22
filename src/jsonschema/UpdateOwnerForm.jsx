@@ -6,7 +6,7 @@ import schema from "./schemas/updateOwner.request.json";
 
 export default class UpdateOwnerForm extends React.PureComponent {
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
   };
 
   render() {

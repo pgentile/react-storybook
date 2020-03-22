@@ -9,8 +9,8 @@ export default {
   title: "ExchangeRate",
   component: ExchangeRate,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {
@@ -33,7 +33,7 @@ function ExchangeRateSwitcher() {
   const [currency, setCurrency] = useCurrency();
   return (
     <ButtonGroup>
-      {currencies.map(possibleCurrency => (
+      {currencies.map((possibleCurrency) => (
         <ButtonInGroup
           key={possibleCurrency}
           toggled={currency === possibleCurrency}
@@ -52,5 +52,5 @@ function ConvertiblePrice({ price }) {
 }
 
 ConvertiblePrice.propTypes = {
-  price: PropTypes.object.isRequired
+  price: PropTypes.object.isRequired,
 };

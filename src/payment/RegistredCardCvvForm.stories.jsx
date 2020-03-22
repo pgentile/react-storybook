@@ -6,17 +6,17 @@ import RegistredCardCvvForm from "./RegistredCardCvvForm";
 
 const actions = {
   onUseCard: action("use card"),
-  onCancel: action("hide CVV")
+  onCancel: action("hide CVV"),
 };
 
 const totalPrice = {
   value: 100,
-  currency: "EUR"
+  currency: "EUR",
 };
 
 const stories = storiesOf("Payment | RegistredCardCvvForm", module);
 
-["visa", "mastercard", "american-express", "maestro"].forEach(brand => {
+["visa", "mastercard", "american-express", "maestro"].forEach((brand) => {
   stories.add(brand, () => {
     return <RegistredCardCvvForm brand={brand} totalPrice={totalPrice} {...actions} />;
   });

@@ -6,7 +6,7 @@ export default function WebShareSample({ url, text, title }) {
     await navigator.share({
       url,
       text,
-      title
+      title,
     });
   };
   return (
@@ -19,5 +19,5 @@ export default function WebShareSample({ url, text, title }) {
 WebShareSample.propTypes = {
   url: PropTypes.string,
   text: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };

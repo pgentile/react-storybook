@@ -15,7 +15,7 @@ export default function useCheckbox(name, { defaultChecked = false, validate = d
   const valid = useMemo(() => validate(checked), [validate, checked]);
 
   const onChange = useCallback(
-    event => {
+    (event) => {
       setChecked(event.target.checked);
       touch();
     },
@@ -26,7 +26,7 @@ export default function useCheckbox(name, { defaultChecked = false, validate = d
     return {
       name,
       checked,
-      onChange
+      onChange,
     };
   }, [name, checked, onChange]);
 
@@ -37,7 +37,7 @@ export default function useCheckbox(name, { defaultChecked = false, validate = d
       checked,
       touched,
       valid,
-      props
+      props,
     };
   }, [checked, name, props, touched, valid]);
 }

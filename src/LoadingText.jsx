@@ -6,17 +6,17 @@ import "./LoadingText.scss";
 
 export default class LoadingText extends React.PureComponent {
   static propTypes = {
-    count: PropTypes.number
+    count: PropTypes.number,
   };
 
   static defaultProps = {
-    count: 5
+    count: 5,
   };
 
   render() {
     const { count } = this.props;
 
-    const lines = range(count).map(index => {
+    const lines = range(count).map((index) => {
       return (
         <p key={index} className="loading-text__line">
           &nbsp;

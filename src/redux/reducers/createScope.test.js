@@ -3,8 +3,8 @@ import createScope, { returnDefaultValue, returnUndefined, alwaysExecute } from 
 describe("Scoped selectors", () => {
   const rootState = {
     innerState: {
-      hello: "Hello my friend"
-    }
+      hello: "Hello my friend",
+    },
   };
 
   let selector;
@@ -12,14 +12,14 @@ describe("Scoped selectors", () => {
 
   beforeEach(() => {
     selector = jest.fn();
-    selector.mockImplementation(scopedState => scopedState.hello);
+    selector.mockImplementation((scopedState) => scopedState.hello);
 
     undefinedBehavior = jest.fn();
     undefinedBehavior.mockImplementation(() => () => undefined);
   });
 
   test("Call undefined behavior for undefined scoped state", () => {
-    const scope = createScope(state => state.unexistingState, undefinedBehavior);
+    const scope = createScope((state) => state.unexistingState, undefinedBehavior);
     const selectHello = scope(selector);
 
     const result1 = selectHello(rootState);
@@ -33,7 +33,7 @@ describe("Scoped selectors", () => {
   });
 
   test("Call selector for defined scoped state", () => {
-    const scope = createScope(state => state.innerState, undefinedBehavior);
+    const scope = createScope((state) => state.innerState, undefinedBehavior);
     const selectHello = scope(selector);
 
     const result1 = selectHello(rootState);
@@ -47,7 +47,7 @@ describe("Scoped selectors", () => {
   });
 
   test("Call selector with extra arguments", () => {
-    const scope = createScope(state => state.innerState);
+    const scope = createScope((state) => state.innerState);
     const selectHello = scope(selector);
 
     const result1 = selectHello(rootState, "arg1", "arg2");

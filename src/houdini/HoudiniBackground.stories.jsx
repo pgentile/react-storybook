@@ -6,8 +6,8 @@ export default {
   title: "Houdini / HoudiniBackground",
   component: HoudiniBackground,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {

@@ -5,7 +5,7 @@ import sleep from "../utils/sleep";
 
 export default {
   title: "Buttons / ProgressButton",
-  component: ProgressButton
+  component: ProgressButton,
 };
 
 export const main = () => {
@@ -27,25 +27,25 @@ export const disabledStory = () => {
 class ProgressButtonDemo extends React.PureComponent {
   state = {
     loading: false,
-    finished: false
+    finished: false,
   };
 
   onClick = async () => {
     this.setState({
-      loading: true
+      loading: true,
     });
 
     await sleep(3000);
 
     this.setState({
-      finished: true
+      finished: true,
     });
 
     await sleep(1000);
 
     this.setState({
       loading: false,
-      finished: false
+      finished: false,
     });
   };
 

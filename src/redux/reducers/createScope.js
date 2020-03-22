@@ -15,7 +15,7 @@ export function alwaysExecute(selector) {
 // Scope factory
 
 export default function createScope(scopeExtractor, undefinedStateBehavior = returnUndefined) {
-  return selector => {
+  return (selector) => {
     const selectFromScopedState = (scopedState, ...args) => {
       if (isUndefined(scopedState)) {
         return undefinedStateBehavior(selector)(scopedState);

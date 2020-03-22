@@ -5,17 +5,17 @@ import ProgressButton from "./ProgressButton";
 
 export default class ManagedProgressButton extends React.PureComponent {
   static propTypes = {
-    onClick: PropTypes.func.isRequired
+    onClick: PropTypes.func.isRequired,
   };
 
   state = {
     loading: false,
-    finished: false
+    finished: false,
   };
 
   unmounted = false;
 
-  onClick = async event => {
+  onClick = async (event) => {
     this.setState({ loading: true });
     try {
       await this.props.onClick(event);

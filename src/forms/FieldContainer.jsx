@@ -18,7 +18,7 @@ export default function FieldContainer({
   helpMessage,
   disabled,
   optional,
-  readOnly
+  readOnly,
 }) {
   const [generatedId] = useState(() => `form-field-${count++}`);
 
@@ -30,7 +30,7 @@ export default function FieldContainer({
     error: showErrorMessage,
     id: inputId,
     disabled,
-    readOnly
+    readOnly,
   };
 
   return (
@@ -60,5 +60,5 @@ FieldContainer.propTypes = {
   helpMessage: PropTypes.node,
   disabled: PropTypes.bool,
   optional: PropTypes.bool,
-  readOnly: PropTypes.bool
+  readOnly: PropTypes.bool,
 };

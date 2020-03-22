@@ -6,7 +6,7 @@ import StickyElement from "./StickyElement";
 export default {
   title: "CSS | StickyElement",
   component: StickyElement,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const main = () => {

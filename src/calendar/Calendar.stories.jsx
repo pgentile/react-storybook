@@ -5,7 +5,7 @@ import Calendar from "./Calendar";
 
 export default {
   title: "Calendar / Calendar",
-  component: Calendar
+  component: Calendar,
 };
 
 export const main = () => {

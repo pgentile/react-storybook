@@ -14,9 +14,9 @@ export async function createToken({ cardNumber, expirationDate, cvv }) {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      Accept: "application/json"
+      Accept: "application/json",
     },
-    body
+    body,
   });
 
   return await response.json();
@@ -34,9 +34,9 @@ export async function charge({ token, amount, currency, description }) {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      Accept: "application/json"
+      Accept: "application/json",
     },
-    body
+    body,
   });
 
   return await response.json();
@@ -51,9 +51,9 @@ export async function createCard({ token }) {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      Accept: "application/json"
+      Accept: "application/json",
     },
-    body
+    body,
   });
 
   return await response.json();
@@ -71,9 +71,9 @@ export async function create3DSSource({ cardId, amount, currency }) {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      Accept: "application/json"
+      Accept: "application/json",
     },
-    body
+    body,
   });
 
   return await response.json();

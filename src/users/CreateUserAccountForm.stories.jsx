@@ -5,7 +5,7 @@ import CreateUserAccountForm from "./CreateUserAccountForm";
 
 export default {
   title: "Users / CreateUserAccountForm",
-  component: CreateUserAccountForm
+  component: CreateUserAccountForm,
 };
 
 export const main = () => {

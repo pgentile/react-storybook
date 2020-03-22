@@ -8,12 +8,12 @@ import CheckableImageInput from "./CheckableImageInput";
 const actions = {
   onClick: action("click"),
   onChange: action("change"),
-  onKeyPress: action("key press")
+  onKeyPress: action("key press"),
 };
 
 export default {
   title: "Forms / CheckableImageInput",
-  component: CheckableImageInput
+  component: CheckableImageInput,
 };
 
 export const unchecked = () => {

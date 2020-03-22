@@ -6,8 +6,8 @@ export default {
   title: "ExpandableIcon",
   component: ExpandableIcon,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const folded = () => {
@@ -24,12 +24,12 @@ export const demo = () => {
 
 class ExpandableIconDemo extends React.PureComponent {
   state = {
-    expanded: false
+    expanded: false,
   };
 
   onClick = () => {
-    this.setState(state => ({
-      expanded: !state.expanded
+    this.setState((state) => ({
+      expanded: !state.expanded,
     }));
   };
 

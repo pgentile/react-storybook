@@ -11,13 +11,13 @@ export default class Card extends React.PureComponent {
     layer: PropTypes.string,
     as: PropTypes.elementType,
     className: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {
     hasBorder: true,
     as: "div",
-    className: ""
+    className: "",
   };
 
   render() {
@@ -25,7 +25,7 @@ export default class Card extends React.PureComponent {
 
     const bemClass = bemModifiers("card", {
       "has-border": hasBorder,
-      [`layer-${layer}`]: !!layer
+      [`layer-${layer}`]: !!layer,
     });
 
     return (

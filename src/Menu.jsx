@@ -15,25 +15,25 @@ export default class Menu extends React.PureComponent {
         key: PropTypes.any.isRequired,
         content: PropTypes.node.isRequired,
         href: PropTypes.string,
-        onClick: PropTypes.func
+        onClick: PropTypes.func,
       })
-    )
+    ),
   };
 
   static defaultProps = {
     as: "nav",
     className: "",
-    items: []
+    items: [],
   };
 
   render() {
     const { as: Element, className, items, selectedItemKey } = this.props;
 
-    const renderedItems = items.map(item => {
+    const renderedItems = items.map((item) => {
       const active = item.key === selectedItemKey;
 
       const itemClassName = bemModifiers("menu__item", {
-        active
+        active,
       });
 
       return (

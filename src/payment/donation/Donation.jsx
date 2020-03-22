@@ -6,7 +6,7 @@ import DonationProposal from "./DonationProposal";
 
 const donationShape = {
   code: PropTypes.string.isRequired,
-  association: PropTypes.string.isRequired
+  association: PropTypes.string.isRequired,
 };
 
 export default class Donation extends React.PureComponent {
@@ -14,11 +14,11 @@ export default class Donation extends React.PureComponent {
     className: PropTypes.string,
     selectedDonation: PropTypes.shape(donationShape),
     onAddDonation: PropTypes.func.isRequired,
-    onCancelDonation: PropTypes.func.isRequired
+    onCancelDonation: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    className: ""
+    className: "",
   };
 
   render() {

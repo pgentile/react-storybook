@@ -12,7 +12,7 @@ export default function AuthAskPassword({ onCancelClick, onValidate }) {
   const [password, setPassword] = useState("");
   const passwordFieldId = useRandomId();
 
-  const onPasswordChange = event => setPassword(event.target.value);
+  const onPasswordChange = (event) => setPassword(event.target.value);
 
   const onValidateClick = () => onValidate({ password });
 
@@ -43,7 +43,7 @@ export default function AuthAskPassword({ onCancelClick, onValidate }) {
 
 AuthAskPassword.propTypes = {
   onCancelClick: PropTypes.func.isRequired,
-  onValidate: PropTypes.func.isRequired
+  onValidate: PropTypes.func.isRequired,
 };
 
 AuthAskPassword.defaultProps = {};

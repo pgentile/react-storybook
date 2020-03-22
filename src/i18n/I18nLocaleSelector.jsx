@@ -8,71 +8,71 @@ const LOCALES = [
   {
     locale: "fr-FR",
     flag: "🇫🇷",
-    description: "France"
+    description: "France",
   },
   {
     locale: "en-GB",
     flag: "🇬🇧",
-    description: "United Kingdom"
+    description: "United Kingdom",
   },
   {
     locale: "en-US",
     flag: "🇺🇸",
-    description: "USA"
+    description: "USA",
   },
   {
     locale: "nl-NL",
     flag: "🇳🇱",
-    description: "Nederland"
+    description: "Nederland",
   },
   {
     locale: "it-IT",
     flag: "🇮🇹",
-    description: "Italia"
+    description: "Italia",
   },
   {
     locale: "fr-BE",
     flag: "🇧🇪",
-    description: "Belgique"
+    description: "Belgique",
   },
   {
     locale: "nl-BE",
     flag: "🇧🇪",
-    description: "België"
+    description: "België",
   },
   {
     locale: "de-BE",
     flag: "🇧🇪",
-    description: "Belgien"
+    description: "Belgien",
   },
   {
     locale: "de-DE",
     flag: "🇩🇪",
-    description: "Deutschland"
+    description: "Deutschland",
   },
   {
     locale: "fr-CH",
     flag: "🇨🇭",
-    description: "Suisse"
+    description: "Suisse",
   },
   {
     locale: "de-CH",
     flag: "🇨🇭",
-    description: "Schweiz"
+    description: "Schweiz",
   },
   {
     locale: "es-ES",
     flag: "🇪🇸",
-    description: "España"
-  }
+    description: "España",
+  },
 ];
 
 export default function I18nLocaleSelector() {
   const { locale: currentLocale, setLocale, loading } = useLocale();
 
-  const onFormSubmit = useCallback(event => event.preventDefault(), []);
+  const onFormSubmit = useCallback((event) => event.preventDefault(), []);
 
-  const onLocaleChange = useCallback(event => setLocale(event.target.value), [setLocale]);
+  const onLocaleChange = useCallback((event) => setLocale(event.target.value), [setLocale]);
 
   const items = LOCALES.map(({ locale, flag, description }) => {
     const onClick = () => setLocale(locale);

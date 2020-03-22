@@ -16,17 +16,17 @@ export default class Toggle extends React.PureComponent {
     tabIndex: PropTypes.number,
     onChange: PropTypes.func,
     onKeyPress: PropTypes.func,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
   };
 
   static defaultProps = {
     className: "",
-    tabIndex: 0
+    tabIndex: 0,
   };
 
   inputRef = createRef();
 
-  onClick = event => {
+  onClick = (event) => {
     if (this.inputRef.current) {
       this.inputRef.current.click();
     }
@@ -36,7 +36,7 @@ export default class Toggle extends React.PureComponent {
     }
   };
 
-  onKeyPress = event => {
+  onKeyPress = (event) => {
     if (this.inputRef.current && (event.key === "Enter" || event.key === " ")) {
       this.inputRef.current.click();
     }
@@ -46,7 +46,7 @@ export default class Toggle extends React.PureComponent {
     }
   };
 
-  onInputClick = event => {
+  onInputClick = (event) => {
     event.stopPropagation();
   };
 
@@ -54,7 +54,7 @@ export default class Toggle extends React.PureComponent {
     const { className, checked, name, value, disabled, readOnly, tabIndex, onChange, ...otherProps } = this.props;
 
     const realClassName = bemModifiers("toggle", {
-      checked
+      checked,
     });
 
     return (

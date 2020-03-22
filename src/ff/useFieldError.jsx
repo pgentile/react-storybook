@@ -6,8 +6,8 @@ export default function useFieldError(name) {
       touched: true,
       error: true,
       dirtySinceLastSubmit: true,
-      submitError: true
-    }
+      submitError: true,
+    },
   });
   const { touched, error, dirtySinceLastSubmit, submitError } = field.meta;
 

@@ -2,7 +2,7 @@ export default function captureStoreActions() {
   const actions = [];
 
   // store => next => action
-  const middleware = () => next => action => {
+  const middleware = () => (next) => (action) => {
     const result = next(action);
     actions.push(action);
     return result;

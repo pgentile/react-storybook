@@ -4,13 +4,13 @@ import FormFocusOnError from "./FormFocusOnError";
 
 export default {
   title: "Forms / FormFocusOnError",
-  component: FormFocusOnError
+  component: FormFocusOnError,
 };
 
 export const main = () => {
   return (
     <FormFocusOnError>
-      {focusOnError => {
+      {(focusOnError) => {
         return (
           <div>
             <p>

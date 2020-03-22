@@ -11,12 +11,12 @@ const onExpire = action("expire");
 const props = {
   siteKey,
   onSuccess,
-  onExpire
+  onExpire,
 };
 
 export default {
   title: "ReCaptcha",
-  component: ReCaptcha
+  component: ReCaptcha,
 };
 
 export const main = () => <ReCaptcha {...props} />;

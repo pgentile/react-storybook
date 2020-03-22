@@ -10,13 +10,13 @@ import sleep from "../utils/sleep";
 import "./OwnerForm.scss";
 
 export default function OwnerForm() {
-  const onSubmit = async values => {
+  const onSubmit = async (values) => {
     await sleep(500);
 
     const { email } = values;
     alert(
       JSON.stringify({
-        email
+        email,
       })
     );
   };
@@ -39,7 +39,7 @@ function InternalOwnerForm() {
   const form = useForm();
 
   const email = useField("email", {
-    validate: value => {
+    validate: (value) => {
       if (!value) {
         return "Email non défini";
       }
@@ -47,7 +47,7 @@ function InternalOwnerForm() {
         return "Email invalide";
       }
     },
-    validateFields: ["emailValidation"]
+    validateFields: ["emailValidation"],
   });
 
   useField("emailValidation", {
@@ -55,11 +55,11 @@ function InternalOwnerForm() {
       if (!knownEmail && value !== email) {
         return "La validation a échouée. Vérifiez votre adresse email dans les deux champs du formulaire.";
       }
-    }
+    },
   });
 
   useField("knownEmail", {
-    validateFields: ["emailValidation"]
+    validateFields: ["emailValidation"],
   });
 
   const { changeEmail, clearEmail, known: knownEmail } = useEmailCheck();
@@ -82,11 +82,11 @@ function InternalOwnerForm() {
   return (
     <>
       <FinalFieldContainer type="email" name="email" label="Email">
-        {props => <InputField {...props} autoComplete="email" />}
+        {(props) => <InputField {...props} autoComplete="email" />}
       </FinalFieldContainer>
 
       <FinalFieldContainer type="email" name="emailValidation" label="Validez votre email" disabled={knownEmail}>
-        {props => <InputField {...props} />}
+        {(props) => <InputField {...props} />}
       </FinalFieldContainer>
 
       <FinalButton>Envoyer</FinalButton>
@@ -97,19 +97,19 @@ function InternalOwnerForm() {
 function useEmailCheck() {
   const [state, dispatch] = useReducer(emailCheckReducer, {
     email: "",
-    known: false
+    known: false,
   });
 
   const checkEmail = useCallback(
-    debounce(email => {
+    debounce((email) => {
       // Simulate a late response
       setTimeout(() => {
         dispatch({
           type: "emailChecked",
           payload: {
             email,
-            known: email.endsWith(".com")
-          }
+            known: email.endsWith(".com"),
+          },
         });
       }, 1000);
     }, 400),
@@ -117,12 +117,12 @@ function useEmailCheck() {
   );
 
   const changeEmail = useCallback(
-    email => {
+    (email) => {
       dispatch({
         type: "changeEmail",
         payload: {
-          email
-        }
+          email,
+        },
       });
 
       checkEmail(email);
@@ -139,7 +139,7 @@ function useEmailCheck() {
   return {
     known,
     changeEmail,
-    clearEmail
+    clearEmail,
   };
 }
 
@@ -150,7 +150,7 @@ function emailCheckReducer(state, action) {
       return {
         ...state,
         email,
-        known: false
+        known: false,
       };
     }
 
@@ -162,7 +162,7 @@ function emailCheckReducer(state, action) {
 
       return {
         ...state,
-        known
+        known,
       };
     }
 
@@ -170,7 +170,7 @@ function emailCheckReducer(state, action) {
       return {
         ...state,
         emaill: "",
-        known: false
+        known: false,
       };
     }
 

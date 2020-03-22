@@ -8,12 +8,12 @@ const actions = {
   onPay: async (...args) => {
     await sleep(3000);
     action("submit")(...args);
-  }
+  },
 };
 
 export default {
   title: "Payment | CreditCardForm",
-  component: CreditCardForm
+  component: CreditCardForm,
 };
 
 export const main = () => {

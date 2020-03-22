@@ -16,7 +16,7 @@ const headersResource = createResource(() => getHeaders());
 
 function Hello() {
   const headers = headersResource.read();
-  const items = Object.keys(headers).map(headerName => {
+  const items = Object.keys(headers).map((headerName) => {
     return (
       <li key={headerName}>
         {headerName} = {headers[headerName]}

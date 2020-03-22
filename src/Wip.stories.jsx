@@ -4,7 +4,7 @@ import Wip from "./Wip";
 
 export default {
   title: "Wip",
-  component: Wip
+  component: Wip,
 };
 
 export const main = () => {

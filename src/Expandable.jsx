@@ -8,11 +8,11 @@ import "./Expandable.scss";
 export default class Expandable extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node,
-    expanded: PropTypes.bool
+    expanded: PropTypes.bool,
   };
 
   static defaultProps = {
-    expanded: false
+    expanded: false,
   };
 
   duration = 150;
@@ -40,7 +40,7 @@ export default class Expandable extends React.PureComponent {
   }
 
   async animate(callback) {
-    return await animate(this.duration, progress => {
+    return await animate(this.duration, (progress) => {
       this.stillMounted(() => callback(progress));
     });
   }
@@ -56,7 +56,7 @@ export default class Expandable extends React.PureComponent {
   async show() {
     const contentHeight = this.contentRef.current.offsetHeight;
 
-    await this.animate(progress => {
+    await this.animate((progress) => {
       const newHeight = contentHeight * progress;
       this.windowRef.current.style.height = `${newHeight}px`;
     });
@@ -69,7 +69,7 @@ export default class Expandable extends React.PureComponent {
   async hide() {
     const contentHeight = this.windowRef.current.offsetHeight;
 
-    await this.animate(progress => {
+    await this.animate((progress) => {
       const newHeight = contentHeight * (1 - progress);
       this.windowRef.current.style.height = `${newHeight}px`;
     });

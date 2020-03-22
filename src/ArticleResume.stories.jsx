@@ -7,7 +7,7 @@ const loremIpsum =
 
 export default {
   title: "ArticleResume",
-  component: ArticleResume
+  component: ArticleResume,
 };
 
 export const main = () => {

@@ -6,7 +6,7 @@ import Carousel from "./Carousel";
 export default {
   title: "Carousel",
   component: Carousel,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const main = () => {
@@ -20,7 +20,7 @@ export const main = () => {
       Item 3<br />
       Item 3, line 2<br />
       Item 3, line 3
-    </p>
+    </p>,
   ];
   return <Carousel items={items} selectedIndex={number("selectedIndex", 0)} />;
 };

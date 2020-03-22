@@ -5,11 +5,11 @@ import { getDisplayName } from "recompose";
 export default class FormFocusOnError extends React.Component {
   static propTypes = {
     as: PropTypes.elementType,
-    children: PropTypes.func.isRequired
+    children: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    as: "div"
+    as: "div",
   };
 
   rootRef = React.createRef();
@@ -20,7 +20,7 @@ export default class FormFocusOnError extends React.Component {
       const firstInvalidElement = rootElement.querySelector('*[aria-invalid="true"]');
       if (firstInvalidElement && firstInvalidElement.scrollIntoView) {
         firstInvalidElement.scrollIntoView({
-          behavior: "smooth"
+          behavior: "smooth",
         });
       }
     }
@@ -33,11 +33,11 @@ export default class FormFocusOnError extends React.Component {
 }
 
 export function withFormFocusOnError(props = {}) {
-  return Wrapped => {
-    const wrapper = wrappedProps => {
+  return (Wrapped) => {
+    const wrapper = (wrappedProps) => {
       return (
         <FormFocusOnError {...props}>
-          {focusOnError => <Wrapped {...wrappedProps} focusOnError={focusOnError} />}
+          {(focusOnError) => <Wrapped {...wrappedProps} focusOnError={focusOnError} />}
         </FormFocusOnError>
       );
     };

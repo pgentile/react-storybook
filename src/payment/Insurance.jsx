@@ -10,14 +10,14 @@ import "./Insurance.scss";
 export default class Insurance extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    onAddInsurance: PropTypes.func.isRequired
+    onAddInsurance: PropTypes.func.isRequired,
   };
 
   state = {
     price: {
       value: 12.9,
-      currency: "EUR"
-    }
+      currency: "EUR",
+    },
   };
 
   onAddInsurance = async () => {

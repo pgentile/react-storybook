@@ -4,7 +4,7 @@ import PaymentRequestComponent from "./PaymentRequestComponent";
 
 export default {
   title: "Payment | PaymentRequestComponent",
-  component: PaymentRequestComponent
+  component: PaymentRequestComponent,
 };
 
 export const main = () => {
@@ -13,18 +13,18 @@ export const main = () => {
 
 class Story extends React.PureComponent {
   state = {
-    requesting: false
+    requesting: false,
   };
 
   pay = () => {
     this.setState({
-      requesting: true
+      requesting: true,
     });
   };
 
   reset = () => {
     this.setState({
-      requesting: false
+      requesting: false,
     });
   };
 

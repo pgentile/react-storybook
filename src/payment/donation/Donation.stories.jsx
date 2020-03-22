@@ -5,12 +5,12 @@ import Donation from "./Donation";
 
 const actions = {
   onAddDonation: action("add donation"),
-  onCancelDonation: action("cancel donation")
+  onCancelDonation: action("cancel donation"),
 };
 
 export default {
   title: "Payment | Donation / Donation",
-  component: Donation
+  component: Donation,
 };
 
 export const noDonationSelected = () => {

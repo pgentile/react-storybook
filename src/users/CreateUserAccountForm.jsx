@@ -12,11 +12,11 @@ import "./CreateUserAccountForm.scss";
 const focusOnErrors = createDecorator();
 
 export default function CreateUserAccountForm({ onCreate }) {
-  const onFormSubmit = formData => {
+  const onFormSubmit = (formData) => {
     onCreate(formData);
   };
 
-  const validate = formData => {
+  const validate = (formData) => {
     const errors = {};
 
     if (!formData.firstname) {
@@ -63,26 +63,26 @@ export default function CreateUserAccountForm({ onCreate }) {
 }
 
 CreateUserAccountForm.propTypes = {
-  onCreate: PropTypes.func.isRequired
+  onCreate: PropTypes.func.isRequired,
 };
 
 function CreateUserAccountFormInternal({ handleSubmit }) {
   return (
     <form className="create-user-account-form" onSubmit={handleSubmit} noValidate>
       <FinalFieldContainer name="firstname" label="Prénom" className="create-user-account-form__firstname">
-        {props => <InputField {...props} autoComplete="given-name" />}
+        {(props) => <InputField {...props} autoComplete="given-name" />}
       </FinalFieldContainer>
 
       <FinalFieldContainer name="lastname" label="Nom de famille" className="create-user-account-form__lastname">
-        {props => <InputField {...props} autoComplete="family-name" />}
+        {(props) => <InputField {...props} autoComplete="family-name" />}
       </FinalFieldContainer>
 
       <FinalFieldContainer name="birthdate" label="Date de naissance" className="create-user-account-form__birthdate">
-        {props => <InputField {...props} autoComplete="bday" />}
+        {(props) => <InputField {...props} autoComplete="bday" />}
       </FinalFieldContainer>
 
       <FinalFieldContainer type="email" name="email" label="Email" className="create-user-account-form__email">
-        {props => <InputField {...props} autoComplete="email" />}
+        {(props) => <InputField {...props} autoComplete="email" />}
       </FinalFieldContainer>
 
       <FinalFieldContainer
@@ -91,7 +91,7 @@ function CreateUserAccountFormInternal({ handleSubmit }) {
         label="Répétez l'email"
         className="create-user-account-form__email-check"
       >
-        {props => <InputField {...props} autoComplete="email" />}
+        {(props) => <InputField {...props} autoComplete="email" />}
       </FinalFieldContainer>
 
       <FinalFieldContainer
@@ -100,7 +100,7 @@ function CreateUserAccountFormInternal({ handleSubmit }) {
         label="Mot de passe"
         className="create-user-account-form__password"
       >
-        {props => <InputField {...props} />}
+        {(props) => <InputField {...props} />}
       </FinalFieldContainer>
 
       <FinalFieldContainer
@@ -109,7 +109,7 @@ function CreateUserAccountFormInternal({ handleSubmit }) {
         label="Répétez le mot de passe"
         className="create-user-account-form__password-check"
       >
-        {props => <InputField {...props} />}
+        {(props) => <InputField {...props} />}
       </FinalFieldContainer>
 
       <div className="create-user-account-form__button">
@@ -122,5 +122,5 @@ function CreateUserAccountFormInternal({ handleSubmit }) {
 }
 
 CreateUserAccountFormInternal.propTypes = {
-  handleSubmit: PropTypes.func.isRequired
+  handleSubmit: PropTypes.func.isRequired,
 };

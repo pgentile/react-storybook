@@ -19,21 +19,21 @@ export default class DateInput extends React.PureComponent {
     value: PropTypes.string,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
-    onBlur: PropTypes.func
+    onBlur: PropTypes.func,
   };
 
   static defaultProps = {
     mode: "date",
     smallYear: false,
     className: "",
-    autoComplete: {}
+    autoComplete: {},
   };
 
   state = {
-    focus: false
+    focus: false,
   };
 
-  onValueChange = name => event => {
+  onValueChange = (name) => (event) => {
     const { target } = event;
     const { value: fieldValue } = target;
 
@@ -66,9 +66,9 @@ export default class DateInput extends React.PureComponent {
   onMonthChange = this.onValueChange("month");
   onYearChange = this.onValueChange("year");
 
-  onFieldFocus = event => {
+  onFieldFocus = (event) => {
     this.setState({
-      focus: true
+      focus: true,
     });
 
     const { onFocus } = this.props;
@@ -79,7 +79,7 @@ export default class DateInput extends React.PureComponent {
 
   onFieldBlur = () => {
     this.setState({
-      focus: false
+      focus: false,
     });
 
     const { onBlur } = this.props;
@@ -98,12 +98,12 @@ export default class DateInput extends React.PureComponent {
       error,
       disabled,
       focus,
-      "read-only": readOnly
+      "read-only": readOnly,
     });
 
     const yearClassName = bemModifiers("form-date-input__input", {
       year: true,
-      "year-small": smallYear
+      "year-small": smallYear,
     });
 
     return (
@@ -162,7 +162,7 @@ class DateParser {
   defaultDate = {
     year: "",
     month: "",
-    day: ""
+    day: "",
   };
 
   parseValue(value) {
@@ -173,7 +173,7 @@ class DateParser {
         ...this.defaultDate,
         year,
         month,
-        day
+        day,
       };
     }
     return this.defaultDate;
@@ -182,7 +182,7 @@ class DateParser {
   updateValue(value, fieldName, fieldValue) {
     const updatedValue = {
       ...this.parseValue(value),
-      [fieldName]: fieldValue
+      [fieldName]: fieldValue,
     };
     const { year, month, day } = updatedValue;
     if (year || month || day) {
@@ -195,7 +195,7 @@ class DateParser {
 class YearMonthParser {
   defaultDate = {
     year: "",
-    month: ""
+    month: "",
   };
 
   parseValue(value) {
@@ -205,7 +205,7 @@ class YearMonthParser {
       return {
         ...this.defaultDate,
         year,
-        month
+        month,
       };
     }
     return this.defaultDate;
@@ -214,7 +214,7 @@ class YearMonthParser {
   updateValue(value, fieldName, fieldValue) {
     const updatedValue = {
       ...this.parseValue(value),
-      [fieldName]: fieldValue
+      [fieldName]: fieldValue,
     };
     const { year, month } = updatedValue;
     if (year || month) {
@@ -226,5 +226,5 @@ class YearMonthParser {
 
 const parsers = {
   date: new DateParser(),
-  "year-month": new YearMonthParser()
+  "year-month": new YearMonthParser(),
 };

@@ -10,15 +10,15 @@ export default function FinalFieldContainer({ type = "text", name, label, childr
     type,
     subscription: {
       submitting: true,
-      value: true
-    }
+      value: true,
+    },
   });
 
   const error = useFieldError(name);
 
   return (
     <FieldContainer label={label} disabled={disabled || field.meta.submitting} errorMessage={error} {...otherProps}>
-      {props => children({ ...field.input, ...props })}
+      {(props) => children({ ...field.input, ...props })}
     </FieldContainer>
   );
 }
@@ -29,5 +29,5 @@ FinalFieldContainer.propTypes = {
   label: PropTypes.node.isRequired,
   children: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 };

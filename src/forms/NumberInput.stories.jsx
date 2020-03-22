@@ -4,7 +4,7 @@ import NumberInput from "./NumberInput";
 
 export default {
   title: "Forms / NumberInput",
-  component: NumberInput
+  component: NumberInput,
 };
 
 export const main = () => {
@@ -13,12 +13,12 @@ export const main = () => {
 
 class NumberInputDemo extends React.PureComponent {
   state = {
-    value: ""
+    value: "",
   };
 
-  onChange = event => {
+  onChange = (event) => {
     this.setState({
-      value: event.target.value
+      value: event.target.value,
     });
   };
 

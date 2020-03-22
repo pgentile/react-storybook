@@ -12,18 +12,18 @@ export const orderItemPropType = PropTypes.shape({
   id: PropTypes.string.isRequired,
   label: PropTypes.node.isRequired,
   price: Price.propTypes.price,
-  onCancel: PropTypes.func
+  onCancel: PropTypes.func,
 });
 
 export default function OrderSummary({ items }) {
   const hasManyItems = items.length > 1;
 
   const totalPrice = useMemo(() => {
-    const totalPriceValue = items.map(item => item.price.value).reduce((total, current) => total + current, 0);
+    const totalPriceValue = items.map((item) => item.price.value).reduce((total, current) => total + current, 0);
     const totalPriceCurrency = items?.[0]?.price.currency ?? "EUR";
     return {
       value: totalPriceValue,
-      currency: totalPriceCurrency
+      currency: totalPriceCurrency,
     };
   }, [items]);
 
@@ -37,11 +37,11 @@ export default function OrderSummary({ items }) {
 }
 
 OrderSummary.propTypes = {
-  items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired
+  items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired,
 };
 
 function OrderSummaryDetails({ items }) {
-  const itemElements = items.map(item => {
+  const itemElements = items.map((item) => {
     return <OrderSummaryItem key={item.id} item={item} />;
   });
 
@@ -49,13 +49,13 @@ function OrderSummaryDetails({ items }) {
 }
 
 OrderSummaryDetails.propTypes = {
-  items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired
+  items: PropTypes.arrayOf(orderItemPropType.isRequired).isRequired,
 };
 
 function OrderSummaryItem({ item }) {
   const { label, price, onCancel } = item;
 
-  const onCancelClick = event => {
+  const onCancelClick = (event) => {
     event.preventDefault();
     onCancel();
   };
@@ -74,7 +74,7 @@ function OrderSummaryItem({ item }) {
 }
 
 OrderSummaryItem.propTypes = {
-  item: orderItemPropType.isRequired
+  item: orderItemPropType.isRequired,
 };
 
 function OrderSummaryTotal({ totalPrice }) {
@@ -86,5 +86,5 @@ function OrderSummaryTotal({ totalPrice }) {
   );
 }
 OrderSummaryTotal.propTypes = {
-  totalPrice: Price.propTypes.price
+  totalPrice: Price.propTypes.price,
 };

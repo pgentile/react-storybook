@@ -6,12 +6,12 @@ import { action } from "@storybook/addon-actions";
 const means = ["visa", "mastercard", "maestro", "american-express"];
 
 const actions = {
-  onMeanChange: action("mean change")
+  onMeanChange: action("mean change"),
 };
 
 export default {
   title: "Payment | PaymentMeans",
-  component: PaymentMeans
+  component: PaymentMeans,
 };
 
 export const main = () => {

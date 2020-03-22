@@ -17,7 +17,7 @@ async function fail() {
 
 export default {
   title: "Buttons / ManagedProgressButton",
-  component: ManagedProgressButton
+  component: ManagedProgressButton,
 };
 
 export const successStory = () => {

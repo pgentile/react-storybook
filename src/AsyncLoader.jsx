@@ -6,24 +6,24 @@ import Spinner from "./Spinner";
 export default class AsyncLoader extends React.Component {
   static propTypes = {
     loader: PropTypes.func.isRequired,
-    error: PropTypes.func
+    error: PropTypes.func,
   };
 
   state = {
     loading: true,
     component: null,
-    generation: 0
+    generation: 0,
   };
 
   unmounted = false;
 
   onLoaded(component, expectedGeneration) {
     if (!this.unmounted) {
-      this.setState(prevState => {
+      this.setState((prevState) => {
         if (prevState.generation === expectedGeneration) {
           this.setState({
             loading: false,
-            component
+            component,
           });
         }
       });
@@ -35,7 +35,7 @@ export default class AsyncLoader extends React.Component {
 
     const newGeneration = generation + 1;
     this.setState({
-      generation: newGeneration
+      generation: newGeneration,
     });
 
     let component = null;

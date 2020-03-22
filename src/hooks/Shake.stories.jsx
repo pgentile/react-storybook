@@ -4,7 +4,7 @@ import Shake from "./Shake";
 
 export default {
   title: "Hooks / Shake",
-  component: Shake
+  component: Shake,
 };
 
 export const main = () => {

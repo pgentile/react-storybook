@@ -5,7 +5,7 @@ import sleep from "./utils/sleep";
 
 export default {
   title: "AsyncLoader",
-  component: AsyncLoader
+  component: AsyncLoader,
 };
 
 export const success = () => {

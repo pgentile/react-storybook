@@ -6,7 +6,7 @@ import I18nMessages from "./I18nMessages";
 export default {
   title: "I18n | I18nMessages",
   component: I18nMessages,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const main = () => {

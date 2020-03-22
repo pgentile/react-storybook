@@ -12,14 +12,14 @@ export default class ProgressButton extends React.PureComponent {
     ...Button.propTypes,
     loading: PropTypes.bool,
     finished: PropTypes.bool,
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
   };
 
   static defaultProps = {
     className: "",
     loading: false,
     finished: false,
-    disabled: false
+    disabled: false,
   };
 
   render() {
@@ -27,7 +27,7 @@ export default class ProgressButton extends React.PureComponent {
 
     const progressBarClassName = bemModifiers("progress-button__progress-bar", {
       loading,
-      finished
+      finished,
     });
 
     return (

@@ -6,7 +6,7 @@ import SuperRadio from "./SuperRadio";
 
 export default {
   title: "Forms / SuperRadio",
-  component: SuperRadio
+  component: SuperRadio,
 };
 
 export const main = () => {

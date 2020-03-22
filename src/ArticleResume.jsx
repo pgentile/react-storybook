@@ -12,7 +12,7 @@ export default function ArticleResume({ children }) {
   }, [setHidden]);
 
   const contentClass = bemModifiers("article-resume__content", {
-    hidden
+    hidden,
   });
 
   return (
@@ -30,5 +30,5 @@ export default function ArticleResume({ children }) {
 }
 
 ArticleResume.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

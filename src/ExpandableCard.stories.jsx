@@ -6,7 +6,7 @@ import ExpandableIcon from "./ExpandableIcon";
 
 class ExpandableCardDemo extends React.PureComponent {
   static propTypes = {
-    expandable: PropTypes.bool
+    expandable: PropTypes.bool,
   };
 
   state = {
@@ -19,18 +19,18 @@ class ExpandableCardDemo extends React.PureComponent {
         <p>Voici du contenu dépliable.</p>
         <p>Voici du contenu dépliable.</p>
       </Fragment>
-    )
+    ),
   };
 
-  onToggleExpand = event => {
+  onToggleExpand = (event) => {
     event.preventDefault();
     this.toogleExpand();
   };
 
   toogleExpand = () => {
-    this.setState(state => {
+    this.setState((state) => {
       return {
-        expanded: !state.expanded
+        expanded: !state.expanded,
       };
     });
   };
@@ -63,8 +63,8 @@ export default {
   title: "ExpandableCard",
   component: ExpandableCard,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {

@@ -6,8 +6,8 @@ export default {
   title: "Teleporter",
   component: TeleporterProvider,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => <Demo />;
@@ -35,7 +35,7 @@ function Demo() {
         <TeleporterTarget />
       </div>
       <div style={{ border: "green 2px solid" }}>
-        <input onChange={event => setText(event.target.value)} value={text} />
+        <input onChange={(event) => setText(event.target.value)} value={text} />
       </div>
     </TeleporterProvider>
   );

@@ -17,7 +17,7 @@ export default class OrderEditor extends React.PureComponent {
     onAddInsurance: InsuranceContainer.propTypes.onAddInsurance,
     onCancelInsurance: PropTypes.func.isRequired,
     onAddDonation: Donation.propTypes.onAddDonation,
-    onCancelDonation: Donation.propTypes.onCancelDonation
+    onCancelDonation: Donation.propTypes.onCancelDonation,
   };
 
   render() {
@@ -28,13 +28,13 @@ export default class OrderEditor extends React.PureComponent {
       onAddInsurance,
       onCancelInsurance,
       onAddDonation,
-      onCancelDonation
+      onCancelDonation,
     } = this.props;
     const hasVoucher = hasItemOfType(items, VOUCHER_TYPE);
     const hasInsurance = hasItemOfType(items, INSURANCE_TYPE);
     const donation = findItemOfType(items, DONATION_TYPE);
 
-    const itemsWithActions = items.map(item => {
+    const itemsWithActions = items.map((item) => {
       switch (item.type) {
         case VOUCHER_TYPE:
           return {
@@ -44,7 +44,7 @@ export default class OrderEditor extends React.PureComponent {
                 Code promotion <b>{item.code}</b> appliqué
               </Fragment>
             ),
-            onCancel: () => onCancelVoucher()
+            onCancel: () => onCancelVoucher(),
           };
         case DONATION_TYPE:
           return {
@@ -54,12 +54,12 @@ export default class OrderEditor extends React.PureComponent {
                 Votre don pour <b>{item.association}</b>
               </Fragment>
             ),
-            onCancel: () => onCancelDonation()
+            onCancel: () => onCancelDonation(),
           };
         case INSURANCE_TYPE:
           return {
             ...item,
-            onCancel: () => onCancelInsurance()
+            onCancel: () => onCancelInsurance(),
           };
         default:
           return item;
@@ -100,11 +100,11 @@ export default class OrderEditor extends React.PureComponent {
 }
 
 function hasItemOfType(items, type) {
-  return items.some(item => item.type === type);
+  return items.some((item) => item.type === type);
 }
 
 function findItemOfType(items, type) {
-  const donationItem = items.find(item => item.type === type);
+  const donationItem = items.find((item) => item.type === type);
   if (!donationItem) {
     return null;
   }

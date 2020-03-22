@@ -11,14 +11,14 @@ export default class Price extends React.PureComponent {
     noColor: PropTypes.bool,
     price: PropTypes.shape({
       value: PropTypes.number.isRequired,
-      currency: PropTypes.string.isRequired
-    }).isRequired
+      currency: PropTypes.string.isRequired,
+    }).isRequired,
   };
 
   static defaultProps = {
     as: "span",
     className: "",
-    noColor: false
+    noColor: false,
   };
 
   render() {
@@ -31,7 +31,7 @@ export default class Price extends React.PureComponent {
     const hasCents = cents > 0;
 
     const realClassName = bemModifiers("price", {
-      "no-color": noColor
+      "no-color": noColor,
     });
 
     return (

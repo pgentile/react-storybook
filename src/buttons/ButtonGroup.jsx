@@ -9,12 +9,12 @@ export default class ButtonGroup extends React.PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {
     as: "div",
-    className: ""
+    className: "",
   };
 
   render() {
@@ -27,12 +27,12 @@ export class ButtonInGroup extends React.PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {
     as: Button,
-    className: ""
+    className: "",
   };
 
   render() {

@@ -5,7 +5,7 @@ import { noop } from "lodash-es";
 const LanguageContext = createContext({
   language: null,
   country: null,
-  setLanguage: noop
+  setLanguage: noop,
 });
 
 LanguageContext.displayName = "Language";
@@ -23,7 +23,7 @@ export default function Language({ children }) {
   useEffect(() => localStorage.setItem("lang", browserLanguage), [browserLanguage]);
 
   const setLanguage = useCallback(
-    newLanguage => {
+    (newLanguage) => {
       setBrowserLanguage(newLanguage + "-" + country);
     },
     [country]
@@ -33,7 +33,7 @@ export default function Language({ children }) {
 }
 
 Language.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 function parseBrowserLanguage(browserLanguage) {

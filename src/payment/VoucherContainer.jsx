@@ -10,26 +10,26 @@ import "./VoucherContainer.scss";
 export default class VoucherContainer extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
-    onAddVoucher: PropTypes.func.isRequired
+    onAddVoucher: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    className: ""
+    className: "",
   };
 
   state = {
-    currentState: "QUESTION"
+    currentState: "QUESTION",
   };
 
   onShowForm = () => {
     this.setState({
-      currentState: "FORM"
+      currentState: "FORM",
     });
   };
 
   onHideForm = () => {
     this.setState({
-      currentState: "QUESTION"
+      currentState: "QUESTION",
     });
   };
 

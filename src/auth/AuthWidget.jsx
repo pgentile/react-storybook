@@ -25,7 +25,7 @@ export default function AuthWidget({ onValidate }) {
 }
 
 AuthWidget.propTypes = {
-  onValidate: PropTypes.func.isRequired
+  onValidate: PropTypes.func.isRequired,
 };
 
 AuthWidget.defaultProps = {};

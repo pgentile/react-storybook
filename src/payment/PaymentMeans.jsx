@@ -14,22 +14,22 @@ export default class PaymentMeans extends React.PureComponent {
     means: PropTypes.arrayOf(PropTypes.string.isRequired),
     selectedMean: PropTypes.string,
     disabled: PropTypes.bool,
-    onMeanChange: PropTypes.func.isRequired
+    onMeanChange: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
     className: "",
-    means: []
+    means: [],
   };
 
-  onMeanChange = event => {
+  onMeanChange = (event) => {
     this.props.onMeanChange(event.target.value);
   };
 
   render() {
     const { className, means, selectedMean, disabled } = this.props;
 
-    const renderedMeans = means.map(mean => {
+    const renderedMeans = means.map((mean) => {
       return (
         <PaymentMean
           key={mean}
@@ -48,7 +48,7 @@ export default class PaymentMeans extends React.PureComponent {
 const icons = {
   visa: faCcVisa,
   mastercard: faCcMastercard,
-  "american-express": faCcAmex
+  "american-express": faCcAmex,
 };
 
 class PaymentMean extends React.PureComponent {
@@ -57,7 +57,7 @@ class PaymentMean extends React.PureComponent {
     mean: PropTypes.string.isRequired,
     checked: PropTypes.bool,
     disabled: PropTypes.bool,
-    onMeanChange: PropTypes.func.isRequired
+    onMeanChange: PropTypes.func.isRequired,
   };
 
   render() {

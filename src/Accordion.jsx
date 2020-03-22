@@ -10,7 +10,7 @@ import "./Accordion.scss";
 
 const Context = createContext({
   toggleExpanded: noop,
-  isExpanded: () => false
+  isExpanded: () => false,
 });
 
 Context.displayName = "Accordion";
@@ -19,9 +19,9 @@ export default function Accordion({ children, uniqueExpandable }) {
   const [expandedPanels, setExpandedPanels] = useState([]);
 
   const toggleExpanded = useCallback(
-    id => {
+    (id) => {
       if (expandedPanels.includes(id)) {
-        setExpandedPanels(expandedPanels.filter(item => item !== id));
+        setExpandedPanels(expandedPanels.filter((item) => item !== id));
       } else {
         if (uniqueExpandable) {
           setExpandedPanels([id]);
@@ -33,7 +33,7 @@ export default function Accordion({ children, uniqueExpandable }) {
     [expandedPanels, uniqueExpandable]
   );
 
-  const isExpanded = useCallback(id => expandedPanels.includes(id), [expandedPanels]);
+  const isExpanded = useCallback((id) => expandedPanels.includes(id), [expandedPanels]);
 
   return (
     <div className="accordion">
@@ -44,11 +44,11 @@ export default function Accordion({ children, uniqueExpandable }) {
 
 Accordion.propTypes = {
   children: PropTypes.node,
-  uniqueExpandable: PropTypes.bool.isRequired
+  uniqueExpandable: PropTypes.bool.isRequired,
 };
 
 Accordion.defaultProps = {
-  uniqueExpandable: false
+  uniqueExpandable: false,
 };
 
 let accordionCounter = 1;
@@ -70,7 +70,7 @@ export function AccordionPanel({ id, title, children, initiallyExpanded }) {
   const onTitleClick = useCallback(() => toggleExpanded(id), [toggleExpanded, id]);
 
   const onTitleKeyPress = useCallback(
-    event => {
+    (event) => {
       if (event.key === "Enter" || event.key === " ") {
         toggleExpanded(id);
       }
@@ -108,9 +108,9 @@ AccordionPanel.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.node.isRequired,
   initiallyExpanded: PropTypes.bool.isRequired,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 AccordionPanel.defaultProps = {
-  initiallyExpanded: false
+  initiallyExpanded: false,
 };

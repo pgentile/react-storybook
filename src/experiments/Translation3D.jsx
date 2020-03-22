@@ -10,7 +10,7 @@ export default function Translation3D({ yTranslate = 0 }) {
       className="translation-3d"
       style={{
         perspective: `${ZMAX}px`,
-        height: "100vh"
+        height: "100vh",
       }}
     >
       <Square size={100} bgColor="red" yTranslate={yTranslate} />
@@ -21,7 +21,7 @@ export default function Translation3D({ yTranslate = 0 }) {
 }
 
 Translation3D.propTypes = {
-  yTranslate: PropTypes.number
+  yTranslate: PropTypes.number,
 };
 
 function Square({ size, bgColor, x = 0, y = 0, z = 0, yTranslate = 0 }) {
@@ -33,7 +33,7 @@ function Square({ size, bgColor, x = 0, y = 0, z = 0, yTranslate = 0 }) {
     width: `${size}px`,
     height: `${size}px`,
     backgroundColor: bgColor,
-    transform: `translate3d(0, ${yTranslate}px, ${z}px) scale(${scale})`
+    transform: `translate3d(0, ${yTranslate}px, ${z}px) scale(${scale})`,
   });
 
   return <animated.div style={style} />;
@@ -45,5 +45,5 @@ Square.propTypes = {
   x: PropTypes.number,
   y: PropTypes.number,
   z: PropTypes.number,
-  yTranslate: PropTypes.number
+  yTranslate: PropTypes.number,
 };

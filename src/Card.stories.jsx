@@ -14,7 +14,7 @@ stories.add("Carte simple", () => {
   return <Card>{content}</Card>;
 });
 
-layers.forEach(layer => {
+layers.forEach((layer) => {
   stories.add(`Carte de niveau ${layer}`, () => {
     return (
       <Card layer={layer}>
@@ -26,7 +26,7 @@ layers.forEach(layer => {
   });
 });
 
-layers.forEach(layer => {
+layers.forEach((layer) => {
   stories.add(`Carte de niveau ${layer} sans bordure`, () => {
     return (
       <Card layer={layer} hasBorder={false}>

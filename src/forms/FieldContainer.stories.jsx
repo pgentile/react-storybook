@@ -9,7 +9,7 @@ function innerField(props) {
 
 export default {
   title: "Forms / FieldContainer",
-  component: FieldContainer
+  component: FieldContainer,
 };
 
 export const main = () => {

@@ -4,7 +4,7 @@ import HookedForm from "./HookedForm";
 
 export default {
   title: "Hooks / HookedForm",
-  component: HookedForm
+  component: HookedForm,
 };
 
 export const main = () => {

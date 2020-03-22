@@ -7,13 +7,13 @@ export default class AdaptativeList extends React.PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.node)
+    items: PropTypes.arrayOf(PropTypes.node),
   };
 
   static defaultProps = {
     as: "div",
     className: "",
-    items: []
+    items: [],
   };
 
   render() {

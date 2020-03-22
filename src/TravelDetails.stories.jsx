@@ -4,7 +4,7 @@ import TravelDetails from "./TravelDetails";
 
 export default {
   title: "TravelDetails",
-  component: TravelDetails
+  component: TravelDetails,
 };
 
 export const main = () => {
@@ -15,14 +15,14 @@ export const main = () => {
       equipment: "TER",
       origin: "Clisson",
       destination: "Nantes",
-      duration: 30
+      duration: 30,
     },
     {
       type: "connection",
       sameStation: true,
       origin: "Nantes",
       destination: "Nantes",
-      duration: 25
+      duration: 25,
     },
     {
       type: "train",
@@ -30,14 +30,14 @@ export const main = () => {
       equipment: "TGV Atlantique",
       origin: "Nantes",
       destination: "Paris Montparnasse",
-      duration: 60 * 2 + 16
+      duration: 60 * 2 + 16,
     },
     {
       type: "connection",
       sameStation: false,
       origin: "Paris Montparnasse",
       destination: "Paris Gare du Nord",
-      duration: 62
+      duration: 62,
     },
     {
       type: "train",
@@ -47,9 +47,9 @@ export const main = () => {
       destination: "Londres",
       duration: 60 * 2,
       boardingCondition: {
-        minDelayBeforeDeparture: 30
-      }
-    }
+        minDelayBeforeDeparture: 30,
+      },
+    },
   ];
   return <TravelDetails segments={segments} />;
 };

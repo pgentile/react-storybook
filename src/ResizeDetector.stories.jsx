@@ -4,7 +4,7 @@ import ResizeDetector from "./ResizeDetector";
 
 export default {
   title: "ResizeDetector",
-  component: ResizeDetector
+  component: ResizeDetector,
 };
 
 export const main = () => {

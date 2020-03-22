@@ -6,7 +6,7 @@ import NumberInput from "./NumberInput";
 
 export default {
   title: "Forms / InputField",
-  component: InputField
+  component: InputField,
 };
 
 export const main = () => {

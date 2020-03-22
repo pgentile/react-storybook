@@ -6,8 +6,8 @@ export default {
   title: "Suspense / SuspenseDemo",
   component: SuspenseDemo,
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const main = () => {

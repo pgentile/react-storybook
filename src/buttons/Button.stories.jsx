@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions";
 import Button from "./Button";
 
 const actions = {
-  onClick: action("click")
+  onClick: action("click"),
 };
 
 const sizes = ["small", "normal", "large"];
@@ -36,7 +36,7 @@ const stories = storiesOf("Buttons / Button", module)
     );
   });
 
-sizes.forEach(size => {
+sizes.forEach((size) => {
   stories.add(`Taille ${size}`, () => {
     return (
       <Button {...actions} size={size}>

@@ -35,7 +35,7 @@ export default function MicroFrontend({ id, manifestUrl }) {
 
 MicroFrontend.propTypes = {
   id: PropTypes.string.isRequired,
-  manifestUrl: PropTypes.string.isRequired
+  manifestUrl: PropTypes.string.isRequired,
 };
 
 async function retrieveManifest(id, manifestUrl) {
@@ -43,7 +43,7 @@ async function retrieveManifest(id, manifestUrl) {
   console.info("Loading", manifestUrl); // eslint-disable-line no-console
   return {
     scriptUrl: "https://eum.instana.io/eum.js",
-    namespace: `instana-${id}`
+    namespace: `instana-${id}`,
   };
 }
 
@@ -64,13 +64,13 @@ async function loadScript(id, namespace, scriptUrl) {
 
     // Fake namespace
     window[namespace] = {
-      mount: root => {
+      mount: (root) => {
         console.info("Mount into", root); // eslint-disable-line no-console
         root.innerHTML = `Mounted ${id}`;
       },
-      unmount: root => {
+      unmount: (root) => {
         console.info("Unmount into", root); // eslint-disable-line no-console
-      }
+      },
     };
 
     const headOrBody = document.head ?? document.body;

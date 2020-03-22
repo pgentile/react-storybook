@@ -8,13 +8,13 @@ const wipClass = css({
   background: "repeating-linear-gradient(45deg, transparent, transparent 10px, black 10px, black 20px)",
   backgroundColor: "yellow",
   "&:hover": {
-    backgroundColor: "orange"
-  }
+    backgroundColor: "orange",
+  },
 });
 
 const wipContainerClass = css({
   padding: "10px",
-  backgroundColor: "white"
+  backgroundColor: "white",
 });
 
 export default function Wip({ children }) {
@@ -26,5 +26,5 @@ export default function Wip({ children }) {
 }
 
 Wip.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

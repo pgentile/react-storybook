@@ -3,10 +3,10 @@ import { handleAction } from "redux-actions";
 
 // Selectors
 
-const scope = createScope(state => state.navigatorStatus);
+const scope = createScope((state) => state.navigatorStatus);
 
-export const selectIsConnected = scope(state => state.connected);
-export const selectIsDisconnected = scope(state => !state.connected);
+export const selectIsConnected = scope((state) => state.connected);
+export const selectIsDisconnected = scope((state) => !state.connected);
 
 // Actions
 
@@ -17,22 +17,22 @@ function setStatus(connected) {
   return {
     type: SET_STATUS,
     payload: {
-      connected
-    }
+      connected,
+    },
   };
 }
 
 // Reducer
 
 const initialState = {
-  connected: true
+  connected: true,
 };
 
 export default handleAction(
   SET_STATUS,
   (state, action) => ({
     ...state,
-    connected: action.payload.connected
+    connected: action.payload.connected,
   }),
   initialState
 );
@@ -40,7 +40,7 @@ export default handleAction(
 // Middleware
 
 export function navigatorStatusMiddleware() {
-  return store => {
+  return (store) => {
     window.addEventListener("online", () => {
       store.dispatch(setStatus(true));
     });
@@ -49,7 +49,7 @@ export function navigatorStatusMiddleware() {
       store.dispatch(setStatus(false));
     });
 
-    return next => action => next(action);
+    return (next) => (action) => next(action);
   };
 }
 

@@ -15,7 +15,7 @@ import "./RegistredCardCvvForm.scss";
 const focusOnErrors = createDecorator();
 
 export default function RegistredCardCvvForm({ brand, totalPrice, disabled, onCancel, onUseCard }) {
-  const onSubmit = async values => {
+  const onSubmit = async (values) => {
     await onUseCard(values);
   };
 
@@ -36,24 +36,24 @@ RegistredCardCvvForm.propTypes = {
   brand: PropTypes.string.isRequired,
   totalPrice: PropTypes.shape({
     value: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired
+    currency: PropTypes.string.isRequired,
   }).isRequired,
   disabled: PropTypes.bool,
   onCancel: PropTypes.func.isRequired,
-  onUseCard: PropTypes.func.isRequired
+  onUseCard: PropTypes.func.isRequired,
 };
 
 function InternalRegistredCardCvvForm({ brand, totalPrice, disabled, onCancel }) {
   const { submitting } = useFormState({
     subscription: {
-      submitting: true
-    }
+      submitting: true,
+    },
   });
 
   const { reset, resetFieldState } = useForm();
 
   const cvv = useField("cvv", {
-    validate: value => {
+    validate: (value) => {
       const cardBrandInfo = getTypeInfo(brand);
       if (value) {
         const cvvLength = cardBrandInfo && cardBrandInfo.code && cardBrandInfo.code.size;
@@ -66,7 +66,7 @@ function InternalRegistredCardCvvForm({ brand, totalPrice, disabled, onCancel })
         }
       }
     },
-    validateFields: []
+    validateFields: [],
   });
 
   const disableForm = submitting || disabled;
@@ -94,7 +94,7 @@ function InternalRegistredCardCvvForm({ brand, totalPrice, disabled, onCancel })
         helpMessage={cvvHelpMessage}
         optional={isMaestro}
       >
-        {props => (
+        {(props) => (
           <InputField
             as={NumberInput}
             {...cvv.input}
@@ -122,10 +122,10 @@ InternalRegistredCardCvvForm.propTypes = {
   brand: PropTypes.string.isRequired,
   totalPrice: PropTypes.shape({
     value: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired
+    currency: PropTypes.string.isRequired,
   }).isRequired,
   disabled: PropTypes.bool,
-  onCancel: PropTypes.func.isRequired
+  onCancel: PropTypes.func.isRequired,
 };
 
 function getFieldError(field) {

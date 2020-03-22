@@ -7,7 +7,7 @@ export default function WindshieldButton() {
   const [enabled, setEnabled] = useState(false);
 
   const onButtonClick = useCallback(() => {
-    setEnabled(prevValue => !prevValue);
+    setEnabled((prevValue) => !prevValue);
   }, []);
 
   return (

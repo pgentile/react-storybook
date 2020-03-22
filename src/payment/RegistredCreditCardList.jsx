@@ -12,32 +12,32 @@ export default class RegistredCreditCardList extends React.PureComponent {
     cards: PropTypes.arrayOf(PropTypes.shape(registredCreditCardShape)),
     totalPrice: PropTypes.shape({
       value: PropTypes.number.isRequired,
-      currency: PropTypes.string.isRequired
+      currency: PropTypes.string.isRequired,
     }).isRequired,
     disabled: PropTypes.bool,
-    onUseCard: PropTypes.func.isRequired
+    onUseCard: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
     className: "",
-    cards: []
+    cards: [],
   };
 
   state = {
-    cardId: null
+    cardId: null,
   };
 
-  onShowCvv = memoize(cardId => {
+  onShowCvv = memoize((cardId) => {
     return () => {
       this.setState({
-        cardId
+        cardId,
       });
     };
   });
 
   onHideCvv = () => {
     this.setState({
-      cardId: null
+      cardId: null,
     });
   };
 
@@ -45,7 +45,7 @@ export default class RegistredCreditCardList extends React.PureComponent {
     const { className, cards, totalPrice, disabled, onUseCard } = this.props;
     const { cardId } = this.state;
 
-    const renderedCarts = cards.map(card => {
+    const renderedCarts = cards.map((card) => {
       return (
         <RegistredCreditCard
           className="registred-credit-card-list__item"

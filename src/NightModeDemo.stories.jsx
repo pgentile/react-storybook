@@ -12,7 +12,7 @@ const onExpire = action("expire");
 
 export default {
   title: "NightModeDemo",
-  component: NightModeDemo
+  component: NightModeDemo,
 };
 
 export const main = () => <NightModeDemo />;

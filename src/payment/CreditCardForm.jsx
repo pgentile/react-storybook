@@ -17,7 +17,7 @@ import "./CreditCardForm.scss";
 const focusOnErrors = createDecorator();
 
 export default function CreditCardForm({ className = "", totalPrice, onPay }) {
-  const onSubmit = async values => {
+  const onSubmit = async (values) => {
     await onPay(values);
   };
 
@@ -38,9 +38,9 @@ CreditCardForm.propTypes = {
   className: PropTypes.string,
   totalPrice: PropTypes.shape({
     value: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired
+    currency: PropTypes.string.isRequired,
   }).isRequired,
-  onPay: PropTypes.func.isRequired
+  onPay: PropTypes.func.isRequired,
 };
 
 function InternalCreditCardForm({ totalPrice }) {
@@ -48,12 +48,12 @@ function InternalCreditCardForm({ totalPrice }) {
     subscription: {
       submitting: true,
       hasSubmitErrors: true,
-      submitError: true
-    }
+      submitError: true,
+    },
   });
 
   const cardNumber = useField("cardNumber", {
-    validate: value => {
+    validate: (value) => {
       const cardValidation = cardValidator.number(value);
       if (!cardValidation.isValid) {
         return "Numéro de carte invalide";
@@ -67,17 +67,17 @@ function InternalCreditCardForm({ totalPrice }) {
         }
       }
     },
-    validateFields: ["cvv"]
+    validateFields: ["cvv"],
   });
 
   const expirationDate = useField("expirationDate", {
-    validate: value => {
+    validate: (value) => {
       const [year, month] = (value ?? "").split("-");
       if (!cardValidator.expirationDate({ year, month }).isValid) {
         return "Date d'expiration invalide";
       }
     },
-    validateFields: []
+    validateFields: [],
   });
 
   const cvv = useField("cvv", {
@@ -96,7 +96,7 @@ function InternalCreditCardForm({ totalPrice }) {
         }
       }
     },
-    validateFields: ["cardNumber"]
+    validateFields: ["cardNumber"],
   });
 
   const cards = creditCardType(cardNumber.input.value);
@@ -119,7 +119,7 @@ function InternalCreditCardForm({ totalPrice }) {
         disabled={submitting}
         errorMessage={getFieldError(cardNumber)}
       >
-        {props => (
+        {(props) => (
           <InputField as={NumberInput} {...cardNumber.input} {...props} autoComplete="cc-number" maxLength={19} />
         )}
       </FieldContainer>
@@ -131,7 +131,7 @@ function InternalCreditCardForm({ totalPrice }) {
         errorMessage={getFieldError(expirationDate)}
         helpMessage="Date au format AA-MM"
       >
-        {props => <InputField {...expirationDate.input} {...props} autoComplete="cc-exp" maxLength={5} />}
+        {(props) => <InputField {...expirationDate.input} {...props} autoComplete="cc-exp" maxLength={5} />}
       </FieldContainer>
 
       <FieldContainer
@@ -142,7 +142,7 @@ function InternalCreditCardForm({ totalPrice }) {
         helpMessage={cvvHelpMessage}
         optional={isMaestro}
       >
-        {props => (
+        {(props) => (
           <InputField as={NumberInput} {...cvv.input} {...props} name="cvv" autoComplete="cc-csc" maxLength={4} />
         )}
       </FieldContainer>
@@ -160,8 +160,8 @@ function InternalCreditCardForm({ totalPrice }) {
 InternalCreditCardForm.propTypes = {
   totalPrice: PropTypes.shape({
     value: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired
-  }).isRequired
+    currency: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 function getFieldError(field) {

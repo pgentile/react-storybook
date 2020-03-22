@@ -37,5 +37,5 @@ export default function Overlay({ visible = true, children, onClick }) {
 Overlay.propTypes = {
   visible: PropTypes.bool,
   children: PropTypes.node,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };

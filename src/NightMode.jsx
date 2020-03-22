@@ -9,11 +9,11 @@ export default function NightMode({ children }) {
   const [enabled, setEnabled] = useState(false);
 
   const onSwitchClick = useCallback(() => {
-    setEnabled(prevValue => !prevValue);
+    setEnabled((prevValue) => !prevValue);
   }, []);
 
   const className = bemModifiers("night-mode", {
-    enabled
+    enabled,
   });
 
   return (
@@ -29,5 +29,5 @@ export default function NightMode({ children }) {
 }
 
 NightMode.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

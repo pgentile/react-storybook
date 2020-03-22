@@ -12,20 +12,20 @@ export default class Label extends React.PureComponent {
     htmlFor: PropTypes.string,
     disabled: PropTypes.bool,
     optional: PropTypes.bool,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {
     as: "label",
     className: "",
-    optional: false
+    optional: false,
   };
 
   render() {
     const { as: Element, className, htmlFor, disabled, optional, children, ...otherProps } = this.props;
 
     const labelClassName = bemModifiers("label", {
-      disabled
+      disabled,
     });
 
     return (

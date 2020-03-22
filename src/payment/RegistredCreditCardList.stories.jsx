@@ -8,36 +8,36 @@ const cards = [
     id: "1",
     brand: "visa",
     maskedNumber: "#### #### #### 1111",
-    expirationDate: "2031-01"
+    expirationDate: "2031-01",
   },
   {
     id: "2",
     brand: "mastercard",
     maskedNumber: "#### #### #### 1113",
-    expirationDate: "2029-01"
+    expirationDate: "2029-01",
   },
   {
     id: "3",
     brand: "american-express",
     maskedNumber: "#### ###### #3342",
-    expirationDate: "2029-01"
+    expirationDate: "2029-01",
   },
   {
     id: "4",
     brand: "maestro",
     maskedNumber: "#### #### #### 1111",
-    expirationDate: "2028-01"
-  }
+    expirationDate: "2028-01",
+  },
 ];
 
 const totalPrice = {
   value: 100,
-  currency: "EUR"
+  currency: "EUR",
 };
 
 export default {
   title: "Payment | RegistredCreditCardList",
-  component: RegistredCreditCardList
+  component: RegistredCreditCardList,
 };
 
 export const main = () => {

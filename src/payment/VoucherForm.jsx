@@ -13,12 +13,12 @@ import "./VoucherForm.scss";
 const focusOnErrors = createDecorator();
 
 export default function VoucherForm({ code, className, onAddVoucher, onCancel }) {
-  const onFormSubmit = async values => {
+  const onFormSubmit = async (values) => {
     try {
       await onAddVoucher(values.code);
     } catch (e) {
       return {
-        code: "Nous n'avons pas réussi à prendre en compte votre code promo"
+        code: "Nous n'avons pas réussi à prendre en compte votre code promo",
       };
     }
   };
@@ -39,27 +39,27 @@ VoucherForm.propTypes = {
   code: PropTypes.string,
   className: PropTypes.string,
   onAddVoucher: PropTypes.func.isRequired,
-  onCancel: PropTypes.func.isRequired
+  onCancel: PropTypes.func.isRequired,
 };
 
 function VoucherFormInternal({ handleSubmit, className = "", onCancel }) {
   useField("code", {
     subscription: {},
-    validate: value => {
+    validate: (value) => {
       if (!value) {
         return "Vous n'avez pas renseigné votre code";
       }
       if (value.length < 6) {
         return "Votre code est trop court";
       }
-    }
+    },
   });
 
   return (
     <form className={`voucher-form ${className}`} onSubmit={handleSubmit}>
       <div className="voucher-form__line">
         <FinalFieldContainer name="code" label="Code promo">
-          {fieldProps => <InputField {...fieldProps} autoComplete="off" spellCheck={false} maxLength={16} />}
+          {(fieldProps) => <InputField {...fieldProps} autoComplete="off" spellCheck={false} maxLength={16} />}
         </FinalFieldContainer>
       </div>
       <div className="voucher-form__line">
@@ -77,5 +77,5 @@ function VoucherFormInternal({ handleSubmit, className = "", onCancel }) {
 VoucherFormInternal.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   onCancel: PropTypes.func.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };

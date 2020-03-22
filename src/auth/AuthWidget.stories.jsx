@@ -7,7 +7,7 @@ const onValidate = action("onValidate");
 
 export default {
   title: "Auth / AuthWidget",
-  component: AuthWidget
+  component: AuthWidget,
 };
 
 export const main = () => {

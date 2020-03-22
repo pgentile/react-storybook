@@ -9,12 +9,12 @@ import "./Travel.scss";
 const tripPropShape = PropTypes.shape({
   origin: PropTypes.string.isRequired,
   destination: PropTypes.string.isRequired,
-  departureDate: PropTypes.string.isRequired
+  departureDate: PropTypes.string.isRequired,
 });
 
 const amountPropShape = PropTypes.shape({
   value: PropTypes.number.isRequired,
-  currency: PropTypes.string.isRequired
+  currency: PropTypes.string.isRequired,
 });
 
 export default class Travel extends React.PureComponent {
@@ -22,7 +22,7 @@ export default class Travel extends React.PureComponent {
     outwardTrip: tripPropShape.isRequired,
     inwardTrip: tripPropShape,
     passengerCount: PropTypes.number.isRequired,
-    price: amountPropShape.isRequired
+    price: amountPropShape.isRequired,
   };
 
   render() {
@@ -45,7 +45,7 @@ class TravelHeader extends React.PureComponent {
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
     inwardTrip: tripPropShape,
-    price: amountPropShape.isRequired
+    price: amountPropShape.isRequired,
   };
 
   render() {
@@ -63,7 +63,7 @@ class TravelHeader extends React.PureComponent {
 class TravelTitle extends React.PureComponent {
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
-    inwardTrip: tripPropShape
+    inwardTrip: tripPropShape,
   };
 
   render() {
@@ -75,7 +75,7 @@ class TravelTitle extends React.PureComponent {
     const separator = symetricalRountrip ? "⇄" : "➝";
 
     const titleClass = bemModifiers("travel__header-title", {
-      "asymetrical-roundtrip": asymetricalRountrip
+      "asymetrical-roundtrip": asymetricalRountrip,
     });
 
     return (
@@ -91,7 +91,7 @@ class TravelDetails extends React.PureComponent {
   static propTypes = {
     outwardDepartureDate: PropTypes.string.isRequired,
     inwardDepartureDate: PropTypes.string,
-    passengerCount: PropTypes.number.isRequired
+    passengerCount: PropTypes.number.isRequired,
   };
 
   render() {

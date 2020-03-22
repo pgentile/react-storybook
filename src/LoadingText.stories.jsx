@@ -4,7 +4,7 @@ import LoadingText from "./LoadingText";
 
 export default {
   title: "LoadingText",
-  component: LoadingText
+  component: LoadingText,
 };
 
 export const main = () => {

@@ -8,8 +8,8 @@ export default {
   component: Expandable,
   decorators: [withKnobs],
   parameters: {
-    storyshots: false
-  }
+    storyshots: false,
+  },
 };
 
 export const exemple = () => {

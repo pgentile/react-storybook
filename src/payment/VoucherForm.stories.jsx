@@ -6,12 +6,12 @@ import sleep from "../utils/sleep";
 
 const actions = {
   onAddVoucher: action("add voucher"),
-  onCancel: action("cancel")
+  onCancel: action("cancel"),
 };
 
 export default {
   title: "Payment | VoucherForm",
-  component: VoucherForm
+  component: VoucherForm,
 };
 
 export const main = () => {

@@ -17,7 +17,7 @@ export default function AuthIKnowYou({ onConnectClick }) {
 }
 
 AuthIKnowYou.propTypes = {
-  onConnectClick: PropTypes.func.isRequired
+  onConnectClick: PropTypes.func.isRequired,
 };
 
 AuthIKnowYou.defaultProps = {};

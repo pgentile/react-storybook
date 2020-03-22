@@ -6,7 +6,7 @@ import schema from "./schemas/searchInward.request.json";
 
 export default class SearchInwardForm extends React.PureComponent {
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
   };
 
   render() {
