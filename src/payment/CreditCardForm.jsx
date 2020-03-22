@@ -5,8 +5,8 @@ import createDecorator from "final-form-focus";
 import cardValidator from "card-validator";
 import creditCardType from "credit-card-type";
 
+import FinalFieldContainer from "../ff/FinalFieldContainer";
 import FinalButton from "../ff/FinalButton";
-import FieldContainer from "../forms/FieldContainer";
 import InputField from "../forms/InputField";
 import NumberInput from "../forms/NumberInput";
 import Price from "../Price";
@@ -44,15 +44,17 @@ CreditCardForm.propTypes = {
 };
 
 function InternalCreditCardForm({ totalPrice }) {
-  const { submitting, hasSubmitErrors, submitError } = useFormState({
+  const { hasSubmitErrors, submitError } = useFormState({
     subscription: {
-      submitting: true,
       hasSubmitErrors: true,
       submitError: true,
     },
   });
 
   const cardNumber = useField("cardNumber", {
+    subscription: {
+      value: true,
+    },
     validate: (value) => {
       const cardValidation = cardValidator.number(value);
       if (!cardValidation.isValid) {
@@ -70,7 +72,8 @@ function InternalCreditCardForm({ totalPrice }) {
     validateFields: ["cvv"],
   });
 
-  const expirationDate = useField("expirationDate", {
+  useField("expirationDate", {
+    subscription: {},
     validate: (value) => {
       const [year, month] = (value ?? "").split("-");
       if (!cardValidator.expirationDate({ year, month }).isValid) {
@@ -80,7 +83,8 @@ function InternalCreditCardForm({ totalPrice }) {
     validateFields: [],
   });
 
-  const cvv = useField("cvv", {
+  useField("cvv", {
+    subscription: {},
     validate: (value, { cardNumber }) => {
       const cardValidation = cardValidator.number(cardNumber);
 
@@ -113,39 +117,28 @@ function InternalCreditCardForm({ totalPrice }) {
         </Card>
       )}
 
-      <FieldContainer
-        label="Numéro de carte"
-        className="credit-card-form__card-number"
-        disabled={submitting}
-        errorMessage={getFieldError(cardNumber)}
-      >
-        {(props) => (
-          <InputField as={NumberInput} {...cardNumber.input} {...props} autoComplete="cc-number" maxLength={19} />
-        )}
-      </FieldContainer>
+      <FinalFieldContainer name="cardNumber" label="Numéro de carte" className="credit-card-form__card-number">
+        {(props) => <InputField as={NumberInput} {...props} autoComplete="cc-number" maxLength={19} />}
+      </FinalFieldContainer>
 
-      <FieldContainer
+      <FinalFieldContainer
+        name="expirationDate"
         label="Date d'expiration"
         className="credit-card-form__expiration-date"
-        disabled={submitting}
-        errorMessage={getFieldError(expirationDate)}
         helpMessage="Date au format AA-MM"
       >
-        {(props) => <InputField {...expirationDate.input} {...props} autoComplete="cc-exp" maxLength={5} />}
-      </FieldContainer>
+        {(props) => <InputField {...props} autoComplete="cc-exp" maxLength={5} />}
+      </FinalFieldContainer>
 
-      <FieldContainer
+      <FinalFieldContainer
+        name="cvv"
         label="Code de sécurité"
         className="credit-card-form__cvv"
-        disabled={submitting}
-        errorMessage={getFieldError(cvv)}
         helpMessage={cvvHelpMessage}
         optional={isMaestro}
       >
-        {(props) => (
-          <InputField as={NumberInput} {...cvv.input} {...props} name="cvv" autoComplete="cc-csc" maxLength={4} />
-        )}
-      </FieldContainer>
+        {(props) => <InputField as={NumberInput} {...props} autoComplete="cc-csc" maxLength={4} />}
+      </FinalFieldContainer>
 
       <div className="credit-card-form__button">
         <FinalButton size="large" type="submit">
@@ -163,13 +156,3 @@ InternalCreditCardForm.propTypes = {
     currency: PropTypes.string.isRequired,
   }).isRequired,
 };
-
-function getFieldError(field) {
-  const { touched, error, submitError, pristine } = field.meta;
-  if (touched && error) {
-    return error;
-  }
-  if (submitError && pristine) {
-    return submitError;
-  }
-}
