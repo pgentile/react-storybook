@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { getTypeInfo } from "credit-card-type";
-import { Form, useField, useFormState, useForm } from "react-final-form";
+import { Form, useField, useForm } from "react-final-form";
 import createDecorator from "final-form-focus";
 
-import FieldContainer from "../forms/FieldContainer";
+import FinalFieldContainer from "../ff/FinalFieldContainer";
+import FinalButton from "../ff/FinalButton";
 import InputField from "../forms/InputField";
-import Button from "../buttons/Button";
 import NumberInput from "../forms/NumberInput";
 import Price from "../Price";
 
@@ -44,15 +44,10 @@ RegistredCardCvvForm.propTypes = {
 };
 
 function InternalRegistredCardCvvForm({ brand, totalPrice, disabled, onCancel }) {
-  const { submitting } = useFormState({
-    subscription: {
-      submitting: true,
-    },
-  });
-
   const { reset, resetFieldState } = useForm();
 
-  const cvv = useField("cvv", {
+  useField("cvv", {
+    subscription: {},
     validate: (value) => {
       const cardBrandInfo = getTypeInfo(brand);
       if (value) {
@@ -69,8 +64,6 @@ function InternalRegistredCardCvvForm({ brand, totalPrice, disabled, onCancel })
     validateFields: [],
   });
 
-  const disableForm = submitting || disabled;
-
   const cardBrandInfo = getTypeInfo(brand);
   const cvvLength = cardBrandInfo.code.size;
   const isMaestro = brand === "maestro";
@@ -86,33 +79,24 @@ function InternalRegistredCardCvvForm({ brand, totalPrice, disabled, onCancel })
 
   return (
     <>
-      <FieldContainer
+      <FinalFieldContainer
+        name="cvv"
         label="Code de sécurité"
         className="registred-card-cvv-form__cvv"
-        disabled={disableForm}
-        errorMessage={getFieldError(cvv)}
         helpMessage={cvvHelpMessage}
         optional={isMaestro}
+        disabled={disabled}
       >
-        {(props) => (
-          <InputField
-            as={NumberInput}
-            {...cvv.input}
-            {...props}
-            name="cvv"
-            autoComplete="cc-csc"
-            maxLength={cvvLength}
-          />
-        )}
-      </FieldContainer>
+        {(props) => <InputField as={NumberInput} {...props} autoComplete="cc-csc" maxLength={cvvLength} />}
+      </FinalFieldContainer>
       <div className="registred-card-cvv-form__buttons">
-        <Button type="submit" size="small" disabled={disableForm}>
+        <FinalButton type="submit" size="small" disabled={disabled}>
           Payer&nbsp;
           <Price noColor price={totalPrice} />
-        </Button>
-        <Button type="reset" size="small" onClick={onCancelClick} disabled={disableForm}>
+        </FinalButton>
+        <FinalButton type="reset" size="small" disabled={disabled} onClick={onCancelClick}>
           Annuler
-        </Button>
+        </FinalButton>
       </div>
     </>
   );
@@ -127,13 +111,3 @@ InternalRegistredCardCvvForm.propTypes = {
   disabled: PropTypes.bool,
   onCancel: PropTypes.func.isRequired,
 };
-
-function getFieldError(field) {
-  const { touched, error, submitError, pristine } = field.meta;
-  if (touched && error) {
-    return error;
-  }
-  if (submitError && pristine) {
-    return submitError;
-  }
-}

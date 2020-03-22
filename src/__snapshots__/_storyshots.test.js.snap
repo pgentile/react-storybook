@@ -15368,6 +15368,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
         aria-invalid={false}
         autoComplete="cc-csc"
         className="form-input-field "
+        disabled={false}
         formNoValidate={true}
         id="form-field-2"
         inputMode="numeric"
@@ -15387,6 +15388,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       type="submit"
     >
       Payer 
@@ -15411,6 +15413,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       onClick={[Function]}
       type="reset"
     >
@@ -15522,6 +15525,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
         aria-invalid={false}
         autoComplete="cc-csc"
         className="form-input-field "
+        disabled={false}
         formNoValidate={true}
         id="form-field-3"
         inputMode="numeric"
@@ -15546,6 +15550,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       type="submit"
     >
       Payer 
@@ -15570,6 +15575,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       onClick={[Function]}
       type="reset"
     >
@@ -15600,6 +15606,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
         aria-invalid={false}
         autoComplete="cc-csc"
         className="form-input-field "
+        disabled={false}
         formNoValidate={true}
         id="form-field-1"
         inputMode="numeric"
@@ -15619,6 +15626,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       type="submit"
     >
       Payer 
@@ -15643,6 +15651,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       onClick={[Function]}
       type="reset"
     >
@@ -15673,6 +15682,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
         aria-invalid={false}
         autoComplete="cc-csc"
         className="form-input-field "
+        disabled={false}
         formNoValidate={true}
         id="form-field-0"
         inputMode="numeric"
@@ -15692,6 +15702,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       type="submit"
     >
       Payer 
@@ -15716,6 +15727,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
     <button
       aria-pressed={false}
       className="button button--size-small "
+      disabled={false}
       onClick={[Function]}
       type="reset"
     >
