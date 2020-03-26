@@ -8198,7 +8198,7 @@ intl-messageformat-parser@^4.1.1:
   dependencies:
     "@formatjs/intl-unified-numberformat" "^3.3.0"
 
-intl-messageformat@^8.2.3:
+intl-messageformat@^8.3.1:
   version "8.3.1"
   resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-8.3.1.tgz#384d5313925f2da672907bdf707f05332ad51f40"
   integrity sha512-3WLsyFv1TuYU259TnJtYbQp1NgNh0zk6ELFSOyQBGsf15MnL04QjA1wYGEYEWcbuIXcd/BRTOPdKiMAABPOxlw==
@@ -13077,10 +13077,10 @@ react-inspector@^4.0.0:
     is-dom "^1.0.9"
     prop-types "^15.6.1"
 
-react-intl@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.2.2.tgz#54b4065c74d777c46d9d44590124aa926dfd9c21"
-  integrity sha512-mwKAkH9G+4GFlIDUNhPsDE8vYHlfsR4uOWRxgJ//Huv3J0M0kY+gbVhq+O8YGhhXbF3DQbdNI8kcbsE0FsbXtw==
+react-intl@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.3.0.tgz#58c0fe26cc30ec533791cba991792ed462532ede"
+  integrity sha512-HqfyR2GV8BSE4TtK9pk/d+y13YUe7SaQhAcXyV4ZicaQ8fVMXu1fGwg4V2zqOIHaZWMYCzvlPcc51c7JYfabUw==
   dependencies:
     "@formatjs/intl-displaynames" "^1.2.2"
     "@formatjs/intl-listformat" "^1.4.2"
@@ -13091,7 +13091,7 @@ react-intl@^4.2.2:
     "@types/invariant" "^2.2.31"
     hoist-non-react-statics "^3.3.2"
     intl-format-cache "^4.2.22"
-    intl-messageformat "^8.2.3"
+    intl-messageformat "^8.3.1"
     intl-messageformat-parser "^4.1.1"
     shallow-equal "^1.2.1"
 
