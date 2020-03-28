@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { unstable_createResource as createResource } from "react-cache";
 
 import Spinner from "../Spinner";
-import { Object } from "es6-shim";
 
 export default function SuspenseDemo() {
   return (
