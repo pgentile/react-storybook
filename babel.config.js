@@ -1,4 +1,4 @@
-module.exports = api => {
+module.exports = (api) => {
   return {
     plugins: [
       "@babel/plugin-proposal-class-properties",
@@ -8,22 +8,28 @@ module.exports = api => {
         {
           messagesDir: "./build/messages",
           extractSourceLocation: true,
-          removeDefaultMessage: false
-        }
-      ]
+          removeDefaultMessage: false,
+        },
+      ],
     ],
     presets: [
-      "@babel/preset-react",
       "@babel/preset-typescript",
+      [
+        "@babel/preset-react",
+        {
+          runtime: "classic",
+          development: !api.env("production"),
+        },
+      ],
       [
         "@babel/preset-env",
         {
           debug: false,
           modules: api.env("test") ? "commonjs" : false,
           useBuiltIns: "entry",
-          corejs: 3
-        }
-      ]
-    ]
+          corejs: 3,
+        },
+      ],
+    ],
   };
 };

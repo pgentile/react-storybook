@@ -23,7 +23,7 @@
   },
   "settings": {
     "react": {
-      "version": "16.8"
+      "version": "detect"
     },
     "polyfills": [
       "URLSearchParams",
@@ -40,6 +40,7 @@
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:jest/recommended",
     "plugin:compat/recommended"
   ],
@@ -51,10 +52,9 @@
       }
     ],
     "no-console": "warn",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "formatjs/enforce-description": "off",
+    "formatjs/enforce-description": "warn",
     "formatjs/enforce-placeholders": "error",
-    "compat/compat": "warn"
+    "compat/compat": "warn",
+    "react/react-in-jsx-scope": "error"
   }
 }

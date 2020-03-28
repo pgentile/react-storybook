@@ -5,33 +5,30 @@ import bemModifiers from "./utils/bemModifiers";
 
 import "./Card.scss";
 
-export default class Card extends React.PureComponent {
-  static propTypes = {
-    hasBorder: PropTypes.bool,
-    layer: PropTypes.string,
-    as: PropTypes.elementType,
-    className: PropTypes.string,
-    children: PropTypes.node,
-  };
+export default function Card({
+  as: Element = "div",
+  hasBorder = true,
+  layer,
+  className = "",
+  children,
+  ...otherProps
+}) {
+  const bemClass = bemModifiers("card", {
+    "has-border": hasBorder,
+    [`layer-${layer}`]: !!layer,
+  });
 
-  static defaultProps = {
-    hasBorder: true,
-    as: "div",
-    className: "",
-  };
-
-  render() {
-    const { as: Element, hasBorder, layer, className, children, ...otherProps } = this.props;
-
-    const bemClass = bemModifiers("card", {
-      "has-border": hasBorder,
-      [`layer-${layer}`]: !!layer,
-    });
-
-    return (
-      <Element {...otherProps} className={`${bemClass} ${className}`}>
-        {children}
-      </Element>
-    );
-  }
+  return (
+    <Element {...otherProps} className={`${bemClass} ${className}`}>
+      {children}
+    </Element>
+  );
 }
+
+Card.propTypes = {
+  hasBorder: PropTypes.bool,
+  layer: PropTypes.string,
+  as: PropTypes.elementType,
+  className: PropTypes.string,
+  children: PropTypes.node,
+};
