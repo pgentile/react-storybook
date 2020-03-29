@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
+import { css } from "emotion/macro";
+import { rgba, cover } from "polished";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
-
-import "./Overlay.scss";
 
 export default function Overlay({ visible = true, children, onClick }) {
   const elementRef = useRef();
@@ -11,7 +11,7 @@ export default function Overlay({ visible = true, children, onClick }) {
     let element = elementRef.current;
     if (!element) {
       element = document.createElement("div");
-      element.className = "overlay-container";
+      element.dataset.origin = "overlay-container";
 
       elementRef.current = element;
     }
@@ -26,7 +26,15 @@ export default function Overlay({ visible = true, children, onClick }) {
   }, []);
 
   const overlay = (
-    <div className="overlay" onClick={onClick} hidden={!visible}>
+    <div
+      className={css({
+        ...cover(),
+        backgroundColor: rgba("#000", 0.7),
+        zIndex: 1000,
+      })}
+      onClick={onClick}
+      hidden={!visible}
+    >
       {children}
     </div>
   );
