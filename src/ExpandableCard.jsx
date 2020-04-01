@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { css } from "emotion/macro";
-import { darken } from "polished";
+import { darken, linearGradient } from "polished";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,14 +26,10 @@ export default function ExpandableCard({ expanded = false, expandableContent, ch
               // Fix for content margins...
               border: "0.01rem solid transparent",
               backgroundClip: "border-box",
-              backgroundColor,
-              backgroundImage: `linear-gradient(
-              ${borderColor} 1px,
-              ${darken(0.05, backgroundColor)},
-              ${backgroundColor} 10px,
-              ${backgroundColor} 1px,
-              ${backgroundColor}
-            )`,
+              ...linearGradient({
+                colorStops: [`${borderColor} 1px`, darken(0.05, backgroundColor), `${backgroundColor} 10px`],
+                fallback: backgroundColor,
+              }),
             })}
           >
             {expandableContent}

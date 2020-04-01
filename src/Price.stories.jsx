@@ -20,3 +20,11 @@ stories.add(`Prix - En pounds`, () => {
 stories.add(`Prix - En franc suisse`, () => {
   return <Price price={{ value: 135.9, currency: "CHF" }} />;
 });
+
+stories.add("No color", () => {
+  return <Price price={{ value: 135.9, currency: "EUR" }} noColor />;
+});
+
+stories.add("Extra prop", () => {
+  return <Price price={{ value: 56.9, currency: "EUR" }} data-sample="yes" />;
+});

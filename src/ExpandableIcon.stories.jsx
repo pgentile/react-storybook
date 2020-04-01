@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 
 import ExpandableIcon from "./ExpandableIcon";
 
@@ -22,19 +22,10 @@ export const demo = () => {
   return <ExpandableIconDemo />;
 };
 
-class ExpandableIconDemo extends React.PureComponent {
-  state = {
-    expanded: false,
-  };
+function ExpandableIconDemo() {
+  const [expanded, setExpanded] = useState(false);
 
-  onClick = () => {
-    this.setState((state) => ({
-      expanded: !state.expanded,
-    }));
-  };
+  const onClick = useCallback(() => setExpanded((value) => !value), []);
 
-  render() {
-    const { expanded } = this.state;
-    return <ExpandableIcon expanded={expanded} onClick={this.onClick} />;
-  }
+  return <ExpandableIcon expanded={expanded} onClick={onClick} />;
 }

@@ -10109,7 +10109,7 @@ exports[`Storyshots Forms / SuperRadio Help Story 1`] = `
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <div
@@ -11616,6 +11616,14 @@ exports[`Storyshots OwnerForm | OwnerForm Main 1`] = `
 `;
 
 exports[`Storyshots Payment | CreditCardForm Main 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <form
   className="credit-card-form "
   onSubmit={[Function]}
@@ -11725,17 +11733,13 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
     >
       Payer 
       <span
-        className="price price--no-color "
+        className="emotion-1"
         data-price-currency="EUR"
         data-price-value={98}
       >
+        98
         <span
-          className="price__units"
-        >
-          98
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -11800,7 +11804,7 @@ exports[`Storyshots Payment | Donation / Donation No Donation Selected 1`] = `
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 .emotion-0 {
@@ -11918,7 +11922,7 @@ exports[`Storyshots Payment | Donation / DonationProposal Main 1`] = `
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 .emotion-0 {
@@ -12067,14 +12071,14 @@ exports[`Storyshots Payment | Donation / SelectedDonation Main 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
-.emotion-3 {
+.emotion-11 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
-.emotion-0 {
+.emotion-8 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -12082,14 +12086,24 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
-.emotion-2 {
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+.emotion-10 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
-.emotion-1 {
+.emotion-9 {
   -webkit-transition: -webkit-transform 0.15s linear;
   -webkit-transition: transform 0.15s linear;
   transition: transform 0.15s linear;
@@ -12106,7 +12120,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
     Récapitulatif
   </h1>
   <section
-    className="emotion-0 order-summary"
+    className="emotion-8 order-summary"
   >
     <ul
       className="order-summary__details"
@@ -12120,17 +12134,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
           Vos billets
         </span>
         <span
-          className="price order-summary__item-price"
+          className="emotion-1 order-summary__item-price"
           data-price-currency="EUR"
           data-price-value={109.8}
         >
+          109
           <span
-            className="price__units"
-          >
-            109
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             80
@@ -12175,17 +12185,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
           </svg>
         </a>
         <span
-          className="price order-summary__item-price"
+          className="emotion-1 order-summary__item-price"
           data-price-currency="EUR"
           data-price-value={-2}
         >
+          -2
           <span
-            className="price__units"
-          >
-            -2
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
              
             €
@@ -12224,17 +12230,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
           </svg>
         </a>
         <span
-          className="price order-summary__item-price"
+          className="emotion-1 order-summary__item-price"
           data-price-currency="EUR"
           data-price-value={5.9}
         >
+          5
           <span
-            className="price__units"
-          >
-            5
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             90
@@ -12256,17 +12258,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
         Total de votre commande
       </span>
       <span
-        className="price order-summary__total-price"
+        className="emotion-1 order-summary__total-price"
         data-price-currency="EUR"
         data-price-value={113.7}
       >
+        113
         <span
-          className="price__units"
-        >
-          113
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           70
@@ -12277,7 +12275,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
     </p>
   </section>
   <section
-    className="emotion-3 donation-proposal order-editor__donation"
+    className="emotion-11 donation-proposal order-editor__donation"
   >
     <div
       className="donation-proposal__content"
@@ -12307,7 +12305,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-1"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-9"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -12357,7 +12355,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-2"
+            className="emotion-10"
           >
             <p
               className="donation-proposal__more"
@@ -12373,19 +12371,29 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
-.emotion-1 {
+.emotion-9 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
-.emotion-0 {
+.emotion-6 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
 }
 
 <section
@@ -12397,7 +12405,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
     Récapitulatif
   </h1>
   <section
-    className="emotion-0 order-summary"
+    className="emotion-6 order-summary"
   >
     <ul
       className="order-summary__details"
@@ -12411,17 +12419,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
           Vos billets
         </span>
         <span
-          className="price order-summary__item-price"
+          className="emotion-1 order-summary__item-price"
           data-price-currency="EUR"
           data-price-value={109.8}
         >
+          109
           <span
-            className="price__units"
-          >
-            109
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             80
@@ -12465,17 +12469,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
           </svg>
         </a>
         <span
-          className="price order-summary__item-price"
+          className="emotion-1 order-summary__item-price"
           data-price-currency="EUR"
           data-price-value={1}
         >
+          1
           <span
-            className="price__units"
-          >
-            1
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
              
             €
@@ -12495,17 +12495,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
         Total de votre commande
       </span>
       <span
-        className="price order-summary__total-price"
+        className="emotion-1 order-summary__total-price"
         data-price-currency="EUR"
         data-price-value={110.8}
       >
+        110
         <span
-          className="price__units"
-        >
-          110
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           80
@@ -12516,7 +12512,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
     </p>
   </section>
   <section
-    className="emotion-1 insurance order-editor__insurance"
+    className="emotion-9 insurance order-editor__insurance"
   >
     <button
       aria-pressed={false}
@@ -12529,17 +12525,13 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
       >
         Assurez votre voyage, à partir de 
         <span
-          className="price "
+          className="emotion-1"
           data-price-currency="EUR"
           data-price-value={12.9}
         >
+          12
           <span
-            className="price__units"
-          >
-            12
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             90
@@ -12554,7 +12546,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
     </button>
   </section>
   <section
-    className="emotion-1 voucher-container order-editor__voucher"
+    className="emotion-9 voucher-container order-editor__voucher"
   >
     <button
       aria-pressed={false}
@@ -12565,7 +12557,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
     </button>
   </section>
   <section
-    className="emotion-1 selected-donation order-editor__donation"
+    className="emotion-9 selected-donation order-editor__donation"
   >
     <p
       className="selected-donation__thanks"
@@ -12600,14 +12592,14 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
-.emotion-1 {
+.emotion-7 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
-.emotion-0 {
+.emotion-6 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -12615,14 +12607,24 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
-.emotion-3 {
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+.emotion-9 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
-.emotion-2 {
+.emotion-8 {
   -webkit-transition: -webkit-transform 0.15s linear;
   -webkit-transition: transform 0.15s linear;
   transition: transform 0.15s linear;
@@ -12639,7 +12641,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
     Récapitulatif
   </h1>
   <section
-    className="emotion-0 order-summary"
+    className="emotion-6 order-summary"
   >
     <ul
       className="order-summary__details"
@@ -12653,17 +12655,13 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
           Vos billets
         </span>
         <span
-          className="price order-summary__item-price"
+          className="emotion-1 order-summary__item-price"
           data-price-currency="EUR"
           data-price-value={109.8}
         >
+          109
           <span
-            className="price__units"
-          >
-            109
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             80
@@ -12704,17 +12702,13 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
           </svg>
         </a>
         <span
-          className="price order-summary__item-price"
+          className="emotion-1 order-summary__item-price"
           data-price-currency="EUR"
           data-price-value={5.9}
         >
+          5
           <span
-            className="price__units"
-          >
-            5
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             90
@@ -12736,17 +12730,13 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
         Total de votre commande
       </span>
       <span
-        className="price order-summary__total-price"
+        className="emotion-1 order-summary__total-price"
         data-price-currency="EUR"
         data-price-value={115.7}
       >
+        115
         <span
-          className="price__units"
-        >
-          115
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           70
@@ -12757,7 +12747,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
     </p>
   </section>
   <section
-    className="emotion-1 voucher-container order-editor__voucher"
+    className="emotion-7 voucher-container order-editor__voucher"
   >
     <button
       aria-pressed={false}
@@ -12768,7 +12758,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
     </button>
   </section>
   <section
-    className="emotion-1 donation-proposal order-editor__donation"
+    className="emotion-7 donation-proposal order-editor__donation"
   >
     <div
       className="donation-proposal__content"
@@ -12798,7 +12788,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-2"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-8"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -12848,7 +12838,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-3"
+            className="emotion-9"
           >
             <p
               className="donation-proposal__more"
@@ -12864,14 +12854,14 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
-.emotion-1 {
+.emotion-5 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
-.emotion-0 {
+.emotion-2 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -12879,14 +12869,24 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
-.emotion-4 {
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+.emotion-8 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
-.emotion-3 {
+.emotion-7 {
   -webkit-transition: -webkit-transform 0.15s linear;
   -webkit-transition: transform 0.15s linear;
   transition: transform 0.15s linear;
@@ -12903,7 +12903,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
     Récapitulatif
   </h1>
   <section
-    className="emotion-0 order-summary"
+    className="emotion-2 order-summary"
   >
     <p
       className="order-summary__total"
@@ -12914,17 +12914,13 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
         Total de votre commande
       </span>
       <span
-        className="price order-summary__total-price"
+        className="emotion-1 order-summary__total-price"
         data-price-currency="EUR"
         data-price-value={109.8}
       >
+        109
         <span
-          className="price__units"
-        >
-          109
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           80
@@ -12935,7 +12931,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
     </p>
   </section>
   <section
-    className="emotion-1 insurance order-editor__insurance"
+    className="emotion-5 insurance order-editor__insurance"
   >
     <button
       aria-pressed={false}
@@ -12948,17 +12944,13 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
       >
         Assurez votre voyage, à partir de 
         <span
-          className="price "
+          className="emotion-1"
           data-price-currency="EUR"
           data-price-value={12.9}
         >
+          12
           <span
-            className="price__units"
-          >
-            12
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             90
@@ -12973,7 +12965,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
     </button>
   </section>
   <section
-    className="emotion-1 voucher-container order-editor__voucher"
+    className="emotion-5 voucher-container order-editor__voucher"
   >
     <button
       aria-pressed={false}
@@ -12984,7 +12976,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
     </button>
   </section>
   <section
-    className="emotion-1 donation-proposal order-editor__donation"
+    className="emotion-5 donation-proposal order-editor__donation"
   >
     <div
       className="donation-proposal__content"
@@ -13014,7 +13006,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-3"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-7"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -13064,7 +13056,7 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-4"
+            className="emotion-8"
           >
             <p
               className="donation-proposal__more"
@@ -13080,14 +13072,14 @@ exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
-.emotion-1 {
+.emotion-5 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
-.emotion-0 {
+.emotion-2 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -13095,14 +13087,24 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
-.emotion-4 {
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+.emotion-8 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
-.emotion-3 {
+.emotion-7 {
   -webkit-transition: -webkit-transform 0.15s linear;
   -webkit-transition: transform 0.15s linear;
   transition: transform 0.15s linear;
@@ -13119,7 +13121,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
     Récapitulatif
   </h1>
   <section
-    className="emotion-0 order-summary"
+    className="emotion-2 order-summary"
   >
     <p
       className="order-summary__total"
@@ -13130,17 +13132,13 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
         Total de votre commande
       </span>
       <span
-        className="price order-summary__total-price"
+        className="emotion-1 order-summary__total-price"
         data-price-currency="EUR"
         data-price-value={0}
       >
+        0
         <span
-          className="price__units"
-        >
-          0
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -13149,7 +13147,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
     </p>
   </section>
   <section
-    className="emotion-1 insurance order-editor__insurance"
+    className="emotion-5 insurance order-editor__insurance"
   >
     <button
       aria-pressed={false}
@@ -13162,17 +13160,13 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
       >
         Assurez votre voyage, à partir de 
         <span
-          className="price "
+          className="emotion-1"
           data-price-currency="EUR"
           data-price-value={12.9}
         >
+          12
           <span
-            className="price__units"
-          >
-            12
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             90
@@ -13187,7 +13181,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
     </button>
   </section>
   <section
-    className="emotion-1 voucher-container order-editor__voucher"
+    className="emotion-5 voucher-container order-editor__voucher"
   >
     <button
       aria-pressed={false}
@@ -13198,7 +13192,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
     </button>
   </section>
   <section
-    className="emotion-1 donation-proposal order-editor__donation"
+    className="emotion-5 donation-proposal order-editor__donation"
   >
     <div
       className="donation-proposal__content"
@@ -13228,7 +13222,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-3"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-7"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -13278,7 +13272,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-4"
+            className="emotion-8"
           >
             <p
               className="donation-proposal__more"
@@ -13294,7 +13288,7 @@ exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
-.emotion-0 {
+.emotion-8 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -13302,8 +13296,18 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
-  className="emotion-0 order-summary"
+  className="emotion-8 order-summary"
 >
   <ul
     className="order-summary__details"
@@ -13317,17 +13321,13 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
         Vos billets
       </span>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={109.8}
       >
+        109
         <span
-          className="price__units"
-        >
-          109
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           80
@@ -13368,17 +13368,13 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
         </svg>
       </a>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={-2}
       >
+        -2
         <span
-          className="price__units"
-        >
-          -2
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -13417,17 +13413,13 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
         </svg>
       </a>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={5.9}
       >
+        5
         <span
-          className="price__units"
-        >
-          5
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           90
@@ -13449,17 +13441,13 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
       Total de votre commande
     </span>
     <span
-      className="price order-summary__total-price"
+      className="emotion-1 order-summary__total-price"
       data-price-currency="EUR"
       data-price-value={113.7}
     >
+      113
       <span
-        className="price__units"
-      >
-        113
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         70
@@ -13472,7 +13460,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
-.emotion-0 {
+.emotion-6 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -13480,8 +13468,18 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
-  className="emotion-0 order-summary"
+  className="emotion-6 order-summary"
 >
   <ul
     className="order-summary__details"
@@ -13495,17 +13493,13 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
         Vos billets
       </span>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={109.8}
       >
+        109
         <span
-          className="price__units"
-        >
-          109
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           80
@@ -13546,17 +13540,13 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
         </svg>
       </a>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={1}
       >
+        1
         <span
-          className="price__units"
-        >
-          1
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -13576,17 +13566,13 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
       Total de votre commande
     </span>
     <span
-      className="price order-summary__total-price"
+      className="emotion-1 order-summary__total-price"
       data-price-currency="EUR"
       data-price-value={110.8}
     >
+      110
       <span
-        className="price__units"
-      >
-        110
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         80
@@ -13599,7 +13585,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
-.emotion-0 {
+.emotion-6 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -13607,8 +13593,18 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
-  className="emotion-0 order-summary"
+  className="emotion-6 order-summary"
 >
   <ul
     className="order-summary__details"
@@ -13622,17 +13618,13 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
         Vos billets
       </span>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={109.8}
       >
+        109
         <span
-          className="price__units"
-        >
-          109
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           80
@@ -13673,17 +13665,13 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
         </svg>
       </a>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={5.9}
       >
+        5
         <span
-          className="price__units"
-        >
-          5
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           90
@@ -13705,17 +13693,13 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
       Total de votre commande
     </span>
     <span
-      className="price order-summary__total-price"
+      className="emotion-1 order-summary__total-price"
       data-price-currency="EUR"
       data-price-value={115.7}
     >
+      115
       <span
-        className="price__units"
-      >
-        115
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         70
@@ -13728,7 +13712,7 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
-.emotion-0 {
+.emotion-2 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -13736,8 +13720,18 @@ exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
-  className="emotion-0 order-summary"
+  className="emotion-2 order-summary"
 >
   <p
     className="order-summary__total"
@@ -13748,17 +13742,13 @@ exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
       Total de votre commande
     </span>
     <span
-      className="price order-summary__total-price"
+      className="emotion-1 order-summary__total-price"
       data-price-currency="EUR"
       data-price-value={109.8}
     >
+      109
       <span
-        className="price__units"
-      >
-        109
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         80
@@ -13771,7 +13761,7 @@ exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
-.emotion-0 {
+.emotion-2 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -13779,8 +13769,18 @@ exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
-  className="emotion-0 order-summary"
+  className="emotion-2 order-summary"
 >
   <p
     className="order-summary__total"
@@ -13791,17 +13791,13 @@ exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
       Total de votre commande
     </span>
     <span
-      className="price order-summary__total-price"
+      className="emotion-1 order-summary__total-price"
       data-price-currency="EUR"
       data-price-value={75.8}
     >
+      75
       <span
-        className="price__units"
-      >
-        75
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         80
@@ -13814,7 +13810,7 @@ exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
 `;
 
 exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
-.emotion-0 {
+.emotion-12 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -13822,8 +13818,18 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
-  className="emotion-0 order-summary"
+  className="emotion-12 order-summary"
 >
   <ul
     className="order-summary__details"
@@ -13837,17 +13843,13 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         Vos billets
       </span>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={109.8}
       >
+        109
         <span
-          className="price__units"
-        >
-          109
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           80
@@ -13865,17 +13867,13 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         Vos cartes de réduction
       </span>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={75.8}
       >
+        75
         <span
-          className="price__units"
-        >
-          75
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           80
@@ -13916,17 +13914,13 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         </svg>
       </a>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={-2}
       >
+        -2
         <span
-          className="price__units"
-        >
-          -2
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -13965,17 +13959,13 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         </svg>
       </a>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={5.9}
       >
+        5
         <span
-          className="price__units"
-        >
-          5
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
           , 
           90
@@ -14016,17 +14006,13 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
         </svg>
       </a>
       <span
-        className="price order-summary__item-price"
+        className="emotion-1 order-summary__item-price"
         data-price-currency="EUR"
         data-price-value={1}
       >
+        1
         <span
-          className="price__units"
-        >
-          1
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -14046,17 +14032,13 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
       Total de votre commande
     </span>
     <span
-      className="price order-summary__total-price"
+      className="emotion-1 order-summary__total-price"
       data-price-currency="EUR"
       data-price-value={190.5}
     >
+      190
       <span
-        className="price__units"
-      >
-        190
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         50
@@ -14069,14 +14051,14 @@ exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
 `;
 
 exports[`Storyshots Payment | PaymentContainer Main 1`] = `
-.emotion-1 {
+.emotion-5 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
-.emotion-0 {
+.emotion-2 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -14084,14 +14066,32 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
-.emotion-4 {
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+.emotion-11 {
+  font-size: 1em;
+}
+
+.emotion-10 {
+  font-size: 0.8em;
+}
+
+.emotion-8 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
-.emotion-3 {
+.emotion-7 {
   -webkit-transition: -webkit-transform 0.15s linear;
   -webkit-transition: transform 0.15s linear;
   transition: transform 0.15s linear;
@@ -14114,7 +14114,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
         Récapitulatif
       </h1>
       <section
-        className="emotion-0 order-summary"
+        className="emotion-2 order-summary"
       >
         <p
           className="order-summary__total"
@@ -14125,17 +14125,13 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
             Total de votre commande
           </span>
           <span
-            className="price order-summary__total-price"
+            className="emotion-1 order-summary__total-price"
             data-price-currency="EUR"
             data-price-value={0}
           >
+            0
             <span
-              className="price__units"
-            >
-              0
-            </span>
-            <span
-              className="price__remaining"
+              className="emotion-0"
             >
                
               €
@@ -14144,7 +14140,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
         </p>
       </section>
       <section
-        className="emotion-1 insurance order-editor__insurance"
+        className="emotion-5 insurance order-editor__insurance"
       >
         <button
           aria-pressed={false}
@@ -14157,17 +14153,13 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
           >
             Assurez votre voyage, à partir de 
             <span
-              className="price "
+              className="emotion-1"
               data-price-currency="EUR"
               data-price-value={12.9}
             >
+              12
               <span
-                className="price__units"
-              >
-                12
-              </span>
-              <span
-                className="price__remaining"
+                className="emotion-0"
               >
                 , 
                 90
@@ -14182,7 +14174,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
         </button>
       </section>
       <section
-        className="emotion-1 voucher-container order-editor__voucher"
+        className="emotion-5 voucher-container order-editor__voucher"
       >
         <button
           aria-pressed={false}
@@ -14193,7 +14185,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
         </button>
       </section>
       <section
-        className="emotion-1 donation-proposal order-editor__donation"
+        className="emotion-5 donation-proposal order-editor__donation"
       >
         <div
           className="donation-proposal__content"
@@ -14223,7 +14215,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
                 <span>
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-3"
+                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 emotion-7"
                     data-icon="angle-up"
                     data-prefix="fas"
                     focusable="false"
@@ -14273,7 +14265,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               className="expandable__content"
             >
               <div
-                className="emotion-4"
+                className="emotion-8"
               >
                 <p
                   className="donation-proposal__more"
@@ -14596,17 +14588,13 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
           >
             Payer 
             <span
-              className="price price--no-color "
+              className="emotion-11"
               data-price-currency="EUR"
               data-price-value={0}
             >
+              0
               <span
-                className="price__units"
-              >
-                0
-              </span>
-              <span
-                className="price__remaining"
+                className="emotion-10"
               >
                  
                 €
@@ -14621,6 +14609,14 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
 `;
 
 exports[`Storyshots Payment | PaymentForm Main 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <section
   className="payment-form "
 >
@@ -14927,17 +14923,13 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
       >
         Payer 
         <span
-          className="price price--no-color "
+          className="emotion-1"
           data-price-currency="€"
           data-price-value={98}
         >
+          98
           <span
-            className="price__units"
-          >
-            98
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
              
             €
@@ -14950,6 +14942,14 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
 `;
 
 exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <section
   className="payment-form "
 >
@@ -15256,17 +15256,13 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
       >
         Payer 
         <span
-          className="price price--no-color "
+          className="emotion-1"
           data-price-currency="EUR"
           data-price-value={0}
         >
+          0
           <span
-            className="price__units"
-          >
-            0
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
              
             €
@@ -15748,6 +15744,14 @@ exports[`Storyshots Payment | PaymentRequestComponent Main 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <form
   className="registred-card-cvv-form"
   onSubmit={[Function]}
@@ -15793,17 +15797,13 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
     >
       Payer 
       <span
-        className="price price--no-color "
+        className="emotion-1"
         data-price-currency="EUR"
         data-price-value={100}
       >
+        100
         <span
-          className="price__units"
-        >
-          100
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -15824,6 +15824,14 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <form
   className="registred-card-cvv-form"
   onSubmit={[Function]}
@@ -15869,17 +15877,13 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
     >
       Payer 
       <span
-        className="price price--no-color "
+        className="emotion-1"
         data-price-currency="EUR"
         data-price-value={100}
       >
+        100
         <span
-          className="price__units"
-        >
-          100
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -15900,6 +15904,14 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <form
   className="registred-card-cvv-form"
   onSubmit={[Function]}
@@ -15955,17 +15967,13 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
     >
       Payer 
       <span
-        className="price price--no-color "
+        className="emotion-1"
         data-price-currency="EUR"
         data-price-value={100}
       >
+        100
         <span
-          className="price__units"
-        >
-          100
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -15986,6 +15994,14 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <form
   className="registred-card-cvv-form"
   onSubmit={[Function]}
@@ -16031,17 +16047,13 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
     >
       Payer 
       <span
-        className="price price--no-color "
+        className="emotion-1"
         data-price-currency="EUR"
         data-price-value={100}
       >
+        100
         <span
-          className="price__units"
-        >
-          100
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -16062,6 +16074,14 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
 <form
   className="registred-card-cvv-form"
   onSubmit={[Function]}
@@ -16107,17 +16127,13 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
     >
       Payer 
       <span
-        className="price price--no-color "
+        className="emotion-1"
         data-price-currency="EUR"
         data-price-value={100}
       >
+        100
         <span
-          className="price__units"
-        >
-          100
-        </span>
-        <span
-          className="price__remaining"
+          className="emotion-0"
         >
            
           €
@@ -16138,22 +16154,30 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -16222,7 +16246,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -16280,17 +16304,13 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -16318,22 +16338,30 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -16414,7 +16442,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -16472,17 +16500,13 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -16510,22 +16534,30 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't show CVV 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -16594,7 +16626,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -16657,17 +16689,13 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -16695,22 +16723,30 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabled 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -16791,7 +16827,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -16849,17 +16885,13 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -16887,22 +16919,30 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -16982,7 +17022,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -17045,17 +17085,13 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -17083,22 +17119,30 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -17178,7 +17222,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -17236,17 +17280,13 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -17274,22 +17314,30 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -17358,7 +17406,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -17411,17 +17459,13 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -17449,22 +17493,30 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -17545,7 +17597,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -17598,17 +17650,13 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -17636,22 +17684,30 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't show CVV 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -17720,7 +17776,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -17773,17 +17829,13 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -17811,22 +17863,30 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -17907,7 +17967,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -17960,17 +18020,13 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -17998,22 +18054,30 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -18093,7 +18157,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -18146,17 +18210,13 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -18184,22 +18244,30 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <section
-  className="emotion-1 registred-credit-card "
+  className="emotion-3 registred-credit-card "
 >
   <h1
     className="registred-credit-card__title"
@@ -18279,7 +18347,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
         className="expandable__content"
       >
         <div
-          className="emotion-0"
+          className="emotion-2"
         >
           <div
             className="registred-credit-card__cvv-container"
@@ -18332,17 +18400,13 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
                   >
                     Payer 
                     <span
-                      className="price price--no-color "
+                      className="emotion-1"
                       data-price-currency="EUR"
                       data-price-value={100}
                     >
+                      100
                       <span
-                        className="price__units"
-                      >
-                        100
-                      </span>
-                      <span
-                        className="price__remaining"
+                        className="emotion-0"
                       >
                          
                         €
@@ -18370,25 +18434,33 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <div
   className="registred-credit-card-list "
 >
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -18469,7 +18541,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -18522,17 +18594,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -18558,7 +18626,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
     </div>
   </section>
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -18639,7 +18707,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -18692,17 +18760,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -18728,7 +18792,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
     </div>
   </section>
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -18809,7 +18873,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -18862,17 +18926,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -18898,7 +18958,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
     </div>
   </section>
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -18979,7 +19039,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -19037,17 +19097,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -19076,25 +19132,33 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
 `;
 
 exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
-.emotion-1 {
+.emotion-3 {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #bbb;
 }
 
+.emotion-1 {
+  font-size: 1em;
+}
+
 .emotion-0 {
+  font-size: 0.8em;
+}
+
+.emotion-2 {
   border: 0.01rem solid transparent;
   background-clip: border-box;
   background-color: #eee;
-  background-image: linear-gradient( #bbb 1px, #e1e1e1, #eee 10px, #eee 1px, #eee );
+  background-image: linear-gradient(#bbb 1px,#e1e1e1,#eee 10px);
 }
 
 <div
   className="registred-credit-card-list "
 >
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -19174,7 +19238,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -19227,17 +19291,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -19263,7 +19323,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
     </div>
   </section>
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -19343,7 +19403,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -19396,17 +19456,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -19432,7 +19488,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
     </div>
   </section>
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -19512,7 +19568,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -19565,17 +19621,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -19601,7 +19653,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
     </div>
   </section>
   <section
-    className="emotion-1 registred-credit-card registred-credit-card-list__item"
+    className="emotion-3 registred-credit-card registred-credit-card-list__item"
   >
     <h1
       className="registred-credit-card__title"
@@ -19681,7 +19733,7 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
           className="expandable__content"
         >
           <div
-            className="emotion-0"
+            className="emotion-2"
           >
             <div
               className="registred-credit-card__cvv-container"
@@ -19739,17 +19791,13 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                     >
                       Payer 
                       <span
-                        className="price price--no-color "
+                        className="emotion-1"
                         data-price-currency="EUR"
                         data-price-value={100}
                       >
+                        100
                         <span
-                          className="price__units"
-                        >
-                          100
-                        </span>
-                        <span
-                          className="price__remaining"
+                          className="emotion-0"
                         >
                            
                           €
@@ -20078,19 +20126,80 @@ exports[`Storyshots Payment | VoucherForm Submit Success 1`] = `
 </form>
 `;
 
-exports[`Storyshots Price Prix - En franc suisse 1`] = `
+exports[`Storyshots Price Extra prop 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
+  data-price-currency="EUR"
+  data-price-value={56.9}
+  data-sample="yes"
+>
+  56
+  <span
+    className="emotion-0"
+  >
+    , 
+    90
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price No color 1`] = `
+.emotion-1 {
+  font-size: 1em;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+}
+
+<span
+  className="emotion-1"
+  data-price-currency="EUR"
+  data-price-value={135.9}
+>
+  135
+  <span
+    className="emotion-0"
+  >
+    , 
+    90
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - En franc suisse 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+<span
+  className="emotion-1"
   data-price-currency="CHF"
   data-price-value={135.9}
 >
+  135
   <span
-    className="price__units"
-  >
-    135
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
     , 
     90
@@ -20101,18 +20210,24 @@ exports[`Storyshots Price Prix - En franc suisse 1`] = `
 `;
 
 exports[`Storyshots Price Prix - En pounds 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="GBP"
   data-price-value={135.9}
 >
+  135
   <span
-    className="price__units"
-  >
-    135
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
     , 
     90
@@ -20123,18 +20238,24 @@ exports[`Storyshots Price Prix - En pounds 1`] = `
 `;
 
 exports[`Storyshots Price Prix - Valeur de -10.9 € 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="EUR"
   data-price-value={-10.9}
 >
+  -10
   <span
-    className="price__units"
-  >
-    -10
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
     , 
     90
@@ -20145,18 +20266,24 @@ exports[`Storyshots Price Prix - Valeur de -10.9 € 1`] = `
 `;
 
 exports[`Storyshots Price Prix - Valeur de -45.2 € 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="EUR"
   data-price-value={-45.2}
 >
+  -45
   <span
-    className="price__units"
-  >
-    -45
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
     , 
     20
@@ -20167,18 +20294,24 @@ exports[`Storyshots Price Prix - Valeur de -45.2 € 1`] = `
 `;
 
 exports[`Storyshots Price Prix - Valeur de 0 € 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="EUR"
   data-price-value={0}
 >
+  0
   <span
-    className="price__units"
-  >
-    0
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
      
     €
@@ -20187,18 +20320,24 @@ exports[`Storyshots Price Prix - Valeur de 0 € 1`] = `
 `;
 
 exports[`Storyshots Price Prix - Valeur de 12 € 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="EUR"
   data-price-value={12}
 >
+  12
   <span
-    className="price__units"
-  >
-    12
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
      
     €
@@ -20207,18 +20346,24 @@ exports[`Storyshots Price Prix - Valeur de 12 € 1`] = `
 `;
 
 exports[`Storyshots Price Prix - Valeur de 21.9 € 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="EUR"
   data-price-value={21.9}
 >
+  21
   <span
-    className="price__units"
-  >
-    21
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
     , 
     90
@@ -20229,18 +20374,24 @@ exports[`Storyshots Price Prix - Valeur de 21.9 € 1`] = `
 `;
 
 exports[`Storyshots Price Prix - Valeur de 35.2 € 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="EUR"
   data-price-value={35.2}
 >
+  35
   <span
-    className="price__units"
-  >
-    35
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
     , 
     20
@@ -20251,18 +20402,24 @@ exports[`Storyshots Price Prix - Valeur de 35.2 € 1`] = `
 `;
 
 exports[`Storyshots Price Prix - Valeur de 46.5 € 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <span
-  className="price "
+  className="emotion-1"
   data-price-currency="EUR"
   data-price-value={46.5}
 >
+  46
   <span
-    className="price__units"
-  >
-    46
-  </span>
-  <span
-    className="price__remaining"
+    className="emotion-0"
   >
     , 
     50
@@ -20347,6 +20504,16 @@ exports[`Storyshots Spinner Main 1`] = `
 `;
 
 exports[`Storyshots Travel Aller Retour 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
   className="travel"
 >
@@ -20359,17 +20526,13 @@ exports[`Storyshots Travel Aller Retour 1`] = `
       Lille ⇄ Nantes
     </h1>
     <p
-      className="price travel__header-price"
+      className="emotion-1 travel__header-price"
       data-price-currency="EUR"
       data-price-value={105.6}
     >
+      105
       <span
-        className="price__units"
-      >
-        105
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         60
@@ -20409,6 +20572,16 @@ exports[`Storyshots Travel Aller Retour 1`] = `
 `;
 
 exports[`Storyshots Travel Aller Retour Asymetrique 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
   className="travel"
 >
@@ -20422,17 +20595,13 @@ exports[`Storyshots Travel Aller Retour Asymetrique 1`] = `
        ● Nantes ➝ Paris
     </h1>
     <p
-      className="price travel__header-price"
+      className="emotion-1 travel__header-price"
       data-price-currency="EUR"
       data-price-value={105.6}
     >
+      105
       <span
-        className="price__units"
-      >
-        105
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         60
@@ -20472,6 +20641,16 @@ exports[`Storyshots Travel Aller Retour Asymetrique 1`] = `
 `;
 
 exports[`Storyshots Travel Aller Simple 1`] = `
+.emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
 <section
   className="travel"
 >
@@ -20484,17 +20663,13 @@ exports[`Storyshots Travel Aller Simple 1`] = `
       Lille ➝ Nantes
     </h1>
     <p
-      className="price travel__header-price"
+      className="emotion-1 travel__header-price"
       data-price-currency="EUR"
       data-price-value={105.6}
     >
+      105
       <span
-        className="price__units"
-      >
-        105
-      </span>
-      <span
-        className="price__remaining"
+        className="emotion-0"
       >
         , 
         60
@@ -20527,7 +20702,17 @@ exports[`Storyshots Travel Aller Simple 1`] = `
 
 exports[`Storyshots Travel Multiples Trajets 1`] = `
 Array [
-  <div
+  .emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+<div
     style={
       Object {
         "margin": "0.3rem",
@@ -20546,17 +20731,13 @@ Array [
           Lille ➝ Nantes
         </h1>
         <p
-          className="price travel__header-price"
+          className="emotion-1 travel__header-price"
           data-price-currency="EUR"
           data-price-value={105.6}
         >
+          105
           <span
-            className="price__units"
-          >
-            105
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             60
@@ -20586,7 +20767,17 @@ Array [
       </div>
     </section>
   </div>,
-  <div
+  .emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+<div
     style={
       Object {
         "margin": "0.3rem",
@@ -20605,17 +20796,13 @@ Array [
           Lille ⇄ Nantes
         </h1>
         <p
-          className="price travel__header-price"
+          className="emotion-1 travel__header-price"
           data-price-currency="EUR"
           data-price-value={105.6}
         >
+          105
           <span
-            className="price__units"
-          >
-            105
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             60
@@ -20653,7 +20840,17 @@ Array [
       </div>
     </section>
   </div>,
-  <div
+  .emotion-1 {
+  font-size: 1em;
+  color: black;
+}
+
+.emotion-0 {
+  font-size: 0.8em;
+  color: #4d4d4d;
+}
+
+<div
     style={
       Object {
         "margin": "0.3rem",
@@ -20673,17 +20870,13 @@ Array [
            ● Nantes ➝ Paris
         </h1>
         <p
-          className="price travel__header-price"
+          className="emotion-1 travel__header-price"
           data-price-currency="GBP"
           data-price-value={98.5}
         >
+          98
           <span
-            className="price__units"
-          >
-            98
-          </span>
-          <span
-            className="price__remaining"
+            className="emotion-0"
           >
             , 
             50

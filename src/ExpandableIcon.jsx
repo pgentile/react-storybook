@@ -24,5 +24,5 @@ export default function ExpandableIcon({ expanded = false, ...otherProps }) {
 
 ExpandableIcon.propTypes = {
   className: PropTypes.string,
-  expanded: PropTypes.bool.isRequired,
+  expanded: PropTypes.bool,
 };
