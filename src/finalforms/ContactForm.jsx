@@ -6,9 +6,10 @@ import createDecorator from "final-form-focus";
 import { noop } from "lodash-es";
 import { FormattedMessage, defineMessages, useIntl } from "react-intl";
 
+import Expandable from "../Expandable";
 import { I18nProvider } from "../i18n/I18nContext";
 import InputField from "../forms/InputField";
-import Expandable from "../Expandable";
+import Button from "../buttons/Button";
 import FinalButton from "../ff/FinalButton";
 import FinalFieldContainer from "../ff/FinalFieldContainer";
 import FinalFieldError from "../ff/FinalFieldError";
@@ -145,10 +146,10 @@ function PassengerForm({ passengerIndex }) {
     }
   };
 
-  const validateCivilityIfETicket = (name, allFields) => {
+  const validateCivilityIfETicket = (civility, allFields) => {
     const deliveryMode = getIn(allFields, `passengers.${passengerIndex}.deliveryMode`);
     if (deliveryMode === "eticket") {
-      return validateCivility(formatMessage)(name);
+      return validateCivility(formatMessage)(civility);
     }
   };
 
@@ -158,6 +159,10 @@ function PassengerForm({ passengerIndex }) {
 
   useField(`passengers.${passengerIndex}.lastName`, {
     validate: validateNameIfETicket,
+  });
+
+  useField(`passengers.${passengerIndex}.email`, {
+    validate: validateEmail(formatMessage),
   });
 
   const form = useForm();
@@ -177,6 +182,27 @@ function PassengerForm({ passengerIndex }) {
       form.change(`passengers.${passengerIndex}.lastName`, newValue);
     }
   });
+
+  const onSearchContactClick = async () => {
+    try {
+      const props = ["name", "email"];
+      const opts = { multiple: false };
+      const contacts = await navigator.contacts.select(props, opts);
+      const [contact] = contacts;
+      if (contact) {
+        const [name] = contact.name;
+        const [email] = contact.email;
+        const [firstName, lastName] = name.split(/ +/, 2);
+        form.change(`passengers.${passengerIndex}.firstName`, firstName);
+        form.change(`passengers.${passengerIndex}.lastName`, lastName);
+        form.change(`passengers.${passengerIndex}.email`, email);
+      }
+    } catch (e) {
+      alert(`Got error: ${e}`);
+    }
+  };
+
+  const contactManagerSupported = "contacts" in navigator && "ContactsManager" in window;
 
   return (
     <section>
@@ -199,6 +225,12 @@ function PassengerForm({ passengerIndex }) {
         <FinalFieldContainer name={`passengers.${passengerIndex}.lastName`} label={formatMessage(messages.lastName)}>
           {(fieldProps) => <InputField {...fieldProps} />}
         </FinalFieldContainer>
+        <FinalFieldContainer name={`passengers.${passengerIndex}.email`} label={formatMessage(messages.email)}>
+          {(fieldProps) => <InputField {...fieldProps} />}
+        </FinalFieldContainer>
+        <Button type="button" size="small" onClick={onSearchContactClick} disabled={!contactManagerSupported}>
+          <FormattedMessage {...messages.searchContact} />
+        </Button>
       </Expandable>
     </section>
   );
@@ -297,7 +329,16 @@ function validateName(formatMessage) {
   };
 }
 
+function validateEmail(formatMessage) {
+  return (email) => {
+    if (email && !email.includes("@")) {
+      return formatMessage(messages.invalidEmail);
+    }
+  };
+}
+
 /* eslint-disable formatjs/enforce-placeholders */
+/* eslint-disable formatjs/enforce-description */
 const messages = defineMessages({
   firstName: {
     id: "firstName",
@@ -347,6 +388,18 @@ const messages = defineMessages({
     id: "civilityUndefined",
     defaultMessage: "Civilité non définie",
   },
+  searchContact: {
+    id: "searchContact",
+    defaultMessage: "Rechercher un contact",
+  },
+  email: {
+    id: "email",
+    defaultMessage: "Email",
+  },
+  invalidEmail: {
+    id: "invalidEmail",
+    defaultMessage: "Adresse email invalide",
+  },
 });
 
 function useFieldVisitedState(fieldName) {
@@ -372,10 +425,7 @@ function useFieldVisitedState(fieldName) {
 
 function useFieldValueListener(fieldName, listener) {
   const listenerRef = useRef();
-
-  useEffect(() => {
-    listenerRef.current = listener;
-  }, [listener]);
+  listenerRef.current = listener;
 
   const form = useForm();
 
