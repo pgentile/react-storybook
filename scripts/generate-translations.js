@@ -10,14 +10,14 @@ const targetDir = path.join(__dirname, "../build/translations");
 
 async function generateTranslations() {
   const files = await recursive(inputDir);
-  const jsonFiles = files.filter(file => file.endsWith(".json"));
+  const jsonFiles = files.filter((file) => file.endsWith(".json"));
 
   const allTranslations = {};
 
   for (const jsonFile of jsonFiles) {
     console.info("Src file:", jsonFile);
     const translations = await readJsonFile(jsonFile);
-    translations.forEach(translation => {
+    translations.forEach((translation) => {
       allTranslations[translation.id] = translation.defaultMessage.trim();
     });
   }
@@ -39,7 +39,7 @@ async function writeJsonFile(file, content) {
   await fs.promises.writeFile(file, outputData, "utf-8");
 }
 
-generateTranslations().catch(e => {
+generateTranslations().catch((e) => {
   console.error("Failure:", e);
   process.exit(1);
 });
