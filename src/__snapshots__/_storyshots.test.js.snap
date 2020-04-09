@@ -21422,6 +21422,30 @@ exports[`Storyshots Vibrator Main 1`] = `
 </div>
 `;
 
+exports[`Storyshots VisuallyHidden Main 1`] = `
+Array [
+  "Hey !",
+  .emotion-0 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    className="emotion-0"
+  >
+    Tu ne peux pas me voir
+  </span>,
+]
+`;
+
 exports[`Storyshots Wip Empty 1`] = `
 .emotion-1 {
   padding: 10px;
