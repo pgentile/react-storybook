@@ -9346,8 +9346,10 @@ exports[`Storyshots Forms / DateInput Demo 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="JJ"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value=""
   />
   <span
@@ -9363,8 +9365,10 @@ exports[`Storyshots Forms / DateInput Demo 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value=""
   />
   <span
@@ -9379,8 +9383,10 @@ exports[`Storyshots Forms / DateInput Demo 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AAAA"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value=""
   />
 </fieldset>
@@ -9398,8 +9404,10 @@ exports[`Storyshots Forms / DateInput Disabled 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="JJ"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="13"
   />
   <span
@@ -9416,8 +9424,10 @@ exports[`Storyshots Forms / DateInput Disabled 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="02"
   />
   <span
@@ -9433,8 +9443,10 @@ exports[`Storyshots Forms / DateInput Disabled 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AAAA"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="1990"
   />
 </fieldset>
@@ -9452,8 +9464,10 @@ exports[`Storyshots Forms / DateInput Error 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="JJ"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="13"
   />
   <span
@@ -9470,8 +9484,10 @@ exports[`Storyshots Forms / DateInput Error 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="02"
   />
   <span
@@ -9487,8 +9503,10 @@ exports[`Storyshots Forms / DateInput Error 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AAAA"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="1990"
   />
 </fieldset>
@@ -9505,8 +9523,10 @@ exports[`Storyshots Forms / DateInput Main 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="JJ"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value=""
   />
   <span
@@ -9522,8 +9542,10 @@ exports[`Storyshots Forms / DateInput Main 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value=""
   />
   <span
@@ -9538,8 +9560,10 @@ exports[`Storyshots Forms / DateInput Main 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AAAA"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value=""
   />
 </fieldset>
@@ -9556,8 +9580,10 @@ exports[`Storyshots Forms / DateInput Mode Year Month 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="04"
   />
   <span
@@ -9572,8 +9598,10 @@ exports[`Storyshots Forms / DateInput Mode Year Month 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AAAA"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="2018"
   />
 </fieldset>
@@ -9590,8 +9618,10 @@ exports[`Storyshots Forms / DateInput Mode Year Month With Small Year 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="06"
   />
   <span
@@ -9606,8 +9636,10 @@ exports[`Storyshots Forms / DateInput Mode Year Month With Small Year 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AA"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="22"
   />
 </fieldset>
@@ -9624,9 +9656,11 @@ exports[`Storyshots Forms / DateInput Read Only 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="JJ"
     readOnly={true}
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="13"
   />
   <span
@@ -9642,9 +9676,11 @@ exports[`Storyshots Forms / DateInput Read Only 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
     readOnly={true}
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="02"
   />
   <span
@@ -9659,9 +9695,11 @@ exports[`Storyshots Forms / DateInput Read Only 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AAAA"
     readOnly={true}
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="1990"
   />
 </fieldset>
@@ -9678,8 +9716,10 @@ exports[`Storyshots Forms / DateInput With Value 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="JJ"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="13"
   />
   <span
@@ -9695,8 +9735,10 @@ exports[`Storyshots Forms / DateInput With Value 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="MM"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="02"
   />
   <span
@@ -9711,8 +9753,10 @@ exports[`Storyshots Forms / DateInput With Value 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
+    pattern="[0-9]*"
     placeholder="AAAA"
-    type="tel"
+    spellCheck={false}
+    type="text"
     value="1990"
   />
 </fieldset>
@@ -9976,50 +10020,7 @@ exports[`Storyshots Forms / FieldContainer Read Only 1`] = `
 </div>
 `;
 
-exports[`Storyshots Forms / FormFocusOnError Main 1`] = `
-<div>
-  <div>
-    <p>
-      <button
-        onClick={[Function]}
-      >
-        Click me
-      </button>
-    </p>
-    <p
-      style={
-        Object {
-          "height": "1000px",
-        }
-      }
-    />
-    <p>
-      <input />
-    </p>
-    <p
-      style={
-        Object {
-          "height": "1000px",
-        }
-      }
-    />
-    <p>
-      <input
-        aria-invalid={true}
-      />
-    </p>
-    <p
-      style={
-        Object {
-          "height": "1000px",
-        }
-      }
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Forms / InputField Avec Placeholplaceholderder 1`] = `
+exports[`Storyshots Forms / InputField Avec Placeholder 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
@@ -10081,15 +10082,17 @@ exports[`Storyshots Forms / InputField Main 1`] = `
 />
 `;
 
-exports[`Storyshots Forms / InputField Number 1`] = `
+exports[`Storyshots Forms / InputField Number Input 1`] = `
 <input
   aria-invalid={false}
   className="form-input-field "
-  defaultValue="123"
   formNoValidate={true}
   inputMode="numeric"
   onChange={[Function]}
-  type="tel"
+  pattern="[0-9]*"
+  spellCheck={false}
+  type="text"
+  value="123"
 />
 `;
 
@@ -10156,12 +10159,14 @@ exports[`Storyshots Forms / Label Optional Story 1`] = `
 </label>
 `;
 
-exports[`Storyshots Forms / NumberInput Main 1`] = `
+exports[`Storyshots Forms / NumberInput Demo 1`] = `
 <input
   inputMode="numeric"
   onChange={[Function]}
-  type="tel"
-  value=""
+  pattern="[0-9]*"
+  spellCheck={false}
+  type="text"
+  value="123"
 />
 `;
 
@@ -11795,7 +11800,9 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="tel"
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
         value=""
       />
     </div>
@@ -11859,7 +11866,9 @@ exports[`Storyshots Payment | CreditCardForm Main 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="tel"
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
         value=""
       />
     </div>
@@ -14650,7 +14659,9 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
-              type="tel"
+              pattern="[0-9]*"
+              spellCheck={false}
+              type="text"
               value=""
             />
           </div>
@@ -14714,7 +14725,9 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
-              type="tel"
+              pattern="[0-9]*"
+              spellCheck={false}
+              type="text"
               value=""
             />
           </div>
@@ -14985,7 +14998,9 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          type="tel"
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
           value=""
         />
       </div>
@@ -15049,7 +15064,9 @@ exports[`Storyshots Payment | PaymentForm Main 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          type="tel"
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
           value=""
         />
       </div>
@@ -15318,7 +15335,9 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          type="tel"
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
           value=""
         />
       </div>
@@ -15382,7 +15401,9 @@ exports[`Storyshots Payment | PaymentFormConnected Main 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          type="tel"
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
           value=""
         />
       </div>
@@ -15923,7 +15944,9 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="tel"
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
         value=""
       />
     </div>
@@ -16003,7 +16026,9 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="tel"
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
         value=""
       />
     </div>
@@ -16088,7 +16113,9 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="tel"
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
         value=""
       />
     </div>
@@ -16173,7 +16200,9 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="tel"
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
         value=""
       />
     </div>
@@ -16253,7 +16282,9 @@ exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="tel"
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
         value=""
       />
     </div>
@@ -16430,7 +16461,9 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -16626,7 +16659,9 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -16810,7 +16845,9 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -17011,7 +17048,9 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -17206,7 +17245,9 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -17406,7 +17447,9 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -17585,7 +17628,9 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -17776,7 +17821,9 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -17955,7 +18002,9 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -18146,7 +18195,9 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -18336,7 +18387,9 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -18526,7 +18579,9 @@ exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       onFocus={[Function]}
-                      type="tel"
+                      pattern="[0-9]*"
+                      spellCheck={false}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -18720,7 +18775,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -18886,7 +18943,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -19052,7 +19111,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -19223,7 +19284,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Disabled Story 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -19417,7 +19480,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -19582,7 +19647,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -19747,7 +19814,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -19917,7 +19986,9 @@ exports[`Storyshots Payment | RegistredCreditCardList Main 1`] = `
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocus={[Function]}
-                        type="tel"
+                        pattern="[0-9]*"
+                        spellCheck={false}
+                        type="text"
                         value=""
                       />
                     </div>

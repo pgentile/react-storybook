@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 
 import NumberInput from "./NumberInput";
 
@@ -7,23 +7,14 @@ export default {
   component: NumberInput,
 };
 
-export const main = () => {
-  return <NumberInputDemo />;
-};
+export const demo = () => <NumberInputDemo />;
 
-class NumberInputDemo extends React.PureComponent {
-  state = {
-    value: "",
-  };
+function NumberInputDemo() {
+  const [value, setValue] = useState("123");
 
-  onChange = (event) => {
-    this.setState({
-      value: event.target.value,
-    });
-  };
+  const handleChange = useCallback((event) => {
+    setValue(event.target.value);
+  }, []);
 
-  render() {
-    const { value } = this.state;
-    return <NumberInput value={value} onChange={this.onChange} />;
-  }
+  return <NumberInput value={value} onChange={handleChange} />;
 }

@@ -9,38 +9,20 @@ export default {
   component: InputField,
 };
 
-export const main = () => {
-  return <InputField defaultValue="" />;
-};
+export const main = () => <InputField defaultValue="" />;
 
-export const defaultValue = () => {
-  return <InputField defaultValue="Example" />;
-};
+export const defaultValue = () => <InputField defaultValue="Example" />;
 
-export const avecPlaceholplaceholderder = () => {
-  return <InputField defaultValue="" placeholder="Example" />;
-};
+export const avecPlaceholder = () => <InputField defaultValue="" placeholder="Example" />;
 
-export const email = () => {
-  return <InputField type="email" placeholder="Adresse email" />;
-};
+export const email = () => <InputField type="email" placeholder="Adresse email" />;
 
-export const password = () => {
-  return <InputField type="password" value="password" />;
-};
+export const password = () => <InputField type="password" value="password" />;
 
-export const number = () => {
-  return <InputField as={NumberInput} defaultValue="123" />;
-};
+export const numberInput = () => <InputField as={NumberInput} value="123" />;
 
-export const error = () => {
-  return <InputField defaultValue="" error />;
-};
+export const error = () => <InputField defaultValue="" error />;
 
-export const disabled = () => {
-  return <InputField defaultValue="Example" disabled />;
-};
+export const disabled = () => <InputField defaultValue="Example" disabled />;
 
-export const readOnly = () => {
-  return <InputField defaultValue="Example" readOnly />;
-};
+export const readOnly = () => <InputField defaultValue="Example" readOnly />;
