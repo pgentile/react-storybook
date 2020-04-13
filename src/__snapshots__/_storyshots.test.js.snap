@@ -8189,14 +8189,6 @@ exports[`Storyshots Experiments | Translation3D Main 1`] = `
 </div>
 `;
 
-exports[`Storyshots FieldError Main 1`] = `
-<p
-  className="field-error "
->
-  Quelle belle erreur
-</p>
-`;
-
 exports[`Storyshots Final Forms | ContactForm Main 1`] = `
 <form
   onSubmit={[Function]}
@@ -10018,6 +10010,14 @@ exports[`Storyshots Forms / FieldContainer Read Only 1`] = `
     />
   </div>
 </div>
+`;
+
+exports[`Storyshots Forms / FieldError Main 1`] = `
+<p
+  className="field-error "
+>
+  Quelle belle erreur
+</p>
 `;
 
 exports[`Storyshots Forms / InputField Avec Placeholder 1`] = `
