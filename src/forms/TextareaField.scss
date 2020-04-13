@@ -1,9 +1,10 @@
 @import "./FormField";
 
-.form-input-field {
+.textarea-field {
   @include form-field;
 
   box-sizing: border-box;
   display: block;
   width: 100%;
+  resize: vertical;
 }

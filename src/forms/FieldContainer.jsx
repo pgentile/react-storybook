@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 
 import Label from "./Label";
 import FieldError from "./FieldError";
+import useGeneratedFieldId from "./useGeneratedFieldId";
 
 import "./FieldContainer.scss";
-
-let count = 0;
 
 export default function FieldContainer({
   as: Element = "div",
@@ -20,18 +19,20 @@ export default function FieldContainer({
   optional,
   readOnly,
 }) {
-  const [generatedId] = useState(() => `form-field-${count++}`);
+  const inputId = useGeneratedFieldId(id);
 
-  const showErrorMessage = !!errorMessage && !disabled;
-  const showHelpMessage = !!helpMessage && !disabled;
-  const inputId = id || generatedId;
+  const showErrorMessage = Boolean(errorMessage) && !disabled;
+  const showHelpMessage = Boolean(helpMessage) && !disabled;
 
-  const fieldProps = {
-    error: showErrorMessage,
-    id: inputId,
-    disabled,
-    readOnly,
-  };
+  const fieldProps = useMemo(
+    () => ({
+      error: showErrorMessage,
+      id: inputId,
+      disabled,
+      readOnly,
+    }),
+    [disabled, inputId, readOnly, showErrorMessage]
+  );
 
   return (
     <Element className={`form-field-container ${className}`}>
