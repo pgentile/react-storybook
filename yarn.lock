@@ -6306,14 +6306,14 @@ eslint-plugin-emotion@^10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.1.4.tgz#28dcb7b0020b8f5925993b8ed24c1a5ba4b0ed13"
-  integrity sha512-Eue2xFI1q/keTXXSKKKJ+OX46IpN3poC8Uw/7EeFj7URKj9g61Xobuhm9SaXrgp326lEe/zVfJG4bHVeqxo4og==
+eslint-plugin-formatjs@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.1.5.tgz#d4f680b14b4c6c4e4fa6eca660c8fdd0eff2871f"
+  integrity sha512-HqtUUAVwdF4jkbvrwP805+Y+MTTf+W89kDHbvwwC/wZkxlVgY3Heh22vyjz2SGKq1i+BocT4F285RARF/Fd+xQ==
   dependencies:
     "@types/emoji-regex" "^8.0.0"
     emoji-regex "^8.0.0"
-    intl-messageformat-parser "^4.1.4"
+    intl-messageformat-parser "^5.0.0"
 
 eslint-plugin-jest@^23.8.2:
   version "23.8.2"
@@ -8297,6 +8297,13 @@ intl-messageformat-parser@^4.1.4:
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-4.1.4.tgz#98f3415e6990d44bebf2e0ad8e4cfbacf3ef5ed3"
   integrity sha512-zV4kBUD1yhxSyaXm6bGhmP4HFH9Gh4pRQwNn+xq5P+B1dT8mpaAfU75nfUn4HgddIB6pyFnzM5MQjO55UpJwkQ==
+  dependencies:
+    "@formatjs/intl-unified-numberformat" "^3.3.3"
+
+intl-messageformat-parser@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.0.0.tgz#da7ed75f1dd05ff82d8a5724cc9a1d38a72ebd75"
+  integrity sha512-2JwOxRl/1rm+03dJ+ZSOVbFpdPepgEBLuThkeJwBBUzHf53OiZ1FN8kkXTe7WrWLlg+alGsSEMZwTeqpoqvgLw==
   dependencies:
     "@formatjs/intl-unified-numberformat" "^3.3.3"
 
