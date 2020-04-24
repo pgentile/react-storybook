@@ -1,0 +1,15 @@
+.boids {
+  &__canvas {
+    border: 1px black solid;
+    box-sizing: content-box;
+  }
+
+  &__controls {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  &__control-item {
+    margin-right: 1rem;
+  }
+}

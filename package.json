@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf build node_modules/.cache",
+    "start": "run-s storybook",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook --output-dir ./build/storybook",
     "lint:js": "eslint --ext .jsx,.js,.ts,.tsx --ignore-pattern '**/*.d.ts' ./src",
