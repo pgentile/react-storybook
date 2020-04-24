@@ -6297,10 +6297,10 @@ eslint-plugin-emotion@^10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.1.5.tgz#d4f680b14b4c6c4e4fa6eca660c8fdd0eff2871f"
-  integrity sha512-HqtUUAVwdF4jkbvrwP805+Y+MTTf+W89kDHbvwwC/wZkxlVgY3Heh22vyjz2SGKq1i+BocT4F285RARF/Fd+xQ==
+eslint-plugin-formatjs@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.2.0.tgz#75d253cd6c7619a98f663ec24dc7fb460403a0b8"
+  integrity sha512-NPUAatOTFpt9KzJ+kLpO/9PuCneKO/OEARrZLsRoWuJqOBwvwJ4qSkjPtTtv6nnmhYO4R/2ieEo9jbjRBdk+7A==
   dependencies:
     "@types/emoji-regex" "^8.0.0"
     emoji-regex "^8.0.0"
