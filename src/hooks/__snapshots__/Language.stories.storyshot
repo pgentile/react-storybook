@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Hooks / Language Main 1`] = `
+Array [
+  <p>
+    <b>
+      Language:
+    </b>
+     
+    🇩🇪
+  </p>,
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      🇫🇷
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      🇬🇧
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      🇩🇪
+    </button>
+  </p>,
+]
+`;

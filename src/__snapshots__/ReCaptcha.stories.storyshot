@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ReCaptcha Compact 1`] = `
+<div
+  className="recaptcha"
+/>
+`;
+
+exports[`Storyshots ReCaptcha Dark 1`] = `
+<div
+  className="recaptcha"
+/>
+`;
+
+exports[`Storyshots ReCaptcha Main 1`] = `
+<div
+  className="recaptcha"
+/>
+`;

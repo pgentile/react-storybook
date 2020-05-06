@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots LoadingText Few Lines 1`] = `
+<div
+  className="loading-text"
+>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+</div>
+`;
+
+exports[`Storyshots LoadingText Main 1`] = `
+<div
+  className="loading-text"
+>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+</div>
+`;
+
+exports[`Storyshots LoadingText Many Lines 1`] = `
+<div
+  className="loading-text"
+>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+  <p
+    className="loading-text__line"
+  >
+     
+  </p>
+</div>
+`;

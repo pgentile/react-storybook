@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Hooks / AboutBrowserLocation Main 1`] = `
+<div>
+  <p>
+    <b>
+      Location:
+    </b>
+  </p>
+  <pre>
+    {
+  "trigger": "load",
+  "state": null,
+  "length": 1,
+  "hash": "",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "http://localhost/",
+  "origin": "http://localhost",
+  "pathname": "/",
+  "port": "",
+  "protocol": "http:",
+  "search": ""
+}
+  </pre>
+  <p>
+    <b>
+      Search params:
+    </b>
+  </p>
+  <pre>
+    
+  </pre>
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      Push param
+    </button>
+  </p>
+</div>
+`;

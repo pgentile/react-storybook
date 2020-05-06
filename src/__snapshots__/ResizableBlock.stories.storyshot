@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ResizableBlock Main 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "1000px",
+    }
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "border": "2px dotted red",
+          "padding": "10px",
+        }
+      }
+    >
+      Breakpoint: 
+      <b>
+        S
+      </b>
+    </div>
+  </div>
+</div>
+`;

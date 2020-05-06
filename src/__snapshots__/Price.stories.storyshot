@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Price Extra prop 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={56.9}
+  data-sample="yes"
+>
+  56
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    90
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price No color 1`] = `
+<span
+  className="css-fsncg5-Price"
+  data-price-currency="EUR"
+  data-price-value={135.9}
+>
+  135
+  <span
+    className="css-tvrdin-Price"
+  >
+    , 
+    90
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - En franc suisse 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="CHF"
+  data-price-value={135.9}
+>
+  135
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    90
+     
+    CHF
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - En pounds 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="GBP"
+  data-price-value={135.9}
+>
+  135
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    90
+     
+    £
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - Valeur de -10.9 € 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={-10.9}
+>
+  -10
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    90
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - Valeur de -45.2 € 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={-45.2}
+>
+  -45
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    20
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - Valeur de 0 € 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={0}
+>
+  0
+  <span
+    className="css-8pvupu-Price"
+  >
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - Valeur de 12 € 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={12}
+>
+  12
+  <span
+    className="css-8pvupu-Price"
+  >
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - Valeur de 21.9 € 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={21.9}
+>
+  21
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    90
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - Valeur de 35.2 € 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={35.2}
+>
+  35
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    20
+     
+    €
+  </span>
+</span>
+`;
+
+exports[`Storyshots Price Prix - Valeur de 46.5 € 1`] = `
+<span
+  className="css-16hw484-Price"
+  data-price-currency="EUR"
+  data-price-value={46.5}
+>
+  46
+  <span
+    className="css-8pvupu-Price"
+  >
+    , 
+    50
+     
+    €
+  </span>
+</span>
+`;

@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Payment | CreditCardForm Main 1`] = `
+<form
+  className="credit-card-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="form-field-container credit-card-form__card-number"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-42"
+    >
+      Numéro de carte
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        aria-invalid={false}
+        autoComplete="cc-number"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-42"
+        inputMode="numeric"
+        maxLength={19}
+        name="cardNumber"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-field-container credit-card-form__expiration-date"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-43"
+    >
+      Date d'expiration
+    </label>
+    <p
+      className="form-field-container__help"
+    >
+      Date au format AA-MM
+    </p>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        aria-invalid={false}
+        autoComplete="cc-exp"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-43"
+        maxLength={5}
+        name="expirationDate"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-field-container credit-card-form__cvv"
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-44"
+    >
+      Code de sécurité
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        aria-invalid={false}
+        autoComplete="cc-csc"
+        className="form-input-field "
+        disabled={false}
+        formNoValidate={true}
+        id="form-field-44"
+        inputMode="numeric"
+        maxLength={4}
+        name="cvv"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="credit-card-form__button"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-large "
+      disabled={false}
+      type="submit"
+    >
+      Payer 
+      <span
+        className="css-fsncg5-Price"
+        data-price-currency="EUR"
+        data-price-value={98}
+      >
+        98
+        <span
+          className="css-tvrdin-Price"
+        >
+           
+          €
+        </span>
+      </span>
+    </button>
+  </div>
+</form>
+`;

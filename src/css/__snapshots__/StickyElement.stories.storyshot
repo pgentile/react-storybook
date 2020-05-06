@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots CSS | StickyElement Main 1`] = `
+<div
+  className="sticky"
+>
+  Root element
+  <div
+    className="sticky__container"
+  >
+    Container element start
+    <div
+      className="sticky__element"
+      style={
+        Object {
+          "top": "0px",
+        }
+      }
+    >
+      This is the sticky element
+    </div>
+    Container element end
+  </div>
+</div>
+`;

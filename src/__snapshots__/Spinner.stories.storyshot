@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Spinner Main 1`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="spinner__bounce"
+  />
+  <div
+    className="spinner__bounce"
+  />
+  <div
+    className="spinner__bounce"
+  />
+</div>
+`;

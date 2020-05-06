@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots LoaderDemo Main 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Load one
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Load parallel
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Load sequential
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Load on, no indicator
+  </button>
+</div>
+`;

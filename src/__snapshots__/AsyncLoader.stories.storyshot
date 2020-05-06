@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AsyncLoader Error Story 1`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="spinner__bounce"
+  />
+  <div
+    className="spinner__bounce"
+  />
+  <div
+    className="spinner__bounce"
+  />
+</div>
+`;
+
+exports[`Storyshots AsyncLoader Success 1`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="spinner__bounce"
+  />
+  <div
+    className="spinner__bounce"
+  />
+  <div
+    className="spinner__bounce"
+  />
+</div>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Carousel Main 1`] = `
+<div
+  className="carousel "
+>
+  <div
+    className="carousel__items-container"
+    style={
+      Object {
+        "left": "0%",
+        "width": "300%",
+      }
+    }
+  >
+    <div
+      className="carousel__item"
+    >
+      <p>
+        Item 1
+        <br />
+        Item 1, line 2
+      </p>
+    </div>
+    <div
+      className="carousel__item"
+    >
+      <p>
+        Item 2
+      </p>
+    </div>
+    <div
+      className="carousel__item"
+    >
+      <p>
+        Item 3
+        <br />
+        Item 3, line 2
+        <br />
+        Item 3, line 3
+      </p>
+    </div>
+  </div>
+</div>
+`;

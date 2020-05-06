@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Hooks / TrafficLight Main 1`] = `
+<div
+  className="traffic-light"
+>
+  <div
+    className="traffic-light__light traffic-light__light--color-red"
+  />
+  <div
+    className="traffic-light__light"
+  />
+  <div
+    className="traffic-light__light"
+  />
+</div>
+`;

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Forms / Label Disabled Story 1`] = `
+<label
+  className="label label--disabled "
+>
+  Label
+</label>
+`;
+
+exports[`Storyshots Forms / Label Main 1`] = `
+<label
+  className="label "
+>
+  Label
+</label>
+`;
+
+exports[`Storyshots Forms / Label Optional And Disabled 1`] = `
+<label
+  className="label label--disabled "
+>
+  Label
+  <span
+    className="label__optional"
+  >
+     (facultatif)
+  </span>
+</label>
+`;
+
+exports[`Storyshots Forms / Label Optional Story 1`] = `
+<label
+  className="label "
+>
+  Label
+  <span
+    className="label__optional"
+  >
+     (facultatif)
+  </span>
+</label>
+`;

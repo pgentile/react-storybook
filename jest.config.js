@@ -10,6 +10,7 @@ module.exports = {
     "\\.s?css$": "<rootDir>/__mocks__/styleMock.js",
   },
   transform: {
+    "^.+\\.stories\\.[jt]sx?$": "@storybook/addon-storyshots/injectFileName",
     "\\.[jt]sx?$": "babel-jest",
     "\\.svg$": "<rootDir>/__mocks__/imageMock.js",
   },

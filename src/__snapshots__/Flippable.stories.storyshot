@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Flippable Main 1`] = `
+<div
+  className="flippable"
+>
+  <div
+    aria-hidden={false}
+    className="flippable__face flippable__face--foreground"
+  >
+    <div
+      className="css-ejsk1i-Card flippable-story__card"
+      onClick={[Function]}
+    >
+      <p>
+        Foreground
+      </p>
+    </div>
+  </div>
+  <div
+    aria-hidden={true}
+    className="flippable__face flippable__face--background"
+  >
+    <div
+      className="css-ejsk1i-Card flippable-story__card"
+      onClick={[Function]}
+    >
+      <p>
+        Background
+      </p>
+    </div>
+  </div>
+</div>
+`;

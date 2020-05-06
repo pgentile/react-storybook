@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Wip Empty 1`] = `
+<div
+  className="css-jfyhqj-wipClass"
+>
+  <div
+    className="css-101h4ki-wipContainerClass"
+  >
+    Work in progress
+  </div>
+</div>
+`;
+
+exports[`Storyshots Wip Main 1`] = `
+<div
+  className="css-jfyhqj-wipClass"
+>
+  <div
+    className="css-101h4ki-wipContainerClass"
+  >
+    Terminer ce composant
+  </div>
+</div>
+`;

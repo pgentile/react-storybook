@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Payment | VoucherForm Initial Code 1`] = `
+<form
+  className="voucher-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="voucher-form__line"
+  >
+    <div
+      className="form-field-container "
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-63"
+      >
+        Code promo
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="off"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-63"
+          maxLength={16}
+          name="code"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          spellCheck={false}
+          type="text"
+          value="EURO2016"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="voucher-form__line"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-small progress-button voucher-form__button"
+      disabled={false}
+      type="submit"
+    >
+      <div
+        className="progress-button__content"
+      >
+        Ajouter le code promo
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-small voucher-form__button"
+      disabled={false}
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment | VoucherForm Main 1`] = `
+<form
+  className="voucher-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="voucher-form__line"
+  >
+    <div
+      className="form-field-container "
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-62"
+      >
+        Code promo
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="off"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-62"
+          maxLength={16}
+          name="code"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="voucher-form__line"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-small progress-button voucher-form__button"
+      disabled={false}
+      type="submit"
+    >
+      <div
+        className="progress-button__content"
+      >
+        Ajouter le code promo
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-small voucher-form__button"
+      disabled={false}
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment | VoucherForm Submit Error 1`] = `
+<form
+  className="voucher-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="voucher-form__line"
+  >
+    <div
+      className="form-field-container "
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-65"
+      >
+        Code promo
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="off"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-65"
+          maxLength={16}
+          name="code"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          spellCheck={false}
+          type="text"
+          value="CODE21"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="voucher-form__line"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-small progress-button voucher-form__button"
+      disabled={false}
+      type="submit"
+    >
+      <div
+        className="progress-button__content"
+      >
+        Ajouter le code promo
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-small voucher-form__button"
+      disabled={false}
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Payment | VoucherForm Submit Success 1`] = `
+<form
+  className="voucher-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="voucher-form__line"
+  >
+    <div
+      className="form-field-container "
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-64"
+      >
+        Code promo
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="off"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-64"
+          maxLength={16}
+          name="code"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          spellCheck={false}
+          type="text"
+          value="CODE21"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="voucher-form__line"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-small progress-button voucher-form__button"
+      disabled={false}
+      type="submit"
+    >
+      <div
+        className="progress-button__content"
+      >
+        Ajouter le code promo
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-small voucher-form__button"
+      disabled={false}
+      onClick={[Function]}
+      type="reset"
+    >
+      Annuler
+    </button>
+  </div>
+</form>
+`;

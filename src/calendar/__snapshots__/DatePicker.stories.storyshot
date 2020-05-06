@@ -1,0 +1,1403 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Calendar / DatePicker Demo 1`] = `
+<section
+  className="date-picker"
+>
+  <div
+    className="date-picker__previous-month-container"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-large "
+      onClick={[Function]}
+      title="Mois précédent"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+        data-icon="chevron-circle-left"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    className="date-picker__calendar-container"
+  >
+    <table
+      className="calendar date-picker__calendar"
+    >
+      <caption
+        className="calendar__month"
+      >
+        janvier 2018
+      </caption>
+      <thead
+        className="calendar__week-days"
+      >
+        <tr>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Lundi"
+            >
+              Lu
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mardi"
+            >
+              Ma
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mercredi"
+            >
+              Me
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Jeudi"
+            >
+              Je
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Vendredi"
+            >
+              Ve
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Samedi"
+            >
+              Sa
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Dimanche"
+            >
+              Di
+            </abbr>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="calendar__weeks"
+      >
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 1 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-01"
+            >
+              1
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 2 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-02"
+            >
+              2
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 3 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-03"
+            >
+              3
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 4 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-04"
+            >
+              4
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 5 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-05"
+            >
+              5
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 6 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-06"
+            >
+              6
+            </time>
+          </td>
+          <td
+            aria-current="date"
+            aria-label="dimanche 7 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-07"
+            >
+              7
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 8 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-08"
+            >
+              8
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 9 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-09"
+            >
+              9
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 10 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-10"
+            >
+              10
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 11 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-11"
+            >
+              11
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 12 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-12"
+            >
+              12
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 13 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-13"
+            >
+              13
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 14 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-14"
+            >
+              14
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 15 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-15"
+            >
+              15
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 16 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-16"
+            >
+              16
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 17 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-17"
+            >
+              17
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 18 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-18"
+            >
+              18
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 19 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-19"
+            >
+              19
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 20 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-20"
+            >
+              20
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 21 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-21"
+            >
+              21
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 22 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-22"
+            >
+              22
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 23 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-23"
+            >
+              23
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 24 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-24"
+            >
+              24
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 25 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-25"
+            >
+              25
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 26 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-26"
+            >
+              26
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 27 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-27"
+            >
+              27
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 28 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-28"
+            >
+              28
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 29 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-29"
+            >
+              29
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 30 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-30"
+            >
+              30
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 31 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-31"
+            >
+              31
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 1 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-01"
+            >
+              1
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 2 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-02"
+            >
+              2
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 3 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-03"
+            >
+              3
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 4 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-04"
+            >
+              4
+            </time>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="date-picker__next-month-container"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-large "
+      onClick={[Function]}
+      title="Mois suivant"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+        data-icon="chevron-circle-right"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Calendar / DatePicker Main 1`] = `
+<section
+  className="date-picker"
+>
+  <div
+    className="date-picker__previous-month-container"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-large "
+      onClick={[Function]}
+      title="Mois précédent"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-left fa-w-16 "
+        data-icon="chevron-circle-left"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    className="date-picker__calendar-container"
+  >
+    <table
+      className="calendar date-picker__calendar"
+    >
+      <caption
+        className="calendar__month"
+      >
+        janvier 2018
+      </caption>
+      <thead
+        className="calendar__week-days"
+      >
+        <tr>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Lundi"
+            >
+              Lu
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mardi"
+            >
+              Ma
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Mercredi"
+            >
+              Me
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Jeudi"
+            >
+              Je
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Vendredi"
+            >
+              Ve
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Samedi"
+            >
+              Sa
+            </abbr>
+          </th>
+          <th
+            className="calendar__week-day"
+          >
+            <abbr
+              className="calendar__week-day-abbr"
+              title="Dimanche"
+            >
+              Di
+            </abbr>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="calendar__weeks"
+      >
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 1 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-01"
+            >
+              1
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 2 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-02"
+            >
+              2
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 3 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-03"
+            >
+              3
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 4 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-04"
+            >
+              4
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 5 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-05"
+            >
+              5
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 6 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-06"
+            >
+              6
+            </time>
+          </td>
+          <td
+            aria-current="date"
+            aria-label="dimanche 7 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-07"
+            >
+              7
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 8 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-08"
+            >
+              8
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 9 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-09"
+            >
+              9
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 10 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-10"
+            >
+              10
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 11 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-11"
+            >
+              11
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 12 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-12"
+            >
+              12
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 13 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-13"
+            >
+              13
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 14 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-14"
+            >
+              14
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 15 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-15"
+            >
+              15
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 16 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-16"
+            >
+              16
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 17 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-17"
+            >
+              17
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 18 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-18"
+            >
+              18
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 19 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-19"
+            >
+              19
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 20 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-20"
+            >
+              20
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 21 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-21"
+            >
+              21
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 22 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-22"
+            >
+              22
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 23 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-23"
+            >
+              23
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 24 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-24"
+            >
+              24
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 25 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-25"
+            >
+              25
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 26 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-26"
+            >
+              26
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 27 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-27"
+            >
+              27
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 28 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-28"
+            >
+              28
+            </time>
+          </td>
+        </tr>
+        <tr
+          className="calendar__week"
+        >
+          <td
+            aria-current={null}
+            aria-label="lundi 29 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-29"
+            >
+              29
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mardi 30 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-30"
+            >
+              30
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="mercredi 31 janvier 2018"
+            className="calendar__day calendar__day--current-month calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-01-31"
+            >
+              31
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="jeudi 1 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-01"
+            >
+              1
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="vendredi 2 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-02"
+            >
+              2
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="samedi 3 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-03"
+            >
+              3
+            </time>
+          </td>
+          <td
+            aria-current={null}
+            aria-label="dimanche 4 février 2018"
+            className="calendar__day calendar__day--selectable"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <time
+              dateTime="2018-02-04"
+            >
+              4
+            </time>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="date-picker__next-month-container"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-large "
+      onClick={[Function]}
+      title="Mois suivant"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-circle-right fa-w-16 "
+        data-icon="chevron-circle-right"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+</section>
+`;

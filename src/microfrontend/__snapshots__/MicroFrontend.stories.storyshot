@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MicroFrontend | MicroFrontend Main 1`] = `
+<div
+  id="micro-frontend-root-sample"
+/>
+`;
+
+exports[`Storyshots MicroFrontend | MicroFrontend Multiple Frontends 1`] = `
+Array [
+  <div
+    id="micro-frontend-root-sample1"
+  />,
+  <div
+    id="micro-frontend-root-sample2"
+  />,
+]
+`;

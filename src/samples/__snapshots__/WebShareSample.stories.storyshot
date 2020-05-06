@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Samples | WebShareSample Main 1`] = `
+<div
+  className="web-share"
+>
+  <button
+    onClick={[Function]}
+  >
+    Partager
+  </button>
+</div>
+`;

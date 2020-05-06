@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Forms / TextareaField Avec Placeholder 1`] = `
+<textarea
+  aria-invalid={false}
+  className="textarea-field "
+  defaultValue=""
+  formNoValidate={true}
+  placeholder="Example"
+/>
+`;
+
+exports[`Storyshots Forms / TextareaField Default Value 1`] = `
+<textarea
+  aria-invalid={false}
+  className="textarea-field "
+  defaultValue="Example"
+  formNoValidate={true}
+/>
+`;
+
+exports[`Storyshots Forms / TextareaField Disabled 1`] = `
+<textarea
+  aria-invalid={false}
+  className="textarea-field "
+  defaultValue="Example"
+  disabled={true}
+  formNoValidate={true}
+/>
+`;
+
+exports[`Storyshots Forms / TextareaField Error 1`] = `
+<textarea
+  aria-invalid={true}
+  className="textarea-field textarea-field--error "
+  defaultValue=""
+  formNoValidate={true}
+/>
+`;
+
+exports[`Storyshots Forms / TextareaField Main 1`] = `
+<textarea
+  aria-invalid={false}
+  className="textarea-field "
+  defaultValue=""
+  formNoValidate={true}
+/>
+`;
+
+exports[`Storyshots Forms / TextareaField Read Only 1`] = `
+<textarea
+  aria-invalid={false}
+  className="textarea-field "
+  defaultValue="Example"
+  formNoValidate={true}
+  readOnly={true}
+/>
+`;

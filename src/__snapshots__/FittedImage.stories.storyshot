@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots FittedImage Demo 1`] = `
+<div
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <img
+    className="fitted-image "
+    src="/images/beautiful-image.jpg"
+  />
+</div>
+`;

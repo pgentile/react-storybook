@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NightModePreference Main 1`] = `
+<section
+  className="night-mode-preference"
+>
+  <h1>
+    Hello
+  </h1>
+  <p>
+    Utilisation du night mode de l'OS ?
+  </p>
+  <p>
+    OS en 
+    <i>
+      dark mode
+    </i>
+     ? 
+    non
+  </p>
+</section>
+`;

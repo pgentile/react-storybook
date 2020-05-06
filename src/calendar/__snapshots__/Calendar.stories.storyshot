@@ -1,0 +1,4477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Calendar / Calendar All Options 1`] = `
+<table
+  className="calendar "
+>
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
+  <thead
+    className="calendar__week-days"
+  >
+    <tr>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="calendar__weeks"
+  >
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-29"
+        >
+          29
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 1 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-01"
+        >
+          1
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-05"
+        >
+          5
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-06"
+        >
+          6
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-07"
+        >
+          7
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-08"
+        >
+          8
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-09"
+        >
+          9
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-10"
+        >
+          10
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-11"
+        >
+          11
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-12"
+        >
+          12
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-13"
+        >
+          13
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-14"
+        >
+          14
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-15"
+        >
+          15
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-16"
+        >
+          16
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-17"
+        >
+          17
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-18"
+        >
+          18
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-19"
+        >
+          19
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-20"
+        >
+          20
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-21"
+        >
+          21
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-22"
+        >
+          22
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current="date"
+        aria-label="lundi 23 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-23"
+        >
+          23
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-24"
+        >
+          24
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-29"
+        >
+          29
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-31"
+        >
+          31
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 1 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-01"
+        >
+          1
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-05"
+        >
+          5
+        </time>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Calendar / Calendar Main 1`] = `
+<table
+  className="calendar "
+>
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
+  <thead
+    className="calendar__week-days"
+  >
+    <tr>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="calendar__weeks"
+  >
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-29"
+        >
+          29
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 1 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-01"
+        >
+          1
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-05"
+        >
+          5
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-06"
+        >
+          6
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-07"
+        >
+          7
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-08"
+        >
+          8
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-09"
+        >
+          9
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-10"
+        >
+          10
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-11"
+        >
+          11
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-12"
+        >
+          12
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-13"
+        >
+          13
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-14"
+        >
+          14
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-15"
+        >
+          15
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-16"
+        >
+          16
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-17"
+        >
+          17
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-18"
+        >
+          18
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-19"
+        >
+          19
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-20"
+        >
+          20
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-21"
+        >
+          21
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-22"
+        >
+          22
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-23"
+        >
+          23
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-24"
+        >
+          24
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-29"
+        >
+          29
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-31"
+        >
+          31
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 1 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-01"
+        >
+          1
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-05"
+        >
+          5
+        </time>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Calendar / Calendar Max Date 1`] = `
+<table
+  className="calendar "
+>
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
+  <thead
+    className="calendar__week-days"
+  >
+    <tr>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="calendar__weeks"
+  >
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-29"
+        >
+          29
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 1 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-01"
+        >
+          1
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-05"
+        >
+          5
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-06"
+        >
+          6
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-07"
+        >
+          7
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-08"
+        >
+          8
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-09"
+        >
+          9
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-10"
+        >
+          10
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-11"
+        >
+          11
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-12"
+        >
+          12
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-13"
+        >
+          13
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-14"
+        >
+          14
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-15"
+        >
+          15
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-16"
+        >
+          16
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-17"
+        >
+          17
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-18"
+        >
+          18
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-19"
+        >
+          19
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-20"
+        >
+          20
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-21"
+        >
+          21
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-22"
+        >
+          22
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-23"
+        >
+          23
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-24"
+        >
+          24
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-29"
+        >
+          29
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-31"
+        >
+          31
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 1 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-01"
+        >
+          1
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-05"
+        >
+          5
+        </time>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Calendar / Calendar Min Date 1`] = `
+<table
+  className="calendar "
+>
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
+  <thead
+    className="calendar__week-days"
+  >
+    <tr>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="calendar__weeks"
+  >
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-29"
+        >
+          29
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
+        className="calendar__day calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 1 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-01"
+        >
+          1
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-05"
+        >
+          5
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--disabled"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-06"
+        >
+          6
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-07"
+        >
+          7
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-08"
+        >
+          8
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-09"
+        >
+          9
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-10"
+        >
+          10
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-11"
+        >
+          11
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-12"
+        >
+          12
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-13"
+        >
+          13
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-14"
+        >
+          14
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-15"
+        >
+          15
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-16"
+        >
+          16
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-17"
+        >
+          17
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-18"
+        >
+          18
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-19"
+        >
+          19
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-20"
+        >
+          20
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-21"
+        >
+          21
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-22"
+        >
+          22
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-23"
+        >
+          23
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-24"
+        >
+          24
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-29"
+        >
+          29
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-31"
+        >
+          31
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 1 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-01"
+        >
+          1
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-05"
+        >
+          5
+        </time>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Calendar / Calendar Selectable 1`] = `
+<table
+  className="calendar "
+>
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
+  <thead
+    className="calendar__week-days"
+  >
+    <tr>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="calendar__weeks"
+  >
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-29"
+        >
+          29
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-06-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 1 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-01"
+        >
+          1
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-05"
+        >
+          5
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-06"
+        >
+          6
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-07"
+        >
+          7
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-08"
+        >
+          8
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-09"
+        >
+          9
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-10"
+        >
+          10
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-11"
+        >
+          11
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-12"
+        >
+          12
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-13"
+        >
+          13
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-14"
+        >
+          14
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-15"
+        >
+          15
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-16"
+        >
+          16
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-17"
+        >
+          17
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-18"
+        >
+          18
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-19"
+        >
+          19
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-20"
+        >
+          20
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-21"
+        >
+          21
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 22 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-22"
+        >
+          22
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-23"
+        >
+          23
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-24"
+        >
+          24
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-29"
+        >
+          29
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-07-31"
+        >
+          31
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 1 août 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-08-01"
+        >
+          1
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-08-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-08-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-08-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
+        className="calendar__day calendar__day--selectable"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <time
+          dateTime="2018-08-05"
+        >
+          5
+        </time>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
+<table
+  className="calendar "
+>
+  <caption
+    className="calendar__month"
+  >
+    juillet 2018
+  </caption>
+  <thead
+    className="calendar__week-days"
+  >
+    <tr>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Lundi"
+        >
+          Lu
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mardi"
+        >
+          Ma
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Mercredi"
+        >
+          Me
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Jeudi"
+        >
+          Je
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Vendredi"
+        >
+          Ve
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Samedi"
+        >
+          Sa
+        </abbr>
+      </th>
+      <th
+        className="calendar__week-day"
+      >
+        <abbr
+          className="calendar__week-day-abbr"
+          title="Dimanche"
+        >
+          Di
+        </abbr>
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="calendar__weeks"
+  >
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 25 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 26 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 27 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 28 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 29 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-29"
+        >
+          29
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 30 juin 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-06-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 1 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-01"
+        >
+          1
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 2 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 3 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 4 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 5 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-05"
+        >
+          5
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 6 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-06"
+        >
+          6
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 7 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-07"
+        >
+          7
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 8 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-08"
+        >
+          8
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 9 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-09"
+        >
+          9
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 10 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-10"
+        >
+          10
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 11 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-11"
+        >
+          11
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 12 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-12"
+        >
+          12
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 13 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-13"
+        >
+          13
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 14 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-14"
+        >
+          14
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 15 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-15"
+        >
+          15
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 16 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-16"
+        >
+          16
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 17 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-17"
+        >
+          17
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 18 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-18"
+        >
+          18
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 19 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-19"
+        >
+          19
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 20 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-20"
+        >
+          20
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 21 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-21"
+        >
+          21
+        </time>
+      </td>
+      <td
+        aria-current="date"
+        aria-label="dimanche 22 juillet 2018"
+        className="calendar__day calendar__day--current-month calendar__day--selected"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-22"
+        >
+          22
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 23 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-23"
+        >
+          23
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 24 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-24"
+        >
+          24
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 25 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-25"
+        >
+          25
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 26 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-26"
+        >
+          26
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 27 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-27"
+        >
+          27
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 28 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-28"
+        >
+          28
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 29 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-29"
+        >
+          29
+        </time>
+      </td>
+    </tr>
+    <tr
+      className="calendar__week"
+    >
+      <td
+        aria-current={null}
+        aria-label="lundi 30 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-30"
+        >
+          30
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mardi 31 juillet 2018"
+        className="calendar__day calendar__day--current-month"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-07-31"
+        >
+          31
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="mercredi 1 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-01"
+        >
+          1
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="jeudi 2 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-02"
+        >
+          2
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="vendredi 3 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-03"
+        >
+          3
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="samedi 4 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-04"
+        >
+          4
+        </time>
+      </td>
+      <td
+        aria-current={null}
+        aria-label="dimanche 5 août 2018"
+        className="calendar__day"
+        onClick={null}
+        onKeyPress={null}
+        role={null}
+        tabIndex={null}
+      >
+        <time
+          dateTime="2018-08-05"
+        >
+          5
+        </time>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

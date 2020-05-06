@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Forms / FieldContainer Custom Label Element 1`] = `
+<div
+  className="form-field-container "
+>
+  <span
+    className="label form-field-container__label"
+  >
+    Example
+    <span
+      className="label__optional"
+    >
+       (facultatif)
+    </span>
+  </span>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      formNoValidate={true}
+      id="form-field-39"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
+<div
+  className="form-field-container "
+>
+  <label
+    className="label label--disabled form-field-container__label"
+    htmlFor="form-field-38"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      disabled={true}
+      formNoValidate={true}
+      id="form-field-38"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Error 1`] = `
+<div
+  className="form-field-container "
+>
+  <label
+    className="label form-field-container__label"
+    htmlFor="form-field-35"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      aria-invalid={true}
+      className="form-input-field form-input-field--error "
+      formNoValidate={true}
+      id="form-field-35"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+  <p
+    className="field-error form-field-container__error"
+  >
+    Nom inconnu
+  </p>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
+<div
+  className="form-field-container "
+>
+  <label
+    className="label form-field-container__label"
+    htmlFor="form-field-37"
+  >
+    Example
+  </label>
+  <p
+    className="form-field-container__help"
+  >
+    Aide
+  </p>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      aria-invalid={true}
+      className="form-input-field form-input-field--error "
+      formNoValidate={true}
+      id="form-field-37"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+  <p
+    className="field-error form-field-container__error"
+  >
+    Données invalides
+  </p>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Help 1`] = `
+<div
+  className="form-field-container "
+>
+  <label
+    className="label form-field-container__label"
+    htmlFor="form-field-36"
+  >
+    Example
+  </label>
+  <p
+    className="form-field-container__help"
+  >
+    Un peu d'aide, ça ne fait pas de mal
+  </p>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      formNoValidate={true}
+      id="form-field-36"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Main 1`] = `
+<div
+  className="form-field-container "
+>
+  <label
+    className="label form-field-container__label"
+    htmlFor="form-field-34"
+  >
+    Example
+  </label>
+  <div
+    className="form-field-container__field"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      formNoValidate={true}
+      id="form-field-34"
+      placeholder="Valeur d'exemple"
+      type="text"
+    />
+  </div>
+</div>
+`;

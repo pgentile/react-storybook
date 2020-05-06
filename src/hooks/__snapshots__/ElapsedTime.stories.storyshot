@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Hooks / ElapsedTime Main 1`] = `
+<div
+  className="elapsed-time"
+>
+  <p>
+    Il s'est écoulé 
+    <b>
+      0
+    </b>
+     secondes.
+  </p>
+  <p>
+    <button
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </p>
+</div>
+`;

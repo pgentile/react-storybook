@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experiments | Translation3D Main 1`] = `
+<div
+  className="translation-3d"
+  style={
+    Object {
+      "height": "100vh",
+      "perspective": "100px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 0, 0, 1)",
+        "height": "100px",
+        "left": "calc(50% - (100px / 2) + 0px)",
+        "position": "absolute",
+        "top": "calc(50% - (100px / 2) + 0px)",
+        "transform": "translate3d(0, 0px, 0px) scale(1)",
+        "width": "100px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "backgroundColor": "rgba(0, 0, 255, 1)",
+        "height": "150px",
+        "left": "calc(50% - (150px / 2) + 90px)",
+        "position": "absolute",
+        "top": "calc(50% - (150px / 2) + -40px)",
+        "transform": "translate3d(0, 0px, 20px) scale(0.8)",
+        "width": "150px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "backgroundColor": "rgba(0, 128, 0, 1)",
+        "height": "50px",
+        "left": "calc(50% - (50px / 2) + 20px)",
+        "position": "absolute",
+        "top": "calc(50% - (50px / 2) + 0px)",
+        "transform": "translate3d(0, 0px, 30px) scale(0.7)",
+        "width": "50px",
+      }
+    }
+  />
+</div>
+`;

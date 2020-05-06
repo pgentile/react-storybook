@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Payment | OrderEditorConnected Main 1`] = `
+<section
+  className="order-editor"
+>
+  <h1
+    className="order-editor__title"
+  >
+    Récapitulatif
+  </h1>
+  <section
+    className="css-1lo3bg0-Card order-summary"
+  >
+    <p
+      className="order-summary__total"
+    >
+      <span
+        className="order-summary__total-label"
+      >
+        Total de votre commande
+      </span>
+      <span
+        className="css-16hw484-Price order-summary__total-price"
+        data-price-currency="EUR"
+        data-price-value={0}
+      >
+        0
+        <span
+          className="css-8pvupu-Price"
+        >
+           
+          €
+        </span>
+      </span>
+    </p>
+  </section>
+  <section
+    className="css-ejsk1i-Card insurance order-editor__insurance"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-normal button--flat progress-button insurance__question"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <div
+        className="progress-button__content"
+      >
+        Assurez votre voyage, à partir de 
+        <span
+          className="css-16hw484-Price"
+          data-price-currency="EUR"
+          data-price-value={12.9}
+        >
+          12
+          <span
+            className="css-8pvupu-Price"
+          >
+            , 
+            90
+             
+            €
+          </span>
+        </span>
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+  </section>
+  <section
+    className="css-ejsk1i-Card voucher-container order-editor__voucher"
+  >
+    <button
+      aria-pressed={false}
+      className="button button--size-normal button--flat voucher-container__question"
+      onClick={[Function]}
+    >
+      Avez-vous un code promo ?
+    </button>
+  </section>
+  <section
+    className="css-ejsk1i-Card donation-proposal order-editor__donation"
+  >
+    <div
+      className="donation-proposal__content"
+    >
+      <div
+        className="donation-proposal__logo"
+      >
+        <img
+          alt="Logo URCT"
+          src="/static/mocks/images/payment/donation/urct-logo.svg"
+        />
+      </div>
+      <div
+        className="donation-proposal__punchline"
+      >
+        <h3>
+          Donner, c'est facile avec un rien c'est tout
+        </h3>
+        <p>
+          Je soutiens une cause qui me tient à cœur.
+           
+          <a
+            href="#"
+            onClick={[Function]}
+          >
+            En savoir plus 
+            <span>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                data-icon="angle-up"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <p
+      className="donation-proposal__button"
+    >
+      <button
+        aria-pressed={false}
+        className="button button--size-small progress-button "
+        disabled={false}
+        onClick={[Function]}
+      >
+        <div
+          className="progress-button__content"
+        >
+          Donner 1 €
+        </div>
+        <div
+          className="progress-button__progress-bar"
+        />
+      </button>
+    </p>
+    <div
+      aria-hidden={true}
+      className="expandable"
+    >
+      <div
+        className="expandable__window"
+      >
+        <div
+          className="expandable__content"
+        >
+          <div
+            className="css-49qwc-ExpandableCard"
+          >
+            <p
+              className="donation-proposal__more"
+            >
+              En savoir plus sur URCT...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+`;

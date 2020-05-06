@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NightMode Main 1`] = `
+<div
+  className="night-mode"
+>
+  <p
+    className="night-mode__controls"
+  >
+    <button
+      className="night-mode__switcher"
+      onClick={[Function]}
+    >
+      Enable
+       night mode
+    </button>
+  </p>
+  <h1>
+    Title
+  </h1>
+  <p>
+    This is a night mode enabled component
+  </p>
+</div>
+`;

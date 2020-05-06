@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Final Forms components | FinalFieldError Main 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-field-container "
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-18"
+    >
+      Nom
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        autoComplete="off"
+        autoCorrect="off"
+        disabled={false}
+        error={false}
+        id="form-field-18"
+        name="name"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;

@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Card Carte de niveau base 1`] = `
+<div
+  className="css-1xnl3o5-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      base
+    </b>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau base sans bordure 1`] = `
+<div
+  className="css-6ngtr4-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      base
+    </b>
+     sans borbure
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau flat 1`] = `
+<div
+  className="css-ejsk1i-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      flat
+    </b>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau flat sans bordure 1`] = `
+<div
+  className="css-6ngtr4-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      flat
+    </b>
+     sans borbure
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau overlay 1`] = `
+<div
+  className="css-1o35ngj-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      overlay
+    </b>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau overlay sans bordure 1`] = `
+<div
+  className="css-1tbqu3m-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      overlay
+    </b>
+     sans borbure
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau pop-out 1`] = `
+<div
+  className="css-zpid3t-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      pop-out
+    </b>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau pop-out sans bordure 1`] = `
+<div
+  className="css-1e6k988-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      pop-out
+    </b>
+     sans borbure
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau raised 1`] = `
+<div
+  className="css-1lo3bg0-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      raised
+    </b>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau raised sans bordure 1`] = `
+<div
+  className="css-1d8byu9-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      raised
+    </b>
+     sans borbure
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau sticky-nav 1`] = `
+<div
+  className="css-g8ddrh-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      sticky-nav
+    </b>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau sticky-nav sans bordure 1`] = `
+<div
+  className="css-1qzphb2-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      sticky-nav
+    </b>
+     sans borbure
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau temp-nav 1`] = `
+<div
+  className="css-jljloa-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      temp-nav
+    </b>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte de niveau temp-nav sans bordure 1`] = `
+<div
+  className="css-gqgxn-Card"
+>
+  <p>
+    Carte de niveau 
+    <b>
+      temp-nav
+    </b>
+     sans borbure
+  </p>
+</div>
+`;
+
+exports[`Storyshots Card Carte simple 1`] = `
+<div
+  className="css-1xnl3o5-Card"
+>
+  <p>
+    Voici une jolie petite carte.
+  </p>
+</div>
+`;
