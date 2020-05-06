@@ -6373,10 +6373,10 @@ eslint-plugin-emotion@^10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.2.4.tgz#cf98dd6ad01b6b2d31e7f2062bdf4afb7a1839be"
-  integrity sha512-1TZRLrUK0Amde9uFjBQ7Jc9/kb/bv/FZA35Uq9uWGRA9nbt3kAJY3vHVMvZxrsr8Z6Ltf/EfMVYK4cWGMpvXFg==
+eslint-plugin-formatjs@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.2.5.tgz#49b581c0612d9f139519a2cfc0da7adffe2f5c8d"
+  integrity sha512-yEY7HJ2y4tBlmOVsAta9rb68Oh7zZXgpJHzwY3s90it42NohPUp824LPfbxOd8zi0N1zgtNkHSkx9svRksGTNA==
   dependencies:
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^6.8.0"
