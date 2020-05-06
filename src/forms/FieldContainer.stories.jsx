@@ -48,9 +48,9 @@ export const disabled = () => {
   );
 };
 
-export const readOnly = () => {
+export const customLabelElement = () => {
   return (
-    <FieldContainer label="Example" readOnly>
+    <FieldContainer label="Example" labelElement="span" optional>
       {innerField}
     </FieldContainer>
   );

@@ -2,7 +2,7 @@ import { useField } from "react-final-form";
 
 export default function useFieldError(name) {
   const field = useField(name, {
-    _subscription: {
+    subscription: {
       touched: true,
       error: true,
       dirtySinceLastSubmit: true,

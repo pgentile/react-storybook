@@ -31,7 +31,7 @@ export default class Label extends React.PureComponent {
     return (
       <Element
         {...otherProps}
-        htmlFor={Element === "label" ? htmlFor : null}
+        htmlFor={Element === "label" ? htmlFor : undefined}
         className={`${labelClassName} ${className}`}
       >
         {children}

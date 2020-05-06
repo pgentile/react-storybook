@@ -9,6 +9,7 @@ import { FormattedMessage, defineMessages, useIntl } from "react-intl";
 import Expandable from "../Expandable";
 import { I18nProvider } from "../i18n/I18nContext";
 import InputField from "../forms/InputField";
+import FieldContainer from "../forms/FieldContainer";
 import Button from "../buttons/Button";
 import FinalButton from "../ff/FinalButton";
 import FinalFieldContainer from "../ff/FinalFieldContainer";
@@ -16,6 +17,7 @@ import FinalFieldError from "../ff/FinalFieldError";
 import sleep from "../utils/sleep";
 
 import "./ContactForm.scss";
+import useFieldError from "../ff/useFieldError";
 
 const focusOnErrors = createDecorator();
 
@@ -76,7 +78,7 @@ function ContactFormInternal({ handleSubmit }) {
   });
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="contact-form">
       {submitFailed && <p style={{ color: "red" }}>{submitError}</p>}
       <RecipientForm />
       {initialValues.passengers.map((passenger, passengerIndex) => (
@@ -287,18 +289,21 @@ function CivilityForm({ fieldName, validate }) {
     value: "MADAM",
   });
 
+  const error = useFieldError(fieldName);
+
   return (
-    <>
-      <p>
-        <label>
-          <input {...mister.input} value="MISTER" /> Monsieur
-        </label>{" "}
-        <label>
-          <input {...madam.input} value="MADAM" /> Madame
-        </label>
-      </p>
-      <FinalFieldError name={fieldName} />
-    </>
+    <FieldContainer label="Civilité" labelElement="span" errorMessage={error}>
+      {() => (
+        <p className="contact-form__civility">
+          <label>
+            <input {...mister.input} value="MISTER" /> Monsieur
+          </label>{" "}
+          <label>
+            <input {...madam.input} value="MADAM" /> Madame
+          </label>
+        </p>
+      )}
+    </FieldContainer>
   );
 }
 
