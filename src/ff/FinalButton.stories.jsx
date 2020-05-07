@@ -1,5 +1,6 @@
 import React from "react";
-import { Form } from "react-final-form";
+import { Form, Field } from "react-final-form";
+import { action } from "@storybook/addon-actions";
 
 import FinalButton from "./FinalButton";
 import sleep from "../utils/sleep";
@@ -10,8 +11,9 @@ export default {
 };
 
 export const main = () => {
-  const onSubmit = async () => {
+  const onSubmit = async (...args) => {
     await sleep(3000);
+    action("submit")(args);
   };
 
   return (
@@ -19,6 +21,8 @@ export const main = () => {
       onSubmit={onSubmit}
       render={({ handleSubmit }) => (
         <form onSubmit={handleSubmit}>
+          <Field name="field1" defaultValue="value1" component="input" type="hidden" />
+          <Field name="field2" defaultValue="value2" component="input" type="hidden" />
           <FinalButton type="submit">Envoyer</FinalButton>
           <FinalButton type="reset">Reset</FinalButton>
         </form>
