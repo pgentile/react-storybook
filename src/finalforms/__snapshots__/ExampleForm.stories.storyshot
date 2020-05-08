@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots OwnerForm | OwnerForm Main 1`] = `
+exports[`Storyshots Final Forms | ExampleForm Main 1`] = `
 <form
-  className="owner-form"
-  noValidate={true}
   onSubmit={[Function]}
 >
   <div
@@ -11,37 +9,46 @@ exports[`Storyshots OwnerForm | OwnerForm Main 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-42"
+      htmlFor="form-field-34"
     >
-      Email
+      Nom 1
     </label>
     <div
       className="form-field-container__field"
     >
       <input
         aria-invalid={false}
-        autoComplete="email"
         className="form-input-field "
-        disabled={false}
         formNoValidate={true}
-        id="form-field-42"
-        name="email"
+        id="form-field-34"
+        name="name"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="email"
+        type="text"
         value=""
       />
     </div>
+  </div>
+  <div>
+    <label>
+      <input
+        checked={true}
+        onChange={[Function]}
+        type="checkbox"
+      />
+       
+      Ajouter un second champ
+    </label>
   </div>
   <div
     className="form-field-container "
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-43"
+      htmlFor="form-field-35"
     >
-      Validez votre email
+      Nom 2
     </label>
     <div
       className="form-field-container__field"
@@ -49,14 +56,13 @@ exports[`Storyshots OwnerForm | OwnerForm Main 1`] = `
       <input
         aria-invalid={false}
         className="form-input-field "
-        disabled={false}
         formNoValidate={true}
-        id="form-field-43"
-        name="emailValidation"
+        id="form-field-35"
+        name="name"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        type="email"
+        type="text"
         value=""
       />
     </div>
@@ -65,6 +71,7 @@ exports[`Storyshots OwnerForm | OwnerForm Main 1`] = `
     aria-pressed={false}
     className="button button--size-normal "
     disabled={false}
+    type="submit"
   >
     Envoyer
   </button>

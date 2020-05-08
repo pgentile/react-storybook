@@ -1,23 +1,25 @@
 .form-field-container {
   $margin: 0.5rem;
 
-  margin: -$margin 0;
-
   &__label {
     display: block;
-    margin: $margin 0;
-  }
-
-  &__error {
-    margin: $margin 0;
+    margin: 0;
+    margin-bottom: $margin;
   }
 
   &__help {
     display: block;
 
-    margin: $margin 0;
+    margin: 0;
+    margin-top: $margin;
+    margin-bottom: $margin;
 
     font-size: 1rem;
     color: grey;
+  }
+
+  &__error {
+    margin: 0;
+    margin-top: $margin;
   }
 }

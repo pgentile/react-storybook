@@ -390,7 +390,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
         >
           <label
             className="label form-field-container__label"
-            htmlFor="form-field-45"
+            htmlFor="form-field-47"
           >
             Numéro de carte
           </label>
@@ -403,7 +403,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               className="form-input-field "
               disabled={false}
               formNoValidate={true}
-              id="form-field-45"
+              id="form-field-47"
               inputMode="numeric"
               maxLength={19}
               name="cardNumber"
@@ -422,7 +422,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
         >
           <label
             className="label form-field-container__label"
-            htmlFor="form-field-46"
+            htmlFor="form-field-48"
           >
             Date d'expiration
           </label>
@@ -440,7 +440,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               className="form-input-field "
               disabled={false}
               formNoValidate={true}
-              id="form-field-46"
+              id="form-field-48"
               maxLength={5}
               name="expirationDate"
               onBlur={[Function]}
@@ -456,7 +456,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
         >
           <label
             className="label form-field-container__label"
-            htmlFor="form-field-47"
+            htmlFor="form-field-49"
           >
             Code de sécurité
           </label>
@@ -469,7 +469,7 @@ exports[`Storyshots Payment | PaymentContainer Main 1`] = `
               className="form-input-field "
               disabled={false}
               formNoValidate={true}
-              id="form-field-47"
+              id="form-field-49"
               inputMode="numeric"
               maxLength={4}
               name="cvv"
