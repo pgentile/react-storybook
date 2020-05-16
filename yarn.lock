@@ -6385,10 +6385,10 @@ eslint-plugin-formatjs@^2.3.0:
     emoji-regex "^9.0.0"
     intl-messageformat-parser "^5.0.4"
 
-eslint-plugin-jest@^23.11.0:
-  version "23.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.11.0.tgz#6e01d83ea74c1eefd60811655bbc288bd8ab2e7d"
-  integrity sha512-qedvh6mcMgoLFHjITtG40yKOCu5Fa1GMYesDOclU30ZvtVkf+DaH0fnCn1ysOX/QMdk2SGhQvxvYLowcLaM0GA==
+eslint-plugin-jest@^23.12.0:
+  version "23.12.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.12.0.tgz#12eed51f43dc478a46c49093973878e863f4b585"
+  integrity sha512-lHA8D3TfDqhO5sPEEp3k87Ljo6Ci09lMmWrNhrAReWs04VBgTar8UAKKFKpA+zTKHG7s5IqKRwZlrdEeq6JE2A==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.5.0"
 
@@ -8357,7 +8357,7 @@ intl-locales-supported@^1.8.8:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.8.tgz#d53ef0dc72a6af20e58a251d1b2666f2db4c32e6"
   integrity sha512-mlbJIVafpWJlB1JzDPc/QHDTkvLec/2mDf6zAumaN8LNyI4s52lvNjhTj1s7Gtff0t8vZu7lM//VB/J5j3Qa+g==
 
-intl-messageformat-parser@^5.0.3, intl-messageformat-parser@^5.0.4:
+intl-messageformat-parser@^5.0.4:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.0.4.tgz#c3e2f3be02a51ae78bb3cc61f8ade6d1e2aa7f5c"
   integrity sha512-7+MvIzLkcjCEPBKW/NLGBIZr1cpOz/iAp6Thx8tc1BZUeWMfHOIb/Z53/nTwWd4p0ij9plB8+tHcFmI24Ubvuw==
