@@ -1169,13 +1169,6 @@
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-unified-numberformat@^3.3.7":
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-unified-numberformat/-/intl-unified-numberformat-3.3.7.tgz#9995a24568908188e716d81a1de5b702b2ee00e2"
-  integrity sha512-KnWgLRHzCAgT9eyt3OS34RHoyD7dPDYhRcuKn+/6Kv2knDF8Im43J6vlSW6Hm1w63fNq3ZIT1cFk7RuVO3Psag==
-  dependencies:
-    "@formatjs/intl-utils" "^2.3.0"
-
 "@formatjs/intl-utils@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
@@ -8374,20 +8367,20 @@ intl-locales-supported@^1.8.8:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.8.tgz#d53ef0dc72a6af20e58a251d1b2666f2db4c32e6"
   integrity sha512-mlbJIVafpWJlB1JzDPc/QHDTkvLec/2mDf6zAumaN8LNyI4s52lvNjhTj1s7Gtff0t8vZu7lM//VB/J5j3Qa+g==
 
-intl-messageformat-parser@^5.0.4, intl-messageformat-parser@^5.0.5:
+intl-messageformat-parser@^5.0.5:
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.0.5.tgz#d50c5a295631585ed4e3a1c4e84ce2c06bf01f6d"
   integrity sha512-qPiOBJ525Q6l9JYRoe4Zz2PH3iowBBcv6S/eKXxX8VN9rtLSc90UtP/6+TFlIPynSx8PeStkkHOZkW/ZXAjIEw==
   dependencies:
     "@formatjs/intl-numberformat" "^3.3.8"
 
-intl-messageformat@^8.3.11:
-  version "8.3.11"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-8.3.11.tgz#90381357d72d76dd1a5557f50b150b71089a9511"
-  integrity sha512-unuEfGZdUxO64sqClyRESfLC01mo2cmzUtTILMKluv0Z4bwS5KoJ6X8mUvyGOKzZkxhLwAzo6B/AC0ahSjaa2g==
+intl-messageformat@^8.3.12:
+  version "8.3.12"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-8.3.12.tgz#c7d4a7bfa87570c097f93e25b383d6059a3c31a0"
+  integrity sha512-Z70dnVnlS3alYyL8xlCzGMs+/lv4a3d559i0VsWAP8khHpA+pLnnjLAGwV/UH5BjwJFsfzkyWb2ufTlKlaJGfg==
   dependencies:
     intl-format-cache "^4.2.28"
-    intl-messageformat-parser "^5.0.4"
+    intl-messageformat-parser "^5.0.5"
 
 invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
@@ -13237,22 +13230,22 @@ react-inspector@^4.0.0:
     is-dom "^1.0.9"
     prop-types "^15.6.1"
 
-react-intl@^4.5.5:
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.5.5.tgz#3ce574d9fe893651cbf2104ba08d41e84755587f"
-  integrity sha512-btr1SB1PmlmBeMDnjuGBEUz8RD2GHarYeG7WBQA7//J71YgMeSHInZjOCeM6QGgSyWGT2rp7bNuNptqrkwxdOQ==
+react-intl@^4.5.6:
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.5.6.tgz#1e236529a3890231dd0c664e8db9af1db6c0c06a"
+  integrity sha512-dA6Zo37Yy7pbohC7a50Vd+sy3HcRm9r/lCbnwMJzlOcXknRImVCH7opJvjq/SRKe53nKz5JX3zWYMhVH12rrPg==
   dependencies:
     "@formatjs/intl-displaynames" "^1.2.10"
     "@formatjs/intl-listformat" "^1.4.8"
+    "@formatjs/intl-numberformat" "^3.3.8"
     "@formatjs/intl-relativetimeformat" "^4.5.16"
-    "@formatjs/intl-unified-numberformat" "^3.3.7"
     "@formatjs/intl-utils" "^2.3.0"
     "@types/hoist-non-react-statics" "^3.3.1"
     "@types/invariant" "^2.2.31"
     hoist-non-react-statics "^3.3.2"
     intl-format-cache "^4.2.28"
-    intl-messageformat "^8.3.11"
-    intl-messageformat-parser "^5.0.4"
+    intl-messageformat "^8.3.12"
+    intl-messageformat-parser "^5.0.5"
     shallow-equal "^1.2.1"
 
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6, react-is@^16.9.0:
