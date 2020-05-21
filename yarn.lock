@@ -8374,13 +8374,13 @@ intl-messageformat-parser@^5.0.5, intl-messageformat-parser@^5.0.6:
   dependencies:
     "@formatjs/intl-numberformat" "^3.3.8"
 
-intl-messageformat@^8.3.12:
-  version "8.3.12"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-8.3.12.tgz#c7d4a7bfa87570c097f93e25b383d6059a3c31a0"
-  integrity sha512-Z70dnVnlS3alYyL8xlCzGMs+/lv4a3d559i0VsWAP8khHpA+pLnnjLAGwV/UH5BjwJFsfzkyWb2ufTlKlaJGfg==
+intl-messageformat@^8.3.13:
+  version "8.3.13"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-8.3.13.tgz#86d975c8643883fb504a312b1d66cee0d20fd1e6"
+  integrity sha512-6dbJBud4EYuHeL3Ubrrpp3uuzMGuyR81I58jy+EkqNQ+9CzbJLAyVfFOk1CMEQDZZmOTV+pLODrEm5tjXcJyDQ==
   dependencies:
     intl-format-cache "^4.2.28"
-    intl-messageformat-parser "^5.0.5"
+    intl-messageformat-parser "^5.0.6"
 
 invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
@@ -13230,10 +13230,10 @@ react-inspector@^4.0.0:
     is-dom "^1.0.9"
     prop-types "^15.6.1"
 
-react-intl@^4.5.6:
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.5.6.tgz#1e236529a3890231dd0c664e8db9af1db6c0c06a"
-  integrity sha512-dA6Zo37Yy7pbohC7a50Vd+sy3HcRm9r/lCbnwMJzlOcXknRImVCH7opJvjq/SRKe53nKz5JX3zWYMhVH12rrPg==
+react-intl@^4.5.7:
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.5.7.tgz#1b248f74369721fc430ddca1a353dc9fd50c4f47"
+  integrity sha512-ueBr9kUWyC0fmCj32PDiLNvMmDz53c/S4hYHw1c4R+psiFRdJJYpLBPotH3/lEJfo/OAk51uADvf6nDRebGUHA==
   dependencies:
     "@formatjs/intl-displaynames" "^1.2.10"
     "@formatjs/intl-listformat" "^1.4.8"
@@ -13244,8 +13244,8 @@ react-intl@^4.5.6:
     "@types/invariant" "^2.2.31"
     hoist-non-react-statics "^3.3.2"
     intl-format-cache "^4.2.28"
-    intl-messageformat "^8.3.12"
-    intl-messageformat-parser "^5.0.5"
+    intl-messageformat "^8.3.13"
+    intl-messageformat-parser "^5.0.6"
     shallow-equal "^1.2.1"
 
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6, react-is@^16.9.0:
