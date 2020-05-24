@@ -85,7 +85,7 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addon-storyshots": "^5.3.18",
     "@storybook/addon-viewport": "^5.3.18",
-    "@storybook/addons": "^5.3.14",
+    "@storybook/addons": "^5.3.19",
     "@storybook/cli": "^5.3.19",
     "@storybook/react": "^5.3.18",
     "@testing-library/jest-dom": "^5.8.0",
