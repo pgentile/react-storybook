@@ -6400,17 +6400,17 @@ eslint-plugin-emotion@^10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@^2.3.5:
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.3.5.tgz#37154a7b0301178061ad760986c29d19e18a7919"
-  integrity sha512-/veGUBJdzSEDaN+JoKciteuwekdLgfWaR2k363waEO6ysxc3i7swky+QiyTTcEVUhucn30eVgjDNEtjYQ3qOKw==
+eslint-plugin-formatjs@^2.3.6:
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.3.6.tgz#522acac809ddabc3a7c23a8a44f7699161b49314"
+  integrity sha512-l4WMRPj6PnD7WVRyeN3kTvCskuIUQz//2hDgXylqLV4+NJejRBp8TeIG+Twgg8Xz4z7n2XMsnzKVvOEH5vPQNQ==
   dependencies:
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^6.8.0"
     "@types/estree" "^0.0.44"
     "@typescript-eslint/typescript-estree" "^2.29.0"
     emoji-regex "^9.0.0"
-    intl-messageformat-parser "^5.0.8"
+    intl-messageformat-parser "^5.0.9"
 
 eslint-plugin-jest@^23.13.1:
   version "23.13.1"
