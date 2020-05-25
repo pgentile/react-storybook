@@ -1155,12 +1155,12 @@
   dependencies:
     "@formatjs/intl-utils" "^3.1.0"
 
-"@formatjs/intl-pluralrules@^1.5.9":
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-1.5.9.tgz#c363c833c0ccde11eb508de4c09d3eaa232e819a"
-  integrity sha512-37E1ZG+Oqo3qrpUfumzNcFTV+V+NCExmTkkQ9Zw4FSlvJ4WhbbeYdieVapUVz9M0cLy8XrhCkfuM/Kn03iKReg==
+"@formatjs/intl-pluralrules@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-2.1.0.tgz#3e7f2d974f76fbf28a36fe4e066d98025e3469ee"
+  integrity sha512-01fu5IMZAEnNiJZZrINCvsGoqG6L6/eZ0cKBD8dCcWQC5FGDZXonpGk3iwkGJncO9GwEJhHi6kaLcgyf8nALPg==
   dependencies:
-    "@formatjs/intl-utils" "^2.3.0"
+    "@formatjs/intl-utils" "^3.1.0"
 
 "@formatjs/intl-relativetimeformat@^5.1.0":
   version "5.1.0"
@@ -1168,11 +1168,6 @@
   integrity sha512-y45bD/N1yw5Ko4TtnnAkEopXI570S3tGbDBoJTsvIXR2c9AeBzmvygB5yExriyYlMaIcj2IgSNm0MZD8BMHeMQ==
   dependencies:
     "@formatjs/intl-utils" "^3.1.0"
-
-"@formatjs/intl-utils@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
-  integrity sha512-KWk80UPIzPmUg+P0rKh6TqspRw0G6eux1PuJr+zz47ftMaZ9QDwbGzHZbtzWkl5hgayM/qrKRutllRC7D/vVXQ==
 
 "@formatjs/intl-utils@^3.1.0":
   version "3.1.0"
@@ -8372,7 +8367,7 @@ intl-locales-supported@^1.8.9:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.9.tgz#bab8b6578bfa9e670b9657652e87af99358aa9a8"
   integrity sha512-9djJEK7h6wq9Njj5RAqWLf5lGe7OxTtty/ogLFJy/FKjikoyx0q92mSE1fUsJZrnbrgF5Cco9OP9JePsUG2g9Q==
 
-intl-messageformat-parser@^5.0.8, intl-messageformat-parser@^5.0.9:
+intl-messageformat-parser@^5.0.9:
   version "5.0.9"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.0.9.tgz#a26628db3993a21d077f4e21adc6ccc981953eaa"
   integrity sha512-vyGrHtKWXWFMtMwV5b7idE0gDT0KnP1m5GtERIGs/uIl7C3p88/GvwqB9GT8p+jpOXUrYtocxPwZMO/va1IxAA==
