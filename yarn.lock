@@ -8395,10 +8395,10 @@ intl-format-cache@^4.2.31:
   resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-4.2.31.tgz#767a6e431907f967991d298bae510f17b3c4cc74"
   integrity sha512-fFV9SB3r/0YMPg+3UyCHlZzxyfXOaKSnIWCnXWGVVQkOgruD8A3PjQlB735t6T/e/1dNZsMPbj3cH8Id0NnXUw==
 
-intl-locales-supported@^1.8.9:
-  version "1.8.9"
-  resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.9.tgz#bab8b6578bfa9e670b9657652e87af99358aa9a8"
-  integrity sha512-9djJEK7h6wq9Njj5RAqWLf5lGe7OxTtty/ogLFJy/FKjikoyx0q92mSE1fUsJZrnbrgF5Cco9OP9JePsUG2g9Q==
+intl-locales-supported@^1.8.10:
+  version "1.8.10"
+  resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.10.tgz#66c90ee2b6fbab5326f8bd9874b253bf3fb0bf22"
+  integrity sha512-CKSmdBy6YHBbocLjDH/OyWJCjDTPZiuvqYzz19Lsfj602E5LptrJcnxAYng/QKJjt+avS8vqFYJB5h0EGX08KQ==
 
 intl-messageformat-parser@^5.0.9:
   version "5.0.9"

@@ -45,7 +45,7 @@
     "fast-memoize": "^2.5.2",
     "final-form": "^4.19.1",
     "final-form-focus": "^1.1.2",
-    "intl-locales-supported": "^1.8.9",
+    "intl-locales-supported": "^1.8.10",
     "lodash-es": "^4.17.8",
     "makecancelable": "^1.1.1",
     "memoize-one": "^5.0.0",
