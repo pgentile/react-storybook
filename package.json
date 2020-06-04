@@ -131,7 +131,7 @@
     "sass-loader": "^8.0.2",
     "storybook-addon-i18n": "^5.1.13",
     "style-loader": "^1.2.1",
-    "stylelint": "^13.5.0",
+    "stylelint": "^13.6.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-no-unsupported-browser-features": "^4.0.0",
