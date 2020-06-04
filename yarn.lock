@@ -1225,6 +1225,13 @@
   dependencies:
     "@formatjs/intl-utils" "^3.3.1"
 
+"@formatjs/intl-numberformat@^4.2.4":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-4.2.4.tgz#8d8e5b7d3ac9a3ed651b7895c806355ca3d24bc4"
+  integrity sha512-uPaDLCIZn/ORqmFE56CorGIU0wZZFgc1h7sjZ2ARxL1BG1dZBI8bLYSdb243xZYU/b/1fnRTVpZi4UJjW9NEOw==
+  dependencies:
+    "@formatjs/intl-utils" "^3.3.1"
+
 "@formatjs/intl-pluralrules@^1.5.9":
   version "1.5.9"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-1.5.9.tgz#c363c833c0ccde11eb508de4c09d3eaa232e819a"
@@ -1243,6 +1250,13 @@
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
   integrity sha512-KWk80UPIzPmUg+P0rKh6TqspRw0G6eux1PuJr+zz47ftMaZ9QDwbGzHZbtzWkl5hgayM/qrKRutllRC7D/vVXQ==
+
+"@formatjs/intl-utils@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.3.1.tgz#7ceadbb7e251318729d9bf693731e1a5dcdfa15a"
+  integrity sha512-7AAicg2wqCJQ+gFEw5Nxp+ttavajBrPAD1HDmzA4jzvUCrF5a2NCJm/c5qON3VBubWWF2cu8HglEouj2h/l7KQ==
+  dependencies:
+    emojis-list "^3.0.0"
 
 "@formatjs/intl-utils@^3.3.1":
   version "3.3.1"
@@ -3843,10 +3857,10 @@ babel-plugin-react-docgen@^4.0.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@^7.5.17:
-  version "7.5.17"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.5.17.tgz#ab1e709ab547890fe416c04c829a68b87fed7e1b"
-  integrity sha512-Fp89HR5VsN6OC+M5tl4tD2Pr9G7LeuxjydaEWyetPHbnh3jeJAprXLYf8dHOkFq1tRHDH3dZX8knbBBkvPZtug==
+babel-plugin-react-intl@^7.5.18:
+  version "7.5.18"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.5.18.tgz#2ce9cef0d7bc1d730c3b54c191bd26d21622556f"
+  integrity sha512-Ozxpx7iZ21RWaV3zn+cZc6E0vUaNUNHGgCkr2ba54AXX9apF7mGAK193bxVnMc+nlEhtWhbpdo1Rl/zDKFVsMg==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
@@ -3855,7 +3869,7 @@ babel-plugin-react-intl@^7.5.17:
     "@types/fs-extra" "^8.1.0"
     "@types/schema-utils" "^2.4.0"
     fs-extra "^9.0.0"
-    intl-messageformat-parser "^5.1.0"
+    intl-messageformat-parser "^5.1.1"
     schema-utils "^2.6.6"
 
 babel-plugin-require-context-hook@^1.0.0:
