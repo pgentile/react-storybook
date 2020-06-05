@@ -701,6 +701,7 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
   },
   "invalid": false,
   "modified": {},
+  "modifiedSinceLastSubmit": false,
   "pristine": true,
   "submitFailed": false,
   "submitSucceeded": false,
