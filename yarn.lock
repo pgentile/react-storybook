@@ -1204,6 +1204,13 @@
   dependencies:
     "@formatjs/intl-utils" "^3.3.1"
 
+"@formatjs/intl-getcanonicallocales@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.2.4.tgz#3dd0eef273cfb335679777828206380ddc5e4e1e"
+  integrity sha512-sG7Yy9VMB+ASd6Mn0o5LzQktwmhEVCyNm5MZlK91pN0BQrjkAfKVu+e3MSfYggo8FaEfWLHSEYqf7EyveDTInw==
+  dependencies:
+    cldr-core "36.0.0"
+
 "@formatjs/intl-listformat@^2.2.4":
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-2.2.4.tgz#c7014ae7b593b9e20d24b6620e148122162903dc"
@@ -1218,12 +1225,12 @@
   dependencies:
     "@formatjs/intl-utils" "^3.3.1"
 
-"@formatjs/intl-pluralrules@^1.5.9":
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-1.5.9.tgz#c363c833c0ccde11eb508de4c09d3eaa232e819a"
-  integrity sha512-37E1ZG+Oqo3qrpUfumzNcFTV+V+NCExmTkkQ9Zw4FSlvJ4WhbbeYdieVapUVz9M0cLy8XrhCkfuM/Kn03iKReg==
+"@formatjs/intl-pluralrules@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-2.2.4.tgz#c666dbe12d7fe5cd2c1b190545d458e0e1cfb6db"
+  integrity sha512-8SGGS4Ef5O/aCuDsHWaqoKZEqKxI+n3FM9uYpm+N9DNVkUCKc+LkB91cfZ6/4dD2shsvGw1hwQW9DEXFKFGAeQ==
   dependencies:
-    "@formatjs/intl-utils" "^2.3.0"
+    "@formatjs/intl-utils" "^3.3.1"
 
 "@formatjs/intl-relativetimeformat@^5.2.4":
   version "5.2.4"
@@ -1231,11 +1238,6 @@
   integrity sha512-dY3KBGWT6fPa+JM9zEUNOjfsKWJPd58lME0UdC10NidGzvQS74AmmUB06Fa3vRZm+u/1m6hJycIh7qy38MHnZA==
   dependencies:
     "@formatjs/intl-utils" "^3.3.1"
-
-"@formatjs/intl-utils@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
-  integrity sha512-KWk80UPIzPmUg+P0rKh6TqspRw0G6eux1PuJr+zz47ftMaZ9QDwbGzHZbtzWkl5hgayM/qrKRutllRC7D/vVXQ==
 
 "@formatjs/intl-utils@^3.3.1":
   version "3.3.1"
@@ -4734,6 +4736,11 @@ classnames@^2.2.5:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
+cldr-core@36.0.0:
+  version "36.0.0"
+  resolved "https://registry.yarnpkg.com/cldr-core/-/cldr-core-36.0.0.tgz#1d2148ed6802411845baeeb21432d7bbfde7d4f7"
+  integrity sha512-QLnAjt20rZe38c8h8OJ9jPND+O4o5O8Nw0TK/P3KpNn1cmOhMu0rk6Kc3ap96c5OStQ9gAngs9+Be2sum26NOw==
 
 clean-css@^4.1.11, clean-css@^4.2.3:
   version "4.2.3"

@@ -11,10 +11,17 @@ function getLanguage(locale) {
 }
 
 async function loadPolyfills(locale) {
-  // eslint-disable-next-line compat/compat
-  if (!areIntlLocalesSupported(locale, [Intl.PluralRules])) {
+  if (!Intl?.getCanonicalLocales) {
     await import(
-      /* webpackChunkName: "intl-pluralrules-polyfill" */
+      /* webpackChunkName: "intl-polyfill" */
+      /* webpackMode: "lazy" */
+      "@formatjs/intl-getcanonicallocales/polyfill"
+    );
+  }
+
+  if (!areIntlLocalesSupported(locale, [Intl?.PluralRules])) {
+    await import(
+      /* webpackChunkName: "intl-polyfill" */
       /* webpackMode: "lazy" */
       "@formatjs/intl-pluralrules/polyfill"
     );

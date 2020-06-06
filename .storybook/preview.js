@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { addParameters, addDecorator} from "@storybook/react";
+import { addParameters, addDecorator } from "@storybook/react";
 import { withI18n } from "storybook-addon-i18n";
 
 function I18nWrapper({ children, locale }) {
@@ -13,7 +13,7 @@ addParameters({
   i18n: {
     provider: I18nWrapper,
     supportedLocales: ["fr", "en"],
-  }
+  },
 });
 
 /*
