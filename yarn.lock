@@ -6841,10 +6841,10 @@ fast-deep-equal@^2.0.1:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
   integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
 
-fast-deep-equal@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"
-  integrity sha512-8UEa58QDLauDNfpbrX55Q9jrGHThw2ZMdOky5Gl1CDtVeJDPVrG4Jxx1N8jw2gkWaff5UUuX1KJd+9zGe2B+ZA==
+fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
 fast-diff@^1.1.2:
   version "1.2.0"
@@ -8393,7 +8393,7 @@ intl-locales-supported@^1.8.10:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.10.tgz#66c90ee2b6fbab5326f8bd9874b253bf3fb0bf22"
   integrity sha512-CKSmdBy6YHBbocLjDH/OyWJCjDTPZiuvqYzz19Lsfj602E5LptrJcnxAYng/QKJjt+avS8vqFYJB5h0EGX08KQ==
 
-intl-messageformat-parser@^5.1.1, intl-messageformat-parser@^5.1.3:
+intl-messageformat-parser@^5.1.3:
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.1.3.tgz#bd57fffebdf832a425edd330107bbf832cdbbbb8"
   integrity sha512-bWuXkK4wzOKNHdqDHCw4+8+nKENtDs3E60hpUnh/6MXvZ0dfOtHA2LSIBLTkkE2h5Ir3V4XByW/8Bj1MBI5Ucw==
@@ -13442,15 +13442,15 @@ react-universal-interface@^0.6.0:
   dependencies:
     tslib "^1.9.3"
 
-react-use@^15.2.0:
-  version "15.2.0"
-  resolved "https://registry.yarnpkg.com/react-use/-/react-use-15.2.0.tgz#dfadfa432d6c51c2ade42e4585b725597d09bb86"
-  integrity sha512-kG/uKvINjPhnmoFXRUWudggPAvnVOV7EnxDpzT8A5q5ccYgDVcMNp22ZkisNOPkS/vCVfKJHsy0eG23gYYFZHg==
+react-use@^15.2.2:
+  version "15.2.2"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-15.2.2.tgz#e07ba018109f93ee6154915fbaf85ffee9638ff1"
+  integrity sha512-ews+RJXkJPokAHKXzLl0NLO9lMaiLy8SyhUydO8gFRajuBdsUUKS/HAEmQPlPQ4QxKf7ckgTpA2zO/IUztczwQ==
   dependencies:
     "@types/js-cookie" "2.2.6"
     "@xobotyi/scrollbar-width" "1.9.5"
     copy-to-clipboard "^3.2.0"
-    fast-deep-equal "^3.1.1"
+    fast-deep-equal "^3.1.3"
     fast-shallow-equal "^1.0.0"
     js-cookie "^2.2.1"
     nano-css "^5.2.1"
