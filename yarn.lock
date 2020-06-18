@@ -13775,10 +13775,10 @@ refractor@^2.4.1:
     parse-entities "^1.1.2"
     prismjs "~1.17.0"
 
-reg-cli@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.16.0.tgz#a003fac75add204a93834f857422f9ee1feb4c30"
-  integrity sha512-Je1RVoco6RpDeG5PgDiR6rpmDsu76QZNR8opL3hHizLztu7zchtNaxcyPSwqPCuBaaXZwRi+1uhurjUAYQ3cGw==
+reg-cli@^0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.16.1.tgz#4f1d447742c4120d110783e84e2f85ee9dc18247"
+  integrity sha512-e9Afa1ajOCKrmdDuQye6nzt8L6pfxD+hGQ/acHPyzoLKfXHaFfDPgq8iJNjf/chJ5CBKA7w5M4YTNH02pzjkSw==
   dependencies:
     bluebird "3.5.5"
     chalk "2.4.2"
