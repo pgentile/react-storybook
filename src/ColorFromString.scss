@@ -1,0 +1,20 @@
+.color-from-string {
+  font-family: "san francisco", verdana, arial, sans-serif;
+  font-size: 0.745rem;
+
+  &__hue {
+    display: inline-block;
+
+    border: solid 1px black;
+    background-color: white;
+    padding: 5px;
+
+    &-color {
+      $size: 50px;
+
+      display: block;
+      width: $size;
+      height: $size;
+    }
+  }
+}

@@ -50,6 +50,7 @@
     "intl-locales-supported": "^1.8.10",
     "lodash-es": "^4.17.8",
     "makecancelable": "^1.1.1",
+    "md5": "^2.2.1",
     "memoize-one": "^5.0.0",
     "polished": "^3.6.5",
     "pretty": "^2.0.0",
