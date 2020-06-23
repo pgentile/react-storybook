@@ -1234,14 +1234,7 @@
   dependencies:
     "@formatjs/intl-utils" "^3.4.0"
 
-"@formatjs/intl-numberformat@^4.2.4", "@formatjs/intl-numberformat@^4.2.7":
-  version "4.2.7"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-4.2.7.tgz#7c4976312a0cbfc174a5902281dde50cd3719cd1"
-  integrity sha512-eXBWegYQUANkPqHSAZ1cQ2ajYGBscQ3Aue+xVl1Fc9jEUmQSR4LBgAv0+GEHTlwtqAVaRQ+NYSDbOk7SORnESA==
-  dependencies:
-    "@formatjs/intl-utils" "^3.4.0"
-
-"@formatjs/intl-numberformat@^4.2.9":
+"@formatjs/intl-numberformat@^4.2.7", "@formatjs/intl-numberformat@^4.2.9":
   version "4.2.9"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-4.2.9.tgz#ed36f3c47e4e991ad36a4831c699123895ca136d"
   integrity sha512-/z3aUGWKcM5p5tASB8OpVPkmUJxKbs/yB4ejBepzqdgO7pZ0CNBnHGGwaC6d54CpWuKGbmhF6ertRryhG8khpg==
@@ -1262,14 +1255,7 @@
   dependencies:
     "@formatjs/intl-utils" "^3.4.0"
 
-"@formatjs/intl-utils@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.4.0.tgz#91fcaffcf3925feab888b4a9bad08a51bd0365be"
-  integrity sha512-rP79Y0e6tWXYO+DBddfIi3TFBh0/wE4x+XCDf43nDcnXD5OUTwLBDX521+e0wwDByq6rc/9Bu/W5llwaBsy6bQ==
-  dependencies:
-    emojis-list "^3.0.0"
-
-"@formatjs/intl-utils@^3.4.1":
+"@formatjs/intl-utils@^3.4.0", "@formatjs/intl-utils@^3.4.1":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.4.1.tgz#705646e3be11e5851c33c44448dc3d828997ac41"
   integrity sha512-4rdSTl+ki74ncP0GsdqoKczVWHZQKAemW9YRkhbvpcJrAFDLSEMIagQ+YPy+25plyLfgE/iOYManLdpdUF2IcA==
