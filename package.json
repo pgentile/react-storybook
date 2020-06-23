@@ -33,7 +33,7 @@
   "dependencies": {
     "@formatjs/intl-getcanonicallocales": "^1.2.6",
     "@formatjs/intl-numberformat": "^4.2.9",
-    "@formatjs/intl-pluralrules": "^2.2.7",
+    "@formatjs/intl-pluralrules": "^2.2.9",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
