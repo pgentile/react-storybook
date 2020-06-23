@@ -3871,10 +3871,10 @@ babel-plugin-react-docgen@^4.0.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@^7.5.21:
-  version "7.5.21"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.5.21.tgz#03a2ccd0b283a7a10aaf06924f83edbe15bcda8b"
-  integrity sha512-JfMEVlHQ7jorh4hi7bq2db075vaUtbRrPf6+msAUw22E9xqG7PlGbenoAss9EioSt4zhJIotzhHefeWe6VcT7Q==
+babel-plugin-react-intl@^7.5.23:
+  version "7.5.23"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.5.23.tgz#da4cf2ccd6aa368ea5c9d31a9d076ae5982cdc5c"
+  integrity sha512-jLkOaTezoWvLzuQpmSoTEOGCYTs0buMZbdtDH+w9XzlpOM85lOk6bjFa1lHqdPOE/r9g6GFET5qv3XF4jUq4Ig==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
@@ -3883,7 +3883,7 @@ babel-plugin-react-intl@^7.5.21:
     "@types/fs-extra" "^8.1.0"
     "@types/schema-utils" "^2.4.0"
     fs-extra "^9.0.0"
-    intl-messageformat-parser "^5.1.4"
+    intl-messageformat-parser "^5.1.6"
     schema-utils "^2.6.6"
 
 babel-plugin-require-context-hook@^1.0.0:
