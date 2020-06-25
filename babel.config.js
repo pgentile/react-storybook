@@ -3,6 +3,8 @@ module.exports = (api) => {
     plugins: [
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-private-methods",
+      "@babel/plugin-proposal-nullish-coalescing-operator",
+      "@babel/plugin-proposal-optional-chaining",
       "macros",
       [
         "react-intl",
