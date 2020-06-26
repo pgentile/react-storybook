@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PhoneNumberInfo Main 1`] = `
+Array [
+  <div>
+    <div
+      className="form-field-container "
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-17"
+      >
+        Pays de base
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          className="form-input-field "
+          formNoValidate={true}
+          id="form-field-17"
+          onChange={[Function]}
+          type="text"
+          value="FR"
+        />
+      </div>
+    </div>
+    <div
+      className="form-field-container "
+    >
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-18"
+      >
+        Numéro de téléphone
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          className="form-input-field "
+          formNoValidate={true}
+          id="form-field-18"
+          onChange={[Function]}
+          type="text"
+          value="0688776609"
+        />
+      </div>
+    </div>
+  </div>,
+  <div>
+    <p>
+      <b>
+        Valide ?
+      </b>
+       
+      <code>
+        Oui
+      </code>
+    </p>
+    <p>
+      <b>
+        Possible ?
+      </b>
+       
+      <code>
+        Oui
+      </code>
+    </p>
+    <p>
+      <b>
+        Type :
+      </b>
+       
+      <code>
+        MOBILE
+      </code>
+    </p>
+    <p>
+      <b>
+        N° stantardisé:
+      </b>
+       
+      <code>
+        +33688776609
+      </code>
+    </p>
+    <p>
+      <b>
+        N° national:
+      </b>
+       
+      <code>
+        688776609
+      </code>
+    </p>
+    <p>
+      <b>
+        Pays :
+      </b>
+       
+      <code>
+        FR
+      </code>
+    </p>
+    <p>
+      <b>
+        Préfixe international :
+      </b>
+       
+      <code>
+        33
+      </code>
+    </p>
+    <p>
+      <b>
+        URI :
+      </b>
+       
+      <code>
+        tel:+33688776609
+      </code>
+    </p>
+  </div>,
+]
+`;

@@ -48,6 +48,7 @@
     "final-form": "^4.20.0",
     "final-form-focus": "^1.1.2",
     "intl-locales-supported": "^1.8.10",
+    "libphonenumber-js": "^1.7.53",
     "lodash-es": "^4.17.8",
     "makecancelable": "^1.1.1",
     "md5": "^2.2.1",

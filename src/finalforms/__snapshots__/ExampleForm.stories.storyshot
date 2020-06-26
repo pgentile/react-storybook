@@ -9,7 +9,7 @@ exports[`Storyshots Final Forms | ExampleForm Main 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-34"
+      htmlFor="form-field-36"
     >
       Nom 1
     </label>
@@ -20,7 +20,7 @@ exports[`Storyshots Final Forms | ExampleForm Main 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-34"
+        id="form-field-36"
         name="name"
         onBlur={[Function]}
         onChange={[Function]}
@@ -46,7 +46,7 @@ exports[`Storyshots Final Forms | ExampleForm Main 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-35"
+      htmlFor="form-field-37"
     >
       Nom 2
     </label>
@@ -57,7 +57,7 @@ exports[`Storyshots Final Forms | ExampleForm Main 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-35"
+        id="form-field-37"
         name="name"
         onBlur={[Function]}
         onChange={[Function]}

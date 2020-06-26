@@ -21,7 +21,7 @@ exports[`Storyshots Forms / FieldContainer Custom Label Element 1`] = `
       aria-invalid={false}
       className="form-input-field "
       formNoValidate={true}
-      id="form-field-41"
+      id="form-field-43"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -35,7 +35,7 @@ exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
 >
   <label
     className="label label--disabled form-field-container__label"
-    htmlFor="form-field-40"
+    htmlFor="form-field-42"
   >
     Example
   </label>
@@ -47,7 +47,7 @@ exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
       className="form-input-field "
       disabled={true}
       formNoValidate={true}
-      id="form-field-40"
+      id="form-field-42"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -61,7 +61,7 @@ exports[`Storyshots Forms / FieldContainer Error 1`] = `
 >
   <label
     className="label form-field-container__label"
-    htmlFor="form-field-37"
+    htmlFor="form-field-39"
   >
     Example
   </label>
@@ -72,7 +72,7 @@ exports[`Storyshots Forms / FieldContainer Error 1`] = `
       aria-invalid={true}
       className="form-input-field form-input-field--error "
       formNoValidate={true}
-      id="form-field-37"
+      id="form-field-39"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -91,7 +91,7 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
 >
   <label
     className="label form-field-container__label"
-    htmlFor="form-field-39"
+    htmlFor="form-field-41"
   >
     Example
   </label>
@@ -107,7 +107,7 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
       aria-invalid={true}
       className="form-input-field form-input-field--error "
       formNoValidate={true}
-      id="form-field-39"
+      id="form-field-41"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -126,7 +126,7 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
 >
   <label
     className="label form-field-container__label"
-    htmlFor="form-field-38"
+    htmlFor="form-field-40"
   >
     Example
   </label>
@@ -142,7 +142,7 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
       aria-invalid={false}
       className="form-input-field "
       formNoValidate={true}
-      id="form-field-38"
+      id="form-field-40"
       placeholder="Valeur d'exemple"
       type="text"
     />
@@ -156,7 +156,7 @@ exports[`Storyshots Forms / FieldContainer Main 1`] = `
 >
   <label
     className="label form-field-container__label"
-    htmlFor="form-field-36"
+    htmlFor="form-field-38"
   >
     Example
   </label>
@@ -167,7 +167,7 @@ exports[`Storyshots Forms / FieldContainer Main 1`] = `
       aria-invalid={false}
       className="form-input-field "
       formNoValidate={true}
-      id="form-field-36"
+      id="form-field-38"
       placeholder="Valeur d'exemple"
       type="text"
     />
