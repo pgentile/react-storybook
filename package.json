@@ -47,7 +47,7 @@
     "fast-memoize": "^2.5.2",
     "final-form": "^4.20.1",
     "final-form-focus": "^1.1.2",
-    "intl-locales-supported": "^1.8.11",
+    "intl-locales-supported": "^1.8.12",
     "libphonenumber-js": "^1.7.54",
     "lodash-es": "^4.17.8",
     "makecancelable": "^1.1.1",
