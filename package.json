@@ -113,7 +113,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-compat": "^3.8.0",
     "eslint-plugin-emotion": "^10.0.27",
-    "eslint-plugin-formatjs": "^2.3.20",
+    "eslint-plugin-formatjs": "^2.3.21",
     "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
