@@ -102,7 +102,7 @@
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-macros": "^2.8.0",
-    "babel-plugin-react-intl": "^7.5.27",
+    "babel-plugin-react-intl": "^7.5.28",
     "browserslist": "^4.12.2",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.2",
