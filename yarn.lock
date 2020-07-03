@@ -1198,10 +1198,10 @@
   dependencies:
     "@formatjs/intl-utils" "^3.5.0"
 
-"@formatjs/intl-getcanonicallocales@^1.2.7":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.2.7.tgz#7d96330c1e1d5d3ba93f10e3b9a875ac165c30d1"
-  integrity sha512-qrmHCMnUSlgus9O8e/jVYqe2l3jmVGVJUCMY0F9L222VQA+VA2O7VmV26ONsPMvO1BsYO2JyXNCMH3hNewIOhA==
+"@formatjs/intl-getcanonicallocales@^1.2.7", "@formatjs/intl-getcanonicallocales@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.2.8.tgz#a02567600c86f19be79dc7d5e80c612871c4e1b5"
+  integrity sha512-SpXUsj7/sXNafYGJNwfZRaevw9bIxeDSbK5lljx4l6EstXzBosvGMvHIjsnxatjKT5OgH6z9GzCvRxSndhHTww==
   dependencies:
     cldr-core "36.0.0"
 
