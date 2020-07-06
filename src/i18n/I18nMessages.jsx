@@ -135,18 +135,22 @@ I18nMessages.propTypes = {
   gender: PropTypes.oneOf(["male", "female"]).isRequired,
 };
 
-function b(...chunks) {
+function b(chunks) {
   return <strong>{chunks}</strong>;
 }
 
-function termsOfServiceLink(...chunks) {
+function termsOfServiceLink(chunks) {
   return <TermsOfServiceLink>{chunks}</TermsOfServiceLink>;
 }
 
 function TermsOfServiceLink({ children }) {
   const { locale } = useLocale();
+  const [lang, country] = locale.split("-", 2);
 
-  const url = `https://example.org/content/${locale}/cgu.html`;
+  const hostPrefix = country === "FR" ? "www" : country.toLowerCase();
+  const pathEnd = "content/cgu.html";
+  const path = country === "FR" ? [pathEnd] : [lang, pathEnd];
+  const url = `https://${hostPrefix}.example.org/${path.join("/")}`;
 
   return <a href={url}>{children}</a>;
 }

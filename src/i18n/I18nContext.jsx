@@ -31,7 +31,7 @@ async function loadPolyfills(locale) {
       /* webpackChunkName: "intl-pluralrules-locale-data" */
       /* webpackInclude: /(fr|en)\.js$/ */
       /* webpackMode: "lazy" */
-      `@formatjs/intl-pluralrules/dist/locale-data/${language}`
+      `@formatjs/intl-pluralrules/locale-data/${language}`
     );
   }
 }
