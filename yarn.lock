@@ -1211,10 +1211,10 @@
   dependencies:
     "@formatjs/intl-utils" "^3.8.0"
 
-"@formatjs/intl-numberformat@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.2.1.tgz#959203ad4c7dc3a9605467b3f646a7ee7c859ce1"
-  integrity sha512-lj5UwDdYm6X8FkhleYLqu+MSbTE33AtAR51FMzwfw+DVwvfbPYLp4pxe9eGNGT8yygz7q/cfz7W/MIf/zBPQsg==
+"@formatjs/intl-numberformat@^5.2.1", "@formatjs/intl-numberformat@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.3.0.tgz#207de570068ef7d885c60e941120300c24fa9bcc"
+  integrity sha512-V1TshvQNQCbQnR9GIG8ujoYAC4O8zVhedsFeJruzfX3THozK8TVAqaTLobE9SbIUgA/p41cO+rasoQLRBTis7w==
   dependencies:
     "@formatjs/intl-utils" "^3.8.0"
 
