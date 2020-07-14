@@ -1219,6 +1219,13 @@
   dependencies:
     "@formatjs/intl-utils" "^3.6.0"
 
+"@formatjs/intl-numberformat@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.1.0.tgz#726820dedb876fb008519f2adaa80b71f9b324db"
+  integrity sha512-ODo5kYM1jHKHHX8u8Cw+MaIVUZNBMSBUUNQ4IdOy8GpJljiNQJvQ/PUqmC8Y95k3rmYlv3N2XzSa7rry8JuVeA==
+  dependencies:
+    "@formatjs/intl-utils" "^3.7.0"
+
 "@formatjs/intl-pluralrules@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.0.2.tgz#f3a3eabdcb995ef326b6dbee9df1924c00fc5cec"
@@ -1237,6 +1244,13 @@
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.6.0.tgz#25c11a099c01ac9b7b904dda84cb840417893fa3"
   integrity sha512-KojfGYH3b0HbyN8H+HRHxEYOctC9tOne8jU1MNw7O+g8QyIPK9y0y1cyXlj6FoLsHRi26u9jR1CJg5XrRfArug==
+  dependencies:
+    emojis-list "^3.0.0"
+
+"@formatjs/intl-utils@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.7.0.tgz#e03e483486d78a9b16286d154c45cf147db3c85b"
+  integrity sha512-Hmyp6hSdQxvA3TgQVV9E0hZSCOZPRwvGYoYEtdwLCa1KnEy+8SVjMjqTo+quATdVvGeWnYgsUC6wrmLtPjmRYg==
   dependencies:
     emojis-list "^3.0.0"
 
@@ -2526,10 +2540,10 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.44.tgz#980cc5a29a3ef3bea6ff1f7d021047d7ea575e21"
   integrity sha512-iaIVzr+w2ZJ5HkidlZ3EJM8VTZb2MJLCjw3V+505yVts0gRC4UMvjw0d1HPtGqI/HQC/KdsYtayfzl+AXY2R8g==
 
-"@types/fs-extra@^8.1.0":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-8.1.1.tgz#1e49f22d09aa46e19b51c0b013cb63d0d923a068"
-  integrity sha512-TcUlBem321DFQzBNuz8p0CLLKp0VvF/XH9E4KHNmgwyp4E3AfgI5cjiIVZWlbfThBop2qxFIh4+LeY6hVWWZ2w==
+"@types/fs-extra@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.1.tgz#91c8fc4c51f6d5dbe44c2ca9ab09310bd00c7918"
+  integrity sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
   dependencies:
     "@types/node" "*"
 
@@ -3829,19 +3843,19 @@ babel-plugin-react-docgen@^4.0.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@^7.5.28:
-  version "7.5.28"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.5.28.tgz#cb97f6abc1e00217f65da08613356ee386197341"
-  integrity sha512-i/8n7HBYN182A8GJTBWFfcx1Ghc70c8zIvyjWWIK2w6PXQXPi8wr6sZnGDATU4GUnvXyYS4VUR6lxpATI+vaDw==
+babel-plugin-react-intl@^7.7.0:
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.7.0.tgz#fae9275a9406ee0496a667f3774cfbccc2405267"
+  integrity sha512-16AN6wmaUm/c5QCoVeyqQNa6LM/JqwfmZOcSRDjfL5EhAlNw7FYdsBEzqZV1Qk46bjwoYzjE9I3KqOdFHK5mjA==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
     "@types/babel__core" "^7.1.7"
-    "@types/fs-extra" "^8.1.0"
+    "@types/fs-extra" "^9.0.1"
     "@types/schema-utils" "^2.4.0"
     fs-extra "^9.0.0"
-    intl-messageformat-parser "^5.2.4"
+    intl-messageformat-parser "^5.3.0"
     schema-utils "^2.6.6"
 
 babel-plugin-require-context-hook@^1.0.0:
@@ -8434,12 +8448,12 @@ intl-locales-supported@^1.8.12:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
   integrity sha512-FJPl7p1LYO/C+LpwlDcvVpq7AeFTdFgwnq1JjdNYKjb51xkIxssXRR8LaA0fJFogjwRRztqw1ahgSJMSZsSFdw==
 
-intl-messageformat-parser@^5.2.4:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.2.4.tgz#d1a002c498f6f7f27cd9d309d2353e866875e0fa"
-  integrity sha512-vwuG+rYawjr73UFD60x1coJaU0u0cWEHT8s2XhfYqxQv7cJEj7CIZhCZLldzjUO2IKZgWkvOOP6krSfMTJBuRA==
+intl-messageformat-parser@^5.2.4, intl-messageformat-parser@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.3.0.tgz#56f2f065bd48c1b09871819c484193756bf5817c"
+  integrity sha512-Hi7XKuhAQRkh02dHToxyMx7kgIm05MegXrL857t+AID804tDdeC28OKZE6kqIDhIhFGL0a++sl/TOFas6Ktrmw==
   dependencies:
-    "@formatjs/intl-numberformat" "^5.0.2"
+    "@formatjs/intl-numberformat" "^5.1.0"
 
 intl-messageformat@^9.0.2:
   version "9.0.2"
