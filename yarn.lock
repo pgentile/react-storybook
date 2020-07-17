@@ -4587,12 +4587,12 @@ capture-stack-trace@^1.0.0:
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha512-mYQLZnx5Qt1JgB1WEiMCf2647plpGeQ2NMR/5L0HNZzGQo4fuSPnK+wjfPnKZV0aiJDgzmWqqkV/g7JD+DW0qw==
 
-card-validator@^6.0.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-6.2.0.tgz#59037c6480df5786473cab720f165ba868560e0b"
-  integrity sha512-1vYv45JaE9NmixZr4dl6ykzbFKv7imI9L7MQDs235b/a7EGbG8rrEsipeHtVvscLSUbl3RX6UP5gyOe0Y2FlHA==
+card-validator@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-7.0.1.tgz#9868d846e6ea59357fdde5c7de78f69066982d11"
+  integrity sha512-tpAAf9tPPb++C7R0t0R4Y74YHpRig1f8ZgwXxp01k48DmNexGcdCvhbfhhpkdAFpe0iTptJSejaelLhfzY9Uaw==
   dependencies:
-    credit-card-type "^8.0.0"
+    credit-card-type "^9.0.0"
 
 case-sensitive-paths-webpack-plugin@^2.2.0:
   version "2.3.0"
@@ -5346,10 +5346,15 @@ create-react-context@0.3.0, create-react-context@^0.3.0:
     gud "^1.0.0"
     warning "^4.0.3"
 
-credit-card-type@^8.0.0, credit-card-type@^8.1.0:
+credit-card-type@^8.1.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-8.3.0.tgz#f93c187c9362411544158c91d552efcc443aa87a"
   integrity sha512-czfZUpQ7W9CDxZL4yFLb1kFtM/q2lTOY975hL2aO+DC8+GRNDVSXVCHXhVFZPxiUKmQCZbFP8vIhxx5TBQaThw==
+
+credit-card-type@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-9.0.0.tgz#484603f142831456a47f56f0bdcd602665060b5e"
+  integrity sha512-+q527CIkkF7U26FXS5nFTs0bSlR8MkDaK210WdPpMuJq32M7KDinQA397/D7xt9AYL0JeZn2ikZWvzY4q7riLg==
 
 cross-env@^7.0.2:
   version "7.0.2"
