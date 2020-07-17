@@ -1211,6 +1211,13 @@
   dependencies:
     "@formatjs/intl-utils" "^3.8.1"
 
+"@formatjs/intl-numberformat@^5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.3.1.tgz#d682cfe3c9dbced972ce5b2f7b374ec63ea68635"
+  integrity sha512-VSQwDiZc6JjJ2CadKY5EFxdWI7k3HLUXMZAqg6Rdox7vHkd4wqxoZqrctSjBeJsjQUnKxh5CPP8Sp9ht5nCo9g==
+  dependencies:
+    "@formatjs/intl-utils" "^3.8.1"
+
 "@formatjs/intl-pluralrules@^3.2.3":
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.2.3.tgz#f8df1f136a02059dc3f016a0dbb99ac10f46cdb4"
@@ -1226,7 +1233,7 @@
   dependencies:
     "@formatjs/intl-utils" "^3.8.1"
 
-"@formatjs/intl-utils@^3.8.0", "@formatjs/intl-utils@^3.8.1":
+"@formatjs/intl-utils@^3.8.1":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.8.1.tgz#e9bf5b7705dd9653d33f2f7af575d92bdb280b7c"
   integrity sha512-Vm7WRiokXWdu4iWVAQ+omDVWRt4ImUzgfKJAWocz3m1h6/ftgc+YuIcL4RDE6TH3jYben7exTREWHXIwWnx4YA==
@@ -8452,20 +8459,20 @@ intl-locales-supported@^1.8.12:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
   integrity sha512-FJPl7p1LYO/C+LpwlDcvVpq7AeFTdFgwnq1JjdNYKjb51xkIxssXRR8LaA0fJFogjwRRztqw1ahgSJMSZsSFdw==
 
-intl-messageformat-parser@^5.3.3, intl-messageformat-parser@^5.3.4:
-  version "5.3.4"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.3.4.tgz#9171e672440dc22fe04010be042939d6b6721a72"
-  integrity sha512-SoxnxuZ8yj8w60z2XrE1dPGGmGvVqadUcJfCVCBRA/kPNIc10Ls44eXBVdrttrYHlztYB4UVvSeb+R8CGmP1SA==
+intl-messageformat-parser@^5.3.4, intl-messageformat-parser@^5.3.5:
+  version "5.3.5"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.3.5.tgz#fbbd27ca82780edda786d8edf59567ba1daa1f50"
+  integrity sha512-gOy7796eyQFb8GafFMH7QqiFAG5oafvQWR9XbfV1rfsQ9lWWf/5xZpK0XPyxIgZRwLDmJP9PyaGgzqCFXlmOaQ==
   dependencies:
     "@formatjs/intl-numberformat" "^5.3.1"
 
-intl-messageformat@^9.1.4:
-  version "9.1.4"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.1.4.tgz#c6dae0de1540dff77c788961444032ce00b3590f"
-  integrity sha512-3SOFdKPa0UXxHfcL2wskfvFc1cJ8PPKg1KkaoEkPKWtkdcMq1EAnb9jv51ic+KvBDsxwA3HgigJ8izljoLaGtg==
+intl-messageformat@^9.1.5:
+  version "9.1.5"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.1.5.tgz#3e846137e10d04a94aabda8e805523a78f4aa708"
+  integrity sha512-sfzOaNoWlp8sMhgFv0HXWgoQQGyRH7vP+hscCbbLPCxDWOfWHiydPZo+td5nJXXbkGHsxGAoZLNyhpByJPIJcA==
   dependencies:
     intl-format-cache "^4.3.0"
-    intl-messageformat-parser "^5.3.4"
+    intl-messageformat-parser "^5.3.5"
 
 invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
@@ -13359,10 +13366,10 @@ react-inspector@^4.0.0:
     is-dom "^1.0.9"
     prop-types "^15.6.1"
 
-react-intl@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.3.1.tgz#d922122ccba182546d71be3e4d0a9edb6ab1ce69"
-  integrity sha512-Ks2Z76vf1R0aA8TwQwps4SVaH7Y5GkeerahYEgSo3+a4W1TItblFcXSkdds4WC9peknw2J88re8ZBXiUS12lew==
+react-intl@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.3.2.tgz#44a9cb9f00e558599fae56685196dc75a037dd33"
+  integrity sha512-Jro+cX5SnYUPNtEd6ExHdCbrhutvWsxywhFDLvAWuElNuFz2e1sXoqBWbc43Nn2jmOuY4DlQsTk9O4H4Vj32Hg==
   dependencies:
     "@formatjs/intl-datetimeformat" "^2.1.4"
     "@formatjs/intl-displaynames" "^3.1.4"
@@ -13373,8 +13380,8 @@ react-intl@^5.3.1:
     "@types/hoist-non-react-statics" "^3.3.1"
     hoist-non-react-statics "^3.3.2"
     intl-format-cache "^4.3.0"
-    intl-messageformat "^9.1.4"
-    intl-messageformat-parser "^5.3.4"
+    intl-messageformat "^9.1.5"
+    intl-messageformat-parser "^5.3.5"
     shallow-equal "^1.2.1"
 
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6, react-is@^16.9.0:
