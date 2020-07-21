@@ -1,107 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Hooks / HookedForm Main 1`] = `
-<form
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="input-container"
+  <form
+    onSubmit={[Function]}
   >
-    <div>
-      <div
-        className="row "
-      >
-        <label>
-          <input
-            checked={false}
-            name="civility"
-            onChange={[Function]}
-            type="radio"
-            value="MR"
-          />
-           Monsieur
-        </label>
-         
-        <label>
-          <input
-            checked={false}
-            name="civility"
-            onChange={[Function]}
-            type="radio"
-            value="MRS"
-          />
-           Madame
-        </label>
-      </div>
-    </div>
-  </div>
-  <div
-    className="input-container"
-  >
-    <div>
-      <div
-        className="row "
-      >
-        <label>
-          Prénom : 
-          <input
-            name="firstName"
-            onBlur={[Function]}
-            onChange={[Function]}
-            type="text"
-            value=""
-          />
-        </label>
-      </div>
-    </div>
-  </div>
-  <div
-    className="input-container"
-  >
-    <div>
-      <div
-        className="row "
-      >
-        <label>
-          Nom : 
-          <input
-            name="lastName"
-            onBlur={[Function]}
-            onChange={[Function]}
-            type="text"
-            value=""
-          />
-        </label>
-      </div>
-    </div>
-  </div>
-  <div
-    className="input-container"
-  >
-    <div>
-      <div
-        className="row "
-      >
-        <label>
-          <input
-            checked={false}
-            name="acceptConditions"
-            onChange={[Function]}
-            type="checkbox"
-          />
-           Accept conditions
-        </label>
-      </div>
-    </div>
-  </div>
-  <div
-    className="row "
-  >
-    <button
-      type="submit"
+    <div
+      className="input-container"
     >
-      Send
-    </button>
-  </div>
-</form>
+      <div>
+        <div
+          className="row "
+        >
+          <label>
+            <input
+              checked={false}
+              name="civility"
+              onChange={[Function]}
+              type="radio"
+              value="MR"
+            />
+             Monsieur
+          </label>
+           
+          <label>
+            <input
+              checked={false}
+              name="civility"
+              onChange={[Function]}
+              type="radio"
+              value="MRS"
+            />
+             Madame
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="input-container"
+    >
+      <div>
+        <div
+          className="row "
+        >
+          <label>
+            Prénom : 
+            <input
+              name="firstName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="input-container"
+    >
+      <div>
+        <div
+          className="row "
+        >
+          <label>
+            Nom : 
+            <input
+              name="lastName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="input-container"
+    >
+      <div>
+        <div
+          className="row "
+        >
+          <label>
+            <input
+              checked={false}
+              name="acceptConditions"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             Accept conditions
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="row "
+    >
+      <button
+        type="submit"
+      >
+        Send
+      </button>
+    </div>
+  </form>
+</div>
 `;

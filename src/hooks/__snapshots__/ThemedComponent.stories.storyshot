@@ -1,22 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Hooks / ThemedComponent Main 1`] = `
-<section
-  className="themed-component themed-component--yellow"
+<div
+  className="rs"
 >
-  <p
-    className="themed-component__line"
+  <section
+    className="themed-component themed-component--yellow"
   >
-    <button
-      onClick={[Function]}
+    <p
+      className="themed-component__line"
     >
-      Switch theme
-    </button>
-  </p>
-  <p
-    className="themed-component__line"
-  >
-    Hello, my friend
-  </p>
-</section>
+      <button
+        onClick={[Function]}
+      >
+        Switch theme
+      </button>
+    </p>
+    <p
+      className="themed-component__line"
+    >
+      Hello, my friend
+    </p>
+  </section>
+</div>
 `;

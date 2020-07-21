@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots PhoneNumberInfo Main 1`] = `
-Array [
+<div
+  className="rs"
+>
   <div>
     <div
       className="form-field-container "
@@ -49,7 +51,7 @@ Array [
         />
       </div>
     </div>
-  </div>,
+  </div>
   <div>
     <p>
       <b>
@@ -123,6 +125,6 @@ Array [
         tel:+33688776609
       </code>
     </p>
-  </div>,
-]
+  </div>
+</div>
 `;

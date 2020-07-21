@@ -2,86 +2,106 @@
 
 exports[`Storyshots Forms / DatePickerInput Demo 1`] = `
 <div
-  className="date-picker-input "
+  className="rs"
 >
   <div
-    className="date-picker-input__field"
-    onClick={[Function]}
-    tabIndex={0}
+    className="date-picker-input "
   >
-    mardi 13 février 1990
+    <div
+      className="date-picker-input__field"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      mardi 13 février 1990
+    </div>
+    <div
+      className="date-picker-input__picker-panel"
+    />
   </div>
-  <div
-    className="date-picker-input__picker-panel"
-  />
 </div>
 `;
 
 exports[`Storyshots Forms / DatePickerInput Disabled Story 1`] = `
 <div
-  className="date-picker-input "
+  className="rs"
 >
   <div
-    className="date-picker-input__field date-picker-input__field--disabled"
-    onClick={[Function]}
-    tabIndex={-1}
+    className="date-picker-input "
   >
-    mardi 13 février 1990
+    <div
+      className="date-picker-input__field date-picker-input__field--disabled"
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      mardi 13 février 1990
+    </div>
+    <div
+      className="date-picker-input__picker-panel"
+    />
   </div>
-  <div
-    className="date-picker-input__picker-panel"
-  />
 </div>
 `;
 
 exports[`Storyshots Forms / DatePickerInput Error Story 1`] = `
 <div
-  className="date-picker-input "
+  className="rs"
 >
   <div
-    aria-invalid={true}
-    className="date-picker-input__field date-picker-input__field--error"
-    onClick={[Function]}
-    tabIndex={0}
+    className="date-picker-input "
   >
-    mardi 13 février 1990
+    <div
+      aria-invalid={true}
+      className="date-picker-input__field date-picker-input__field--error"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      mardi 13 février 1990
+    </div>
+    <div
+      className="date-picker-input__picker-panel"
+    />
   </div>
-  <div
-    className="date-picker-input__picker-panel"
-  />
 </div>
 `;
 
 exports[`Storyshots Forms / DatePickerInput Main 1`] = `
 <div
-  className="date-picker-input "
+  className="rs"
 >
   <div
-    className="date-picker-input__field"
-    onClick={[Function]}
-    tabIndex={0}
+    className="date-picker-input "
   >
-    mardi 13 février 1990
+    <div
+      className="date-picker-input__field"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      mardi 13 février 1990
+    </div>
+    <div
+      className="date-picker-input__picker-panel"
+    />
   </div>
-  <div
-    className="date-picker-input__picker-panel"
-  />
 </div>
 `;
 
 exports[`Storyshots Forms / DatePickerInput Read Only Story 1`] = `
 <div
-  className="date-picker-input "
+  className="rs"
 >
   <div
-    className="date-picker-input__field date-picker-input__field--read-only"
-    onClick={[Function]}
-    tabIndex={0}
+    className="date-picker-input "
   >
-    mardi 13 février 1990
+    <div
+      className="date-picker-input__field date-picker-input__field--read-only"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      mardi 13 février 1990
+    </div>
+    <div
+      className="date-picker-input__picker-panel"
+    />
   </div>
-  <div
-    className="date-picker-input__picker-panel"
-  />
 </div>
 `;

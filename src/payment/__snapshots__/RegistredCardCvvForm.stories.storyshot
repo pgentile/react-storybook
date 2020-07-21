@@ -1,381 +1,401 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
-<form
-  className="registred-card-cvv-form"
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="form-field-container registred-card-cvv-form__cvv"
+  <form
+    className="registred-card-cvv-form"
+    onSubmit={[Function]}
   >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-2"
-    >
-      Code de sécurité
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container registred-card-cvv-form__cvv"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="cc-csc"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-2"
-        inputMode="numeric"
-        maxLength={4}
-        name="cvv"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        pattern="[0-9]*"
-        spellCheck={false}
-        type="text"
-        value=""
-      />
-    </div>
-  </div>
-  <div
-    className="registred-card-cvv-form__buttons"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      type="submit"
-    >
-      Payer 
-      <span
-        className="css-fsncg5-Price"
-        data-price-currency="EUR"
-        data-price-value={100}
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-2"
       >
-        100
-        <span
-          className="css-tvrdin-Price"
-        >
-           
-          €
-        </span>
-      </span>
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      onClick={[Function]}
-      type="reset"
+        Code de sécurité
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="cc-csc"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-2"
+          inputMode="numeric"
+          maxLength={4}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="registred-card-cvv-form__buttons"
     >
-      Annuler
-    </button>
-  </div>
-</form>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        type="submit"
+      >
+        Payer 
+        <span
+          className="css-fyxyfm-Price"
+          data-price-currency="EUR"
+          data-price-value={100}
+        >
+          100
+          <span
+            className="css-tvrdin-Price"
+          >
+             
+            €
+          </span>
+        </span>
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        onClick={[Function]}
+        type="reset"
+      >
+        Annuler
+      </button>
+    </div>
+  </form>
+</div>
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
-<form
-  className="registred-card-cvv-form"
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="form-field-container registred-card-cvv-form__cvv"
+  <form
+    className="registred-card-cvv-form"
+    onSubmit={[Function]}
   >
-    <label
-      className="label label--disabled form-field-container__label"
-      htmlFor="form-field-4"
-    >
-      Code de sécurité
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container registred-card-cvv-form__cvv"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="cc-csc"
-        className="form-input-field "
-        disabled={true}
-        formNoValidate={true}
-        id="form-field-4"
-        inputMode="numeric"
-        maxLength={3}
-        name="cvv"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        pattern="[0-9]*"
-        spellCheck={false}
-        type="text"
-        value=""
-      />
-    </div>
-  </div>
-  <div
-    className="registred-card-cvv-form__buttons"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={true}
-      type="submit"
-    >
-      Payer 
-      <span
-        className="css-fsncg5-Price"
-        data-price-currency="EUR"
-        data-price-value={100}
+      <label
+        className="label label--disabled form-field-container__label"
+        htmlFor="form-field-4"
       >
-        100
-        <span
-          className="css-tvrdin-Price"
-        >
-           
-          €
-        </span>
-      </span>
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={true}
-      onClick={[Function]}
-      type="reset"
+        Code de sécurité
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="cc-csc"
+          className="form-input-field "
+          disabled={true}
+          formNoValidate={true}
+          id="form-field-4"
+          inputMode="numeric"
+          maxLength={3}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="registred-card-cvv-form__buttons"
     >
-      Annuler
-    </button>
-  </div>
-</form>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={true}
+        type="submit"
+      >
+        Payer 
+        <span
+          className="css-fyxyfm-Price"
+          data-price-currency="EUR"
+          data-price-value={100}
+        >
+          100
+          <span
+            className="css-tvrdin-Price"
+          >
+             
+            €
+          </span>
+        </span>
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={true}
+        onClick={[Function]}
+        type="reset"
+      >
+        Annuler
+      </button>
+    </div>
+  </form>
+</div>
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
-<form
-  className="registred-card-cvv-form"
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="form-field-container registred-card-cvv-form__cvv"
+  <form
+    className="registred-card-cvv-form"
+    onSubmit={[Function]}
   >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-3"
-    >
-      Code de sécurité
-      <span
-        className="label__optional"
-      >
-         (facultatif)
-      </span>
-    </label>
-    <p
-      className="form-field-container__help"
-    >
-      Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
-    </p>
     <div
-      className="form-field-container__field"
+      className="form-field-container registred-card-cvv-form__cvv"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="cc-csc"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-3"
-        inputMode="numeric"
-        maxLength={3}
-        name="cvv"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        pattern="[0-9]*"
-        spellCheck={false}
-        type="text"
-        value=""
-      />
-    </div>
-  </div>
-  <div
-    className="registred-card-cvv-form__buttons"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      type="submit"
-    >
-      Payer 
-      <span
-        className="css-fsncg5-Price"
-        data-price-currency="EUR"
-        data-price-value={100}
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-3"
       >
-        100
+        Code de sécurité
         <span
-          className="css-tvrdin-Price"
+          className="label__optional"
         >
-           
-          €
+           (facultatif)
         </span>
-      </span>
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      onClick={[Function]}
-      type="reset"
+      </label>
+      <p
+        className="form-field-container__help"
+      >
+        Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
+      </p>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="cc-csc"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-3"
+          inputMode="numeric"
+          maxLength={3}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="registred-card-cvv-form__buttons"
     >
-      Annuler
-    </button>
-  </div>
-</form>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        type="submit"
+      >
+        Payer 
+        <span
+          className="css-fyxyfm-Price"
+          data-price-currency="EUR"
+          data-price-value={100}
+        >
+          100
+          <span
+            className="css-tvrdin-Price"
+          >
+             
+            €
+          </span>
+        </span>
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        onClick={[Function]}
+        type="reset"
+      >
+        Annuler
+      </button>
+    </div>
+  </form>
+</div>
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
-<form
-  className="registred-card-cvv-form"
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="form-field-container registred-card-cvv-form__cvv"
+  <form
+    className="registred-card-cvv-form"
+    onSubmit={[Function]}
   >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-1"
-    >
-      Code de sécurité
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container registred-card-cvv-form__cvv"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="cc-csc"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-1"
-        inputMode="numeric"
-        maxLength={3}
-        name="cvv"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        pattern="[0-9]*"
-        spellCheck={false}
-        type="text"
-        value=""
-      />
-    </div>
-  </div>
-  <div
-    className="registred-card-cvv-form__buttons"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      type="submit"
-    >
-      Payer 
-      <span
-        className="css-fsncg5-Price"
-        data-price-currency="EUR"
-        data-price-value={100}
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-1"
       >
-        100
-        <span
-          className="css-tvrdin-Price"
-        >
-           
-          €
-        </span>
-      </span>
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      onClick={[Function]}
-      type="reset"
+        Code de sécurité
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="cc-csc"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-1"
+          inputMode="numeric"
+          maxLength={3}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="registred-card-cvv-form__buttons"
     >
-      Annuler
-    </button>
-  </div>
-</form>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        type="submit"
+      >
+        Payer 
+        <span
+          className="css-fyxyfm-Price"
+          data-price-currency="EUR"
+          data-price-value={100}
+        >
+          100
+          <span
+            className="css-tvrdin-Price"
+          >
+             
+            €
+          </span>
+        </span>
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        onClick={[Function]}
+        type="reset"
+      >
+        Annuler
+      </button>
+    </div>
+  </form>
+</div>
 `;
 
 exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
-<form
-  className="registred-card-cvv-form"
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="form-field-container registred-card-cvv-form__cvv"
+  <form
+    className="registred-card-cvv-form"
+    onSubmit={[Function]}
   >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-0"
-    >
-      Code de sécurité
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container registred-card-cvv-form__cvv"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="cc-csc"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-0"
-        inputMode="numeric"
-        maxLength={3}
-        name="cvv"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        pattern="[0-9]*"
-        spellCheck={false}
-        type="text"
-        value=""
-      />
-    </div>
-  </div>
-  <div
-    className="registred-card-cvv-form__buttons"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      type="submit"
-    >
-      Payer 
-      <span
-        className="css-fsncg5-Price"
-        data-price-currency="EUR"
-        data-price-value={100}
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-0"
       >
-        100
-        <span
-          className="css-tvrdin-Price"
-        >
-           
-          €
-        </span>
-      </span>
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-small "
-      disabled={false}
-      onClick={[Function]}
-      type="reset"
+        Code de sécurité
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="cc-csc"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-0"
+          inputMode="numeric"
+          maxLength={3}
+          name="cvv"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          pattern="[0-9]*"
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="registred-card-cvv-form__buttons"
     >
-      Annuler
-    </button>
-  </div>
-</form>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        type="submit"
+      >
+        Payer 
+        <span
+          className="css-fyxyfm-Price"
+          data-price-currency="EUR"
+          data-price-value={100}
+        >
+          100
+          <span
+            className="css-tvrdin-Price"
+          >
+             
+            €
+          </span>
+        </span>
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-small "
+        disabled={false}
+        onClick={[Function]}
+        type="reset"
+      >
+        Annuler
+      </button>
+    </div>
+  </form>
+</div>
 `;

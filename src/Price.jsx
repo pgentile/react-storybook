@@ -20,6 +20,7 @@ const Price = memo(function Price({ as: Element = "span", className = "", price,
         css([
           {
             fontSize: "1em",
+            whiteSpace: "nowrap",
           },
           !noColor && {
             color: baseColor,

@@ -1,70 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Buttons / ProgressButton Disabled Story 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal progress-button "
-  disabled={true}
+<div
+  className="rs"
 >
-  <div
-    className="progress-button__content"
+  <button
+    aria-pressed={false}
+    className="button button--size-normal progress-button "
+    disabled={true}
   >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar"
-  />
-</button>
+    <div
+      className="progress-button__content"
+    >
+      Payer
+    </div>
+    <div
+      className="progress-button__progress-bar"
+    />
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / ProgressButton Finished Story 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal progress-button "
-  disabled={true}
+<div
+  className="rs"
 >
-  <div
-    className="progress-button__content"
+  <button
+    aria-pressed={false}
+    className="button button--size-normal progress-button "
+    disabled={true}
   >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar progress-button__progress-bar--finished"
-  />
-</button>
+    <div
+      className="progress-button__content"
+    >
+      Payer
+    </div>
+    <div
+      className="progress-button__progress-bar progress-button__progress-bar--finished"
+    />
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / ProgressButton Loading Story 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal progress-button "
-  disabled={true}
+<div
+  className="rs"
 >
-  <div
-    className="progress-button__content"
+  <button
+    aria-pressed={false}
+    className="button button--size-normal progress-button "
+    disabled={true}
   >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar progress-button__progress-bar--loading"
-  />
-</button>
+    <div
+      className="progress-button__content"
+    >
+      Payer
+    </div>
+    <div
+      className="progress-button__progress-bar progress-button__progress-bar--loading"
+    />
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / ProgressButton Main 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal progress-button "
-  disabled={false}
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="progress-button__content"
+  <button
+    aria-pressed={false}
+    className="button button--size-normal progress-button "
+    disabled={false}
+    onClick={[Function]}
   >
-    Payer
-  </div>
-  <div
-    className="progress-button__progress-bar"
-  />
-</button>
+    <div
+      className="progress-button__content"
+    >
+      Payer
+    </div>
+    <div
+      className="progress-button__progress-bar"
+    />
+  </button>
+</div>
 `;

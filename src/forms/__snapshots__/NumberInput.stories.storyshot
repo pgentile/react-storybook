@@ -1,12 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Forms / NumberInput Demo 1`] = `
-<input
-  inputMode="numeric"
-  onChange={[Function]}
-  pattern="[0-9]*"
-  spellCheck={false}
-  type="text"
-  value="123"
-/>
+<div
+  className="rs"
+>
+  <input
+    inputMode="numeric"
+    onChange={[Function]}
+    pattern="[0-9]*"
+    spellCheck={false}
+    type="text"
+    value="123"
+  />
+</div>
 `;

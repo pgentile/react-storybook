@@ -1,79 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Final Forms | ExampleForm Main 1`] = `
-<form
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="form-field-container "
+  <form
+    onSubmit={[Function]}
   >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-36"
-    >
-      Nom 1
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container "
     >
-      <input
-        aria-invalid={false}
-        className="form-input-field "
-        formNoValidate={true}
-        id="form-field-36"
-        name="name"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-36"
+      >
+        Nom 1
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          className="form-input-field "
+          formNoValidate={true}
+          id="form-field-36"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div>
-    <label>
-      <input
-        checked={true}
-        onChange={[Function]}
-        type="checkbox"
-      />
-       
-      Ajouter un second champ
-    </label>
-  </div>
-  <div
-    className="form-field-container "
-  >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-37"
-    >
-      Nom 2
-    </label>
+    <div>
+      <label>
+        <input
+          checked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+         
+        Ajouter un second champ
+      </label>
+    </div>
     <div
-      className="form-field-container__field"
+      className="form-field-container "
     >
-      <input
-        aria-invalid={false}
-        className="form-input-field "
-        formNoValidate={true}
-        id="form-field-37"
-        name="name"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-37"
+      >
+        Nom 2
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          className="form-input-field "
+          formNoValidate={true}
+          id="form-field-37"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <button
-    aria-pressed={false}
-    className="button button--size-normal "
-    disabled={false}
-    type="submit"
-  >
-    Envoyer
-  </button>
-</form>
+    <button
+      aria-pressed={false}
+      className="button button--size-normal "
+      disabled={false}
+      type="submit"
+    >
+      Envoyer
+    </button>
+  </form>
+</div>
 `;

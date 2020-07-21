@@ -1,24 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Cars | Climatization / ClimButton Main 1`] = `
-<button
-  className="clim-button"
-  onClick={null}
+<div
+  className="rs"
 >
-  <div
-    className="clim-button__grid"
+  <button
+    className="clim-button"
+    onClick={null}
   >
     <div
-      className="clim-button__top-led"
-    />
-    <div
-      className="clim-button__title"
+      className="clim-button__grid"
     >
-      Button
+      <div
+        className="clim-button__top-led"
+      />
+      <div
+        className="clim-button__title"
+      >
+        Button
+      </div>
+      <div
+        className="clim-button__bottom-led"
+      />
     </div>
-    <div
-      className="clim-button__bottom-led"
-    />
-  </div>
-</button>
+  </button>
+</div>
 `;

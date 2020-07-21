@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AutoResizeMenu Main 1`] = `
+<div
+  className="rs"
+>
+  <div
+    className="auto-resize-menu"
+  >
+    <ul
+      className="auto-resize-menu__list"
+    >
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 1
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 2
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 3
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 4
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 5
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 6
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 7
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 8
+      </li>
+      <li
+        className="auto-resize-menu__item"
+      >
+        Item 9
+      </li>
+    </ul>
+    <div
+      className="auto-resize-menu__more auto-resize-menu__more-hidden"
+    >
+      …
+    </div>
+  </div>
+</div>
+`;

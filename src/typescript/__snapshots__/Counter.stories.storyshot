@@ -1,10 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Counter Main 1`] = `
-<div>
-  Counter is: 
-  <b>
-    0
-  </b>
+<div
+  className="rs"
+>
+  <div>
+    Counter is: 
+    <b>
+      0
+    </b>
+  </div>
 </div>
 `;

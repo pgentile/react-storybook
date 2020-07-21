@@ -2,32 +2,36 @@
 
 exports[`Storyshots Flippable Main 1`] = `
 <div
-  className="flippable"
+  className="rs"
 >
   <div
-    aria-hidden={false}
-    className="flippable__face flippable__face--foreground"
+    className="flippable"
   >
     <div
-      className="css-ejsk1i-Card flippable-story__card"
-      onClick={[Function]}
+      aria-hidden={false}
+      className="flippable__face flippable__face--foreground"
     >
-      <p>
-        Foreground
-      </p>
+      <div
+        className="css-ejsk1i-Card flippable-story__card"
+        onClick={[Function]}
+      >
+        <p>
+          Foreground
+        </p>
+      </div>
     </div>
-  </div>
-  <div
-    aria-hidden={true}
-    className="flippable__face flippable__face--background"
-  >
     <div
-      className="css-ejsk1i-Card flippable-story__card"
-      onClick={[Function]}
+      aria-hidden={true}
+      className="flippable__face flippable__face--background"
     >
-      <p>
-        Background
-      </p>
+      <div
+        className="css-ejsk1i-Card flippable-story__card"
+        onClick={[Function]}
+      >
+        <p>
+          Background
+        </p>
+      </div>
     </div>
   </div>
 </div>

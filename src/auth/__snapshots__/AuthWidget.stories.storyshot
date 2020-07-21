@@ -2,26 +2,30 @@
 
 exports[`Storyshots Auth / AuthWidget Main 1`] = `
 <div
-  className="css-ejsk1i-Card auth-widget"
+  className="rs"
 >
   <div
-    className="auth-iknowyou"
+    className="css-ejsk1i-Card auth-widget"
   >
     <div
-      className="auth-iknowyou__punchline"
+      className="auth-iknowyou"
     >
-      On se connait ?
-    </div>
-    <div
-      className="auth-iknowyou__button"
-    >
-      <button
-        aria-pressed={false}
-        className="button button--size-normal "
-        onClick={[Function]}
+      <div
+        className="auth-iknowyou__punchline"
       >
-        Me connecter
-      </button>
+        On se connait ?
+      </div>
+      <div
+        className="auth-iknowyou__button"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-normal "
+          onClick={[Function]}
+        >
+          Me connecter
+        </button>
+      </div>
     </div>
   </div>
 </div>

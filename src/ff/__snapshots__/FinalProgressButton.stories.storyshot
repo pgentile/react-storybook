@@ -1,32 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Final Forms components | FinalProgressButton Main 1`] = `
-<form
-  onReset={[Function]}
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <button
-    aria-pressed={false}
-    className="button button--size-normal progress-button "
-    disabled={false}
-    type="submit"
+  <form
+    onReset={[Function]}
+    onSubmit={[Function]}
   >
-    <div
-      className="progress-button__content"
+    <button
+      aria-pressed={false}
+      className="button button--size-normal progress-button "
+      disabled={false}
+      type="submit"
     >
-      Envoyer
-    </div>
-    <div
-      className="progress-button__progress-bar"
-    />
-  </button>
-  <button
-    aria-pressed={false}
-    className="button button--size-normal "
-    disabled={false}
-    type="reset"
-  >
-    Reset
-  </button>
-</form>
+      <div
+        className="progress-button__content"
+      >
+        Envoyer
+      </div>
+      <div
+        className="progress-button__progress-bar"
+      />
+    </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-normal "
+      disabled={false}
+      type="reset"
+    >
+      Reset
+    </button>
+  </form>
+</div>
 `;

@@ -1,14 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Hooks / Language Main 1`] = `
-Array [
+<div
+  className="rs"
+>
   <p>
     <b>
       Language:
     </b>
      
     🇩🇪
-  </p>,
+  </p>
   <p>
     <button
       onClick={[Function]}
@@ -25,6 +27,6 @@ Array [
     >
       🇩🇪
     </button>
-  </p>,
-]
+  </p>
+</div>
 `;

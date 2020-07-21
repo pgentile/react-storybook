@@ -2,16 +2,20 @@
 
 exports[`Storyshots Hooks / TrafficLight Main 1`] = `
 <div
-  className="traffic-light"
+  className="rs"
 >
   <div
-    className="traffic-light__light traffic-light__light--color-red"
-  />
-  <div
-    className="traffic-light__light"
-  />
-  <div
-    className="traffic-light__light"
-  />
+    className="traffic-light"
+  >
+    <div
+      className="traffic-light__light traffic-light__light--color-red"
+    />
+    <div
+      className="traffic-light__light"
+    />
+    <div
+      className="traffic-light__light"
+    />
+  </div>
 </div>
 `;

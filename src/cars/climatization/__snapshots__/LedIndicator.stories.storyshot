@@ -2,36 +2,60 @@
 
 exports[`Storyshots Cars | Core / LedIndicator Blink 1`] = `
 <div
-  className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled led-indicator--blink "
-/>
+  className="rs"
+>
+  <div
+    className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled led-indicator--blink "
+  />
+</div>
 `;
 
 exports[`Storyshots Cars | Core / LedIndicator Enabled 1`] = `
 <div
-  className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled "
-/>
+  className="rs"
+>
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--size-normal led-indicator--enabled "
+  />
+</div>
 `;
 
 exports[`Storyshots Cars | Core / LedIndicator Green 1`] = `
 <div
-  className="led-indicator led-indicator--color-green led-indicator--size-normal led-indicator--enabled "
-/>
+  className="rs"
+>
+  <div
+    className="led-indicator led-indicator--color-green led-indicator--size-normal led-indicator--enabled "
+  />
+</div>
 `;
 
 exports[`Storyshots Cars | Core / LedIndicator Large 1`] = `
 <div
-  className="led-indicator led-indicator--color-blue led-indicator--size-large led-indicator--enabled "
-/>
+  className="rs"
+>
+  <div
+    className="led-indicator led-indicator--color-blue led-indicator--size-large led-indicator--enabled "
+  />
+</div>
 `;
 
 exports[`Storyshots Cars | Core / LedIndicator Main 1`] = `
 <div
-  className="led-indicator led-indicator--color-red led-indicator--size-normal "
-/>
+  className="rs"
+>
+  <div
+    className="led-indicator led-indicator--color-red led-indicator--size-normal "
+  />
+</div>
 `;
 
 exports[`Storyshots Cars | Core / LedIndicator Normal 1`] = `
 <div
-  className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled "
-/>
+  className="rs"
+>
+  <div
+    className="led-indicator led-indicator--color-red led-indicator--size-normal led-indicator--enabled "
+  />
+</div>
 `;

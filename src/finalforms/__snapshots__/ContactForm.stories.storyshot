@@ -1,677 +1,680 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Final Forms | ContactForm Main 1`] = `
-<form
-  className="contact-form"
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <section>
-    <h1>
-      Récepteur
-    </h1>
-    <div
-      className="form-field-container "
-    >
-      <span
-        className="label form-field-container__label"
-      >
-        Civilité
-      </span>
+  <form
+    className="contact-form"
+    onSubmit={[Function]}
+  >
+    <section>
+      <h1>
+        Récepteur
+      </h1>
       <div
-        className="form-field-container__field"
+        className="form-field-container "
       >
-        <p
-          className="contact-form__civility"
+        <span
+          className="label form-field-container__label"
         >
-          <label>
-            <input
-              checked={false}
-              name="recipient.civility"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              type="radio"
-              value="MISTER"
-            />
-             Monsieur
-          </label>
+          Civilité
+        </span>
+        <div
+          className="form-field-container__field"
+        >
+          <p
+            className="contact-form__civility"
+          >
+            <label>
+              <input
+                checked={false}
+                name="recipient.civility"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+                value="MISTER"
+              />
+               Monsieur
+            </label>
+             
+            <label>
+              <input
+                checked={false}
+                name="recipient.civility"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+                value="MADAM"
+              />
+               Madame
+            </label>
+          </p>
+        </div>
+      </div>
+      <div
+        className="form-field-container "
+      >
+        <label
+          className="label form-field-container__label"
+          htmlFor="form-field-22"
+        >
+          Prénom
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            className="form-input-field "
+            disabled={false}
+            formNoValidate={true}
+            id="form-field-22"
+            name="recipient.firstName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value="Jean"
+          />
+        </div>
+      </div>
+      <div
+        className="form-field-container "
+      >
+        <label
+          className="label form-field-container__label"
+          htmlFor="form-field-23"
+        >
+          Nom
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            className="form-input-field "
+            disabled={false}
+            formNoValidate={true}
+            id="form-field-23"
+            name="recipient.lastName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value="Bon"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>
+        Passager n°1
+      </h1>
+      <p>
+        <label>
+          <input
+            checked={true}
+            name="passengers.0.deliveryMode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="eticket"
+          />
            
-          <label>
-            <input
-              checked={false}
-              name="recipient.civility"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              type="radio"
-              value="MADAM"
-            />
-             Madame
-          </label>
-        </p>
-      </div>
-    </div>
-    <div
-      className="form-field-container "
-    >
-      <label
-        className="label form-field-container__label"
-        htmlFor="form-field-22"
-      >
-        Prénom
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <input
-          aria-invalid={false}
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="form-field-22"
-          name="recipient.firstName"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="text"
-          value="Jean"
-        />
-      </div>
-    </div>
-    <div
-      className="form-field-container "
-    >
-      <label
-        className="label form-field-container__label"
-        htmlFor="form-field-23"
-      >
-        Nom
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <input
-          aria-invalid={false}
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="form-field-23"
-          name="recipient.lastName"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="text"
-          value="Bon"
-        />
-      </div>
-    </div>
-  </section>
-  <section>
-    <h1>
-      Passager n°1
-    </h1>
-    <p>
-      <label>
-        <input
-          checked={true}
-          name="passengers.0.deliveryMode"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="radio"
-          value="eticket"
-        />
+          Billet électronique
+        </label>
          
-        Billet électronique
-      </label>
-       
-      <label>
-        <input
-          checked={false}
-          name="passengers.0.deliveryMode"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="radio"
-          value="station"
-        />
-         
-        Billet en gare
-      </label>
-    </p>
-    <div
-      aria-hidden={false}
-      className="expandable"
-    >
+        <label>
+          <input
+            checked={false}
+            name="passengers.0.deliveryMode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="station"
+          />
+           
+          Billet en gare
+        </label>
+      </p>
       <div
-        className="expandable__window"
+        aria-hidden={false}
+        className="expandable"
       >
         <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="form-field-container "
+            className="expandable__content"
           >
-            <span
-              className="label form-field-container__label"
-            >
-              Civilité
-            </span>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <p
-                className="contact-form__civility"
+              <span
+                className="label form-field-container__label"
               >
-                <label>
-                  <input
-                    checked={false}
-                    name="passengers.0.civility"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    type="radio"
-                    value="MISTER"
-                  />
-                   Monsieur
-                </label>
-                 
-                <label>
-                  <input
-                    checked={false}
-                    name="passengers.0.civility"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    type="radio"
-                    value="MADAM"
-                  />
-                   Madame
-                </label>
-              </p>
+                Civilité
+              </span>
+              <div
+                className="form-field-container__field"
+              >
+                <p
+                  className="contact-form__civility"
+                >
+                  <label>
+                    <input
+                      checked={false}
+                      name="passengers.0.civility"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value="MISTER"
+                    />
+                     Monsieur
+                  </label>
+                   
+                  <label>
+                    <input
+                      checked={false}
+                      name="passengers.0.civility"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value="MADAM"
+                    />
+                     Madame
+                  </label>
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-25"
-            >
-              Prénom
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-25"
-                name="passengers.0.firstName"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-25"
+              >
+                Prénom
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-25"
+                  name="passengers.0.firstName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-26"
-            >
-              Nom
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-26"
-                name="passengers.0.lastName"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-26"
+              >
+                Nom
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-26"
+                  name="passengers.0.lastName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-27"
-            >
-              Email
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-27"
-                name="passengers.0.email"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-27"
+              >
+                Email
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-27"
+                  name="passengers.0.email"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
+            <button
+              aria-pressed={false}
+              className="button button--size-small "
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Rechercher un contact
+            </button>
           </div>
-          <button
-            aria-pressed={false}
-            className="button button--size-small "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            Rechercher un contact
-          </button>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <h1>
-      Passager n°2
-    </h1>
-    <p>
-      <label>
-        <input
-          checked={false}
-          name="passengers.1.deliveryMode"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="radio"
-          value="eticket"
-        />
+    </section>
+    <section>
+      <h1>
+        Passager n°2
+      </h1>
+      <p>
+        <label>
+          <input
+            checked={false}
+            name="passengers.1.deliveryMode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="eticket"
+          />
+           
+          Billet électronique
+        </label>
          
-        Billet électronique
-      </label>
-       
-      <label>
-        <input
-          checked={true}
-          name="passengers.1.deliveryMode"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="radio"
-          value="station"
-        />
-         
-        Billet en gare
-      </label>
-    </p>
-    <div
-      aria-hidden={true}
-      className="expandable"
-    >
+        <label>
+          <input
+            checked={true}
+            name="passengers.1.deliveryMode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="station"
+          />
+           
+          Billet en gare
+        </label>
+      </p>
       <div
-        className="expandable__window"
+        aria-hidden={true}
+        className="expandable"
       >
         <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="form-field-container "
+            className="expandable__content"
           >
-            <span
-              className="label form-field-container__label"
-            >
-              Civilité
-            </span>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <p
-                className="contact-form__civility"
+              <span
+                className="label form-field-container__label"
               >
-                <label>
-                  <input
-                    checked={false}
-                    name="passengers.1.civility"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    type="radio"
-                    value="MISTER"
-                  />
-                   Monsieur
-                </label>
-                 
-                <label>
-                  <input
-                    checked={false}
-                    name="passengers.1.civility"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    type="radio"
-                    value="MADAM"
-                  />
-                   Madame
-                </label>
-              </p>
+                Civilité
+              </span>
+              <div
+                className="form-field-container__field"
+              >
+                <p
+                  className="contact-form__civility"
+                >
+                  <label>
+                    <input
+                      checked={false}
+                      name="passengers.1.civility"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value="MISTER"
+                    />
+                     Monsieur
+                  </label>
+                   
+                  <label>
+                    <input
+                      checked={false}
+                      name="passengers.1.civility"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value="MADAM"
+                    />
+                     Madame
+                  </label>
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-29"
-            >
-              Prénom
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-29"
-                name="passengers.1.firstName"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-29"
+              >
+                Prénom
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-29"
+                  name="passengers.1.firstName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-30"
-            >
-              Nom
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-30"
-                name="passengers.1.lastName"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-30"
+              >
+                Nom
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-30"
+                  name="passengers.1.lastName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-31"
-            >
-              Email
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-31"
-                name="passengers.1.email"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-31"
+              >
+                Email
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-31"
+                  name="passengers.1.email"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
+            <button
+              aria-pressed={false}
+              className="button button--size-small "
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Rechercher un contact
+            </button>
           </div>
-          <button
-            aria-pressed={false}
-            className="button button--size-small "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            Rechercher un contact
-          </button>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <h1>
-      Passager n°3
-    </h1>
-    <p>
-      <label>
-        <input
-          checked={false}
-          name="passengers.2.deliveryMode"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="radio"
-          value="eticket"
-        />
+    </section>
+    <section>
+      <h1>
+        Passager n°3
+      </h1>
+      <p>
+        <label>
+          <input
+            checked={false}
+            name="passengers.2.deliveryMode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="eticket"
+          />
+           
+          Billet électronique
+        </label>
          
-        Billet électronique
-      </label>
-       
-      <label>
-        <input
-          checked={true}
-          name="passengers.2.deliveryMode"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="radio"
-          value="station"
-        />
-         
-        Billet en gare
-      </label>
-    </p>
-    <div
-      aria-hidden={true}
-      className="expandable"
-    >
+        <label>
+          <input
+            checked={true}
+            name="passengers.2.deliveryMode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="station"
+          />
+           
+          Billet en gare
+        </label>
+      </p>
       <div
-        className="expandable__window"
+        aria-hidden={true}
+        className="expandable"
       >
         <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="form-field-container "
+            className="expandable__content"
           >
-            <span
-              className="label form-field-container__label"
-            >
-              Civilité
-            </span>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <p
-                className="contact-form__civility"
+              <span
+                className="label form-field-container__label"
               >
-                <label>
-                  <input
-                    checked={false}
-                    name="passengers.2.civility"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    type="radio"
-                    value="MISTER"
-                  />
-                   Monsieur
-                </label>
-                 
-                <label>
-                  <input
-                    checked={false}
-                    name="passengers.2.civility"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    type="radio"
-                    value="MADAM"
-                  />
-                   Madame
-                </label>
-              </p>
+                Civilité
+              </span>
+              <div
+                className="form-field-container__field"
+              >
+                <p
+                  className="contact-form__civility"
+                >
+                  <label>
+                    <input
+                      checked={false}
+                      name="passengers.2.civility"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value="MISTER"
+                    />
+                     Monsieur
+                  </label>
+                   
+                  <label>
+                    <input
+                      checked={false}
+                      name="passengers.2.civility"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="radio"
+                      value="MADAM"
+                    />
+                     Madame
+                  </label>
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-33"
-            >
-              Prénom
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-33"
-                name="passengers.2.firstName"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-33"
+              >
+                Prénom
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-33"
+                  name="passengers.2.firstName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-34"
-            >
-              Nom
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-34"
-                name="passengers.2.lastName"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-34"
+              >
+                Nom
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-34"
+                  name="passengers.2.lastName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="form-field-container "
-          >
-            <label
-              className="label form-field-container__label"
-              htmlFor="form-field-35"
-            >
-              Email
-            </label>
             <div
-              className="form-field-container__field"
+              className="form-field-container "
             >
-              <input
-                aria-invalid={false}
-                className="form-input-field "
-                disabled={false}
-                formNoValidate={true}
-                id="form-field-35"
-                name="passengers.2.email"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <label
+                className="label form-field-container__label"
+                htmlFor="form-field-35"
+              >
+                Email
+              </label>
+              <div
+                className="form-field-container__field"
+              >
+                <input
+                  aria-invalid={false}
+                  className="form-input-field "
+                  disabled={false}
+                  formNoValidate={true}
+                  id="form-field-35"
+                  name="passengers.2.email"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
+            <button
+              aria-pressed={false}
+              className="button button--size-small "
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Rechercher un contact
+            </button>
           </div>
-          <button
-            aria-pressed={false}
-            className="button button--size-small "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            Rechercher un contact
-          </button>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
+    </section>
+    <section>
+      <p>
+        <label>
+          <input
+            checked={false}
+            name="acceptConditions"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+           
+          Accepter les conditions de vente
+        </label>
+      </p>
+    </section>
     <p>
-      <label>
-        <input
-          checked={false}
-          name="acceptConditions"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="checkbox"
-        />
-         
-        Accepter les conditions de vente
-      </label>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal "
+        disabled={false}
+        type="submit"
+      >
+        Envoyer
+      </button>
     </p>
-  </section>
-  <p>
-    <button
-      aria-pressed={false}
-      className="button button--size-normal "
-      disabled={false}
-      type="submit"
-    >
-      Envoyer
-    </button>
-  </p>
-  <hr />
-  <pre>
-    {
+    <hr />
+    <pre>
+      {
   "dirty": false,
   "dirtyFields": {},
   "dirtySinceLastSubmit": false,
@@ -731,6 +734,7 @@ exports[`Storyshots Final Forms | ContactForm Main 1`] = `
   },
   "visited": {}
 }
-  </pre>
-</form>
+    </pre>
+  </form>
+</div>
 `;

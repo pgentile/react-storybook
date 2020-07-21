@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Hooks / AboutMediaDevices Main 1`] = `
-<pre>
-  {}
-</pre>
+<div
+  className="rs"
+>
+  <pre>
+    {}
+  </pre>
+</div>
 `;

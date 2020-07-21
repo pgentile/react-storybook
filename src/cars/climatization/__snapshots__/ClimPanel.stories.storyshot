@@ -2,175 +2,179 @@
 
 exports[`Storyshots Cars | Climatization / ClimPanel Main 1`] = `
 <div
-  className="clim-panel"
+  className="rs"
 >
-  <button
-    className="clim-button"
-    onClick={[Function]}
+  <div
+    className="clim-panel"
   >
-    <div
-      className="clim-button__grid"
+    <button
+      className="clim-button"
+      onClick={[Function]}
     >
       <div
-        className="clim-button__top-led"
+        className="clim-button__grid"
       >
         <div
-          className="level-indicator "
+          className="clim-button__top-led"
         >
-          <span
-            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
-          />
+          <div
+            className="level-indicator "
+          >
+            <span
+              className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+            />
+          </div>
         </div>
-      </div>
-      <div
-        className="clim-button__title"
-      >
-        Seat temp.
-      </div>
-      <div
-        className="clim-button__bottom-led"
-      >
         <div
-          className="level-indicator "
+          className="clim-button__title"
         >
-          <span
-            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
-          />
+          Seat temp.
+        </div>
+        <div
+          className="clim-button__bottom-led"
+        >
+          <div
+            className="level-indicator "
+          >
+            <span
+              className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </button>
-  <button
-    className="clim-button"
-    onClick={[Function]}
-  >
-    <div
-      className="clim-button__grid"
+    </button>
+    <button
+      className="clim-button"
+      onClick={[Function]}
     >
       <div
-        className="clim-button__top-led"
+        className="clim-button__grid"
       >
         <div
-          className="led-indicator led-indicator--color-green led-indicator--size-large "
+          className="clim-button__top-led"
+        >
+          <div
+            className="led-indicator led-indicator--color-green led-indicator--size-large "
+          />
+        </div>
+        <div
+          className="clim-button__title"
+        >
+          Auto
+        </div>
+        <div
+          className="clim-button__bottom-led"
         />
       </div>
-      <div
-        className="clim-button__title"
-      >
-        Auto
-      </div>
-      <div
-        className="clim-button__bottom-led"
-      />
-    </div>
-  </button>
-  <button
-    className="clim-button"
-    onClick={[Function]}
-  >
-    <div
-      className="clim-button__grid"
+    </button>
+    <button
+      className="clim-button"
+      onClick={[Function]}
     >
       <div
-        className="clim-button__top-led"
+        className="clim-button__grid"
       >
         <div
-          className="led-indicator led-indicator--color-green led-indicator--size-large "
-        />
-      </div>
-      <div
-        className="clim-button__title"
-      >
-        Sync
-      </div>
-      <div
-        className="clim-button__bottom-led"
-      />
-    </div>
-  </button>
-  <button
-    className="clim-button"
-    onClick={[Function]}
-  >
-    <div
-      className="clim-button__grid"
-    >
-      <div
-        className="clim-button__top-led"
-      >
-        <div
-          className="led-indicator led-indicator--color-orange led-indicator--size-large "
-        />
-      </div>
-      <div
-        className="clim-button__title"
-      >
-        Windshield
-      </div>
-      <div
-        className="clim-button__bottom-led"
-      />
-    </div>
-  </button>
-  <button
-    className="clim-button"
-    onClick={[Function]}
-  >
-    <div
-      className="clim-button__grid"
-    >
-      <div
-        className="clim-button__top-led"
-      >
-        <div
-          className="level-indicator "
+          className="clim-button__top-led"
         >
-          <span
-            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+          <div
+            className="led-indicator led-indicator--color-green led-indicator--size-large "
           />
         </div>
+        <div
+          className="clim-button__title"
+        >
+          Sync
+        </div>
+        <div
+          className="clim-button__bottom-led"
+        />
       </div>
+    </button>
+    <button
+      className="clim-button"
+      onClick={[Function]}
+    >
       <div
-        className="clim-button__title"
-      >
-        Seat temp.
-      </div>
-      <div
-        className="clim-button__bottom-led"
+        className="clim-button__grid"
       >
         <div
-          className="level-indicator "
+          className="clim-button__top-led"
         >
-          <span
-            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
-          />
-          <span
-            className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+          <div
+            className="led-indicator led-indicator--color-orange led-indicator--size-large "
           />
         </div>
+        <div
+          className="clim-button__title"
+        >
+          Windshield
+        </div>
+        <div
+          className="clim-button__bottom-led"
+        />
       </div>
-    </div>
-  </button>
+    </button>
+    <button
+      className="clim-button"
+      onClick={[Function]}
+    >
+      <div
+        className="clim-button__grid"
+      >
+        <div
+          className="clim-button__top-led"
+        >
+          <div
+            className="level-indicator "
+          >
+            <span
+              className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-blue led-indicator--size-normal level-indicator__led"
+            />
+          </div>
+        </div>
+        <div
+          className="clim-button__title"
+        >
+          Seat temp.
+        </div>
+        <div
+          className="clim-button__bottom-led"
+        >
+          <div
+            className="level-indicator "
+          >
+            <span
+              className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+            />
+            <span
+              className="led-indicator led-indicator--color-red led-indicator--size-normal level-indicator__led"
+            />
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
 </div>
 `;

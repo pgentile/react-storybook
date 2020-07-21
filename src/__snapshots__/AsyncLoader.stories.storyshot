@@ -2,32 +2,40 @@
 
 exports[`Storyshots AsyncLoader Error Story 1`] = `
 <div
-  className="spinner"
+  className="rs"
 >
   <div
-    className="spinner__bounce"
-  />
-  <div
-    className="spinner__bounce"
-  />
-  <div
-    className="spinner__bounce"
-  />
+    className="spinner"
+  >
+    <div
+      className="spinner__bounce"
+    />
+    <div
+      className="spinner__bounce"
+    />
+    <div
+      className="spinner__bounce"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots AsyncLoader Success 1`] = `
 <div
-  className="spinner"
+  className="rs"
 >
   <div
-    className="spinner__bounce"
-  />
-  <div
-    className="spinner__bounce"
-  />
-  <div
-    className="spinner__bounce"
-  />
+    className="spinner"
+  >
+    <div
+      className="spinner__bounce"
+    />
+    <div
+      className="spinner__bounce"
+    />
+    <div
+      className="spinner__bounce"
+    />
+  </div>
 </div>
 `;

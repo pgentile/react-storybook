@@ -2,21 +2,25 @@
 
 exports[`Storyshots Hooks / ElapsedTime Main 1`] = `
 <div
-  className="elapsed-time"
+  className="rs"
 >
-  <p>
-    Il s'est écoulé 
-    <b>
-      0
-    </b>
-     secondes.
-  </p>
-  <p>
-    <button
-      onClick={[Function]}
-    >
-      Reset
-    </button>
-  </p>
+  <div
+    className="elapsed-time"
+  >
+    <p>
+      Il s'est écoulé 
+      <b>
+        0
+      </b>
+       secondes.
+    </p>
+    <p>
+      <button
+        onClick={[Function]}
+      >
+        Reset
+      </button>
+    </p>
+  </div>
 </div>
 `;

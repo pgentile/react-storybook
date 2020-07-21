@@ -1,0 +1,14 @@
+@import "./fonts";
+@import "./colors";
+
+.rs {
+  font-family: $main-font;
+  font-weight: 300;
+  color: $main-color;
+  font-size: 1rem;
+
+  b,
+  strong {
+    font-weight: 600;
+  }
+}

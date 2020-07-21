@@ -1,37 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Buttons / ManagedProgressButton Fail Story 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal progress-button "
-  disabled={false}
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="progress-button__content"
+  <button
+    aria-pressed={false}
+    className="button button--size-normal progress-button "
+    disabled={false}
+    onClick={[Function]}
   >
-    Click me
-  </div>
-  <div
-    className="progress-button__progress-bar"
-  />
-</button>
+    <div
+      className="progress-button__content"
+    >
+      Click me
+    </div>
+    <div
+      className="progress-button__progress-bar"
+    />
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / ManagedProgressButton Success Story 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal progress-button "
-  disabled={false}
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="progress-button__content"
+  <button
+    aria-pressed={false}
+    className="button button--size-normal progress-button "
+    disabled={false}
+    onClick={[Function]}
   >
-    Click me
-  </div>
-  <div
-    className="progress-button__progress-bar"
-  />
-</button>
+    <div
+      className="progress-button__content"
+    >
+      Click me
+    </div>
+    <div
+      className="progress-button__progress-bar"
+    />
+  </button>
+</div>
 `;

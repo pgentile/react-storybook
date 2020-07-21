@@ -1,216 +1,220 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
-<form
-  className="create-user-account-form"
-  noValidate={true}
-  onSubmit={[Function]}
+<div
+  className="rs"
 >
-  <div
-    className="form-field-container create-user-account-form__firstname"
+  <form
+    className="create-user-account-form"
+    noValidate={true}
+    onSubmit={[Function]}
   >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-70"
-    >
-      Prénom
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container create-user-account-form__firstname"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="given-name"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-70"
-        name="firstname"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-70"
+      >
+        Prénom
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="given-name"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-70"
+          name="firstname"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="form-field-container create-user-account-form__lastname"
-  >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-71"
-    >
-      Nom de famille
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container create-user-account-form__lastname"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="family-name"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-71"
-        name="lastname"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-71"
+      >
+        Nom de famille
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="family-name"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-71"
+          name="lastname"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="form-field-container create-user-account-form__birthdate"
-  >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-72"
-    >
-      Date de naissance
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container create-user-account-form__birthdate"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="bday"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-72"
-        name="birthdate"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-72"
+      >
+        Date de naissance
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="bday"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-72"
+          name="birthdate"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="form-field-container create-user-account-form__email"
-  >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-73"
-    >
-      Email
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container create-user-account-form__email"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="email"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-73"
-        name="email"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="email"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-73"
+      >
+        Email
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="email"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-73"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="email"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="form-field-container create-user-account-form__email-check"
-  >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-74"
-    >
-      Répétez l'email
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container create-user-account-form__email-check"
     >
-      <input
-        aria-invalid={false}
-        autoComplete="email"
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-74"
-        name="emailCheck"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="email"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-74"
+      >
+        Répétez l'email
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="email"
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-74"
+          name="emailCheck"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="email"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="form-field-container create-user-account-form__password"
-  >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-75"
-    >
-      Mot de passe
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container create-user-account-form__password"
     >
-      <input
-        aria-invalid={false}
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-75"
-        name="password"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="password"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-75"
+      >
+        Mot de passe
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-75"
+          name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="password"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="form-field-container create-user-account-form__password-check"
-  >
-    <label
-      className="label form-field-container__label"
-      htmlFor="form-field-76"
-    >
-      Répétez le mot de passe
-    </label>
     <div
-      className="form-field-container__field"
+      className="form-field-container create-user-account-form__password-check"
     >
-      <input
-        aria-invalid={false}
-        className="form-input-field "
-        disabled={false}
-        formNoValidate={true}
-        id="form-field-76"
-        name="passwordCheck"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="password"
-        value=""
-      />
+      <label
+        className="label form-field-container__label"
+        htmlFor="form-field-76"
+      >
+        Répétez le mot de passe
+      </label>
+      <div
+        className="form-field-container__field"
+      >
+        <input
+          aria-invalid={false}
+          className="form-input-field "
+          disabled={false}
+          formNoValidate={true}
+          id="form-field-76"
+          name="passwordCheck"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="password"
+          value=""
+        />
+      </div>
     </div>
-  </div>
-  <div
-    className="create-user-account-form__button"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-large "
-      disabled={false}
-      type="submit"
+    <div
+      className="create-user-account-form__button"
     >
-      Créer le compte utilisateur
-    </button>
-  </div>
-</form>
+      <button
+        aria-pressed={false}
+        className="button button--size-large "
+        disabled={false}
+        type="submit"
+      >
+        Créer le compte utilisateur
+      </button>
+    </div>
+  </form>
+</div>
 `;

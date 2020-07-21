@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots VisuallyHidden Main 1`] = `
-Array [
-  "Hey !",
+<div
+  className="rs"
+>
+  Hey !
   <span
     className="css-1am6aje"
   >
     Tu ne peux pas me voir
-  </span>,
-]
+  </span>
+</div>
 `;

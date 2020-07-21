@@ -2,24 +2,28 @@
 
 exports[`Storyshots CSS | StickyElement Main 1`] = `
 <div
-  className="sticky"
+  className="rs"
 >
-  Root element
   <div
-    className="sticky__container"
+    className="sticky"
   >
-    Container element start
+    Root element
     <div
-      className="sticky__element"
-      style={
-        Object {
-          "top": "0px",
-        }
-      }
+      className="sticky__container"
     >
-      This is the sticky element
+      Container element start
+      <div
+        className="sticky__element"
+        style={
+          Object {
+            "top": "0px",
+          }
+        }
+      >
+        This is the sticky element
+      </div>
+      Container element end
     </div>
-    Container element end
   </div>
 </div>
 `;

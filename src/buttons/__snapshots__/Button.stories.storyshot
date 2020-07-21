@@ -1,72 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Buttons / Button Taille large 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-large "
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  Mon bouton
-</button>
+  <button
+    aria-pressed={false}
+    className="button button--size-large "
+    onClick={[Function]}
+  >
+    Mon bouton
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / Button Taille normal 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal "
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  Mon bouton
-</button>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal "
+    onClick={[Function]}
+  >
+    Mon bouton
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / Button Taille small 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-small "
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  Mon bouton
-</button>
+  <button
+    aria-pressed={false}
+    className="button button--size-small "
+    onClick={[Function]}
+  >
+    Mon bouton
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / Button disabled 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal "
-  disabled={true}
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  Mon bouton
-</button>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal "
+    disabled={true}
+    onClick={[Function]}
+  >
+    Mon bouton
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / Button flat 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal button--flat "
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  Mon bouton
-</button>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal button--flat "
+    onClick={[Function]}
+  >
+    Mon bouton
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / Button main 1`] = `
-<button
-  aria-pressed={false}
-  className="button button--size-normal "
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  Mon bouton
-</button>
+  <button
+    aria-pressed={false}
+    className="button button--size-normal "
+    onClick={[Function]}
+  >
+    Mon bouton
+  </button>
+</div>
 `;
 
 exports[`Storyshots Buttons / Button toggled 1`] = `
-<button
-  aria-pressed={true}
-  className="button button--size-normal button--toggled "
-  onClick={[Function]}
+<div
+  className="rs"
 >
-  Mon bouton
-</button>
+  <button
+    aria-pressed={true}
+    className="button button--size-normal button--toggled "
+    onClick={[Function]}
+  >
+    Mon bouton
+  </button>
+</div>
 `;

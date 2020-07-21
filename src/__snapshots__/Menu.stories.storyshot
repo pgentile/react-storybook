@@ -1,56 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Menu Main 1`] = `
-<nav
-  className="menu "
+<div
+  className="rs"
 >
-  <ul
-    className="menu__list"
+  <nav
+    className="menu "
   >
-    <li
-      className="menu__item menu__item--active"
+    <ul
+      className="menu__list"
     >
-      <a
-        className="menu__link"
-        href="#"
-        onClick={[Function]}
+      <li
+        className="menu__item menu__item--active"
       >
-        Mes cartes enregistrées
-      </a>
-    </li>
-    <li
-      className="menu__item"
-    >
-      <a
-        className="menu__link"
-        href="#"
-        onClick={[Function]}
+        <a
+          className="menu__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Mes cartes enregistrées
+        </a>
+      </li>
+      <li
+        className="menu__item"
       >
-        Carte de paiement
-      </a>
-    </li>
-    <li
-      className="menu__item"
-    >
-      <a
-        className="menu__link"
-        href="#"
-        onClick={[Function]}
+        <a
+          className="menu__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Carte de paiement
+        </a>
+      </li>
+      <li
+        className="menu__item"
       >
-        Paypal
-      </a>
-    </li>
-    <li
-      className="menu__item"
-    >
-      <a
-        className="menu__link"
-        href="#"
-        onClick={[Function]}
+        <a
+          className="menu__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Paypal
+        </a>
+      </li>
+      <li
+        className="menu__item"
       >
-        Apple Pay
-      </a>
-    </li>
-  </ul>
-</nav>
+        <a
+          className="menu__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Apple Pay
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
 `;

@@ -2,43 +2,47 @@
 
 exports[`Storyshots Carousel Main 1`] = `
 <div
-  className="carousel "
+  className="rs"
 >
   <div
-    className="carousel__items-container"
-    style={
-      Object {
-        "left": "0%",
-        "width": "300%",
-      }
-    }
+    className="carousel "
   >
     <div
-      className="carousel__item"
+      className="carousel__items-container"
+      style={
+        Object {
+          "left": "0%",
+          "width": "300%",
+        }
+      }
     >
-      <p>
-        Item 1
-        <br />
-        Item 1, line 2
-      </p>
-    </div>
-    <div
-      className="carousel__item"
-    >
-      <p>
-        Item 2
-      </p>
-    </div>
-    <div
-      className="carousel__item"
-    >
-      <p>
-        Item 3
-        <br />
-        Item 3, line 2
-        <br />
-        Item 3, line 3
-      </p>
+      <div
+        className="carousel__item"
+      >
+        <p>
+          Item 1
+          <br />
+          Item 1, line 2
+        </p>
+      </div>
+      <div
+        className="carousel__item"
+      >
+        <p>
+          Item 2
+        </p>
+      </div>
+      <div
+        className="carousel__item"
+      >
+        <p>
+          Item 3
+          <br />
+          Item 3, line 2
+          <br />
+          Item 3, line 3
+        </p>
+      </div>
     </div>
   </div>
 </div>

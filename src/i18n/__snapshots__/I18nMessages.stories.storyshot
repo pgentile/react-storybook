@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots I18n | I18nMessages Main 1`] = `
-Array [
+<div
+  className="rs"
+>
   <form
     className="i18n-locale-selector"
     onSubmit={[Function]}
@@ -250,21 +252,21 @@ Array [
         </label>
       </li>
     </ul>
-  </form>,
+  </form>
   <p>
     Salut, 
     <em>
       Jean
     </em>
      !
-  </p>,
+  </p>
   <p>
     Salut, 
     <strong>
       Jean
     </strong>
      !
-  </p>,
+  </p>
   <p>
     Entrez vos 
     <strong>
@@ -278,13 +280,13 @@ Array [
     <strong>
       date de naissance
     </strong>
-  </p>,
+  </p>
   <p>
     Votre 
     <strong>
       voyage
     </strong>
-  </p>,
+  </p>
   <p>
     
             Votre 
@@ -299,7 +301,7 @@ Array [
     </strong>
     
           
-  </p>,
+  </p>
   <p>
     
             Il
@@ -311,7 +313,7 @@ Array [
             sera
             remis par courrier.
           
-  </p>,
+  </p>
   <p>
     
           En validant la page, vous acceptez nos
@@ -323,6 +325,6 @@ Array [
     </a>
     .
         
-  </p>,
-]
+  </p>
+</div>
 `;

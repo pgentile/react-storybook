@@ -1,12 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Vibrator Main 1`] = `
-<div>
-  <p>
-    Puis-je vibrer ? 
-    <b>
-      NON
-    </b>
-  </p>
+<div
+  className="rs"
+>
+  <div>
+    <p>
+      Puis-je vibrer ? 
+      <b>
+        NON
+      </b>
+    </p>
+  </div>
 </div>
 `;

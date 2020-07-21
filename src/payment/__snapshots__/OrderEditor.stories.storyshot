@@ -1,294 +1,377 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
-<section
-  className="order-editor"
+<div
+  className="rs"
 >
-  <h1
-    className="order-editor__title"
-  >
-    Récapitulatif
-  </h1>
   <section
-    className="css-1lo3bg0-Card order-summary"
+    className="order-editor"
   >
-    <ul
-      className="order-summary__details"
+    <h1
+      className="order-editor__title"
     >
-      <li
-        className="order-summary__item"
-      >
-        <span
-          className="order-summary__item-label"
-        >
-          Vos billets
-        </span>
-        <span
-          className="css-16hw484-Price order-summary__item-price"
-          data-price-currency="EUR"
-          data-price-value={109.8}
-        >
-          109
-          <span
-            className="css-8pvupu-Price"
-          >
-            , 
-            80
-             
-            €
-          </span>
-        </span>
-      </li>
-      <li
-        className="order-summary__item"
-      >
-        <span
-          className="order-summary__item-label"
-        >
-          Code promotion 
-          <b>
-            RADIN
-          </b>
-           appliqué
-        </span>
-        <a
-          className="order-summary__item-cancel"
-          href="#"
-          onClick={[Function]}
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
-            data-icon="trash-alt"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </a>
-        <span
-          className="css-16hw484-Price order-summary__item-price"
-          data-price-currency="EUR"
-          data-price-value={-2}
-        >
-          -2
-          <span
-            className="css-8pvupu-Price"
-          >
-             
-            €
-          </span>
-        </span>
-      </li>
-      <li
-        className="order-summary__item"
-      >
-        <span
-          className="order-summary__item-label"
-        >
-          Vos assurances
-        </span>
-        <a
-          className="order-summary__item-cancel"
-          href="#"
-          onClick={[Function]}
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
-            data-icon="trash-alt"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </a>
-        <span
-          className="css-16hw484-Price order-summary__item-price"
-          data-price-currency="EUR"
-          data-price-value={5.9}
-        >
-          5
-          <span
-            className="css-8pvupu-Price"
-          >
-            , 
-            90
-             
-            €
-          </span>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="order-summary__separator"
-    />
-    <p
-      className="order-summary__total"
+      Récapitulatif
+    </h1>
+    <section
+      className="css-1lo3bg0-Card order-summary"
     >
-      <span
-        className="order-summary__total-label"
+      <ul
+        className="order-summary__details"
       >
-        Total de votre commande
-      </span>
-      <span
-        className="css-16hw484-Price order-summary__total-price"
-        data-price-currency="EUR"
-        data-price-value={113.7}
-      >
-        113
-        <span
-          className="css-8pvupu-Price"
+        <li
+          className="order-summary__item"
         >
-          , 
-          70
-           
-          €
-        </span>
-      </span>
-    </p>
-  </section>
-  <section
-    className="css-ejsk1i-Card donation-proposal order-editor__donation"
-  >
-    <div
-      className="donation-proposal__content"
-    >
-      <div
-        className="donation-proposal__logo"
-      >
-        <img
-          alt="Logo URCT"
-          src="/static/mocks/images/payment/donation/urct-logo.svg"
-        />
-      </div>
-      <div
-        className="donation-proposal__punchline"
-      >
-        <h3>
-          Donner, c'est facile avec un rien c'est tout
-        </h3>
-        <p>
-          Je soutiens une cause qui me tient à cœur.
-           
+          <span
+            className="order-summary__item-label"
+          >
+            Vos billets
+          </span>
+          <span
+            className="css-1rn2cu4-Price order-summary__item-price"
+            data-price-currency="EUR"
+            data-price-value={109.8}
+          >
+            109
+            <span
+              className="css-8pvupu-Price"
+            >
+              , 
+              80
+               
+              €
+            </span>
+          </span>
+        </li>
+        <li
+          className="order-summary__item"
+        >
+          <span
+            className="order-summary__item-label"
+          >
+            Code promotion 
+            <b>
+              RADIN
+            </b>
+             appliqué
+          </span>
           <a
+            className="order-summary__item-cancel"
             href="#"
             onClick={[Function]}
           >
-            En savoir plus 
-            <span>
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
-                data-icon="angle-up"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash-alt fa-w-14 "
+              data-icon="trash-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                fill="currentColor"
                 style={Object {}}
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </span>
+              />
+            </svg>
           </a>
-        </p>
-      </div>
-    </div>
-    <p
-      className="donation-proposal__button"
-    >
-      <button
-        aria-pressed={false}
-        className="button button--size-small progress-button "
-        disabled={false}
-        onClick={[Function]}
-      >
-        <div
-          className="progress-button__content"
+          <span
+            className="css-1rn2cu4-Price order-summary__item-price"
+            data-price-currency="EUR"
+            data-price-value={-2}
+          >
+            -2
+            <span
+              className="css-8pvupu-Price"
+            >
+               
+              €
+            </span>
+          </span>
+        </li>
+        <li
+          className="order-summary__item"
         >
-          Donner 1 €
-        </div>
-        <div
-          className="progress-button__progress-bar"
-        />
-      </button>
-    </p>
-    <div
-      aria-hidden={true}
-      className="expandable"
+          <span
+            className="order-summary__item-label"
+          >
+            Vos assurances
+          </span>
+          <a
+            className="order-summary__item-cancel"
+            href="#"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash-alt fa-w-14 "
+              data-icon="trash-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+          <span
+            className="css-1rn2cu4-Price order-summary__item-price"
+            data-price-currency="EUR"
+            data-price-value={5.9}
+          >
+            5
+            <span
+              className="css-8pvupu-Price"
+            >
+              , 
+              90
+               
+              €
+            </span>
+          </span>
+        </li>
+      </ul>
+      <div
+        className="order-summary__separator"
+      />
+      <p
+        className="order-summary__total"
+      >
+        <span
+          className="order-summary__total-label"
+        >
+          Total de votre commande
+        </span>
+        <span
+          className="css-1rn2cu4-Price order-summary__total-price"
+          data-price-currency="EUR"
+          data-price-value={113.7}
+        >
+          113
+          <span
+            className="css-8pvupu-Price"
+          >
+            , 
+            70
+             
+            €
+          </span>
+        </span>
+      </p>
+    </section>
+    <section
+      className="css-ejsk1i-Card donation-proposal order-editor__donation"
     >
       <div
-        className="expandable__window"
+        className="donation-proposal__content"
       >
         <div
-          className="expandable__content"
+          className="donation-proposal__logo"
+        >
+          <img
+            alt="Logo URCT"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
+          />
+        </div>
+        <div
+          className="donation-proposal__punchline"
+        >
+          <h3>
+            Donner, c'est facile avec un rien c'est tout
+          </h3>
+          <p>
+            Je soutiens une cause qui me tient à cœur.
+             
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              En savoir plus 
+              <span>
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                  data-icon="angle-up"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <p
+        className="donation-proposal__button"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-small progress-button "
+          disabled={false}
+          onClick={[Function]}
         >
           <div
-            className="css-49qwc-ExpandableCard"
+            className="progress-button__content"
           >
-            <p
-              className="donation-proposal__more"
+            Donner 1 €
+          </div>
+          <div
+            className="progress-button__progress-bar"
+          />
+        </button>
+      </p>
+      <div
+        aria-hidden={true}
+        className="expandable"
+      >
+        <div
+          className="expandable__window"
+        >
+          <div
+            className="expandable__content"
+          >
+            <div
+              className="css-49qwc-ExpandableCard"
             >
-              En savoir plus sur URCT...
-            </p>
+              <p
+                className="donation-proposal__more"
+              >
+                En savoir plus sur URCT...
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
-</section>
+</div>
 `;
 
 exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
-<section
-  className="order-editor"
+<div
+  className="rs"
 >
-  <h1
-    className="order-editor__title"
-  >
-    Récapitulatif
-  </h1>
   <section
-    className="css-1lo3bg0-Card order-summary"
+    className="order-editor"
   >
-    <ul
-      className="order-summary__details"
+    <h1
+      className="order-editor__title"
     >
-      <li
-        className="order-summary__item"
+      Récapitulatif
+    </h1>
+    <section
+      className="css-1lo3bg0-Card order-summary"
+    >
+      <ul
+        className="order-summary__details"
+      >
+        <li
+          className="order-summary__item"
+        >
+          <span
+            className="order-summary__item-label"
+          >
+            Vos billets
+          </span>
+          <span
+            className="css-1rn2cu4-Price order-summary__item-price"
+            data-price-currency="EUR"
+            data-price-value={109.8}
+          >
+            109
+            <span
+              className="css-8pvupu-Price"
+            >
+              , 
+              80
+               
+              €
+            </span>
+          </span>
+        </li>
+        <li
+          className="order-summary__item"
+        >
+          <span
+            className="order-summary__item-label"
+          >
+            Votre don pour 
+            <b>
+              Médecins sans frontières
+            </b>
+          </span>
+          <a
+            className="order-summary__item-cancel"
+            href="#"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash-alt fa-w-14 "
+              data-icon="trash-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+          <span
+            className="css-1rn2cu4-Price order-summary__item-price"
+            data-price-currency="EUR"
+            data-price-value={1}
+          >
+            1
+            <span
+              className="css-8pvupu-Price"
+            >
+               
+              €
+            </span>
+          </span>
+        </li>
+      </ul>
+      <div
+        className="order-summary__separator"
+      />
+      <p
+        className="order-summary__total"
       >
         <span
-          className="order-summary__item-label"
+          className="order-summary__total-label"
         >
-          Vos billets
+          Total de votre commande
         </span>
         <span
-          className="css-16hw484-Price order-summary__item-price"
+          className="css-1rn2cu4-Price order-summary__total-price"
           data-price-currency="EUR"
-          data-price-value={109.8}
+          data-price-value={110.8}
         >
-          109
+          110
           <span
             className="css-8pvupu-Price"
           >
@@ -298,189 +381,340 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
             €
           </span>
         </span>
-      </li>
-      <li
-        className="order-summary__item"
-      >
-        <span
-          className="order-summary__item-label"
-        >
-          Votre don pour 
-          <b>
-            Médecins sans frontières
-          </b>
-        </span>
-        <a
-          className="order-summary__item-cancel"
-          href="#"
-          onClick={[Function]}
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
-            data-icon="trash-alt"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </a>
-        <span
-          className="css-16hw484-Price order-summary__item-price"
-          data-price-currency="EUR"
-          data-price-value={1}
-        >
-          1
-          <span
-            className="css-8pvupu-Price"
-          >
-             
-            €
-          </span>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="order-summary__separator"
-    />
-    <p
-      className="order-summary__total"
-    >
-      <span
-        className="order-summary__total-label"
-      >
-        Total de votre commande
-      </span>
-      <span
-        className="css-16hw484-Price order-summary__total-price"
-        data-price-currency="EUR"
-        data-price-value={110.8}
-      >
-        110
-        <span
-          className="css-8pvupu-Price"
-        >
-          , 
-          80
-           
-          €
-        </span>
-      </span>
-    </p>
-  </section>
-  <section
-    className="css-ejsk1i-Card insurance order-editor__insurance"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button--flat progress-button insurance__question"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <div
-        className="progress-button__content"
-      >
-        Assurez votre voyage, à partir de 
-        <span
-          className="css-16hw484-Price"
-          data-price-currency="EUR"
-          data-price-value={12.9}
-        >
-          12
-          <span
-            className="css-8pvupu-Price"
-          >
-            , 
-            90
-             
-            €
-          </span>
-        </span>
-      </div>
-      <div
-        className="progress-button__progress-bar"
-      />
-    </button>
-  </section>
-  <section
-    className="css-ejsk1i-Card voucher-container order-editor__voucher"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button--flat voucher-container__question"
-      onClick={[Function]}
-    >
-      Avez-vous un code promo ?
-    </button>
-  </section>
-  <section
-    className="css-ejsk1i-Card selected-donation order-editor__donation"
-  >
-    <p
-      className="selected-donation__thanks"
-    >
-      Vous avez choisi de faire un don à 
-      <b>
-        Médecins sans frontières
-      </b>
-      . Nous vous en remercions !
-    </p>
-    <p
-      className="selected-donation__cancel"
+      </p>
+    </section>
+    <section
+      className="css-ejsk1i-Card insurance order-editor__insurance"
     >
       <button
         aria-pressed={false}
-        className="button button--size-small progress-button "
+        className="button button--size-normal button--flat progress-button insurance__question"
         disabled={false}
         onClick={[Function]}
       >
         <div
           className="progress-button__content"
         >
-          Annuler mon don
+          Assurez votre voyage, à partir de 
+          <span
+            className="css-1rn2cu4-Price"
+            data-price-currency="EUR"
+            data-price-value={12.9}
+          >
+            12
+            <span
+              className="css-8pvupu-Price"
+            >
+              , 
+              90
+               
+              €
+            </span>
+          </span>
         </div>
         <div
           className="progress-button__progress-bar"
         />
       </button>
-    </p>
+    </section>
+    <section
+      className="css-ejsk1i-Card voucher-container order-editor__voucher"
+    >
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button--flat voucher-container__question"
+        onClick={[Function]}
+      >
+        Avez-vous un code promo ?
+      </button>
+    </section>
+    <section
+      className="css-ejsk1i-Card selected-donation order-editor__donation"
+    >
+      <p
+        className="selected-donation__thanks"
+      >
+        Vous avez choisi de faire un don à 
+        <b>
+          Médecins sans frontières
+        </b>
+        . Nous vous en remercions !
+      </p>
+      <p
+        className="selected-donation__cancel"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-small progress-button "
+          disabled={false}
+          onClick={[Function]}
+        >
+          <div
+            className="progress-button__content"
+          >
+            Annuler mon don
+          </div>
+          <div
+            className="progress-button__progress-bar"
+          />
+        </button>
+      </p>
+    </section>
   </section>
-</section>
+</div>
 `;
 
 exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
-<section
-  className="order-editor"
+<div
+  className="rs"
 >
-  <h1
-    className="order-editor__title"
-  >
-    Récapitulatif
-  </h1>
   <section
-    className="css-1lo3bg0-Card order-summary"
+    className="order-editor"
   >
-    <ul
-      className="order-summary__details"
+    <h1
+      className="order-editor__title"
     >
-      <li
-        className="order-summary__item"
+      Récapitulatif
+    </h1>
+    <section
+      className="css-1lo3bg0-Card order-summary"
+    >
+      <ul
+        className="order-summary__details"
+      >
+        <li
+          className="order-summary__item"
+        >
+          <span
+            className="order-summary__item-label"
+          >
+            Vos billets
+          </span>
+          <span
+            className="css-1rn2cu4-Price order-summary__item-price"
+            data-price-currency="EUR"
+            data-price-value={109.8}
+          >
+            109
+            <span
+              className="css-8pvupu-Price"
+            >
+              , 
+              80
+               
+              €
+            </span>
+          </span>
+        </li>
+        <li
+          className="order-summary__item"
+        >
+          <span
+            className="order-summary__item-label"
+          >
+            Vos assurances
+          </span>
+          <a
+            className="order-summary__item-cancel"
+            href="#"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash-alt fa-w-14 "
+              data-icon="trash-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+          <span
+            className="css-1rn2cu4-Price order-summary__item-price"
+            data-price-currency="EUR"
+            data-price-value={5.9}
+          >
+            5
+            <span
+              className="css-8pvupu-Price"
+            >
+              , 
+              90
+               
+              €
+            </span>
+          </span>
+        </li>
+      </ul>
+      <div
+        className="order-summary__separator"
+      />
+      <p
+        className="order-summary__total"
       >
         <span
-          className="order-summary__item-label"
+          className="order-summary__total-label"
         >
-          Vos billets
+          Total de votre commande
         </span>
         <span
-          className="css-16hw484-Price order-summary__item-price"
+          className="css-1rn2cu4-Price order-summary__total-price"
+          data-price-currency="EUR"
+          data-price-value={115.7}
+        >
+          115
+          <span
+            className="css-8pvupu-Price"
+          >
+            , 
+            70
+             
+            €
+          </span>
+        </span>
+      </p>
+    </section>
+    <section
+      className="css-ejsk1i-Card voucher-container order-editor__voucher"
+    >
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button--flat voucher-container__question"
+        onClick={[Function]}
+      >
+        Avez-vous un code promo ?
+      </button>
+    </section>
+    <section
+      className="css-ejsk1i-Card donation-proposal order-editor__donation"
+    >
+      <div
+        className="donation-proposal__content"
+      >
+        <div
+          className="donation-proposal__logo"
+        >
+          <img
+            alt="Logo URCT"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
+          />
+        </div>
+        <div
+          className="donation-proposal__punchline"
+        >
+          <h3>
+            Donner, c'est facile avec un rien c'est tout
+          </h3>
+          <p>
+            Je soutiens une cause qui me tient à cœur.
+             
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              En savoir plus 
+              <span>
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                  data-icon="angle-up"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <p
+        className="donation-proposal__button"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-small progress-button "
+          disabled={false}
+          onClick={[Function]}
+        >
+          <div
+            className="progress-button__content"
+          >
+            Donner 1 €
+          </div>
+          <div
+            className="progress-button__progress-bar"
+          />
+        </button>
+      </p>
+      <div
+        aria-hidden={true}
+        className="expandable"
+      >
+        <div
+          className="expandable__window"
+        >
+          <div
+            className="expandable__content"
+          >
+            <div
+              className="css-49qwc-ExpandableCard"
+            >
+              <p
+                className="donation-proposal__more"
+              >
+                En savoir plus sur URCT...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
+<div
+  className="rs"
+>
+  <section
+    className="order-editor"
+  >
+    <h1
+      className="order-editor__title"
+    >
+      Récapitulatif
+    </h1>
+    <section
+      className="css-1lo3bg0-Card order-summary"
+    >
+      <p
+        className="order-summary__total"
+      >
+        <span
+          className="order-summary__total-label"
+        >
+          Total de votre commande
+        </span>
+        <span
+          className="css-1rn2cu4-Price order-summary__total-price"
           data-price-currency="EUR"
           data-price-value={109.8}
         >
@@ -494,364 +728,146 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
             €
           </span>
         </span>
-      </li>
-      <li
-        className="order-summary__item"
+      </p>
+    </section>
+    <section
+      className="css-ejsk1i-Card insurance order-editor__insurance"
+    >
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button--flat progress-button insurance__question"
+        disabled={false}
+        onClick={[Function]}
       >
-        <span
-          className="order-summary__item-label"
+        <div
+          className="progress-button__content"
         >
-          Vos assurances
-        </span>
-        <a
-          className="order-summary__item-cancel"
-          href="#"
+          Assurez votre voyage, à partir de 
+          <span
+            className="css-1rn2cu4-Price"
+            data-price-currency="EUR"
+            data-price-value={12.9}
+          >
+            12
+            <span
+              className="css-8pvupu-Price"
+            >
+              , 
+              90
+               
+              €
+            </span>
+          </span>
+        </div>
+        <div
+          className="progress-button__progress-bar"
+        />
+      </button>
+    </section>
+    <section
+      className="css-ejsk1i-Card voucher-container order-editor__voucher"
+    >
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button--flat voucher-container__question"
+        onClick={[Function]}
+      >
+        Avez-vous un code promo ?
+      </button>
+    </section>
+    <section
+      className="css-ejsk1i-Card donation-proposal order-editor__donation"
+    >
+      <div
+        className="donation-proposal__content"
+      >
+        <div
+          className="donation-proposal__logo"
+        >
+          <img
+            alt="Logo URCT"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
+          />
+        </div>
+        <div
+          className="donation-proposal__punchline"
+        >
+          <h3>
+            Donner, c'est facile avec un rien c'est tout
+          </h3>
+          <p>
+            Je soutiens une cause qui me tient à cœur.
+             
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              En savoir plus 
+              <span>
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                  data-icon="angle-up"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <p
+        className="donation-proposal__button"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-small progress-button "
+          disabled={false}
           onClick={[Function]}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-trash-alt fa-w-14 "
-            data-icon="trash-alt"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="progress-button__content"
           >
-            <path
-              d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </a>
-        <span
-          className="css-16hw484-Price order-summary__item-price"
-          data-price-currency="EUR"
-          data-price-value={5.9}
-        >
-          5
-          <span
-            className="css-8pvupu-Price"
-          >
-            , 
-            90
-             
-            €
-          </span>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="order-summary__separator"
-    />
-    <p
-      className="order-summary__total"
-    >
-      <span
-        className="order-summary__total-label"
-      >
-        Total de votre commande
-      </span>
-      <span
-        className="css-16hw484-Price order-summary__total-price"
-        data-price-currency="EUR"
-        data-price-value={115.7}
-      >
-        115
-        <span
-          className="css-8pvupu-Price"
-        >
-          , 
-          70
-           
-          €
-        </span>
-      </span>
-    </p>
-  </section>
-  <section
-    className="css-ejsk1i-Card voucher-container order-editor__voucher"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button--flat voucher-container__question"
-      onClick={[Function]}
-    >
-      Avez-vous un code promo ?
-    </button>
-  </section>
-  <section
-    className="css-ejsk1i-Card donation-proposal order-editor__donation"
-  >
-    <div
-      className="donation-proposal__content"
-    >
+            Donner 1 €
+          </div>
+          <div
+            className="progress-button__progress-bar"
+          />
+        </button>
+      </p>
       <div
-        className="donation-proposal__logo"
-      >
-        <img
-          alt="Logo URCT"
-          src="/static/mocks/images/payment/donation/urct-logo.svg"
-        />
-      </div>
-      <div
-        className="donation-proposal__punchline"
-      >
-        <h3>
-          Donner, c'est facile avec un rien c'est tout
-        </h3>
-        <p>
-          Je soutiens une cause qui me tient à cœur.
-           
-          <a
-            href="#"
-            onClick={[Function]}
-          >
-            En savoir plus 
-            <span>
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
-                data-icon="angle-up"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </span>
-          </a>
-        </p>
-      </div>
-    </div>
-    <p
-      className="donation-proposal__button"
-    >
-      <button
-        aria-pressed={false}
-        className="button button--size-small progress-button "
-        disabled={false}
-        onClick={[Function]}
+        aria-hidden={true}
+        className="expandable"
       >
         <div
-          className="progress-button__content"
-        >
-          Donner 1 €
-        </div>
-        <div
-          className="progress-button__progress-bar"
-        />
-      </button>
-    </p>
-    <div
-      aria-hidden={true}
-      className="expandable"
-    >
-      <div
-        className="expandable__window"
-      >
-        <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="css-49qwc-ExpandableCard"
+            className="expandable__content"
           >
-            <p
-              className="donation-proposal__more"
+            <div
+              className="css-49qwc-ExpandableCard"
             >
-              En savoir plus sur URCT...
-            </p>
+              <p
+                className="donation-proposal__more"
+              >
+                En savoir plus sur URCT...
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
-</section>
-`;
-
-exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
-<section
-  className="order-editor"
->
-  <h1
-    className="order-editor__title"
-  >
-    Récapitulatif
-  </h1>
-  <section
-    className="css-1lo3bg0-Card order-summary"
-  >
-    <p
-      className="order-summary__total"
-    >
-      <span
-        className="order-summary__total-label"
-      >
-        Total de votre commande
-      </span>
-      <span
-        className="css-16hw484-Price order-summary__total-price"
-        data-price-currency="EUR"
-        data-price-value={109.8}
-      >
-        109
-        <span
-          className="css-8pvupu-Price"
-        >
-          , 
-          80
-           
-          €
-        </span>
-      </span>
-    </p>
-  </section>
-  <section
-    className="css-ejsk1i-Card insurance order-editor__insurance"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button--flat progress-button insurance__question"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <div
-        className="progress-button__content"
-      >
-        Assurez votre voyage, à partir de 
-        <span
-          className="css-16hw484-Price"
-          data-price-currency="EUR"
-          data-price-value={12.9}
-        >
-          12
-          <span
-            className="css-8pvupu-Price"
-          >
-            , 
-            90
-             
-            €
-          </span>
-        </span>
-      </div>
-      <div
-        className="progress-button__progress-bar"
-      />
-    </button>
-  </section>
-  <section
-    className="css-ejsk1i-Card voucher-container order-editor__voucher"
-  >
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button--flat voucher-container__question"
-      onClick={[Function]}
-    >
-      Avez-vous un code promo ?
-    </button>
-  </section>
-  <section
-    className="css-ejsk1i-Card donation-proposal order-editor__donation"
-  >
-    <div
-      className="donation-proposal__content"
-    >
-      <div
-        className="donation-proposal__logo"
-      >
-        <img
-          alt="Logo URCT"
-          src="/static/mocks/images/payment/donation/urct-logo.svg"
-        />
-      </div>
-      <div
-        className="donation-proposal__punchline"
-      >
-        <h3>
-          Donner, c'est facile avec un rien c'est tout
-        </h3>
-        <p>
-          Je soutiens une cause qui me tient à cœur.
-           
-          <a
-            href="#"
-            onClick={[Function]}
-          >
-            En savoir plus 
-            <span>
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
-                data-icon="angle-up"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </span>
-          </a>
-        </p>
-      </div>
-    </div>
-    <p
-      className="donation-proposal__button"
-    >
-      <button
-        aria-pressed={false}
-        className="button button--size-small progress-button "
-        disabled={false}
-        onClick={[Function]}
-      >
-        <div
-          className="progress-button__content"
-        >
-          Donner 1 €
-        </div>
-        <div
-          className="progress-button__progress-bar"
-        />
-      </button>
-    </p>
-    <div
-      aria-hidden={true}
-      className="expandable"
-    >
-      <div
-        className="expandable__window"
-      >
-        <div
-          className="expandable__content"
-        >
-          <div
-            className="css-49qwc-ExpandableCard"
-          >
-            <p
-              className="donation-proposal__more"
-            >
-              En savoir plus sur URCT...
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</section>
+</div>
 `;

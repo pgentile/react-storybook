@@ -2,25 +2,29 @@
 
 exports[`Storyshots ResizableBlock Main 1`] = `
 <div
-  style={
-    Object {
-      "maxWidth": "1000px",
-    }
-  }
+  className="rs"
 >
-  <div>
-    <div
-      style={
-        Object {
-          "border": "2px dotted red",
-          "padding": "10px",
-        }
+  <div
+    style={
+      Object {
+        "maxWidth": "1000px",
       }
-    >
-      Breakpoint: 
-      <b>
-        S
-      </b>
+    }
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "border": "2px dotted red",
+            "padding": "10px",
+          }
+        }
+      >
+        Breakpoint: 
+        <b>
+          S
+        </b>
+      </div>
     </div>
   </div>
 </div>

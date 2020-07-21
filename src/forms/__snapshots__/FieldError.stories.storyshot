@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Forms / FieldError Main 1`] = `
-<p
-  className="field-error "
+<div
+  className="rs"
 >
-  Quelle belle erreur
-</p>
+  <p
+    className="field-error "
+  >
+    Quelle belle erreur
+  </p>
+</div>
 `;
