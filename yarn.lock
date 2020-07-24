@@ -5346,10 +5346,15 @@ create-react-context@0.3.0, create-react-context@^0.3.0:
     gud "^1.0.0"
     warning "^4.0.3"
 
-credit-card-type@^8.0.0, credit-card-type@^8.1.0:
+credit-card-type@^8.0.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-8.3.0.tgz#f93c187c9362411544158c91d552efcc443aa87a"
   integrity sha512-czfZUpQ7W9CDxZL4yFLb1kFtM/q2lTOY975hL2aO+DC8+GRNDVSXVCHXhVFZPxiUKmQCZbFP8vIhxx5TBQaThw==
+
+credit-card-type@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-9.0.1.tgz#b800ae4089ece5e9362626ff1bb44fb3bb8757ed"
+  integrity sha512-GtJr+IyIUN67fRXJGIFTw192kgAAneqZ0DDpKKM78Nh32jwfcuTVzJRe3xioECPZybiKHGIHGsbXg//Hu6PKSQ==
 
 cross-env@^7.0.2:
   version "7.0.2"
