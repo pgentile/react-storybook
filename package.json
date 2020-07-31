@@ -97,7 +97,7 @@
     "@storybook/react": "^5.3.19",
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.0.4",
