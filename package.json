@@ -51,7 +51,7 @@
     "libphonenumber-js": "^1.7.55",
     "lodash-es": "^4.17.8",
     "makecancelable": "^1.1.1",
-    "md5": "^2.2.1",
+    "md5": "^2.3.0",
     "memoize-one": "^5.0.0",
     "polished": "^3.6.5",
     "pretty": "^2.0.0",
