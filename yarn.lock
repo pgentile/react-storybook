@@ -2612,13 +2612,6 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.45.tgz#e9387572998e5ecdac221950dab3e8c3b16af884"
   integrity sha512-jnqIUKDUqJbDIUxm0Uj7bnlMnRm1T/eZ9N+AVMqhPgzrba2GhGG5o/jCTwmdPK709nEZsGoMzXEDUjcXHa3W0g==
 
-"@types/fs-extra@^9.0.1":
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.1.tgz#91c8fc4c51f6d5dbe44c2ca9ab09310bd00c7918"
-  integrity sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
-  dependencies:
-    "@types/node" "*"
-
 "@types/glob-base@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@types/glob-base/-/glob-base-0.3.0.tgz#a581d688347e10e50dd7c17d6f2880a10354319d"
@@ -3949,19 +3942,17 @@ babel-plugin-react-docgen@^4.1.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@^7.9.4:
-  version "7.9.4"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.9.4.tgz#1fc9ab50470d41b934df50d8f436578ee1732cb0"
-  integrity sha512-cMKrHEXrw43yT4M89Wbgq8A8N8lffSquj1Piwov/HVukR7jwOw8gf9btXNsQhT27ccyqEwy+M286JQYy0jby2g==
+babel-plugin-react-intl@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.0.0.tgz#39eb73ec5c95d9f438ef76622df6838c686418f3"
+  integrity sha512-KxNDDvZPXDN+EHRIb56l05pVoV0rzbFZY2UXABtUoIt+2tdG5r9gohWfV1VMueb3ockXf/AckpyhbfPMvqSdJg==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
     "@formatjs/ts-transformer" "^2.6.0"
     "@types/babel__core" "^7.1.7"
-    "@types/fs-extra" "^9.0.1"
     "@types/schema-utils" "^2.4.0"
-    fs-extra "^9.0.0"
     intl-messageformat-parser "^5.3.7"
     schema-utils "^2.6.6"
 
