@@ -2537,16 +2537,16 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/react@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.0.0.tgz#ca104e10c2fc5b61edfeaf61c69fb96e114423b5"
-  integrity sha512-azHI7GiQHqQUOqE+VACOWLdJorl4k3LKwxx8e2A7fL45mgV3fIW53NubxLnPbVDTtRxRzP+EJhg3+9ahokfdIw==
+"@storybook/react@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.0.2.tgz#150dff1d89e2b4910b0f2c07b324f39eb0dfa3d2"
+  integrity sha512-brG7ApoEH+DUxwm/WSaynJEYhdBrFmBvglbaKi1CZFUamkN173HeSXqSpZPmquPdQU3JxG3Y+0f90vfTF2KnJw==
   dependencies:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
-    "@storybook/addons" "6.0.0"
-    "@storybook/core" "6.0.0"
-    "@storybook/node-logger" "6.0.0"
+    "@storybook/addons" "6.0.2"
+    "@storybook/core" "6.0.2"
+    "@storybook/node-logger" "6.0.2"
     "@storybook/semver" "^7.3.2"
     "@svgr/webpack" "^5.4.0"
     "@types/webpack-env" "^1.15.2"
