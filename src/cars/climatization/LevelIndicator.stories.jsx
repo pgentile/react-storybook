@@ -3,7 +3,7 @@ import React from "react";
 import LevelIndicator from "./LevelIndicator";
 
 export default {
-  title: "Cars | Core / LevelIndicator",
+  title: "Cars / Core / LevelIndicator",
   component: LevelIndicator,
 };
 

@@ -24,7 +24,7 @@ const initialPassengers = [
 ];
 
 export default {
-  title: "Booking form | BookingPassengers",
+  title: "Booking form / BookingPassengers",
   component: BookingPassengers,
 };
 

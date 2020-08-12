@@ -60,7 +60,7 @@ const donationItem = {
 };
 
 export default {
-  title: "Payment | OrderSummary",
+  title: "Payment / OrderSummary",
   component: OrderSummary,
 };
 

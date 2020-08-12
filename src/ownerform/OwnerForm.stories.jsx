@@ -3,7 +3,7 @@ import React from "react";
 import OwnerForm from "./OwnerForm";
 
 export default {
-  title: "OwnerForm | OwnerForm",
+  title: "OwnerForm / OwnerForm",
   component: OwnerForm,
 };
 

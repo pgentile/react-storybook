@@ -6,7 +6,7 @@ import { createDefaultStore } from "../redux/store";
 import { TICKET_TYPE, loadItems } from "../redux/reducers/order";
 
 export default {
-  title: "Payment | OrderEditorConnected",
+  title: "Payment / OrderEditorConnected",
   component: OrderEditorConnected,
   decorators: [
     (story) => {

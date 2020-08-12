@@ -7,7 +7,7 @@ const defaultParams = {
 };
 
 export default {
-  title: "Booking form | BookingPassenger",
+  title: "Booking form / BookingPassenger",
   component: BookingPassenger,
 };
 

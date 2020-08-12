@@ -3,7 +3,7 @@ import React from "react";
 import MicroFrontend from "./MicroFrontend";
 
 export default {
-  title: "MicroFrontend | MicroFrontend",
+  title: "MicroFrontend / MicroFrontend",
   component: MicroFrontend,
   storyshots: false,
 };

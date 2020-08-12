@@ -10,7 +10,7 @@ const actions = {
 };
 
 export default {
-  title: "Payment | VoucherForm",
+  title: "Payment / VoucherForm",
   component: VoucherForm,
 };
 

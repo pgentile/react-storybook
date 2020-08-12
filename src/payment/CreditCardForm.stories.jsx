@@ -12,7 +12,7 @@ const actions = {
 };
 
 export default {
-  title: "Payment | CreditCardForm",
+  title: "Payment / CreditCardForm",
   component: CreditCardForm,
 };
 

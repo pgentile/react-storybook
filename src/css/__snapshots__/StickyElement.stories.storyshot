@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots CSS | StickyElement Main 1`] = `
+exports[`Storyshots CSS / StickyElement Main 1`] = `
 <div
   className="rs"
 >

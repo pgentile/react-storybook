@@ -4,7 +4,7 @@ import { withKnobs, number } from "@storybook/addon-knobs";
 import StickyElement from "./StickyElement";
 
 export default {
-  title: "CSS | StickyElement",
+  title: "CSS / StickyElement",
   component: StickyElement,
   decorators: [withKnobs],
 };

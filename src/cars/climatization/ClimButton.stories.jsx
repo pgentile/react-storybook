@@ -3,7 +3,7 @@ import React from "react";
 import ClimButton from "./ClimButton";
 
 export default {
-  title: "Cars | Climatization / ClimButton",
+  title: "Cars / Climatization / ClimButton",
   component: ClimButton,
 };
 

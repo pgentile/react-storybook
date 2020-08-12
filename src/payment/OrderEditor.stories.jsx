@@ -63,7 +63,7 @@ const onActions = {
 };
 
 export default {
-  title: "Payment | OrderEditor",
+  title: "Payment / OrderEditor",
   component: OrderEditor,
 };
 

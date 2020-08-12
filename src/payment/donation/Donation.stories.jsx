@@ -9,7 +9,7 @@ const actions = {
 };
 
 export default {
-  title: "Payment | Donation / Donation",
+  title: "Payment / Donation / Donation",
   component: Donation,
 };
 

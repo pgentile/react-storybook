@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Cars | Core / LedIndicator Blink 1`] = `
+exports[`Storyshots Cars / Core / LedIndicator Blink 1`] = `
 <div
   className="rs"
 >
@@ -10,7 +10,7 @@ exports[`Storyshots Cars | Core / LedIndicator Blink 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator Enabled 1`] = `
+exports[`Storyshots Cars / Core / LedIndicator Enabled 1`] = `
 <div
   className="rs"
 >
@@ -20,7 +20,7 @@ exports[`Storyshots Cars | Core / LedIndicator Enabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator Green 1`] = `
+exports[`Storyshots Cars / Core / LedIndicator Green 1`] = `
 <div
   className="rs"
 >
@@ -30,7 +30,7 @@ exports[`Storyshots Cars | Core / LedIndicator Green 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator Large 1`] = `
+exports[`Storyshots Cars / Core / LedIndicator Large 1`] = `
 <div
   className="rs"
 >
@@ -40,7 +40,7 @@ exports[`Storyshots Cars | Core / LedIndicator Large 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator Main 1`] = `
+exports[`Storyshots Cars / Core / LedIndicator Main 1`] = `
 <div
   className="rs"
 >
@@ -50,7 +50,7 @@ exports[`Storyshots Cars | Core / LedIndicator Main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LedIndicator Normal 1`] = `
+exports[`Storyshots Cars / Core / LedIndicator Normal 1`] = `
 <div
   className="rs"
 >

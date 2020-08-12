@@ -3,7 +3,7 @@ import React from "react";
 import ClimPanel from "./ClimPanel";
 
 export default {
-  title: "Cars | Climatization / ClimPanel",
+  title: "Cars / Climatization / ClimPanel",
   component: ClimPanel,
 };
 

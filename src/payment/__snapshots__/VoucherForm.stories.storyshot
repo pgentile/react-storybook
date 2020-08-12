@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Payment | VoucherForm Initial Code 1`] = `
+exports[`Storyshots Payment / VoucherForm Initial Code 1`] = `
 <div
   className="rs"
 >
@@ -74,7 +74,7 @@ exports[`Storyshots Payment | VoucherForm Initial Code 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | VoucherForm Main 1`] = `
+exports[`Storyshots Payment / VoucherForm Main 1`] = `
 <div
   className="rs"
 >
@@ -148,7 +148,7 @@ exports[`Storyshots Payment | VoucherForm Main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | VoucherForm Submit Error 1`] = `
+exports[`Storyshots Payment / VoucherForm Submit Error 1`] = `
 <div
   className="rs"
 >
@@ -222,7 +222,7 @@ exports[`Storyshots Payment | VoucherForm Submit Error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | VoucherForm Submit Success 1`] = `
+exports[`Storyshots Payment / VoucherForm Submit Success 1`] = `
 <div
   className="rs"
 >

@@ -3,7 +3,7 @@ import React from "react";
 import HeatedSeatButton from "./HeatedSeatButton";
 
 export default {
-  title: "Cars | Climatization / HeatedSeatButton",
+  title: "Cars / Climatization / HeatedSeatButton",
   component: HeatedSeatButton,
 };
 

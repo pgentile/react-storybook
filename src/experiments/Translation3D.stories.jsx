@@ -4,7 +4,7 @@ import { withKnobs, number } from "@storybook/addon-knobs";
 import Translation3D from "./Translation3D";
 
 export default {
-  title: "Experiments | Translation3D",
+  title: "Experiments / Translation3D",
   component: Translation3D,
   decorators: [withKnobs],
 };

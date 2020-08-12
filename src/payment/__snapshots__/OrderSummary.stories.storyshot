@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
+exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
 <div
   className="rs"
 >
@@ -158,7 +158,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Code Promo 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
+exports[`Storyshots Payment / OrderSummary Avec Un Don 1`] = `
 <div
   className="rs"
 >
@@ -269,7 +269,7 @@ exports[`Storyshots Payment | OrderSummary Avec Un Don 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
+exports[`Storyshots Payment / OrderSummary Billets Assurances 1`] = `
 <div
   className="rs"
 >
@@ -382,7 +382,7 @@ exports[`Storyshots Payment | OrderSummary Billets Assurances 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
+exports[`Storyshots Payment / OrderSummary Billets Uniquement 1`] = `
 <div
   className="rs"
 >
@@ -417,7 +417,7 @@ exports[`Storyshots Payment | OrderSummary Billets Uniquement 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
+exports[`Storyshots Payment / OrderSummary Cartes Uniquement 1`] = `
 <div
   className="rs"
 >
@@ -452,7 +452,7 @@ exports[`Storyshots Payment | OrderSummary Cartes Uniquement 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderSummary Tous Les Types 1`] = `
+exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
 <div
   className="rs"
 >

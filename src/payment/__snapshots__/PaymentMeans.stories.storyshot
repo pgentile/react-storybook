@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Payment | PaymentMeans Disabled Story 1`] = `
+exports[`Storyshots Payment / PaymentMeans Disabled Story 1`] = `
 <div
   className="rs"
 >
@@ -163,7 +163,7 @@ exports[`Storyshots Payment | PaymentMeans Disabled Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | PaymentMeans Main 1`] = `
+exports[`Storyshots Payment / PaymentMeans Main 1`] = `
 <div
   className="rs"
 >
@@ -318,7 +318,7 @@ exports[`Storyshots Payment | PaymentMeans Main 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | PaymentMeans Selected 1`] = `
+exports[`Storyshots Payment / PaymentMeans Selected 1`] = `
 <div
   className="rs"
 >

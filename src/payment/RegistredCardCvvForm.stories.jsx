@@ -14,7 +14,7 @@ const totalPrice = {
   currency: "EUR",
 };
 
-const stories = storiesOf("Payment | RegistredCardCvvForm", module);
+const stories = storiesOf("Payment / RegistredCardCvvForm", module);
 
 ["visa", "mastercard", "american-express", "maestro"].forEach((brand) => {
   stories.add(brand, () => {

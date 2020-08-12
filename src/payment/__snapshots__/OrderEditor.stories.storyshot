@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
+exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
 <div
   className="rs"
 >
@@ -264,7 +264,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Code Promo 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
+exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
 <div
   className="rs"
 >
@@ -464,7 +464,7 @@ exports[`Storyshots Payment | OrderEditor Avec Un Don 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
+exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
 <div
   className="rs"
 >
@@ -690,7 +690,7 @@ exports[`Storyshots Payment | OrderEditor Billets Assurances 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | OrderEditor Billets Uniquement 1`] = `
+exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
 <div
   className="rs"
 >

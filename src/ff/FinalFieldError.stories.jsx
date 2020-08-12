@@ -7,7 +7,7 @@ import FinalFieldContainer from "./FinalFieldContainer";
 import sleep from "../utils/sleep";
 
 export default {
-  title: "Final Forms components | FinalFieldError",
+  title: "Final Forms components / FinalFieldError",
   component: FinalFieldError,
 };
 

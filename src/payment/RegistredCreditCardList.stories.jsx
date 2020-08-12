@@ -36,7 +36,7 @@ const totalPrice = {
 };
 
 export default {
-  title: "Payment | RegistredCreditCardList",
+  title: "Payment / RegistredCreditCardList",
   component: RegistredCreditCardList,
 };
 

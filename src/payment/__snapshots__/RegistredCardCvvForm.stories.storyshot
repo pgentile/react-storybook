@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
+exports[`Storyshots Payment / RegistredCardCvvForm american-express 1`] = `
 <div
   className="rs"
 >
@@ -78,7 +78,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm american-express 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
+exports[`Storyshots Payment / RegistredCardCvvForm disabled 1`] = `
 <div
   className="rs"
 >
@@ -156,7 +156,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
+exports[`Storyshots Payment / RegistredCardCvvForm maestro 1`] = `
 <div
   className="rs"
 >
@@ -244,7 +244,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm maestro 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
+exports[`Storyshots Payment / RegistredCardCvvForm mastercard 1`] = `
 <div
   className="rs"
 >
@@ -322,7 +322,7 @@ exports[`Storyshots Payment | RegistredCardCvvForm mastercard 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCardCvvForm visa 1`] = `
+exports[`Storyshots Payment / RegistredCardCvvForm visa 1`] = `
 <div
   className="rs"
 >

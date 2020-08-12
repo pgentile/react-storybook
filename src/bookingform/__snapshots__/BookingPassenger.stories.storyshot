@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Booking form | BookingPassenger Base 1`] = `
+exports[`Storyshots Booking form / BookingPassenger Base 1`] = `
 <div
   className="rs"
 >
@@ -49,7 +49,7 @@ exports[`Storyshots Booking form | BookingPassenger Base 1`] = `
 </div>
 `;
 
-exports[`Storyshots Booking form | BookingPassenger Name Story 1`] = `
+exports[`Storyshots Booking form / BookingPassenger Name Story 1`] = `
 <div
   className="rs"
 >

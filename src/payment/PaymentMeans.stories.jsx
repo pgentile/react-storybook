@@ -10,7 +10,7 @@ const actions = {
 };
 
 export default {
-  title: "Payment | PaymentMeans",
+  title: "Payment / PaymentMeans",
   component: PaymentMeans,
 };
 

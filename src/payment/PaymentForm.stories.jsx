@@ -33,7 +33,7 @@ const registredCards = [
 ];
 
 export default {
-  title: "Payment | PaymentForm",
+  title: "Payment / PaymentForm",
   component: PaymentForm,
 };
 

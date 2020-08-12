@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Cars | Climatization / ClimPanel Main 1`] = `
+exports[`Storyshots Cars / Climatization / ClimPanel Main 1`] = `
 <div
   className="rs"
 >

@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import VoucherContainer from "./VoucherContainer";
 
 export default {
-  title: "Payment | VoucherContainer",
+  title: "Payment / VoucherContainer",
   component: VoucherContainer,
 };
 

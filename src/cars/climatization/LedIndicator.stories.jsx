@@ -3,7 +3,7 @@ import React from "react";
 import LedIndicator from "./LedIndicator";
 
 export default {
-  title: "Cars | Core / LedIndicator",
+  title: "Cars / Core / LedIndicator",
   component: LedIndicator,
 };
 

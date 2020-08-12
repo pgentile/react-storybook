@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard maestro / can't show CVV 1`] = `
 <div
   className="rs"
 >
@@ -173,7 +173,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / can't show CVV 1`] =
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard maestro / disabled 1`] = `
 <div
   className="rs"
 >
@@ -358,7 +358,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't show CVV 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / can't show CVV 1`] = `
 <div
   className="rs"
 >
@@ -531,7 +531,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / can't 
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabled 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV / disabled 1`] = `
 <div
   className="rs"
 >
@@ -716,7 +716,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV / disabl
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard maestro / visible CVV 1`] = `
 <div
   className="rs"
 >
@@ -900,7 +900,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro / visible CVV 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard maestro 1`] = `
 <div
   className="rs"
 >
@@ -1084,7 +1084,7 @@ exports[`Storyshots Payment | RegistredCreditCard maestro 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard visa / can't show CVV 1`] = `
 <div
   className="rs"
 >
@@ -1247,7 +1247,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / can't show CVV 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard visa / disabled 1`] = `
 <div
   className="rs"
 >
@@ -1422,7 +1422,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't show CVV 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / can't show CVV 1`] = `
 <div
   className="rs"
 >
@@ -1585,7 +1585,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / can't sho
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV / disabled 1`] = `
 <div
   className="rs"
 >
@@ -1760,7 +1760,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV / disabled 
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard visa / visible CVV 1`] = `
 <div
   className="rs"
 >
@@ -1934,7 +1934,7 @@ exports[`Storyshots Payment | RegistredCreditCard visa / visible CVV 1`] = `
 </div>
 `;
 
-exports[`Storyshots Payment | RegistredCreditCard visa 1`] = `
+exports[`Storyshots Payment / RegistredCreditCard visa 1`] = `
 <div
   className="rs"
 >

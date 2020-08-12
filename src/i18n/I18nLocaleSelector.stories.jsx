@@ -3,7 +3,7 @@ import React from "react";
 import I18nLocaleSelector from "./I18nLocaleSelector";
 
 export default {
-  title: "I18n | I18nLocaleSelector",
+  title: "I18n / I18nLocaleSelector",
   component: I18nLocaleSelector,
 };
 

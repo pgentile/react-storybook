@@ -4,7 +4,7 @@ import { withKnobs, text, number, select } from "@storybook/addon-knobs";
 import I18nMessages from "./I18nMessages";
 
 export default {
-  title: "I18n | I18nMessages",
+  title: "I18n / I18nMessages",
   component: I18nMessages,
   decorators: [withKnobs],
 };

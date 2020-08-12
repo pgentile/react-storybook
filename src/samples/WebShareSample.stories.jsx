@@ -3,7 +3,7 @@ import React from "react";
 import WebShareSample from "./WebShareSample";
 
 export default {
-  title: "Samples | WebShareSample",
+  title: "Samples / WebShareSample",
   component: WebShareSample,
 };
 

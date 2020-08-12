@@ -38,6 +38,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "@storybook/addon-controls": "^6.0.5",
     "@xstate/react": "^0.8.1",
     "card-validator": "^8.0.0",
     "core-js": "3",

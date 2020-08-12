@@ -3,7 +3,7 @@ import React from "react";
 import WindshieldButton from "./WindshieldButton";
 
 export default {
-  title: "Cars | Climatization / WindshieldButton",
+  title: "Cars / Climatization / WindshieldButton",
   component: WindshieldButton,
 };
 

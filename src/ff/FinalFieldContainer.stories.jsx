@@ -6,7 +6,7 @@ import FinalFieldContainer from "./FinalFieldContainer";
 import sleep from "../utils/sleep";
 
 export default {
-  title: "Final Forms components | FinalFieldContainer",
+  title: "Final Forms components / FinalFieldContainer",
   component: FinalFieldContainer,
 };
 

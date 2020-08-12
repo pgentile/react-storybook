@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import PaymentRequestComponent from "./PaymentRequestComponent";
 
 export default {
-  title: "Payment | PaymentRequestComponent",
+  title: "Payment / PaymentRequestComponent",
   component: PaymentRequestComponent,
 };
 

@@ -7,7 +7,7 @@ import FinalButton from "./FinalButton";
 import sleep from "../utils/sleep";
 
 export default {
-  title: "Final Forms components | FinalProgressButton",
+  title: "Final Forms components / FinalProgressButton",
   component: FinalProgressButton,
 };
 

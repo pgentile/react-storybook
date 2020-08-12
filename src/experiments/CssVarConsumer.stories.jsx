@@ -4,7 +4,7 @@ import { withKnobs, text } from "@storybook/addon-knobs";
 import CssVarConsumer from "./CssVarConsumer";
 
 export default {
-  title: "Experiments | CssVarConsumer",
+  title: "Experiments / CssVarConsumer",
   component: CssVarConsumer,
   decorators: [withKnobs],
 };

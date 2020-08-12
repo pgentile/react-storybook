@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Cars | Core / LevelIndicator Level 0 1`] = `
+exports[`Storyshots Cars / Core / LevelIndicator Level 0 1`] = `
 <div
   className="rs"
 >
@@ -20,7 +20,7 @@ exports[`Storyshots Cars | Core / LevelIndicator Level 0 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LevelIndicator Level 1 1`] = `
+exports[`Storyshots Cars / Core / LevelIndicator Level 1 1`] = `
 <div
   className="rs"
 >
@@ -40,7 +40,7 @@ exports[`Storyshots Cars | Core / LevelIndicator Level 1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LevelIndicator Level 2 1`] = `
+exports[`Storyshots Cars / Core / LevelIndicator Level 2 1`] = `
 <div
   className="rs"
 >
@@ -60,7 +60,7 @@ exports[`Storyshots Cars | Core / LevelIndicator Level 2 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cars | Core / LevelIndicator Level 3 1`] = `
+exports[`Storyshots Cars / Core / LevelIndicator Level 3 1`] = `
 <div
   className="rs"
 >

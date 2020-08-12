@@ -7,7 +7,7 @@ import { TICKET_TYPE, loadItems } from "../redux/reducers/order";
 import { loadCards } from "../redux/reducers/connectedUser";
 
 export default {
-  title: "Payment | PaymentContainer",
+  title: "Payment / PaymentContainer",
   component: PaymentContainer,
   decorators: [
     (story) => {
