@@ -1698,17 +1698,17 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-actions@^6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.0.3.tgz#0a21402b249c34eda5a2bd07c24ee877e3e5dc04"
-  integrity sha512-xY3MF+P3tq5YQB1jVUbj5ZF/cqP5bs3Q0b5z2mFVFutG/az31n7wouknUeFrL5K+bm/ocwwC+Y7MXTmhfpmzMg==
+"@storybook/addon-actions@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.0.5.tgz#537276d0facda32e7786b06ea15d42943fe91907"
+  integrity sha512-YwAZxOKd0vdxk+eY6NLTow4qmcVLzuiQijX2kGZlgrf2iLlIXbcwg7bTXSK2er0q0Rm5XOxR6EUA1twzUj7MZg==
   dependencies:
-    "@storybook/addons" "6.0.3"
-    "@storybook/api" "6.0.3"
-    "@storybook/client-api" "6.0.3"
-    "@storybook/components" "6.0.3"
-    "@storybook/core-events" "6.0.3"
-    "@storybook/theming" "6.0.3"
+    "@storybook/addons" "6.0.5"
+    "@storybook/api" "6.0.5"
+    "@storybook/client-api" "6.0.5"
+    "@storybook/components" "6.0.5"
+    "@storybook/core-events" "6.0.5"
+    "@storybook/theming" "6.0.5"
     core-js "^3.0.1"
     fast-deep-equal "^3.1.1"
     global "^4.3.2"
@@ -1978,6 +1978,19 @@
     qs "^6.6.0"
     telejson "^5.0.2"
 
+"@storybook/channel-postmessage@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-6.0.5.tgz#3cfdab126eb43ba633d1174a6b3aa40967b15889"
+  integrity sha512-5R9BcP5QH1Pv3kGDjKyzCPvqZZ6C2LD5Dx6Ztlx1NDtNqoM+YY+5KlELSjU5TXd2gWtD+158Vc0Gw/bxkrpATw==
+  dependencies:
+    "@storybook/channels" "6.0.5"
+    "@storybook/client-logger" "6.0.5"
+    "@storybook/core-events" "6.0.5"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    qs "^6.6.0"
+    telejson "^5.0.2"
+
 "@storybook/channels@5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.1.9.tgz#003cfca0b9f1ba6cf47ce68304aedd71bdb55e74"
@@ -2073,6 +2086,29 @@
     ts-dedent "^1.1.1"
     util-deprecate "^1.0.2"
 
+"@storybook/client-api@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-6.0.5.tgz#c1bcc3232a391bb174cc9c7a1ef827d998ad6ee4"
+  integrity sha512-yiQ1C3FERsku8NEOWzKrNKZiYBA23FdSB/SAK3MMUEHQ6PmcQzgm7JM4XlyMxTSGQq6OOx28wbNaASTJuj4UQg==
+  dependencies:
+    "@storybook/addons" "6.0.5"
+    "@storybook/channel-postmessage" "6.0.5"
+    "@storybook/channels" "6.0.5"
+    "@storybook/client-logger" "6.0.5"
+    "@storybook/core-events" "6.0.5"
+    "@storybook/csf" "0.0.1"
+    "@types/qs" "^6.9.0"
+    "@types/webpack-env" "^1.15.2"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    lodash "^4.17.15"
+    memoizerific "^1.11.3"
+    qs "^6.6.0"
+    stable "^0.1.8"
+    store2 "^2.7.1"
+    ts-dedent "^1.1.1"
+    util-deprecate "^1.0.2"
+
 "@storybook/client-logger@5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.1.9.tgz#87e2f7578416269adeccd407584010bc353f14d3"
@@ -2145,6 +2181,34 @@
     "@storybook/client-logger" "6.0.3"
     "@storybook/csf" "0.0.1"
     "@storybook/theming" "6.0.3"
+    "@types/overlayscrollbars" "^1.9.0"
+    "@types/react-color" "^3.0.1"
+    "@types/react-syntax-highlighter" "11.0.4"
+    core-js "^3.0.1"
+    fast-deep-equal "^3.1.1"
+    global "^4.3.2"
+    lodash "^4.17.15"
+    markdown-to-jsx "^6.11.4"
+    memoizerific "^1.11.3"
+    overlayscrollbars "^1.10.2"
+    polished "^3.4.4"
+    popper.js "^1.14.7"
+    react "^16.8.3"
+    react-color "^2.17.0"
+    react-dom "^16.8.3"
+    react-popper-tooltip "^2.11.0"
+    react-syntax-highlighter "^12.2.1"
+    react-textarea-autosize "^8.1.1"
+    ts-dedent "^1.1.1"
+
+"@storybook/components@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.0.5.tgz#34d139efde75ebb5add9f1f273bd06ce82a92204"
+  integrity sha512-NJNBIKesDMN7nZS5STpDY3c3FYAgN1Qq1X5FE60yxXUCFTRjgQmsN8WWl71PB0BJaR6IB1Jvvg/q+vLILB6u4A==
+  dependencies:
+    "@storybook/client-logger" "6.0.5"
+    "@storybook/csf" "0.0.1"
+    "@storybook/theming" "6.0.5"
     "@types/overlayscrollbars" "^1.9.0"
     "@types/react-color" "^3.0.1"
     "@types/react-syntax-highlighter" "11.0.4"
