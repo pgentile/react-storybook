@@ -3,11 +3,12 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = {
-  stories: ["../src/**/*.stories.(js|jsx|ts|tsx|mdx)"],
+  stories: ["../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
   addons: [
+    "@storybook/addon-docs",
+    "@storybook/addon-controls",
     "@storybook/addon-knobs",
     "@storybook/addon-actions",
-    "@storybook/addon-docs",
     "@storybook/addon-viewport",
     "storybook-addon-i18n/register",
   ],

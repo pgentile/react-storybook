@@ -22,7 +22,7 @@ export default function I18nSamples(props) {
 }
 
 I18nSamples.propTypes = {
-  number: PropTypes.number.isRequired,
+  sampleNumber: PropTypes.number.isRequired,
   currency: PropTypes.string.isRequired,
 };
 
