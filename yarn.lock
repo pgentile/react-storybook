@@ -1228,6 +1228,26 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
+"@formatjs/cli@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.6.0.tgz#4dc04fe1027192aafb46527b466a961568d6d230"
+  integrity sha512-5LPSXIEq+f0FDDKrihQiQMfXdMigBRZ5xIT82KlznkAo3RWspehWXRxCtvAohwYGhHynGy/tyNvpzWDy605MAQ==
+  dependencies:
+    "@formatjs/ts-transformer" "^2.6.0"
+    "@types/json-stable-stringify" "^1.0.32"
+    "@types/lodash" "^4.14.150"
+    "@types/loud-rejection" "^2.0.0"
+    "@types/node" "14"
+    chalk "^4.0.0"
+    commander "5.1.0"
+    fs-extra "^9.0.0"
+    glob "^7.1.6"
+    intl-messageformat-parser "^5.3.5"
+    json-stable-stringify "^1.0.1"
+    lodash "^4.17.15"
+    loud-rejection "^2.2.0"
+    typescript "^3.8"
+
 "@formatjs/intl-datetimeformat@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-2.3.1.tgz#dd5c4cb33cee812df42dd286e88ae662743a8679"
@@ -2600,13 +2620,6 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.45.tgz#e9387572998e5ecdac221950dab3e8c3b16af884"
   integrity sha512-jnqIUKDUqJbDIUxm0Uj7bnlMnRm1T/eZ9N+AVMqhPgzrba2GhGG5o/jCTwmdPK709nEZsGoMzXEDUjcXHa3W0g==
 
-"@types/fs-extra@^9.0.1":
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.1.tgz#91c8fc4c51f6d5dbe44c2ca9ab09310bd00c7918"
-  integrity sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
-  dependencies:
-    "@types/node" "*"
-
 "@types/glob-base@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@types/glob-base/-/glob-base-0.3.0.tgz#a581d688347e10e50dd7c17d6f2880a10354319d"
@@ -2722,6 +2735,23 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.5.tgz#dcce4430e64b443ba8945f0290fb564ad5bac6dd"
   integrity sha512-7+2BITlgjgDhH0vvwZU/HZJVyk+2XUlvxXe8dFMedNX/aMkaOq++rMAFXc0tM7ij15QaWlbdQASBR9dihi+bDQ==
 
+"@types/json-stable-stringify@^1.0.32":
+  version "1.0.32"
+  resolved "https://registry.yarnpkg.com/@types/json-stable-stringify/-/json-stable-stringify-1.0.32.tgz#121f6917c4389db3923640b2e68de5fa64dda88e"
+  integrity sha512-q9Q6+eUEGwQkv4Sbst3J4PNgDOvpuVuKj79Hl/qnmBMEIPzB5QoFRUtjcgcg2xNUZyYUGXBk5wYIBKHt0A+Mxw==
+
+"@types/lodash@^4.14.150":
+  version "4.14.159"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.159.tgz#61089719dc6fdd9c5cb46efc827f2571d1517065"
+  integrity sha512-gF7A72f7WQN33DpqOWw9geApQPh4M3PxluMtaHxWHXEGSN12/WbcEk/eNSqWNQcQhF66VSZ06vCF94CrHwXJDg==
+
+"@types/loud-rejection@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/loud-rejection/-/loud-rejection-2.0.0.tgz#271bb21c63f51776e1156604cda3b21a2d3f60f3"
+  integrity sha512-oTHISsIybJGoh3b3Ay/10csbAd2k0su7G7DGrE1QWciC+IdydPm0WMw1+Gr9YMYjPiJ5poB3g5Ev73IlLoavLw==
+  dependencies:
+    loud-rejection "*"
+
 "@types/markdown-to-jsx@^6.11.0":
   version "6.11.1"
   resolved "https://registry.yarnpkg.com/@types/markdown-to-jsx/-/markdown-to-jsx-6.11.1.tgz#4d9464aa76337d798b874dd3f2d6b4c86ddd98ad"
@@ -2766,7 +2796,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*":
+"@types/node@*", "@types/node@14":
   version "14.0.27"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.27.tgz#a151873af5a5e851b51b3b065c9e63390a9e0eb1"
   integrity sha512-kVrqXhbclHNHGu9ztnAwSncIgJv/FaxmzXJvGXNdcCpV1b8u1/Mi6z6m0vwy0LzKeXFTPLH0NzwmoJ3fNCIq0g==
@@ -3932,19 +3962,17 @@ babel-plugin-react-docgen@^4.1.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@^7.9.4:
-  version "7.9.4"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-7.9.4.tgz#1fc9ab50470d41b934df50d8f436578ee1732cb0"
-  integrity sha512-cMKrHEXrw43yT4M89Wbgq8A8N8lffSquj1Piwov/HVukR7jwOw8gf9btXNsQhT27ccyqEwy+M286JQYy0jby2g==
+babel-plugin-react-intl@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.0.0.tgz#39eb73ec5c95d9f438ef76622df6838c686418f3"
+  integrity sha512-KxNDDvZPXDN+EHRIb56l05pVoV0rzbFZY2UXABtUoIt+2tdG5r9gohWfV1VMueb3ockXf/AckpyhbfPMvqSdJg==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
     "@formatjs/ts-transformer" "^2.6.0"
     "@types/babel__core" "^7.1.7"
-    "@types/fs-extra" "^9.0.1"
     "@types/schema-utils" "^2.4.0"
-    fs-extra "^9.0.0"
     intl-messageformat-parser "^5.3.7"
     schema-utils "^2.6.6"
 
@@ -5027,6 +5055,11 @@ comma-separated-tokens@^1.0.0:
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-1.0.8.tgz#632b80b6117867a158f1080ad498b2fbe7e3f5ea"
   integrity sha512-GHuDRO12Sypu2cV70d1dkA2EUmXHgntrzbpvOB+Qy+49ypNfGgFQIC2fhhXbnyrJRynDCAARsT7Ou0M6hirpfw==
 
+commander@5.1.0, commander@^5.0.0, commander@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
+  integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
+
 commander@^2.18.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -5036,11 +5069,6 @@ commander@^4.0.1, commander@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
-
-commander@^5.0.0, commander@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
-  integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
 
 common-tags@^1.8.0:
   version "1.8.0"
@@ -8354,7 +8382,7 @@ intl-locales-supported@^1.8.12:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
   integrity sha512-FJPl7p1LYO/C+LpwlDcvVpq7AeFTdFgwnq1JjdNYKjb51xkIxssXRR8LaA0fJFogjwRRztqw1ahgSJMSZsSFdw==
 
-intl-messageformat-parser@^5.3.7:
+intl-messageformat-parser@^5.3.5, intl-messageformat-parser@^5.3.7:
   version "5.3.7"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.3.7.tgz#96d93cc1856048ee8e09193951f1e1ba69073204"
   integrity sha512-83C+eODXu/zfR35bKjSz/HKEGkNSHbsF1WOuZDgFs/TudaEuVIZ8pstQYFyY0CIuCGXomcSevrFW1d4y7nW5xw==
@@ -9688,6 +9716,13 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
 
+json-stable-stringify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
+  integrity sha1-mnWdOcXy/1A/1TAGRu1EX4jE+a8=
+  dependencies:
+    jsonify "~0.0.0"
+
 json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
@@ -9739,6 +9774,11 @@ jsonfilter@^1.1.2:
     minimist "^1.1.0"
     stream-combiner "^0.2.1"
     through2 "^0.6.3"
+
+jsonify@~0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
+  integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
 jsonparse@0.0.5:
   version "0.0.5"
@@ -10123,6 +10163,14 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+loud-rejection@*, loud-rejection@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/loud-rejection/-/loud-rejection-2.2.0.tgz#4255eb6e9c74045b0edc021fa7397ab655a8517c"
+  integrity sha512-S0FayMXku80toa5sZ6Ro4C+s+EtFDCsyJNG/AzFMfX3AxD5Si4dZsgzm/kKnbOxHl5Cv8jBlno8+3XYIh2pNjQ==
+  dependencies:
+    currently-unhandled "^0.4.1"
+    signal-exit "^3.0.2"
 
 loud-rejection@^1.0.0:
   version "1.6.0"

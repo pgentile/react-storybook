@@ -9,7 +9,6 @@ module.exports = (api) => {
       [
         "react-intl",
         {
-          messagesDir: "./build/messages",
           extractSourceLocation: true,
           removeDefaultMessage: false,
         },
