@@ -1,20 +1,18 @@
 import React from "react";
-import { withKnobs, boolean } from "@storybook/addon-knobs";
 
 import Expandable from "./Expandable";
 
 export default {
   title: "Expandable",
   component: Expandable,
-  decorators: [withKnobs],
   parameters: {
     storyshots: false,
   },
 };
 
-export const exemple = () => {
+export const exemple = (args) => {
   return (
-    <Expandable expanded={boolean("expanded", true)}>
+    <Expandable {...args}>
       <p>Voici du contenu dépliable.</p>
       <p>Voici du contenu dépliable.</p>
       <p>Voici du contenu dépliable.</p>
@@ -22,4 +20,8 @@ export const exemple = () => {
       <p>Voici du contenu dépliable.</p>
     </Expandable>
   );
+};
+
+exemple.args = {
+  expanded: true,
 };
