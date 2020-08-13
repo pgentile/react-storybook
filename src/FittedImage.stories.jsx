@@ -1,19 +1,20 @@
 import React from "react";
-import { withKnobs, number } from "@storybook/addon-knobs";
 
 import FittedImage from "./FittedImage";
 
 export default {
   title: "FittedImage",
-  component: FittedImage,
-  decorators: [withKnobs],
 };
 
-export const demo = () => {
-  const width = number("width", 300);
+export const demo = (args) => {
+  const { width } = args;
   return (
     <div style={{ width: `${width}px` }}>
       <FittedImage src="/images/beautiful-image.jpg" />
     </div>
   );
+};
+
+demo.args = {
+  width: 300,
 };

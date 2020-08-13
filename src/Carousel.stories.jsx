@@ -1,15 +1,13 @@
 import React from "react";
-import { withKnobs, number } from "@storybook/addon-knobs";
 
 import Carousel from "./Carousel";
 
 export default {
   title: "Carousel",
   component: Carousel,
-  decorators: [withKnobs],
 };
 
-export const main = () => {
+export const main = (args) => {
   const items = [
     <p key={0}>
       Item 1<br />
@@ -22,5 +20,9 @@ export const main = () => {
       Item 3, line 3
     </p>,
   ];
-  return <Carousel items={items} selectedIndex={number("selectedIndex", 0)} />;
+  return <Carousel {...args} items={items} />;
+};
+
+main.args = {
+  selectedIndex: 0,
 };
