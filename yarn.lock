@@ -1277,14 +1277,7 @@
   dependencies:
     "@formatjs/intl-utils" "^3.8.2"
 
-"@formatjs/intl-numberformat@^5.3.1", "@formatjs/intl-numberformat@^5.3.3":
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.3.3.tgz#ade268890d33a4a5535bdfbc8a9415df62113d2c"
-  integrity sha512-keU4arK7WoQMMfUuXzVP5nPzKFXrNpcNne/58OxxDxoJfqiv4vHiBjHHfPzy5xf+1rgnoplaV1mabNt1HTPtwA==
-  dependencies:
-    "@formatjs/intl-utils" "^3.8.2"
-
-"@formatjs/intl-numberformat@^5.4.0":
+"@formatjs/intl-numberformat@^5.3.3", "@formatjs/intl-numberformat@^5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.4.0.tgz#5c5d1645d12383ae0c1fda3b22f584c013374cfe"
   integrity sha512-gl8xUp745Hx8IgmofSi3AZJmbEBwxfNFgimeaIb2nlflVcIhtIo0RSyl93Es2V1+0R2Atg4gLC5vox3wGgz5/w==
