@@ -6477,18 +6477,18 @@ eslint-plugin-emotion@^10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.6.1.tgz#359825c68d5aecf80f97cd18b9a8303ad4fa5e4c"
-  integrity sha512-iGtgPeav1fYeIpSHnBzIs0nEubxddPoQbOgiqVE1WsFF6oIvg9Y0iejXrfoa4jR+tGK0q/lvgKCnOrYAwMd27Q==
+eslint-plugin-formatjs@^2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.6.3.tgz#0fec6f00d7eddd04ab2a752ba622c49b12972a29"
+  integrity sha512-qPNQx1F4kmCOuGrPiuNEVEtyru8sUxXVg5QGDt44e4IZaydUuEpItCkCsQjMpIFxbQWKzK514RO+/SoCZ4/rRA==
   dependencies:
-    "@formatjs/ts-transformer" "^2.6.0"
+    "@formatjs/ts-transformer" "^2.7.1"
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^7.2.0"
     "@types/estree" "^0.0.45"
     "@typescript-eslint/typescript-estree" "^3.6.0"
     emoji-regex "^9.0.0"
-    intl-messageformat-parser "^5.3.8"
+    intl-messageformat-parser "^5.4.0"
 
 eslint-plugin-jest@^23.20.0:
   version "23.20.0"
