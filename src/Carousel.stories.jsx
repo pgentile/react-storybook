@@ -5,6 +5,14 @@ import Carousel from "./Carousel";
 export default {
   title: "Carousel",
   component: Carousel,
+  argTypes: {
+    as: {
+      control: { disable: true },
+    },
+    items: {
+      control: { disable: true },
+    },
+  },
 };
 
 export const main = (args) => {

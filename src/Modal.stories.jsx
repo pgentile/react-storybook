@@ -1,5 +1,4 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
 
 import Modal from "./Modal";
 
@@ -9,20 +8,31 @@ export default {
   parameters: {
     storyshots: false,
   },
+  argTypes: {
+    children: {
+      control: { disable: true },
+    },
+    onClose: {
+      action: "close",
+    },
+  },
 };
 
-export const main = () => {
-  return <Modal>Contenu</Modal>;
+const template = (args) => {
+  return <Modal {...args}>Contenu</Modal>;
 };
 
-export const titleStory = () => {
-  return <Modal title="Titre">Contenu</Modal>;
+export const main = template.bind({});
+
+export const titleStory = template.bind({});
+
+titleStory.args = {
+  title: "Titre",
+  onClose: null,
 };
 
-export const closable = () => {
-  return (
-    <Modal title="Titre" onClose={action("close")}>
-      Contenu
-    </Modal>
-  );
+export const closable = template.bind({});
+
+closable.args = {
+  title: "Titre",
 };

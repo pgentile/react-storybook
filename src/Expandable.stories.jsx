@@ -8,6 +8,11 @@ export default {
   parameters: {
     storyshots: false,
   },
+  argTypes: {
+    children: {
+      control: { disable: true },
+    },
+  },
 };
 
 export const exemple = (args) => {
