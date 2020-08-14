@@ -1723,17 +1723,17 @@
     util-deprecate "^1.0.2"
     uuid "^8.0.0"
 
-"@storybook/addon-controls@^6.0.6":
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-6.0.6.tgz#652081f6d285f0cbdc66ea80983aefe7bfd1c3f9"
-  integrity sha512-vhv+rno2UC3UhSRRjZ1/VYC2Xg+PJi911Zr2wSKJaj5KVUB+VoJDJHENYiXWpjyozE1CyRKC3TnEPTH5y5v2gA==
+"@storybook/addon-controls@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-6.0.7.tgz#26555f843da33856458ae3986751d945d523892f"
+  integrity sha512-KK90Ry9sEd4A1DOYXn4rWhszV9t2CvTkVx13cenJmSr3KNb4lNmofRp6YLj+WrqbhLUxkDp4W5FxIm3dyyw/rg==
   dependencies:
-    "@storybook/addons" "6.0.6"
-    "@storybook/api" "6.0.6"
-    "@storybook/client-api" "6.0.6"
-    "@storybook/components" "6.0.6"
-    "@storybook/node-logger" "6.0.6"
-    "@storybook/theming" "6.0.6"
+    "@storybook/addons" "6.0.7"
+    "@storybook/api" "6.0.7"
+    "@storybook/client-api" "6.0.7"
+    "@storybook/components" "6.0.7"
+    "@storybook/node-logger" "6.0.7"
+    "@storybook/theming" "6.0.7"
     core-js "^3.0.1"
     ts-dedent "^1.1.1"
 
