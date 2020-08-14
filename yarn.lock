@@ -1228,12 +1228,12 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@formatjs/cli@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.0.tgz#a9c752c0a7efd49cd906b0b1d3f5df82abdb6ddb"
-  integrity sha512-ibu3csFlNaCfQn4tUXQMSL06ot4RkuW3dx/5YOrZmiIOeMOK2/w3TuYci/yMnZoo9DfOeIm/xZaxaJyVGLouyA==
+"@formatjs/cli@^2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.2.tgz#9b3a361407062fe8409d3fa25985576011288a69"
+  integrity sha512-n35hXbFKu25zMm3EzRbVZ5nJF8nn5EtOouhx1eTkLuPb1qfK2QyQsBCOth/yP3eaUgiTPnMwwHwZpa2TQPoVcA==
   dependencies:
-    "@formatjs/ts-transformer" "^2.6.0"
+    "@formatjs/ts-transformer" "^2.7.1"
     "@types/json-stable-stringify" "^1.0.32"
     "@types/lodash" "^4.14.150"
     "@types/loud-rejection" "^2.0.0"
@@ -1242,7 +1242,7 @@
     commander "5.1.0"
     fast-glob "^3.2.4"
     fs-extra "^9.0.0"
-    intl-messageformat-parser "^5.3.8"
+    intl-messageformat-parser "^5.4.0"
     json-stable-stringify "^1.0.1"
     lodash "^4.17.15"
     loud-rejection "^2.2.0"
