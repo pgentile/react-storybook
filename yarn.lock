@@ -1228,10 +1228,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@formatjs/cli@^2.7.2":
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.2.tgz#9b3a361407062fe8409d3fa25985576011288a69"
-  integrity sha512-n35hXbFKu25zMm3EzRbVZ5nJF8nn5EtOouhx1eTkLuPb1qfK2QyQsBCOth/yP3eaUgiTPnMwwHwZpa2TQPoVcA==
+"@formatjs/cli@^2.7.3":
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.3.tgz#7c57edee5335617c332a8c81012ca3657ed5e994"
+  integrity sha512-lSzm6E+Q/zwI7h4K1R8ZFZcr+iNkqKyeD5xFoUDBODotJ1oheBsb6dYDMZlK6k8OufkxH1ArPtu9/0pfmW40oQ==
   dependencies:
     "@formatjs/ts-transformer" "^2.7.1"
     "@types/json-stable-stringify" "^1.0.32"
