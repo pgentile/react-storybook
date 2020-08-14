@@ -90,7 +90,7 @@
     "@storybook/addon-actions": "^6.0.7",
     "@storybook/addon-controls": "^6.0.7",
     "@storybook/addon-docs": "^6.0.6",
-    "@storybook/addon-links": "^6.0.6",
+    "@storybook/addon-links": "^6.0.7",
     "@storybook/addon-storyshots": "^6.0.7",
     "@storybook/addon-viewport": "^6.0.6",
     "@storybook/addons": "^6.0.7",
