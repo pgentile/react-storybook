@@ -1270,13 +1270,6 @@
   dependencies:
     cldr-core "36.0.0"
 
-"@formatjs/intl-getcanonicallocales@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.4.0.tgz#16583c7ed03688334ea2bb95e43d7ac5fc7713de"
-  integrity sha512-hI/GvIS0+TVIWHDced7989pG/sGr0ourhC6fbjUSwx/htSuWoQFdwkE8dJ4MmEpE+X9sNoG7DT+fpywKEeqZFg==
-  dependencies:
-    cldr-core "36.0.0"
-
 "@formatjs/intl-listformat@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-4.2.0.tgz#4e4e53a522b67bd2acca978655611a7842c81495"
@@ -1306,14 +1299,14 @@
   dependencies:
     "@formatjs/intl-utils" "^3.8.4"
 
-"@formatjs/intl-utils@^3.8.3", "@formatjs/intl-utils@^3.8.4":
+"@formatjs/intl-utils@^3.8.4":
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.8.4.tgz#291baac91001db428fc3275c515a3e40fbe95945"
   integrity sha512-j5C6NyfKevIxsfLK8KwO1C0vvP7k1+h4A9cFpc+cr6mEwCc1sPkr17dzh0Ke6k9U5pQccAQoXdcNBl3IYa4+ZQ==
   dependencies:
     emojis-list "^3.0.0"
 
-"@formatjs/ts-transformer@^2.7.1", "@formatjs/ts-transformer@^2.7.3":
+"@formatjs/ts-transformer@^2.7.3":
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.7.3.tgz#0c2f2dd315d53b24701b9af550c78545c25f6f4f"
   integrity sha512-wRFCWrL8ToaxUnm9rpPDDJ/I99VCCa1Ycj3bS7Uu86LObHs4kDgmc8CPiw7bBDEiPb/ZVwbpI2POXx+XCOU8rw==
@@ -8337,7 +8330,7 @@ intl-locales-supported@^1.8.12:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
   integrity sha512-FJPl7p1LYO/C+LpwlDcvVpq7AeFTdFgwnq1JjdNYKjb51xkIxssXRR8LaA0fJFogjwRRztqw1ahgSJMSZsSFdw==
 
-intl-messageformat-parser@^5.4.0, intl-messageformat-parser@^5.4.2:
+intl-messageformat-parser@^5.4.2:
   version "5.4.2"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.4.2.tgz#d8b106458798ccd81e79d8d52c6f97f3a4124356"
   integrity sha512-VHu6UWgWLJykaSeI1M2DpZMVRLuGCOV91i5I81xnJuAI0MKHP7ZJ3my5naOQkzG10ris3hBr+o5RElF1wQ5IXA==
@@ -9839,10 +9832,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libphonenumber-js@^1.7.56:
-  version "1.7.56"
-  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.7.56.tgz#1f206c69acb112a43134141e2331a737cdfcb8a0"
-  integrity sha512-7ArN9sSVs9bzX72+HeryCrmI68w1ry3Sd67+BmbPxbaCU+ZpuB2R9YT/YTsTUFYbxkp933vpQUP5E/1TJ9WvTQ==
+libphonenumber-js@^1.7.57:
+  version "1.7.57"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.7.57.tgz#1ed4543b835523387f79783fb826a7e268a604fa"
+  integrity sha512-v6DkRf1ufgGXHb6NoKbQd1YlfWqOs6jym7WjPP+YF1YtbfiWwD7M/7/XUOW+if2jNlm5av4EzeL/lYf8ClJYjg==
   dependencies:
     minimist "^1.2.5"
     xml2js "^0.4.17"
