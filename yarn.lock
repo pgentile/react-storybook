@@ -1723,17 +1723,17 @@
     util-deprecate "^1.0.2"
     uuid "^8.0.0"
 
-"@storybook/addon-controls@^6.0.13":
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-6.0.13.tgz#d13839b249876dc2d15ea55ee233088dfde2380b"
-  integrity sha512-uY7UD13ga5YG/vUcxo1zyWjI9g9d0iib+iSqRGgo02OIAc1W9TBhO8PT+WiBAJh9nkiYShn+Jh5LMum/dDrpQA==
+"@storybook/addon-controls@^6.0.16":
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-6.0.16.tgz#c7fc765a01cc3a0de397f8b55bfeda3f328e5495"
+  integrity sha512-RgBOply9o3PYoWI7TNKef2AQixw7l620pT1fCJbXykp/lu17eqKaIa5KYHRE9vEajun5RuEQxGnSzQOV3OZAsA==
   dependencies:
-    "@storybook/addons" "6.0.13"
-    "@storybook/api" "6.0.13"
-    "@storybook/client-api" "6.0.13"
-    "@storybook/components" "6.0.13"
-    "@storybook/node-logger" "6.0.13"
-    "@storybook/theming" "6.0.13"
+    "@storybook/addons" "6.0.16"
+    "@storybook/api" "6.0.16"
+    "@storybook/client-api" "6.0.16"
+    "@storybook/components" "6.0.16"
+    "@storybook/node-logger" "6.0.16"
+    "@storybook/theming" "6.0.16"
     core-js "^3.0.1"
     ts-dedent "^1.1.1"
 
@@ -2063,29 +2063,6 @@
     "@storybook/channels" "6.0.13"
     "@storybook/client-logger" "6.0.13"
     "@storybook/core-events" "6.0.13"
-    "@storybook/csf" "0.0.1"
-    "@types/qs" "^6.9.0"
-    "@types/webpack-env" "^1.15.2"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    lodash "^4.17.15"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-    stable "^0.1.8"
-    store2 "^2.7.1"
-    ts-dedent "^1.1.1"
-    util-deprecate "^1.0.2"
-
-"@storybook/client-api@6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-6.0.16.tgz#4af47caccf92a31326ab77c5094dd4f90f888b91"
-  integrity sha512-fFsp53lt9W2QHSumqdfFRbh+DI9fvd7li0GDxqLeNESXaUVw48yg8lQiyRNK+j5Pl4VBS3AqytLugJ+0MGm2cA==
-  dependencies:
-    "@storybook/addons" "6.0.16"
-    "@storybook/channel-postmessage" "6.0.16"
-    "@storybook/channels" "6.0.16"
-    "@storybook/client-logger" "6.0.16"
-    "@storybook/core-events" "6.0.16"
     "@storybook/csf" "0.0.1"
     "@types/qs" "^6.9.0"
     "@types/webpack-env" "^1.15.2"
