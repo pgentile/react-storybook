@@ -1293,10 +1293,10 @@
     "@types/es-abstract" "^1.17.1"
     es-abstract "^1.17.6"
 
-"@formatjs/intl-numberformat@^5.5.3":
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.5.3.tgz#40959082046850eef232e564b498737b1f441c49"
-  integrity sha512-UOkoJxYKJlOzKanwtdcuAsNFm2AmBBPKlTiEDjLQQbyuMVIkIL356U0B5NFF/HzTkHv3wA3MhKBphrJzEx9WKg==
+"@formatjs/intl-numberformat@^5.5.3", "@formatjs/intl-numberformat@^5.5.4":
+  version "5.5.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.5.4.tgz#6bbe9b5530e7d5eb9a0aeda0d5048c70e7251543"
+  integrity sha512-YiAVYSDvIkgQ+BssPNVlNYceqygApeatYJnlUBrF4fj7qDyAHN8NX1JZkJNVQC+/nRpBVgha1bqar/NB7Ayyig==
   dependencies:
     "@formatjs/ecma402-abstract" "^1.0.3"
     "@types/es-abstract" "^1.17.1"
