@@ -1228,12 +1228,12 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@formatjs/cli@^2.7.10":
-  version "2.7.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.10.tgz#bdbd6b626ebac40eff50a28b3af60ce72ec237a9"
-  integrity sha512-GRbPGY+Y+zPohczB1lChjWggguOIFRyu/8VpAPlAu0vZRPZeQwlg1gwOUnQAJ5fRML2TKHar/xukQ7O6FhKMhg==
+"@formatjs/cli@^2.7.11":
+  version "2.7.11"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.11.tgz#62a8aa311f9d57d654d1e95a8e829014d1c750b6"
+  integrity sha512-BW/d9H3nAXzB9Gx9DLh3i7ePaBsQujw6djIflh6u9YFx4+C/ashrgqwu/enohkVvoMPEVKXb0L9BoyBUgwgmnw==
   dependencies:
-    "@formatjs/ts-transformer" "^2.7.7"
+    "@formatjs/ts-transformer" "^2.7.8"
     "@types/json-stable-stringify" "^1.0.32"
     "@types/lodash" "^4.14.150"
     "@types/loud-rejection" "^2.0.0"
@@ -1242,7 +1242,7 @@
     commander "5.1.0"
     fast-glob "^3.2.4"
     fs-extra "^9.0.0"
-    intl-messageformat-parser "^6.0.2"
+    intl-messageformat-parser "^6.0.3"
     json-stable-stringify "^1.0.1"
     lodash "^4.17.15"
     loud-rejection "^2.2.0"
@@ -1302,6 +1302,15 @@
     "@types/es-abstract" "^1.17.1"
     es-abstract "^1.17.6"
 
+"@formatjs/intl-numberformat@^5.5.4":
+  version "5.5.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.5.4.tgz#6bbe9b5530e7d5eb9a0aeda0d5048c70e7251543"
+  integrity sha512-YiAVYSDvIkgQ+BssPNVlNYceqygApeatYJnlUBrF4fj7qDyAHN8NX1JZkJNVQC+/nRpBVgha1bqar/NB7Ayyig==
+  dependencies:
+    "@formatjs/ecma402-abstract" "^1.0.3"
+    "@types/es-abstract" "^1.17.1"
+    es-abstract "^1.17.6"
+
 "@formatjs/intl-pluralrules@^3.4.3":
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.4.3.tgz#cd1e9ee954e54176970fec26645d43d5ea5cdcec"
@@ -1321,12 +1330,12 @@
     "@types/es-abstract" "^1.17.1"
     es-abstract "^1.17.6"
 
-"@formatjs/ts-transformer@^2.7.6", "@formatjs/ts-transformer@^2.7.7":
-  version "2.7.7"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.7.7.tgz#488e86710e475b5227825e4e0a6af88c83913e12"
-  integrity sha512-VVK2DDlXCmU0LW/R6cWmT5YTx5Ty8rOStM58E2meQRmWkTXtJZ6E4AxsfXVOoPBLlbbka83tgMzioIv5m1zSsg==
+"@formatjs/ts-transformer@^2.7.6", "@formatjs/ts-transformer@^2.7.7", "@formatjs/ts-transformer@^2.7.8":
+  version "2.7.8"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.7.8.tgz#6a3746361341cbe3aa0f321a74ee2d6c8838e8e2"
+  integrity sha512-HDCfK3X90qFq65gab1Qv33EGWPwGLGKAYmThBd59INw+N4nQOffPW5QWsv02ujCQSUJzsq9V133G9PWOPMZwRg==
   dependencies:
-    intl-messageformat-parser "^6.0.2"
+    intl-messageformat-parser "^6.0.3"
     typescript "^3.8"
 
 "@fortawesome/fontawesome-common-types@^0.2.30":
@@ -8373,12 +8382,12 @@ intl-locales-supported@^1.8.12:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
   integrity sha512-FJPl7p1LYO/C+LpwlDcvVpq7AeFTdFgwnq1JjdNYKjb51xkIxssXRR8LaA0fJFogjwRRztqw1ahgSJMSZsSFdw==
 
-intl-messageformat-parser@^6.0.1, intl-messageformat-parser@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.0.2.tgz#166b3b1f8a0e13bff332a4f00389ca9d36631549"
-  integrity sha512-SBFtHxP7mLAA3S1Std6ykOGuHEj7FAhooQQyMIRVA6k0ZNaSrwc4vmfqRL8HdUDRu6J4zqFomCGyNIKLrhLXmA==
+intl-messageformat-parser@^6.0.1, intl-messageformat-parser@^6.0.2, intl-messageformat-parser@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.0.3.tgz#84b4fb000dcb546e5722892ad8490df66987ede8"
+  integrity sha512-8+OKjj2joWTnLHQhYkuxHrA8d+A30OKt9ykdPettUEzR9VWIq8u++NpK9VSL0CU5MBCfWw1hvM8+6a5CAOaprQ==
   dependencies:
-    "@formatjs/intl-numberformat" "^5.5.3"
+    "@formatjs/intl-numberformat" "^5.5.4"
 
 intl-messageformat@^9.3.3:
   version "9.3.3"
