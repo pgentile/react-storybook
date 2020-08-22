@@ -1256,6 +1256,14 @@
     "@types/es-abstract" "^1.17.1"
     es-abstract "^1.17.6"
 
+"@formatjs/ecma402-abstract@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.0.3.tgz#26c77b2c33512f4c59dd03bbd1e10f5d400e0042"
+  integrity sha512-ZT5ZwqT9o+5pqDSI840s+CaAmUcyfA8KjbPrxUD2maCh99K5Iwu0L8tGmF20aZ6NAd8mBasrB999bV12kasQJA==
+  dependencies:
+    "@types/es-abstract" "^1.17.1"
+    es-abstract "^1.17.6"
+
 "@formatjs/intl-datetimeformat@^2.6.2":
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-2.6.2.tgz#e3285d3ad59d00aa483eb9e9da7a8c1789332204"
@@ -1300,6 +1308,15 @@
     "@types/es-abstract" "^1.17.1"
     es-abstract "^1.17.6"
 
+"@formatjs/intl-numberformat@^5.5.3":
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.5.3.tgz#40959082046850eef232e564b498737b1f441c49"
+  integrity sha512-UOkoJxYKJlOzKanwtdcuAsNFm2AmBBPKlTiEDjLQQbyuMVIkIL356U0B5NFF/HzTkHv3wA3MhKBphrJzEx9WKg==
+  dependencies:
+    "@formatjs/ecma402-abstract" "^1.0.3"
+    "@types/es-abstract" "^1.17.1"
+    es-abstract "^1.17.6"
+
 "@formatjs/intl-pluralrules@^3.4.2":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.4.2.tgz#2ec19d458b9ee8dace166b44b4ebfb68565a7fa0"
@@ -1319,12 +1336,12 @@
     "@types/es-abstract" "^1.17.1"
     es-abstract "^1.17.6"
 
-"@formatjs/ts-transformer@^2.7.6":
-  version "2.7.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.7.6.tgz#63d9adb2f94a20c69eaf079496d1a262c4310adf"
-  integrity sha512-e3H8V3MnjFtgKicuW1CB3n4khZLB4g0gZmRRDaKkFZikf29q+RBYPXX8Q5aCIIbwI1btOZlen1A+HzhfisjlkQ==
+"@formatjs/ts-transformer@^2.7.6", "@formatjs/ts-transformer@^2.7.7":
+  version "2.7.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.7.7.tgz#488e86710e475b5227825e4e0a6af88c83913e12"
+  integrity sha512-VVK2DDlXCmU0LW/R6cWmT5YTx5Ty8rOStM58E2meQRmWkTXtJZ6E4AxsfXVOoPBLlbbka83tgMzioIv5m1zSsg==
   dependencies:
-    intl-messageformat-parser "^6.0.1"
+    intl-messageformat-parser "^6.0.2"
     typescript "^3.8"
 
 "@fortawesome/fontawesome-common-types@^0.2.30":
@@ -3968,18 +3985,18 @@ babel-plugin-react-docgen@^4.1.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@^8.1.6:
-  version "8.1.6"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.6.tgz#5c8f321935b26035316886a9f103caa1de6df38f"
-  integrity sha512-eg3zlrx+rGOegeICO3tM2QRvnwBriOo8A0OonuWmgOKbIQg2c4oT1zXWHnw5TD8E/Lvm0T/0g97kJvdntwJuKA==
+babel-plugin-react-intl@^8.1.7:
+  version "8.1.7"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.7.tgz#466c464bfebe952a152fd159969af5b55b5dc113"
+  integrity sha512-34WE4He5tF+AZqS2V6r/QUmgs04+jElE7/mMQEpbJ78X9h+qKfFY1W+IgbcCRJ1EMrCBMh/1FlNL4brod0eXhA==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
-    "@formatjs/ts-transformer" "^2.7.6"
+    "@formatjs/ts-transformer" "^2.7.7"
     "@types/babel__core" "^7.1.7"
     "@types/schema-utils" "^2.4.0"
-    intl-messageformat-parser "^6.0.1"
+    intl-messageformat-parser "^6.0.2"
     schema-utils "^2.6.6"
 
 babel-plugin-require-context-hook@^1.0.0:
@@ -8373,12 +8390,12 @@ intl-locales-supported@^1.8.12:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
   integrity sha512-FJPl7p1LYO/C+LpwlDcvVpq7AeFTdFgwnq1JjdNYKjb51xkIxssXRR8LaA0fJFogjwRRztqw1ahgSJMSZsSFdw==
 
-intl-messageformat-parser@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.0.1.tgz#148035b312d001ce5fe38d0ce9c288463ff3f463"
-  integrity sha512-GineXkDgpyE5berz2aA79pzc2ClgjfPuxF2Nc+dNMNSDl/1V7laXoo+dZ1hE/NHKYt2TR3wNHE7GyNkAICSp9Q==
+intl-messageformat-parser@^6.0.1, intl-messageformat-parser@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.0.2.tgz#166b3b1f8a0e13bff332a4f00389ca9d36631549"
+  integrity sha512-SBFtHxP7mLAA3S1Std6ykOGuHEj7FAhooQQyMIRVA6k0ZNaSrwc4vmfqRL8HdUDRu6J4zqFomCGyNIKLrhLXmA==
   dependencies:
-    "@formatjs/intl-numberformat" "^5.5.2"
+    "@formatjs/intl-numberformat" "^5.5.3"
 
 intl-messageformat@^9.3.2:
   version "9.3.2"
