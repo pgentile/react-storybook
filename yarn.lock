@@ -4635,10 +4635,10 @@ capture-exit@^2.0.0:
   dependencies:
     rsvp "^4.8.4"
 
-card-validator@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-8.0.0.tgz#ee68db00c4351f9bf72dee5aad78cafbfc35d79b"
-  integrity sha512-rVXogmcENwpKmxo/PZdswrFu0in6L5qz2b+pt+8LMiEuW3FIvkSyO7l1ueJmIoQ/V2M3qEBic3F13o1IdvTyjw==
+card-validator@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-8.1.0.tgz#9f59e039e9a15f66152b228831f3bdcd713f1edf"
+  integrity sha512-KlWjnGs6DyxRj9DLGPv+sb7AvU9Y6Od7DJWjnTghzplzsKz/vTYqRMK46xO/BCpHNqvnFNNVbSQa1vBFJ+/o8g==
   dependencies:
     credit-card-type "^9.0.0"
 
