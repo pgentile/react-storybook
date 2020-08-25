@@ -31,7 +31,7 @@
     "babel:test": "cross-env NODE_ENV=test babel"
   },
   "dependencies": {
-    "@formatjs/intl-getcanonicallocales": "^1.4.2",
+    "@formatjs/intl-getcanonicallocales": "^1.4.3",
     "@formatjs/intl-numberformat": "^5.5.4",
     "@formatjs/intl-pluralrules": "^3.4.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
