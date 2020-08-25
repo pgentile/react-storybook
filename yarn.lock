@@ -1851,17 +1851,17 @@
     regenerator-runtime "^0.13.3"
     ts-dedent "^1.1.1"
 
-"@storybook/addon-viewport@^6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-6.0.16.tgz#574cc0a3f991ce405ba4a3540132fb05edf488f6"
-  integrity sha512-3vk6lBZrKJrK9rwxglLT1p579WkLvoJxgW5ddpvSsu31NPAKfDufkDqOZOQGyMmcgIFzZJEc9eKjoTcLiHxppw==
+"@storybook/addon-viewport@^6.0.17":
+  version "6.0.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-6.0.17.tgz#943a46b4f9a446976c85779e5fac9f02b4d0d49e"
+  integrity sha512-Td1xF29Gc+P86bMTktzKh9wy/z/D9DQlG6a2WOhHdEppIRhuUArbV/33eF4KcQQ8vTBpvBNEzPBXXgl9msGmRg==
   dependencies:
-    "@storybook/addons" "6.0.16"
-    "@storybook/api" "6.0.16"
-    "@storybook/client-logger" "6.0.16"
-    "@storybook/components" "6.0.16"
-    "@storybook/core-events" "6.0.16"
-    "@storybook/theming" "6.0.16"
+    "@storybook/addons" "6.0.17"
+    "@storybook/api" "6.0.17"
+    "@storybook/client-logger" "6.0.17"
+    "@storybook/components" "6.0.17"
+    "@storybook/core-events" "6.0.17"
+    "@storybook/theming" "6.0.17"
     core-js "^3.0.1"
     global "^4.3.2"
     memoizerific "^1.11.3"
@@ -1895,7 +1895,7 @@
     global "^4.3.2"
     regenerator-runtime "^0.13.3"
 
-"@storybook/addons@^6.0.17":
+"@storybook/addons@6.0.17", "@storybook/addons@^6.0.17":
   version "6.0.17"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-6.0.17.tgz#7658a5b6d1537345f0a8d514beebaf3a7608c60d"
   integrity sha512-DuPS1KkXgp7YRs5smp9zNFPXXZpSSGNc/NfIFY5O2ILG3FC3ehoz0/5NOnY3CMvzAkWDzWkvJxIgmrJWhAro/A==
@@ -2165,6 +2165,34 @@
     "@storybook/client-logger" "6.0.16"
     "@storybook/csf" "0.0.1"
     "@storybook/theming" "6.0.16"
+    "@types/overlayscrollbars" "^1.9.0"
+    "@types/react-color" "^3.0.1"
+    "@types/react-syntax-highlighter" "11.0.4"
+    core-js "^3.0.1"
+    fast-deep-equal "^3.1.1"
+    global "^4.3.2"
+    lodash "^4.17.15"
+    markdown-to-jsx "^6.11.4"
+    memoizerific "^1.11.3"
+    overlayscrollbars "^1.10.2"
+    polished "^3.4.4"
+    popper.js "^1.14.7"
+    react "^16.8.3"
+    react-color "^2.17.0"
+    react-dom "^16.8.3"
+    react-popper-tooltip "^2.11.0"
+    react-syntax-highlighter "^12.2.1"
+    react-textarea-autosize "^8.1.1"
+    ts-dedent "^1.1.1"
+
+"@storybook/components@6.0.17":
+  version "6.0.17"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.0.17.tgz#ed86c5462879f2ae64761cc6ebcf624b428dab4c"
+  integrity sha512-OsKV2/MdCar8BvPeKKc+CTVVtlt6DF0fUDYAf38pxLvGrHuM5Nxor7d6yWxRFk5blMykVWYozwA4q6FlLQbGqg==
+  dependencies:
+    "@storybook/client-logger" "6.0.17"
+    "@storybook/csf" "0.0.1"
+    "@storybook/theming" "6.0.17"
     "@types/overlayscrollbars" "^1.9.0"
     "@types/react-color" "^3.0.1"
     "@types/react-syntax-highlighter" "11.0.4"
