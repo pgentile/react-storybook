@@ -1253,6 +1253,11 @@
   resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.1.0.tgz#a109d2cc963953ba7cb22ffb998abd6a4e9b7e18"
   integrity sha512-t5wDT1bIF5v5O9mk/reI0TvhqBKs0WiLf2ihVQcUvVCc0qb7poP/KFXWPehooaARDNRJ66LGFLVOHPPsJ+W2Xg==
 
+"@formatjs/ecma402-abstract@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.1.0.tgz#a109d2cc963953ba7cb22ffb998abd6a4e9b7e18"
+  integrity sha512-t5wDT1bIF5v5O9mk/reI0TvhqBKs0WiLf2ihVQcUvVCc0qb7poP/KFXWPehooaARDNRJ66LGFLVOHPPsJ+W2Xg==
+
 "@formatjs/intl-datetimeformat@^2.6.3":
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-2.6.3.tgz#479dd2bf2a49eb07f4e0e4ffd54f03a2790a8f00"
@@ -4101,18 +4106,18 @@ babel-plugin-react-docgen@^4.1.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@^8.1.8:
-  version "8.1.8"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.8.tgz#1a6d8295dfe784a59b4418f85d4eac5aaf431985"
-  integrity sha512-7o5W4Ws9T/P2HN6iGDP32J9lHGZleErYrWhk8iIjDFnCYrcAKN6t/Q+NzreZrJxStvBSaibM6gkriRzScUNf9w==
+babel-plugin-react-intl@^8.1.9:
+  version "8.1.9"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.9.tgz#082324ac94d3ed69d5e9287c4592d853a474b467"
+  integrity sha512-ZoU2O8cqq39zyv9U6FG2VjmoJnDXSPwBozpELxrUDuV3rWfpSiJch18do2tAm/eflyMSl1moek0hpJg7aPfuQA==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
-    "@formatjs/ts-transformer" "^2.7.8"
+    "@formatjs/ts-transformer" "^2.7.9"
     "@types/babel__core" "^7.1.7"
     "@types/schema-utils" "^2.4.0"
-    intl-messageformat-parser "^6.0.3"
+    intl-messageformat-parser "^6.0.4"
     schema-utils "^2.6.6"
 
 babel-plugin-require-context-hook@^1.0.0:
