@@ -1281,12 +1281,12 @@
   dependencies:
     "@formatjs/ecma402-abstract" "^1.2.0"
 
-"@formatjs/intl-pluralrules@^3.4.4":
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.4.4.tgz#0e9ff4c60fd1d2e8f46a11c438121a17678d2a7f"
-  integrity sha512-sQ7m4JloezEVItBbuDRqYYDLNGnecRexutRIExXc3jwLdaG6izosUKDPZf/ePSZY+uCMDUsTvnYNMywVcLE6Ww==
+"@formatjs/intl-pluralrules@^3.4.5":
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.4.5.tgz#0802dc700fa0fd8b3b88a67d09f0a61256cb6f36"
+  integrity sha512-zX3cxhHinAz11Zdggc95NmlbfqaLeuSfi3dqdXO/H3XQbeo8fid5ePIj64YyNTetXyOwFE0DnVqKOK5nwCmDjw==
   dependencies:
-    "@formatjs/ecma402-abstract" "^1.1.0"
+    "@formatjs/ecma402-abstract" "^1.2.0"
 
 "@formatjs/intl-relativetimeformat@^7.2.4":
   version "7.2.4"
