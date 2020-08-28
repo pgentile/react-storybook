@@ -88,7 +88,7 @@
     "@babel/preset-typescript": "^7.10.4",
     "@formatjs/cli": "^2.7.12",
     "@storybook/addon-actions": "^6.0.19",
-    "@storybook/addon-controls": "^6.0.19",
+    "@storybook/addon-controls": "^6.0.20",
     "@storybook/addon-docs": "^6.0.19",
     "@storybook/addon-links": "^6.0.19",
     "@storybook/addon-storyshots": "^6.0.19",
