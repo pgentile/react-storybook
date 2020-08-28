@@ -1228,12 +1228,12 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@formatjs/cli@^2.7.12":
-  version "2.7.12"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.12.tgz#b2130f356652f41ecd538e801bcdbd032dded2e7"
-  integrity sha512-qkYsFQCJ1qkSnW8Yylgu55aR7Eyl8tz+EixZOy5t1SKaSWBN8EsYsoKoQA2EuNmmtcaVLEkd8Bk67fxPScX0yQ==
+"@formatjs/cli@^2.7.13":
+  version "2.7.13"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.7.13.tgz#5616722541fd2b8163f52aba37fcd9f8a6a3f44c"
+  integrity sha512-dUlq9E/TJgfBaZjmLkehcL+1DD1cJG3dOAzVAf7ahznHXMchHWygZ2q+FPvwvpg2REc0VpE13QDHLrO2sa4KEQ==
   dependencies:
-    "@formatjs/ts-transformer" "^2.7.9"
+    "@formatjs/ts-transformer" "^2.7.10"
     "@types/json-stable-stringify" "^1.0.32"
     "@types/lodash" "^4.14.150"
     "@types/loud-rejection" "^2.0.0"
@@ -1242,7 +1242,7 @@
     commander "5.1.0"
     fast-glob "^3.2.4"
     fs-extra "^9.0.0"
-    intl-messageformat-parser "^6.0.4"
+    intl-messageformat-parser "^6.0.5"
     json-stable-stringify "^1.0.1"
     lodash "^4.17.15"
     loud-rejection "^2.2.0"
@@ -1308,12 +1308,12 @@
     intl-messageformat "^9.3.5"
     intl-messageformat-parser "^6.0.4"
 
-"@formatjs/ts-transformer@^2.7.9":
-  version "2.7.9"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.7.9.tgz#5c483dfbd4ba8835f94b8a4e607934d7c62b2324"
-  integrity sha512-NPcsi86KO95idHsgAqV4sud3RqFVzpEqUyowlH4KeoRjpWVDKJgd3ICorY5UjycsduXL4/TK1JtBPgskFwiutQ==
+"@formatjs/ts-transformer@^2.7.10", "@formatjs/ts-transformer@^2.7.9":
+  version "2.7.10"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.7.10.tgz#ce1d2898fe66acbeed8c07802e49346d6a672d5f"
+  integrity sha512-FnR37q22rTRQtOqgU7PfEYvhVbkL7DHzbf+/bGidVmRCqp2b2nRmbqd7oZLgnFHgctirPAKOvX0Z8GLQz87gAQ==
   dependencies:
-    intl-messageformat-parser "^6.0.4"
+    intl-messageformat-parser "^6.0.5"
     typescript "^3.8"
 
 "@fortawesome/fontawesome-common-types@^0.2.30":
@@ -8353,12 +8353,12 @@ intl-locales-supported@^1.8.12:
   resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
   integrity sha512-FJPl7p1LYO/C+LpwlDcvVpq7AeFTdFgwnq1JjdNYKjb51xkIxssXRR8LaA0fJFogjwRRztqw1ahgSJMSZsSFdw==
 
-intl-messageformat-parser@^6.0.4:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.0.4.tgz#487a16ad58ee681ae67a3e86bae76ae7b7e7e03c"
-  integrity sha512-jdD/LbP0xI9N0/ce/U3yzxvKIlXTQHOj1bvj56K7+hnJD3hoD1pOuvMf3393wmze952RVD5poRfQpoTjy4CajA==
+intl-messageformat-parser@^6.0.4, intl-messageformat-parser@^6.0.5:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.0.5.tgz#098b052ac2714101b4da06fd45d68199d3abd131"
+  integrity sha512-4aO/RTUtzWiV/naqif4ubwz8P7THOxhraN6XmQpgXj4mdGjtPNO2j3vKlEDgAvv4BEi12R/JCHfLf7SUyfPKog==
   dependencies:
-    "@formatjs/ecma402-abstract" "^1.1.0"
+    "@formatjs/ecma402-abstract" "^1.2.0"
 
 intl-messageformat@^9.3.5:
   version "9.3.5"
