@@ -11,18 +11,16 @@ function I18nWrapper({ children, locale }) {
   return children;
 }
 
-addParameters({
+export const parameters = {
   i18n: {
     provider: I18nWrapper,
     supportedLocales: ["fr", "en"],
   },
-});
+};
 
-/*
-// Il ajoute un attribut "dir"
-addDecorator(withI18n);
-*/
-
-addDecorator((storyFn) => {
-  return <div className="rs">{storyFn()}</div>;
-});
+export const decorators = [
+  (storyFn) => {
+    return <div className="rs">{storyFn()}</div>;
+  },
+  // withI18n // Ce décorateur ajoute un attribut "dir" partout...
+];
