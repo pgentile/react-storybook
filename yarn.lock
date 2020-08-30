@@ -1274,10 +1274,10 @@
   dependencies:
     "@formatjs/ecma402-abstract" "^1.2.0"
 
-"@formatjs/intl-numberformat@5.5.6":
-  version "5.5.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.5.6.tgz#4f7532e4ff40de04d473f6155d18db0aba50ec99"
-  integrity sha512-/Nkl38ppCgN4kLysTMRHXXehDpOnvs2ZL80ZgLiMizg+NJQGtLivhfC0UjKanpAJEWp6SIAd3YHcqAx9b8ki1Q==
+"@formatjs/intl-numberformat@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.6.0.tgz#87bd1e56246fba2c7af58f73930cbe379dd0aef8"
+  integrity sha512-MfYcqX1LE2N4P9eVtQXI/L6APlXgjexCj0b7GxJfK+icrwbA0XINSPGTt96kUxO5hf/tDu0MxJXnt9gwMKm/EA==
   dependencies:
     "@formatjs/ecma402-abstract" "^1.2.0"
 
