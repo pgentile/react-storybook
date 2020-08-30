@@ -1316,6 +1316,14 @@
     intl-messageformat-parser "^6.0.5"
     typescript "^3.8"
 
+"@formatjs/ts-transformer@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.8.0.tgz#a301306ed54990f7b1c1f5a02d47abe9b21bac65"
+  integrity sha512-4F5iUgPmMP1QmzntahdtNepdgwr2Y3f2O/kZprRzPF+fWPI4P+f9PNORdRB35eWZjG66bZ1vs/SPPZnqW/Ruaw==
+  dependencies:
+    intl-messageformat-parser "^6.0.5"
+    typescript "^4.0"
+
 "@fortawesome/fontawesome-common-types@^0.2.30":
   version "0.2.30"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.30.tgz#2f1cc5b46bd76723be41d0013a8450c9ba92b777"
@@ -6467,12 +6475,12 @@ eslint-plugin-emotion@10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@2.7.6:
-  version "2.7.6"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.7.6.tgz#ce66d5f202801fc1847fd3380399280adb9c60ec"
-  integrity sha512-nDqmdFw0w5tC72tWSMLXD5L15vrswnKjpEmTJkOINfvUc+F/xjKRq21aZD/RObNFd1a89I4HkOi/fpxyw93iEQ==
+eslint-plugin-formatjs@2.7.7:
+  version "2.7.7"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.7.7.tgz#25e8f016ebc4e356dcb61a8e5d64a6a9e08116ec"
+  integrity sha512-4H3ra0uFxktaldzFjS8EQ6RIo/iGbIZpcPzMXXu8gGc/VmA76c1x/+3kyqe/IXwvAEtDK3wJf5u9VSFXunROGw==
   dependencies:
-    "@formatjs/ts-transformer" "^2.7.10"
+    "@formatjs/ts-transformer" "^2.8.0"
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^7.2.0"
     "@types/estree" "^0.0.45"
@@ -15230,6 +15238,11 @@ typescript@^3.8:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+
+typescript@^4.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.2.tgz#7ea7c88777c723c681e33bf7988be5d008d05ac2"
+  integrity sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
 
 ua-parser-js@^0.7.18:
   version "0.7.21"
