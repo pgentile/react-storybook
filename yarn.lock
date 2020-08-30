@@ -1316,6 +1316,14 @@
     intl-messageformat-parser "^6.0.5"
     typescript "^3.8"
 
+"@formatjs/ts-transformer@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.8.0.tgz#a301306ed54990f7b1c1f5a02d47abe9b21bac65"
+  integrity sha512-4F5iUgPmMP1QmzntahdtNepdgwr2Y3f2O/kZprRzPF+fWPI4P+f9PNORdRB35eWZjG66bZ1vs/SPPZnqW/Ruaw==
+  dependencies:
+    intl-messageformat-parser "^6.0.5"
+    typescript "^4.0"
+
 "@fortawesome/fontawesome-common-types@^0.2.30":
   version "0.2.30"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.30.tgz#2f1cc5b46bd76723be41d0013a8450c9ba92b777"
@@ -3948,15 +3956,15 @@ babel-plugin-react-docgen@^4.1.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@8.1.10:
-  version "8.1.10"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.10.tgz#e66ba2e8fddf4e868b2bef270eb6803e0cd1f5b7"
-  integrity sha512-nyu5OIu43QgBKWZCq48Cu74HQ61k7MTF5M0GYJnCAFqu8EYL+hjeCXPR0rNH4DfJNZkLVOXQT01J/k303d+jTA==
+babel-plugin-react-intl@8.1.11:
+  version "8.1.11"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.11.tgz#ea1976e8c8195bfaf125eb7f9d65930f93a5f0fd"
+  integrity sha512-wcO43FLJs7WCClrpkYblsDM1OIii8qCs4zoSBHP4QYvSqo1WEahZv2usfBo/hkEMbjByMDrcBU6HMQF9BmTYrA==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
-    "@formatjs/ts-transformer" "^2.7.10"
+    "@formatjs/ts-transformer" "^2.8.0"
     "@types/babel__core" "^7.1.7"
     "@types/schema-utils" "^2.4.0"
     intl-messageformat-parser "^6.0.5"
@@ -15230,6 +15238,11 @@ typescript@^3.8:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+
+typescript@^4.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.2.tgz#7ea7c88777c723c681e33bf7988be5d008d05ac2"
+  integrity sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
 
 ua-parser-js@^0.7.18:
   version "0.7.21"
