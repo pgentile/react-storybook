@@ -3956,15 +3956,15 @@ babel-plugin-react-docgen@^4.1.0:
     react-docgen "^5.0.0"
     recast "^0.14.7"
 
-babel-plugin-react-intl@8.1.10:
-  version "8.1.10"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.10.tgz#e66ba2e8fddf4e868b2bef270eb6803e0cd1f5b7"
-  integrity sha512-nyu5OIu43QgBKWZCq48Cu74HQ61k7MTF5M0GYJnCAFqu8EYL+hjeCXPR0rNH4DfJNZkLVOXQT01J/k303d+jTA==
+babel-plugin-react-intl@8.1.11:
+  version "8.1.11"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.1.11.tgz#ea1976e8c8195bfaf125eb7f9d65930f93a5f0fd"
+  integrity sha512-wcO43FLJs7WCClrpkYblsDM1OIii8qCs4zoSBHP4QYvSqo1WEahZv2usfBo/hkEMbjByMDrcBU6HMQF9BmTYrA==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
-    "@formatjs/ts-transformer" "^2.7.10"
+    "@formatjs/ts-transformer" "^2.8.0"
     "@types/babel__core" "^7.1.7"
     "@types/schema-utils" "^2.4.0"
     intl-messageformat-parser "^6.0.5"
