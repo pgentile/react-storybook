@@ -1378,12 +1378,12 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/cli@2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.8.0.tgz#5bb71b69d765ebe4d33f79939e9c4050c1abdbd7"
-  integrity sha512-Uw9dErTGcw87zBXV5Y6d4YdvJalpNfLhEqN+qZYpeJ8hB4wPh9FRfobCWOs5d/rX/RO6HqbgjMqG8UW2kdDEwQ==
+"@formatjs/cli@2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.9.0.tgz#52cceffb133cd1307650af26e878785aa4370a0c"
+  integrity sha512-HSpu0qrpPGaja+V7bHc61ZyzHfV+OzGVmB2DmamjZSaI0S5o7gs0skY40o4chIVNsYT/X9RD9G77pOIEHDWmUA==
   dependencies:
-    "@formatjs/ts-transformer" "^2.8.0"
+    "@formatjs/ts-transformer" "^2.9.0"
     "@types/json-stable-stringify" "^1.0.32"
     "@types/lodash" "^4.14.150"
     "@types/loud-rejection" "^2.0.0"
@@ -1462,6 +1462,14 @@
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.8.0.tgz#a301306ed54990f7b1c1f5a02d47abe9b21bac65"
   integrity sha512-4F5iUgPmMP1QmzntahdtNepdgwr2Y3f2O/kZprRzPF+fWPI4P+f9PNORdRB35eWZjG66bZ1vs/SPPZnqW/Ruaw==
+  dependencies:
+    intl-messageformat-parser "^6.0.5"
+    typescript "^4.0"
+
+"@formatjs/ts-transformer@^2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.9.0.tgz#582f8c54bc5888044f3e848163411dabca130aff"
+  integrity sha512-H6skH+McG2OoUL3nc6Eas/5IunM8hk7uDU5Ak/qtNtvsehOH8g030LaFaMxw28BWq2vBipGAPlyyz/KTvO8fPw==
   dependencies:
     intl-messageformat-parser "^6.0.5"
     typescript "^4.0"
