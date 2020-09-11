@@ -1387,10 +1387,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/cli@2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.11.0.tgz#d6de157735ed7e4cf95147e1bd568bd3c7051967"
-  integrity sha512-1gQuNERmX4c1GdaZw42ETMMFsF6ny/FdvubTTOjN4OvUivxGz64+I6APn1b+5pHFByco/x78QjRm7iiQegUb0w==
+"@formatjs/cli@2.11.1":
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.11.1.tgz#f74d6785aacc8f940cf552174a08b4bc4b52d75d"
+  integrity sha512-QKoXJLklLMD0KNBeTlKPFVlgACfFM75kLRR4Tupx98rLGewGYoITqATViJaj42sarFZwwsnWhMZ0VJi5pEVwIw==
   dependencies:
     "@formatjs/ts-transformer" "^2.9.1"
     "@types/json-stable-stringify" "^1.0.32"
