@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/addon-controls",
     "@storybook/addon-actions",
     "@storybook/addon-viewport",
+    "@storybook/addon-a11y",
     "storybook-addon-i18n/register",
   ],
   webpack: async (config, { configType }) => {

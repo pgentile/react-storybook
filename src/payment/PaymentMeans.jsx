@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo, useCallback } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
@@ -8,71 +8,72 @@ import CheckableImageInput from "../forms/CheckableImageInput";
 
 import "./PaymentMeans.scss";
 
-export default class PaymentMeans extends React.PureComponent {
-  static propTypes = {
-    className: PropTypes.string,
-    means: PropTypes.arrayOf(PropTypes.string.isRequired),
-    selectedMean: PropTypes.string,
-    disabled: PropTypes.bool,
-    onMeanChange: PropTypes.func.isRequired,
-  };
+function PaymentMeans({ className = "", means = [], selectedMean, onMeanChange, disabled }) {
+  const handleMeanChange = useCallback(
+    (event) => {
+      onMeanChange(event.target.value);
+    },
+    [onMeanChange]
+  );
 
-  static defaultProps = {
-    className: "",
-    means: [],
-  };
+  const renderedMeans = means.map((mean) => {
+    return (
+      <PaymentMean
+        key={mean}
+        mean={mean}
+        checked={mean === selectedMean}
+        disabled={disabled}
+        onMeanChange={handleMeanChange}
+      />
+    );
+  });
 
-  onMeanChange = (event) => {
-    this.props.onMeanChange(event.target.value);
-  };
-
-  render() {
-    const { className, means, selectedMean, disabled } = this.props;
-
-    const renderedMeans = means.map((mean) => {
-      return (
-        <PaymentMean
-          key={mean}
-          mean={mean}
-          checked={mean === selectedMean}
-          disabled={disabled}
-          onMeanChange={this.onMeanChange}
-        />
-      );
-    });
-
-    return <div className={`payment-means ${className}`}>{renderedMeans}</div>;
-  }
+  return <div className={`payment-means ${className}`}>{renderedMeans}</div>;
 }
 
-const icons = {
-  visa: faCcVisa,
-  mastercard: faCcMastercard,
-  "american-express": faCcAmex,
+PaymentMeans.propTypes = {
+  className: PropTypes.string,
+  means: PropTypes.arrayOf(PropTypes.string.isRequired),
+  selectedMean: PropTypes.string,
+  disabled: PropTypes.bool,
+  onMeanChange: PropTypes.func.isRequired,
 };
 
-class PaymentMean extends React.PureComponent {
-  static propTypes = {
-    className: PropTypes.string,
-    mean: PropTypes.string.isRequired,
-    checked: PropTypes.bool,
-    disabled: PropTypes.bool,
-    onMeanChange: PropTypes.func.isRequired,
+export default memo(PaymentMeans);
+
+const PaymentMean = memo(function PaymentMean({ mean, checked, disabled, onMeanChange }) {
+  const icons = {
+    visa: faCcVisa,
+    mastercard: faCcMastercard,
+    "american-express": faCcAmex,
   };
 
-  render() {
-    const { mean, checked, disabled, onMeanChange } = this.props;
-    return (
-      <CheckableImageInput
-        className="payment-means__mean"
-        name="mean"
-        value={mean}
-        checked={checked}
-        disabled={disabled}
-        onChange={onMeanChange}
-      >
-        <FontAwesomeIcon icon={icons[mean] || faCreditCard} size="2x" />
-      </CheckableImageInput>
-    );
-  }
-}
+  const labels = {
+    visa: "Visa",
+    mastercard: "Mastercard",
+    "american-express": "AMEX",
+    maestro: "Maestro",
+    "registred-cards": "Cartes enregistrées",
+  };
+
+  return (
+    <CheckableImageInput
+      className="payment-means__mean"
+      name="mean"
+      value={mean}
+      label={labels[mean]}
+      checked={checked}
+      disabled={disabled}
+      onChange={onMeanChange}
+    >
+      <FontAwesomeIcon icon={icons[mean] ?? faCreditCard} size="2x" />
+    </CheckableImageInput>
+  );
+});
+
+PaymentMean.propTypes = {
+  mean: PropTypes.string.isRequired,
+  checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+  onMeanChange: PropTypes.func.isRequired,
+};

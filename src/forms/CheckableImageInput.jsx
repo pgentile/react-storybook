@@ -9,6 +9,7 @@ export default class CheckableImageInput extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
+    label: PropTypes.string.isRequired,
     checked: PropTypes.bool,
     disabled: PropTypes.bool,
     readOnly: PropTypes.bool,
@@ -57,6 +58,7 @@ export default class CheckableImageInput extends React.PureComponent {
     const {
       className,
       children,
+      label,
       checked,
       type,
       name,
@@ -85,6 +87,7 @@ export default class CheckableImageInput extends React.PureComponent {
         aria-checked={checked}
         aria-disabled={disabled}
         aria-readonly={readOnly}
+        aria-label={label}
       >
         <input
           className="checkable-image-input__input"

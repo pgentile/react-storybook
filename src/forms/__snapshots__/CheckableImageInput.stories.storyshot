@@ -6,6 +6,7 @@ exports[`Storyshots Forms / CheckableImageInput Checked 1`] = `
 >
   <span
     aria-checked={true}
+    aria-label="Visa"
     className="checkable-image-input checkable-image-input--checked "
     onClick={[Function]}
     onKeyPress={[Function]}
@@ -47,6 +48,7 @@ exports[`Storyshots Forms / CheckableImageInput Disabled 1`] = `
 >
   <span
     aria-disabled={true}
+    aria-label="Visa"
     className="checkable-image-input checkable-image-input--disabled "
     onClick={[Function]}
     onKeyPress={[Function]}
@@ -89,6 +91,7 @@ exports[`Storyshots Forms / CheckableImageInput Disabled And Checked 1`] = `
   <span
     aria-checked={true}
     aria-disabled={true}
+    aria-label="Visa"
     className="checkable-image-input checkable-image-input--checked checkable-image-input--disabled "
     onClick={[Function]}
     onKeyPress={[Function]}
@@ -131,6 +134,7 @@ exports[`Storyshots Forms / CheckableImageInput Many 1`] = `
 >
   <span
     aria-checked={true}
+    aria-label="Visa"
     className="checkable-image-input checkable-image-input--checked "
     onClick={[Function]}
     onKeyPress={[Function]}
@@ -164,6 +168,7 @@ exports[`Storyshots Forms / CheckableImageInput Many 1`] = `
     </svg>
   </span>
   <span
+    aria-label="Mastercard"
     className="checkable-image-input "
     onClick={[Function]}
     onKeyPress={[Function]}
@@ -196,6 +201,7 @@ exports[`Storyshots Forms / CheckableImageInput Many 1`] = `
     </svg>
   </span>
   <span
+    aria-label="AMEX"
     className="checkable-image-input "
     onClick={[Function]}
     onKeyPress={[Function]}
@@ -235,6 +241,7 @@ exports[`Storyshots Forms / CheckableImageInput Read Only 1`] = `
   className="rs"
 >
   <span
+    aria-label="Visa"
     aria-readonly={true}
     className="checkable-image-input checkable-image-input--read-only "
     onClick={[Function]}
@@ -276,6 +283,7 @@ exports[`Storyshots Forms / CheckableImageInput Unchecked 1`] = `
   className="rs"
 >
   <span
+    aria-label="Visa"
     className="checkable-image-input "
     onClick={[Function]}
     onKeyPress={[Function]}

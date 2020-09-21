@@ -18,7 +18,7 @@ export default {
 
 export const unchecked = () => {
   return (
-    <CheckableImageInput {...actions}>
+    <CheckableImageInput {...actions} label="Visa">
       <FontAwesomeIcon icon={faCcVisa} size="2x" />
     </CheckableImageInput>
   );
@@ -26,7 +26,7 @@ export const unchecked = () => {
 
 export const checked = () => {
   return (
-    <CheckableImageInput checked {...actions}>
+    <CheckableImageInput checked {...actions} label="Visa">
       <FontAwesomeIcon icon={faCcVisa} size="2x" />
     </CheckableImageInput>
   );
@@ -34,7 +34,7 @@ export const checked = () => {
 
 export const disabled = () => {
   return (
-    <CheckableImageInput disabled {...actions}>
+    <CheckableImageInput disabled {...actions} label="Visa">
       <FontAwesomeIcon icon={faCcVisa} size="2x" />
     </CheckableImageInput>
   );
@@ -42,7 +42,7 @@ export const disabled = () => {
 
 export const disabledAndChecked = () => {
   return (
-    <CheckableImageInput disabled checked {...actions}>
+    <CheckableImageInput disabled checked {...actions} label="Visa">
       <FontAwesomeIcon icon={faCcVisa} size="2x" />
     </CheckableImageInput>
   );
@@ -50,7 +50,7 @@ export const disabledAndChecked = () => {
 
 export const readOnly = () => {
   return (
-    <CheckableImageInput readOnly {...actions}>
+    <CheckableImageInput readOnly {...actions} label="Visa">
       <FontAwesomeIcon icon={faCcVisa} size="2x" />
     </CheckableImageInput>
   );
@@ -59,13 +59,13 @@ export const readOnly = () => {
 export const many = () => {
   return (
     <Fragment>
-      <CheckableImageInput checked {...actions}>
+      <CheckableImageInput checked {...actions} label="Visa">
         <FontAwesomeIcon icon={faCcVisa} size="2x" />
       </CheckableImageInput>
-      <CheckableImageInput {...actions}>
+      <CheckableImageInput {...actions} label="Mastercard">
         <FontAwesomeIcon icon={faCcMastercard} size="2x" />
       </CheckableImageInput>
-      <CheckableImageInput {...actions}>
+      <CheckableImageInput {...actions} label="AMEX">
         <FontAwesomeIcon icon={faCcAmex} size="2x" />
       </CheckableImageInput>
     </Fragment>

@@ -22,6 +22,7 @@ exports[`Storyshots Payment / PaymentForm Main 1`] = `
     >
       <span
         aria-checked={false}
+        aria-label="Cartes enregistrées"
         className="checkable-image-input payment-means__mean"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -58,6 +59,7 @@ exports[`Storyshots Payment / PaymentForm Main 1`] = `
       </span>
       <span
         aria-checked={false}
+        aria-label="Visa"
         className="checkable-image-input payment-means__mean"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -94,6 +96,7 @@ exports[`Storyshots Payment / PaymentForm Main 1`] = `
       </span>
       <span
         aria-checked={false}
+        aria-label="Mastercard"
         className="checkable-image-input payment-means__mean"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -130,6 +133,7 @@ exports[`Storyshots Payment / PaymentForm Main 1`] = `
       </span>
       <span
         aria-checked={false}
+        aria-label="Maestro"
         className="checkable-image-input payment-means__mean"
         onClick={[Function]}
         onKeyPress={[Function]}
@@ -166,6 +170,7 @@ exports[`Storyshots Payment / PaymentForm Main 1`] = `
       </span>
       <span
         aria-checked={false}
+        aria-label="AMEX"
         className="checkable-image-input payment-means__mean"
         onClick={[Function]}
         onKeyPress={[Function]}
