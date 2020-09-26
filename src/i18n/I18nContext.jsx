@@ -9,6 +9,7 @@ import { shouldPolyfill as shouldPolyfillRelativeTimeFormat } from "@formatjs/in
 import { shouldPolyfill as shouldPolyfillListFormat } from "@formatjs/intl-listformat/should-polyfill";
 import { shouldPolyfill as shouldPolyfillNumberFormat } from "@formatjs/intl-numberformat/should-polyfill";
 import { shouldPolyfill as shouldPolyfillDateTimeFormat } from "@formatjs/intl-datetimeformat/should-polyfill";
+import { shouldPolyfill as shouldPolyfillLocale } from "@formatjs/intl-locale/should-polyfill";
 
 const ALWAYS_READY = !window || process.env.NODE_ENV === "test";
 
@@ -88,6 +89,10 @@ async function loadPolyfills(locale) {
       /* webpackMode: "lazy" */
       `@formatjs/intl-datetimeformat/locale-data/${language}`
     );
+  }
+
+  if (shouldPolyfillLocale()) {
+    await import("@formatjs/intl-locale/polyfill");
   }
 }
 
