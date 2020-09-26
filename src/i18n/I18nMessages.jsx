@@ -45,7 +45,7 @@ async function loadMessages(language) {
 
 export default function I18nMessages({ userName, tripCount, cardCount, gender }) {
   return (
-    <I18nProvider loadMessages={loadMessages} defaultLocale="fr-FR">
+    <I18nProvider loadMessages={loadMessages} defaultLocale="fr-FR" defaultRichTextElements={{ b }}>
       <I18nLocaleSelector />
       <p>
         <FormattedMessage
@@ -59,19 +59,17 @@ export default function I18nMessages({ userName, tripCount, cardCount, gender })
         <FormattedMessage
           id="hello.formatted"
           description="Hello"
+          // eslint-disable-next-line formatjs/enforce-placeholders
           defaultMessage="Salut, <b>{userName}</b>&nbsp;!"
-          values={{
-            b,
-            userName,
-          }}
+          values={{ userName }}
         />
       </p>
       <p>
         <FormattedMessage
           id="personal_infos"
           description="Ask user its personal informations"
+          // eslint-disable-next-line formatjs/enforce-placeholders
           defaultMessage="Entrez vos <b>nom</b>, <b>prénom</b> et <b>date de naissance</b>"
-          values={{ b }}
         />
       </p>
       <p>
