@@ -258,14 +258,14 @@ exports[`Storyshots I18n / I18nMessages Main 1`] = `
     <em>
       Jean
     </em>
-     !
+     !
   </p>
   <p>
     Salut, 
     <strong>
       Jean
     </strong>
-     !
+     !
   </p>
   <p>
     Entrez vos 
@@ -288,43 +288,26 @@ exports[`Storyshots I18n / I18nMessages Main 1`] = `
     </strong>
   </p>
   <p>
-    
-            Votre 
+    Votre 
     <strong>
       voyage
     </strong>
-    
-            et
-            votre 
+     et votre 
     <strong>
       carte
     </strong>
-    
-          
   </p>
   <p>
-    
-            Il
-            recevra
-            son billet
-            dans une dizaine de jours.
-            Son billet
-            lui
-            sera
-            remis par courrier.
-          
+    Il recevra son billet dans une dizaine de jours. Son billet lui sera remis par courrier.
   </p>
   <p>
-    
-          En validant la page, vous acceptez nos
-          
+    En validant la page, vous acceptez nos 
     <a
       href="https://www.example.org/content/cgu.html"
     >
       conditions générales d'utilisation
     </a>
     .
-        
   </p>
 </div>
 `;

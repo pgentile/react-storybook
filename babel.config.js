@@ -11,6 +11,7 @@ module.exports = (api) => {
         {
           extractSourceLocation: true,
           removeDefaultMessage: false,
+          ast: true,
         },
       ],
     ],
