@@ -254,6 +254,11 @@ exports[`Storyshots I18n / I18nMessages Main 1`] = `
     </ul>
   </form>
   <p>
+    votre voyage
+     et 
+    votre carte
+  </p>
+  <p>
     Salut, 
     <em>
       Jean

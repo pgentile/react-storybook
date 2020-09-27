@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FormattedMessage } from "react-intl";
+import { FormattedList, FormattedMessage } from "react-intl";
 
 import { I18nProvider, useLocale } from "./I18nContext";
 import I18nLocaleSelector from "./I18nLocaleSelector";
@@ -44,9 +44,33 @@ async function loadMessages(language) {
 }
 
 export default function I18nMessages({ userName, tripCount, cardCount, gender }) {
+  const items = [
+    tripCount && (
+      <FormattedMessage
+        key="trip"
+        id="trip"
+        defaultMessage="{tripCount, plural, =0 {aucun voyage} one {votre voyage} other {vos # voyages}}"
+        description="Trip"
+        values={{ tripCount }}
+      />
+    ),
+    cardCount && (
+      <FormattedMessage
+        key="card"
+        id="card"
+        defaultMessage="{cardCount, plural, =0 {aucune carte} one {votre carte} other {vos # cartes}}"
+        description="Card"
+        values={{ cardCount }}
+      />
+    ),
+  ].filter((item) => Boolean(item));
+
   return (
     <I18nProvider loadMessages={loadMessages} defaultLocale="fr-FR" defaultRichTextElements={{ b }}>
       <I18nLocaleSelector />
+      <p>
+        <FormattedList type="unit" value={items} />
+      </p>
       <p>
         <FormattedMessage
           id="hello"
