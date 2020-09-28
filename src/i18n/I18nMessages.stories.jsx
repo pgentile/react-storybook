@@ -13,6 +13,9 @@ export default {
       },
     },
   },
+  parameters: {
+    storyshots: false,
+  },
 };
 
 export const Main = (args) => <I18nMessages {...args} />;
