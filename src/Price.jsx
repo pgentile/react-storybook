@@ -8,7 +8,7 @@ const baseColor = "black";
 const Price = memo(function Price({ as: Element = "span", className = "", price, noColor = false, ...otherProps }) {
   const { value, currency } = price;
 
-  const units = Math.trunc(value);
+  const units = Math.abs(Math.trunc(value)) * (value >= 0 ? 1 : -1);
   const cents = Math.abs(Math.trunc((value * 100) % 100));
   const centsDisplay = cents < 10 ? `0${cents}` : cents.toString();
   const hasCents = cents > 0;

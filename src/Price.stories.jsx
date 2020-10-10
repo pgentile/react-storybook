@@ -1,30 +1,65 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import Price from "./Price";
 
-const values = [0, 12, 21.9, 35.2, 46.5, -10.9, -45.2];
+export default {
+  title: "Price",
+  component: Price,
+  argTypes: {
+    value: {
+      description: "Valeur du montant",
+      control: {
+        type: "number",
+      },
+    },
+    currency: {
+      description: "Devise",
+      control: {
+        type: "select",
+        options: ["EUR", "USD", "GBP", "CHF"],
+      },
+    },
+    noColor: {
+      desccription: "Pas de couleur",
+    },
+  },
+};
 
-const stories = storiesOf("Price", module);
+// eslint-disable-next-line react/prop-types
+const Template = ({ value, currency, ...other }) => <Price price={{ value, currency }} {...other} />;
 
-values.forEach((value) => {
-  stories.add(`Prix - Valeur de ${value} €`, () => {
-    return <Price price={{ value, currency: "EUR" }} />;
-  });
-});
+export const Primary = Template.bind({});
 
-stories.add(`Prix - En pounds`, () => {
-  return <Price price={{ value: 135.9, currency: "GBP" }} />;
-});
+Primary.args = {
+  value: 10.9,
+  currency: "EUR",
+  noColor: false,
+};
 
-stories.add(`Prix - En franc suisse`, () => {
-  return <Price price={{ value: 135.9, currency: "CHF" }} />;
-});
+export const PrixEnPounds = Template.bind({});
 
-stories.add("No color", () => {
-  return <Price price={{ value: 135.9, currency: "EUR" }} noColor />;
-});
+PrixEnPounds.args = {
+  ...Primary.args,
+  currency: "GBP",
+};
 
-stories.add("Extra prop", () => {
-  return <Price price={{ value: 56.9, currency: "EUR" }} data-sample="yes" />;
-});
+export const PrixEnFrancSuisse = Template.bind({});
+
+PrixEnFrancSuisse.args = {
+  ...Primary.args,
+  currency: "CHF",
+};
+
+export const NoColor = Template.bind({});
+
+NoColor.args = {
+  ...Primary.args,
+  noColor: true,
+};
+
+export const ExtraProp = Template.bind({});
+
+ExtraProp.args = {
+  ...Primary.args,
+  "data-sample": "yes",
+};
