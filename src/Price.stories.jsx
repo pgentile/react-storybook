@@ -20,7 +20,7 @@ export default {
       },
     },
     noColor: {
-      desccription: "Pas de couleur",
+      description: "Pas de couleur",
     },
   },
 };
