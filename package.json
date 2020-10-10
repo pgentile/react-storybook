@@ -91,7 +91,7 @@
     "@babel/preset-typescript": "7.10.4",
     "@formatjs/cli": "2.13.1",
     "@storybook/addon-a11y": "6.0.26",
-    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-essentials": "6.0.26",
     "@storybook/addon-storyshots": "6.0.26",
     "@storybook/cli": "6.0.26",
     "@storybook/react": "6.0.26",
