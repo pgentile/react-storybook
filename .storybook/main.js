@@ -5,10 +5,7 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 module.exports = {
   stories: ["../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
   addons: [
-    "@storybook/addon-docs",
-    "@storybook/addon-controls",
-    "@storybook/addon-actions",
-    "@storybook/addon-viewport",
+    "@storybook/addon-essentials",
     "@storybook/addon-a11y",
     "storybook-addon-i18n/register",
   ],
