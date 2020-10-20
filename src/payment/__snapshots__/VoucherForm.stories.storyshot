@@ -16,7 +16,7 @@ exports[`Storyshots Payment / VoucherForm Initial Code 1`] = `
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-67"
+          htmlFor="form-field-52"
         >
           Code promo
         </label>
@@ -29,7 +29,7 @@ exports[`Storyshots Payment / VoucherForm Initial Code 1`] = `
             className="form-input-field "
             disabled={false}
             formNoValidate={true}
-            id="form-field-67"
+            id="form-field-52"
             maxLength={16}
             name="code"
             onBlur={[Function]}
@@ -90,7 +90,7 @@ exports[`Storyshots Payment / VoucherForm Main 1`] = `
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-66"
+          htmlFor="form-field-51"
         >
           Code promo
         </label>
@@ -103,7 +103,7 @@ exports[`Storyshots Payment / VoucherForm Main 1`] = `
             className="form-input-field "
             disabled={false}
             formNoValidate={true}
-            id="form-field-66"
+            id="form-field-51"
             maxLength={16}
             name="code"
             onBlur={[Function]}
@@ -164,7 +164,7 @@ exports[`Storyshots Payment / VoucherForm Submit Error 1`] = `
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-69"
+          htmlFor="form-field-54"
         >
           Code promo
         </label>
@@ -177,7 +177,7 @@ exports[`Storyshots Payment / VoucherForm Submit Error 1`] = `
             className="form-input-field "
             disabled={false}
             formNoValidate={true}
-            id="form-field-69"
+            id="form-field-54"
             maxLength={16}
             name="code"
             onBlur={[Function]}
@@ -238,7 +238,7 @@ exports[`Storyshots Payment / VoucherForm Submit Success 1`] = `
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-68"
+          htmlFor="form-field-53"
         >
           Code promo
         </label>
@@ -251,7 +251,7 @@ exports[`Storyshots Payment / VoucherForm Submit Success 1`] = `
             className="form-input-field "
             disabled={false}
             formNoValidate={true}
-            id="form-field-68"
+            id="form-field-53"
             maxLength={16}
             name="code"
             onBlur={[Function]}

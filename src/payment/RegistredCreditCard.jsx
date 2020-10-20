@@ -11,7 +11,9 @@ import RegistredCardCvvForm from "./RegistredCardCvvForm";
 
 import "./RegistredCreditCard.scss";
 
-const brandIcons = {
+const BRANDS = ["visa", "mastercard", "american-express", "maestro"];
+
+const BRAND_ICONS = {
   visa: faCcVisa,
   mastercard: faCcMastercard,
   "american-express": faCcAmex,
@@ -20,7 +22,7 @@ const brandIcons = {
 export const registredCreditCardShape = {
   id: PropTypes.string.isRequired,
   maskedNumber: PropTypes.string.isRequired,
-  brand: PropTypes.string.isRequired,
+  brand: PropTypes.oneOf(BRANDS).isRequired,
   expirationDate: PropTypes.string.isRequired,
 };
 
@@ -71,7 +73,7 @@ export default function RegistredCreditCard({
       className={`registred-credit-card ${className}`}
     >
       <h1 className="registred-credit-card__title">
-        <FontAwesomeIcon icon={brandIcons[brand] || faCreditCard} />{" "}
+        <FontAwesomeIcon icon={BRAND_ICONS[brand] || faCreditCard} />{" "}
         <span className="registred-credit-card__brand">Carte {brandName}</span>
       </h1>
 

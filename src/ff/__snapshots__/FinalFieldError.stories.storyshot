@@ -12,7 +12,7 @@ exports[`Storyshots Final Forms components / FinalFieldError Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-20"
+        htmlFor="form-field-3"
       >
         Nom
       </label>
@@ -24,7 +24,7 @@ exports[`Storyshots Final Forms components / FinalFieldError Main 1`] = `
           autoCorrect="off"
           disabled={false}
           error={false}
-          id="form-field-20"
+          id="form-field-3"
           name="name"
           onBlur={[Function]}
           onChange={[Function]}

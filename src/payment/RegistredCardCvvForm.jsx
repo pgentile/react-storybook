@@ -12,6 +12,8 @@ import Price from "../Price";
 
 import "./RegistredCardCvvForm.scss";
 
+const BRANDS = ["visa", "mastercard", "american-express", "maestro"];
+
 const focusOnErrors = createDecorator();
 
 export default function RegistredCardCvvForm({ brand, totalPrice, disabled, onCancel, onUseCard }) {
@@ -33,7 +35,7 @@ export default function RegistredCardCvvForm({ brand, totalPrice, disabled, onCa
 }
 
 RegistredCardCvvForm.propTypes = {
-  brand: PropTypes.string.isRequired,
+  brand: PropTypes.oneOf(BRANDS).isRequired,
   totalPrice: PropTypes.shape({
     value: PropTypes.number.isRequired,
     currency: PropTypes.string.isRequired,
@@ -103,7 +105,7 @@ function InternalRegistredCardCvvForm({ brand, totalPrice, disabled, onCancel })
 }
 
 InternalRegistredCardCvvForm.propTypes = {
-  brand: PropTypes.string.isRequired,
+  brand: PropTypes.oneOf(BRANDS).isRequired,
   totalPrice: PropTypes.shape({
     value: PropTypes.number.isRequired,
     currency: PropTypes.string.isRequired,

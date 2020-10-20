@@ -1,27 +1,39 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 
 import RegistredCardCvvForm from "./RegistredCardCvvForm";
 
-const actions = {
-  onUseCard: action("use card"),
-  onCancel: action("hide CVV"),
+export default {
+  title: "Payment / RegistredCardCvvForm",
+  component: RegistredCardCvvForm,
+  argTypes: {
+    onUseCard: {
+      action: "use card",
+    },
+    onCancel: {
+      action: "hide CVV",
+    },
+    brand: {
+      defaultValue: "visa",
+    },
+    totalPriceValue: {
+      type: "number",
+      defaultValue: 10,
+    },
+    currency: {
+      control: {
+        type: "text",
+      },
+      defaultValue: "EUR",
+    },
+    totalPrice: {
+      control: {
+        type: null,
+      },
+    },
+  },
 };
 
-const totalPrice = {
-  value: 100,
-  currency: "EUR",
-};
-
-const stories = storiesOf("Payment / RegistredCardCvvForm", module);
-
-["visa", "mastercard", "american-express", "maestro"].forEach((brand) => {
-  stories.add(brand, () => {
-    return <RegistredCardCvvForm brand={brand} totalPrice={totalPrice} {...actions} />;
-  });
-});
-
-stories.add("disabled", () => {
-  return <RegistredCardCvvForm brand="visa" totalPrice={totalPrice} {...actions} disabled />;
-});
+// eslint-disable-next-line react/prop-types
+export function Main({ totalPriceValue, currency, ...args }) {
+  return <RegistredCardCvvForm totalPrice={{ value: totalPriceValue, currency }} {...args} />;
+}

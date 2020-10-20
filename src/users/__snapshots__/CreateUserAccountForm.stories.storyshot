@@ -14,7 +14,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-70"
+        htmlFor="form-field-55"
       >
         Prénom
       </label>
@@ -27,7 +27,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-70"
+          id="form-field-55"
           name="firstname"
           onBlur={[Function]}
           onChange={[Function]}
@@ -42,7 +42,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-71"
+        htmlFor="form-field-56"
       >
         Nom de famille
       </label>
@@ -55,7 +55,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-71"
+          id="form-field-56"
           name="lastname"
           onBlur={[Function]}
           onChange={[Function]}
@@ -70,7 +70,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-72"
+        htmlFor="form-field-57"
       >
         Date de naissance
       </label>
@@ -83,7 +83,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-72"
+          id="form-field-57"
           name="birthdate"
           onBlur={[Function]}
           onChange={[Function]}
@@ -98,7 +98,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-73"
+        htmlFor="form-field-58"
       >
         Email
       </label>
@@ -111,7 +111,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-73"
+          id="form-field-58"
           name="email"
           onBlur={[Function]}
           onChange={[Function]}
@@ -126,7 +126,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-74"
+        htmlFor="form-field-59"
       >
         Répétez l'email
       </label>
@@ -139,7 +139,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-74"
+          id="form-field-59"
           name="emailCheck"
           onBlur={[Function]}
           onChange={[Function]}
@@ -154,7 +154,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-75"
+        htmlFor="form-field-60"
       >
         Mot de passe
       </label>
@@ -166,7 +166,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-75"
+          id="form-field-60"
           name="password"
           onBlur={[Function]}
           onChange={[Function]}
@@ -181,7 +181,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-76"
+        htmlFor="form-field-61"
       >
         Répétez le mot de passe
       </label>
@@ -193,7 +193,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-76"
+          id="form-field-61"
           name="passwordCheck"
           onBlur={[Function]}
           onChange={[Function]}

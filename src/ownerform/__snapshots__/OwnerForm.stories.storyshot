@@ -14,7 +14,7 @@ exports[`Storyshots OwnerForm / OwnerForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-44"
+        htmlFor="form-field-27"
       >
         Email
       </label>
@@ -27,7 +27,7 @@ exports[`Storyshots OwnerForm / OwnerForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-44"
+          id="form-field-27"
           name="email"
           onBlur={[Function]}
           onChange={[Function]}
@@ -42,7 +42,7 @@ exports[`Storyshots OwnerForm / OwnerForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-45"
+        htmlFor="form-field-28"
       >
         Validez votre email
       </label>
@@ -54,7 +54,7 @@ exports[`Storyshots OwnerForm / OwnerForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-45"
+          id="form-field-28"
           name="emailValidation"
           onBlur={[Function]}
           onChange={[Function]}
