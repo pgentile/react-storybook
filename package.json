@@ -62,7 +62,7 @@
     "react": "17.0.0",
     "react-cache": "next",
     "react-dom": "17.0.0",
-    "react-final-form": "6.5.1",
+    "react-final-form": "6.5.2",
     "react-intl": "5.8.6",
     "react-jsonschema-form": "1.8.1",
     "react-redux": "7.2.1",
