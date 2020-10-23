@@ -1,0 +1,15 @@
+.prefixed-input {
+  display: inline-block;
+
+  border: 1px solid black;
+  padding: 3px;
+
+  &__input {
+    border: 0;
+    font: inherit;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

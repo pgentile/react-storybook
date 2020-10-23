@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PrefixedInput Main 1`] = `
+<div
+  className="rs"
+>
+  <span
+    className="prefixed-input"
+  >
+    <span
+      className="prefixed-input__prefix"
+      onClick={[Function]}
+    >
+      1180 
+    </span>
+    <input
+      className="prefixed-input__input"
+    />
+  </span>
+</div>
+`;
