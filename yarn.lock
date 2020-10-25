@@ -1261,12 +1261,19 @@
   dependencies:
     tslib "^2.0.1"
 
-"@formatjs/intl-datetimeformat@2.6.10":
-  version "2.6.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-2.6.10.tgz#0213e09f80e9b9a186fe0384d4b547007158d0cb"
-  integrity sha512-ef4eH3HOMh4ufw7lBvfJN+K8Cnjso8pUvUR92665VMZkm9VSVinBZPznercgRYVD+N+OqnF9WYBvT88PCmo9cA==
+"@formatjs/ecma402-abstract@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.2.6.tgz#8929525dcb49af31f348fcb4789263743872b57f"
+  integrity sha512-5/wUWuOFEaZeHhDvc+xgkFZxjYcij9/CjyUHngTfWhx+NwYqo8/xusVYv9SnTYDHAahek3OSCP93tzcv4M+7Xw==
   dependencies:
-    "@formatjs/ecma402-abstract" "^1.2.5"
+    tslib "^2.0.1"
+
+"@formatjs/intl-datetimeformat@2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-2.7.0.tgz#058ad20dcfaf49e43ca07de12cd69fd11bb520dc"
+  integrity sha512-UVrakns0gN0YfUuLkL83hqv9GMmYuD1EjpqYjx1Tz+Jgmsteh+sV3S0LnKD9uylwR0NSQ3SbGcwUUNgIeaBwGw==
+  dependencies:
+    "@formatjs/ecma402-abstract" "^1.2.6"
     tslib "^2.0.1"
 
 "@formatjs/intl-displaynames@^3.3.12":
@@ -1277,15 +1284,23 @@
     "@formatjs/ecma402-abstract" "^1.2.5"
     tslib "^2.0.1"
 
-"@formatjs/intl-getcanonicallocales@1.4.6", "@formatjs/intl-getcanonicallocales@^1.4.6":
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.4.6.tgz#348a0b8dd87f2b0513a4942a6273c937dd91ead0"
-  integrity sha512-V54a+Ks02vke2CSmuGJ4GCvrdWfN105GSH7oZRoW5QSiwuac+fmxb5Qpu4002HetuRu0rrRTm+NMUTfZ1VB2xw==
+"@formatjs/intl-getcanonicallocales@1.5.0", "@formatjs/intl-getcanonicallocales@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.5.0.tgz#39b54c3bbfcb1bdb1ef50686a591472a3e06bf71"
+  integrity sha512-/vrauA1VuIUvJD5CMD6mWL82whROnaDS8EW9hzPZq8oBQnIK+AhUxInsoYs+gUK02T7n+AdVC0ZXe8kPzrFaag==
   dependencies:
-    cldr-core "36.0.0"
+    cldr-core "37.0.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-listformat@4.2.10", "@formatjs/intl-listformat@^4.2.10":
+"@formatjs/intl-listformat@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-4.3.0.tgz#75fae1331466c780ceb9c06d17ab966ec491c43c"
+  integrity sha512-STviESBIb4pFPnb89G0a1iDSLTGU6JLcuoO12zLnBZblXzZ+4LV/1XQ02s7YTAhdTle8CcGDVfnX7yYerAVYCQ==
+  dependencies:
+    "@formatjs/ecma402-abstract" "^1.2.6"
+    tslib "^2.0.1"
+
+"@formatjs/intl-listformat@^4.2.10":
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-4.2.10.tgz#bba2ba0442f48cf9e087a549f24c05b01354928c"
   integrity sha512-Wa9BaZnEg/km45Wj5lbRjFV89YHC/3P2ucsvk9lQklF6Kt7ybfTH6QDwITrlxo2EGvmcKPhxuBNHgrUhlxm9PQ==
@@ -1293,33 +1308,41 @@
     "@formatjs/ecma402-abstract" "^1.2.5"
     tslib "^2.0.1"
 
-"@formatjs/intl-locale@2.3.10":
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-locale/-/intl-locale-2.3.10.tgz#d93ccf1ca4d86c47c92c7cc03daa042055dcf4be"
-  integrity sha512-VFQrX1RHay8uYAX0supb+gwolGY7WUigho8FzjUIsnvjvORGgobHd+8dLkSP02bj4ciDdAJtV09Q/wGNLC49FQ==
+"@formatjs/intl-locale@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-locale/-/intl-locale-2.4.0.tgz#b4e7f71148623b4debdd33ad4a767be9a3e4210a"
+  integrity sha512-E5SYC3s2vUj/igMcfuiN2GWmwn4IWeYz87nHHa3SvWmpnoF6N62ahXv8pBbgQQpMFsr9wBK2WTSkSJFKP5juTg==
   dependencies:
-    "@formatjs/ecma402-abstract" "^1.2.5"
-    "@formatjs/intl-getcanonicallocales" "^1.4.6"
-    cldr-core "^36.0.0"
+    "@formatjs/ecma402-abstract" "^1.2.6"
+    "@formatjs/intl-getcanonicallocales" "^1.5.0"
+    cldr-core "^37.0.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-numberformat@5.6.5":
-  version "5.6.5"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.6.5.tgz#9c55131fbc6eec88fa22db9d1b1297d0bb46d3f2"
-  integrity sha512-c8P9kXO7y2jI7LyuPOoYZE5OlLyrMzFqN3wOD3c+FVakz6B7ceQI37c+xisyIZDPk+0p2N+z8AoAyYf44YI0LQ==
+"@formatjs/intl-numberformat@5.7.0":
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.7.0.tgz#0d3f5e408021e7dfc18b504d62f1ce1350cdd36c"
+  integrity sha512-cJ4nuzsDbve8fIF1C/o5dqlxsi0FX8h1wDKpnOoa2jth2CnxrzDYkjzz1c5/OHvMEDUOifmsJICxpo78CY1idg==
   dependencies:
-    "@formatjs/ecma402-abstract" "^1.2.5"
+    "@formatjs/ecma402-abstract" "^1.2.6"
     tslib "^2.0.1"
 
-"@formatjs/intl-pluralrules@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.4.10.tgz#7ed3b03190971f21d482cb0e46791d90783a74d3"
-  integrity sha512-KcZZv38bu0pho9+9pMUOsCAi9/Kayh4+V5QZ/I9ps5OFSQlQaFMP5sX/zHBp41SsT6HxTfrPw5CHWpGrS75NQQ==
+"@formatjs/intl-pluralrules@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.5.0.tgz#9d75226526112cc1a5356c0b19114524e309a1de"
+  integrity sha512-Q6tiuouWF6RgsHp7qBlW3RBsrfYoBtgFX/1g96CDr/Bcao/39Ph7d/clx/exe0Sbt2m+3KlXz8jiKiQIw1yQNA==
   dependencies:
-    "@formatjs/ecma402-abstract" "^1.2.5"
+    "@formatjs/ecma402-abstract" "^1.2.6"
     tslib "^2.0.1"
 
-"@formatjs/intl-relativetimeformat@7.2.10", "@formatjs/intl-relativetimeformat@^7.2.10":
+"@formatjs/intl-relativetimeformat@7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-7.3.0.tgz#07832afe051659f6250b845bb35455e3942425cc"
+  integrity sha512-0pJHUHKgJbEZkcPn+ZlC4r9gsxmRk6WQ5mo6su1QHqd86yj4uhfV54wK9B0a3OFt8mlqFmsfZo6ZxYrLYW9Kmg==
+  dependencies:
+    "@formatjs/ecma402-abstract" "^1.2.6"
+    tslib "^2.0.1"
+
+"@formatjs/intl-relativetimeformat@^7.2.10":
   version "7.2.10"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-7.2.10.tgz#51bf272cb96e3df91cd70cfae4ae8ae563849052"
   integrity sha512-3eKfhK0X5O8JkJ9bSgkWCG9fXjFPQCxw18DWqhbZ5thTU2aKejpxBzwFYCo+o5TCIEmtn6G835nBqb2d197Gnw==
@@ -4939,10 +4962,10 @@ classnames@^2.2.5:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
-cldr-core@36.0.0, cldr-core@^36.0.0:
-  version "36.0.0"
-  resolved "https://registry.yarnpkg.com/cldr-core/-/cldr-core-36.0.0.tgz#1d2148ed6802411845baeeb21432d7bbfde7d4f7"
-  integrity sha512-QLnAjt20rZe38c8h8OJ9jPND+O4o5O8Nw0TK/P3KpNn1cmOhMu0rk6Kc3ap96c5OStQ9gAngs9+Be2sum26NOw==
+cldr-core@37.0.0, cldr-core@^37.0.0:
+  version "37.0.0"
+  resolved "https://registry.yarnpkg.com/cldr-core/-/cldr-core-37.0.0.tgz#f148d6faebed52a7fb8a17cccc4ac858770f663a"
+  integrity sha512-tNH5lbfsE9xzsjjXQjq1tlpMFcmnQYfssDy0zYIZKVtAY18MeQy0+1qlLxB2Z9dwCixGJV8cdhtFjBOub077Gw==
 
 clean-css@^4.2.3:
   version "4.2.3"
