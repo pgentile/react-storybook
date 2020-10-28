@@ -1233,12 +1233,12 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/cli@2.13.4":
-  version "2.13.4"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.13.4.tgz#b534ae66819f355dd4b38bf68d5f1b89967d1514"
-  integrity sha512-cud5bC0JeKZcu/HpuTJXcn/lWb+zfiKuCl2ruG3t/kIo2JTj2VW7sFIZElhS8JrByXF/DKubBMnEn8JZJGQC6Q==
+"@formatjs/cli@2.13.5":
+  version "2.13.5"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.13.5.tgz#833892bfa01df1c6f1eab438585a10675a553b09"
+  integrity sha512-t4dWNXjguodNL2xYWCnVqXjm36QNkMUMQPbYvILIjgLxoQSqY5/t9qgF1QwAFt6zhMPzvrw+FRdO9dBYupRcvQ==
   dependencies:
-    "@formatjs/ts-transformer" "^2.11.5"
+    "@formatjs/ts-transformer" "^2.12.0"
     "@types/json-stable-stringify" "^1.0.32"
     "@types/lodash" "^4.14.150"
     "@types/loud-rejection" "^2.0.0"
@@ -1341,10 +1341,10 @@
     intl-messageformat-parser "^6.0.11"
     tslib "^2.0.1"
 
-"@formatjs/ts-transformer@^2.11.5":
-  version "2.11.5"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.11.5.tgz#8f8c52ab0f2d8b9deb8c71d554835b9424511973"
-  integrity sha512-vwFZx3y9By5VYa7cTAc0OeMgDAaukoChkTYkgPM/UARE63+1TZRdqbJFSs4JT5ray3DqDACNNGu/eT250tKMig==
+"@formatjs/ts-transformer@^2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.12.0.tgz#71bb3d1af3e818996211b36231d1b753859f46f9"
+  integrity sha512-bi7XVicXTPHMEK4vapp29wJQnBHt9IrNW5QREiBPR5NF52EGvuVQeLmfU17nnojnHf4+X0PoamW7Sr0WPTtmWA==
   dependencies:
     intl-messageformat-parser "^6.0.11"
     tslib "^2.0.1"
@@ -4097,15 +4097,15 @@ babel-plugin-react-docgen@^4.2.1:
     lodash "^4.17.15"
     react-docgen "^5.0.0"
 
-babel-plugin-react-intl@8.2.9:
-  version "8.2.9"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.2.9.tgz#849a9afb322851082b409f4b4d0419747d0e44ff"
-  integrity sha512-L6PJDsW/SGIyFX1N6yCfv1K1hPS8IQwASSm2yVQePd/R5L8FQGMbx5A8yeEjSSC3fXr71EMu+Re8i45JbBKvRg==
+babel-plugin-react-intl@8.2.10:
+  version "8.2.10"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.2.10.tgz#b80db63ea462a195918aa630b28bb8cbd3a73169"
+  integrity sha512-+cEBDvRWM7CvZsbjpm3W+CX4D9JA8dbH+EMod6vEW7wEhUqePwPrMG7ES3WO1/4HPZUJEZNz2hggtftCABRsJQ==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
-    "@formatjs/ts-transformer" "^2.11.5"
+    "@formatjs/ts-transformer" "^2.12.0"
     "@types/babel__core" "^7.1.7"
     "@types/schema-utils" "^2.4.0"
     intl-messageformat-parser "^6.0.11"
@@ -6630,12 +6630,12 @@ eslint-plugin-emotion@10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@2.7.17:
-  version "2.7.17"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.7.17.tgz#10ea3c268759f0e686eb289d0e45ed7d10330fe5"
-  integrity sha512-ptkkuUqzfJxCN4Lm+wH5JQQgF+JTWeSa0EOaMHitv+vqJk6+SCXfmV1xQEsl/6jtamlb2+0ZqnQRswJ1/WVvCg==
+eslint-plugin-formatjs@2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.8.0.tgz#c430c3053c8371d0b117e1c8f8a6abe8e0ae5701"
+  integrity sha512-7km1pvk7QGX3c0isTXXU/7P4Qf4O4xAVnE2zYPhpclOsZNnQENuGbM4sb51URYE1ddMiE7dalUpphu9TPETJ6Q==
   dependencies:
-    "@formatjs/ts-transformer" "^2.11.5"
+    "@formatjs/ts-transformer" "^2.12.0"
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^7.2.0"
     "@types/estree" "^0.0.45"
