@@ -14,7 +14,8 @@
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,scss}'",
     "lint:css": "stylelint --syntax scss 'src/**/*.scss'",
     "lint:css:fix": "stylelint --syntax scss --fix 'src/**/*.scss'",
-    "lint": "run-s lint:js lint:css",
+    "lint:yarnlock": "yarn-deduplicate --list --fail",
+    "lint": "run-s lint:yarnlock lint:js lint:css",
     "test": "cross-env NODE_ICU_DATA=./node_modules/full-icu jest --runInBand",
     "test:strict": "cross-env NODE_ICU_DATA=./node_modules/full-icu node --unhandled-rejections=strict ./node_modules/.bin/jest --runInBand --verbose --errorOnDeprecated --bail",
     "validate": "run-s lint test",
@@ -28,7 +29,8 @@
     "ci:post-validate": "run-s es-check",
     "babel:development": "cross-env NODE_ENV=development babel",
     "babel:production": "cross-env NODE_ENV=production babel",
-    "babel:test": "cross-env NODE_ENV=test babel"
+    "babel:test": "cross-env NODE_ENV=test babel",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@formatjs/intl-datetimeformat": "2.7.1",
@@ -147,16 +149,17 @@
     "url-loader": "4.1.1",
     "webpack": "4.44.2",
     "webpack-bundle-analyzer": "3.9.0",
-    "webpack-manifest-plugin": "2.2.0"
+    "webpack-manifest-plugin": "2.2.0",
+    "yarn-deduplicate": "^3.1.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn install --pure-lockfile && lint-staged && yarn test",
-      "pre-push": "yarn install --pure-lockfile && yarn test",
-      "post-checkout": "yarn install --pure-lockfile"
+      "pre-commit": "run-s lint-staged test",
+      "pre-push": "run-s test"
     }
   },
   "lint-staged": {
+    "yarn.lock": "yarn-deduplicate --list",
     "*.{js,jsx,ts,tsx}": "eslint --ignore-pattern '**/*.d.ts' --fix",
     "*.css": "stylelint --fix",
     "*.scss": "stylelint --syntax scss --fix"
