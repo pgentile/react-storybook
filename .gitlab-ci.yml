@@ -13,7 +13,7 @@ default:
   before_script:
     - yarn
 
-install:
+stages:
   - setup
   - build
   - post-validate
@@ -21,8 +21,7 @@ install:
 
 install:
   stage: setup
-  before_script: []
-  script: yarn
+  script: echo "Done by the before script"
   cache:
     <<: *cache
     policy: pull-push
