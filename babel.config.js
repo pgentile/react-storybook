@@ -20,7 +20,7 @@ module.exports = (api) => {
       [
         "@babel/preset-react",
         {
-          runtime: "classic",
+          runtime: "automatic",
           development: !api.env("production"),
         },
       ],

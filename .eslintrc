@@ -55,6 +55,7 @@
     "formatjs/enforce-description": "warn",
     "formatjs/enforce-placeholders": "error",
     "compat/compat": "warn",
-    "react/react-in-jsx-scope": "error"
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }
