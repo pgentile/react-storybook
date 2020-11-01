@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import ManagedProgressButton from "../../buttons/ManagedProgressButton";
@@ -9,7 +9,7 @@ import urctLogo from "./urct-logo.svg";
 
 import "./DonationProposal.scss";
 
-export default class DonationProposal extends React.PureComponent {
+export default class DonationProposal extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     onAddDonation: PropTypes.func.isRequired,

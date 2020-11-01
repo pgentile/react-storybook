@@ -1,5 +1,3 @@
-import React from "react";
-
 import RegistredCardCvvForm from "./RegistredCardCvvForm";
 
 export default {

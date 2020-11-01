@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 import memoize from "fast-memoize";
 
@@ -6,7 +6,7 @@ import RegistredCreditCard, { registredCreditCardShape } from "./RegistredCredit
 
 import "./RegistredCreditCardList.scss";
 
-export default class RegistredCreditCardList extends React.PureComponent {
+export default class RegistredCreditCardList extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     cards: PropTypes.arrayOf(PropTypes.shape(registredCreditCardShape)),

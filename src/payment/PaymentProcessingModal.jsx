@@ -1,11 +1,11 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import Spinner from "../Spinner";
 import Modal from "../Modal";
 
 import "./PaymentProcessingModal.scss";
 
-export default class PaymentProcessingModal extends React.PureComponent {
+export default class PaymentProcessingModal extends PureComponent {
   render() {
     return (
       <Modal title="Paiement en cours...">

@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import { action } from "@storybook/addon-actions";
 
 import DatePicker from "./DatePicker";
@@ -16,7 +16,7 @@ export const demo = () => {
   return <DatePickerDemo />;
 };
 
-class DatePickerDemo extends React.PureComponent {
+class DatePickerDemo extends PureComponent {
   state = {
     value: "2018-01-07",
   };

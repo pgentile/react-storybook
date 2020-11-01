@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { action } from "@storybook/addon-actions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCcVisa, faCcMastercard, faCcAmex } from "@fortawesome/free-brands-svg-icons";

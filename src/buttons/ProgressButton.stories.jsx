@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import ProgressButton from "./ProgressButton";
 import sleep from "../utils/sleep";
@@ -24,7 +24,7 @@ export const disabledStory = () => {
   return <ProgressButton disabled>Payer</ProgressButton>;
 };
 
-class ProgressButtonDemo extends React.PureComponent {
+class ProgressButtonDemo extends PureComponent {
   state = {
     loading: false,
     finished: false,

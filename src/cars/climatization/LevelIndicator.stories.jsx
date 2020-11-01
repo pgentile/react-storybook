@@ -1,5 +1,3 @@
-import React from "react";
-
 import LevelIndicator from "./LevelIndicator";
 
 export default {

@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { unstable_createResource as createResource } from "react-cache";
 
 import Spinner from "../Spinner";

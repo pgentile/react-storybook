@@ -1,5 +1,3 @@
-import React from "react";
-
 import Language, { useLanguage } from "./Language";
 
 export default {

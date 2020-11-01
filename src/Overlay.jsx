@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { css } from "emotion/macro";
 import { rgba, cover } from "polished";
 import { createPortal } from "react-dom";

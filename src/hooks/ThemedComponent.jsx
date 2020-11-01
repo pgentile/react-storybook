@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useCallback, useEffect } from "react";
+import { createContext, useState, useContext, useCallback, useEffect } from "react";
 import { noop } from "lodash-es";
 
 import bemModifiers from "../utils/bemModifiers";

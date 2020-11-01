@@ -1,9 +1,9 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import "./Adaptative.scss";
 
 // See http://tobiasahlin.com/spinkit/
-export default class Adaptative extends React.PureComponent {
+export default class Adaptative extends PureComponent {
   render() {
     return (
       <div className="adaptative">

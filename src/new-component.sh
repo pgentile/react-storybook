@@ -11,7 +11,6 @@ fi
 
 
 cat >$name.jsx <<EOF
-import React from "react";
 import PropTypes from "prop-types";
 
 import "./$name.scss";
@@ -24,13 +23,11 @@ $name.propTypes = {};
 EOF
 
 cat >$name.stories.jsx <<EOF
-import React from "react";
-
 import $name from "./$name";
 
 export default {
   title: "$name",
-  component: $name
+  component: $name,
 };
 
 export const main = () => <$name />;

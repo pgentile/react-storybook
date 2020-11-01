@@ -1,5 +1,3 @@
-import React from "react";
-
 import WebShareSample from "./WebShareSample";
 
 export default {

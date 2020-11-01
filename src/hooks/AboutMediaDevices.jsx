@@ -1,4 +1,3 @@
-import React from "react";
 import useMediaDevices from "react-use/lib/useMediaDevices";
 
 import "./AboutMediaDevices.scss";

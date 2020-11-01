@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import md5 from "md5";
 
 import "./ColorFromString.scss";

@@ -1,5 +1,3 @@
-import React from "react";
-
 import AsyncLoader from "./AsyncLoader";
 import sleep from "./utils/sleep";
 

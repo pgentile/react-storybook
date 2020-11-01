@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import { Component, createContext } from "react";
 import PropTypes from "prop-types";
 import { uniq, noop } from "lodash-es";
 
@@ -13,7 +13,7 @@ const ManagedModalContext = createContext({
 
 ManagedModalContext.displayName = "ManagedModal";
 
-export default class ManagedModal extends React.Component {
+export default class ManagedModal extends Component {
   static contextType = ManagedModalContext;
 
   static propTypes = {
@@ -48,7 +48,7 @@ export default class ManagedModal extends React.Component {
   }
 }
 
-export class ManagedModalContainer extends React.Component {
+export class ManagedModalContainer extends Component {
   static propTypes = {
     children: PropTypes.node,
   };

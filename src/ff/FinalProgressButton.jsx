@@ -1,5 +1,3 @@
-import React from "react";
-
 import Button from "../buttons/Button";
 import ProgressButton from "../buttons/ProgressButton";
 import { useFormState } from "react-final-form";

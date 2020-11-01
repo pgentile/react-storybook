@@ -1,5 +1,3 @@
-import React from "react";
-
 import HooksComments from "./HooksComments";
 
 export default {

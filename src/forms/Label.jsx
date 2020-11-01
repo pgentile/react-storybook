@@ -1,11 +1,11 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import bemModifiers from "../utils/bemModifiers";
 
 import "./Label.scss";
 
-export default class Label extends React.PureComponent {
+export default class Label extends PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,

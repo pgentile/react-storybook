@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import Flippable from "./Flippable";
 import Card from "./Card";
@@ -14,7 +14,7 @@ export const main = () => {
   return <FlippableDemo />;
 };
 
-class FlippableDemo extends React.PureComponent {
+class FlippableDemo extends PureComponent {
   state = {
     flipped: false,
   };

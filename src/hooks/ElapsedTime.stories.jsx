@@ -1,5 +1,3 @@
-import React from "react";
-
 import ElapsedTime from "./ElapsedTime";
 
 export default {

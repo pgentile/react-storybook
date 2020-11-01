@@ -1,5 +1,3 @@
-import React from "react";
-
 import CssVarConsumer from "./CssVarConsumer";
 
 export default {

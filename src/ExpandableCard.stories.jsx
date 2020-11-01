@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import { PureComponent, Fragment } from "react";
 import PropTypes from "prop-types";
 
 import ExpandableCard from "./ExpandableCard";
 import ExpandableIcon from "./ExpandableIcon";
 
-class ExpandableCardDemo extends React.PureComponent {
+class ExpandableCardDemo extends PureComponent {
   static propTypes = {
     expandable: PropTypes.bool,
   };

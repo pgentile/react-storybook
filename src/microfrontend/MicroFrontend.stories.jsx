@@ -1,5 +1,3 @@
-import React from "react";
-
 import MicroFrontend from "./MicroFrontend";
 
 export default {

@@ -1,4 +1,3 @@
-import React from "react";
 import { Machine } from "xstate";
 import { useMachine } from "@xstate/react";
 

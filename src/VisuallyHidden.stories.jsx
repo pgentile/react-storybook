@@ -1,5 +1,3 @@
-import React from "react";
-
 import VisuallyHidden from "./VisuallyHidden";
 
 export default {

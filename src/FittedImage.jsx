@@ -1,9 +1,9 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import "./FittedImage.scss";
 
-export default class FittedImage extends React.PureComponent {
+export default class FittedImage extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
   };

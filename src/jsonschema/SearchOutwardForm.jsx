@@ -1,10 +1,10 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Form from "react-jsonschema-form";
 
 import schema from "./schemas/searchOutward.request.json";
 
-export default class SearchOutwardForm extends React.PureComponent {
+export default class SearchOutwardForm extends PureComponent {
   static propTypes = {
     onSubmit: PropTypes.func.isRequired,
   };

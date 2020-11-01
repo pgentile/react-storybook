@@ -1,4 +1,4 @@
-import React, { useReducer, useCallback, useDebugValue } from "react";
+import { useReducer, useCallback, useDebugValue } from "react";
 
 import ClimButton from "./ClimButton";
 import LevelIndicator from "./LevelIndicator";

@@ -1,11 +1,11 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Button from "./Button";
 
 import "./ButtonGroup.scss";
 
-export default class ButtonGroup extends React.PureComponent {
+export default class ButtonGroup extends PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,
@@ -23,7 +23,7 @@ export default class ButtonGroup extends React.PureComponent {
   }
 }
 
-export class ButtonInGroup extends React.PureComponent {
+export class ButtonInGroup extends PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,

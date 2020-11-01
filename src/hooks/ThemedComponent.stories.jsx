@@ -1,5 +1,3 @@
-import React from "react";
-
 import ThemedComponent from "./ThemedComponent";
 
 export default {

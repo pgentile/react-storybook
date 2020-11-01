@@ -1,4 +1,4 @@
-import React, { createRef } from "react";
+import { PureComponent, createRef } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +8,7 @@ import ExpandableCard from "../ExpandableCard";
 import "./SuperRadio.scss";
 import bemModifiers from "../utils/bemModifiers";
 
-export default class SuperRadio extends React.PureComponent {
+export default class SuperRadio extends PureComponent {
   static propTypes = {
     label: PropTypes.node.isRequired,
     icon: PropTypes.object,

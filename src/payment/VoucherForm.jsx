@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 import { Form, useField } from "react-final-form";
 import createDecorator from "final-form-focus";

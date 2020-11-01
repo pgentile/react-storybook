@@ -1,5 +1,3 @@
-import React from "react";
-
 import I18nMessages from "./I18nMessages";
 
 export default {

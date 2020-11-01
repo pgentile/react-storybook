@@ -1,5 +1,3 @@
-import React from "react";
-
 import Translation3D from "./Translation3D";
 
 export default {

@@ -1,9 +1,9 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Insurance from "./Insurance";
 
-export default class InsuranceContainer extends React.PureComponent {
+export default class InsuranceContainer extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     onAddInsurance: Insurance.propTypes.onAddInsurance,

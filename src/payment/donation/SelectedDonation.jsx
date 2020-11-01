@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import ManagedProgressButton from "../../buttons/ManagedProgressButton";
@@ -6,7 +6,7 @@ import Card from "../../Card";
 
 import "./SelectedDonation.scss";
 
-export default class SelectedDonation extends React.PureComponent {
+export default class SelectedDonation extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     donation: PropTypes.shape({

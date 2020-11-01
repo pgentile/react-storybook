@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import { useRef, useEffect, useState, useCallback } from "react";
 import PropTypes from "prop-types";
 import ResizeObserver from "resize-observer-polyfill";
 

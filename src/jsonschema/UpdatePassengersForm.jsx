@@ -1,10 +1,10 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Form from "react-jsonschema-form";
 
 import schema from "./schemas/updatePassengers.request.json";
 
-export default class UpdatePassengersForm extends React.PureComponent {
+export default class UpdatePassengersForm extends PureComponent {
   static propTypes = {
     onSubmit: PropTypes.func.isRequired,
   };

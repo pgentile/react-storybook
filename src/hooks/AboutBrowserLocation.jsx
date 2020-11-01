@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import useLocation from "react-use/lib/useLocation";
 
 import "./AboutBrowserLocation.scss";

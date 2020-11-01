@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { PureComponent, Fragment } from "react";
 
 import OrderEditorConnected from "./OrderEditorConnected";
 import PaymentFormConnected from "./PaymentFormConnected";
@@ -6,7 +6,7 @@ import ModalContainerConnected from "../ModalContainerConnected";
 
 import "./PaymentContainer.scss";
 
-export default class PaymentContainer extends React.PureComponent {
+export default class PaymentContainer extends PureComponent {
   render() {
     return (
       <Fragment>

@@ -1,5 +1,3 @@
-import React from "react";
-
 import PhoneNumberInfo from "./PhoneNumberInfo";
 
 export default {

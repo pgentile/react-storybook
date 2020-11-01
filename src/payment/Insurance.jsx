@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Card from "../Card";
@@ -7,7 +7,7 @@ import ManagedProgressButton from "../buttons/ManagedProgressButton";
 
 import "./Insurance.scss";
 
-export default class Insurance extends React.PureComponent {
+export default class Insurance extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     onAddInsurance: PropTypes.func.isRequired,

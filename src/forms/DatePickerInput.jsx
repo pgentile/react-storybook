@@ -1,4 +1,4 @@
-import React from "react";
+import { createRef, PureComponent } from "react";
 import PropTypes from "prop-types";
 import { format, parse } from "date-fns";
 import frLocale from "date-fns/locale/fr";
@@ -8,7 +8,7 @@ import DatePicker from "../calendar/DatePicker";
 
 import "./DatePickerInput.scss";
 
-export default class DatePickerInput extends React.PureComponent {
+export default class DatePickerInput extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     id: PropTypes.string,
@@ -30,9 +30,9 @@ export default class DatePickerInput extends React.PureComponent {
     focus: false,
   };
 
-  ref = React.createRef();
+  ref = createRef();
 
-  datePickerRef = React.createRef();
+  datePickerRef = createRef();
 
   onInputFieldClick = () => {
     this.setState({ focus: true }, () => {

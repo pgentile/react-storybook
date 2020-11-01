@@ -1,5 +1,3 @@
-import React from "react";
-
 import Expandable from "./Expandable";
 
 export default {

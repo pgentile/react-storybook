@@ -1,5 +1,3 @@
-import React from "react";
-
 import HeatedSeatButton from "./HeatedSeatButton";
 
 export default {

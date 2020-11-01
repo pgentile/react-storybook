@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import Menu from "./Menu";
 
@@ -11,7 +11,7 @@ export const main = () => {
   return <MenuDemo />;
 };
 
-class MenuDemo extends React.PureComponent {
+class MenuDemo extends PureComponent {
   state = {
     selectedItemKey: 0,
   };

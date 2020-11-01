@@ -1,9 +1,9 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import "./AdaptativeList.scss";
 
-export default class AdaptativeList extends React.PureComponent {
+export default class AdaptativeList extends PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,

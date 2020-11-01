@@ -1,5 +1,3 @@
-import React from "react";
-
 import Boids from "./Boids";
 
 export default {

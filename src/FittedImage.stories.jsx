@@ -1,5 +1,3 @@
-import React from "react";
-
 import FittedImage from "./FittedImage";
 
 export default {

@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +8,7 @@ import Card from "./Card";
 
 import "./Modal.scss";
 
-export default class Modal extends React.PureComponent {
+export default class Modal extends PureComponent {
   static count = 0;
 
   static propTypes = {

@@ -1,8 +1,8 @@
-import React, { createRef } from "react";
+import { PureComponent, createRef } from "react";
 
 import "./HoudiniBackground.scss";
 
-export default class HoudiniBackground extends React.PureComponent {
+export default class HoudiniBackground extends PureComponent {
   static propTypes = {};
 
   static defaultProps = {};

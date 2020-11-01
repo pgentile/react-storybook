@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import SelectedDonation from "./SelectedDonation";
@@ -9,7 +9,7 @@ const donationShape = {
   association: PropTypes.string.isRequired,
 };
 
-export default class Donation extends React.PureComponent {
+export default class Donation extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     selectedDonation: PropTypes.shape(donationShape),

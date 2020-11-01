@@ -1,10 +1,10 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { range } from "lodash-es";
 
 import "./LoadingText.scss";
 
-export default class LoadingText extends React.PureComponent {
+export default class LoadingText extends PureComponent {
   static propTypes = {
     count: PropTypes.number,
   };

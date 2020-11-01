@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { action } from "@storybook/addon-actions";
 
 import DateInput from "./DateInput";

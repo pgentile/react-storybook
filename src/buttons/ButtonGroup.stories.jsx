@@ -1,5 +1,3 @@
-import React from "react";
-
 import ButtonGroup, { ButtonInGroup } from "./ButtonGroup";
 
 export default {

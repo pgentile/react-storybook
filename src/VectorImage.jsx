@@ -1,8 +1,8 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import "./VectorImage.scss";
 
-export default class VectorImage extends React.PureComponent {
+export default class VectorImage extends PureComponent {
   static propTypes = {};
 
   static defaultProps = {};

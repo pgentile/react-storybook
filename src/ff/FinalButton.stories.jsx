@@ -1,4 +1,3 @@
-import React from "react";
 import { Form, Field } from "react-final-form";
 import { action } from "@storybook/addon-actions";
 

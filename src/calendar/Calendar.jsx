@@ -1,4 +1,4 @@
-import React from "react";
+import { createRef, PureComponent } from "react";
 import PropTypes from "prop-types";
 import {
   startOfMonth,
@@ -20,7 +20,7 @@ import bemModifiers from "../utils/bemModifiers";
 
 import "./Calendar.scss";
 
-export default class Calendar extends React.PureComponent {
+export default class Calendar extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     viewDate: PropTypes.string,
@@ -34,7 +34,7 @@ export default class Calendar extends React.PureComponent {
     className: "",
   };
 
-  ref = React.createRef();
+  ref = createRef();
 
   focus() {
     if (this.ref.current) {

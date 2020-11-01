@@ -1,5 +1,3 @@
-import React from "react";
-
 import ClimPanel from "./ClimPanel";
 
 export default {

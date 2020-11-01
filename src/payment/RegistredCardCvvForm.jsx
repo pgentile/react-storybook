@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 import { getTypeInfo } from "credit-card-type";
 import { Form, useField, useForm } from "react-final-form";

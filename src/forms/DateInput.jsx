@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import "./DateInput.scss";
@@ -6,7 +6,7 @@ import "./DateInput.scss";
 import NumberInput from "./NumberInput";
 import bemModifiers from "../utils/bemModifiers";
 
-export default class DateInput extends React.PureComponent {
+export default class DateInput extends PureComponent {
   static propTypes = {
     mode: PropTypes.oneOf(["date", "year-month"]),
     smallYear: PropTypes.bool,

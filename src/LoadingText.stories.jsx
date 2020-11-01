@@ -1,5 +1,3 @@
-import React from "react";
-
 import LoadingText from "./LoadingText";
 
 export default {

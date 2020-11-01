@@ -1,5 +1,3 @@
-import React from "react";
-
 import ResizableBlock from "./ResizableBlock";
 
 export default {

@@ -1,11 +1,11 @@
-import React, { createRef } from "react";
+import { PureComponent, createRef } from "react";
 import PropTypes from "prop-types";
 
 import bemModifiers from "../utils/bemModifiers";
 
 import "./Toggle.scss";
 
-export default class Toggle extends React.PureComponent {
+export default class Toggle extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     checked: PropTypes.bool,

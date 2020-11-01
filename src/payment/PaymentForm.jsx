@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import CreditCardForm from "./CreditCardForm";
@@ -7,7 +7,7 @@ import PaymentMeans from "./PaymentMeans";
 
 import "./PaymentForm.scss";
 
-export default class PaymentForm extends React.PureComponent {
+export default class PaymentForm extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     totalPrice: PropTypes.shape({

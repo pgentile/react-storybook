@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { PureComponent, Fragment } from "react";
 
 import PaymentRequestComponent from "./PaymentRequestComponent";
 
@@ -11,7 +11,7 @@ export const main = () => {
   return <Story />;
 };
 
-class Story extends React.PureComponent {
+class Story extends PureComponent {
   state = {
     requesting: false,
   };

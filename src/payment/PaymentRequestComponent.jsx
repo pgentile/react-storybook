@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import sleep from "../utils/sleep";
@@ -40,7 +40,7 @@ const paymentDetails = {
 
 const options = {};
 
-export default class PaymentRequestComponent extends React.PureComponent {
+export default class PaymentRequestComponent extends PureComponent {
   static propTypes = {
     onSuccess: PropTypes.func.isRequired,
     onError: PropTypes.func.isRequired,

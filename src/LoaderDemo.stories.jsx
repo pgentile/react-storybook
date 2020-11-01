@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { PureComponent, Fragment } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Provider } from "react-redux";
@@ -26,7 +26,7 @@ export const main = () => {
   return <LoaderDemoConnected />;
 };
 
-class LoaderDemo extends React.PureComponent {
+class LoaderDemo extends PureComponent {
   static propTypes = {
     loading: PropTypes.bool.isRequired,
     loadOne: PropTypes.func.isRequired,

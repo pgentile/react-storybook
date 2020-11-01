@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect, useCallback } from "react";
+import { useReducer, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 
 import "./HooksComments.scss";

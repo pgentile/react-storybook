@@ -1,5 +1,3 @@
-import React from "react";
-
 import AutoResizeMenu from "./AutoResizeMenu";
 
 export default {

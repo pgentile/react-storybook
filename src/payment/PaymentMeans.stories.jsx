@@ -1,5 +1,3 @@
-import React from "react";
-
 import PaymentMeans from "./PaymentMeans";
 import { action } from "@storybook/addon-actions";
 

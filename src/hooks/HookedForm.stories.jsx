@@ -1,5 +1,3 @@
-import React from "react";
-
 import HookedForm from "./HookedForm";
 
 export default {

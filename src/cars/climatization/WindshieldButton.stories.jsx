@@ -1,5 +1,3 @@
-import React from "react";
-
 import WindshieldButton from "./WindshieldButton";
 
 export default {

@@ -1,7 +1,5 @@
 /* eslint-disable compat/compat */
 
-import React from "react";
-
 import "./Vibrator.scss";
 
 export default function Vibrator() {

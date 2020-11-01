@@ -1,5 +1,3 @@
-import React from "react";
-
 import ColorFromString from "./ColorFromString";
 
 export default {

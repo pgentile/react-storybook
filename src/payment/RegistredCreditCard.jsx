@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { faCcVisa, faCcMastercard, faCcAmex } from "@fortawesome/free-brands-svg-icons";

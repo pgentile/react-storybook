@@ -1,5 +1,3 @@
-import React from "react";
-
 import AutoClimButton from "./AutoClimButton";
 
 export default {

@@ -1,5 +1,3 @@
-import React from "react";
-
 import I18nSamples from "./I18nSamples";
 
 export default {

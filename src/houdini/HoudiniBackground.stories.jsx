@@ -1,5 +1,3 @@
-import React from "react";
-
 import HoudiniBackground from "./HoudiniBackground";
 
 export default {

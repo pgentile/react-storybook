@@ -1,4 +1,4 @@
-import React from "react";
+import { createRef, PureComponent } from "react";
 import PropTypes from "prop-types";
 import { parse, format, addMonths } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,7 @@ import Button from "../buttons/Button";
 
 import "./DatePicker.scss";
 
-export default class DatePicker extends React.PureComponent {
+export default class DatePicker extends PureComponent {
   static propTypes = {
     value: PropTypes.string.isRequired,
     minDate: PropTypes.any,
@@ -23,7 +23,7 @@ export default class DatePicker extends React.PureComponent {
     viewDate: null,
   };
 
-  calendarRef = React.createRef();
+  calendarRef = createRef();
 
   focus() {
     this.setState(

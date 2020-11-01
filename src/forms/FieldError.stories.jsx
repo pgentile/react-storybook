@@ -1,5 +1,3 @@
-import React from "react";
-
 import FieldError from "./FieldError";
 
 export default {

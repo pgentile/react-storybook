@@ -1,11 +1,11 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import "./Button.scss";
 
 import bemModifiers from "../utils/bemModifiers";
 
-export default class Button extends React.PureComponent {
+export default class Button extends PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     children: PropTypes.node,

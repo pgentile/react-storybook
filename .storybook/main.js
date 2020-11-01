@@ -4,11 +4,19 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = {
   stories: ["../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
-  addons: [
-    "@storybook/addon-essentials",
-    "@storybook/addon-a11y",
-    "storybook-addon-i18n/register",
-  ],
+  addons: ["@storybook/addon-essentials", "@storybook/addon-a11y", "storybook-addon-i18n/register"],
+  babel: async (options) => ({
+    ...options,
+    plugins: [
+      ...options.plugins,
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          runtime: "automatic",
+        },
+      ],
+    ],
+  }),
   webpack: async (config, { configType }) => {
     config.resolve.extensions = [...config.resolve.extensions, ".ts", ".tsx"];
 

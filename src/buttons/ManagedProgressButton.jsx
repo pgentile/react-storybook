@@ -1,9 +1,9 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import ProgressButton from "./ProgressButton";
 
-export default class ManagedProgressButton extends React.PureComponent {
+export default class ManagedProgressButton extends PureComponent {
   static propTypes = {
     onClick: PropTypes.func.isRequired,
   };

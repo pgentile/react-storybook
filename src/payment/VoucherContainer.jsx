@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Card from "../Card";
@@ -7,7 +7,7 @@ import VoucherForm from "./VoucherForm";
 
 import "./VoucherContainer.scss";
 
-export default class VoucherContainer extends React.PureComponent {
+export default class VoucherContainer extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     onAddVoucher: PropTypes.func.isRequired,

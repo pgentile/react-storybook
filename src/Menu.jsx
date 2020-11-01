@@ -1,11 +1,11 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import bemModifiers from "./utils/bemModifiers";
 
 import "./Menu.scss";
 
-export default class Menu extends React.PureComponent {
+export default class Menu extends PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,

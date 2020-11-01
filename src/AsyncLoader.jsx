@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 
 import Spinner from "./Spinner";
 
-export default class AsyncLoader extends React.Component {
+export default class AsyncLoader extends Component {
   static propTypes = {
     loader: PropTypes.func.isRequired,
     error: PropTypes.func,

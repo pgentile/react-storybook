@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function ElapsedTime() {
   const [value, setValue] = useState(0);

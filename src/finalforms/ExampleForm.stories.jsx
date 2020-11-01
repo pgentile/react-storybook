@@ -1,5 +1,3 @@
-import React from "react";
-
 import ExampleForm from "./ExampleForm";
 
 export default {

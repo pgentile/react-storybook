@@ -1,5 +1,3 @@
-import React from "react";
-
 import TextareaField from "./TextareaField";
 
 export default {

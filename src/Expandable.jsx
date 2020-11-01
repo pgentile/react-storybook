@@ -1,11 +1,11 @@
-import React, { createRef } from "react";
+import { PureComponent, createRef } from "react";
 import PropTypes from "prop-types";
 
 import animate from "./utils/animate";
 
 import "./Expandable.scss";
 
-export default class Expandable extends React.PureComponent {
+export default class Expandable extends PureComponent {
   static propTypes = {
     children: PropTypes.node,
     expanded: PropTypes.bool,

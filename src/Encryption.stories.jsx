@@ -1,5 +1,3 @@
-import React from "react";
-
 import encryptPayload from "./encryptPayload";
 
 export default {

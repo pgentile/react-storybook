@@ -1,5 +1,3 @@
-import React from "react";
-
 import BookingPassenger from "./BookingPassenger";
 
 const defaultParams = {

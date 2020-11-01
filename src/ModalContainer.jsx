@@ -1,10 +1,10 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Modal from "./Modal";
 import PaymentProcessingModal from "./payment/PaymentProcessingModal";
 
-export default class ModalContainer extends React.PureComponent {
+export default class ModalContainer extends PureComponent {
   static propTypes = {
     currentModal: PropTypes.string,
     onClose: PropTypes.func.isRequired,

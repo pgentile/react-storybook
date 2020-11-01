@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { PureComponent, Fragment } from "react";
 import PropTypes from "prop-types";
 
 import OrderSummary from "./OrderSummary";
@@ -9,7 +9,7 @@ import { DONATION_TYPE, VOUCHER_TYPE, INSURANCE_TYPE } from "../redux/reducers/o
 
 import "./OrderEditor.scss";
 
-export default class OrderEditor extends React.PureComponent {
+export default class OrderEditor extends PureComponent {
   static propTypes = {
     items: OrderSummary.propTypes.items,
     onAddVoucher: VoucherContainer.propTypes.onAddVoucher,

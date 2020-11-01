@@ -1,5 +1,3 @@
-import React from "react";
-
 import ArticleResume from "./ArticleResume";
 
 const loremIpsum =

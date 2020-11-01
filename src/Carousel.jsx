@@ -1,9 +1,9 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import "./Carousel.scss";
 
-export default class Carousel extends React.PureComponent {
+export default class Carousel extends PureComponent {
   static propTypes = {
     as: PropTypes.elementType,
     className: PropTypes.string,

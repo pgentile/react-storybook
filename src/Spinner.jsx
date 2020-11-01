@@ -1,9 +1,9 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import "./Spinner.scss";
 
 // See http://tobiasahlin.com/spinkit/
-export default class Spinner extends React.PureComponent {
+export default class Spinner extends PureComponent {
   render() {
     return (
       <div className="spinner">

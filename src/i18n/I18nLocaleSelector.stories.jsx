@@ -1,5 +1,3 @@
-import React from "react";
-
 import I18nLocaleSelector from "./I18nLocaleSelector";
 
 export default {

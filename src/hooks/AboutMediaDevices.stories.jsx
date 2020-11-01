@@ -1,5 +1,3 @@
-import React from "react";
-
 import AboutMediaDevices from "./AboutMediaDevices";
 
 export default {

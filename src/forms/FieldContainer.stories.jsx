@@ -1,5 +1,3 @@
-import React from "react";
-
 import FieldContainer from "./FieldContainer";
 import InputField from "./InputField";
 

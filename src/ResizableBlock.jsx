@@ -1,8 +1,8 @@
-import React, { createRef } from "react";
+import { PureComponent, createRef } from "react";
 import PropTypes from "prop-types";
 import ResizeObserver from "resize-observer-polyfill";
 
-export default class ResizableBlock extends React.PureComponent {
+export default class ResizableBlock extends PureComponent {
   static propTypes = {
     children: PropTypes.func.isRequired,
     defaultBreakpoint: PropTypes.string.isRequired,

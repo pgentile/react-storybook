@@ -1,5 +1,3 @@
-import React from "react";
-
 import NightModePreference from "./NightModePreference";
 
 export default {

@@ -1,5 +1,3 @@
-import React from "react";
-
 import SyncButton from "./SyncButton";
 
 export default {

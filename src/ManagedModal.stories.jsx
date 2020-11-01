@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 
 import ManagedModal, { ManagedModalContainer } from "./ManagedModal";
 
@@ -20,7 +20,7 @@ const initialState = {
   zo: false,
 };
 
-class ManagedModalDemo extends React.PureComponent {
+class ManagedModalDemo extends PureComponent {
   state = initialState;
 
   openModal = (name) => {

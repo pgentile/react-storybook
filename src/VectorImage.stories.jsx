@@ -1,5 +1,3 @@
-import React from "react";
-
 import VectorImage from "./VectorImage";
 
 export default {

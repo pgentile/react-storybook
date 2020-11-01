@@ -1,4 +1,4 @@
-import React from "react";
+import { createRef, PureComponent } from "react";
 import PropTypes from "prop-types";
 import { noop } from "lodash-es";
 
@@ -31,7 +31,7 @@ class ReCaptchaLibLoader {
 
 const reCaptchaLibLoader = new ReCaptchaLibLoader();
 
-export default class ReCaptcha extends React.PureComponent {
+export default class ReCaptcha extends PureComponent {
   static propTypes = {
     siteKey: PropTypes.string.isRequired,
     theme: PropTypes.oneOf(["light", "dark"]).isRequired,
@@ -51,7 +51,7 @@ export default class ReCaptcha extends React.PureComponent {
     onExpire: noop,
   };
 
-  containerElement = React.createRef();
+  containerElement = createRef();
   captchaApi = null;
   widgetId = null;
 

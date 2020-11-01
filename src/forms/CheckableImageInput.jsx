@@ -1,11 +1,11 @@
-import React, { createRef } from "react";
+import { PureComponent, createRef } from "react";
 import PropTypes from "prop-types";
 
 import bemModifiers from "../utils/bemModifiers";
 
 import "./CheckableImageInput.scss";
 
-export default class CheckableImageInput extends React.PureComponent {
+export default class CheckableImageInput extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node.isRequired,

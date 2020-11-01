@@ -1,10 +1,10 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import "./Flippable.scss";
 import bemModifiers from "./utils/bemModifiers";
 
-export default class Flippable extends React.PureComponent {
+export default class Flippable extends PureComponent {
   static propTypes = {
     foreground: PropTypes.node.isRequired,
     background: PropTypes.node.isRequired,

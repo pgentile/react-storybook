@@ -1,5 +1,3 @@
-import React from "react";
-
 import ResizeDetector from "./ResizeDetector";
 
 export default {

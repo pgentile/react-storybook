@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import PropTypes from "prop-types";
 import { css, cx } from "emotion/macro";
 import { lighten } from "polished";

@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Price from "./Price";
@@ -17,7 +17,7 @@ const amountPropShape = PropTypes.shape({
   currency: PropTypes.string.isRequired,
 });
 
-export default class Travel extends React.PureComponent {
+export default class Travel extends PureComponent {
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
     inwardTrip: tripPropShape,
@@ -41,7 +41,7 @@ export default class Travel extends React.PureComponent {
   }
 }
 
-class TravelHeader extends React.PureComponent {
+class TravelHeader extends PureComponent {
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
     inwardTrip: tripPropShape,
@@ -60,7 +60,7 @@ class TravelHeader extends React.PureComponent {
   }
 }
 
-class TravelTitle extends React.PureComponent {
+class TravelTitle extends PureComponent {
   static propTypes = {
     outwardTrip: tripPropShape.isRequired,
     inwardTrip: tripPropShape,
@@ -87,7 +87,7 @@ class TravelTitle extends React.PureComponent {
   }
 }
 
-class TravelDetails extends React.PureComponent {
+class TravelDetails extends PureComponent {
   static propTypes = {
     outwardDepartureDate: PropTypes.string.isRequired,
     inwardDepartureDate: PropTypes.string,

@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Button from "./Button";
@@ -7,7 +7,7 @@ import bemModifiers from "../utils/bemModifiers";
 import "./ProgressButton.scss";
 
 // See https://codepen.io/teamturret/pen/KwyVQx
-export default class ProgressButton extends React.PureComponent {
+export default class ProgressButton extends PureComponent {
   static propTypes = {
     ...Button.propTypes,
     loading: PropTypes.bool,

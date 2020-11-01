@@ -1,4 +1,4 @@
-import React from "react";
+import { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 export const propTypes = {
@@ -8,7 +8,7 @@ export const propTypes = {
 
 export default function wrapElement(className, as = "div") {
   return (WrappedComponent) => {
-    const WrapperComponent = class extends React.PureComponent {
+    const WrapperComponent = class extends PureComponent {
       render() {
         const { as: overridenAs, className: otherClassName, ...otherProps } = this.props;
 
