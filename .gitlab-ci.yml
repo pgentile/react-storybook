@@ -10,30 +10,29 @@ default:
     paths:
       - node_modules/
     policy: pull
+  before_script:
+    - yarn
 
-stages:
+install:
   - setup
-  - validate
   - build
   - post-validate
   - deploy
 
 install:
   stage: setup
+  before_script: []
   script: yarn
   cache:
     <<: *cache
-    policy: push
+    policy: pull-push
 
 lint:
-  stage: validate
-  before_script: &before_script
-    - yarn
+  stage: build
   script: "yarn ci:validate:lint"
 
 test:
-  stage: validate
-  before_script: *before_script
+  stage: build
   script: "yarn ci:validate:test"
   artifacts:
     paths:
@@ -41,7 +40,6 @@ test:
 
 build:
   stage: build
-  before_script: *before_script
   script: "yarn ci:build"
   artifacts:
     paths:
@@ -49,14 +47,14 @@ build:
 
 post-validate:
   stage: post-validate
-  before_script: *before_script
   script: "yarn ci:post-validate"
 
 pages:
   stage: deploy
-  only:
-    - master
-  before_script: *before_script
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  before_script: []
+  cache: {}
   script:
     - "cp -r build/storybook/* public/"
     - "gzip -k -6 $(find public -type f -name '*.js')"
@@ -66,16 +64,3 @@ pages:
   artifacts:
     paths:
       - public
-
-deploy-fake-env:
-  stage: deploy
-  only:
-    - master
-  script:
-    - "echo Fake depoy"
-    - "echo"
-    - "env | sort"
-    - "echo"
-  environment:
-    name: stage
-  cache: {}
