@@ -5,13 +5,13 @@ workflow:
 
 default:
   image: node:lts
+  before_script:
+    - yarn --cache-folder .yarn
   cache: &cache
     key: ${CI_COMMIT_REF_SLUG}
     paths:
-      - node_modules/
+      - .yarn
     policy: pull
-  before_script:
-    - yarn
 
 stages:
   - setup
