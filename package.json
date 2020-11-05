@@ -132,7 +132,7 @@
     "postcss": "8.1.6",
     "postcss-loader": "4.0.4",
     "prettier": "2.1.2",
-    "query-string": "6.13.6",
+    "query-string": "6.13.7",
     "react-is": "16.13.1",
     "react-test-renderer": "16.14.0",
     "recursive-readdir": "2.2.2",
