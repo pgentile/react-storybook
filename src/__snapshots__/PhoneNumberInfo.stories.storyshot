@@ -10,7 +10,7 @@ exports[`Storyshots PhoneNumberInfo Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-0"
+        htmlFor="form-field-2"
       >
         Pays de base
       </label>
@@ -21,7 +21,7 @@ exports[`Storyshots PhoneNumberInfo Main 1`] = `
           aria-invalid={false}
           className="form-input-field "
           formNoValidate={true}
-          id="form-field-0"
+          id="form-field-2"
           onChange={[Function]}
           type="text"
           value="FR"
@@ -33,7 +33,7 @@ exports[`Storyshots PhoneNumberInfo Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-1"
+        htmlFor="form-field-3"
       >
         Numéro de téléphone
       </label>
@@ -44,7 +44,7 @@ exports[`Storyshots PhoneNumberInfo Main 1`] = `
           aria-invalid={false}
           className="form-input-field "
           formNoValidate={true}
-          id="form-field-1"
+          id="form-field-3"
           onChange={[Function]}
           type="text"
           value="0688776609"

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import FieldContainer from "./FieldContainer";
 import InputField from "./InputField";
 
@@ -8,48 +9,81 @@ function innerField(props) {
 export default {
   title: "Forms / FieldContainer",
   component: FieldContainer,
+  argTypes: {
+    as: {
+      control: null,
+    },
+    label: {
+      control: "text",
+      defaultValue: "Example",
+    },
+    labelElement: {
+      control: null,
+    },
+    children: {
+      control: null,
+    },
+    render: {
+      control: null,
+      defaultValue: innerField,
+    },
+    errorMessage: {
+      control: "text",
+    },
+    helpMessage: {
+      control: "text",
+    },
+  },
 };
 
-export const main = () => {
-  return <FieldContainer label="Example">{innerField}</FieldContainer>;
+function Template(args) {
+  return <FieldContainer {...args} />;
+}
+
+export const Main = Template.bind({});
+
+export const Error = Template.bind({});
+
+Error.args = {
+  errorMessage: "Nom inconnu",
 };
 
-export const error = () => {
-  return (
-    <FieldContainer label="Example" errorMessage="Nom inconnu">
-      {innerField}
-    </FieldContainer>
-  );
+export const Help = Template.bind({});
+
+Help.args = {
+  helpMessage: "Un peu d'aide, ça ne fait pas de mal",
 };
 
-export const help = () => {
-  return (
-    <FieldContainer label="Example" helpMessage="Un peu d'aide, ça ne fait pas de mal">
-      {innerField}
-    </FieldContainer>
-  );
+export const ErrorAndHelp = Template.bind({});
+
+ErrorAndHelp.args = {
+  ...Error.args,
+  ...Help.args,
 };
 
-export const errorAndHelp = () => {
-  return (
-    <FieldContainer label="Example" errorMessage="Données invalides" helpMessage="Aide">
-      {innerField}
-    </FieldContainer>
-  );
+export const Disabled = Template.bind({});
+
+Disabled.args = {
+  disabled: true,
 };
 
-export const disabled = () => {
-  return (
-    <FieldContainer label="Example" disabled>
-      {innerField}
-    </FieldContainer>
-  );
+export const Optional = Template.bind({});
+
+Optional.args = {
+  optional: true,
 };
 
-export const customLabelElement = () => {
-  return (
-    <FieldContainer label="Example" labelElement="span" optional>
-      {innerField}
-    </FieldContainer>
-  );
+export const CustomLabelElement = Template.bind({});
+
+CustomLabelElement.args = {
+  labelElement: CustomLabel,
+  optional: true,
+};
+
+function CustomLabel({ children }) {
+  return <span style={{ color: "green" }}>{children}</span>;
+}
+
+CustomLabel.propTypes = {
+  children: PropTypes.node,
 };

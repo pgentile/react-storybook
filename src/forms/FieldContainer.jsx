@@ -14,10 +14,12 @@ export default function FieldContainer({
   label,
   labelElement,
   children,
+  render,
   errorMessage,
   helpMessage,
   disabled,
   optional,
+  readOnly,
 }) {
   const inputId = useGeneratedFieldId(id);
 
@@ -29,9 +31,15 @@ export default function FieldContainer({
       error: showErrorMessage,
       id: inputId,
       disabled,
+      readOnly,
     }),
-    [disabled, inputId, showErrorMessage]
+    [disabled, inputId, showErrorMessage, readOnly]
   );
+
+  const renderFn = render ?? children;
+  if (!renderFn) {
+    throw new Error("No render ou children function");
+  }
 
   return (
     <Element className={`form-field-container ${className}`}>
@@ -49,7 +57,7 @@ export default function FieldContainer({
 
       {showHelpMessage && <p className="form-field-container__help">{helpMessage}</p>}
 
-      <div className="form-field-container__field">{children(fieldProps)}</div>
+      <div className="form-field-container__field">{renderFn(fieldProps)}</div>
 
       {showErrorMessage && <FieldError className="form-field-container__error">{errorMessage}</FieldError>}
     </Element>
@@ -62,7 +70,8 @@ FieldContainer.propTypes = {
   label: PropTypes.node,
   labelElement: PropTypes.elementType,
   id: PropTypes.string,
-  children: PropTypes.func.isRequired,
+  children: PropTypes.func,
+  render: PropTypes.func,
   errorMessage: PropTypes.node,
   helpMessage: PropTypes.node,
   disabled: PropTypes.bool,

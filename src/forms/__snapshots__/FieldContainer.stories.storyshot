@@ -8,7 +8,11 @@ exports[`Storyshots Forms / FieldContainer Custom Label Element 1`] = `
     className="form-field-container "
   >
     <span
-      className="label form-field-container__label"
+      style={
+        Object {
+          "color": "green",
+        }
+      }
     >
       Example
       <span
@@ -24,7 +28,7 @@ exports[`Storyshots Forms / FieldContainer Custom Label Element 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-26"
+        id="form-field-29"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -42,7 +46,7 @@ exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
   >
     <label
       className="label label--disabled form-field-container__label"
-      htmlFor="form-field-25"
+      htmlFor="form-field-27"
     >
       Example
     </label>
@@ -54,7 +58,7 @@ exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
         className="form-input-field "
         disabled={true}
         formNoValidate={true}
-        id="form-field-25"
+        id="form-field-27"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -72,7 +76,7 @@ exports[`Storyshots Forms / FieldContainer Error 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-22"
+      htmlFor="form-field-24"
     >
       Example
     </label>
@@ -83,7 +87,7 @@ exports[`Storyshots Forms / FieldContainer Error 1`] = `
         aria-invalid={true}
         className="form-input-field form-input-field--error "
         formNoValidate={true}
-        id="form-field-22"
+        id="form-field-24"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -106,14 +110,14 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-24"
+      htmlFor="form-field-26"
     >
       Example
     </label>
     <p
       className="form-field-container__help"
     >
-      Aide
+      Un peu d'aide, ça ne fait pas de mal
     </p>
     <div
       className="form-field-container__field"
@@ -122,7 +126,7 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
         aria-invalid={true}
         className="form-input-field form-input-field--error "
         formNoValidate={true}
-        id="form-field-24"
+        id="form-field-26"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -130,7 +134,7 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
     <p
       className="field-error form-field-container__error"
     >
-      Données invalides
+      Nom inconnu
     </p>
   </div>
 </div>
@@ -145,7 +149,7 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-23"
+      htmlFor="form-field-25"
     >
       Example
     </label>
@@ -161,7 +165,7 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-23"
+        id="form-field-25"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -179,7 +183,7 @@ exports[`Storyshots Forms / FieldContainer Main 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-21"
+      htmlFor="form-field-23"
     >
       Example
     </label>
@@ -190,7 +194,41 @@ exports[`Storyshots Forms / FieldContainer Main 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-21"
+        id="form-field-23"
+        placeholder="Valeur d'exemple"
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Forms / FieldContainer Optional 1`] = `
+<div
+  className="rs"
+>
+  <div
+    className="form-field-container "
+  >
+    <label
+      className="label form-field-container__label"
+      htmlFor="form-field-28"
+    >
+      Example
+      <span
+        className="label__optional"
+      >
+         (facultatif)
+      </span>
+    </label>
+    <div
+      className="form-field-container__field"
+    >
+      <input
+        aria-invalid={false}
+        className="form-input-field "
+        formNoValidate={true}
+        id="form-field-28"
         placeholder="Valeur d'exemple"
         type="text"
       />
