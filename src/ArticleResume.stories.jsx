@@ -11,3 +11,7 @@ export default {
 export const main = () => {
   return <ArticleResume>{(loremIpsum + " ").repeat(20)}</ArticleResume>;
 };
+
+export const smallText = () => {
+  return <ArticleResume>{loremIpsum}</ArticleResume>;
+};

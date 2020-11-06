@@ -5,7 +5,7 @@
   &__content {
     &--hidden {
       max-height: 300px;
-      overflow-y: scroll;
+      overflow-y: hidden;
 
       &::after {
         content: "";
