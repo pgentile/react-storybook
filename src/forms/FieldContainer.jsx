@@ -54,12 +54,9 @@ export default function FieldContainer({
           {label}
         </Label>
       )}
-
-      {showHelpMessage && <p className="form-field-container__help">{helpMessage}</p>}
-
       <div className="form-field-container__field">{renderFn(fieldProps)}</div>
-
       {showErrorMessage && <FieldError className="form-field-container__error">{errorMessage}</FieldError>}
+      {showHelpMessage && <p className="form-field-container__help">{helpMessage}</p>}
     </Element>
   );
 }

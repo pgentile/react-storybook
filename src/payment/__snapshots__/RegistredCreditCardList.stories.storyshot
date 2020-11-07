@@ -619,11 +619,6 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
                            (facultatif)
                         </span>
                       </label>
-                      <p
-                        className="form-field-container__help"
-                      >
-                        Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
-                      </p>
                       <div
                         className="form-field-container__field"
                       >
@@ -646,6 +641,11 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
                           value=""
                         />
                       </div>
+                      <p
+                        className="form-field-container__help"
+                      >
+                        Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
+                      </p>
                     </div>
                     <div
                       className="registred-card-cvv-form__buttons"
@@ -1308,11 +1308,6 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
                            (facultatif)
                         </span>
                       </label>
-                      <p
-                        className="form-field-container__help"
-                      >
-                        Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
-                      </p>
                       <div
                         className="form-field-container__field"
                       >
@@ -1335,6 +1330,11 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
                           value=""
                         />
                       </div>
+                      <p
+                        className="form-field-container__help"
+                      >
+                        Certaines cartes Maestro ne possèdent pas de code de sécurité. Si aucun code n'est présent, ne renseignez pas ce champ
+                      </p>
                     </div>
                     <div
                       className="registred-card-cvv-form__buttons"

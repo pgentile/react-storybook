@@ -251,11 +251,6 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
         >
           Date d'expiration
         </label>
-        <p
-          className="form-field-container__help"
-        >
-          Date au format AA-MM
-        </p>
         <div
           className="form-field-container__field"
         >
@@ -275,6 +270,11 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
             value=""
           />
         </div>
+        <p
+          className="form-field-container__help"
+        >
+          Date au format AA-MM
+        </p>
       </div>
       <div
         className="form-field-container credit-card-form__cvv"

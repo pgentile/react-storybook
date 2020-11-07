@@ -114,11 +114,6 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
     >
       Example
     </label>
-    <p
-      className="form-field-container__help"
-    >
-      Un peu d'aide, ça ne fait pas de mal
-    </p>
     <div
       className="form-field-container__field"
     >
@@ -135,6 +130,11 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
       className="field-error form-field-container__error"
     >
       Nom inconnu
+    </p>
+    <p
+      className="form-field-container__help"
+    >
+      Un peu d'aide, ça ne fait pas de mal
     </p>
   </div>
 </div>
@@ -153,11 +153,6 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
     >
       Example
     </label>
-    <p
-      className="form-field-container__help"
-    >
-      Un peu d'aide, ça ne fait pas de mal
-    </p>
     <div
       className="form-field-container__field"
     >
@@ -170,6 +165,11 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
         type="text"
       />
     </div>
+    <p
+      className="form-field-container__help"
+    >
+      Un peu d'aide, ça ne fait pas de mal
+    </p>
   </div>
 </div>
 `;
