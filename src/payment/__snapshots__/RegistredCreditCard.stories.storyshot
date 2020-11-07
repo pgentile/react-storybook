@@ -101,7 +101,7 @@ exports[`Storyshots Payment / RegistredCreditCard Main 1`] = `
                   >
                     <label
                       className="label label--disabled form-field-container__label"
-                      htmlFor="form-field-45"
+                      htmlFor="__mock_generated_id__"
                     >
                       Code de sécurité
                     </label>
@@ -114,7 +114,7 @@ exports[`Storyshots Payment / RegistredCreditCard Main 1`] = `
                         className="form-input-field "
                         disabled={true}
                         formNoValidate={true}
-                        id="form-field-45"
+                        id="__mock_generated_id__"
                         inputMode="numeric"
                         maxLength={3}
                         name="cvv"

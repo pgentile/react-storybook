@@ -12,7 +12,7 @@ exports[`Storyshots Final Forms components / FinalFieldContainer Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-4"
+        htmlFor="__mock_generated_id__"
       >
         Nom
       </label>
@@ -24,7 +24,7 @@ exports[`Storyshots Final Forms components / FinalFieldContainer Main 1`] = `
           autoCorrect="off"
           disabled={false}
           error={false}
-          id="form-field-4"
+          id="__mock_generated_id__"
           name="name"
           onBlur={[Function]}
           onChange={[Function]}

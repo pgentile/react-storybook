@@ -215,7 +215,7 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-41"
+          htmlFor="__mock_generated_id__"
         >
           Numéro de carte
         </label>
@@ -228,7 +228,7 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
             className="form-input-field "
             disabled={false}
             formNoValidate={true}
-            id="form-field-41"
+            id="__mock_generated_id__"
             inputMode="numeric"
             maxLength={19}
             name="cardNumber"
@@ -247,7 +247,7 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-42"
+          htmlFor="__mock_generated_id__"
         >
           Date d'expiration
         </label>
@@ -265,7 +265,7 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
             className="form-input-field "
             disabled={false}
             formNoValidate={true}
-            id="form-field-42"
+            id="__mock_generated_id__"
             maxLength={5}
             name="expirationDate"
             onBlur={[Function]}
@@ -281,7 +281,7 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
       >
         <label
           className="label form-field-container__label"
-          htmlFor="form-field-43"
+          htmlFor="__mock_generated_id__"
         >
           Code de sécurité
         </label>
@@ -294,7 +294,7 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
             className="form-input-field "
             disabled={false}
             formNoValidate={true}
-            id="form-field-43"
+            id="__mock_generated_id__"
             inputMode="numeric"
             maxLength={4}
             name="cvv"

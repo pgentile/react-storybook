@@ -28,7 +28,7 @@ exports[`Storyshots Forms / FieldContainer Custom Label Element 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-29"
+        id="__mock_generated_id__"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -46,7 +46,7 @@ exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
   >
     <label
       className="label label--disabled form-field-container__label"
-      htmlFor="form-field-27"
+      htmlFor="__mock_generated_id__"
     >
       Example
     </label>
@@ -58,7 +58,7 @@ exports[`Storyshots Forms / FieldContainer Disabled 1`] = `
         className="form-input-field "
         disabled={true}
         formNoValidate={true}
-        id="form-field-27"
+        id="__mock_generated_id__"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -76,7 +76,7 @@ exports[`Storyshots Forms / FieldContainer Error 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-24"
+      htmlFor="__mock_generated_id__"
     >
       Example
     </label>
@@ -87,7 +87,7 @@ exports[`Storyshots Forms / FieldContainer Error 1`] = `
         aria-invalid={true}
         className="form-input-field form-input-field--error "
         formNoValidate={true}
-        id="form-field-24"
+        id="__mock_generated_id__"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -110,7 +110,7 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-26"
+      htmlFor="__mock_generated_id__"
     >
       Example
     </label>
@@ -126,7 +126,7 @@ exports[`Storyshots Forms / FieldContainer Error And Help 1`] = `
         aria-invalid={true}
         className="form-input-field form-input-field--error "
         formNoValidate={true}
-        id="form-field-26"
+        id="__mock_generated_id__"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -149,7 +149,7 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-25"
+      htmlFor="__mock_generated_id__"
     >
       Example
     </label>
@@ -165,7 +165,7 @@ exports[`Storyshots Forms / FieldContainer Help 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-25"
+        id="__mock_generated_id__"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -183,7 +183,7 @@ exports[`Storyshots Forms / FieldContainer Main 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-23"
+      htmlFor="__mock_generated_id__"
     >
       Example
     </label>
@@ -194,7 +194,7 @@ exports[`Storyshots Forms / FieldContainer Main 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-23"
+        id="__mock_generated_id__"
         placeholder="Valeur d'exemple"
         type="text"
       />
@@ -212,7 +212,7 @@ exports[`Storyshots Forms / FieldContainer Optional 1`] = `
   >
     <label
       className="label form-field-container__label"
-      htmlFor="form-field-28"
+      htmlFor="__mock_generated_id__"
     >
       Example
       <span
@@ -228,7 +228,7 @@ exports[`Storyshots Forms / FieldContainer Optional 1`] = `
         aria-invalid={false}
         className="form-input-field "
         formNoValidate={true}
-        id="form-field-28"
+        id="__mock_generated_id__"
         placeholder="Valeur d'exemple"
         type="text"
       />

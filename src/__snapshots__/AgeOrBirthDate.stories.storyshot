@@ -12,7 +12,7 @@ exports[`Storyshots AgeOrBirthDate Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-0"
+        htmlFor="__mock_generated_id__"
       >
         Âge
       </label>
@@ -23,7 +23,7 @@ exports[`Storyshots AgeOrBirthDate Main 1`] = `
           aria-invalid={false}
           className="form-input-field "
           formNoValidate={true}
-          id="form-field-0"
+          id="__mock_generated_id__"
           inputMode="numeric"
           onChange={[Function]}
           pattern="[0-9]*"
@@ -43,7 +43,7 @@ exports[`Storyshots AgeOrBirthDate Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-1"
+        htmlFor="__mock_generated_id__"
       >
         Date de naissance
       </label>
@@ -54,7 +54,7 @@ exports[`Storyshots AgeOrBirthDate Main 1`] = `
           aria-invalid={false}
           className="form-input-field "
           formNoValidate={true}
-          id="form-field-1"
+          id="__mock_generated_id__"
           onChange={[Function]}
           type="text"
           value=""

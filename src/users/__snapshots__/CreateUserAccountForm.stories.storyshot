@@ -14,7 +14,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-58"
+        htmlFor="__mock_generated_id__"
       >
         Prénom
       </label>
@@ -27,7 +27,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-58"
+          id="__mock_generated_id__"
           name="firstname"
           onBlur={[Function]}
           onChange={[Function]}
@@ -42,7 +42,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-59"
+        htmlFor="__mock_generated_id__"
       >
         Nom de famille
       </label>
@@ -55,7 +55,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-59"
+          id="__mock_generated_id__"
           name="lastname"
           onBlur={[Function]}
           onChange={[Function]}
@@ -70,7 +70,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-60"
+        htmlFor="__mock_generated_id__"
       >
         Date de naissance
       </label>
@@ -83,7 +83,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-60"
+          id="__mock_generated_id__"
           name="birthdate"
           onBlur={[Function]}
           onChange={[Function]}
@@ -98,7 +98,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-61"
+        htmlFor="__mock_generated_id__"
       >
         Email
       </label>
@@ -111,7 +111,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-61"
+          id="__mock_generated_id__"
           name="email"
           onBlur={[Function]}
           onChange={[Function]}
@@ -126,7 +126,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-62"
+        htmlFor="__mock_generated_id__"
       >
         Répétez l'email
       </label>
@@ -139,7 +139,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-62"
+          id="__mock_generated_id__"
           name="emailCheck"
           onBlur={[Function]}
           onChange={[Function]}
@@ -154,7 +154,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-63"
+        htmlFor="__mock_generated_id__"
       >
         Mot de passe
       </label>
@@ -166,7 +166,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-63"
+          id="__mock_generated_id__"
           name="password"
           onBlur={[Function]}
           onChange={[Function]}
@@ -181,7 +181,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
     >
       <label
         className="label form-field-container__label"
-        htmlFor="form-field-64"
+        htmlFor="__mock_generated_id__"
       >
         Répétez le mot de passe
       </label>
@@ -193,7 +193,7 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
           className="form-input-field "
           disabled={false}
           formNoValidate={true}
-          id="form-field-64"
+          id="__mock_generated_id__"
           name="passwordCheck"
           onBlur={[Function]}
           onChange={[Function]}
