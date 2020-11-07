@@ -9,7 +9,7 @@ export default {
   title: "Payment / PaymentContainer",
   component: PaymentContainer,
   decorators: [
-    (story) => {
+    (Story) => {
       const store = createDefaultStore();
 
       store.dispatch(
@@ -49,7 +49,11 @@ export default {
         ])
       );
 
-      return <Provider store={store}>{story()}</Provider>;
+      return (
+        <Provider store={store}>
+          <Story />
+        </Provider>
+      );
     },
   ],
 };

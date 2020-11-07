@@ -8,7 +8,7 @@ export default {
   title: "Payment / OrderEditorConnected",
   component: OrderEditorConnected,
   decorators: [
-    (story) => {
+    (Story) => {
       const store = createDefaultStore();
 
       store.dispatch(
@@ -25,7 +25,11 @@ export default {
         ])
       );
 
-      return <Provider store={store}>{story()}</Provider>;
+      return (
+        <Provider store={store}>
+          <Story />
+        </Provider>
+      );
     },
   ],
 };

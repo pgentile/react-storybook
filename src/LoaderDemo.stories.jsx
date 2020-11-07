@@ -11,13 +11,17 @@ import sleep from "./utils/sleep";
 export default {
   title: "LoaderDemo",
   decorators: [
-    (story) => {
+    (Story) => {
       const reducers = { loader };
       const store = createStore(reducers, {
         extraMiddlewares: [loaderMiddleware()],
       });
 
-      return <Provider store={store}>{story()}</Provider>;
+      return (
+        <Provider store={store}>
+          <Story />
+        </Provider>
+      );
     },
   ],
 };

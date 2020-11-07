@@ -8,7 +8,7 @@ export default {
   title: "ModalContainerConnected",
   component: ModalContainerConnected,
   decorators: [
-    (story) => {
+    (Story) => {
       const store = createDefaultStore();
 
       setTimeout(() => {
@@ -23,7 +23,11 @@ export default {
         store.dispatch(showModal("expired"));
       }, 30 * 1000);
 
-      return <Provider store={store}>{story()}</Provider>;
+      return (
+        <Provider store={store}>
+          <Story />
+        </Provider>
+      );
     },
   ],
   parameters: {

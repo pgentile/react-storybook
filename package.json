@@ -139,7 +139,6 @@
     "reg-cli": "0.16.2",
     "rimraf": "3.0.2",
     "sass-loader": "10.0.5",
-    "storybook-addon-i18n": "5.1.13",
     "style-loader": "2.0.0",
     "stylelint": "13.7.2",
     "stylelint-config-prettier": "8.0.2",
