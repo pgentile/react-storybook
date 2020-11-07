@@ -10,7 +10,7 @@
   &__separator {
     flex-grow: 0;
 
-    margin: 0 2rem calc(3px + 0.5rem) 2rem;
+    margin: calc(3px + 0.5rem) 2rem;
 
     &::before {
       content: "\2014\00a0";
