@@ -1,25 +1,12 @@
 {
   "root": true,
   "env": {
-    "browser": true,
     "commonjs": true,
-    "es6": true
+    "es2020": true
   },
   "parser": "babel-eslint",
-  "plugins": [
-    "react",
-    "react-hooks",
-    "jest",
-    "compat",
-    "formatjs",
-    "emotion"
-  ],
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2020,
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "sourceType": "module"
   },
   "settings": {
     "react": {
@@ -30,7 +17,8 @@
       "ResizeObserver",
       "Promise",
       "Object.entries",
-      "Math.trunc"
+      "Math.trunc",
+      "fetch"
     ]
   },
   "globals": {
@@ -43,6 +31,10 @@
     "plugin:react-hooks/recommended",
     "plugin:jest/recommended",
     "plugin:compat/recommended"
+  ],
+  "plugins": [
+    "formatjs",
+    "emotion"
   ],
   "rules": {
     "no-unused-vars": [
@@ -57,5 +49,19 @@
     "compat/compat": "warn",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.js", "*.stories.jsx", "*.stories.ts", "*.stories.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    },
+    {
+      "files": ["*.test.js", "*.test.jsx", "*.test.ts", "*.test.tsx"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
 }

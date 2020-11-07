@@ -31,7 +31,6 @@ export default {
   },
 };
 
-// eslint-disable-next-line react/prop-types
 export function Main({ totalPriceValue, currency, ...args }) {
   return <RegistredCardCvvForm totalPrice={{ value: totalPriceValue, currency }} {...args} />;
 }

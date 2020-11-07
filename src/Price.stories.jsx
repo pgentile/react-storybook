@@ -23,7 +23,6 @@ export default {
   },
 };
 
-// eslint-disable-next-line react/prop-types
 const Template = ({ value, currency, ...other }) => <Price price={{ value, currency }} {...other} />;
 
 export const Primary = Template.bind({});

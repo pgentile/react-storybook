@@ -42,7 +42,6 @@ export default {
   },
 };
 
-// eslint-disable-next-line react/prop-types
 export function Main({ totalPriceValue, currency, ...args }) {
   const { cardBrand } = args;
   const card = {
