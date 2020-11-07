@@ -4,7 +4,17 @@ export default {
   title: "I18n / I18nMessages",
   component: I18nMessages,
   argTypes: {
+    userName: {
+      defaultValue: "Jean",
+    },
+    tripCount: {
+      defaultValue: 1,
+    },
+    cardCount: {
+      defaultValue: 1,
+    },
     gender: {
+      defaultValue: "male",
       control: {
         type: "select",
         options: ["male", "female"],
@@ -17,10 +27,3 @@ export default {
 };
 
 export const Main = (args) => <I18nMessages {...args} />;
-
-Main.args = {
-  userName: "Jean",
-  tripCount: 1,
-  cardCount: 1,
-  gender: "male",
-};

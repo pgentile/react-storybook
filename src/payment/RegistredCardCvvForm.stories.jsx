@@ -14,19 +14,15 @@ export default {
       defaultValue: "visa",
     },
     totalPriceValue: {
-      type: "number",
+      control: "number",
       defaultValue: 10,
     },
     currency: {
-      control: {
-        type: "text",
-      },
+      control: "text",
       defaultValue: "EUR",
     },
     totalPrice: {
-      control: {
-        type: null,
-      },
+      control: null,
     },
   },
 };

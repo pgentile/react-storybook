@@ -5,12 +5,12 @@ export default {
   component: Price,
   argTypes: {
     value: {
+      defaultValue: 10.9,
       description: "Valeur du montant",
-      control: {
-        type: "number",
-      },
+      control: "number",
     },
     currency: {
+      defaultValue: "EUR",
       description: "Devise",
       control: {
         type: "select",
@@ -18,6 +18,8 @@ export default {
       },
     },
     noColor: {
+      defaultValue: false,
+      control: "boolean",
       description: "Pas de couleur",
     },
   },
@@ -27,36 +29,26 @@ const Template = ({ value, currency, ...other }) => <Price price={{ value, curre
 
 export const Primary = Template.bind({});
 
-Primary.args = {
-  value: 10.9,
-  currency: "EUR",
-  noColor: false,
-};
-
 export const PrixEnPounds = Template.bind({});
 
 PrixEnPounds.args = {
-  ...Primary.args,
   currency: "GBP",
 };
 
 export const PrixEnFrancSuisse = Template.bind({});
 
 PrixEnFrancSuisse.args = {
-  ...Primary.args,
   currency: "CHF",
 };
 
 export const NoColor = Template.bind({});
 
 NoColor.args = {
-  ...Primary.args,
   noColor: true,
 };
 
 export const ExtraProp = Template.bind({});
 
 ExtraProp.args = {
-  ...Primary.args,
   "data-sample": "yes",
 };

@@ -7,8 +7,11 @@ export default {
     storyshots: false,
   },
   argTypes: {
+    title: {
+      control: "text",
+    },
     children: {
-      control: { disable: true },
+      control: null,
     },
     onClose: {
       action: "close",

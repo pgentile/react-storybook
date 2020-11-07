@@ -8,7 +8,7 @@ export default {
   },
   argTypes: {
     children: {
-      control: { disable: true },
+      control: null,
     },
   },
 };

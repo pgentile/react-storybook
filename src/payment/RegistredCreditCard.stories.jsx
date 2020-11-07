@@ -14,9 +14,7 @@ export default {
       action: "use card",
     },
     cardBrand: {
-      control: {
-        type: "text",
-      },
+      control: "text",
       defaultValue: "visa",
     },
     totalPriceValue: {
@@ -24,20 +22,14 @@ export default {
       defaultValue: 10,
     },
     currency: {
-      control: {
-        type: "text",
-      },
+      control: "text",
       defaultValue: "EUR",
     },
     totalPrice: {
-      control: {
-        type: null,
-      },
+      control: null,
     },
     card: {
-      control: {
-        type: null,
-      },
+      control: null,
     },
   },
 };

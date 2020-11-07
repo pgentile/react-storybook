@@ -5,10 +5,10 @@ export default {
   component: Carousel,
   argTypes: {
     as: {
-      control: { disable: true },
+      control: null,
     },
     items: {
-      control: { disable: true },
+      control: null,
     },
   },
 };
@@ -31,4 +31,16 @@ export const main = (args) => {
 
 main.args = {
   selectedIndex: 0,
+};
+
+main.argTypes = {
+  selectedIndex: {
+    defaultValue: 0,
+    control: {
+      type: "range",
+      min: 0,
+      max: 2,
+      step: 1,
+    },
+  },
 };
