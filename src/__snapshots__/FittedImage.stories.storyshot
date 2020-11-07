@@ -2,19 +2,23 @@
 
 exports[`Storyshots FittedImage Demo 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    style={
-      Object {
-        "width": "300px",
-      }
-    }
+    className="rs"
   >
-    <img
-      className="fitted-image "
-      src="/images/beautiful-image.jpg"
-    />
+    <div
+      style={
+        Object {
+          "width": "300px",
+        }
+      }
+    >
+      <img
+        className="fitted-image "
+        src="/images/beautiful-image.jpg"
+      />
+    </div>
   </div>
 </div>
 `;

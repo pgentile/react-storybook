@@ -2,81 +2,105 @@
 
 exports[`Storyshots Forms / TextareaField Avec Placeholder 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <textarea
-    aria-invalid={false}
-    className="textarea-field "
-    defaultValue=""
-    formNoValidate={true}
-    placeholder="Example"
-  />
+  <div
+    className="rs"
+  >
+    <textarea
+      aria-invalid={false}
+      className="textarea-field "
+      defaultValue=""
+      formNoValidate={true}
+      placeholder="Example"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / TextareaField Default Value 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <textarea
-    aria-invalid={false}
-    className="textarea-field "
-    defaultValue="Example"
-    formNoValidate={true}
-  />
+  <div
+    className="rs"
+  >
+    <textarea
+      aria-invalid={false}
+      className="textarea-field "
+      defaultValue="Example"
+      formNoValidate={true}
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / TextareaField Disabled 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <textarea
-    aria-invalid={false}
-    className="textarea-field "
-    defaultValue="Example"
-    disabled={true}
-    formNoValidate={true}
-  />
+  <div
+    className="rs"
+  >
+    <textarea
+      aria-invalid={false}
+      className="textarea-field "
+      defaultValue="Example"
+      disabled={true}
+      formNoValidate={true}
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / TextareaField Error 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <textarea
-    aria-invalid={true}
-    className="textarea-field textarea-field--error "
-    defaultValue=""
-    formNoValidate={true}
-  />
+  <div
+    className="rs"
+  >
+    <textarea
+      aria-invalid={true}
+      className="textarea-field textarea-field--error "
+      defaultValue=""
+      formNoValidate={true}
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / TextareaField Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <textarea
-    aria-invalid={false}
-    className="textarea-field "
-    defaultValue=""
-    formNoValidate={true}
-  />
+  <div
+    className="rs"
+  >
+    <textarea
+      aria-invalid={false}
+      className="textarea-field "
+      defaultValue=""
+      formNoValidate={true}
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / TextareaField Read Only 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <textarea
-    aria-invalid={false}
-    className="textarea-field "
-    defaultValue="Example"
-    formNoValidate={true}
-    readOnly={true}
-  />
+  <div
+    className="rs"
+  >
+    <textarea
+      aria-invalid={false}
+      className="textarea-field "
+      defaultValue="Example"
+      formNoValidate={true}
+      readOnly={true}
+    />
+  </div>
 </div>
 `;

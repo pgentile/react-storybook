@@ -2,13 +2,17 @@
 
 exports[`Storyshots VisuallyHidden Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  Hey !
-  <span
-    className="css-1am6aje"
+  <div
+    className="rs"
   >
-    Tu ne peux pas me voir
-  </span>
+    Hey !
+    <span
+      className="css-1am6aje"
+    >
+      Tu ne peux pas me voir
+    </span>
+  </div>
 </div>
 `;

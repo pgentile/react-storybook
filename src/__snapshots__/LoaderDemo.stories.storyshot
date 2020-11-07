@@ -2,29 +2,33 @@
 
 exports[`Storyshots LoaderDemo Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <div>
-    <button
-      onClick={[Function]}
-    >
-      Load one
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Load parallel
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Load sequential
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Load on, no indicator
-    </button>
+  <div
+    className="rs"
+  >
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        Load one
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Load parallel
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Load sequential
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Load on, no indicator
+      </button>
+    </div>
   </div>
 </div>
 `;

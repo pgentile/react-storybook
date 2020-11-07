@@ -2,31 +2,35 @@
 
 exports[`Storyshots Hooks / Language Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <p>
-    <b>
-      Language:
-    </b>
-     
-    🇩🇪
-  </p>
-  <p>
-    <button
-      onClick={[Function]}
-    >
-      🇫🇷
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      🇬🇧
-    </button>
-    <button
-      onClick={[Function]}
-    >
+  <div
+    className="rs"
+  >
+    <p>
+      <b>
+        Language:
+      </b>
+       
       🇩🇪
-    </button>
-  </p>
+    </p>
+    <p>
+      <button
+        onClick={[Function]}
+      >
+        🇫🇷
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        🇬🇧
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        🇩🇪
+      </button>
+    </p>
+  </div>
 </div>
 `;

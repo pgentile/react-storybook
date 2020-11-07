@@ -2,69 +2,73 @@
 
 exports[`Storyshots Forms / SuperRadio Checked Story 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-ejsk1i-Card super-radio super-radio--checked"
+    className="rs"
   >
     <div
-      className="super-radio__main-container"
-      onClick={[Function]}
+      className="css-ejsk1i-Card super-radio super-radio--checked"
     >
       <div
-        className="super-radio__radio-element"
+        className="super-radio__main-container"
+        onClick={[Function]}
       >
-        <input
-          checked={true}
-          id="super-radio-2"
-          onChange={[Function]}
-          onClick={[Function]}
-          type="radio"
-        />
-      </div>
-      <div
-        className="super-radio__icon"
-      >
-        <label
-          htmlFor="super-radio-2"
-          onClick={[Function]}
+        <div
+          className="super-radio__radio-element"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
-            data-icon="coffee"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 640 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </label>
-      </div>
-      <div
-        className="super-radio__description"
-      >
-        <p
-          className="super-radio__description-title"
+          <input
+            checked={true}
+            id="super-radio-2"
+            onChange={[Function]}
+            onClick={[Function]}
+            type="radio"
+          />
+        </div>
+        <div
+          className="super-radio__icon"
         >
           <label
             htmlFor="super-radio-2"
+            onClick={[Function]}
           >
-            Radio button
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
+              data-icon="coffee"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
           </label>
-        </p>
-        <p
-          className="super-radio__description-description"
+        </div>
+        <div
+          className="super-radio__description"
         >
-          This is my radio button
-        </p>
+          <p
+            className="super-radio__description-title"
+          >
+            <label
+              htmlFor="super-radio-2"
+            >
+              Radio button
+            </label>
+          </p>
+          <p
+            className="super-radio__description-description"
+          >
+            This is my radio button
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -73,112 +77,116 @@ exports[`Storyshots Forms / SuperRadio Checked Story 1`] = `
 
 exports[`Storyshots Forms / SuperRadio Help Story 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-ejsk1i-Card super-radio"
+    className="rs"
   >
     <div
-      className="super-radio__main-container"
-      onClick={[Function]}
+      className="css-ejsk1i-Card super-radio"
     >
       <div
-        className="super-radio__radio-element"
+        className="super-radio__main-container"
+        onClick={[Function]}
       >
-        <input
-          id="super-radio-3"
-          onChange={[Function]}
-          onClick={[Function]}
-          type="radio"
-        />
-      </div>
-      <div
-        className="super-radio__icon"
-      >
-        <label
-          htmlFor="super-radio-3"
-          onClick={[Function]}
+        <div
+          className="super-radio__radio-element"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
-            data-icon="coffee"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 640 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </label>
-      </div>
-      <div
-        className="super-radio__description"
-      >
-        <p
-          className="super-radio__description-title"
+          <input
+            id="super-radio-3"
+            onChange={[Function]}
+            onClick={[Function]}
+            type="radio"
+          />
+        </div>
+        <div
+          className="super-radio__icon"
         >
           <label
             htmlFor="super-radio-3"
+            onClick={[Function]}
           >
-            Radio button
-          </label>
-        </p>
-        <p
-          className="super-radio__description-description"
-        >
-          This is my radio button
-        </p>
-      </div>
-      <div
-        className="super-radio__help"
-      >
-        <a
-          className="super-radio__help-link"
-          onClick={[Function]}
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-question-circle fa-w-16 fa-1x super-radio__help-icon"
-            data-icon="question-circle"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-              fill="currentColor"
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
+              data-icon="coffee"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
               style={Object {}}
-            />
-          </svg>
-        </a>
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </label>
+        </div>
+        <div
+          className="super-radio__description"
+        >
+          <p
+            className="super-radio__description-title"
+          >
+            <label
+              htmlFor="super-radio-3"
+            >
+              Radio button
+            </label>
+          </p>
+          <p
+            className="super-radio__description-description"
+          >
+            This is my radio button
+          </p>
+        </div>
+        <div
+          className="super-radio__help"
+        >
+          <a
+            className="super-radio__help-link"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-question-circle fa-w-16 fa-1x super-radio__help-icon"
+              data-icon="question-circle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-    <div
-      aria-hidden={true}
-      className="expandable"
-    >
       <div
-        className="expandable__window"
+        aria-hidden={true}
+        className="expandable"
       >
         <div
-          className="expandable__content"
+          className="expandable__window"
         >
           <div
-            className="css-49qwc-ExpandableCard"
+            className="expandable__content"
           >
-            <p>
-              This is my help
-            </p>
+            <div
+              className="css-49qwc-ExpandableCard"
+            >
+              <p>
+                This is my help
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -189,68 +197,72 @@ exports[`Storyshots Forms / SuperRadio Help Story 1`] = `
 
 exports[`Storyshots Forms / SuperRadio Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-ejsk1i-Card super-radio"
+    className="rs"
   >
     <div
-      className="super-radio__main-container"
-      onClick={[Function]}
+      className="css-ejsk1i-Card super-radio"
     >
       <div
-        className="super-radio__radio-element"
+        className="super-radio__main-container"
+        onClick={[Function]}
       >
-        <input
-          id="super-radio-1"
-          onChange={[Function]}
-          onClick={[Function]}
-          type="radio"
-        />
-      </div>
-      <div
-        className="super-radio__icon"
-      >
-        <label
-          htmlFor="super-radio-1"
-          onClick={[Function]}
+        <div
+          className="super-radio__radio-element"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
-            data-icon="coffee"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 640 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </label>
-      </div>
-      <div
-        className="super-radio__description"
-      >
-        <p
-          className="super-radio__description-title"
+          <input
+            id="super-radio-1"
+            onChange={[Function]}
+            onClick={[Function]}
+            type="radio"
+          />
+        </div>
+        <div
+          className="super-radio__icon"
         >
           <label
             htmlFor="super-radio-1"
+            onClick={[Function]}
           >
-            Radio button
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-coffee fa-w-20 fa-3x "
+              data-icon="coffee"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
           </label>
-        </p>
-        <p
-          className="super-radio__description-description"
+        </div>
+        <div
+          className="super-radio__description"
         >
-          This is my radio button
-        </p>
+          <p
+            className="super-radio__description-title"
+          >
+            <label
+              htmlFor="super-radio-1"
+            >
+              Radio button
+            </label>
+          </p>
+          <p
+            className="super-radio__description-description"
+          >
+            This is my radio button
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -259,41 +271,45 @@ exports[`Storyshots Forms / SuperRadio Main 1`] = `
 
 exports[`Storyshots Forms / SuperRadio Without Icon 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-ejsk1i-Card super-radio"
+    className="rs"
   >
     <div
-      className="super-radio__main-container"
-      onClick={[Function]}
+      className="css-ejsk1i-Card super-radio"
     >
       <div
-        className="super-radio__radio-element"
+        className="super-radio__main-container"
+        onClick={[Function]}
       >
-        <input
-          id="super-radio-4"
-          onClick={[Function]}
-          type="radio"
-        />
-      </div>
-      <div
-        className="super-radio__description"
-      >
-        <p
-          className="super-radio__description-title"
+        <div
+          className="super-radio__radio-element"
         >
-          <label
-            htmlFor="super-radio-4"
+          <input
+            id="super-radio-4"
+            onClick={[Function]}
+            type="radio"
+          />
+        </div>
+        <div
+          className="super-radio__description"
+        >
+          <p
+            className="super-radio__description-title"
           >
-            Radio button
-          </label>
-        </p>
-        <p
-          className="super-radio__description-description"
-        >
-          This is my radio button
-        </p>
+            <label
+              htmlFor="super-radio-4"
+            >
+              Radio button
+            </label>
+          </p>
+          <p
+            className="super-radio__description-description"
+          >
+            This is my radio button
+          </p>
+        </div>
       </div>
     </div>
   </div>

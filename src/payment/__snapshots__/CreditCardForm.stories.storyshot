@@ -2,135 +2,139 @@
 
 exports[`Storyshots Payment / CreditCardForm Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <form
-    className="credit-card-form "
-    onSubmit={[Function]}
+  <div
+    className="rs"
   >
-    <div
-      className="form-field-container credit-card-form__card-number"
+    <form
+      className="credit-card-form "
+      onSubmit={[Function]}
     >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Numéro de carte
-      </label>
       <div
-        className="form-field-container__field"
+        className="form-field-container credit-card-form__card-number"
       >
-        <input
-          aria-invalid={false}
-          autoComplete="cc-number"
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="__mock_generated_id__"
-          inputMode="numeric"
-          maxLength={19}
-          name="cardNumber"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          pattern="[0-9]*"
-          spellCheck={false}
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-    <div
-      className="form-field-container credit-card-form__expiration-date"
-    >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Date d'expiration
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <input
-          aria-invalid={false}
-          autoComplete="cc-exp"
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="__mock_generated_id__"
-          maxLength={5}
-          name="expirationDate"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
-      <p
-        className="form-field-container__help"
-      >
-        Date au format AA-MM
-      </p>
-    </div>
-    <div
-      className="form-field-container credit-card-form__cvv"
-    >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Code de sécurité
-      </label>
-      <div
-        className="form-field-container__field"
-      >
-        <input
-          aria-invalid={false}
-          autoComplete="cc-csc"
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="__mock_generated_id__"
-          inputMode="numeric"
-          maxLength={4}
-          name="cvv"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          pattern="[0-9]*"
-          spellCheck={false}
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-    <div
-      className="credit-card-form__button"
-    >
-      <button
-        aria-pressed={false}
-        className="button button--size-large "
-        disabled={false}
-        type="submit"
-      >
-        Payer 
-        <span
-          className="css-fyxyfm-Price"
-          data-price-currency="EUR"
-          data-price-value={98}
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
         >
-          98
+          Numéro de carte
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            autoComplete="cc-number"
+            className="form-input-field "
+            disabled={false}
+            formNoValidate={true}
+            id="__mock_generated_id__"
+            inputMode="numeric"
+            maxLength={19}
+            name="cardNumber"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            pattern="[0-9]*"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="form-field-container credit-card-form__expiration-date"
+      >
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
+        >
+          Date d'expiration
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            autoComplete="cc-exp"
+            className="form-input-field "
+            disabled={false}
+            formNoValidate={true}
+            id="__mock_generated_id__"
+            maxLength={5}
+            name="expirationDate"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <p
+          className="form-field-container__help"
+        >
+          Date au format AA-MM
+        </p>
+      </div>
+      <div
+        className="form-field-container credit-card-form__cvv"
+      >
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
+        >
+          Code de sécurité
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            autoComplete="cc-csc"
+            className="form-input-field "
+            disabled={false}
+            formNoValidate={true}
+            id="__mock_generated_id__"
+            inputMode="numeric"
+            maxLength={4}
+            name="cvv"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            pattern="[0-9]*"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="credit-card-form__button"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-large "
+          disabled={false}
+          type="submit"
+        >
+          Payer 
           <span
-            className="css-tvrdin-Price"
+            className="css-fyxyfm-Price"
+            data-price-currency="EUR"
+            data-price-value={98}
           >
-             
-            €
+            98
+            <span
+              className="css-tvrdin-Price"
+            >
+               
+              €
+            </span>
           </span>
-        </span>
-      </button>
-    </div>
-  </form>
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
 `;

@@ -2,58 +2,74 @@
 
 exports[`Storyshots Forms / Label Disabled Story 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <label
-    className="label label--disabled "
+  <div
+    className="rs"
   >
-    Label
-  </label>
+    <label
+      className="label label--disabled "
+    >
+      Label
+    </label>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / Label Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <label
-    className="label "
+  <div
+    className="rs"
   >
-    Label
-  </label>
+    <label
+      className="label "
+    >
+      Label
+    </label>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / Label Optional And Disabled 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <label
-    className="label label--disabled "
+  <div
+    className="rs"
   >
-    Label
-    <span
-      className="label__optional"
+    <label
+      className="label label--disabled "
     >
-       (facultatif)
-    </span>
-  </label>
+      Label
+      <span
+        className="label__optional"
+      >
+         (facultatif)
+      </span>
+    </label>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / Label Optional Story 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <label
-    className="label "
+  <div
+    className="rs"
   >
-    Label
-    <span
-      className="label__optional"
+    <label
+      className="label "
     >
-       (facultatif)
-    </span>
-  </label>
+      Label
+      <span
+        className="label__optional"
+      >
+         (facultatif)
+      </span>
+    </label>
+  </div>
 </div>
 `;

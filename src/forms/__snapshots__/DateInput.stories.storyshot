@@ -2,459 +2,491 @@
 
 exports[`Storyshots Forms / DateInput Demo 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input "
+  <div
+    className="rs"
   >
-    <input
-      className="form-date-input__input form-date-input__input--day"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="JJ"
-      spellCheck={false}
-      type="text"
-      value=""
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input "
     >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--month"
-      id={null}
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      spellCheck={false}
-      type="text"
-      value=""
-    />
-    <span
-      className="form-date-input__input-separator"
-    >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--year"
-      inputMode="numeric"
-      maxLength={4}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AAAA"
-      spellCheck={false}
-      type="text"
-      value=""
-    />
-  </fieldset>
+      <input
+        className="form-date-input__input form-date-input__input--day"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="JJ"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--month"
+        id={null}
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--year"
+        inputMode="numeric"
+        maxLength={4}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AAAA"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </fieldset>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / DateInput Disabled 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input form-date-input--disabled "
+  <div
+    className="rs"
   >
-    <input
-      className="form-date-input__input form-date-input__input--day"
-      disabled={true}
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="JJ"
-      spellCheck={false}
-      type="text"
-      value="13"
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input form-date-input--disabled "
     >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--month"
-      disabled={true}
-      id={null}
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      spellCheck={false}
-      type="text"
-      value="02"
-    />
-    <span
-      className="form-date-input__input-separator"
-    >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--year"
-      disabled={true}
-      inputMode="numeric"
-      maxLength={4}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AAAA"
-      spellCheck={false}
-      type="text"
-      value="1990"
-    />
-  </fieldset>
+      <input
+        className="form-date-input__input form-date-input__input--day"
+        disabled={true}
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="JJ"
+        spellCheck={false}
+        type="text"
+        value="13"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--month"
+        disabled={true}
+        id={null}
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        spellCheck={false}
+        type="text"
+        value="02"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--year"
+        disabled={true}
+        inputMode="numeric"
+        maxLength={4}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AAAA"
+        spellCheck={false}
+        type="text"
+        value="1990"
+      />
+    </fieldset>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / DateInput Error 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input form-date-input--error "
+  <div
+    className="rs"
   >
-    <input
-      aria-invalid={true}
-      className="form-date-input__input form-date-input__input--day"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="JJ"
-      spellCheck={false}
-      type="text"
-      value="13"
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input form-date-input--error "
     >
-      /
-    </span>
-    <input
-      aria-invalid={true}
-      className="form-date-input__input form-date-input__input--month"
-      id={null}
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      spellCheck={false}
-      type="text"
-      value="02"
-    />
-    <span
-      className="form-date-input__input-separator"
-    >
-      /
-    </span>
-    <input
-      aria-invalid={true}
-      className="form-date-input__input form-date-input__input--year"
-      inputMode="numeric"
-      maxLength={4}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AAAA"
-      spellCheck={false}
-      type="text"
-      value="1990"
-    />
-  </fieldset>
+      <input
+        aria-invalid={true}
+        className="form-date-input__input form-date-input__input--day"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="JJ"
+        spellCheck={false}
+        type="text"
+        value="13"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        aria-invalid={true}
+        className="form-date-input__input form-date-input__input--month"
+        id={null}
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        spellCheck={false}
+        type="text"
+        value="02"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        aria-invalid={true}
+        className="form-date-input__input form-date-input__input--year"
+        inputMode="numeric"
+        maxLength={4}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AAAA"
+        spellCheck={false}
+        type="text"
+        value="1990"
+      />
+    </fieldset>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / DateInput Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input "
+  <div
+    className="rs"
   >
-    <input
-      className="form-date-input__input form-date-input__input--day"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="JJ"
-      spellCheck={false}
-      type="text"
-      value=""
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input "
     >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--month"
-      id={null}
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      spellCheck={false}
-      type="text"
-      value=""
-    />
-    <span
-      className="form-date-input__input-separator"
-    >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--year"
-      inputMode="numeric"
-      maxLength={4}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AAAA"
-      spellCheck={false}
-      type="text"
-      value=""
-    />
-  </fieldset>
+      <input
+        className="form-date-input__input form-date-input__input--day"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="JJ"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--month"
+        id={null}
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--year"
+        inputMode="numeric"
+        maxLength={4}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AAAA"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </fieldset>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / DateInput Mode Year Month 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input "
+  <div
+    className="rs"
   >
-    <input
-      className="form-date-input__input form-date-input__input--month"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      spellCheck={false}
-      type="text"
-      value="04"
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input "
     >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--year"
-      inputMode="numeric"
-      maxLength={4}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AAAA"
-      spellCheck={false}
-      type="text"
-      value="2018"
-    />
-  </fieldset>
+      <input
+        className="form-date-input__input form-date-input__input--month"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        spellCheck={false}
+        type="text"
+        value="04"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--year"
+        inputMode="numeric"
+        maxLength={4}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AAAA"
+        spellCheck={false}
+        type="text"
+        value="2018"
+      />
+    </fieldset>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / DateInput Mode Year Month With Small Year 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input "
+  <div
+    className="rs"
   >
-    <input
-      className="form-date-input__input form-date-input__input--month"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      spellCheck={false}
-      type="text"
-      value="06"
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input "
     >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AA"
-      spellCheck={false}
-      type="text"
-      value="22"
-    />
-  </fieldset>
+      <input
+        className="form-date-input__input form-date-input__input--month"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        spellCheck={false}
+        type="text"
+        value="06"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--year form-date-input__input--year-small"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AA"
+        spellCheck={false}
+        type="text"
+        value="22"
+      />
+    </fieldset>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / DateInput Read Only 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input form-date-input--read-only "
+  <div
+    className="rs"
   >
-    <input
-      className="form-date-input__input form-date-input__input--day"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="JJ"
-      readOnly={true}
-      spellCheck={false}
-      type="text"
-      value="13"
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input form-date-input--read-only "
     >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--month"
-      id={null}
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      readOnly={true}
-      spellCheck={false}
-      type="text"
-      value="02"
-    />
-    <span
-      className="form-date-input__input-separator"
-    >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--year"
-      inputMode="numeric"
-      maxLength={4}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AAAA"
-      readOnly={true}
-      spellCheck={false}
-      type="text"
-      value="1990"
-    />
-  </fieldset>
+      <input
+        className="form-date-input__input form-date-input__input--day"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="JJ"
+        readOnly={true}
+        spellCheck={false}
+        type="text"
+        value="13"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--month"
+        id={null}
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        readOnly={true}
+        spellCheck={false}
+        type="text"
+        value="02"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--year"
+        inputMode="numeric"
+        maxLength={4}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AAAA"
+        readOnly={true}
+        spellCheck={false}
+        type="text"
+        value="1990"
+      />
+    </fieldset>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / DateInput With Value 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <fieldset
-    className="form-date-input "
+  <div
+    className="rs"
   >
-    <input
-      className="form-date-input__input form-date-input__input--day"
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="JJ"
-      spellCheck={false}
-      type="text"
-      value="13"
-    />
-    <span
-      className="form-date-input__input-separator"
+    <fieldset
+      className="form-date-input "
     >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--month"
-      id={null}
-      inputMode="numeric"
-      maxLength={2}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="MM"
-      spellCheck={false}
-      type="text"
-      value="02"
-    />
-    <span
-      className="form-date-input__input-separator"
-    >
-      /
-    </span>
-    <input
-      className="form-date-input__input form-date-input__input--year"
-      inputMode="numeric"
-      maxLength={4}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      pattern="[0-9]*"
-      placeholder="AAAA"
-      spellCheck={false}
-      type="text"
-      value="1990"
-    />
-  </fieldset>
+      <input
+        className="form-date-input__input form-date-input__input--day"
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="JJ"
+        spellCheck={false}
+        type="text"
+        value="13"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--month"
+        id={null}
+        inputMode="numeric"
+        maxLength={2}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="MM"
+        spellCheck={false}
+        type="text"
+        value="02"
+      />
+      <span
+        className="form-date-input__input-separator"
+      >
+        /
+      </span>
+      <input
+        className="form-date-input__input form-date-input__input--year"
+        inputMode="numeric"
+        maxLength={4}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        pattern="[0-9]*"
+        placeholder="AAAA"
+        spellCheck={false}
+        type="text"
+        value="1990"
+      />
+    </fieldset>
+  </div>
 </div>
 `;

@@ -2,18 +2,22 @@
 
 exports[`Storyshots Encryption Test 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    style={
-      Object {
-        "color": "red",
-        "fontSize": "3em",
-        "fontWeight": "bold",
-      }
-    }
+    className="rs"
   >
-    Please look at your console
+    <div
+      style={
+        Object {
+          "color": "red",
+          "fontSize": "3em",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Please look at your console
+    </div>
   </div>
 </div>
 `;

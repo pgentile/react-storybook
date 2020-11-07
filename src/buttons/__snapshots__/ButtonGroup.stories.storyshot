@@ -2,70 +2,78 @@
 
 exports[`Storyshots Buttons / ButtonGroup Large 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="button-group "
+    className="rs"
   >
-    <button
-      aria-pressed={false}
-      className="button button--size-large button-group__button "
+    <div
+      className="button-group "
     >
-      Button 1
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-large button-group__button "
-    >
-      Button 2
-    </button>
-    <button
-      aria-pressed={true}
-      className="button button--size-large button--toggled button-group__button "
-    >
-      Button 3
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-large button-group__button "
-    >
-      Button 4
-    </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-large button-group__button "
+      >
+        Button 1
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-large button-group__button "
+      >
+        Button 2
+      </button>
+      <button
+        aria-pressed={true}
+        className="button button--size-large button--toggled button-group__button "
+      >
+        Button 3
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-large button-group__button "
+      >
+        Button 4
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Buttons / ButtonGroup Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="button-group "
+    className="rs"
   >
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button-group__button "
+    <div
+      className="button-group "
     >
-      Button 1
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button-group__button "
-    >
-      Button 2
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button-group__button "
-    >
-      Button 3
-    </button>
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button-group__button "
-    >
-      Button 4
-    </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button-group__button "
+      >
+        Button 1
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button-group__button "
+      >
+        Button 2
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button-group__button "
+      >
+        Button 3
+      </button>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button-group__button "
+      >
+        Button 4
+      </button>
+    </div>
   </div>
 </div>
 `;

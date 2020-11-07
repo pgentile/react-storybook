@@ -2,10 +2,14 @@
 
 exports[`Storyshots Hooks / AboutMediaDevices Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <pre>
-    {}
-  </pre>
+  <div
+    className="rs"
+  >
+    <pre>
+      {}
+    </pre>
+  </div>
 </div>
 `;

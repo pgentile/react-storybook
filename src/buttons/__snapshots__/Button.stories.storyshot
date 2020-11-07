@@ -2,13 +2,17 @@
 
 exports[`Storyshots Buttons / Button Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <button
-    aria-pressed={false}
-    className="button button--size-normal "
+  <div
+    className="rs"
   >
-    Mon bouton
-  </button>
+    <button
+      aria-pressed={false}
+      className="button button--size-normal "
+    >
+      Mon bouton
+    </button>
+  </div>
 </div>
 `;

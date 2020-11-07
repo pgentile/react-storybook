@@ -2,18 +2,22 @@
 
 exports[`Storyshots Payment / VoucherContainer Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <section
-    className="css-ejsk1i-Card voucher-container "
+  <div
+    className="rs"
   >
-    <button
-      aria-pressed={false}
-      className="button button--size-normal button--flat voucher-container__question"
-      onClick={[Function]}
+    <section
+      className="css-ejsk1i-Card voucher-container "
     >
-      Avez-vous un code promo ?
-    </button>
-  </section>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal button--flat voucher-container__question"
+        onClick={[Function]}
+      >
+        Avez-vous un code promo ?
+      </button>
+    </section>
+  </div>
 </div>
 `;

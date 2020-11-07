@@ -2,13 +2,17 @@
 
 exports[`Storyshots Hooks / Shake Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="shake"
-    onClick={[Function]}
+    className="rs"
   >
-    This element must shake
+    <div
+      className="shake"
+      onClick={[Function]}
+    >
+      This element must shake
+    </div>
   </div>
 </div>
 `;

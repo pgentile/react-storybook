@@ -2,38 +2,42 @@
 
 exports[`Storyshots Final Forms components / FinalFieldError Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <form
-    onSubmit={[Function]}
+  <div
+    className="rs"
   >
-    <div
-      className="form-field-container "
+    <form
+      onSubmit={[Function]}
     >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Nom
-      </label>
       <div
-        className="form-field-container__field"
+        className="form-field-container "
       >
-        <input
-          autoComplete="off"
-          autoCorrect="off"
-          disabled={false}
-          error={false}
-          id="__mock_generated_id__"
-          name="name"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="text"
-          value=""
-        />
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
+        >
+          Nom
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            autoComplete="off"
+            autoCorrect="off"
+            disabled={false}
+            error={false}
+            id="__mock_generated_id__"
+            name="name"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </div>
 `;

@@ -2,19 +2,23 @@
 
 exports[`Storyshots Experiments / CssVarConsumer Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-vmtew8"
+    className="rs"
   >
-    <p
-      className="css-gul1mh"
-    >
-      C'est formidable, les variables CSS.
-    </p>
     <div
-      className="css-1t8w1nn"
-    />
+      className="css-vmtew8"
+    >
+      <p
+        className="css-gul1mh"
+      >
+        C'est formidable, les variables CSS.
+      </p>
+      <div
+        className="css-1t8w1nn"
+      />
+    </div>
   </div>
 </div>
 `;

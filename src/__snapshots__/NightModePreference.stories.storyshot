@@ -2,25 +2,29 @@
 
 exports[`Storyshots NightModePreference Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <section
-    className="night-mode-preference"
+  <div
+    className="rs"
   >
-    <h1>
-      Hello
-    </h1>
-    <p>
-      Utilisation du night mode de l'OS ?
-    </p>
-    <p>
-      OS en 
-      <i>
-        dark mode
-      </i>
-       ? 
-      non
-    </p>
-  </section>
+    <section
+      className="night-mode-preference"
+    >
+      <h1>
+        Hello
+      </h1>
+      <p>
+        Utilisation du night mode de l'OS ?
+      </p>
+      <p>
+        OS en 
+        <i>
+          dark mode
+        </i>
+         ? 
+        non
+      </p>
+    </section>
+  </div>
 </div>
 `;

@@ -2,8 +2,12 @@
 
 exports[`Storyshots ResizeDetector Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  NON
+  <div
+    className="rs"
+  >
+    NON
+  </div>
 </div>
 `;

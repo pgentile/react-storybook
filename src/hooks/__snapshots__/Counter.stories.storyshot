@@ -2,30 +2,34 @@
 
 exports[`Storyshots Hooks / Counter Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="counter"
+    className="rs"
   >
-    <p>
-      <b>
-        0
-      </b>
-    </p>
-    <p>
-      <button
-        onClick={[Function]}
-      >
-        Increment
-      </button>
-    </p>
-    <p>
-      <button
-        onClick={[Function]}
-      >
-        Decrement
-      </button>
-    </p>
+    <div
+      className="counter"
+    >
+      <p>
+        <b>
+          0
+        </b>
+      </p>
+      <p>
+        <button
+          onClick={[Function]}
+        >
+          Increment
+        </button>
+      </p>
+      <p>
+        <button
+          onClick={[Function]}
+        >
+          Decrement
+        </button>
+      </p>
+    </div>
   </div>
 </div>
 `;

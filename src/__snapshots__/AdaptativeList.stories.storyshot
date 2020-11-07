@@ -2,49 +2,53 @@
 
 exports[`Storyshots AdaptativeList Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="adaptative-list "
+    className="rs"
   >
     <div
-      className="adaptative-list__item"
+      className="adaptative-list "
     >
-      Ligne 1
-    </div>
-    <div
-      className="adaptative-list__separator"
-    />
-    <div
-      className="adaptative-list__item"
-    >
-      <p
-        style={
-          Object {
-            "margin": "1rem",
-          }
-        }
+      <div
+        className="adaptative-list__item"
       >
-        Ligne 2
-      </p>
-    </div>
-    <div
-      className="adaptative-list__separator"
-    />
-    <div
-      className="adaptative-list__item"
-    >
-      Ligne 3
-    </div>
-    <div
-      className="adaptative-list__separator"
-    />
-    <div
-      className="adaptative-list__item"
-    >
-      Ligne 4
-      <br />
-      Et une sous-ligne
+        Ligne 1
+      </div>
+      <div
+        className="adaptative-list__separator"
+      />
+      <div
+        className="adaptative-list__item"
+      >
+        <p
+          style={
+            Object {
+              "margin": "1rem",
+            }
+          }
+        >
+          Ligne 2
+        </p>
+      </div>
+      <div
+        className="adaptative-list__separator"
+      />
+      <div
+        className="adaptative-list__item"
+      >
+        Ligne 3
+      </div>
+      <div
+        className="adaptative-list__separator"
+      />
+      <div
+        className="adaptative-list__item"
+      >
+        Ligne 4
+        <br />
+        Et une sous-ligne
+      </div>
     </div>
   </div>
 </div>

@@ -2,20 +2,24 @@
 
 exports[`Storyshots PrefixedInput Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <span
-    className="prefixed-input"
+  <div
+    className="rs"
   >
     <span
-      className="prefixed-input__prefix"
-      onClick={[Function]}
+      className="prefixed-input"
     >
-      1180 
+      <span
+        className="prefixed-input__prefix"
+        onClick={[Function]}
+      >
+        1180 
+      </span>
+      <input
+        className="prefixed-input__input"
+      />
     </span>
-    <input
-      className="prefixed-input__input"
-    />
-  </span>
+  </div>
 </div>
 `;

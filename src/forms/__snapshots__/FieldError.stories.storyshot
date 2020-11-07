@@ -2,12 +2,16 @@
 
 exports[`Storyshots Forms / FieldError Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <p
-    className="field-error "
+  <div
+    className="rs"
   >
-    Quelle belle erreur
-  </p>
+    <p
+      className="field-error "
+    >
+      Quelle belle erreur
+    </p>
+  </div>
 </div>
 `;

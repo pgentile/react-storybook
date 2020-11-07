@@ -2,100 +2,104 @@
 
 exports[`Storyshots Payment / Donation / DonationProposal Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <section
-    className="css-ejsk1i-Card donation-proposal "
+  <div
+    className="rs"
   >
-    <div
-      className="donation-proposal__content"
+    <section
+      className="css-ejsk1i-Card donation-proposal "
     >
       <div
-        className="donation-proposal__logo"
-      >
-        <img
-          alt="Logo URCT"
-          src="/static/mocks/images/payment/donation/urct-logo.svg"
-        />
-      </div>
-      <div
-        className="donation-proposal__punchline"
-      >
-        <h3>
-          Donner, c'est facile avec un rien c'est tout
-        </h3>
-        <p>
-          Je soutiens une cause qui me tient à cœur.
-           
-          <a
-            href="#"
-            onClick={[Function]}
-          >
-            En savoir plus 
-            <span>
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
-                data-icon="angle-up"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </span>
-          </a>
-        </p>
-      </div>
-    </div>
-    <p
-      className="donation-proposal__button"
-    >
-      <button
-        aria-pressed={false}
-        className="button button--size-small progress-button "
-        disabled={false}
-        onClick={[Function]}
+        className="donation-proposal__content"
       >
         <div
-          className="progress-button__content"
+          className="donation-proposal__logo"
         >
-          Donner 1 €
+          <img
+            alt="Logo URCT"
+            src="/static/mocks/images/payment/donation/urct-logo.svg"
+          />
         </div>
         <div
-          className="progress-button__progress-bar"
-        />
-      </button>
-    </p>
-    <div
-      aria-hidden={true}
-      className="expandable"
-    >
-      <div
-        className="expandable__window"
+          className="donation-proposal__punchline"
+        >
+          <h3>
+            Donner, c'est facile avec un rien c'est tout
+          </h3>
+          <p>
+            Je soutiens une cause qui me tient à cœur.
+             
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              En savoir plus 
+              <span>
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                  data-icon="angle-up"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <p
+        className="donation-proposal__button"
       >
-        <div
-          className="expandable__content"
+        <button
+          aria-pressed={false}
+          className="button button--size-small progress-button "
+          disabled={false}
+          onClick={[Function]}
         >
           <div
-            className="css-49qwc-ExpandableCard"
+            className="progress-button__content"
           >
-            <p
-              className="donation-proposal__more"
+            Donner 1 €
+          </div>
+          <div
+            className="progress-button__progress-bar"
+          />
+        </button>
+      </p>
+      <div
+        aria-hidden={true}
+        className="expandable"
+      >
+        <div
+          className="expandable__window"
+        >
+          <div
+            className="expandable__content"
+          >
+            <div
+              className="css-49qwc-ExpandableCard"
             >
-              En savoir plus sur URCT...
-            </p>
+              <p
+                className="donation-proposal__more"
+              >
+                En savoir plus sur URCT...
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </div>
 `;

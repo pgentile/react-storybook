@@ -2,63 +2,67 @@
 
 exports[`Storyshots AgeOrBirthDate Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="age-or-birth-date"
+    className="rs"
   >
     <div
-      className="form-field-container age-or-birth-date__age"
+      className="age-or-birth-date"
     >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Âge
-      </label>
       <div
-        className="form-field-container__field"
+        className="form-field-container age-or-birth-date__age"
       >
-        <input
-          aria-invalid={false}
-          className="form-input-field "
-          formNoValidate={true}
-          id="__mock_generated_id__"
-          inputMode="numeric"
-          onChange={[Function]}
-          pattern="[0-9]*"
-          spellCheck={false}
-          type="text"
-          value=""
-        />
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
+        >
+          Âge
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            className="form-input-field "
+            formNoValidate={true}
+            id="__mock_generated_id__"
+            inputMode="numeric"
+            onChange={[Function]}
+            pattern="[0-9]*"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="age-or-birth-date__separator"
-    >
-      ou
-    </div>
-    <div
-      className="form-field-container age-or-birth-date__birthdate"
-    >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Date de naissance
-      </label>
       <div
-        className="form-field-container__field"
+        className="age-or-birth-date__separator"
       >
-        <input
-          aria-invalid={false}
-          className="form-input-field "
-          formNoValidate={true}
-          id="__mock_generated_id__"
-          onChange={[Function]}
-          type="text"
-          value=""
-        />
+        ou
+      </div>
+      <div
+        className="form-field-container age-or-birth-date__birthdate"
+      >
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
+        >
+          Date de naissance
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            className="form-input-field "
+            formNoValidate={true}
+            id="__mock_generated_id__"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
       </div>
     </div>
   </div>

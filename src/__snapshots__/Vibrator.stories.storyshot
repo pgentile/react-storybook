@@ -2,15 +2,19 @@
 
 exports[`Storyshots Vibrator Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <div>
-    <p>
-      Puis-je vibrer ? 
-      <b>
-        NON
-      </b>
-    </p>
+  <div
+    className="rs"
+  >
+    <div>
+      <p>
+        Puis-je vibrer ? 
+        <b>
+          NON
+        </b>
+      </p>
+    </div>
   </div>
 </div>
 `;

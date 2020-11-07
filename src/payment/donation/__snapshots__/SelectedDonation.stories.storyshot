@@ -2,39 +2,43 @@
 
 exports[`Storyshots Payment / Donation / SelectedDonation Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <section
-    className="css-ejsk1i-Card selected-donation "
+  <div
+    className="rs"
   >
-    <p
-      className="selected-donation__thanks"
+    <section
+      className="css-ejsk1i-Card selected-donation "
     >
-      Vous avez choisi de faire un don à 
-      <b>
-        Société protectrice des animaux
-      </b>
-      . Nous vous en remercions !
-    </p>
-    <p
-      className="selected-donation__cancel"
-    >
-      <button
-        aria-pressed={false}
-        className="button button--size-small progress-button "
-        disabled={false}
-        onClick={[Function]}
+      <p
+        className="selected-donation__thanks"
       >
-        <div
-          className="progress-button__content"
+        Vous avez choisi de faire un don à 
+        <b>
+          Société protectrice des animaux
+        </b>
+        . Nous vous en remercions !
+      </p>
+      <p
+        className="selected-donation__cancel"
+      >
+        <button
+          aria-pressed={false}
+          className="button button--size-small progress-button "
+          disabled={false}
+          onClick={[Function]}
         >
-          Annuler mon don
-        </div>
-        <div
-          className="progress-button__progress-bar"
-        />
-      </button>
-    </p>
-  </section>
+          <div
+            className="progress-button__content"
+          >
+            Annuler mon don
+          </div>
+          <div
+            className="progress-button__progress-bar"
+          />
+        </button>
+      </p>
+    </section>
+  </div>
 </div>
 `;

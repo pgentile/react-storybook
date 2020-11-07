@@ -2,75 +2,79 @@
 
 exports[`Storyshots OwnerForm / OwnerForm Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <form
-    className="owner-form"
-    noValidate={true}
-    onSubmit={[Function]}
+  <div
+    className="rs"
   >
-    <div
-      className="form-field-container "
+    <form
+      className="owner-form"
+      noValidate={true}
+      onSubmit={[Function]}
     >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Email
-      </label>
       <div
-        className="form-field-container__field"
+        className="form-field-container "
       >
-        <input
-          aria-invalid={false}
-          autoComplete="email"
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="__mock_generated_id__"
-          name="email"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="email"
-          value=""
-        />
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
+        >
+          Email
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            autoComplete="email"
+            className="form-input-field "
+            disabled={false}
+            formNoValidate={true}
+            id="__mock_generated_id__"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="email"
+            value=""
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="form-field-container "
-    >
-      <label
-        className="label form-field-container__label"
-        htmlFor="__mock_generated_id__"
-      >
-        Validez votre email
-      </label>
       <div
-        className="form-field-container__field"
+        className="form-field-container "
       >
-        <input
-          aria-invalid={false}
-          className="form-input-field "
-          disabled={false}
-          formNoValidate={true}
-          id="__mock_generated_id__"
-          name="emailValidation"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="email"
-          value=""
-        />
+        <label
+          className="label form-field-container__label"
+          htmlFor="__mock_generated_id__"
+        >
+          Validez votre email
+        </label>
+        <div
+          className="form-field-container__field"
+        >
+          <input
+            aria-invalid={false}
+            className="form-input-field "
+            disabled={false}
+            formNoValidate={true}
+            id="__mock_generated_id__"
+            name="emailValidation"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="email"
+            value=""
+          />
+        </div>
       </div>
-    </div>
-    <button
-      aria-pressed={false}
-      className="button button--size-normal "
-      disabled={false}
-    >
-      Envoyer
-    </button>
-  </form>
+      <button
+        aria-pressed={false}
+        className="button button--size-normal "
+        disabled={false}
+      >
+        Envoyer
+      </button>
+    </form>
+  </div>
 </div>
 `;

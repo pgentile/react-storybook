@@ -2,133 +2,169 @@
 
 exports[`Storyshots Forms / InputField Avec Placeholder 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    defaultValue=""
-    formNoValidate={true}
-    placeholder="Example"
-    type="text"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      defaultValue=""
+      formNoValidate={true}
+      placeholder="Example"
+      type="text"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Default Value 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    defaultValue="Example"
-    formNoValidate={true}
-    type="text"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      defaultValue="Example"
+      formNoValidate={true}
+      type="text"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Disabled 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    defaultValue="Example"
-    disabled={true}
-    formNoValidate={true}
-    type="text"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      defaultValue="Example"
+      disabled={true}
+      formNoValidate={true}
+      type="text"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Email 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    formNoValidate={true}
-    placeholder="Adresse email"
-    type="email"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      formNoValidate={true}
+      placeholder="Adresse email"
+      type="email"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Error 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={true}
-    className="form-input-field form-input-field--error "
-    defaultValue=""
-    formNoValidate={true}
-    type="text"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={true}
+      className="form-input-field form-input-field--error "
+      defaultValue=""
+      formNoValidate={true}
+      type="text"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    defaultValue=""
-    formNoValidate={true}
-    type="text"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      defaultValue=""
+      formNoValidate={true}
+      type="text"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Number Input 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    formNoValidate={true}
-    inputMode="numeric"
-    onChange={[Function]}
-    pattern="[0-9]*"
-    spellCheck={false}
-    type="text"
-    value="123"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      formNoValidate={true}
+      inputMode="numeric"
+      onChange={[Function]}
+      pattern="[0-9]*"
+      spellCheck={false}
+      type="text"
+      value="123"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Password 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    formNoValidate={true}
-    type="password"
-    value="password"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      formNoValidate={true}
+      type="password"
+      value="password"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Forms / InputField Read Only 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <input
-    aria-invalid={false}
-    className="form-input-field "
-    defaultValue="Example"
-    formNoValidate={true}
-    readOnly={true}
-    type="text"
-  />
+  <div
+    className="rs"
+  >
+    <input
+      aria-invalid={false}
+      className="form-input-field "
+      defaultValue="Example"
+      formNoValidate={true}
+      readOnly={true}
+      type="text"
+    />
+  </div>
 </div>
 `;

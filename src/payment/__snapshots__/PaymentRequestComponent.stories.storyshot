@@ -2,12 +2,16 @@
 
 exports[`Storyshots Payment / PaymentRequestComponent Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <button
-    onClick={[Function]}
+  <div
+    className="rs"
   >
-    Payer
-  </button>
+    <button
+      onClick={[Function]}
+    >
+      Payer
+    </button>
+  </div>
 </div>
 `;

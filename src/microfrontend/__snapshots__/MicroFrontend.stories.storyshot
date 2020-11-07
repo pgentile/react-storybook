@@ -2,23 +2,31 @@
 
 exports[`Storyshots MicroFrontend / MicroFrontend Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    id="micro-frontend-root-sample"
-  />
+    className="rs"
+  >
+    <div
+      id="micro-frontend-root-sample"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots MicroFrontend / MicroFrontend Multiple Frontends 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    id="micro-frontend-root-sample1"
-  />
-  <div
-    id="micro-frontend-root-sample2"
-  />
+    className="rs"
+  >
+    <div
+      id="micro-frontend-root-sample1"
+    />
+    <div
+      id="micro-frontend-root-sample2"
+    />
+  </div>
 </div>
 `;

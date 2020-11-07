@@ -2,16 +2,20 @@
 
 exports[`Storyshots Card Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-1xnl3o5-Card"
+    className="rs"
   >
-    <p>
-      Carte de niveau 
-      <b />
-       
-    </p>
+    <div
+      className="css-1xnl3o5-Card"
+    >
+      <p>
+        Carte de niveau 
+        <b />
+         
+      </p>
+    </div>
   </div>
 </div>
 `;

@@ -2,204 +2,208 @@
 
 exports[`Storyshots ColorFromString Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="color-from-string"
+    className="rs"
   >
-    <form>
-      <fieldset>
-        <legend>
-          Paramètres
-        </legend>
-        <div>
-          <p>
-            <label
-              htmlFor="name"
-            >
-              Name:
-            </label>
-          </p>
-          <input
-            autoComplete="off"
-            id="name"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
-      </fieldset>
-    </form>
-    <hr />
-    <p>
-      <b>
-        Name:
-      </b>
-       
-      
-    </p>
-    <p>
-      <b>
-        Hash code:
-      </b>
-       
-      -1814552171
-    </p>
-    <p>
-      <b>
-        Hue:
-      </b>
-       
-      -251
-    </p>
-    <div>
-      <span
-        className="color-from-string__hue"
-      >
+    <div
+      className="color-from-string"
+    >
+      <form>
+        <fieldset>
+          <legend>
+            Paramètres
+          </legend>
+          <div>
+            <p>
+              <label
+                htmlFor="name"
+              >
+                Name:
+              </label>
+            </p>
+            <input
+              autoComplete="off"
+              id="name"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+        </fieldset>
+      </form>
+      <hr />
+      <p>
+        <b>
+          Name:
+        </b>
+         
+        
+      </p>
+      <p>
+        <b>
+          Hash code:
+        </b>
+         
+        -1814552171
+      </p>
+      <p>
+        <b>
+          Hue:
+        </b>
+         
+        -251
+      </p>
+      <div>
         <span
-          className="color-from-string__hue-color"
-          style={
-            Object {
-              "backgroundColor": "hsl(-251deg, 70%, 50%)",
+          className="color-from-string__hue"
+        >
+          <span
+            className="color-from-string__hue-color"
+            style={
+              Object {
+                "backgroundColor": "hsl(-251deg, 70%, 50%)",
+              }
             }
-          }
-        />
-      </span>
+          />
+        </span>
+      </div>
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <th>
+              Index
+            </th>
+            <th>
+              Host
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              <span
+                style={
+                  Object {
+                    "backgroundColor": "hsl(-2010661600deg, 70%, 50%)",
+                    "borderRadius": "3px",
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "padding": "0.2rem 0.5rem",
+                  }
+                }
+              >
+                host1
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              2
+            </td>
+            <td>
+              <span
+                style={
+                  Object {
+                    "backgroundColor": "hsl(1207030609deg, 70%, 50%)",
+                    "borderRadius": "3px",
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "padding": "0.2rem 0.5rem",
+                  }
+                }
+              >
+                host2
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              3
+            </td>
+            <td>
+              <span
+                style={
+                  Object {
+                    "backgroundColor": "hsl(-577335475deg, 70%, 50%)",
+                    "borderRadius": "3px",
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "padding": "0.2rem 0.5rem",
+                  }
+                }
+              >
+                host3
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              4
+            </td>
+            <td>
+              <span
+                style={
+                  Object {
+                    "backgroundColor": "hsl(1207030609deg, 70%, 50%)",
+                    "borderRadius": "3px",
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "padding": "0.2rem 0.5rem",
+                  }
+                }
+              >
+                host2
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              5
+            </td>
+            <td>
+              <span
+                style={
+                  Object {
+                    "backgroundColor": "hsl(-1847609011deg, 70%, 50%)",
+                    "borderRadius": "3px",
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "padding": "0.2rem 0.5rem",
+                  }
+                }
+              >
+                vancouver
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              6
+            </td>
+            <td>
+              <span
+                style={
+                  Object {
+                    "backgroundColor": "hsl(-300277332deg, 70%, 50%)",
+                    "borderRadius": "3px",
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "padding": "0.2rem 0.5rem",
+                  }
+                }
+              >
+                host10
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <hr />
-    <table>
-      <thead>
-        <tr>
-          <th>
-            Index
-          </th>
-          <th>
-            Host
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            1
-          </td>
-          <td>
-            <span
-              style={
-                Object {
-                  "backgroundColor": "hsl(-2010661600deg, 70%, 50%)",
-                  "borderRadius": "3px",
-                  "color": "white",
-                  "fontWeight": "bold",
-                  "padding": "0.2rem 0.5rem",
-                }
-              }
-            >
-              host1
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            2
-          </td>
-          <td>
-            <span
-              style={
-                Object {
-                  "backgroundColor": "hsl(1207030609deg, 70%, 50%)",
-                  "borderRadius": "3px",
-                  "color": "white",
-                  "fontWeight": "bold",
-                  "padding": "0.2rem 0.5rem",
-                }
-              }
-            >
-              host2
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            3
-          </td>
-          <td>
-            <span
-              style={
-                Object {
-                  "backgroundColor": "hsl(-577335475deg, 70%, 50%)",
-                  "borderRadius": "3px",
-                  "color": "white",
-                  "fontWeight": "bold",
-                  "padding": "0.2rem 0.5rem",
-                }
-              }
-            >
-              host3
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            4
-          </td>
-          <td>
-            <span
-              style={
-                Object {
-                  "backgroundColor": "hsl(1207030609deg, 70%, 50%)",
-                  "borderRadius": "3px",
-                  "color": "white",
-                  "fontWeight": "bold",
-                  "padding": "0.2rem 0.5rem",
-                }
-              }
-            >
-              host2
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            5
-          </td>
-          <td>
-            <span
-              style={
-                Object {
-                  "backgroundColor": "hsl(-1847609011deg, 70%, 50%)",
-                  "borderRadius": "3px",
-                  "color": "white",
-                  "fontWeight": "bold",
-                  "padding": "0.2rem 0.5rem",
-                }
-              }
-            >
-              vancouver
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            6
-          </td>
-          <td>
-            <span
-              style={
-                Object {
-                  "backgroundColor": "hsl(-300277332deg, 70%, 50%)",
-                  "borderRadius": "3px",
-                  "color": "white",
-                  "fontWeight": "bold",
-                  "padding": "0.2rem 0.5rem",
-                }
-              }
-            >
-              host10
-            </span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>
 `;

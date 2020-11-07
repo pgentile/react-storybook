@@ -2,15 +2,19 @@
 
 exports[`Storyshots Wip Empty 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-jfyhqj-wipClass"
+    className="rs"
   >
     <div
-      className="css-101h4ki-wipContainerClass"
+      className="css-jfyhqj-wipClass"
     >
-      Work in progress
+      <div
+        className="css-101h4ki-wipContainerClass"
+      >
+        Work in progress
+      </div>
     </div>
   </div>
 </div>
@@ -18,15 +22,19 @@ exports[`Storyshots Wip Empty 1`] = `
 
 exports[`Storyshots Wip Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="css-jfyhqj-wipClass"
+    className="rs"
   >
     <div
-      className="css-101h4ki-wipContainerClass"
+      className="css-jfyhqj-wipClass"
     >
-      Terminer ce composant
+      <div
+        className="css-101h4ki-wipContainerClass"
+      >
+        Terminer ce composant
+      </div>
     </div>
   </div>
 </div>

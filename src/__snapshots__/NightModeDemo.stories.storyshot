@@ -2,10 +2,14 @@
 
 exports[`Storyshots NightModeDemo Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="recaptcha"
-  />
+    className="rs"
+  >
+    <div
+      className="recaptcha"
+    />
+  </div>
 </div>
 `;

@@ -2,118 +2,130 @@
 
 exports[`Storyshots LoadingText Few Lines 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="loading-text"
+    className="rs"
   >
-    <p
-      className="loading-text__line"
+    <div
+      className="loading-text"
     >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots LoadingText Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="loading-text"
+    className="rs"
   >
-    <p
-      className="loading-text__line"
+    <div
+      className="loading-text"
     >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots LoadingText Many Lines 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="loading-text"
+    className="rs"
   >
-    <p
-      className="loading-text__line"
+    <div
+      className="loading-text"
     >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
-    <p
-      className="loading-text__line"
-    >
-       
-    </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+      <p
+        className="loading-text__line"
+      >
+         
+      </p>
+    </div>
   </div>
 </div>
 `;

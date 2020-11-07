@@ -2,111 +2,131 @@
 
 exports[`Storyshots Price Extra Prop 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <span
-    className="css-1rn2cu4-Price"
-    data-price-currency="EUR"
-    data-price-value={10.9}
-    data-sample="yes"
+  <div
+    className="rs"
   >
-    10
     <span
-      className="css-8pvupu-Price"
+      className="css-1rn2cu4-Price"
+      data-price-currency="EUR"
+      data-price-value={10.9}
+      data-sample="yes"
     >
-      , 
-      90
-       
-      €
+      10
+      <span
+        className="css-8pvupu-Price"
+      >
+        , 
+        90
+         
+        €
+      </span>
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Price No Color 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <span
-    className="css-fyxyfm-Price"
-    data-price-currency="EUR"
-    data-price-value={10.9}
+  <div
+    className="rs"
   >
-    10
     <span
-      className="css-tvrdin-Price"
+      className="css-fyxyfm-Price"
+      data-price-currency="EUR"
+      data-price-value={10.9}
     >
-      , 
-      90
-       
-      €
+      10
+      <span
+        className="css-tvrdin-Price"
+      >
+        , 
+        90
+         
+        €
+      </span>
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Price Primary 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <span
-    className="css-1rn2cu4-Price"
-    data-price-currency="EUR"
-    data-price-value={10.9}
+  <div
+    className="rs"
   >
-    10
     <span
-      className="css-8pvupu-Price"
+      className="css-1rn2cu4-Price"
+      data-price-currency="EUR"
+      data-price-value={10.9}
     >
-      , 
-      90
-       
-      €
+      10
+      <span
+        className="css-8pvupu-Price"
+      >
+        , 
+        90
+         
+        €
+      </span>
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Price Prix En Franc Suisse 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <span
-    className="css-1rn2cu4-Price"
-    data-price-currency="CHF"
-    data-price-value={10.9}
+  <div
+    className="rs"
   >
-    10
     <span
-      className="css-8pvupu-Price"
+      className="css-1rn2cu4-Price"
+      data-price-currency="CHF"
+      data-price-value={10.9}
     >
-      , 
-      90
-       
-      CHF
+      10
+      <span
+        className="css-8pvupu-Price"
+      >
+        , 
+        90
+         
+        CHF
+      </span>
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Price Prix En Pounds 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <span
-    className="css-1rn2cu4-Price"
-    data-price-currency="GBP"
-    data-price-value={10.9}
+  <div
+    className="rs"
   >
-    10
     <span
-      className="css-8pvupu-Price"
+      className="css-1rn2cu4-Price"
+      data-price-currency="GBP"
+      data-price-value={10.9}
     >
-      , 
-      90
-       
-      £
+      10
+      <span
+        className="css-8pvupu-Price"
+      >
+        , 
+        90
+         
+        £
+      </span>
     </span>
-  </span>
+  </div>
 </div>
 `;

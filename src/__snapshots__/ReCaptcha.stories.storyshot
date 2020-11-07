@@ -2,30 +2,42 @@
 
 exports[`Storyshots ReCaptcha Compact 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="recaptcha"
-  />
+    className="rs"
+  >
+    <div
+      className="recaptcha"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots ReCaptcha Dark 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="recaptcha"
-  />
+    className="rs"
+  >
+    <div
+      className="recaptcha"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots ReCaptcha Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="recaptcha"
-  />
+    className="rs"
+  >
+    <div
+      className="recaptcha"
+    />
+  </div>
 </div>
 `;

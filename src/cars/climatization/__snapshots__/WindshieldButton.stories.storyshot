@@ -2,31 +2,35 @@
 
 exports[`Storyshots Cars / Climatization / WindshieldButton Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
-  <button
-    className="clim-button"
-    onClick={[Function]}
+  <div
+    className="rs"
   >
-    <div
-      className="clim-button__grid"
+    <button
+      className="clim-button"
+      onClick={[Function]}
     >
       <div
-        className="clim-button__top-led"
+        className="clim-button__grid"
       >
         <div
-          className="led-indicator led-indicator--color-orange led-indicator--size-large "
+          className="clim-button__top-led"
+        >
+          <div
+            className="led-indicator led-indicator--color-orange led-indicator--size-large "
+          />
+        </div>
+        <div
+          className="clim-button__title"
+        >
+          Windshield
+        </div>
+        <div
+          className="clim-button__bottom-led"
         />
       </div>
-      <div
-        className="clim-button__title"
-      >
-        Windshield
-      </div>
-      <div
-        className="clim-button__bottom-led"
-      />
-    </div>
-  </button>
+    </button>
+  </div>
 </div>
 `;

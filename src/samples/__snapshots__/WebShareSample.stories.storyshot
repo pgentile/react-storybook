@@ -2,16 +2,20 @@
 
 exports[`Storyshots Samples / WebShareSample Main 1`] = `
 <div
-  className="rs"
+  lang="fr-FR"
 >
   <div
-    className="web-share"
+    className="rs"
   >
-    <button
-      onClick={[Function]}
+    <div
+      className="web-share"
     >
-      Partager
-    </button>
+      <button
+        onClick={[Function]}
+      >
+        Partager
+      </button>
+    </div>
   </div>
 </div>
 `;
