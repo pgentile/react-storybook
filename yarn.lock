@@ -1233,12 +1233,12 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/cli@2.13.10":
-  version "2.13.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.13.10.tgz#0a7f2037c799b3d4f86d8aa89c6094f36b12da86"
-  integrity sha512-TKCbNxpDxzEdUEeH+5lx1X+nr9ppXLPjF2VNm9HKnu45nvPtnHBeZNn6arTIk5f5+M/K/+B4dkc7ac/rPUHZVQ==
+"@formatjs/cli@2.13.11":
+  version "2.13.11"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-2.13.11.tgz#cd7a761f253749b48eb5bb462a03c29fc07bd794"
+  integrity sha512-/MbpvBuqaaVqicqqlTOyJhD/CJAIDnSz4xCu05k+bn9fDTPVQxPi+URBZSAz28TvsCdfnE7ePWGKOaoiKoIJdQ==
   dependencies:
-    "@formatjs/ts-transformer" "2.12.5"
+    "@formatjs/ts-transformer" "2.12.6"
     "@types/json-stable-stringify" "^1.0.32"
     "@types/lodash" "^4.14.150"
     "@types/loud-rejection" "^2.0.0"
@@ -1342,10 +1342,10 @@
     intl-messageformat-parser "6.0.15"
     tslib "^2.0.1"
 
-"@formatjs/ts-transformer@2.12.5":
-  version "2.12.5"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.12.5.tgz#15f28d1b747598a32deaa091742208ad94dde866"
-  integrity sha512-y6yvFe8jozL+Wsw+zv/M+lZY9es6GwxlwWRKH0TLwhNKO+crwabyDzXhn4ho4FB/PB2M8Pj/a0AoOCa1m/nptA==
+"@formatjs/ts-transformer@2.12.6":
+  version "2.12.6"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-2.12.6.tgz#24419e39b270be0b558c74c391fad8c5d05ccfb9"
+  integrity sha512-YnhKp79uvvVGX5dTzSn/DqIH0qCUj9cLN1qdb3zr8wr18+VCvWIQcUTxhc+ENQiHF2JpGZPlOUVe0fOn+fA12A==
   dependencies:
     intl-messageformat-parser "6.0.15"
     tslib "^2.0.1"
@@ -3954,15 +3954,15 @@ babel-plugin-react-docgen@^4.2.1:
     lodash "^4.17.15"
     react-docgen "^5.0.0"
 
-babel-plugin-react-intl@8.2.15:
-  version "8.2.15"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.2.15.tgz#cc9dc3a9102e74c6002c8383980599a9dc0ad25a"
-  integrity sha512-tU7Wp3ClKCXZ5K6n75GXBKV/McshSwTQI7enrg/SoZSHrkbR/T3aV/ScEuaeDG0k38fxsAcWmuQ6qdC5V/LSQw==
+babel-plugin-react-intl@8.2.16:
+  version "8.2.16"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-intl/-/babel-plugin-react-intl-8.2.16.tgz#7711e8583e645a24f2802201ab7e0ce580bc370a"
+  integrity sha512-eOMLlhG5iGIEJCSQ8p1qi/NamLCfEkuk1nX2Gt8FRRrR78hbfMTLekmKlscctLXYrz8hgAMQi7SbDRuweJDb6A==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/types" "^7.9.5"
-    "@formatjs/ts-transformer" "2.12.5"
+    "@formatjs/ts-transformer" "2.12.6"
     "@types/babel__core" "^7.1.7"
     "@types/schema-utils" "^2.4.0"
     intl-messageformat-parser "6.0.15"
@@ -6444,12 +6444,12 @@ eslint-plugin-emotion@10.0.27:
   resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-10.0.27.tgz#577a4265cc679f7bb826437a92fb9d709928e0a7"
   integrity sha512-0IG9KWmyQTAWZNM4WoGjFbdre1Xq6uMp2jYOSHvh3ZNcDfOjOLXeH3ky1MuWZlbWIHxz/Ed5DMGlJAeKnd26VA==
 
-eslint-plugin-formatjs@2.9.5:
-  version "2.9.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.9.5.tgz#63edba466b1deb038776b5a5aed8cc173f230779"
-  integrity sha512-Jr02/qdf6k+7nv4NP1A58yO4q0xh54ODZhOLUocjYLy0xbt/xYZAMDbCqkE/5y3Qh4Q+eH3k7I34M06Ms6Qz7Q==
+eslint-plugin-formatjs@2.9.6:
+  version "2.9.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.9.6.tgz#7e6230507473ab20726e18e6aa660acb575b1855"
+  integrity sha512-YOVIZHUrNYTWE16f8SmaIZi4ktElDpnDcBYjzmkTO/RHyTkXpirPbP5BBpEd43ppuB2ucWq5Byg9qroIZxzE+A==
   dependencies:
-    "@formatjs/ts-transformer" "2.12.5"
+    "@formatjs/ts-transformer" "2.12.6"
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^7.2.0"
     "@types/estree" "^0.0.45"
@@ -12458,10 +12458,10 @@ react-inspector@^5.0.1:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-intl@5.9.4:
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.9.4.tgz#c5bcc56192eb52bd165566c0cfafe885a559dd94"
-  integrity sha512-+GUj5eNuZ5JE2LKVSERGRpI9CMdIZlpdO6p4Nybe2qj3N7J4rOPNj60HsVSKurXQkw1Os+biIOvpxr1vDS9D/A==
+react-intl@5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.10.0.tgz#076d73a2ec08fe0eaa02a856a29496863dec8acd"
+  integrity sha512-s+y+eIbM6u50n4GeAOx/6gAblwMFyMCVG5nJXUlPMG0ga4uv9nDThgPlZQFOO9/E9co8GhkRtWBqFxJd/C7QiQ==
   dependencies:
     "@formatjs/ecma402-abstract" "1.3.2"
     "@formatjs/intl" "1.4.4"
