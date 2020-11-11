@@ -9756,10 +9756,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libphonenumber-js@1.9.2:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.2.tgz#90e6c22dce3d37fd1f8b5657e4475ce22425b6ce"
-  integrity sha512-Fp9UqoxN60jvV/LE2rzjaSCTNKgwz3I3oNcNUoJ2xKIPSloH/dNTA5ih95Gx+j0i4v89zecZ+HRfCTc9RFZubg==
+libphonenumber-js@1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.3.tgz#f389d4151068c09849a342e4bee25e9c9274adbe"
+  integrity sha512-Sw55OQrXUDV7gmsFUdqJ4DIgw1TP1Pkcjdcg/a+vOqxK17OBSZm3ojRB1lPNrEOW/mIGN1yi91POqCLY356ZDg==
 
 line-column@^1.0.2:
   version "1.0.2"
