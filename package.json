@@ -138,7 +138,7 @@
     "recursive-readdir": "2.2.2",
     "reg-cli": "0.16.2",
     "rimraf": "3.0.2",
-    "sass-loader": "10.0.5",
+    "sass-loader": "10.1.0",
     "style-loader": "2.0.0",
     "stylelint": "13.7.2",
     "stylelint-config-prettier": "8.0.2",
