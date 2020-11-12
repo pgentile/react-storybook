@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots InputWithFloatingLabel Main 1`] = `
+<div
+  lang="fr-FR"
+>
+  <div
+    className="rs"
+  >
+    <span
+      className="input-with-floating-label"
+    >
+      <label
+        className="input-with-floating-label__label"
+      >
+        Nom de famille
+      </label>
+      <input
+        className="input-with-floating-label__input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+      />
+    </span>
+  </div>
+</div>
+`;

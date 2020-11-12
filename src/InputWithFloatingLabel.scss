@@ -1,0 +1,54 @@
+.input-with-floating-label {
+  position: relative;
+
+  display: inline-block;
+
+  &__label,
+  &__input {
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  $left-padding: 10px;
+  $default-padding: 5px $left-padding;
+
+  &__label {
+    position: absolute;
+
+    max-width: 100%;
+
+    padding: $default-padding;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    background-color: transparent;
+
+    pointer-events: none;
+
+    transition: all 0.5s;
+
+    &--float {
+      transform: translate($left-padding, -8px);
+
+      max-width: calc(100% - 2 * #{$left-padding});
+
+      padding: 0 #{$left-padding / 2};
+
+      font-size: 0.75rem;
+
+      background-color: white;
+    }
+  }
+
+  &__input {
+    padding: $default-padding;
+
+    border: 1px solid purple;
+    border-radius: 3px;
+  }
+}
