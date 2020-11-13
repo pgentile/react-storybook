@@ -11,7 +11,7 @@ exports[`Storyshots Wip Empty 1`] = `
       className="css-jfyhqj-wipClass"
     >
       <div
-        className="css-101h4ki-wipContainerClass"
+        className="css-1w4ipuo-wipContainerClass"
       >
         Work in progress
       </div>
@@ -31,7 +31,7 @@ exports[`Storyshots Wip Main 1`] = `
       className="css-jfyhqj-wipClass"
     >
       <div
-        className="css-101h4ki-wipContainerClass"
+        className="css-1w4ipuo-wipContainerClass"
       >
         Terminer ce composant
       </div>

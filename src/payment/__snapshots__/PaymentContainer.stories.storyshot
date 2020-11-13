@@ -22,7 +22,7 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
             Récapitulatif
           </h1>
           <section
-            className="css-1lo3bg0-Card order-summary"
+            className="css-libj37-Card order-summary"
           >
             <p
               className="order-summary__total"
@@ -33,13 +33,13 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
                 Total de votre commande
               </span>
               <span
-                className="css-1rn2cu4-Price order-summary__total-price"
+                className="css-15xypbi-Price order-summary__total-price"
                 data-price-currency="EUR"
                 data-price-value={0}
               >
                 0
                 <span
-                  className="css-8pvupu-Price"
+                  className="css-1y4apvm-Price"
                 >
                    
                   €
@@ -48,7 +48,7 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
             </p>
           </section>
           <section
-            className="css-ejsk1i-Card insurance order-editor__insurance"
+            className="css-1f2hx8y-Card insurance order-editor__insurance"
           >
             <button
               className="button button--size-normal button--flat progress-button insurance__question"
@@ -60,13 +60,13 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
               >
                 Assurez votre voyage, à partir de 
                 <span
-                  className="css-1rn2cu4-Price"
+                  className="css-15xypbi-Price"
                   data-price-currency="EUR"
                   data-price-value={12.9}
                 >
                   12
                   <span
-                    className="css-8pvupu-Price"
+                    className="css-1y4apvm-Price"
                   >
                     , 
                     90
@@ -81,7 +81,7 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
             </button>
           </section>
           <section
-            className="css-ejsk1i-Card voucher-container order-editor__voucher"
+            className="css-1f2hx8y-Card voucher-container order-editor__voucher"
           >
             <button
               className="button button--size-normal button--flat voucher-container__question"
@@ -91,7 +91,7 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
             </button>
           </section>
           <section
-            className="css-ejsk1i-Card donation-proposal order-editor__donation"
+            className="css-1f2hx8y-Card donation-proposal order-editor__donation"
           >
             <div
               className="donation-proposal__content"
@@ -122,7 +122,7 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
                     <span>
                       <svg
                         aria-hidden="true"
-                        className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                        className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                         data-icon="angle-up"
                         data-prefix="fas"
                         focusable="false"
@@ -502,13 +502,13 @@ exports[`Storyshots Payment / PaymentContainer Main 1`] = `
               >
                 Payer 
                 <span
-                  className="css-fyxyfm-Price"
+                  className="css-f18a6v-Price"
                   data-price-currency="EUR"
                   data-price-value={0}
                 >
                   0
                   <span
-                    className="css-tvrdin-Price"
+                    className="css-1x4f4oa-Price"
                   >
                      
                     €

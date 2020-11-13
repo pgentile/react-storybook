@@ -8,7 +8,7 @@ exports[`Storyshots Forms / SuperRadio Checked Story 1`] = `
     className="rs"
   >
     <div
-      className="css-ejsk1i-Card super-radio super-radio--checked"
+      className="css-1f2hx8y-Card super-radio super-radio--checked"
     >
       <div
         className="super-radio__main-container"
@@ -83,7 +83,7 @@ exports[`Storyshots Forms / SuperRadio Help Story 1`] = `
     className="rs"
   >
     <div
-      className="css-ejsk1i-Card super-radio"
+      className="css-1f2hx8y-Card super-radio"
     >
       <div
         className="super-radio__main-container"
@@ -204,7 +204,7 @@ exports[`Storyshots Forms / SuperRadio Main 1`] = `
     className="rs"
   >
     <div
-      className="css-ejsk1i-Card super-radio"
+      className="css-1f2hx8y-Card super-radio"
     >
       <div
         className="super-radio__main-container"
@@ -278,7 +278,7 @@ exports[`Storyshots Forms / SuperRadio Without Icon 1`] = `
     className="rs"
   >
     <div
-      className="css-ejsk1i-Card super-radio"
+      className="css-1f2hx8y-Card super-radio"
     >
       <div
         className="super-radio__main-container"

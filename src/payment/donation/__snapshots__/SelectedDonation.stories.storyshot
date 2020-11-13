@@ -8,7 +8,7 @@ exports[`Storyshots Payment / Donation / SelectedDonation Main 1`] = `
     className="rs"
   >
     <section
-      className="css-ejsk1i-Card selected-donation "
+      className="css-1f2hx8y-Card selected-donation "
     >
       <p
         className="selected-donation__thanks"

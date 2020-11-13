@@ -53,13 +53,13 @@ exports[`Storyshots Payment / RegistredCardCvvForm Main 1`] = `
         >
           Payer 
           <span
-            className="css-fyxyfm-Price"
+            className="css-f18a6v-Price"
             data-price-currency="EUR"
             data-price-value={10}
           >
             10
             <span
-              className="css-tvrdin-Price"
+              className="css-1x4f4oa-Price"
             >
                
               €

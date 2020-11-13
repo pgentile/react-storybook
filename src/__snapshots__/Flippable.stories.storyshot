@@ -15,7 +15,7 @@ exports[`Storyshots Flippable Main 1`] = `
         className="flippable__face flippable__face--foreground"
       >
         <div
-          className="css-ejsk1i-Card flippable-story__card"
+          className="css-1f2hx8y-Card flippable-story__card"
           onClick={[Function]}
         >
           <p>
@@ -28,7 +28,7 @@ exports[`Storyshots Flippable Main 1`] = `
         className="flippable__face flippable__face--background"
       >
         <div
-          className="css-ejsk1i-Card flippable-story__card"
+          className="css-1f2hx8y-Card flippable-story__card"
           onClick={[Function]}
         >
           <p>

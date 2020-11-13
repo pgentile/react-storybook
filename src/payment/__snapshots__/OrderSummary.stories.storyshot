@@ -8,7 +8,7 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
     className="rs"
   >
     <section
-      className="css-1lo3bg0-Card order-summary"
+      className="css-libj37-Card order-summary"
     >
       <ul
         className="order-summary__details"
@@ -22,13 +22,13 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
             Vos billets
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={109.8}
           >
             109
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               80
@@ -70,13 +70,13 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
             </svg>
           </button>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={-2}
           >
             -2
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
                
               €
@@ -116,13 +116,13 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
             </svg>
           </button>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={5.9}
           >
             5
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               90
@@ -144,13 +144,13 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
           Total de votre commande
         </span>
         <span
-          className="css-1rn2cu4-Price order-summary__total-price"
+          className="css-15xypbi-Price order-summary__total-price"
           data-price-currency="EUR"
           data-price-value={113.7}
         >
           113
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             70
@@ -172,7 +172,7 @@ exports[`Storyshots Payment / OrderSummary Avec Un Don 1`] = `
     className="rs"
   >
     <section
-      className="css-1lo3bg0-Card order-summary"
+      className="css-libj37-Card order-summary"
     >
       <ul
         className="order-summary__details"
@@ -186,13 +186,13 @@ exports[`Storyshots Payment / OrderSummary Avec Un Don 1`] = `
             Vos billets
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={109.8}
           >
             109
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               80
@@ -234,13 +234,13 @@ exports[`Storyshots Payment / OrderSummary Avec Un Don 1`] = `
             </svg>
           </button>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={1}
           >
             1
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
                
               €
@@ -260,13 +260,13 @@ exports[`Storyshots Payment / OrderSummary Avec Un Don 1`] = `
           Total de votre commande
         </span>
         <span
-          className="css-1rn2cu4-Price order-summary__total-price"
+          className="css-15xypbi-Price order-summary__total-price"
           data-price-currency="EUR"
           data-price-value={110.8}
         >
           110
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             80
@@ -288,7 +288,7 @@ exports[`Storyshots Payment / OrderSummary Billets Assurances 1`] = `
     className="rs"
   >
     <section
-      className="css-1lo3bg0-Card order-summary"
+      className="css-libj37-Card order-summary"
     >
       <ul
         className="order-summary__details"
@@ -302,13 +302,13 @@ exports[`Storyshots Payment / OrderSummary Billets Assurances 1`] = `
             Vos billets
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={109.8}
           >
             109
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               80
@@ -350,13 +350,13 @@ exports[`Storyshots Payment / OrderSummary Billets Assurances 1`] = `
             </svg>
           </button>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={5.9}
           >
             5
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               90
@@ -378,13 +378,13 @@ exports[`Storyshots Payment / OrderSummary Billets Assurances 1`] = `
           Total de votre commande
         </span>
         <span
-          className="css-1rn2cu4-Price order-summary__total-price"
+          className="css-15xypbi-Price order-summary__total-price"
           data-price-currency="EUR"
           data-price-value={115.7}
         >
           115
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             70
@@ -406,7 +406,7 @@ exports[`Storyshots Payment / OrderSummary Billets Uniquement 1`] = `
     className="rs"
   >
     <section
-      className="css-1lo3bg0-Card order-summary"
+      className="css-libj37-Card order-summary"
     >
       <p
         className="order-summary__total"
@@ -417,13 +417,13 @@ exports[`Storyshots Payment / OrderSummary Billets Uniquement 1`] = `
           Total de votre commande
         </span>
         <span
-          className="css-1rn2cu4-Price order-summary__total-price"
+          className="css-15xypbi-Price order-summary__total-price"
           data-price-currency="EUR"
           data-price-value={109.8}
         >
           109
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             80
@@ -445,7 +445,7 @@ exports[`Storyshots Payment / OrderSummary Cartes Uniquement 1`] = `
     className="rs"
   >
     <section
-      className="css-1lo3bg0-Card order-summary"
+      className="css-libj37-Card order-summary"
     >
       <p
         className="order-summary__total"
@@ -456,13 +456,13 @@ exports[`Storyshots Payment / OrderSummary Cartes Uniquement 1`] = `
           Total de votre commande
         </span>
         <span
-          className="css-1rn2cu4-Price order-summary__total-price"
+          className="css-15xypbi-Price order-summary__total-price"
           data-price-currency="EUR"
           data-price-value={75.8}
         >
           75
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             80
@@ -484,7 +484,7 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
     className="rs"
   >
     <section
-      className="css-1lo3bg0-Card order-summary"
+      className="css-libj37-Card order-summary"
     >
       <ul
         className="order-summary__details"
@@ -498,13 +498,13 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
             Vos billets
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={109.8}
           >
             109
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               80
@@ -522,13 +522,13 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
             Vos cartes de réduction
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={75.8}
           >
             75
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               80
@@ -570,13 +570,13 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
             </svg>
           </button>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={-2}
           >
             -2
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
                
               €
@@ -616,13 +616,13 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
             </svg>
           </button>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={5.9}
           >
             5
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               90
@@ -664,13 +664,13 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
             </svg>
           </button>
           <span
-            className="css-1rn2cu4-Price order-summary__item-price"
+            className="css-15xypbi-Price order-summary__item-price"
             data-price-currency="EUR"
             data-price-value={1}
           >
             1
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
                
               €
@@ -690,13 +690,13 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
           Total de votre commande
         </span>
         <span
-          className="css-1rn2cu4-Price order-summary__total-price"
+          className="css-15xypbi-Price order-summary__total-price"
           data-price-currency="EUR"
           data-price-value={190.5}
         >
           190
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             50

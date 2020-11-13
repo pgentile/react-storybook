@@ -34,7 +34,7 @@ exports[`Storyshots Accordion Many Panels Expandable 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -97,7 +97,7 @@ exports[`Storyshots Accordion Many Panels Expandable 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -160,7 +160,7 @@ exports[`Storyshots Accordion Many Panels Expandable 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -238,7 +238,7 @@ exports[`Storyshots Accordion Only One Panel Expandable 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -301,7 +301,7 @@ exports[`Storyshots Accordion Only One Panel Expandable 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"
@@ -364,7 +364,7 @@ exports[`Storyshots Accordion Only One Panel Expandable 1`] = `
             <span>
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                 data-icon="angle-up"
                 data-prefix="fas"
                 focusable="false"

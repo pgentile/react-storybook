@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = {
   rootDir: "./src",
   testURL: "http://localhost/",
-  snapshotSerializers: ["jest-emotion"],
+  snapshotSerializers: ["@emotion/jest/serializer"],
   moduleNameMapper: {
     "\\.s?css$": "<rootDir>/__mocks__/styleMock.js",
   },

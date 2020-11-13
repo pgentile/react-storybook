@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { css, cx } from "emotion/macro";
+import { css, cx } from "@emotion/css/macro";
 import { rgba } from "polished";
 
 export const LAYERS = ["base", "flat", "raised", "overlay", "sticky-nav", "temp-nav", "pop-out"];

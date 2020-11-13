@@ -11,7 +11,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
       className="registred-credit-card-list "
     >
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -146,13 +146,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €
@@ -177,7 +177,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
         </div>
       </section>
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -312,13 +312,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €
@@ -343,7 +343,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
         </div>
       </section>
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -478,13 +478,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €
@@ -509,7 +509,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
         </div>
       </section>
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -654,13 +654,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Disabled Story 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €
@@ -700,7 +700,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
       className="registred-credit-card-list "
     >
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -834,13 +834,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €
@@ -865,7 +865,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
         </div>
       </section>
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -999,13 +999,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €
@@ -1030,7 +1030,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
         </div>
       </section>
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -1164,13 +1164,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €
@@ -1195,7 +1195,7 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
         </div>
       </section>
       <section
-        className="css-ejsk1i-Card registred-credit-card registred-credit-card-list__item"
+        className="css-1f2hx8y-Card registred-credit-card registred-credit-card-list__item"
       >
         <h1
           className="registred-credit-card__title"
@@ -1339,13 +1339,13 @@ exports[`Storyshots Payment / RegistredCreditCardList Main 1`] = `
                         >
                           Payer 
                           <span
-                            className="css-fyxyfm-Price"
+                            className="css-f18a6v-Price"
                             data-price-currency="EUR"
                             data-price-value={100}
                           >
                             100
                             <span
-                              className="css-tvrdin-Price"
+                              className="css-1x4f4oa-Price"
                             >
                                
                               €

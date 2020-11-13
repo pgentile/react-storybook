@@ -16,7 +16,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
         Récapitulatif
       </h1>
       <section
-        className="css-1lo3bg0-Card order-summary"
+        className="css-libj37-Card order-summary"
       >
         <ul
           className="order-summary__details"
@@ -30,13 +30,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
               Vos billets
             </span>
             <span
-              className="css-1rn2cu4-Price order-summary__item-price"
+              className="css-15xypbi-Price order-summary__item-price"
               data-price-currency="EUR"
               data-price-value={109.8}
             >
               109
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                 , 
                 80
@@ -82,13 +82,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
               </svg>
             </button>
             <span
-              className="css-1rn2cu4-Price order-summary__item-price"
+              className="css-15xypbi-Price order-summary__item-price"
               data-price-currency="EUR"
               data-price-value={-2}
             >
               -2
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                  
                 €
@@ -128,13 +128,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
               </svg>
             </button>
             <span
-              className="css-1rn2cu4-Price order-summary__item-price"
+              className="css-15xypbi-Price order-summary__item-price"
               data-price-currency="EUR"
               data-price-value={5.9}
             >
               5
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                 , 
                 90
@@ -156,13 +156,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
             Total de votre commande
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__total-price"
+            className="css-15xypbi-Price order-summary__total-price"
             data-price-currency="EUR"
             data-price-value={113.7}
           >
             113
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               70
@@ -173,7 +173,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
         </p>
       </section>
       <section
-        className="css-ejsk1i-Card donation-proposal order-editor__donation"
+        className="css-1f2hx8y-Card donation-proposal order-editor__donation"
       >
         <div
           className="donation-proposal__content"
@@ -204,7 +204,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
                 <span>
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                     data-icon="angle-up"
                     data-prefix="fas"
                     focusable="false"
@@ -286,7 +286,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
         Récapitulatif
       </h1>
       <section
-        className="css-1lo3bg0-Card order-summary"
+        className="css-libj37-Card order-summary"
       >
         <ul
           className="order-summary__details"
@@ -300,13 +300,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
               Vos billets
             </span>
             <span
-              className="css-1rn2cu4-Price order-summary__item-price"
+              className="css-15xypbi-Price order-summary__item-price"
               data-price-currency="EUR"
               data-price-value={109.8}
             >
               109
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                 , 
                 80
@@ -351,13 +351,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
               </svg>
             </button>
             <span
-              className="css-1rn2cu4-Price order-summary__item-price"
+              className="css-15xypbi-Price order-summary__item-price"
               data-price-currency="EUR"
               data-price-value={1}
             >
               1
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                  
                 €
@@ -377,13 +377,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
             Total de votre commande
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__total-price"
+            className="css-15xypbi-Price order-summary__total-price"
             data-price-currency="EUR"
             data-price-value={110.8}
           >
             110
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               80
@@ -394,7 +394,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
         </p>
       </section>
       <section
-        className="css-ejsk1i-Card insurance order-editor__insurance"
+        className="css-1f2hx8y-Card insurance order-editor__insurance"
       >
         <button
           className="button button--size-normal button--flat progress-button insurance__question"
@@ -406,13 +406,13 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
           >
             Assurez votre voyage, à partir de 
             <span
-              className="css-1rn2cu4-Price"
+              className="css-15xypbi-Price"
               data-price-currency="EUR"
               data-price-value={12.9}
             >
               12
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                 , 
                 90
@@ -427,7 +427,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
         </button>
       </section>
       <section
-        className="css-ejsk1i-Card voucher-container order-editor__voucher"
+        className="css-1f2hx8y-Card voucher-container order-editor__voucher"
       >
         <button
           className="button button--size-normal button--flat voucher-container__question"
@@ -437,7 +437,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
         </button>
       </section>
       <section
-        className="css-ejsk1i-Card selected-donation order-editor__donation"
+        className="css-1f2hx8y-Card selected-donation order-editor__donation"
       >
         <p
           className="selected-donation__thanks"
@@ -488,7 +488,7 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
         Récapitulatif
       </h1>
       <section
-        className="css-1lo3bg0-Card order-summary"
+        className="css-libj37-Card order-summary"
       >
         <ul
           className="order-summary__details"
@@ -502,13 +502,13 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
               Vos billets
             </span>
             <span
-              className="css-1rn2cu4-Price order-summary__item-price"
+              className="css-15xypbi-Price order-summary__item-price"
               data-price-currency="EUR"
               data-price-value={109.8}
             >
               109
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                 , 
                 80
@@ -550,13 +550,13 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
               </svg>
             </button>
             <span
-              className="css-1rn2cu4-Price order-summary__item-price"
+              className="css-15xypbi-Price order-summary__item-price"
               data-price-currency="EUR"
               data-price-value={5.9}
             >
               5
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                 , 
                 90
@@ -578,13 +578,13 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
             Total de votre commande
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__total-price"
+            className="css-15xypbi-Price order-summary__total-price"
             data-price-currency="EUR"
             data-price-value={115.7}
           >
             115
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               70
@@ -595,7 +595,7 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
         </p>
       </section>
       <section
-        className="css-ejsk1i-Card voucher-container order-editor__voucher"
+        className="css-1f2hx8y-Card voucher-container order-editor__voucher"
       >
         <button
           className="button button--size-normal button--flat voucher-container__question"
@@ -605,7 +605,7 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
         </button>
       </section>
       <section
-        className="css-ejsk1i-Card donation-proposal order-editor__donation"
+        className="css-1f2hx8y-Card donation-proposal order-editor__donation"
       >
         <div
           className="donation-proposal__content"
@@ -636,7 +636,7 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
                 <span>
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                     data-icon="angle-up"
                     data-prefix="fas"
                     focusable="false"
@@ -718,7 +718,7 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
         Récapitulatif
       </h1>
       <section
-        className="css-1lo3bg0-Card order-summary"
+        className="css-libj37-Card order-summary"
       >
         <p
           className="order-summary__total"
@@ -729,13 +729,13 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
             Total de votre commande
           </span>
           <span
-            className="css-1rn2cu4-Price order-summary__total-price"
+            className="css-15xypbi-Price order-summary__total-price"
             data-price-currency="EUR"
             data-price-value={109.8}
           >
             109
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               80
@@ -746,7 +746,7 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
         </p>
       </section>
       <section
-        className="css-ejsk1i-Card insurance order-editor__insurance"
+        className="css-1f2hx8y-Card insurance order-editor__insurance"
       >
         <button
           className="button button--size-normal button--flat progress-button insurance__question"
@@ -758,13 +758,13 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
           >
             Assurez votre voyage, à partir de 
             <span
-              className="css-1rn2cu4-Price"
+              className="css-15xypbi-Price"
               data-price-currency="EUR"
               data-price-value={12.9}
             >
               12
               <span
-                className="css-8pvupu-Price"
+                className="css-1y4apvm-Price"
               >
                 , 
                 90
@@ -779,7 +779,7 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
         </button>
       </section>
       <section
-        className="css-ejsk1i-Card voucher-container order-editor__voucher"
+        className="css-1f2hx8y-Card voucher-container order-editor__voucher"
       >
         <button
           className="button button--size-normal button--flat voucher-container__question"
@@ -789,7 +789,7 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
         </button>
       </section>
       <section
-        className="css-ejsk1i-Card donation-proposal order-editor__donation"
+        className="css-1f2hx8y-Card donation-proposal order-editor__donation"
       >
         <div
           className="donation-proposal__content"
@@ -820,7 +820,7 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
                 <span>
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                    className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                     data-icon="angle-up"
                     data-prefix="fas"
                     focusable="false"

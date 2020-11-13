@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { css } from "emotion";
+import { css } from "@emotion/css";
 
 const marginSize = "0.5rem";
 

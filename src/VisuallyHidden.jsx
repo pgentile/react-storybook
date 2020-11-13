@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { css, cx } from "emotion";
+import { css, cx } from "@emotion/css";
 import { hideVisually } from "polished";
 
 export default function VisuallyHidden({ as: Element = "span", className = "", children, ...otherProps }) {

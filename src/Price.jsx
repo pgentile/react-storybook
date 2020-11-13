@@ -1,6 +1,6 @@
 import { memo } from "react";
 import PropTypes from "prop-types";
-import { css, cx } from "emotion/macro";
+import { css, cx } from "@emotion/css/macro";
 import { lighten } from "polished";
 
 const baseColor = "black";

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { css } from "emotion/macro";
+import { css } from "@emotion/css/macro";
 
 const wipClass = css({
   padding: "10px",

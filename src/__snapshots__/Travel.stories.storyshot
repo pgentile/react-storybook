@@ -19,13 +19,13 @@ exports[`Storyshots Travel Aller Retour 1`] = `
           Lille ⇄ Nantes
         </h1>
         <p
-          className="css-1rn2cu4-Price travel__header-price"
+          className="css-15xypbi-Price travel__header-price"
           data-price-currency="EUR"
           data-price-value={105.6}
         >
           105
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             60
@@ -86,13 +86,13 @@ exports[`Storyshots Travel Aller Retour Asymetrique 1`] = `
            ● Nantes ➝ Paris
         </h1>
         <p
-          className="css-1rn2cu4-Price travel__header-price"
+          className="css-15xypbi-Price travel__header-price"
           data-price-currency="EUR"
           data-price-value={105.6}
         >
           105
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             60
@@ -152,13 +152,13 @@ exports[`Storyshots Travel Aller Simple 1`] = `
           Lille ➝ Nantes
         </h1>
         <p
-          className="css-1rn2cu4-Price travel__header-price"
+          className="css-15xypbi-Price travel__header-price"
           data-price-currency="EUR"
           data-price-value={105.6}
         >
           105
           <span
-            className="css-8pvupu-Price"
+            className="css-1y4apvm-Price"
           >
             , 
             60
@@ -217,13 +217,13 @@ exports[`Storyshots Travel Multiples Trajets 1`] = `
             Lille ➝ Nantes
           </h1>
           <p
-            className="css-1rn2cu4-Price travel__header-price"
+            className="css-15xypbi-Price travel__header-price"
             data-price-currency="EUR"
             data-price-value={105.6}
           >
             105
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               60
@@ -272,13 +272,13 @@ exports[`Storyshots Travel Multiples Trajets 1`] = `
             Lille ⇄ Nantes
           </h1>
           <p
-            className="css-1rn2cu4-Price travel__header-price"
+            className="css-15xypbi-Price travel__header-price"
             data-price-currency="EUR"
             data-price-value={105.6}
           >
             105
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               60
@@ -336,13 +336,13 @@ exports[`Storyshots Travel Multiples Trajets 1`] = `
              ● Nantes ➝ Paris
           </h1>
           <p
-            className="css-1rn2cu4-Price travel__header-price"
+            className="css-15xypbi-Price travel__header-price"
             data-price-currency="GBP"
             data-price-value={98.5}
           >
             98
             <span
-              className="css-8pvupu-Price"
+              className="css-1y4apvm-Price"
             >
               , 
               50

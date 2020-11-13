@@ -8,7 +8,7 @@ exports[`Storyshots Payment / RegistredCreditCard Main 1`] = `
     className="rs"
   >
     <section
-      className="css-ejsk1i-Card registred-credit-card "
+      className="css-1f2hx8y-Card registred-credit-card "
     >
       <h1
         className="registred-credit-card__title"
@@ -140,13 +140,13 @@ exports[`Storyshots Payment / RegistredCreditCard Main 1`] = `
                       >
                         Payer 
                         <span
-                          className="css-fyxyfm-Price"
+                          className="css-f18a6v-Price"
                           data-price-currency="EUR"
                           data-price-value={10}
                         >
                           10
                           <span
-                            className="css-tvrdin-Price"
+                            className="css-1x4f4oa-Price"
                           >
                              
                             €

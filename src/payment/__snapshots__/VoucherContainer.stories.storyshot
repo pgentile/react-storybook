@@ -8,7 +8,7 @@ exports[`Storyshots Payment / VoucherContainer Main 1`] = `
     className="rs"
   >
     <section
-      className="css-ejsk1i-Card voucher-container "
+      className="css-1f2hx8y-Card voucher-container "
     >
       <button
         className="button button--size-normal button--flat voucher-container__question"

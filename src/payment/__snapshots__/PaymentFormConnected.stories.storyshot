@@ -321,13 +321,13 @@ exports[`Storyshots Payment / PaymentFormConnected Main 1`] = `
           >
             Payer 
             <span
-              className="css-fyxyfm-Price"
+              className="css-f18a6v-Price"
               data-price-currency="EUR"
               data-price-value={0}
             >
               0
               <span
-                className="css-tvrdin-Price"
+                className="css-1x4f4oa-Price"
               >
                  
                 €

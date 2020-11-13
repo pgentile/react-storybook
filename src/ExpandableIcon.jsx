@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { css } from "emotion/macro";
+import { css } from "@emotion/css/macro";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";

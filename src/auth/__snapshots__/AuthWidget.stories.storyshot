@@ -8,7 +8,7 @@ exports[`Storyshots Auth / AuthWidget Main 1`] = `
     className="rs"
   >
     <div
-      className="css-ejsk1i-Card auth-widget"
+      className="css-1f2hx8y-Card auth-widget"
     >
       <div
         className="auth-iknowyou"

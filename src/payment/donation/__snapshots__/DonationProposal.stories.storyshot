@@ -8,7 +8,7 @@ exports[`Storyshots Payment / Donation / DonationProposal Main 1`] = `
     className="rs"
   >
     <section
-      className="css-ejsk1i-Card donation-proposal "
+      className="css-1f2hx8y-Card donation-proposal "
     >
       <div
         className="donation-proposal__content"
@@ -39,7 +39,7 @@ exports[`Storyshots Payment / Donation / DonationProposal Main 1`] = `
               <span>
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-1sw4a5g-ExpandableIcon"
+                  className="svg-inline--fa fa-angle-up fa-w-10 fa-rotate-90 css-c1k0tt-ExpandableIcon"
                   data-icon="angle-up"
                   data-prefix="fas"
                   focusable="false"

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { css } from "emotion/macro";
+import { css } from "@emotion/css/macro";
 import { rgba, cover } from "polished";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
