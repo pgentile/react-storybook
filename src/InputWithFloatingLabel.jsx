@@ -37,7 +37,10 @@ const InputWithFloatingLabel = forwardRef(function InputWithFloatingLabel(
     }
   };
 
-  const labelClassName = bemModifiers(`${className}__label`, { float: focus || !emptyInput });
+  const labelClassName = bemModifiers(`${className}__label`, {
+    focus,
+    float: focus || !emptyInput,
+  });
 
   return (
     <span className={className}>

@@ -7,20 +7,22 @@
   &__input {
     box-sizing: border-box;
 
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
+    font: inherit;
   }
 
-  $left-padding: 10px;
-  $default-padding: 5px $left-padding;
+  $horizontal-padding: 10px;
+  $vertical-padding: $horizontal-padding;
+  $float-scale: 0.75;
+
+  $normal-color: #999;
+  $focus-color: purple;
 
   &__label {
     position: absolute;
 
     max-width: 100%;
 
-    padding: $default-padding;
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
 
     overflow: hidden;
     white-space: nowrap;
@@ -30,25 +32,39 @@
 
     pointer-events: none;
 
-    transition: all 0.5s;
+    transform-origin: left top;
+
+    color: $normal-color;
+
+    $duration: 0.25s;
+    transition: transform $duration, background-color $duration, padding $duration;
 
     &--float {
-      transform: translate($left-padding, -8px);
+      transform: translateY(-9px) translateX($horizontal-padding) scale($float-scale);
 
-      max-width: calc(100% - 2 * #{$left-padding});
-
-      padding: 0 #{$left-padding / 2};
-
-      font-size: 0.75rem;
+      max-width: calc(#{100% / $float-scale} - #{(2 * $horizontal-padding) / $float-scale});
 
       background-color: white;
+      padding: 0 $horizontal-padding;
+    }
+
+    &--focus {
+      color: $focus-color;
     }
   }
 
   &__input {
-    padding: $default-padding;
+    width: 100%;
 
-    border: 1px solid purple;
+    padding: $vertical-padding $horizontal-padding;
+
+    border: 1px solid $normal-color;
     border-radius: 3px;
+
+    &:focus {
+      outline: none;
+
+      border-color: $focus-color;
+    }
   }
 }
