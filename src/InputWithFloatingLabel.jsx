@@ -4,11 +4,12 @@ import { forwardRef, useState } from "react";
 import PropTypes from "prop-types";
 
 import bemModifiers from "./utils/bemModifiers";
+import useGeneratedFieldId from "./forms/useGeneratedFieldId";
 
 import "./InputWithFloatingLabel.scss";
 
 const InputWithFloatingLabel = forwardRef(function InputWithFloatingLabel(
-  { label, onFocus, onBlur, onChange, value, ...props },
+  { label, onFocus, onBlur, onChange, value, id, ...props },
   ref
 ) {
   const className = "input-with-floating-label";
@@ -42,13 +43,18 @@ const InputWithFloatingLabel = forwardRef(function InputWithFloatingLabel(
     float: focus || !emptyInput,
   });
 
+  const realId = useGeneratedFieldId(id);
+
   return (
     <span className={className}>
-      <label className={labelClassName}>{label}</label>
+      <label className={labelClassName} htmlFor={realId}>
+        {label}
+      </label>
       <input
         className={`${className}__input`}
         ref={ref}
         {...props}
+        id={realId}
         onFocus={handleFocus}
         onBlur={handleBlur}
         onChange={handleChange}

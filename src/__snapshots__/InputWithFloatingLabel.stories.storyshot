@@ -12,11 +12,13 @@ exports[`Storyshots InputWithFloatingLabel Main 1`] = `
     >
       <label
         className="input-with-floating-label__label"
+        htmlFor="__mock_generated_id__"
       >
         Nom de famille
       </label>
       <input
         className="input-with-floating-label__input"
+        id="__mock_generated_id__"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
