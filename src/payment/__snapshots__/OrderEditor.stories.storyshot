@@ -57,10 +57,11 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
               </b>
                appliqué
             </span>
-            <a
-              className="order-summary__item-cancel"
+            <button
+              className="button button--size-normal button--link order-summary__item-cancel"
               href="#"
               onClick={[Function]}
+              type="button"
             >
               <svg
                 aria-hidden="true"
@@ -79,7 +80,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
                   style={Object {}}
                 />
               </svg>
-            </a>
+            </button>
             <span
               className="css-1rn2cu4-Price order-summary__item-price"
               data-price-currency="EUR"
@@ -102,10 +103,11 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
             >
               Vos assurances
             </span>
-            <a
-              className="order-summary__item-cancel"
+            <button
+              className="button button--size-normal button--link order-summary__item-cancel"
               href="#"
               onClick={[Function]}
+              type="button"
             >
               <svg
                 aria-hidden="true"
@@ -124,7 +126,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
                   style={Object {}}
                 />
               </svg>
-            </a>
+            </button>
             <span
               className="css-1rn2cu4-Price order-summary__item-price"
               data-price-currency="EUR"
@@ -193,9 +195,10 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
             <p>
               Je soutiens une cause qui me tient à cœur.
                
-              <a
-                href="#"
+              <button
+                className="button button--size-normal button--link "
                 onClick={[Function]}
+                type="button"
               >
                 En savoir plus 
                 <span>
@@ -217,7 +220,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
                     />
                   </svg>
                 </span>
-              </a>
+              </button>
             </p>
           </div>
         </div>
@@ -225,7 +228,6 @@ exports[`Storyshots Payment / OrderEditor Avec Un Code Promo 1`] = `
           className="donation-proposal__button"
         >
           <button
-            aria-pressed={false}
             className="button button--size-small progress-button "
             disabled={false}
             onClick={[Function]}
@@ -324,10 +326,11 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
                 Médecins sans frontières
               </b>
             </span>
-            <a
-              className="order-summary__item-cancel"
+            <button
+              className="button button--size-normal button--link order-summary__item-cancel"
               href="#"
               onClick={[Function]}
+              type="button"
             >
               <svg
                 aria-hidden="true"
@@ -346,7 +349,7 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
                   style={Object {}}
                 />
               </svg>
-            </a>
+            </button>
             <span
               className="css-1rn2cu4-Price order-summary__item-price"
               data-price-currency="EUR"
@@ -394,7 +397,6 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
         className="css-ejsk1i-Card insurance order-editor__insurance"
       >
         <button
-          aria-pressed={false}
           className="button button--size-normal button--flat progress-button insurance__question"
           disabled={false}
           onClick={[Function]}
@@ -428,7 +430,6 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
         className="css-ejsk1i-Card voucher-container order-editor__voucher"
       >
         <button
-          aria-pressed={false}
           className="button button--size-normal button--flat voucher-container__question"
           onClick={[Function]}
         >
@@ -451,7 +452,6 @@ exports[`Storyshots Payment / OrderEditor Avec Un Don 1`] = `
           className="selected-donation__cancel"
         >
           <button
-            aria-pressed={false}
             className="button button--size-small progress-button "
             disabled={false}
             onClick={[Function]}
@@ -525,10 +525,11 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
             >
               Vos assurances
             </span>
-            <a
-              className="order-summary__item-cancel"
+            <button
+              className="button button--size-normal button--link order-summary__item-cancel"
               href="#"
               onClick={[Function]}
+              type="button"
             >
               <svg
                 aria-hidden="true"
@@ -547,7 +548,7 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
                   style={Object {}}
                 />
               </svg>
-            </a>
+            </button>
             <span
               className="css-1rn2cu4-Price order-summary__item-price"
               data-price-currency="EUR"
@@ -597,7 +598,6 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
         className="css-ejsk1i-Card voucher-container order-editor__voucher"
       >
         <button
-          aria-pressed={false}
           className="button button--size-normal button--flat voucher-container__question"
           onClick={[Function]}
         >
@@ -627,9 +627,10 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
             <p>
               Je soutiens une cause qui me tient à cœur.
                
-              <a
-                href="#"
+              <button
+                className="button button--size-normal button--link "
                 onClick={[Function]}
+                type="button"
               >
                 En savoir plus 
                 <span>
@@ -651,7 +652,7 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
                     />
                   </svg>
                 </span>
-              </a>
+              </button>
             </p>
           </div>
         </div>
@@ -659,7 +660,6 @@ exports[`Storyshots Payment / OrderEditor Billets Assurances 1`] = `
           className="donation-proposal__button"
         >
           <button
-            aria-pressed={false}
             className="button button--size-small progress-button "
             disabled={false}
             onClick={[Function]}
@@ -749,7 +749,6 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
         className="css-ejsk1i-Card insurance order-editor__insurance"
       >
         <button
-          aria-pressed={false}
           className="button button--size-normal button--flat progress-button insurance__question"
           disabled={false}
           onClick={[Function]}
@@ -783,7 +782,6 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
         className="css-ejsk1i-Card voucher-container order-editor__voucher"
       >
         <button
-          aria-pressed={false}
           className="button button--size-normal button--flat voucher-container__question"
           onClick={[Function]}
         >
@@ -813,9 +811,10 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
             <p>
               Je soutiens une cause qui me tient à cœur.
                
-              <a
-                href="#"
+              <button
+                className="button button--size-normal button--link "
                 onClick={[Function]}
+                type="button"
               >
                 En savoir plus 
                 <span>
@@ -837,7 +836,7 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
                     />
                   </svg>
                 </span>
-              </a>
+              </button>
             </p>
           </div>
         </div>
@@ -845,7 +844,6 @@ exports[`Storyshots Payment / OrderEditor Billets Uniquement 1`] = `
           className="donation-proposal__button"
         >
           <button
-            aria-pressed={false}
             className="button button--size-small progress-button "
             disabled={false}
             onClick={[Function]}

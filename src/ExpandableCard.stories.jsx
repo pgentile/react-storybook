@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import ExpandableCard from "./ExpandableCard";
 import ExpandableIcon from "./ExpandableIcon";
+import Button from "./buttons/Button";
 
 class ExpandableCardDemo extends PureComponent {
   static propTypes = {
@@ -48,11 +49,10 @@ class ExpandableCardDemo extends PureComponent {
       >
         <p>
           Cette carte peut afficher plus de détails.{" "}
-          <a href="#" onClick={this.onToggleExpand}>
-            En savoir plus
-          </a>
-          &nbsp;
-          <ExpandableIcon expanded={expanded} onClick={this.onToggleExpand} />
+          <Button link type="button" onClick={this.onToggleExpand}>
+            En savoir plus&nbsp;
+            <ExpandableIcon expanded={expanded} />
+          </Button>
         </p>
       </ExpandableCard>
     );

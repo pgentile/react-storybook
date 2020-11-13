@@ -69,7 +69,6 @@ exports[`Storyshots Payment / RegistredCreditCard Main 1`] = `
           className="registred-credit-card__select"
         >
           <button
-            aria-pressed={false}
             className="button button--size-normal "
           >
             Utiliser cette carte
@@ -135,7 +134,6 @@ exports[`Storyshots Payment / RegistredCreditCard Main 1`] = `
                       className="registred-card-cvv-form__buttons"
                     >
                       <button
-                        aria-pressed={false}
                         className="button button--size-small "
                         disabled={true}
                         type="submit"
@@ -156,7 +154,6 @@ exports[`Storyshots Payment / RegistredCreditCard Main 1`] = `
                         </span>
                       </button>
                       <button
-                        aria-pressed={false}
                         className="button button--size-small "
                         disabled={true}
                         onClick={[Function]}

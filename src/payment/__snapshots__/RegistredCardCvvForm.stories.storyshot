@@ -47,7 +47,6 @@ exports[`Storyshots Payment / RegistredCardCvvForm Main 1`] = `
         className="registred-card-cvv-form__buttons"
       >
         <button
-          aria-pressed={false}
           className="button button--size-small "
           disabled={false}
           type="submit"
@@ -68,7 +67,6 @@ exports[`Storyshots Payment / RegistredCardCvvForm Main 1`] = `
           </span>
         </button>
         <button
-          aria-pressed={false}
           className="button button--size-small "
           disabled={false}
           onClick={[Function]}

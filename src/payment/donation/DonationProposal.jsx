@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import ManagedProgressButton from "../../buttons/ManagedProgressButton";
 import ExpandableCard from "../../ExpandableCard";
 import ExpandableIcon from "../../ExpandableIcon";
+import Button from "../../buttons/Button";
 
 import urctLogo from "./urct-logo.svg";
 
@@ -51,9 +52,9 @@ export default class DonationProposal extends PureComponent {
             <h3>Donner, c&apos;est facile avec un rien c&apos;est tout</h3>
             <p>
               Je soutiens une cause qui me tient à cœur.{" "}
-              <a href="#" onClick={this.onDetailsClick}>
+              <Button link type="button" onClick={this.onDetailsClick}>
                 En savoir plus <ExpandableIcon expanded={showDetails} />
-              </a>
+              </Button>
             </p>
           </div>
         </div>

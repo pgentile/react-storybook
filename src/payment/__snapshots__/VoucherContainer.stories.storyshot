@@ -11,7 +11,6 @@ exports[`Storyshots Payment / VoucherContainer Main 1`] = `
       className="css-ejsk1i-Card voucher-container "
     >
       <button
-        aria-pressed={false}
         className="button button--size-normal button--flat voucher-container__question"
         onClick={[Function]}
       >

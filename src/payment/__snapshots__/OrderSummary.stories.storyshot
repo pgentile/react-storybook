@@ -45,10 +45,11 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
           >
             Votre code promotion
           </span>
-          <a
-            className="order-summary__item-cancel"
+          <button
+            className="button button--size-normal button--link order-summary__item-cancel"
             href="#"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -67,7 +68,7 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
           <span
             className="css-1rn2cu4-Price order-summary__item-price"
             data-price-currency="EUR"
@@ -90,10 +91,11 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
           >
             Vos assurances
           </span>
-          <a
-            className="order-summary__item-cancel"
+          <button
+            className="button button--size-normal button--link order-summary__item-cancel"
             href="#"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -112,7 +114,7 @@ exports[`Storyshots Payment / OrderSummary Avec Un Code Promo 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
           <span
             className="css-1rn2cu4-Price order-summary__item-price"
             data-price-currency="EUR"
@@ -207,10 +209,11 @@ exports[`Storyshots Payment / OrderSummary Avec Un Don 1`] = `
           >
             Votre don
           </span>
-          <a
-            className="order-summary__item-cancel"
+          <button
+            className="button button--size-normal button--link order-summary__item-cancel"
             href="#"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -229,7 +232,7 @@ exports[`Storyshots Payment / OrderSummary Avec Un Don 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
           <span
             className="css-1rn2cu4-Price order-summary__item-price"
             data-price-currency="EUR"
@@ -322,10 +325,11 @@ exports[`Storyshots Payment / OrderSummary Billets Assurances 1`] = `
           >
             Vos assurances
           </span>
-          <a
-            className="order-summary__item-cancel"
+          <button
+            className="button button--size-normal button--link order-summary__item-cancel"
             href="#"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -344,7 +348,7 @@ exports[`Storyshots Payment / OrderSummary Billets Assurances 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
           <span
             className="css-1rn2cu4-Price order-summary__item-price"
             data-price-currency="EUR"
@@ -541,10 +545,11 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
           >
             Votre code promotion
           </span>
-          <a
-            className="order-summary__item-cancel"
+          <button
+            className="button button--size-normal button--link order-summary__item-cancel"
             href="#"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -563,7 +568,7 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
           <span
             className="css-1rn2cu4-Price order-summary__item-price"
             data-price-currency="EUR"
@@ -586,10 +591,11 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
           >
             Vos assurances
           </span>
-          <a
-            className="order-summary__item-cancel"
+          <button
+            className="button button--size-normal button--link order-summary__item-cancel"
             href="#"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -608,7 +614,7 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
           <span
             className="css-1rn2cu4-Price order-summary__item-price"
             data-price-currency="EUR"
@@ -633,10 +639,11 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
           >
             Votre don
           </span>
-          <a
-            className="order-summary__item-cancel"
+          <button
+            className="button button--size-normal button--link order-summary__item-cancel"
             href="#"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -655,7 +662,7 @@ exports[`Storyshots Payment / OrderSummary Tous Les Types 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
           <span
             className="css-1rn2cu4-Price order-summary__item-price"
             data-price-currency="EUR"

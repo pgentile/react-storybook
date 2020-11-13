@@ -163,7 +163,7 @@ export function I18nProvider({ defaultLocale, loadMessages, defaultRichTextEleme
 
 I18nProvider.propTypes = {
   defaultLocale: PropTypes.string.isRequired,
-  loadMessages: PropTypes.func,
+  loadMessages: PropTypes.func.isRequired,
   defaultRichTextElements: PropTypes.objectOf(PropTypes.func),
   children: PropTypes.node,
 };

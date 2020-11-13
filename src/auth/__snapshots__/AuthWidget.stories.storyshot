@@ -22,7 +22,6 @@ exports[`Storyshots Auth / AuthWidget Main 1`] = `
           className="auth-iknowyou__button"
         >
           <button
-            aria-pressed={false}
             className="button button--size-normal "
             onClick={[Function]}
           >

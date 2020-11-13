@@ -72,13 +72,12 @@ export default function I18nLocaleSelector() {
 
   const onFormSubmit = useCallback((event) => event.preventDefault(), []);
 
-  const onLocaleChange = useCallback((event) => setLocale(event.target.value), [setLocale]);
+  const onLocaleChange = useCallback((event) => setLocale(event.currentTarget.value), [setLocale]);
 
   const items = LOCALES.map(({ locale, flag, description }) => {
-    const onClick = () => setLocale(locale);
     return (
       <li key={locale} className="i18n-locale-selector__item">
-        <label onClick={onClick}>
+        <label>
           <input
             className="i18n-locale-selector__radio"
             type="radio"

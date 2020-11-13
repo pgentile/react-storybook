@@ -12,7 +12,6 @@ exports[`Storyshots Final Forms components / FinalProgressButton Main 1`] = `
       onSubmit={[Function]}
     >
       <button
-        aria-pressed={false}
         className="button button--size-normal progress-button "
         disabled={false}
         type="submit"
@@ -27,7 +26,6 @@ exports[`Storyshots Final Forms components / FinalProgressButton Main 1`] = `
         />
       </button>
       <button
-        aria-pressed={false}
         className="button button--size-normal "
         disabled={false}
         type="reset"

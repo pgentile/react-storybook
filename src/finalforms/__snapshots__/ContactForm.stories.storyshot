@@ -279,7 +279,6 @@ exports[`Storyshots Final Forms / ContactForm Main 1`] = `
                 </div>
               </div>
               <button
-                aria-pressed={false}
                 className="button button--size-small "
                 disabled={true}
                 onClick={[Function]}
@@ -458,7 +457,6 @@ exports[`Storyshots Final Forms / ContactForm Main 1`] = `
                 </div>
               </div>
               <button
-                aria-pressed={false}
                 className="button button--size-small "
                 disabled={true}
                 onClick={[Function]}
@@ -637,7 +635,6 @@ exports[`Storyshots Final Forms / ContactForm Main 1`] = `
                 </div>
               </div>
               <button
-                aria-pressed={false}
                 className="button button--size-small "
                 disabled={true}
                 onClick={[Function]}
@@ -667,7 +664,6 @@ exports[`Storyshots Final Forms / ContactForm Main 1`] = `
       </section>
       <p>
         <button
-          aria-pressed={false}
           className="button button--size-normal "
           disabled={false}
           type="submit"

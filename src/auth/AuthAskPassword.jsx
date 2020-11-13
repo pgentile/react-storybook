@@ -26,7 +26,6 @@ export default function AuthAskPassword({ onCancelClick, onValidate }) {
           className="auth-askpassword__password-field"
           id={passwordFieldId}
           type="password"
-          autoFocus
           value={password}
           onChange={onPasswordChange}
         />

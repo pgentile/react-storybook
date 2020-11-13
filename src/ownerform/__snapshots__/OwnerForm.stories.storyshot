@@ -68,7 +68,6 @@ exports[`Storyshots OwnerForm / OwnerForm Main 1`] = `
         </div>
       </div>
       <button
-        aria-pressed={false}
         className="button button--size-normal "
         disabled={false}
       >

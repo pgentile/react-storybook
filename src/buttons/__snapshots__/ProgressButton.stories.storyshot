@@ -8,7 +8,6 @@ exports[`Storyshots Buttons / ProgressButton Disabled Story 1`] = `
     className="rs"
   >
     <button
-      aria-pressed={false}
       className="button button--size-normal progress-button "
       disabled={true}
     >
@@ -33,7 +32,6 @@ exports[`Storyshots Buttons / ProgressButton Finished Story 1`] = `
     className="rs"
   >
     <button
-      aria-pressed={false}
       className="button button--size-normal progress-button "
       disabled={true}
     >
@@ -58,7 +56,6 @@ exports[`Storyshots Buttons / ProgressButton Loading Story 1`] = `
     className="rs"
   >
     <button
-      aria-pressed={false}
       className="button button--size-normal progress-button "
       disabled={true}
     >
@@ -83,7 +80,6 @@ exports[`Storyshots Buttons / ProgressButton Main 1`] = `
     className="rs"
   >
     <button
-      aria-pressed={false}
       className="button button--size-normal progress-button "
       disabled={false}
       onClick={[Function]}

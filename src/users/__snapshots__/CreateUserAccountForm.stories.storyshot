@@ -210,7 +210,6 @@ exports[`Storyshots Users / CreateUserAccountForm Main 1`] = `
         className="create-user-account-form__button"
       >
         <button
-          aria-pressed={false}
           className="button button--size-large "
           disabled={false}
           type="submit"

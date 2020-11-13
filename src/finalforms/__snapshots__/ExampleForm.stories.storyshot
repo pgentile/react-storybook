@@ -74,7 +74,6 @@ exports[`Storyshots Final Forms / ExampleForm Main 1`] = `
         </div>
       </div>
       <button
-        aria-pressed={false}
         className="button button--size-normal "
         disabled={false}
         type="submit"

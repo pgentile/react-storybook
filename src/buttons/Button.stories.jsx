@@ -7,6 +7,12 @@ export default {
     onClick: {
       action: "click",
     },
+    as: {
+      control: "text",
+    },
+    children: {
+      control: null,
+    },
   },
 };
 

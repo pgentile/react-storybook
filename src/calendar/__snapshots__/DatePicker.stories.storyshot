@@ -14,7 +14,6 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
         className="date-picker__previous-month-container"
       >
         <button
-          aria-pressed={false}
           className="button button--size-large "
           onClick={[Function]}
           title="Mois précédent"
@@ -680,7 +679,6 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
         className="date-picker__next-month-container"
       >
         <button
-          aria-pressed={false}
           className="button button--size-large "
           onClick={[Function]}
           title="Mois suivant"
@@ -723,7 +721,6 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
         className="date-picker__previous-month-container"
       >
         <button
-          aria-pressed={false}
           className="button button--size-large "
           onClick={[Function]}
           title="Mois précédent"
@@ -1389,7 +1386,6 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
         className="date-picker__next-month-container"
       >
         <button
-          aria-pressed={false}
           className="button button--size-large "
           onClick={[Function]}
           title="Mois suivant"

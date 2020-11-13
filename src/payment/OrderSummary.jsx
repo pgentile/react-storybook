@@ -5,6 +5,7 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 import Price from "../Price";
 import Card from "../Card";
+import Button from "../buttons/Button";
 
 import "./OrderSummary.scss";
 
@@ -64,9 +65,9 @@ function OrderSummaryItem({ item }) {
     <li className="order-summary__item">
       <span className="order-summary__item-label">{label}</span>
       {onCancel && (
-        <a className="order-summary__item-cancel" href="#" onClick={onCancelClick}>
+        <Button link type="button" className="order-summary__item-cancel" href="#" onClick={onCancelClick}>
           <FontAwesomeIcon icon={faTrashAlt} />
-        </a>
+        </Button>
       )}
       <Price className="order-summary__item-price" price={price} />
     </li>

@@ -315,7 +315,6 @@ exports[`Storyshots Payment / PaymentForm Main 1`] = `
           className="credit-card-form__button"
         >
           <button
-            aria-pressed={false}
             className="button button--size-large "
             disabled={false}
             type="submit"

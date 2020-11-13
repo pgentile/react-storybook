@@ -146,9 +146,10 @@ exports[`Storyshots Forms / SuperRadio Help Story 1`] = `
         <div
           className="super-radio__help"
         >
-          <a
+          <button
             className="super-radio__help-link"
             onClick={[Function]}
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -167,7 +168,7 @@ exports[`Storyshots Forms / SuperRadio Help Story 1`] = `
                 style={Object {}}
               />
             </svg>
-          </a>
+          </button>
         </div>
       </div>
       <div

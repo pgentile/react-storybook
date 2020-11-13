@@ -30,9 +30,10 @@ exports[`Storyshots Payment / Donation / DonationProposal Main 1`] = `
           <p>
             Je soutiens une cause qui me tient à cœur.
              
-            <a
-              href="#"
+            <button
+              className="button button--size-normal button--link "
               onClick={[Function]}
+              type="button"
             >
               En savoir plus 
               <span>
@@ -54,7 +55,7 @@ exports[`Storyshots Payment / Donation / DonationProposal Main 1`] = `
                   />
                 </svg>
               </span>
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -62,7 +63,6 @@ exports[`Storyshots Payment / Donation / DonationProposal Main 1`] = `
         className="donation-proposal__button"
       >
         <button
-          aria-pressed={false}
           className="button button--size-small progress-button "
           disabled={false}
           onClick={[Function]}

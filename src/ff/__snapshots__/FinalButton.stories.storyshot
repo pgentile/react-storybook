@@ -27,7 +27,6 @@ exports[`Storyshots Final Forms components / FinalButton Main 1`] = `
         value="value2"
       />
       <button
-        aria-pressed={false}
         className="button button--size-normal "
         disabled={false}
         type="submit"
@@ -35,7 +34,6 @@ exports[`Storyshots Final Forms components / FinalButton Main 1`] = `
         Envoyer
       </button>
       <button
-        aria-pressed={false}
         className="button button--size-normal "
         disabled={false}
         type="reset"

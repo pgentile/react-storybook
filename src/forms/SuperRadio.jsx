@@ -87,9 +87,9 @@ export default class SuperRadio extends PureComponent {
           </div>
           {help && (
             <div className="super-radio__help">
-              <a className="super-radio__help-link" onClick={this.toggleHelp}>
+              <button type="button" className="super-radio__help-link" onClick={this.toggleHelp}>
                 <FontAwesomeIcon className="super-radio__help-icon" icon={faQuestionCircle} size="1x" />
-              </a>
+              </button>
             </div>
           )}
         </div>

@@ -8,7 +8,6 @@ exports[`Storyshots Buttons / ManagedProgressButton Fail Story 1`] = `
     className="rs"
   >
     <button
-      aria-pressed={false}
       className="button button--size-normal progress-button "
       disabled={false}
       onClick={[Function]}
@@ -34,7 +33,6 @@ exports[`Storyshots Buttons / ManagedProgressButton Success Story 1`] = `
     className="rs"
   >
     <button
-      aria-pressed={false}
       className="button button--size-normal progress-button "
       disabled={false}
       onClick={[Function]}

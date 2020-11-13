@@ -1,19 +1,15 @@
-import { PureComponent } from "react";
+import { memo } from "react";
 import PropTypes from "prop-types";
 
 import "./FittedImage.scss";
 
-export default class FittedImage extends PureComponent {
-  static propTypes = {
-    className: PropTypes.string,
-  };
-
-  static defaultProps = {
-    className: "",
-  };
-
-  render() {
-    const { className, ...otherProps } = this.props;
-    return <img className={"fitted-image " + className} {...otherProps} />;
-  }
+function FittedImage({ className = "", ...otherProps }) {
+  // eslint-disable-next-line jsx-a11y/alt-text
+  return <img className={"fitted-image " + className} {...otherProps} />;
 }
+
+FittedImage.propTypes = {
+  className: PropTypes.string,
+};
+
+export default memo(FittedImage);

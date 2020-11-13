@@ -16,7 +16,6 @@ exports[`Storyshots Booking form / BookingPassengers Main 1`] = `
         5 passager(s)
          
         <button
-          aria-pressed={false}
           className="button button--size-normal "
           disabled={false}
           onClick={[Function]}
@@ -25,7 +24,6 @@ exports[`Storyshots Booking form / BookingPassengers Main 1`] = `
         </button>
          
         <button
-          aria-pressed={false}
           className="button button--size-normal "
           disabled={false}
           onClick={[Function]}

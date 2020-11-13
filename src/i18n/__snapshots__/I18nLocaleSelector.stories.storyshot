@@ -17,9 +17,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={true}
               className="i18n-locale-selector__radio"
@@ -37,9 +35,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -57,9 +53,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -77,9 +71,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -97,9 +89,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -117,9 +107,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -137,9 +125,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -157,9 +143,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -177,9 +161,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -197,9 +179,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -217,9 +197,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"
@@ -237,9 +215,7 @@ exports[`Storyshots I18n / I18nLocaleSelector Main 1`] = `
         <li
           className="i18n-locale-selector__item"
         >
-          <label
-            onClick={[Function]}
-          >
+          <label>
             <input
               checked={false}
               className="i18n-locale-selector__radio"

@@ -12,14 +12,7 @@
     "react": {
       "version": "detect"
     },
-    "polyfills": [
-      "URLSearchParams",
-      "ResizeObserver",
-      "Promise",
-      "Object.entries",
-      "Math.trunc",
-      "fetch"
-    ]
+    "polyfills": ["URLSearchParams", "ResizeObserver", "Promise", "Object.entries", "Math.trunc", "fetch"]
   },
   "globals": {
     "process": true
@@ -30,12 +23,10 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jest/recommended",
-    "plugin:compat/recommended"
+    "plugin:compat/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
-  "plugins": [
-    "formatjs",
-    "emotion"
-  ],
+  "plugins": ["formatjs", "emotion"],
   "rules": {
     "no-unused-vars": [
       "error",
@@ -48,7 +39,11 @@
     "formatjs/enforce-placeholders": "error",
     "compat/compat": "warn",
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn"
   },
   "overrides": [
     {

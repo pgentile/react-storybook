@@ -11,13 +11,11 @@ exports[`Storyshots Buttons / ButtonGroup Large 1`] = `
       className="button-group "
     >
       <button
-        aria-pressed={false}
         className="button button--size-large button-group__button "
       >
         Button 1
       </button>
       <button
-        aria-pressed={false}
         className="button button--size-large button-group__button "
       >
         Button 2
@@ -29,7 +27,6 @@ exports[`Storyshots Buttons / ButtonGroup Large 1`] = `
         Button 3
       </button>
       <button
-        aria-pressed={false}
         className="button button--size-large button-group__button "
       >
         Button 4
@@ -50,25 +47,21 @@ exports[`Storyshots Buttons / ButtonGroup Main 1`] = `
       className="button-group "
     >
       <button
-        aria-pressed={false}
         className="button button--size-normal button-group__button "
       >
         Button 1
       </button>
       <button
-        aria-pressed={false}
         className="button button--size-normal button-group__button "
       >
         Button 2
       </button>
       <button
-        aria-pressed={false}
         className="button button--size-normal button-group__button "
       >
         Button 3
       </button>
       <button
-        aria-pressed={false}
         className="button button--size-normal button-group__button "
       >
         Button 4

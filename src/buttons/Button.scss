@@ -64,4 +64,24 @@
     border: none;
     border-radius: 0;
   }
+
+  &--link {
+    display: inline;
+
+    border: none;
+    border-radius: 0;
+
+    padding: 0;
+    margin: 0;
+
+    background: transparent;
+    font: inherit;
+
+    text-decoration: underline;
+
+    &:hover {
+      border: none;
+      background: transparent;
+    }
+  }
 }
