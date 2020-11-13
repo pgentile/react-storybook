@@ -1131,7 +1131,7 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@emotion/babel-plugin@^11.0.0":
+"@emotion/babel-plugin@11.0.0", "@emotion/babel-plugin@^11.0.0":
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.0.0.tgz#e6f40fa81ef52775773a53d50220c597ebc5c2ef"
   integrity sha512-w3YP0jlqrNwBBaSI6W+r80fOKF6l9QmsPfLNx5YWSHwrxjVZhM+L50gY7YCVAvlfr1/qdD1vsFN+PDZmLvt42Q==
@@ -1190,16 +1190,7 @@
     "@emotion/memoize" "^0.7.4"
     stylis "^4.0.3"
 
-"@emotion/css@^10.0.27":
-  version "10.0.27"
-  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.27.tgz#3a7458198fbbebb53b01b2b87f64e5e21241e14c"
-  integrity sha512-6wZjsvYeBhyZQYNrGoR5yPMYbMBNEnanDrqmsqS1mzDm1cOTu12shvl2j4QHNS36UaTE0USIJawCH9C8oW34Zw==
-  dependencies:
-    "@emotion/serialize" "^0.11.15"
-    "@emotion/utils" "0.11.3"
-    babel-plugin-emotion "^10.0.27"
-
-"@emotion/css@^11.0.0":
+"@emotion/css@11.0.0":
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/css/-/css-11.0.0.tgz#804dcec7e4990019a08e678c1145d34208923acb"
   integrity sha512-i7/uzTYcoP0hIW9V4YobD/mYAt6rjNySr9g6CS7JEFsRDfskg4nUczzIehALfacDaHbHaOQYaNDHBGuD/AtW5A==
@@ -1210,7 +1201,16 @@
     "@emotion/sheet" "^1.0.0"
     "@emotion/utils" "^1.0.0"
 
-"@emotion/eslint-plugin@^11.0.0":
+"@emotion/css@^10.0.27":
+  version "10.0.27"
+  resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.27.tgz#3a7458198fbbebb53b01b2b87f64e5e21241e14c"
+  integrity sha512-6wZjsvYeBhyZQYNrGoR5yPMYbMBNEnanDrqmsqS1mzDm1cOTu12shvl2j4QHNS36UaTE0USIJawCH9C8oW34Zw==
+  dependencies:
+    "@emotion/serialize" "^0.11.15"
+    "@emotion/utils" "0.11.3"
+    babel-plugin-emotion "^10.0.27"
+
+"@emotion/eslint-plugin@11.0.0":
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/eslint-plugin/-/eslint-plugin-11.0.0.tgz#7666b750df62dc33a93bb1e09086f1caaecadc6f"
   integrity sha512-V5w/LgV61xta+U6LKht3WQqfjTLueU2mh1aRTcK5OfkRhZ4OZFE0Inq/oVwLCq5g3Hzoaq27PRm+Tk9W18QScw==
@@ -1227,7 +1227,7 @@
   dependencies:
     "@emotion/memoize" "0.7.4"
 
-"@emotion/jest@^11.0.0":
+"@emotion/jest@11.0.0":
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/@emotion/jest/-/jest-11.0.0.tgz#5fee440b3d74d6f862ee0793639e46b1cbafc4c5"
   integrity sha512-C92K/pJ/fN4WOX3VIGdYKKKYWQcsHxcF7v602TD7O5hk75hGwYNexPpNKgSjW3uA5gCsyBu9uEYGv4bj7oaYug==
@@ -6533,7 +6533,7 @@ eslint-plugin-jest@24.1.3:
   dependencies:
     "@typescript-eslint/experimental-utils" "^4.0.1"
 
-eslint-plugin-jsx-a11y@^6.4.1:
+eslint-plugin-jsx-a11y@6.4.1:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.4.1.tgz#a2d84caa49756942f42f1ffab9002436391718fd"
   integrity sha512-0rGPJBbwHoGNPU73/QCLP/vveMlM1b1Z9PponxO87jfr6tuH5ligXbDT6nHSSzBC8ovX2Z+BQu7Bk5D/Xgq9zg==
