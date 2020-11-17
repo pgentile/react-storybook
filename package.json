@@ -93,7 +93,7 @@
     "@babel/preset-typescript": "7.12.1",
     "@emotion/babel-plugin": "11.0.0",
     "@emotion/eslint-plugin": "11.0.0",
-    "@emotion/jest": "11.0.0",
+    "@emotion/jest": "11.1.0",
     "@formatjs/cli": "2.13.12",
     "@storybook/addon-a11y": "6.0.28",
     "@storybook/addon-essentials": "6.0.28",
