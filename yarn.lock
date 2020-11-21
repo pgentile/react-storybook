@@ -1331,26 +1331,11 @@
     tslib "^2.0.1"
     typescript "^4.0"
 
-"@formatjs/ecma402-abstract@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.4.0.tgz#ac6c17a8fffac43c6d68c849a7b732626d32654c"
-  integrity sha512-Mv027hcLFjE45K8UJ8PjRpdDGfR0aManEFj1KzoN8zXNveHGEygpZGfFf/FTTMl+QEVSrPAUlyxaCApvmv47AQ==
-  dependencies:
-    tslib "^2.0.1"
-
 "@formatjs/ecma402-abstract@1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.5.0.tgz#759c8f11ff45e96f8fb58741e7fbdb41096d5ddd"
   integrity sha512-wXv36yo+mfWllweN0Fq7sUs7PUiNopn7I0JpLTe3hGu6ZMR4CV7LqK1llhB18pndwpKoafQKb1et2DCJAOW20Q==
   dependencies:
-    tslib "^2.0.1"
-
-"@formatjs/intl-datetimeformat@2.8.4":
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-2.8.4.tgz#eea94037e6707b92c194297e84a376f615e171db"
-  integrity sha512-aCD6VoUvdLiJrAfKfHojbzX/e5inqvO+N9rj9kdOzCMTEdDGJ+Jd9SmXPn2YKb1glp785mYxAPp5vxjgErjq/g==
-  dependencies:
-    "@formatjs/ecma402-abstract" "1.4.0"
     tslib "^2.0.1"
 
 "@formatjs/intl-datetimeformat@3.0.0":
@@ -1377,14 +1362,6 @@
     cldr-core "37.0.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-listformat@4.3.6":
-  version "4.3.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-4.3.6.tgz#03de03f05f90d6ae618b0d0dcacd3659662d397d"
-  integrity sha512-+ePU3/rmgUd8QHcf7EGJAIU12+Y6eMGaDhI3tPw3kKN/vByE9hJAyR8etXTk9fSIV6D7us2tEDM4h0wn8eenig==
-  dependencies:
-    "@formatjs/ecma402-abstract" "1.4.0"
-    tslib "^2.0.1"
-
 "@formatjs/intl-listformat@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-5.0.0.tgz#8fffea78a57ebfb9f3471c41d32072122aa92b2f"
@@ -1403,28 +1380,20 @@
     cldr-core "^37.0.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-numberformat@5.7.6":
-  version "5.7.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-5.7.6.tgz#630206bb0acefd2d508ccf4f82367c6875cad611"
-  integrity sha512-ZlZfYtvbVHYZY5OG3RXizoCwxKxEKOrzEe2YOw9wbzoxF3PmFn0SAgojCFGLyNXkkR6xVxlylhbuOPf1dkIVNg==
+"@formatjs/intl-numberformat@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-6.0.0.tgz#7fe0ff0079a6959ad2df334eca6b7f439df7bd20"
+  integrity sha512-5GTxfMQlYdD+6aB6V4OWB9RMnu5VJ68zaMGQGSIibCBsxrEMGrQqvxqQwUaZNVkuww+HBxBPEY+CtlwW+VSdyQ==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.4.0"
+    "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-pluralrules@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-3.5.6.tgz#b4b6e3f4bcbcfbc2b71d037970b9ddf97517825f"
-  integrity sha512-8CvrM8YGEpsdTq3po0VYrw/HiJCQhSiau1BH5J/QRm1C9RNBt3+N2TyjUrCYO+pTkDtn4cDS9MZi0ufVZLkZ9A==
+"@formatjs/intl-pluralrules@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-pluralrules/-/intl-pluralrules-4.0.0.tgz#c5fe276d589666624ab49310714932512803cb7f"
+  integrity sha512-HWi7zEpSM46zgizvxwojDJTrh/tqxmldCHXkhR3bsbZwAlm2W8yCFLkPSMikNJp/WFvgnEjOjvGctU1A5TqStg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.4.0"
-    tslib "^2.0.1"
-
-"@formatjs/intl-relativetimeformat@7.3.6":
-  version "7.3.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-7.3.6.tgz#58357e0c820d51596ae281d66bcafe5b4f09fc6b"
-  integrity sha512-RtmdGG6Lwf99xlGjFiIk6pYe9LQJpTYa7VofV322Q3gmb3tAU6Pgyn7LML4xbG7Pd1F7JBmnVNVwFyofUfyJQA==
-  dependencies:
-    "@formatjs/ecma402-abstract" "1.4.0"
+    "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
 
 "@formatjs/intl-relativetimeformat@8.0.0":

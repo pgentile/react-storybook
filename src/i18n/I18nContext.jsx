@@ -24,6 +24,10 @@ async function loadPolyfills(locale) {
     await import("@formatjs/intl-getcanonicallocales/polyfill");
   }
 
+  if (shouldPolyfillLocale()) {
+    await import("@formatjs/intl-locale/polyfill");
+  }
+
   if (shouldPolyfillPluralRules()) {
     await import("@formatjs/intl-pluralrules/polyfill");
   }
@@ -34,6 +38,19 @@ async function loadPolyfills(locale) {
       /* webpackInclude: /(fr|en)\.js$/ */
       /* webpackMode: "lazy" */
       `@formatjs/intl-pluralrules/locale-data/${language}`
+    );
+  }
+
+  if (shouldPolyfillNumberFormat()) {
+    await import("@formatjs/intl-numberformat/polyfill");
+  }
+
+  if (Intl.NumberFormat.polyfilled) {
+    await import(
+      /* webpackChunkName: "intl-numberformat-locale-data" */
+      /* webpackInclude: /(fr|en)\.js$/ */
+      /* webpackMode: "lazy" */
+      `@formatjs/intl-numberformat/locale-data/${language}`
     );
   }
 
@@ -63,19 +80,6 @@ async function loadPolyfills(locale) {
     );
   }
 
-  if (shouldPolyfillNumberFormat()) {
-    await import("@formatjs/intl-numberformat/polyfill");
-  }
-
-  if (Intl.NumberFormat.polyfilled) {
-    await import(
-      /* webpackChunkName: "intl-numberformat-locale-data" */
-      /* webpackInclude: /(fr|en)\.js$/ */
-      /* webpackMode: "lazy" */
-      `@formatjs/intl-numberformat/locale-data/${language}`
-    );
-  }
-
   if (shouldPolyfillDateTimeFormat()) {
     await import("@formatjs/intl-datetimeformat/polyfill");
   }
@@ -89,10 +93,6 @@ async function loadPolyfills(locale) {
       /* webpackMode: "lazy" */
       `@formatjs/intl-datetimeformat/locale-data/${language}`
     );
-  }
-
-  if (shouldPolyfillLocale()) {
-    await import("@formatjs/intl-locale/polyfill");
   }
 }
 
