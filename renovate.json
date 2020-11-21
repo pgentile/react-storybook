@@ -1,7 +1,11 @@
 {
-  "extends": [
-    "config:base",
-    ":disableRateLimiting",
-    ":automergeMinor"
+  "extends": ["config:base", ":disableRateLimiting", ":automergeMinor"],
+  "packageRules": [
+    {
+      "extends": "monorepo:storybook",
+      "groupName": "storybook monorepo",
+      "updateTypes": ["major", "minor"],
+      "automerge": false
+    }
   ]
 }
