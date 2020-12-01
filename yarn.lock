@@ -1417,10 +1417,10 @@
     cldr-core "^37.0.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-numberformat@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-6.0.0.tgz#7fe0ff0079a6959ad2df334eca6b7f439df7bd20"
-  integrity sha512-5GTxfMQlYdD+6aB6V4OWB9RMnu5VJ68zaMGQGSIibCBsxrEMGrQqvxqQwUaZNVkuww+HBxBPEY+CtlwW+VSdyQ==
+"@formatjs/intl-numberformat@6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-6.0.1.tgz#95428e4919db33ef1709778f39db1085f8b6af5e"
+  integrity sha512-pw6IgKFTR8CeVVNsxth6CXb7f0CJ1n+wEQwzAQImYTUTUwrFslg5M9e5Z97RW/bHRdj/OVFBM+krLtkE5dYA5g==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
