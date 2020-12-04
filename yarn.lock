@@ -8253,10 +8253,10 @@ ignore@^5.1.4, ignore@^5.1.8:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
-img-diff-js@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/img-diff-js/-/img-diff-js-0.5.0.tgz#d182839dae422bbedf38f3cbded4fb1485615118"
-  integrity sha512-oaM2kASTy24CCRCc29H7eTAbiDMjTSaP7bcojTjCTMpJcoh5dhtQ+QtLY7xbXgzwQJp/wQAW8rHSCZmijbAvZQ==
+img-diff-js@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/img-diff-js/-/img-diff-js-0.5.1.tgz#4490fe198832dbb55958fd2576cb35138bf7f57b"
+  integrity sha512-znFsjy9tyD+9w8fiL5u9GyS8pmxFHSpjdtgFedkQwUHW7Rok5zHyj9qdM4PkxpkSnt+0NXNR4KgnpwsCFmrqPQ==
   dependencies:
     "@types/mkdirp" "^1.0.1"
     "@types/node" "^14.11.2"
@@ -13013,10 +13013,10 @@ refractor@^2.4.1:
     parse-entities "^1.1.2"
     prismjs "~1.17.0"
 
-reg-cli@0.16.3:
-  version "0.16.3"
-  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.16.3.tgz#d33d2a21da7549426687b95d9a31771408072b67"
-  integrity sha512-1cyMxTiQOxcA+GaRMGzMNU62OAFZyZRayYXSxx8Iae3YvgcFcCehxMmNvZfxl2eRvDrpp24AQMsDas+dLTugXQ==
+reg-cli@0.16.4:
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.16.4.tgz#bd0f65039c6e7123d24635e0da90a5b18857b1c8"
+  integrity sha512-9kvbvQKudQ1Lq29H33jnC2fOOFN+7BW7ewoH2yUFen58daWtpWPAWLMc9t2LE8rQ3yjg4HUz8cgMYX0D+H+zKw==
   dependencies:
     bluebird "3.7.2"
     chalk "4.1.0"
@@ -13024,7 +13024,7 @@ reg-cli@0.16.3:
     cross-spawn "7.0.3"
     del "6.0.0"
     glob "7.1.6"
-    img-diff-js "0.5.0"
+    img-diff-js "0.5.1"
     lodash "4.17.20"
     make-dir "3.1.0"
     md5-file "4.0.0"
