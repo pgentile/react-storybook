@@ -1581,10 +1581,10 @@
   dependencies:
     tslib "^2.0.1"
 
-"@formatjs/intl-datetimeformat@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.0.tgz#a987988fb3dc6160dae4ddf63f478ec55b23a965"
-  integrity sha512-5tIvP8BoOjE/LpqiDRCVSppn4YAdgeipirnr+vbh0SfNU2Np6fTwavYkmxZZhsBTx3HC8KCYndDxDKI6Y3j61A==
+"@formatjs/intl-datetimeformat@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.1.tgz#f20408cda0e932f2234ecb42fca1e90d2e75250d"
+  integrity sha512-teeUgUoieP0JjZYPWjJV72CoPQoukCMKGW1YUu00+TaHzZBNqVgPCdFJo2vgl1jKccOAT3VT79BHNEsR9DsBBQ==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
@@ -1613,20 +1613,20 @@
     "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-locale@2.4.9":
-  version "2.4.9"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-locale/-/intl-locale-2.4.9.tgz#050a2ea824ffa16180aaf69df61224197cd19e5a"
-  integrity sha512-oa2Qtpd1bslxme52olgT+Ox5aCr6NuGrefvpDilpam5D2WwG882yLCXPRQCb6FcujhwfmsT16yb4eYjPHAGYsQ==
+"@formatjs/intl-locale@2.4.10":
+  version "2.4.10"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-locale/-/intl-locale-2.4.10.tgz#7fb33a101d5b8d54296df3456ba30dd6e2c9fec1"
+  integrity sha512-+5e+wv5oAKN0UCWWqZs0c576L/AD9rhj4BG8fzpCo+w63EqOjS/xfQrN/y2AQ0r+xroCI0PPIXHR7zwTakV79w==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.0"
     "@formatjs/intl-getcanonicallocales" "1.5.3"
     cldr-core "38"
     tslib "^2.0.1"
 
-"@formatjs/intl-numberformat@6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-6.1.0.tgz#6be67e3defb1436ad9a235190eb27389e27668d0"
-  integrity sha512-4SKhqd20fSxxpFJLkepHBWJNwy/GYSEmX3tNGKXJfYUROYDt/svCaV2pTrf3BmUj5tqxvDQ4K9jZwg4BGcUabQ==
+"@formatjs/intl-numberformat@6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-6.1.1.tgz#43f021d1ea241e5cef883221ee2eaf454d5dfebd"
+  integrity sha512-ne+xoNAYHLvOQTzZ6WPaREDo3VVP2mds9j2NAzoVUn3ozPU2yXRTxPX3Z1hKK5rfMJTq4dBfKL+suhYRpwdB6Q==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
@@ -1647,13 +1647,13 @@
     "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
 
-"@formatjs/intl@1.4.12":
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.4.12.tgz#69a42e1a7cc6317023c87f04cebf1fa223161d88"
-  integrity sha512-o0DC3hq0G7leJ3C2uuXT7dv2ZTJ4Sw2b3k95PkGs+exYOtYAIGCCbY6rTDr8DYTIboZJRCOUYitRiBDHoHX20Q==
+"@formatjs/intl@1.4.13":
+  version "1.4.13"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.4.13.tgz#634e8e7d29385ade5cf7e7c0ba8aae63e585cba0"
+  integrity sha512-GEWwkaNFnskOGGd6gq0Y0RetiH2iNnARXzQ+glR2RqU0xk00aS5KpwkEDo1hN9NaO9fRr9UDvzDoEu9foQFVmA==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.0"
-    "@formatjs/intl-datetimeformat" "3.2.0"
+    "@formatjs/intl-datetimeformat" "3.2.1"
     "@formatjs/intl-displaynames" "4.0.2"
     "@formatjs/intl-listformat" "5.0.2"
     "@formatjs/intl-relativetimeformat" "8.0.1"
@@ -12852,13 +12852,13 @@ react-inspector@^5.0.1:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-intl@5.10.8:
-  version "5.10.8"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.10.8.tgz#658ed51648f9181815299dafa3aaa5d7c67e3519"
-  integrity sha512-XPZZTdYNxorfCeWkZgi5rPmhv9I5nDQnPYJh8JTf2moq0aV6ByqAMI9HZTKXkJBCrbyZ8v5rvYGMLWKhiWS95g==
+react-intl@5.10.9:
+  version "5.10.9"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.10.9.tgz#cab8d9445059d3544cffc762c3e6af47ef9bc8ad"
+  integrity sha512-DfUF4YMlZqaNRfgfvf46AcXxz7pDi7pkxRbQoimUJWEkjep+6QYLlH7ogypysGD1Sl5kbWi7b69bbG7wPqt1vA==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.0"
-    "@formatjs/intl" "1.4.12"
+    "@formatjs/intl" "1.4.13"
     "@formatjs/intl-displaynames" "4.0.2"
     "@formatjs/intl-listformat" "5.0.2"
     "@formatjs/intl-relativetimeformat" "8.0.1"
