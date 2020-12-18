@@ -1613,10 +1613,10 @@
     "@formatjs/ecma402-abstract" "1.5.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-locale@2.4.10":
-  version "2.4.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-locale/-/intl-locale-2.4.10.tgz#7fb33a101d5b8d54296df3456ba30dd6e2c9fec1"
-  integrity sha512-+5e+wv5oAKN0UCWWqZs0c576L/AD9rhj4BG8fzpCo+w63EqOjS/xfQrN/y2AQ0r+xroCI0PPIXHR7zwTakV79w==
+"@formatjs/intl-locale@2.4.11":
+  version "2.4.11"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-locale/-/intl-locale-2.4.11.tgz#bd0f23d5c30410e9e7a336b9fbc44e502bcf190f"
+  integrity sha512-Rus5jUOHWKKX17ZbyNa8tjghMPc3WWXnC8SSqNWWtUIaPkkKvBEfKEcRivzrGEr56NyZa86dcsDzSUb8ldjcsA==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.0"
     "@formatjs/intl-getcanonicallocales" "1.5.3"
