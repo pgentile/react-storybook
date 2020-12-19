@@ -45,7 +45,7 @@
     "@fortawesome/free-brands-svg-icons": "5.15.1",
     "@fortawesome/free-solid-svg-icons": "5.15.1",
     "@fortawesome/react-fontawesome": "0.1.13",
-    "@xstate/react": "1.1.0",
+    "@xstate/react": "1.2.0",
     "card-validator": "8.1.0",
     "core-js": "3.8.1",
     "credit-card-type": "9.1.0",
