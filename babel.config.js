@@ -7,9 +7,8 @@ module.exports = (api) => {
       "@babel/plugin-proposal-optional-chaining",
       "macros",
       [
-        "react-intl",
+        "formatjs",
         {
-          extractSourceLocation: true,
           removeDefaultMessage: false,
           ast: true,
         },
