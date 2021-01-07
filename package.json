@@ -94,7 +94,7 @@
     "@emotion/babel-plugin": "11.1.2",
     "@emotion/eslint-plugin": "11.0.0",
     "@emotion/jest": "11.1.0",
-    "@formatjs/cli": "2.15.0",
+    "@formatjs/cli": "3.0.1",
     "@storybook/addon-a11y": "6.0.28",
     "@storybook/addon-essentials": "6.0.28",
     "@storybook/addon-storyshots": "6.0.28",
