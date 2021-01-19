@@ -11043,10 +11043,10 @@ multimatch@^5.0.0:
     arrify "^2.0.1"
     minimatch "^3.0.4"
 
-mustache@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.0.1.tgz#d99beb031701ad433338e7ea65e0489416c854a2"
-  integrity sha512-yL5VE97+OXn4+Er3THSmTdCFCtx5hHWzrolvH+JObZnUYwuaG7XV+Ch4fR2cIrcYI0tFHxS7iyFYl14bW8y2sA==
+mustache@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.1.0.tgz#8c1b042238a982d2eb2d30efc6c14296ae3f699d"
+  integrity sha512-0FsgP/WVq4mKyjolIyX+Z9Bd+3WS8GOwoUTyKXT5cTYMGeauNTi2HPCwERqseC1IHAy0Z7MDZnJBfjabd4O8GQ==
 
 mute-stream@0.0.6:
   version "0.0.6"
@@ -13387,10 +13387,10 @@ refractor@^2.4.1:
     parse-entities "^1.1.2"
     prismjs "~1.17.0"
 
-reg-cli@0.16.4:
-  version "0.16.4"
-  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.16.4.tgz#bd0f65039c6e7123d24635e0da90a5b18857b1c8"
-  integrity sha512-9kvbvQKudQ1Lq29H33jnC2fOOFN+7BW7ewoH2yUFen58daWtpWPAWLMc9t2LE8rQ3yjg4HUz8cgMYX0D+H+zKw==
+reg-cli@0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.17.0.tgz#1ab0d20e147b83e42f25ea3867820b2f45b9ca57"
+  integrity sha512-d5Mo7nrnoFdOIV0S7cKJxT+OYAwUzAMGJsz3lzNvQLlV7C9tt61DfNCbcKKrOksUH6SsasIosyLLQijiWi5iDg==
   dependencies:
     bluebird "3.7.2"
     chalk "4.1.0"
@@ -13403,7 +13403,7 @@ reg-cli@0.16.4:
     make-dir "3.1.0"
     md5-file "4.0.0"
     meow "3.7.0"
-    mustache "4.0.1"
+    mustache "4.1.0"
     x-img-diff-js "0.3.5"
 
 regenerate-unicode-properties@^8.2.0:
