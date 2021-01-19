@@ -47,7 +47,7 @@
     "@fortawesome/react-fontawesome": "0.1.14",
     "@xstate/react": "1.2.2",
     "card-validator": "8.1.0",
-    "core-js": "3.8.2",
+    "core-js": "3.8.3",
     "credit-card-type": "9.1.0",
     "date-fns": "2.16.1",
     "fast-memoize": "2.5.2",
