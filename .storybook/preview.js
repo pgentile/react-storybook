@@ -1,9 +1,5 @@
 import React from "react";
 
-// Il faut ajouter une variable à l'import pour que la globale
-// regeneratorRuntime soit correctement définie
-import rr from "regenerator-runtime/runtime";
-
 import "../src/styles/global.scss";
 
 export const globalTypes = {

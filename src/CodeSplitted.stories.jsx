@@ -6,6 +6,9 @@ const CodeSplitted = lazy(() => import("./CodeSplitted"));
 
 export default {
   title: "CodeSplitted",
+  parameters: {
+    storyshots: false,
+  },
 };
 
 export const main = () => {

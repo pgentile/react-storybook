@@ -5,21 +5,7 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 module.exports = {
   stories: ["../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
   addons: ["@storybook/addon-essentials", "@storybook/addon-a11y"],
-  babel: async (options) => ({
-    ...options,
-    plugins: [
-      ...options.plugins,
-      [
-        "@babel/plugin-transform-react-jsx",
-        {
-          runtime: "automatic",
-        },
-      ],
-    ],
-  }),
   webpack: async (config, { configType }) => {
-    config.resolve.extensions = [...config.resolve.extensions, ".ts", ".tsx"];
-
     const modulesToTranspile = [
       "query-string",
       "strict-uri-encode",
@@ -32,15 +18,6 @@ module.exports = {
 
     const modulesToTranspilePattern = `[/\\\\]node_modules[/\\\\](${modulesToTranspile.join("|")})[/\\\\]`;
 
-    config.module.rules.unshift({
-      test: /\.tsx?$/,
-      exclude: /node_modules/,
-      use: [
-        {
-          loader: "babel-loader?cacheDirectory",
-        },
-      ],
-    });
     config.module.rules.unshift({
       test: /\.[jt]sx?$/,
       include: [new RegExp(modulesToTranspilePattern), __dirname],
@@ -81,36 +58,9 @@ module.exports = {
       ],
     });
 
-    /*
-    config.module.rules.push({
-      test: /\.(svg|png|jpg|gif)$/,
-      use: [
-        {
-          loader: 'url-loader',
-          options: {
-            limit: 1024 * 8
-          }
-        }
-      ]
-    });
-    */
-
     if (configType === "PRODUCTION") {
       config.devtool = "source-map";
     }
-
-    config.optimization.splitChunks.cacheGroups = {
-      corejs: {
-        test: /[\\/]node_modules[\\/]core-js/,
-        name: "polyfills",
-        chunks: "all",
-      },
-      react: {
-        test: /[\\/]node_modules[\\/](react|react-dom)\//,
-        name: "react",
-        chunks: "all",
-      },
-    };
 
     let productionPlugins = [];
     if (configType === "PRODUCTION") {
