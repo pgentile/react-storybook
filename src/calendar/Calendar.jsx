@@ -1,4 +1,4 @@
-import { createRef, PureComponent } from "react";
+import { useMemo } from "react";
 import PropTypes from "prop-types";
 import {
   startOfMonth,
@@ -14,38 +14,40 @@ import {
   isSameDay,
 } from "date-fns";
 import frLocale from "date-fns/locale/fr";
-import memoizeOne from "memoize-one";
 
 import bemModifiers from "../utils/bemModifiers";
 
 import "./Calendar.scss";
 
-export default class Calendar extends PureComponent {
-  static propTypes = {
-    className: PropTypes.string,
-    viewDate: PropTypes.string,
-    selectedDate: PropTypes.string,
-    minDate: PropTypes.string,
-    maxDate: PropTypes.string,
-    onSelect: PropTypes.func,
-  };
+export default function Calendar({
+  className = "",
+  selectedDate: selectedDateInput,
+  viewDate: viewDateInput,
+  minDate: minDateInput,
+  maxDate: maxDateInput,
+  onSelect,
+}) {
+  const selectedDate = parseDate(selectedDateInput);
+  const viewDate = parseDateOrToday(viewDateInput);
+  const minDate = parseDate(minDateInput);
+  const maxDate = parseDate(maxDateInput);
+  const isDateBetweenMinMax = dateBetween(minDate, maxDate);
 
-  static defaultProps = {
-    className: "",
-  };
+  const weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 
-  ref = createRef();
+  const weekDayRows = weekDays.map((weekDay) => {
+    return (
+      <th key={weekDay} className="calendar__week-day">
+        <abbr className="calendar__week-day-abbr" title={weekDay}>
+          {weekDay.substring(0, 2)}
+        </abbr>
+      </th>
+    );
+  });
 
-  focus() {
-    if (this.ref.current) {
-      const selectedDayElements = this.ref.current.getElementsByClassName("calendar__day--selected");
-      if (selectedDayElements.length > 0) {
-        selectedDayElements[0].focus();
-      }
-    }
-  }
+  const monthFirstDay = useMemo(() => startOfMonth(viewDate), [viewDate]);
 
-  generateDataMemoized = memoizeOne((monthFirstDay) => {
+  const weeksTable = useMemo(() => {
     const monthLastDay = endOfMonth(monthFirstDay);
     const calendarFirstDay = startOfISOWeek(monthFirstDay);
     const calendarLastDay = endOfISOWeek(monthLastDay);
@@ -75,100 +77,76 @@ export default class Calendar extends PureComponent {
     });
 
     return weeks;
-  });
+  }, [monthFirstDay]);
 
-  generateData(selectedDate) {
-    const monthFirstDay = startOfMonth(selectedDate);
-    return this.generateDataMemoized(monthFirstDay);
-  }
-
-  onCellClick = (value) => {
-    if (this.props.onSelect) {
-      this.props.onSelect(value);
+  const onCellClick = (value) => {
+    if (onSelect) {
+      onSelect(value);
     }
   };
 
-  onCellKeyPress = (event, value) => {
+  const onCellKeyPress = (event, value) => {
     if (event.key === "Enter" || event.key === " ") {
-      if (this.props.onSelect) {
-        this.props.onSelect(value);
+      if (onSelect) {
+        onSelect(value);
       }
     }
   };
 
-  render() {
-    const {
-      className,
-      selectedDate: selectedDateInput,
-      viewDate: viewDateInput,
-      minDate: minDateInput,
-      maxDate: maxDateInput,
-      onSelect,
-    } = this.props;
-    const selectedDate = parseDate(selectedDateInput);
-    const viewDate = parseDateOrToday(viewDateInput);
-    const minDate = parseDate(minDateInput);
-    const maxDate = parseDate(maxDateInput);
-    const isDateBetweenMinMax = dateBetween(minDate, maxDate);
+  const rows = weeksTable.map((weekDays, weekIndex) => {
+    const columns = weekDays.map((day) => {
+      const disabled = !isDateBetweenMinMax(day.date);
+      const selectable = !!onSelect && !disabled;
+      const sameDate = isSameDay(day.date, selectedDate);
 
-    const weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
-
-    const weekDayRows = weekDays.map((weekDay) => {
-      return (
-        <th key={weekDay} className="calendar__week-day">
-          <abbr className="calendar__week-day-abbr" title={weekDay}>
-            {weekDay.substring(0, 2)}
-          </abbr>
-        </th>
-      );
-    });
-
-    const rows = this.generateData(viewDate).map((weekDays, weekIndex) => {
-      const columns = weekDays.map((day) => {
-        const disabled = !isDateBetweenMinMax(day.date);
-        const selectable = !!onSelect && !disabled;
-        const sameDate = isSameDay(day.date, selectedDate);
-
-        const dayClassName = bemModifiers("calendar__day", {
-          "current-month": day.currentMonth,
-          selectable: !!onSelect && !disabled,
-          disabled,
-          selected: selectedDate ? sameDate : false,
-        });
-        return (
-          <td
-            key={day.formattedDate}
-            className={dayClassName}
-            onClick={selectable ? () => this.onCellClick(day.formattedDate) : null}
-            onKeyPress={selectable ? (event) => this.onCellKeyPress(event, day.formattedDate) : null}
-            role={!disabled && selectable ? "button" : null}
-            tabIndex={!disabled && selectable ? 0 : null}
-            aria-current={sameDate ? "date" : null}
-            aria-label={day.label}
-          >
-            <time dateTime={day.formattedDate}>{day.dayNumber}</time>
-          </td>
-        );
+      const dayClassName = bemModifiers("calendar__day", {
+        "current-month": day.currentMonth,
+        selectable: !!onSelect && !disabled,
+        disabled,
+        selected: selectedDate ? sameDate : false,
       });
-
       return (
-        <tr key={weekIndex} className="calendar__week">
-          {columns}
-        </tr>
+        <td
+          key={day.formattedDate}
+          className={dayClassName}
+          onClick={selectable ? () => onCellClick(day.formattedDate) : null}
+          onKeyPress={selectable ? (event) => onCellKeyPress(event, day.formattedDate) : null}
+          role="gridcell"
+          tabIndex={!disabled && selectable ? 0 : null}
+          aria-current={sameDate ? "date" : null}
+          aria-label={day.label}
+        >
+          <time dateTime={day.formattedDate}>{day.dayNumber}</time>
+        </td>
       );
     });
 
     return (
-      <table className={"calendar " + className} ref={this.ref}>
-        <caption className="calendar__month">{format(viewDate, "LLLL yyyy", { locale: frLocale })}</caption>
-        <thead className="calendar__week-days">
-          <tr>{weekDayRows}</tr>
-        </thead>
-        <tbody className="calendar__weeks">{rows}</tbody>
-      </table>
+      <tr key={weekIndex} className="calendar__week">
+        {columns}
+      </tr>
     );
-  }
+  });
+
+  return (
+    <table className={"calendar " + className} role="grid">
+      <caption className="calendar__month">{format(viewDate, "LLLL yyyy", { locale: frLocale })}</caption>
+      <thead className="calendar__week-days">
+        <tr>{weekDayRows}</tr>
+      </thead>
+      <tbody className="calendar__weeks">{rows}</tbody>
+    </table>
+  );
 }
+
+Calendar.propTypes = {
+  className: PropTypes.string,
+  viewDate: PropTypes.string,
+  selectedDate: PropTypes.string,
+  minDate: PropTypes.string,
+  maxDate: PropTypes.string,
+  onSelect: PropTypes.func,
+};
 
 function parseDate(date) {
   if (!date) {

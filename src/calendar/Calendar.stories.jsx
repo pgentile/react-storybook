@@ -7,34 +7,50 @@ export default {
   component: Calendar,
 };
 
-export const main = () => {
-  return <Calendar viewDate="2018-07-01" />;
+function Story({ ...args }) {
+  return <Calendar {...args} />;
+}
+
+export const Main = Story.bind({});
+
+Main.args = {
+  viewDate: "2018-07-01",
 };
 
-export const selectedDate = () => {
-  return <Calendar viewDate="2018-07-01" selectedDate="2018-07-22" />;
+export const SelectedDate = Story.bind({});
+
+SelectedDate.args = {
+  viewDate: "2018-07-01",
+  selectedDate: "2018-07-22",
 };
 
-export const selectable = () => {
-  return <Calendar viewDate="2018-07-01" onSelect={action("select")} />;
+export const Selectable = Story.bind({});
+
+Selectable.args = {
+  viewDate: "2018-07-01",
+  onSelect: action("select"),
 };
 
-export const minDate = () => {
-  return <Calendar minDate="2018-07-07" viewDate="2018-07-22" />;
+export const MinDate = Story.bind({});
+
+MinDate.args = {
+  viewDate: "2018-07-22",
+  minDate: "2018-07-07",
 };
 
-export const maxDate = () => {
-  return <Calendar maxDate="2018-07-27" viewDate="2018-07-15" />;
+export const MaxDate = Story.bind({});
+
+MaxDate.args = {
+  viewDate: "2018-07-15",
+  maxDate: "2018-07-27",
 };
 
-export const allOptions = () => {
-  return (
-    <Calendar
-      minDate="2018-06-28"
-      maxDate="2018-07-27"
-      viewDate="2018-07-15"
-      selectedDate="2018-07-23"
-      onSelect={action("select")}
-    />
-  );
+export const AllOptions = Story.bind({});
+
+AllOptions.args = {
+  viewDate: "2018-07-15",
+  selectedDate: "2018-07-23",
+  minDate: "2018-06-28",
+  maxDate: "2018-07-27",
+  onSelect: action("select"),
 };
