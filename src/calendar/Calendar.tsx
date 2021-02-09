@@ -1,5 +1,5 @@
-import { useMemo, useRef, useCallback } from "react";
-import PropTypes from "prop-types";
+import { useMemo, useRef, useCallback, ReactElement } from "react";
+import { string, func } from "prop-types";
 import {
   startOfMonth,
   startOfISOWeek,
@@ -20,6 +20,17 @@ import bemModifiers from "../utils/bemModifiers";
 
 import "./Calendar.scss";
 
+type ISODate = string;
+
+type CalendarProps = {
+  className?: string;
+  selectedDate?: ISODate;
+  viewDate?: ISODate;
+  minDate?: ISODate;
+  maxDate?: ISODate;
+  onSelect: (selectedDate: ISODate) => void;
+};
+
 export default function Calendar({
   className = "",
   selectedDate: selectedDateInput,
@@ -27,7 +38,7 @@ export default function Calendar({
   minDate: minDateInput,
   maxDate: maxDateInput,
   onSelect,
-}) {
+}: CalendarProps): ReactElement {
   const selectedDate = useMemo(() => (selectedDateInput ? parseFromString(selectedDateInput) : null), [
     selectedDateInput,
   ]);
@@ -82,7 +93,7 @@ export default function Calendar({
     return weeks;
   }, [monthFirstDay]);
 
-  const tableRef = useRef();
+  const tableRef = useRef<HTMLTableElement>();
 
   const handleGridKeyDown = useCallback((event) => {
     const keysToHandle = {
@@ -98,14 +109,14 @@ export default function Calendar({
 
       const table = tableRef.current;
       if (table) {
-        const focusElement = table.querySelector(":focus");
+        const focusElement: HTMLTableDataCellElement | undefined = table.querySelector('td[role="gridcell"]:focus');
         if (focusElement?.dataset?.date) {
           const daysShift = keysToHandle[event.key];
           const parsedCurrentDate = parseFromString(focusElement.dataset.date);
           const targetDate = addDays(parsedCurrentDate, daysShift);
 
-          const targetElement = tableRef.current.querySelector(
-            `[role="gridcell"][data-date="${formatToString(targetDate)}"]`
+          const targetElement: HTMLTableDataCellElement | undefined = table.querySelector(
+            `td[role="gridcell"][data-date="${formatToString(targetDate)}"]`
           );
           targetElement?.focus();
         }
@@ -180,12 +191,12 @@ export default function Calendar({
 }
 
 Calendar.propTypes = {
-  className: PropTypes.string,
-  viewDate: PropTypes.string,
-  selectedDate: PropTypes.string,
-  minDate: PropTypes.string,
-  maxDate: PropTypes.string,
-  onSelect: PropTypes.func,
+  className: string,
+  viewDate: string,
+  selectedDate: string,
+  minDate: string,
+  maxDate: string,
+  onSelect: func,
 };
 
 function dateBetween(minDate, maxDate) {
