@@ -9,8 +9,8 @@
     "start": "run-s storybook",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook --output-dir ./build/storybook",
-    "lint:js": "eslint --ext .jsx,.js,.ts,.tsx --ignore-pattern '**/*.d.ts' ./src",
-    "lint:js:fix": "eslint --fix --ext .jsx,.js,.ts,.tsx --ignore-pattern '**/*.d.ts' ./src",
+    "lint:js": "eslint --ext .jsx,.js,.ts,.tsx ./src",
+    "lint:js:fix": "eslint --fix --ext .jsx,.js,.ts,.tsx ./src",
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,scss}'",
     "lint:css": "stylelint --syntax scss 'src/**/*.scss'",
     "lint:css:fix": "stylelint --syntax scss --fix 'src/**/*.scss'",
@@ -154,7 +154,7 @@
   },
   "lint-staged": {
     "yarn.lock": "yarn-deduplicate --list",
-    "*.{js,jsx,ts,tsx}": "eslint --ignore-pattern '**/*.d.ts' --fix",
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
     "*.css": "stylelint --fix",
     "*.scss": "stylelint --syntax scss --fix"
   }

@@ -2,7 +2,8 @@
   "root": true,
   "env": {
     "commonjs": true,
-    "es2020": true
+    "es2020": true,
+    "browser": true
   },
   "parser": "babel-eslint",
   "parserOptions": {
@@ -44,6 +45,7 @@
     "jsx-a11y/no-static-element-interactions": "warn",
     "jsx-a11y/no-noninteractive-element-interactions": "warn"
   },
+  "ignorePatterns": ["*.d.ts"],
   "overrides": [
     {
       "files": ["*.stories.js", "*.stories.jsx", "*.stories.ts", "*.stories.tsx"],
