@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useRef, useCallback } from "react";
 import PropTypes from "prop-types";
 import {
   startOfMonth,
@@ -10,11 +10,12 @@ import {
   isEqual,
   isBefore,
   isAfter,
-  parse,
   isSameDay,
+  addDays,
 } from "date-fns";
 import frLocale from "date-fns/locale/fr";
 
+import { formatToString, parseFromString } from "./utils";
 import bemModifiers from "../utils/bemModifiers";
 
 import "./Calendar.scss";
@@ -27,11 +28,13 @@ export default function Calendar({
   maxDate: maxDateInput,
   onSelect,
 }) {
-  const selectedDate = parseDate(selectedDateInput);
-  const viewDate = parseDateOrToday(viewDateInput);
-  const minDate = parseDate(minDateInput);
-  const maxDate = parseDate(maxDateInput);
-  const isDateBetweenMinMax = dateBetween(minDate, maxDate);
+  const selectedDate = useMemo(() => (selectedDateInput ? parseFromString(selectedDateInput) : null), [
+    selectedDateInput,
+  ]);
+  const viewDate = useMemo(() => (viewDateInput ? parseFromString(viewDateInput) : new Date()), [viewDateInput]);
+  const minDate = useMemo(() => (minDateInput ? parseFromString(minDateInput) : null), [minDateInput]);
+  const maxDate = useMemo(() => (maxDateInput ? parseFromString(maxDateInput) : null), [maxDateInput]);
+  const isDateBetweenMinMax = useMemo(() => dateBetween(minDate, maxDate), [minDate, maxDate]);
 
   const weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 
@@ -60,7 +63,7 @@ export default function Calendar({
     eachDayOfInterval({ start: calendarFirstDay, end: calendarLastDay }).forEach((date) => {
       const day = {
         date,
-        formattedDate: format(date, "yyyy-MM-dd"),
+        formattedDate: formatToString(date),
         label: format(date, "EEEE d MMMM yyyy", { locale: frLocale }),
         dayNumber: format(date, "d"),
         currentMonth: !isBefore(date, monthFirstDay) && !isAfter(date, monthLastDay),
@@ -79,13 +82,44 @@ export default function Calendar({
     return weeks;
   }, [monthFirstDay]);
 
-  const onCellClick = (value) => {
+  const tableRef = useRef();
+
+  const handleGridKeyDown = useCallback((event) => {
+    const keysToHandle = {
+      ArrowUp: -7,
+      ArrowDown: 7,
+      ArrowLeft: -1,
+      ArrowRight: 1,
+    };
+
+    const modifierEnabled = event.altKey || event.ctrlKey || event.metaKey || event.shiftKey;
+    if (keysToHandle[event.key] && !modifierEnabled) {
+      event.preventDefault();
+
+      const table = tableRef.current;
+      if (table) {
+        const focusElement = table.querySelector(":focus");
+        if (focusElement?.dataset?.date) {
+          const daysShift = keysToHandle[event.key];
+          const parsedCurrentDate = parseFromString(focusElement.dataset.date);
+          const targetDate = addDays(parsedCurrentDate, daysShift);
+
+          const targetElement = tableRef.current.querySelector(
+            `[role="gridcell"][data-date="${formatToString(targetDate)}"]`
+          );
+          targetElement?.focus();
+        }
+      }
+    }
+  }, []);
+
+  const handleCellClick = (value) => {
     if (onSelect) {
       onSelect(value);
     }
   };
 
-  const onCellKeyPress = (event, value) => {
+  const handleCellKeyDown = (event, value) => {
     if (event.key === "Enter" || event.key === " ") {
       if (onSelect) {
         onSelect(value);
@@ -109,12 +143,13 @@ export default function Calendar({
         <td
           key={day.formattedDate}
           className={dayClassName}
-          onClick={selectable ? () => onCellClick(day.formattedDate) : null}
-          onKeyPress={selectable ? (event) => onCellKeyPress(event, day.formattedDate) : null}
+          onClick={selectable ? () => handleCellClick(day.formattedDate) : null}
+          onKeyDown={selectable ? (event) => handleCellKeyDown(event, day.formattedDate) : null}
           role="gridcell"
           tabIndex={!disabled && selectable ? 0 : null}
           aria-current={sameDate ? "date" : null}
           aria-label={day.label}
+          data-date={day.formattedDate}
         >
           <time dateTime={day.formattedDate}>{day.dayNumber}</time>
         </td>
@@ -129,7 +164,12 @@ export default function Calendar({
   });
 
   return (
-    <table className={"calendar " + className} role="grid">
+    <table
+      className={"calendar " + className}
+      role="grid"
+      onKeyDown={onSelect ? handleGridKeyDown : null}
+      ref={tableRef}
+    >
       <caption className="calendar__month">{format(viewDate, "LLLL yyyy", { locale: frLocale })}</caption>
       <thead className="calendar__week-days">
         <tr>{weekDayRows}</tr>
@@ -147,21 +187,6 @@ Calendar.propTypes = {
   maxDate: PropTypes.string,
   onSelect: PropTypes.func,
 };
-
-function parseDate(date) {
-  if (!date) {
-    return null;
-  }
-  return parse(date, "yyyy-MM-dd", new Date());
-}
-
-function parseDateOrToday(date) {
-  const parsed = parseDate(date);
-  if (!parsed) {
-    return new Date();
-  }
-  return parsed;
-}
 
 function dateBetween(minDate, maxDate) {
   if (minDate || maxDate) {

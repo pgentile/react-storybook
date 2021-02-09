@@ -42,6 +42,7 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
       >
         <table
           className="calendar date-picker__calendar"
+          onKeyDown={[Function]}
           role="grid"
         >
           <caption
@@ -135,8 +136,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="lundi 1 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-01"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -150,8 +152,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mardi 2 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-02"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -165,8 +168,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mercredi 3 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-03"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -180,8 +184,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="jeudi 4 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-04"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -195,8 +200,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="vendredi 5 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-05"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -210,8 +216,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="samedi 6 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-06"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -225,8 +232,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current="date"
                 aria-label="dimanche 7 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
+                data-date="2018-01-07"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -244,8 +252,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="lundi 8 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-08"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -259,8 +268,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mardi 9 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-09"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -274,8 +284,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mercredi 10 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-10"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -289,8 +300,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="jeudi 11 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-11"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -304,8 +316,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="vendredi 12 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-12"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -319,8 +332,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="samedi 13 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-13"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -334,8 +348,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="dimanche 14 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-14"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -353,8 +368,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="lundi 15 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-15"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -368,8 +384,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mardi 16 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-16"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -383,8 +400,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mercredi 17 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-17"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -398,8 +416,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="jeudi 18 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-18"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -413,8 +432,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="vendredi 19 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-19"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -428,8 +448,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="samedi 20 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-20"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -443,8 +464,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="dimanche 21 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-21"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -462,8 +484,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="lundi 22 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-22"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -477,8 +500,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mardi 23 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-23"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -492,8 +516,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mercredi 24 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-24"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -507,8 +532,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="jeudi 25 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-25"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -522,8 +548,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="vendredi 26 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-26"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -537,8 +564,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="samedi 27 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-27"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -552,8 +580,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="dimanche 28 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-28"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -571,8 +600,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="lundi 29 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-29"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -586,8 +616,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mardi 30 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-30"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -601,8 +632,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="mercredi 31 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-31"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -616,8 +648,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="jeudi 1 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-01"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -631,8 +664,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="vendredi 2 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-02"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -646,8 +680,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="samedi 3 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-03"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -661,8 +696,9 @@ exports[`Storyshots Calendar / DatePicker Demo 1`] = `
                 aria-current={null}
                 aria-label="dimanche 4 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-04"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -750,6 +786,7 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
       >
         <table
           className="calendar date-picker__calendar"
+          onKeyDown={[Function]}
           role="grid"
         >
           <caption
@@ -843,8 +880,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="lundi 1 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-01"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -858,8 +896,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mardi 2 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-02"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -873,8 +912,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mercredi 3 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-03"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -888,8 +928,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="jeudi 4 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-04"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -903,8 +944,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="vendredi 5 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-05"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -918,8 +960,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="samedi 6 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-06"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -933,8 +976,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current="date"
                 aria-label="dimanche 7 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable calendar__day--selected"
+                data-date="2018-01-07"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -952,8 +996,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="lundi 8 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-08"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -967,8 +1012,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mardi 9 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-09"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -982,8 +1028,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mercredi 10 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-10"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -997,8 +1044,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="jeudi 11 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-11"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1012,8 +1060,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="vendredi 12 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-12"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1027,8 +1076,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="samedi 13 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-13"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1042,8 +1092,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="dimanche 14 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-14"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1061,8 +1112,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="lundi 15 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-15"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1076,8 +1128,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mardi 16 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-16"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1091,8 +1144,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mercredi 17 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-17"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1106,8 +1160,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="jeudi 18 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-18"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1121,8 +1176,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="vendredi 19 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-19"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1136,8 +1192,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="samedi 20 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-20"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1151,8 +1208,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="dimanche 21 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-21"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1170,8 +1228,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="lundi 22 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-22"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1185,8 +1244,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mardi 23 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-23"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1200,8 +1260,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mercredi 24 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-24"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1215,8 +1276,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="jeudi 25 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-25"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1230,8 +1292,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="vendredi 26 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-26"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1245,8 +1308,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="samedi 27 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-27"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1260,8 +1324,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="dimanche 28 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-28"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1279,8 +1344,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="lundi 29 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-29"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1294,8 +1360,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mardi 30 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-30"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1309,8 +1376,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="mercredi 31 janvier 2018"
                 className="calendar__day calendar__day--current-month calendar__day--selectable"
+                data-date="2018-01-31"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1324,8 +1392,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="jeudi 1 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-01"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1339,8 +1408,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="vendredi 2 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-02"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1354,8 +1424,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="samedi 3 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-03"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
@@ -1369,8 +1440,9 @@ exports[`Storyshots Calendar / DatePicker Main 1`] = `
                 aria-current={null}
                 aria-label="dimanche 4 février 2018"
                 className="calendar__day calendar__day--selectable"
+                data-date="2018-02-04"
                 onClick={[Function]}
-                onKeyPress={[Function]}
+                onKeyDown={[Function]}
                 role="gridcell"
                 tabIndex={0}
               >
