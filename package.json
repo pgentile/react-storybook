@@ -81,12 +81,12 @@
     "xstate": "4.16.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.12.13",
-    "@babel/core": "7.12.13",
-    "@babel/plugin-transform-react-jsx": "7.12.13",
-    "@babel/preset-env": "7.12.13",
+    "@babel/cli": "7.12.16",
+    "@babel/core": "7.12.16",
+    "@babel/plugin-transform-react-jsx": "7.12.16",
+    "@babel/preset-env": "7.12.16",
     "@babel/preset-react": "7.12.13",
-    "@babel/preset-typescript": "7.12.13",
+    "@babel/preset-typescript": "7.12.16",
     "@emotion/babel-plugin": "11.2.0",
     "@emotion/eslint-plugin": "11.2.0",
     "@emotion/jest": "11.2.0",
