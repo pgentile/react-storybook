@@ -113,7 +113,7 @@
     "cssnano": "4.1.10",
     "es-check": "5.2.0",
     "eslint": "7.20.0",
-    "eslint-config-prettier": "7.2.0",
+    "eslint-config-prettier": "8.0.0",
     "eslint-plugin-compat": "3.9.0",
     "eslint-plugin-formatjs": "2.12.3",
     "eslint-plugin-jest": "24.1.5",
