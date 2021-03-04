@@ -54,7 +54,7 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
               <caption
                 className="calendar__month"
               >
-                février 2021
+                mars 2021
               </caption>
               <thead
                 className="calendar__week-days"
@@ -140,112 +140,112 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 1 février 2021"
+                    aria-label="lundi 1 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-01"
+                    data-date="2021-03-01"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-01"
+                      dateTime="2021-03-01"
                     >
                       1
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 2 février 2021"
+                    aria-label="mardi 2 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-02"
+                    data-date="2021-03-02"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-02"
+                      dateTime="2021-03-02"
                     >
                       2
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 3 février 2021"
+                    aria-label="mercredi 3 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-03"
+                    data-date="2021-03-03"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-03"
+                      dateTime="2021-03-03"
                     >
                       3
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 4 février 2021"
+                    aria-label="jeudi 4 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-04"
+                    data-date="2021-03-04"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-04"
+                      dateTime="2021-03-04"
                     >
                       4
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 5 février 2021"
+                    aria-label="vendredi 5 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-05"
+                    data-date="2021-03-05"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-05"
+                      dateTime="2021-03-05"
                     >
                       5
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 6 février 2021"
+                    aria-label="samedi 6 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-06"
+                    data-date="2021-03-06"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-06"
+                      dateTime="2021-03-06"
                     >
                       6
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 7 février 2021"
+                    aria-label="dimanche 7 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-07"
+                    data-date="2021-03-07"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-07"
+                      dateTime="2021-03-07"
                     >
                       7
                     </time>
@@ -256,112 +256,112 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 8 février 2021"
+                    aria-label="lundi 8 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-08"
+                    data-date="2021-03-08"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-08"
+                      dateTime="2021-03-08"
                     >
                       8
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 9 février 2021"
+                    aria-label="mardi 9 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-09"
+                    data-date="2021-03-09"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-09"
+                      dateTime="2021-03-09"
                     >
                       9
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 10 février 2021"
+                    aria-label="mercredi 10 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-10"
+                    data-date="2021-03-10"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-10"
+                      dateTime="2021-03-10"
                     >
                       10
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 11 février 2021"
+                    aria-label="jeudi 11 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-11"
+                    data-date="2021-03-11"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-11"
+                      dateTime="2021-03-11"
                     >
                       11
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 12 février 2021"
+                    aria-label="vendredi 12 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-12"
+                    data-date="2021-03-12"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-12"
+                      dateTime="2021-03-12"
                     >
                       12
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 13 février 2021"
+                    aria-label="samedi 13 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-13"
+                    data-date="2021-03-13"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-13"
+                      dateTime="2021-03-13"
                     >
                       13
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 14 février 2021"
+                    aria-label="dimanche 14 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-14"
+                    data-date="2021-03-14"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-14"
+                      dateTime="2021-03-14"
                     >
                       14
                     </time>
@@ -372,112 +372,112 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 15 février 2021"
+                    aria-label="lundi 15 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-15"
+                    data-date="2021-03-15"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-15"
+                      dateTime="2021-03-15"
                     >
                       15
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 16 février 2021"
+                    aria-label="mardi 16 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-16"
+                    data-date="2021-03-16"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-16"
+                      dateTime="2021-03-16"
                     >
                       16
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 17 février 2021"
+                    aria-label="mercredi 17 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-17"
+                    data-date="2021-03-17"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-17"
+                      dateTime="2021-03-17"
                     >
                       17
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 18 février 2021"
+                    aria-label="jeudi 18 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-18"
+                    data-date="2021-03-18"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-18"
+                      dateTime="2021-03-18"
                     >
                       18
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 19 février 2021"
+                    aria-label="vendredi 19 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-19"
+                    data-date="2021-03-19"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-19"
+                      dateTime="2021-03-19"
                     >
                       19
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 20 février 2021"
+                    aria-label="samedi 20 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-20"
+                    data-date="2021-03-20"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-20"
+                      dateTime="2021-03-20"
                     >
                       20
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 21 février 2021"
+                    aria-label="dimanche 21 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-21"
+                    data-date="2021-03-21"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-21"
+                      dateTime="2021-03-21"
                     >
                       21
                     </time>
@@ -488,114 +488,230 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 22 février 2021"
+                    aria-label="lundi 22 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-22"
+                    data-date="2021-03-22"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-22"
+                      dateTime="2021-03-22"
                     >
                       22
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 23 février 2021"
+                    aria-label="mardi 23 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-23"
+                    data-date="2021-03-23"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-23"
+                      dateTime="2021-03-23"
                     >
                       23
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 24 février 2021"
+                    aria-label="mercredi 24 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-24"
+                    data-date="2021-03-24"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-24"
+                      dateTime="2021-03-24"
                     >
                       24
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 25 février 2021"
+                    aria-label="jeudi 25 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-25"
+                    data-date="2021-03-25"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-25"
+                      dateTime="2021-03-25"
                     >
                       25
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 26 février 2021"
+                    aria-label="vendredi 26 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-26"
+                    data-date="2021-03-26"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-26"
+                      dateTime="2021-03-26"
                     >
                       26
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 27 février 2021"
+                    aria-label="samedi 27 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-27"
+                    data-date="2021-03-27"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-27"
+                      dateTime="2021-03-27"
                     >
                       27
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 28 février 2021"
+                    aria-label="dimanche 28 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-28"
+                    data-date="2021-03-28"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-28"
+                      dateTime="2021-03-28"
                     >
                       28
+                    </time>
+                  </td>
+                </tr>
+                <tr
+                  className="calendar__week"
+                >
+                  <td
+                    aria-current={null}
+                    aria-label="lundi 29 mars 2021"
+                    className="calendar__day calendar__day--current-month calendar__day--selectable"
+                    data-date="2021-03-29"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-03-29"
+                    >
+                      29
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="mardi 30 mars 2021"
+                    className="calendar__day calendar__day--current-month calendar__day--selectable"
+                    data-date="2021-03-30"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-03-30"
+                    >
+                      30
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="mercredi 31 mars 2021"
+                    className="calendar__day calendar__day--current-month calendar__day--selectable"
+                    data-date="2021-03-31"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-03-31"
+                    >
+                      31
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="jeudi 1 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-01"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-01"
+                    >
+                      1
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="vendredi 2 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-02"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-02"
+                    >
+                      2
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="samedi 3 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-03"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-03"
+                    >
+                      3
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="dimanche 4 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-04"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-04"
+                    >
+                      4
                     </time>
                   </td>
                 </tr>
@@ -675,7 +791,7 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
               <caption
                 className="calendar__month"
               >
-                février 2021
+                mars 2021
               </caption>
               <thead
                 className="calendar__week-days"
@@ -761,112 +877,112 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 1 février 2021"
+                    aria-label="lundi 1 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-01"
+                    data-date="2021-03-01"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-01"
+                      dateTime="2021-03-01"
                     >
                       1
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 2 février 2021"
+                    aria-label="mardi 2 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-02"
+                    data-date="2021-03-02"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-02"
+                      dateTime="2021-03-02"
                     >
                       2
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 3 février 2021"
+                    aria-label="mercredi 3 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-03"
+                    data-date="2021-03-03"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-03"
+                      dateTime="2021-03-03"
                     >
                       3
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 4 février 2021"
+                    aria-label="jeudi 4 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-04"
+                    data-date="2021-03-04"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-04"
+                      dateTime="2021-03-04"
                     >
                       4
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 5 février 2021"
+                    aria-label="vendredi 5 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-05"
+                    data-date="2021-03-05"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-05"
+                      dateTime="2021-03-05"
                     >
                       5
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 6 février 2021"
+                    aria-label="samedi 6 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-06"
+                    data-date="2021-03-06"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-06"
+                      dateTime="2021-03-06"
                     >
                       6
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 7 février 2021"
+                    aria-label="dimanche 7 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-07"
+                    data-date="2021-03-07"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-07"
+                      dateTime="2021-03-07"
                     >
                       7
                     </time>
@@ -877,112 +993,112 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 8 février 2021"
+                    aria-label="lundi 8 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-08"
+                    data-date="2021-03-08"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-08"
+                      dateTime="2021-03-08"
                     >
                       8
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 9 février 2021"
+                    aria-label="mardi 9 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-09"
+                    data-date="2021-03-09"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-09"
+                      dateTime="2021-03-09"
                     >
                       9
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 10 février 2021"
+                    aria-label="mercredi 10 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-10"
+                    data-date="2021-03-10"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-10"
+                      dateTime="2021-03-10"
                     >
                       10
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 11 février 2021"
+                    aria-label="jeudi 11 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-11"
+                    data-date="2021-03-11"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-11"
+                      dateTime="2021-03-11"
                     >
                       11
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 12 février 2021"
+                    aria-label="vendredi 12 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-12"
+                    data-date="2021-03-12"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-12"
+                      dateTime="2021-03-12"
                     >
                       12
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 13 février 2021"
+                    aria-label="samedi 13 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-13"
+                    data-date="2021-03-13"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-13"
+                      dateTime="2021-03-13"
                     >
                       13
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 14 février 2021"
+                    aria-label="dimanche 14 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-14"
+                    data-date="2021-03-14"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-14"
+                      dateTime="2021-03-14"
                     >
                       14
                     </time>
@@ -993,112 +1109,112 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 15 février 2021"
+                    aria-label="lundi 15 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-15"
+                    data-date="2021-03-15"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-15"
+                      dateTime="2021-03-15"
                     >
                       15
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 16 février 2021"
+                    aria-label="mardi 16 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-16"
+                    data-date="2021-03-16"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-16"
+                      dateTime="2021-03-16"
                     >
                       16
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 17 février 2021"
+                    aria-label="mercredi 17 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-17"
+                    data-date="2021-03-17"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-17"
+                      dateTime="2021-03-17"
                     >
                       17
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 18 février 2021"
+                    aria-label="jeudi 18 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-18"
+                    data-date="2021-03-18"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-18"
+                      dateTime="2021-03-18"
                     >
                       18
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 19 février 2021"
+                    aria-label="vendredi 19 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-19"
+                    data-date="2021-03-19"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-19"
+                      dateTime="2021-03-19"
                     >
                       19
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 20 février 2021"
+                    aria-label="samedi 20 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-20"
+                    data-date="2021-03-20"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-20"
+                      dateTime="2021-03-20"
                     >
                       20
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 21 février 2021"
+                    aria-label="dimanche 21 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-21"
+                    data-date="2021-03-21"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-21"
+                      dateTime="2021-03-21"
                     >
                       21
                     </time>
@@ -1109,114 +1225,230 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                 >
                   <td
                     aria-current={null}
-                    aria-label="lundi 22 février 2021"
+                    aria-label="lundi 22 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-22"
+                    data-date="2021-03-22"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-22"
+                      dateTime="2021-03-22"
                     >
                       22
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mardi 23 février 2021"
+                    aria-label="mardi 23 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-23"
+                    data-date="2021-03-23"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-23"
+                      dateTime="2021-03-23"
                     >
                       23
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="mercredi 24 février 2021"
+                    aria-label="mercredi 24 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-24"
+                    data-date="2021-03-24"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-24"
+                      dateTime="2021-03-24"
                     >
                       24
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="jeudi 25 février 2021"
+                    aria-label="jeudi 25 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-25"
+                    data-date="2021-03-25"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-25"
+                      dateTime="2021-03-25"
                     >
                       25
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="vendredi 26 février 2021"
+                    aria-label="vendredi 26 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-26"
+                    data-date="2021-03-26"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-26"
+                      dateTime="2021-03-26"
                     >
                       26
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="samedi 27 février 2021"
+                    aria-label="samedi 27 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-27"
+                    data-date="2021-03-27"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-27"
+                      dateTime="2021-03-27"
                     >
                       27
                     </time>
                   </td>
                   <td
                     aria-current={null}
-                    aria-label="dimanche 28 février 2021"
+                    aria-label="dimanche 28 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
-                    data-date="2021-02-28"
+                    data-date="2021-03-28"
                     onClick={[Function]}
                     onKeyDown={[Function]}
                     role="gridcell"
                     tabIndex={0}
                   >
                     <time
-                      dateTime="2021-02-28"
+                      dateTime="2021-03-28"
                     >
                       28
+                    </time>
+                  </td>
+                </tr>
+                <tr
+                  className="calendar__week"
+                >
+                  <td
+                    aria-current={null}
+                    aria-label="lundi 29 mars 2021"
+                    className="calendar__day calendar__day--current-month calendar__day--selectable"
+                    data-date="2021-03-29"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-03-29"
+                    >
+                      29
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="mardi 30 mars 2021"
+                    className="calendar__day calendar__day--current-month calendar__day--selectable"
+                    data-date="2021-03-30"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-03-30"
+                    >
+                      30
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="mercredi 31 mars 2021"
+                    className="calendar__day calendar__day--current-month calendar__day--selectable"
+                    data-date="2021-03-31"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-03-31"
+                    >
+                      31
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="jeudi 1 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-01"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-01"
+                    >
+                      1
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="vendredi 2 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-02"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-02"
+                    >
+                      2
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="samedi 3 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-03"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-03"
+                    >
+                      3
+                    </time>
+                  </td>
+                  <td
+                    aria-current={null}
+                    aria-label="dimanche 4 avril 2021"
+                    className="calendar__day calendar__day--selectable"
+                    data-date="2021-04-04"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="gridcell"
+                    tabIndex={0}
+                  >
+                    <time
+                      dateTime="2021-04-04"
+                    >
+                      4
                     </time>
                   </td>
                 </tr>
