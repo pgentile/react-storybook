@@ -73,6 +73,22 @@ exports[`Storyshots OwnerForm / OwnerForm Main 1`] = `
       >
         Envoyer
       </button>
+      <button
+        className="button button--size-normal "
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Reset
+      </button>
+      <button
+        className="button button--size-normal "
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Restart
+      </button>
     </form>
   </div>
 </div>

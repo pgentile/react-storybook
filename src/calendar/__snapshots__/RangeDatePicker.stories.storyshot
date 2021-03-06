@@ -139,7 +139,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 1 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-01"
@@ -155,7 +154,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 2 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-02"
@@ -171,7 +169,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 3 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-03"
@@ -187,7 +184,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 4 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-04"
@@ -203,7 +199,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 5 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-05"
@@ -219,7 +214,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 6 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-06"
@@ -235,7 +229,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 7 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-07"
@@ -255,7 +248,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 8 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-08"
@@ -271,7 +263,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 9 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-09"
@@ -287,7 +278,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 10 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-10"
@@ -303,7 +293,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 11 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-11"
@@ -319,7 +308,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 12 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-12"
@@ -335,7 +323,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 13 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-13"
@@ -351,7 +338,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 14 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-14"
@@ -371,7 +357,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 15 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-15"
@@ -387,7 +372,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 16 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-16"
@@ -403,7 +387,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 17 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-17"
@@ -419,7 +402,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 18 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-18"
@@ -435,7 +417,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 19 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-19"
@@ -451,7 +432,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 20 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-20"
@@ -467,7 +447,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 21 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-21"
@@ -487,7 +466,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 22 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-22"
@@ -503,7 +481,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 23 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-23"
@@ -519,7 +496,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 24 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-24"
@@ -535,7 +511,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 25 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-25"
@@ -551,7 +526,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 26 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-26"
@@ -567,7 +541,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 27 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-27"
@@ -583,7 +556,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 28 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-28"
@@ -603,7 +575,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 29 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-29"
@@ -619,7 +590,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 30 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-30"
@@ -635,7 +605,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 31 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-31"
@@ -651,7 +620,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 1 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-01"
@@ -667,7 +635,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 2 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-02"
@@ -683,7 +650,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 3 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-03"
@@ -699,7 +665,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 4 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-04"
@@ -876,7 +841,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 1 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-01"
@@ -892,7 +856,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 2 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-02"
@@ -908,7 +871,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 3 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-03"
@@ -924,7 +886,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 4 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-04"
@@ -940,7 +901,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 5 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-05"
@@ -956,7 +916,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 6 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-06"
@@ -972,7 +931,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 7 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-07"
@@ -992,7 +950,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 8 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-08"
@@ -1008,7 +965,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 9 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-09"
@@ -1024,7 +980,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 10 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-10"
@@ -1040,7 +995,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 11 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-11"
@@ -1056,7 +1010,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 12 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-12"
@@ -1072,7 +1025,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 13 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-13"
@@ -1088,7 +1040,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 14 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-14"
@@ -1108,7 +1059,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 15 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-15"
@@ -1124,7 +1074,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 16 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-16"
@@ -1140,7 +1089,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 17 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-17"
@@ -1156,7 +1104,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 18 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-18"
@@ -1172,7 +1119,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 19 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-19"
@@ -1188,7 +1134,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 20 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-20"
@@ -1204,7 +1149,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 21 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-21"
@@ -1224,7 +1168,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 22 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-22"
@@ -1240,7 +1183,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 23 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-23"
@@ -1256,7 +1198,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 24 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-24"
@@ -1272,7 +1213,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 25 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-25"
@@ -1288,7 +1228,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 26 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-26"
@@ -1304,7 +1243,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 27 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-27"
@@ -1320,7 +1258,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 28 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-28"
@@ -1340,7 +1277,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                   className="calendar__week"
                 >
                   <td
-                    aria-current={null}
                     aria-label="lundi 29 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-29"
@@ -1356,7 +1292,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mardi 30 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-30"
@@ -1372,7 +1307,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="mercredi 31 mars 2021"
                     className="calendar__day calendar__day--current-month calendar__day--selectable"
                     data-date="2021-03-31"
@@ -1388,7 +1322,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="jeudi 1 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-01"
@@ -1404,7 +1337,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="vendredi 2 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-02"
@@ -1420,7 +1352,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="samedi 3 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-03"
@@ -1436,7 +1367,6 @@ exports[`Storyshots Calendar / RangeDatePicker Main 1`] = `
                     </time>
                   </td>
                   <td
-                    aria-current={null}
                     aria-label="dimanche 4 avril 2021"
                     className="calendar__day calendar__day--selectable"
                     data-date="2021-04-04"

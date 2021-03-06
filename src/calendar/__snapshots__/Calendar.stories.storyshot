@@ -100,14 +100,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 25 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-25"
@@ -116,14 +112,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 26 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-26"
@@ -132,14 +124,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 27 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-27"
@@ -148,7 +136,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 28 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-28"
@@ -164,7 +151,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 29 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-29"
@@ -180,7 +166,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 30 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-30"
@@ -196,7 +181,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 1 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-01"
@@ -216,7 +200,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 2 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-02"
@@ -232,7 +215,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 3 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-03"
@@ -248,7 +230,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 4 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-04"
@@ -264,7 +245,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 5 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-05"
@@ -280,7 +260,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 6 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-06"
@@ -296,7 +275,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 7 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-07"
@@ -312,7 +290,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 8 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-08"
@@ -332,7 +309,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 9 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-09"
@@ -348,7 +324,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 10 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-10"
@@ -364,7 +339,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 11 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-11"
@@ -380,7 +354,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 12 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-12"
@@ -396,7 +369,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 13 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-13"
@@ -412,7 +384,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 14 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-14"
@@ -428,7 +399,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 15 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-15"
@@ -448,7 +418,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 16 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-16"
@@ -464,7 +433,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 17 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-17"
@@ -480,7 +448,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 18 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-18"
@@ -496,7 +463,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 19 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-19"
@@ -512,7 +478,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 20 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-20"
@@ -528,7 +493,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 21 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-21"
@@ -544,7 +508,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 22 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-22"
@@ -580,7 +543,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 24 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-24"
@@ -596,7 +558,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 25 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-25"
@@ -612,7 +573,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 26 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-26"
@@ -628,7 +588,6 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 27 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-27"
@@ -644,14 +603,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 28 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-28"
@@ -660,14 +615,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 29 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-29"
@@ -680,14 +631,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 30 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-30"
@@ -696,14 +643,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 31 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-31"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-31"
@@ -712,14 +655,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 1 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-01"
@@ -728,14 +667,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 2 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-02"
@@ -744,14 +679,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 3 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-03"
@@ -760,14 +691,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 4 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-04"
@@ -776,14 +703,10 @@ exports[`Storyshots Calendar / Calendar All Options 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 5 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-05"
@@ -807,7 +730,6 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
   >
     <table
       className="calendar "
-      onKeyDown={null}
       role="grid"
     >
       <caption
@@ -898,14 +820,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 25 juin 2018"
             className="calendar__day"
             data-date="2018-06-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-25"
@@ -914,14 +832,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 26 juin 2018"
             className="calendar__day"
             data-date="2018-06-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-26"
@@ -930,14 +844,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 27 juin 2018"
             className="calendar__day"
             data-date="2018-06-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-27"
@@ -946,14 +856,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 28 juin 2018"
             className="calendar__day"
             data-date="2018-06-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-28"
@@ -962,14 +868,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 29 juin 2018"
             className="calendar__day"
             data-date="2018-06-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-29"
@@ -978,14 +880,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 30 juin 2018"
             className="calendar__day"
             data-date="2018-06-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-30"
@@ -994,14 +892,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 1 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-01"
@@ -1014,14 +908,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 2 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-02"
@@ -1030,14 +920,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 3 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-03"
@@ -1046,14 +932,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 4 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-04"
@@ -1062,14 +944,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 5 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-05"
@@ -1078,14 +956,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 6 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-06"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-06"
@@ -1094,14 +968,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 7 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-07"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-07"
@@ -1110,14 +980,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 8 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-08"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-08"
@@ -1130,14 +996,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 9 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-09"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-09"
@@ -1146,14 +1008,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 10 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-10"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-10"
@@ -1162,14 +1020,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 11 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-11"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-11"
@@ -1178,14 +1032,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 12 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-12"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-12"
@@ -1194,14 +1044,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 13 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-13"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-13"
@@ -1210,14 +1056,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 14 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-14"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-14"
@@ -1226,14 +1068,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 15 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-15"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-15"
@@ -1246,14 +1084,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 16 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-16"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-16"
@@ -1262,14 +1096,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 17 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-17"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-17"
@@ -1278,14 +1108,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 18 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-18"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-18"
@@ -1294,14 +1120,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 19 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-19"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-19"
@@ -1310,14 +1132,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 20 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-20"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-20"
@@ -1326,14 +1144,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 21 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-21"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-21"
@@ -1342,14 +1156,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 22 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-22"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-22"
@@ -1362,14 +1172,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 23 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-23"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-23"
@@ -1378,14 +1184,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 24 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-24"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-24"
@@ -1394,14 +1196,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 25 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-25"
@@ -1410,14 +1208,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 26 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-26"
@@ -1426,14 +1220,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 27 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-27"
@@ -1442,14 +1232,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 28 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-28"
@@ -1458,14 +1244,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 29 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-29"
@@ -1478,14 +1260,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 30 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-30"
@@ -1494,14 +1272,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 31 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-31"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-31"
@@ -1510,14 +1284,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 1 août 2018"
             className="calendar__day"
             data-date="2018-08-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-01"
@@ -1526,14 +1296,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 2 août 2018"
             className="calendar__day"
             data-date="2018-08-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-02"
@@ -1542,14 +1308,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 3 août 2018"
             className="calendar__day"
             data-date="2018-08-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-03"
@@ -1558,14 +1320,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 4 août 2018"
             className="calendar__day"
             data-date="2018-08-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-04"
@@ -1574,14 +1332,10 @@ exports[`Storyshots Calendar / Calendar Main 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 5 août 2018"
             className="calendar__day"
             data-date="2018-08-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-05"
@@ -1605,7 +1359,6 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
   >
     <table
       className="calendar "
-      onKeyDown={null}
       role="grid"
     >
       <caption
@@ -1696,14 +1449,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 25 juin 2018"
             className="calendar__day"
             data-date="2018-06-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-25"
@@ -1712,14 +1461,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 26 juin 2018"
             className="calendar__day"
             data-date="2018-06-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-26"
@@ -1728,14 +1473,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 27 juin 2018"
             className="calendar__day"
             data-date="2018-06-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-27"
@@ -1744,14 +1485,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 28 juin 2018"
             className="calendar__day"
             data-date="2018-06-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-28"
@@ -1760,14 +1497,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 29 juin 2018"
             className="calendar__day"
             data-date="2018-06-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-29"
@@ -1776,14 +1509,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 30 juin 2018"
             className="calendar__day"
             data-date="2018-06-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-30"
@@ -1792,14 +1521,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 1 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-01"
@@ -1812,14 +1537,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 2 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-02"
@@ -1828,14 +1549,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 3 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-03"
@@ -1844,14 +1561,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 4 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-04"
@@ -1860,14 +1573,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 5 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-05"
@@ -1876,14 +1585,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 6 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-06"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-06"
@@ -1892,14 +1597,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 7 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-07"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-07"
@@ -1908,14 +1609,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 8 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-08"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-08"
@@ -1928,14 +1625,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 9 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-09"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-09"
@@ -1944,14 +1637,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 10 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-10"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-10"
@@ -1960,14 +1649,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 11 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-11"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-11"
@@ -1976,14 +1661,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 12 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-12"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-12"
@@ -1992,14 +1673,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 13 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-13"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-13"
@@ -2008,14 +1685,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 14 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-14"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-14"
@@ -2024,14 +1697,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 15 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-15"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-15"
@@ -2044,14 +1713,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 16 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-16"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-16"
@@ -2060,14 +1725,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 17 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-17"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-17"
@@ -2076,14 +1737,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 18 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-18"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-18"
@@ -2092,14 +1749,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 19 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-19"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-19"
@@ -2108,14 +1761,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 20 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-20"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-20"
@@ -2124,14 +1773,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 21 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-21"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-21"
@@ -2140,14 +1785,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 22 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-22"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-22"
@@ -2160,14 +1801,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 23 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-23"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-23"
@@ -2176,14 +1813,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 24 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-24"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-24"
@@ -2192,14 +1825,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 25 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-25"
@@ -2208,14 +1837,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 26 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-26"
@@ -2224,14 +1849,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 27 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-27"
@@ -2240,14 +1861,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 28 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-28"
@@ -2256,14 +1873,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 29 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-29"
@@ -2276,14 +1889,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 30 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-30"
@@ -2292,14 +1901,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 31 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-31"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-31"
@@ -2308,14 +1913,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 1 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-01"
@@ -2324,14 +1925,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 2 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-02"
@@ -2340,14 +1937,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 3 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-03"
@@ -2356,14 +1949,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 4 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-04"
@@ -2372,14 +1961,10 @@ exports[`Storyshots Calendar / Calendar Max Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 5 août 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-08-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-05"
@@ -2403,7 +1988,6 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
   >
     <table
       className="calendar "
-      onKeyDown={null}
       role="grid"
     >
       <caption
@@ -2494,14 +2078,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 25 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-25"
@@ -2510,14 +2090,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 26 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-26"
@@ -2526,14 +2102,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 27 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-27"
@@ -2542,14 +2114,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 28 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-28"
@@ -2558,14 +2126,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 29 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-29"
@@ -2574,14 +2138,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 30 juin 2018"
             className="calendar__day calendar__day--disabled"
             data-date="2018-06-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-30"
@@ -2590,14 +2150,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 1 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-01"
@@ -2610,14 +2166,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 2 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-02"
@@ -2626,14 +2178,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 3 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-03"
@@ -2642,14 +2190,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 4 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-04"
@@ -2658,14 +2202,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 5 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-05"
@@ -2674,14 +2214,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 6 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--disabled"
             data-date="2018-07-06"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-06"
@@ -2690,14 +2226,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 7 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-07"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-07"
@@ -2706,14 +2238,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 8 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-08"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-08"
@@ -2726,14 +2254,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 9 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-09"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-09"
@@ -2742,14 +2266,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 10 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-10"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-10"
@@ -2758,14 +2278,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 11 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-11"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-11"
@@ -2774,14 +2290,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 12 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-12"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-12"
@@ -2790,14 +2302,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 13 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-13"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-13"
@@ -2806,14 +2314,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 14 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-14"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-14"
@@ -2822,14 +2326,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 15 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-15"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-15"
@@ -2842,14 +2342,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 16 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-16"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-16"
@@ -2858,14 +2354,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 17 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-17"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-17"
@@ -2874,14 +2366,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 18 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-18"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-18"
@@ -2890,14 +2378,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 19 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-19"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-19"
@@ -2906,14 +2390,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 20 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-20"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-20"
@@ -2922,14 +2402,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 21 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-21"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-21"
@@ -2938,14 +2414,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 22 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-22"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-22"
@@ -2958,14 +2430,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 23 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-23"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-23"
@@ -2974,14 +2442,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 24 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-24"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-24"
@@ -2990,14 +2454,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 25 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-25"
@@ -3006,14 +2466,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 26 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-26"
@@ -3022,14 +2478,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 27 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-27"
@@ -3038,14 +2490,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 28 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-28"
@@ -3054,14 +2502,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 29 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-29"
@@ -3074,14 +2518,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 30 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-30"
@@ -3090,14 +2530,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 31 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-31"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-31"
@@ -3106,14 +2542,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 1 août 2018"
             className="calendar__day"
             data-date="2018-08-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-01"
@@ -3122,14 +2554,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 2 août 2018"
             className="calendar__day"
             data-date="2018-08-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-02"
@@ -3138,14 +2566,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 3 août 2018"
             className="calendar__day"
             data-date="2018-08-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-03"
@@ -3154,14 +2578,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 4 août 2018"
             className="calendar__day"
             data-date="2018-08-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-04"
@@ -3170,14 +2590,10 @@ exports[`Storyshots Calendar / Calendar Min Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 5 août 2018"
             className="calendar__day"
             data-date="2018-08-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-05"
@@ -3292,7 +2708,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 25 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-25"
@@ -3308,7 +2723,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 26 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-26"
@@ -3324,7 +2738,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 27 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-27"
@@ -3340,7 +2753,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 28 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-28"
@@ -3356,7 +2768,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 29 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-29"
@@ -3372,7 +2783,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 30 juin 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-06-30"
@@ -3388,7 +2798,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 1 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-01"
@@ -3408,7 +2817,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 2 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-02"
@@ -3424,7 +2832,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 3 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-03"
@@ -3440,7 +2847,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 4 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-04"
@@ -3456,7 +2862,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 5 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-05"
@@ -3472,7 +2877,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 6 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-06"
@@ -3488,7 +2892,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 7 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-07"
@@ -3504,7 +2907,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 8 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-08"
@@ -3524,7 +2926,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 9 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-09"
@@ -3540,7 +2941,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 10 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-10"
@@ -3556,7 +2956,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 11 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-11"
@@ -3572,7 +2971,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 12 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-12"
@@ -3588,7 +2986,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 13 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-13"
@@ -3604,7 +3001,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 14 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-14"
@@ -3620,7 +3016,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 15 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-15"
@@ -3640,7 +3035,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 16 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-16"
@@ -3656,7 +3050,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 17 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-17"
@@ -3672,7 +3065,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 18 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-18"
@@ -3688,7 +3080,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 19 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-19"
@@ -3704,7 +3095,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 20 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-20"
@@ -3720,7 +3110,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 21 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-21"
@@ -3736,7 +3125,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 22 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-22"
@@ -3756,7 +3144,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 23 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-23"
@@ -3772,7 +3159,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 24 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-24"
@@ -3788,7 +3174,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 25 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-25"
@@ -3804,7 +3189,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 26 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-26"
@@ -3820,7 +3204,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 27 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-27"
@@ -3836,7 +3219,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 28 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-28"
@@ -3852,7 +3234,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 29 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-29"
@@ -3872,7 +3253,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 30 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-30"
@@ -3888,7 +3268,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 31 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selectable"
             data-date="2018-07-31"
@@ -3904,7 +3283,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 1 août 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-08-01"
@@ -3920,7 +3298,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 2 août 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-08-02"
@@ -3936,7 +3313,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 3 août 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-08-03"
@@ -3952,7 +3328,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 4 août 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-08-04"
@@ -3968,7 +3343,6 @@ exports[`Storyshots Calendar / Calendar Selectable 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 5 août 2018"
             className="calendar__day calendar__day--selectable"
             data-date="2018-08-05"
@@ -3999,7 +3373,6 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
   >
     <table
       className="calendar "
-      onKeyDown={null}
       role="grid"
     >
       <caption
@@ -4090,14 +3463,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 25 juin 2018"
             className="calendar__day"
             data-date="2018-06-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-25"
@@ -4106,14 +3475,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 26 juin 2018"
             className="calendar__day"
             data-date="2018-06-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-26"
@@ -4122,14 +3487,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 27 juin 2018"
             className="calendar__day"
             data-date="2018-06-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-27"
@@ -4138,14 +3499,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 28 juin 2018"
             className="calendar__day"
             data-date="2018-06-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-28"
@@ -4154,14 +3511,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 29 juin 2018"
             className="calendar__day"
             data-date="2018-06-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-29"
@@ -4170,14 +3523,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 30 juin 2018"
             className="calendar__day"
             data-date="2018-06-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-06-30"
@@ -4186,14 +3535,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 1 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-01"
@@ -4206,14 +3551,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 2 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-02"
@@ -4222,14 +3563,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 3 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-03"
@@ -4238,14 +3575,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 4 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-04"
@@ -4254,14 +3587,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 5 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-05"
@@ -4270,14 +3599,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 6 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-06"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-06"
@@ -4286,14 +3611,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 7 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-07"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-07"
@@ -4302,14 +3623,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 8 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-08"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-08"
@@ -4322,14 +3639,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 9 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-09"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-09"
@@ -4338,14 +3651,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 10 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-10"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-10"
@@ -4354,14 +3663,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 11 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-11"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-11"
@@ -4370,14 +3675,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 12 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-12"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-12"
@@ -4386,14 +3687,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 13 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-13"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-13"
@@ -4402,14 +3699,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 14 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-14"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-14"
@@ -4418,14 +3711,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 15 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-15"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-15"
@@ -4438,14 +3727,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 16 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-16"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-16"
@@ -4454,14 +3739,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 17 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-17"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-17"
@@ -4470,14 +3751,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 18 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-18"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-18"
@@ -4486,14 +3763,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 19 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-19"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-19"
@@ -4502,14 +3775,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 20 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-20"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-20"
@@ -4518,14 +3787,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 21 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-21"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-21"
@@ -4538,10 +3803,7 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             aria-label="dimanche 22 juillet 2018"
             className="calendar__day calendar__day--current-month calendar__day--selected"
             data-date="2018-07-22"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-22"
@@ -4554,14 +3816,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 23 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-23"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-23"
@@ -4570,14 +3828,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 24 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-24"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-24"
@@ -4586,14 +3840,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 25 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-25"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-25"
@@ -4602,14 +3852,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 26 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-26"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-26"
@@ -4618,14 +3864,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 27 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-27"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-27"
@@ -4634,14 +3876,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 28 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-28"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-28"
@@ -4650,14 +3888,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 29 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-29"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-29"
@@ -4670,14 +3904,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
           className="calendar__week"
         >
           <td
-            aria-current={null}
             aria-label="lundi 30 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-30"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-30"
@@ -4686,14 +3916,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mardi 31 juillet 2018"
             className="calendar__day calendar__day--current-month"
             data-date="2018-07-31"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-07-31"
@@ -4702,14 +3928,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="mercredi 1 août 2018"
             className="calendar__day"
             data-date="2018-08-01"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-01"
@@ -4718,14 +3940,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="jeudi 2 août 2018"
             className="calendar__day"
             data-date="2018-08-02"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-02"
@@ -4734,14 +3952,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="vendredi 3 août 2018"
             className="calendar__day"
             data-date="2018-08-03"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-03"
@@ -4750,14 +3964,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="samedi 4 août 2018"
             className="calendar__day"
             data-date="2018-08-04"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-04"
@@ -4766,14 +3976,10 @@ exports[`Storyshots Calendar / Calendar Selected Date 1`] = `
             </time>
           </td>
           <td
-            aria-current={null}
             aria-label="dimanche 5 août 2018"
             className="calendar__day"
             data-date="2018-08-05"
-            onClick={null}
-            onKeyDown={null}
             role="gridcell"
-            tabIndex={null}
           >
             <time
               dateTime="2018-08-05"
