@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useAsync } from "react-use";
+import { useAsync, useCounter } from "react-use";
 import useAbortableFetch, { useAbortSignal } from "./useAbortableFetch";
 
 export default {
@@ -29,23 +29,24 @@ function CounterButton() {
   const [rerenderCount, setRerenderCount] = useState(0);
   const [successCount, setSuccessCount] = useState(0);
   const [errorCount, setErrorCount] = useState(0);
-  const [fetching, setFetching] = useState(false);
+  const [fetchCount, { inc: incFetchCount, dec: decFetchCount }] = useCounter(0);
+  const fetching = fetchCount > 0;
 
   const makeSignal = useAbortSignal([count]);
 
   useEffect(() => {
     (async () => {
-      setFetching(true);
+      incFetchCount();
       try {
         await fetch("https://httpbin.org/delay/5", { signal: makeSignal() });
         setSuccessCount((current) => current + 1);
       } catch {
         setErrorCount((current) => current + 1);
       } finally {
-        setFetching(false);
+        decFetchCount();
       }
     })();
-  }, [makeSignal, count]);
+  }, [makeSignal, count, incFetchCount, decFetchCount]);
 
   const abortableFetch = useAbortableFetch([]);
 
