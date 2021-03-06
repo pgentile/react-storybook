@@ -15,12 +15,10 @@ import {
 } from "date-fns";
 import frLocale from "date-fns/locale/fr";
 
-import { formatToString, parseFromString } from "./utils";
+import { ISODate, formatToString, parseFromString } from "./utils";
 import bemModifiers from "../utils/bemModifiers";
 
 import "./Calendar.scss";
-
-type ISODate = string;
 
 type CalendarProps = {
   className?: string;
@@ -154,9 +152,9 @@ export default function Calendar({
 
       const dayClassName = bemModifiers("calendar__day", {
         "current-month": day.currentMonth,
-        selectable: !!onSelect && !disabled,
+        selectable: Boolean(onSelect && !disabled),
         disabled,
-        selected: selectedDate ? sameDate : false,
+        selected: sameDate,
       });
       return (
         <td
