@@ -18,10 +18,16 @@ export default function useAbortableFetch(deps?: DependencyList): FetchFn {
   return wrappedFetch;
 }
 
-export function useAbortSignal(deps?: DependencyList): () => AbortSignal {
-  const abortControllerRef = useRef<AbortController>(null);
+export function useAbortSignal(deps?: DependencyList): () => AbortSignal | undefined {
+  const abortControllerRef = useRef<AbortController>();
 
   useEffect(() => {
+    // AbortController non implémenté ? On ne va pas plus loin.
+    if (!AbortController) {
+      return;
+    }
+
+    // eslint-disable-next-line compat/compat
     const abortController = new AbortController();
     abortControllerRef.current = abortController;
 
@@ -31,7 +37,7 @@ export function useAbortSignal(deps?: DependencyList): () => AbortSignal {
   }, deps);
 
   const makeSignal = useCallback(() => {
-    return abortControllerRef.current.signal;
+    return abortControllerRef.current?.signal;
   }, []);
 
   return makeSignal;

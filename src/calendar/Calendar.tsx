@@ -1,4 +1,4 @@
-import { useMemo, useRef, useCallback, ReactElement } from "react";
+import { useMemo, useRef, useCallback, ReactElement, KeyboardEvent } from "react";
 import { string, func } from "prop-types";
 import {
   startOfMonth,
@@ -28,7 +28,7 @@ type CalendarProps = {
   viewDate?: ISODate;
   minDate?: ISODate;
   maxDate?: ISODate;
-  onSelect: (selectedDate: ISODate) => void;
+  onSelect?: (selectedDate: ISODate) => void;
 };
 
 export default function Calendar({
@@ -66,13 +66,21 @@ export default function Calendar({
     const calendarFirstDay = startOfISOWeek(monthFirstDay);
     const calendarLastDay = endOfISOWeek(monthLastDay);
 
-    const weeks = [];
+    type Day = {
+      date: Date;
+      formattedDate: ISODate;
+      label: string;
+      dayNumber: string;
+      currentMonth: boolean;
+    };
+
+    const weeks: Day[][] = [];
 
     let count = 0;
-    let days = [];
+    let days: Day[] = [];
 
     eachDayOfInterval({ start: calendarFirstDay, end: calendarLastDay }).forEach((date) => {
-      const day = {
+      const day: Day = {
         date,
         formattedDate: formatToString(date),
         label: format(date, "EEEE d MMMM yyyy", { locale: frLocale }),
@@ -93,10 +101,10 @@ export default function Calendar({
     return weeks;
   }, [monthFirstDay]);
 
-  const tableRef = useRef<HTMLTableElement>();
+  const tableRef = useRef<HTMLTableElement>(null);
 
-  const handleGridKeyDown = useCallback((event) => {
-    const keysToHandle = {
+  const handleGridKeyDown = useCallback((event: KeyboardEvent) => {
+    const keysToHandle: { [key: string]: number } = {
       ArrowUp: -7,
       ArrowDown: 7,
       ArrowLeft: -1,
@@ -109,13 +117,13 @@ export default function Calendar({
 
       const table = tableRef.current;
       if (table) {
-        const focusElement: HTMLTableDataCellElement | undefined = table.querySelector('td[role="gridcell"]:focus');
+        const focusElement = table.querySelector<HTMLTableDataCellElement>('td[role="gridcell"]:focus');
         if (focusElement?.dataset?.date) {
           const daysShift = keysToHandle[event.key];
           const parsedCurrentDate = parseFromString(focusElement.dataset.date);
           const targetDate = addDays(parsedCurrentDate, daysShift);
 
-          const targetElement: HTMLTableDataCellElement | undefined = table.querySelector(
+          const targetElement = table.querySelector<HTMLTableDataCellElement>(
             `td[role="gridcell"][data-date="${formatToString(targetDate)}"]`
           );
           targetElement?.focus();
@@ -124,13 +132,13 @@ export default function Calendar({
     }
   }, []);
 
-  const handleCellClick = (value) => {
+  const handleCellClick = (value: ISODate) => {
     if (onSelect) {
       onSelect(value);
     }
   };
 
-  const handleCellKeyDown = (event, value) => {
+  const handleCellKeyDown = (event: KeyboardEvent, value: ISODate) => {
     if (event.key === "Enter" || event.key === " ") {
       if (onSelect) {
         onSelect(value);
@@ -142,7 +150,7 @@ export default function Calendar({
     const columns = weekDays.map((day) => {
       const disabled = !isDateBetweenMinMax(day.date);
       const selectable = !!onSelect && !disabled;
-      const sameDate = isSameDay(day.date, selectedDate);
+      const sameDate = selectedDate ? isSameDay(day.date, selectedDate) : false;
 
       const dayClassName = bemModifiers("calendar__day", {
         "current-month": day.currentMonth,
@@ -154,11 +162,11 @@ export default function Calendar({
         <td
           key={day.formattedDate}
           className={dayClassName}
-          onClick={selectable ? () => handleCellClick(day.formattedDate) : null}
-          onKeyDown={selectable ? (event) => handleCellKeyDown(event, day.formattedDate) : null}
+          onClick={selectable ? () => handleCellClick(day.formattedDate) : undefined}
+          onKeyDown={selectable ? (event) => handleCellKeyDown(event, day.formattedDate) : undefined}
           role="gridcell"
-          tabIndex={!disabled && selectable ? 0 : null}
-          aria-current={sameDate ? "date" : null}
+          tabIndex={!disabled && selectable ? 0 : undefined}
+          aria-current={sameDate ? "date" : undefined}
           aria-label={day.label}
           data-date={day.formattedDate}
         >
@@ -178,7 +186,7 @@ export default function Calendar({
     <table
       className={"calendar " + className}
       role="grid"
-      onKeyDown={onSelect ? handleGridKeyDown : null}
+      onKeyDown={onSelect ? handleGridKeyDown : undefined}
       ref={tableRef}
     >
       <caption className="calendar__month">{format(viewDate, "LLLL yyyy", { locale: frLocale })}</caption>
@@ -199,15 +207,15 @@ Calendar.propTypes = {
   onSelect: func,
 };
 
-function dateBetween(minDate, maxDate) {
+function dateBetween(minDate: Date | null, maxDate: Date | null): (date: Date) => boolean {
   if (minDate || maxDate) {
-    const acceptMinDate = minDate ? (date) => isAfter(date, minDate) || isEqual(date, minDate) : alwaysTrue;
-    const acceptMaxDate = maxDate ? (date) => isBefore(date, maxDate) || isEqual(date, maxDate) : alwaysTrue;
-    return (date) => acceptMinDate(date) && acceptMaxDate(date);
+    const acceptMinDate = minDate ? (date: Date) => isAfter(date, minDate) || isEqual(date, minDate) : alwaysTrue;
+    const acceptMaxDate = maxDate ? (date: Date) => isBefore(date, maxDate) || isEqual(date, maxDate) : alwaysTrue;
+    return (date: Date) => acceptMinDate(date) && acceptMaxDate(date);
   }
   return alwaysTrue;
 }
 
-function alwaysTrue() {
+function alwaysTrue(): boolean {
   return true;
 }

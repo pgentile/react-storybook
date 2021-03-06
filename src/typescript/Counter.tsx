@@ -25,7 +25,11 @@ function useInterval(intervalMs: number, f: IntervalCallbackFn) {
   callback.current = f;
 
   useEffect(() => {
-    const id = setInterval(() => callback.current(), intervalMs);
+    const id = setInterval(() => {
+      if (callback.current) {
+        callback.current();
+      }
+    }, intervalMs);
     return () => clearInterval(id);
   }, [intervalMs]);
 }

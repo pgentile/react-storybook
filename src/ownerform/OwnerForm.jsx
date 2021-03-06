@@ -90,8 +90,20 @@ function InternalOwnerForm() {
       </FinalFieldContainer>
 
       <FinalButton>Envoyer</FinalButton>
+      <ResetButton>Reset</ResetButton>
+      <RestartButton>Restart</RestartButton>
     </>
   );
+}
+
+function ResetButton(props) {
+  const { reset } = useForm();
+  return <FinalButton {...props} type="button" onClick={() => reset()} />;
+}
+
+function RestartButton(props) {
+  const { restart } = useForm();
+  return <FinalButton {...props} type="button" onClick={() => restart()} />;
 }
 
 function useEmailCheck() {
