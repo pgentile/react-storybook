@@ -8,7 +8,7 @@ describe("Is digits", () => {
     });
   });
 
-  [null, "abc", "1234 5678", "a123", " "].forEach((value) => {
+  ["abc", "1234 5678", "a123", " "].forEach((value) => {
     test(`"${value}" is not valid`, () => {
       const result = isDigits(value);
       expect(result).toBe(false);
