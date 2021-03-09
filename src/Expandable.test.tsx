@@ -33,7 +33,7 @@ describe("Pliage / dépliagle / repliage des Expandable", () => {
 
     const content = <p className="expandable-content-test">This is the content to expand.</p>;
 
-    let { container, rerender } = render(<Expandable>{content}</Expandable>);
+    const { container, rerender } = render(<Expandable>{content}</Expandable>);
 
     expect(container.firstChild).toHaveAttribute("aria-hidden", "true");
     expect(container.querySelector(".expandable__window")).toHaveStyle("height: 0");
@@ -64,7 +64,7 @@ describe("Pliage / dépliagle / repliage des Expandable", () => {
   });
 });
 
-async function waitUntil(maxDuration, callback) {
+async function waitUntil(maxDuration: number, callback: () => void) {
   const endTimestamp = Date.now() + maxDuration;
 
   let exception = new Error("Failed to complete");

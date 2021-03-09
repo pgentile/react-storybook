@@ -1,4 +1,9 @@
+import { Meta, Story } from "@storybook/react";
 import Carousel from "./Carousel";
+
+type StoryArgs = {
+  selectedIndex: number;
+};
 
 export default {
   title: "Carousel",
@@ -11,9 +16,9 @@ export default {
       control: null,
     },
   },
-};
+} as Meta<StoryArgs>;
 
-export const main = (args) => {
+export const Main: Story<StoryArgs> = (args) => {
   const items = [
     <p key={0}>
       Item 1<br />
@@ -29,11 +34,11 @@ export const main = (args) => {
   return <Carousel {...args} items={items} />;
 };
 
-main.args = {
+Main.args = {
   selectedIndex: 0,
 };
 
-main.argTypes = {
+Main.argTypes = {
   selectedIndex: {
     defaultValue: 0,
     control: {

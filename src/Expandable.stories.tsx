@@ -1,4 +1,4 @@
-import Expandable from "./Expandable";
+import Expandable, { ExpandableProps } from "./Expandable";
 
 export default {
   title: "Expandable",
@@ -8,12 +8,12 @@ export default {
   },
   argTypes: {
     children: {
-      control: null,
+      control: false,
     },
   },
 };
 
-export const exemple = (args) => {
+export const exemple = (args: ExpandableProps) => {
   return (
     <Expandable {...args}>
       <p>Voici du contenu dépliable.</p>
