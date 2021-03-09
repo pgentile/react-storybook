@@ -83,7 +83,7 @@ export default function ReCaptcha({
 ReCaptcha.propTypes = {
   siteKey: PropTypes.string.isRequired,
   theme: PropTypes.oneOf(["light", "dark"]),
-  size: PropTypes.oneOf(["normal", "compact", "invisible"]),
+  size: PropTypes.oneOf(["normal", "compact"]),
   badge: PropTypes.oneOf(["bottomright", "bottomleft", "inline"]),
   onSuccess: PropTypes.func,
   onExpire: PropTypes.func,
@@ -92,7 +92,7 @@ ReCaptcha.propTypes = {
 export type ReCaptchaProps = {
   siteKey: string;
   theme?: "light" | "dark";
-  size?: "normal" | "compact" | "invisible";
+  size?: "normal" | "compact";
   badge?: "bottomright" | "bottomleft" | "inline";
   onSuccess?: (token: string) => void;
   onExpire?: () => void;

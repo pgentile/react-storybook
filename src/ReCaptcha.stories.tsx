@@ -53,10 +53,3 @@ Compact.args = {
   ...Main.args,
   size: "compact",
 };
-
-export const Invisible = Template.bind({});
-
-Invisible.args = {
-  ...Main.args,
-  size: "invisible",
-};
