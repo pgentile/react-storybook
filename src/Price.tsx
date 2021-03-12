@@ -1,11 +1,30 @@
-import { memo } from "react";
-import PropTypes from "prop-types";
+import { AllHTMLAttributes, ElementType, memo, ReactElement } from "react";
 import { css, cx } from "@emotion/css/macro";
 import { lighten } from "polished";
 
 const baseColor = "black";
 
-const Price = memo(function Price({ as: Element = "span", className = "", price, noColor = false, ...otherProps }) {
+export type Curreny = "EUR" | "GBP" | "USD" | "CHF";
+
+export type Price = {
+  value: number;
+  currency: Curreny;
+};
+
+export type PriceProps = AllHTMLAttributes<HTMLElement> & {
+  as?: ElementType;
+  className?: string;
+  price: Price;
+  noColor?: boolean;
+};
+
+export default memo(function Price({
+  as: Element = "span",
+  className = "",
+  price,
+  noColor = false,
+  ...otherProps
+}: PriceProps): ReactElement {
   const { value, currency } = price;
 
   const units = Math.abs(Math.trunc(value)) * (value >= 0 ? 1 : -1);
@@ -50,19 +69,7 @@ const Price = memo(function Price({ as: Element = "span", className = "", price,
   );
 });
 
-Price.propTypes = {
-  as: PropTypes.elementType,
-  className: PropTypes.string,
-  noColor: PropTypes.bool,
-  price: PropTypes.shape({
-    value: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-export default Price;
-
-function currencyToSymbol(currency) {
+function currencyToSymbol(currency: Curreny): string {
   switch (currency) {
     case "EUR":
       return "€";

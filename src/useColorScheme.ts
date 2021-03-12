@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useEffectOnce } from "react-use";
 
-export default function useColorScheme(defaultScheme = "light") {
+type ColorScheme = "dark" | "light";
+
+export default function useColorScheme(defaultScheme: ColorScheme = "light"): ColorScheme {
   const [colorScheme, setColorScheme] = useState(defaultScheme);
 
   useEffectOnce(() => {
@@ -12,9 +14,9 @@ export default function useColorScheme(defaultScheme = "light") {
     const query = window.matchMedia("(prefers-color-scheme: dark)");
     setColorScheme(query.matches ? "dark" : "light");
 
-    const handler = (event) => setColorScheme(event.matches ? "dark" : "light");
-    query.addEventListener("change", handler);
-    return () => query.removeEventListener("change", handler);
+    const handle = (event: MediaQueryListEvent) => setColorScheme(event.matches ? "dark" : "light");
+    query.addEventListener("change", handle);
+    return () => query.removeEventListener("change", handle);
   });
 
   return colorScheme;
