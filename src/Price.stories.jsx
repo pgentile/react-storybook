@@ -1,11 +1,4 @@
-import { Meta, Story } from "@storybook/react";
-import Price, { Curreny } from "./Price";
-
-type PriceStoryArgs = {
-  [key: string]: unknown;
-  value: number;
-  currency: Curreny;
-};
+import Price from "./Price";
 
 export default {
   title: "Price",
@@ -30,11 +23,9 @@ export default {
       description: "Pas de couleur",
     },
   },
-} as Meta<PriceStoryArgs>;
+};
 
-const Template: Story<PriceStoryArgs> = ({ value, currency, ...other }) => (
-  <Price price={{ value, currency }} {...other} />
-);
+const Template = ({ value, currency, ...other }) => <Price price={{ value, currency }} {...other} />;
 
 export const Primary = Template.bind({});
 

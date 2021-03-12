@@ -1,20 +1,10 @@
-import { ElementType, ReactElement, ReactNode, ButtonHTMLAttributes } from "react";
+import PropTypes from "prop-types";
 
 import "./Button.scss";
 
 import bemModifiers from "../utils/bemModifiers";
 
-export type ButtonType = ButtonHTMLAttributes<HTMLButtonElement> & {
-  as?: ElementType;
-  children?: ReactNode;
-  className?: string;
-  size?: "small" | "normal" | "large";
-  flat?: boolean;
-  toggled?: boolean;
-  link?: boolean;
-};
-
-export default function Button({
+function Button({
   as: Element = "button",
   children,
   className = "",
@@ -23,11 +13,11 @@ export default function Button({
   toggled,
   link = false,
   ...otherProps
-}: ButtonType): ReactElement {
+}) {
   const realClassName = bemModifiers("button", {
     [`size-${size}`]: true,
     flat,
-    toggled: toggled ?? false,
+    toggled,
     link,
   });
 
@@ -37,3 +27,15 @@ export default function Button({
     </Element>
   );
 }
+
+Button.propTypes = {
+  as: PropTypes.elementType,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  size: PropTypes.oneOf(["small", "normal", "large"]),
+  flat: PropTypes.bool,
+  toggled: PropTypes.bool,
+  link: PropTypes.bool,
+};
+
+export default Button;

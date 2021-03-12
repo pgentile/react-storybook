@@ -1,5 +1,5 @@
+import PropTypes from "prop-types";
 import { css } from "@emotion/css/macro";
-import { ReactElement, ReactNode } from "react";
 
 const wipClass = css({
   padding: "10px",
@@ -16,14 +16,14 @@ const wipContainerClass = css({
   backgroundColor: "white",
 });
 
-export type WipProps = {
-  children?: ReactNode;
-};
-
-export default function Wip({ children }: WipProps): ReactElement {
+export default function Wip({ children }) {
   return (
     <div className={wipClass}>
       <div className={wipContainerClass}>{children || "Work in progress"}</div>
     </div>
   );
 }
+
+Wip.propTypes = {
+  children: PropTypes.node,
+};
