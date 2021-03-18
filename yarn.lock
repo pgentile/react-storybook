@@ -1453,10 +1453,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@formatjs/intl-datetimeformat@3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.13.tgz#20a25fe07d0d1a9e4c05318714c5ff5043f09fea"
-  integrity sha512-9v9XO1lRfgDct+hpqC3ISZK+2atVUe6W9xQKV4skMK8BvZpJyC9nsoHtRhp4P4lx7RRZedwObcrEn0blmeOEnw==
+"@formatjs/intl-datetimeformat@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.3.0.tgz#bf20b356074ccda7f87bed025a958283eba7b699"
+  integrity sha512-wO8+WeMIH+v9r5YvbWBHYgzu+ooLW1mFze9pnrMDNB4JOxbF0q8x+YC55Jz6JEOkwD1WBVtLwfVBfICwCElUHQ==
   dependencies:
     "@formatjs/ecma402-abstract" "1.6.3"
     tslib "^2.1.0"
@@ -1495,10 +1495,10 @@
     cldr-core "38"
     tslib "^2.1.0"
 
-"@formatjs/intl-numberformat@6.2.3":
-  version "6.2.3"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-6.2.3.tgz#2f6476843de780c1dfb375f048cd42259be85f3c"
-  integrity sha512-iwt8yveJSr9l+MuKzX0764i4aOEDLF3DJXTz5vMRd3QX99cDVj6nWL/Gxf0c/0bFI8fzyVFwFnqcQSmVnmXmuA==
+"@formatjs/intl-numberformat@6.2.4":
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-6.2.4.tgz#e0e71bdc0d5239851118c85cbe54a59ea977f2cb"
+  integrity sha512-C82K7GbR06jjJKendLEZKTdTAtgrSkehXS6bX9snOL/nY9BIQYEeFJY/VBFz228jVAFyTsYCiL5toKeyPsfKXA==
   dependencies:
     "@formatjs/ecma402-abstract" "1.6.3"
     tslib "^2.1.0"
