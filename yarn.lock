@@ -4174,10 +4174,10 @@ babel-plugin-extract-import-names@1.6.22:
   dependencies:
     "@babel/helper-plugin-utils" "7.10.4"
 
-babel-plugin-formatjs@10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.0.0.tgz#4ab1b40e9fe77fa5004ffbf54d806a2ab18c91df"
-  integrity sha512-sqgrEVfxveReY+gYcY5EQV5DpVH5qyEzTlsOPa6oGl3Jxsqe6b500WWQkRyQkyZT2DKXHRpuCEjprt61DU7Hrw==
+babel-plugin-formatjs@10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.1.0.tgz#0a4ceb3c1ca3200ee37257b685fe8a2f8f2a2aa4"
+  integrity sha512-k6idM0i0RLf4R670wHx4++wyW8QFPqzuJ5jXeImj/nL3v5LNykSEHHlbEC1EUUpEqiMxG3/ZNQgbHNMzwEKdNg==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/helper-plugin-utils" "^7.8.3"
@@ -12895,10 +12895,10 @@ react-inspector@^5.0.1:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-intl@5.14.0:
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.14.0.tgz#66f191c571ea15bc14ba73d97effceff153eaf5c"
-  integrity sha512-NtcXdudW1fnAGDqs90thr6dtdX0xmEl3UkFIpIMIqsnSItEwx4CvDqmLIZbGA83aCGIV7kyC4kWeuvEYfr/h7A==
+react-intl@5.14.1:
+  version "5.14.1"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.14.1.tgz#f600d18948f6b4e6bc8d717a7792e46e698f3ffd"
+  integrity sha512-HC0fpaxnlc0Eua9f7odV04P1nO54M0NKlT3w6o/LFGEk49AoNj8axmBViQYeBCW3NdaZSbXN58VkFcvMEBuyfw==
   dependencies:
     "@formatjs/ecma402-abstract" "1.6.4"
     "@formatjs/intl" "1.8.5"
