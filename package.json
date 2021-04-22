@@ -59,7 +59,7 @@
     "lodash-es": "4.17.21",
     "makecancelable": "1.1.1",
     "md5": "2.3.0",
-    "memoize-one": "5.1.1",
+    "memoize-one": "5.2.0",
     "polished": "4.1.1",
     "pretty": "2.0.0",
     "prop-types": "15.7.2",
