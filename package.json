@@ -51,7 +51,7 @@
     "card-validator": "8.1.1",
     "core-js": "3.13.0",
     "credit-card-type": "9.1.0",
-    "date-fns": "2.21.3",
+    "date-fns": "2.22.0",
     "fast-memoize": "2.5.2",
     "final-form": "4.20.2",
     "final-form-focus": "1.1.2",
