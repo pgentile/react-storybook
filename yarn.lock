@@ -1930,10 +1930,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/cli@4.2.22":
-  version "4.2.22"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-4.2.22.tgz#fc34980924d349df3e2db026fed05707de10a55b"
-  integrity sha512-7yopTb/aYD7+jhlHv5e3G4FtpY+G3XZwXQ0qPwAWAhwAAV0TJM3WD/xu4HMtt+Em67YYXO/D2os35sUpHh3H6Q==
+"@formatjs/cli@4.2.23":
+  version "4.2.23"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-4.2.23.tgz#04e066c8967be2e721d228c1b4045ab1428bbd7d"
+  integrity sha512-OE1Lq0f5FPnNJ0N8PGHtDOM1K7WWY/a97sOZ127qZDw9fQ887PUR2pjomOhRfnPCVGy8XFDM8jjJ0Vxo1BK6OQ==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.0.7"
     "@formatjs/ts-transformer" "3.4.4"
