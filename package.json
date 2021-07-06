@@ -79,7 +79,7 @@
     "regenerator-runtime": "0.13.7",
     "reselect": "4.0.0",
     "resize-observer-polyfill": "1.5.1",
-    "xstate": "4.20.2"
+    "xstate": "4.22.0"
   },
   "devDependencies": {
     "@babel/cli": "7.14.3",
