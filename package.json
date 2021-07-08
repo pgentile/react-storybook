@@ -144,7 +144,7 @@
     "style-loader": "2.0.0",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-recommended-scss": "4.2.0",
+    "stylelint-config-recommended-scss": "4.3.0",
     "stylelint-no-unsupported-browser-features": "4.1.4",
     "stylelint-prettier": "1.2.0",
     "stylelint-scss": "3.19.0",
