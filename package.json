@@ -76,7 +76,7 @@
     "redux-freeze": "0.1.7",
     "redux-promise-middleware": "6.1.2",
     "redux-thunk": "2.3.0",
-    "regenerator-runtime": "0.13.7",
+    "regenerator-runtime": "0.13.9",
     "reselect": "4.0.0",
     "resize-observer-polyfill": "1.5.1",
     "xstate": "4.23.0"
