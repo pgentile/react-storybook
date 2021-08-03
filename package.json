@@ -71,7 +71,7 @@
     "react-redux": "7.2.4",
     "react-spring": "8.0.27",
     "react-use": "17.2.4",
-    "redux": "4.1.0",
+    "redux": "4.1.1",
     "redux-actions": "2.6.5",
     "redux-freeze": "0.1.7",
     "redux-promise-middleware": "6.1.2",
