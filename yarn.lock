@@ -4084,6 +4084,11 @@ acorn@^8.0.4:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.0.4.tgz#7a3ae4191466a6984eee0fe3407a4f3aa9db8354"
   integrity sha512-XNP0PqF1XD19ZlLKvB7cMmnZswW4C/03pRHgirB30uSJTaS3A3V1/P4sS3HPvFmjoriPCJQs+JDSbm4bL1TxGQ==
 
+acorn@^8.4.1:
+  version "8.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.4.1.tgz#56c36251fc7cabc7096adc18f05afe814321a28c"
+  integrity sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA==
+
 address@1.1.2, address@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/address/-/address-1.1.2.tgz#bf1116c9c758c51b7a933d296b72c221ed9428b6"
@@ -5513,7 +5518,7 @@ caniuse-lite@^1.0.30001249:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001249.tgz#90a330057f8ff75bfe97a94d047d5e14fabb2ee8"
   integrity sha512-vcX4U8lwVXPdqzPWi6cAJ3FnQaqXbBqy/GZseKNQzRj37J7qZdGcBtxq/QLFNLLlfsoXLUdHw8Iwenri86Tagw==
 
-caporal@1.4.0:
+caporal@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/caporal/-/caporal-1.4.0.tgz#d6087b815e3df97c3a0f55dbb82850fae29ed585"
   integrity sha512-3pWfIwKVdIbB/gWmpLloO6iGAXTRi9mcTinPOwvHfzH3BYjOhLgq2XRG3hKtp+F6vBcBXxMgCobUzBAx1d8T4A==
@@ -7301,14 +7306,14 @@ es-array-method-boxes-properly@^1.0.0:
   resolved "https://registry.yarnpkg.com/es-array-method-boxes-properly/-/es-array-method-boxes-properly-1.0.0.tgz#873f3e84418de4ee19c5be752990b2e44718d09e"
   integrity sha512-wd6JXUmyHmt8T5a2xreUwKcGPq6f1f+WwIJkijUqiGcJz1qqnZgP6XIK+QyIWU5lT7imeNxUll48bziG+TSYcA==
 
-es-check@5.2.4:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/es-check/-/es-check-5.2.4.tgz#76fe2d96ad238bd8ec1d9c3b3d0e98ddbcc723e7"
-  integrity sha512-FZ3qAJ9hwguqPvGGagaKAVDnusSkezeHbiKNM5rOepOjloeVuX2e6meMxQ+mKcnWbAFucCG7fszNrzUT8bvHcQ==
+es-check@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/es-check/-/es-check-6.0.0.tgz#4df6acadab22ec76d16581158489b2ff20e7ca57"
+  integrity sha512-FwWQ03GgWL8HplV7gWMDtpR5I+n0K/JYLnLoMDw2DrdsfxF2jV+dtpqo0sIVFeoHgYjEeWkb0ntZvEah7R7T1w==
   dependencies:
-    acorn "^6.4.1"
-    caporal "1.4.0"
-    glob "^7.1.2"
+    acorn "^8.4.1"
+    caporal "^1.4.0"
+    glob "^7.1.7"
 
 es-get-iterator@^1.0.2:
   version "1.1.1"
@@ -8476,7 +8481,7 @@ glob-to-regexp@^0.3.0:
   resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz#8c5a1494d2066c570cc3bfe4496175acc4d502ab"
   integrity sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
 
-glob@7.1.7:
+glob@7.1.7, glob@^7.1.7:
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.7.tgz#3b193e9233f01d42d0b3f78294bbeeb418f94a90"
   integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
