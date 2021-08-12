@@ -18,11 +18,10 @@ export default function AgeOrBirthDate({ maxAge = 120, onChange }) {
 
   const parsedAge = useMemo(() => parseValidAge(age, maxAge), [age, maxAge]);
 
-  const [parsedBirthDate, ageFromBirthDate] = useMemo(() => parseValidBirthDate(birthDate, travelDate, maxAge), [
-    birthDate,
-    maxAge,
-    travelDate,
-  ]);
+  const [parsedBirthDate, ageFromBirthDate] = useMemo(
+    () => parseValidBirthDate(birthDate, travelDate, maxAge),
+    [birthDate, maxAge, travelDate]
+  );
 
   useEffect(() => {
     if (onChange) {

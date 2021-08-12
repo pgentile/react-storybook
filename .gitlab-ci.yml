@@ -16,7 +16,6 @@ default:
 stages:
   - setup
   - build
-  - post-validate
   - deploy
 
 install:
@@ -43,10 +42,6 @@ build:
   artifacts:
     paths:
       - build/storybook
-
-post-validate:
-  stage: post-validate
-  script: "yarn ci:post-validate"
 
 pages:
   stage: deploy
