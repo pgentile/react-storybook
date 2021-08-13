@@ -21,15 +21,8 @@ export default class OrderEditor extends PureComponent {
   };
 
   render() {
-    const {
-      items,
-      onAddVoucher,
-      onCancelVoucher,
-      onAddInsurance,
-      onCancelInsurance,
-      onAddDonation,
-      onCancelDonation,
-    } = this.props;
+    const { items, onAddVoucher, onCancelVoucher, onAddInsurance, onCancelInsurance, onAddDonation, onCancelDonation } =
+      this.props;
     const hasVoucher = hasItemOfType(items, VOUCHER_TYPE);
     const hasInsurance = hasItemOfType(items, INSURANCE_TYPE);
     const donation = findItemOfType(items, DONATION_TYPE);

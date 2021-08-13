@@ -5,6 +5,9 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 module.exports = {
   stories: ["../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
   addons: ["@storybook/addon-essentials", "@storybook/addon-a11y"],
+  core: {
+    builder: "webpack5",
+  },
   webpack: async (config, { configType }) => {
     const modulesToTranspile = [
       "query-string",

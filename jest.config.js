@@ -4,6 +4,7 @@ const path = require("path");
 
 module.exports = {
   rootDir: "./src",
+  testEnvironment: "jsdom",
   testURL: "http://localhost/",
   snapshotSerializers: ["@emotion/jest/serializer"],
   moduleNameMapper: {
@@ -11,6 +12,7 @@ module.exports = {
   },
   transform: {
     "^.+\\.stories\\.[jt]sx?$": "@storybook/addon-storyshots/injectFileName",
+    "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx",
     "\\.[jt]sx?$": "babel-jest",
     "\\.svg$": "<rootDir>/__mocks__/imageMock.js",
   },

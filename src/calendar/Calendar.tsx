@@ -37,9 +37,10 @@ export default function Calendar({
   maxDate: maxDateInput,
   onSelect,
 }: CalendarProps): ReactElement {
-  const selectedDate = useMemo(() => (selectedDateInput ? parseFromString(selectedDateInput) : null), [
-    selectedDateInput,
-  ]);
+  const selectedDate = useMemo(
+    () => (selectedDateInput ? parseFromString(selectedDateInput) : null),
+    [selectedDateInput]
+  );
   const viewDate = useMemo(() => (viewDateInput ? parseFromString(viewDateInput) : new Date()), [viewDateInput]);
   const minDate = useMemo(() => (minDateInput ? parseFromString(minDateInput) : null), [minDateInput]);
   const maxDate = useMemo(() => (maxDateInput ? parseFromString(maxDateInput) : null), [maxDateInput]);
