@@ -1353,13 +1353,13 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/cli@4.2.32":
-  version "4.2.32"
-  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-4.2.32.tgz#5b01924f971c940633d72108a8c99b7ed37f1336"
-  integrity sha512-yoit1550YleI1qGR9Us2SCj4a7Ngul8pwRRNzGceKQSG8HOXZQL91XOZ2yOzJATnjTosLGuZz/ht3HjbilaQAw==
+"@formatjs/cli@4.2.33":
+  version "4.2.33"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-4.2.33.tgz#2a9cc070aadb42400e481fe0ce4509536bef7f1b"
+  integrity sha512-4Lg+KZ5QhXgF6+zjHyZlxMG8I0D3m3PZyrj3hRl97vdZ6rAWKVFWw8fkTO/iyhUCP2iC47Eh9r+ZTgGARX9Teg==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.0.11"
-    "@formatjs/ts-transformer" "3.4.9"
+    "@formatjs/ts-transformer" "3.4.10"
     "@types/estree" "^0.0.50"
     "@types/fs-extra" "^9.0.1"
     "@types/json-stable-stringify" "^1.0.32"
@@ -1496,12 +1496,13 @@
     intl-messageformat "9.9.1"
     tslib "^2.1.0"
 
-"@formatjs/ts-transformer@3.4.9":
-  version "3.4.9"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.4.9.tgz#cae21fe69a3a179ec388d2ef931d219e7fb1ed2d"
-  integrity sha512-uMlaK4rvqX3A24yoWzO9a0n3yr1HBWcFGg5EtS6ZbYccdGCV0xGYFMQGBMxZ4ztebJq9GbJ6nt48h+OUPE/GsQ==
+"@formatjs/ts-transformer@3.4.10":
+  version "3.4.10"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.4.10.tgz#f623c5db5eaea4f6da34124f620f043d5ea3970a"
+  integrity sha512-5fu8x+8CtyrFe8zdwHvFsYLx9TEPjeJSODRS1ZJxkMVpTBHaNsPqsPkN1TuTk5x3+tSczxXmN1LGrAzUxNN3nQ==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.0.11"
+    chalk "^4.0.0"
     tslib "^2.1.0"
 
 "@fortawesome/fontawesome-common-types@^0.2.36":
@@ -4572,10 +4573,10 @@ babel-plugin-extract-import-names@1.6.22:
   dependencies:
     "@babel/helper-plugin-utils" "7.10.4"
 
-babel-plugin-formatjs@10.3.6:
-  version "10.3.6"
-  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.3.6.tgz#6f81720bbd43118c6a3074de42a938d7492e56e8"
-  integrity sha512-GopmRRu111SPh+4xugok6RJabttNOJ7EawK73s8Zw/mr4HMcrb+okfDQYwSUymdsx9mlxBWHxzVrHa9ZW3ZnAg==
+babel-plugin-formatjs@10.3.7:
+  version "10.3.7"
+  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.3.7.tgz#24bcc747d6f3e392e517a1a4567dc801d0015594"
+  integrity sha512-zlt0B7PmzmHVW409XSuQ2rGP/D6fOE5NyvtIdEcCy7PvKTlfvz3O00jQeaiLhWf8mtVpuheCCtT77jeUwtT4MQ==
   dependencies:
     "@babel/core" "^7.10.4"
     "@babel/helper-plugin-utils" "^7.10.4"
@@ -4583,7 +4584,7 @@ babel-plugin-formatjs@10.3.6:
     "@babel/traverse" "7"
     "@babel/types" "^7.12.11"
     "@formatjs/icu-messageformat-parser" "2.0.11"
-    "@formatjs/ts-transformer" "3.4.9"
+    "@formatjs/ts-transformer" "3.4.10"
     "@types/babel__core" "^7.1.7"
     "@types/babel__helper-plugin-utils" "^7.10.0"
     tslib "^2.1.0"
@@ -6919,13 +6920,13 @@ eslint-plugin-compat@3.13.0:
     lodash.memoize "4.1.2"
     semver "7.3.5"
 
-eslint-plugin-formatjs@2.17.5:
-  version "2.17.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.17.5.tgz#e6787a5e92a5b37e6c22b15df328f25e903f5560"
-  integrity sha512-U4IyrKZtWe2HDaHdVg2kW9oSOYep8yDxXJ8ke8GHxcCWCYUVDIDMbmCo244LGnXHAOEjtr0mnoBwNw2UHwaScA==
+eslint-plugin-formatjs@2.17.6:
+  version "2.17.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.17.6.tgz#4e217fea4518fb30412ea2818cb814eceefed85e"
+  integrity sha512-5O//ITn8gs1kiSuncQqNL/6KiJfLLCZ4IYF3OTe0E6cS87L30nc7WvIThceLM5WZFlzTuVYrTA5zg/imdGaXEQ==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.0.11"
-    "@formatjs/ts-transformer" "3.4.9"
+    "@formatjs/ts-transformer" "3.4.10"
     "@types/emoji-regex" "9"
     "@types/eslint" "^7.2.0"
     "@typescript-eslint/typescript-estree" "^4.11.0"
