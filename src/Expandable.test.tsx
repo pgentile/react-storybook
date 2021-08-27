@@ -67,7 +67,7 @@ describe("Pliage / dépliagle / repliage des Expandable", () => {
 async function waitUntil(maxDuration: number, callback: () => void) {
   const endTimestamp = Date.now() + maxDuration;
 
-  let exception = new Error("Failed to complete");
+  let exception: unknown = new Error("Failed to complete");
   do {
     try {
       callback();
