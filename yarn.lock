@@ -5101,10 +5101,10 @@ babel-plugin-extract-import-names@1.6.22:
   dependencies:
     "@babel/helper-plugin-utils" "7.10.4"
 
-babel-plugin-formatjs@10.3.7:
-  version "10.3.7"
-  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.3.7.tgz#24bcc747d6f3e392e517a1a4567dc801d0015594"
-  integrity sha512-zlt0B7PmzmHVW409XSuQ2rGP/D6fOE5NyvtIdEcCy7PvKTlfvz3O00jQeaiLhWf8mtVpuheCCtT77jeUwtT4MQ==
+babel-plugin-formatjs@10.3.8:
+  version "10.3.8"
+  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.3.8.tgz#2a4912bc1c47b4225aeccb5601c82e07b680c910"
+  integrity sha512-pLryt/Q5zmoQWRrybzwiaZ9i0M9I1JJwshHqOuyxn+MlqcxArp2N0E7/X9fhIC1X9yEdDV0zfGbY00J+krmZzQ==
   dependencies:
     "@babel/core" "^7.10.4"
     "@babel/helper-plugin-utils" "^7.10.4"
