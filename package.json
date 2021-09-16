@@ -100,7 +100,7 @@
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.1.0",
     "@tsconfig/recommended": "1.0.1",
-    "@types/lodash": "4.14.172",
+    "@types/lodash": "4.14.173",
     "@typescript-eslint/eslint-plugin": "4.31.1",
     "@typescript-eslint/parser": "4.31.1",
     "autoprefixer": "10.3.4",
