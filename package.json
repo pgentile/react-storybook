@@ -141,7 +141,7 @@
     "reg-cli": "0.17.3",
     "rimraf": "3.0.2",
     "sass-loader": "12.1.0",
-    "style-loader": "3.2.1",
+    "style-loader": "3.3.0",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-recommended-scss": "4.3.0",
