@@ -67,7 +67,7 @@
     "react-intl": "5.20.12",
     "react-jsonschema-form": "1.8.1",
     "react-redux": "7.2.5",
-    "react-spring": "9.2.5",
+    "react-spring": "9.2.6",
     "react-use": "17.3.1",
     "redux": "4.1.1",
     "redux-actions": "2.6.5",
