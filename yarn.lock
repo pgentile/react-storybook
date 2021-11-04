@@ -14260,10 +14260,10 @@ require-main-filename@^2.0.0:
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
 
-reselect@4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.1.1.tgz#7e2c110efbf3d70df3482604bcf2bc0ab571346a"
-  integrity sha512-Jjt8Us6hAWJpjucyladHvUGR+q1mHHgWtGDXlhvvKyNyIeQ3bjuWLDX0bsTLhbm/gd4iXEACBlODUHBlLWiNnA==
+reselect@4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.1.2.tgz#7bf642992d143d4f3b0f2dca8aa52018808a1d51"
+  integrity sha512-wg60ebcPOtxcptIUfrr7Jt3h4BR86cCW3R7y4qt65lnNb4yz4QgrXcbSioVsIOYguyz42+XTHIyJ5TEruzkFgQ==
 
 resize-observer-polyfill@1.5.1, resize-observer-polyfill@^1.5.1:
   version "1.5.1"
