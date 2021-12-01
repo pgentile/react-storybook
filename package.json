@@ -126,7 +126,7 @@
     "file-loader": "6.2.0",
     "full-icu": "1.4.0",
     "husky": "7.0.4",
-    "jest": "27.4.2",
+    "jest": "27.4.3",
     "jest-extended": "1.2.0",
     "lint-staged": "11.2.6",
     "node-sass": "6.0.1",
