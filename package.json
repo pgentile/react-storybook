@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@emotion/css": "11.7.1",
-    "@formatjs/intl-datetimeformat": "4.3.0",
+    "@formatjs/intl-datetimeformat": "4.4.0",
     "@formatjs/intl-getcanonicallocales": "1.8.0",
     "@formatjs/intl-listformat": "6.4.0",
     "@formatjs/intl-locale": "2.4.41",
