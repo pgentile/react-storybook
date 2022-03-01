@@ -14508,10 +14508,10 @@ refractor@^3.1.0:
     parse-entities "^2.0.0"
     prismjs "~1.24.0"
 
-reg-cli@0.17.4:
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.17.4.tgz#dc11ac83d15d7ad33f9c6f6f8a979a4b39ed0a8d"
-  integrity sha512-3pwi7zNXBlWn89Ja6uPCEthQ37DvvV6HkZ31Wkyz6P4XAgmC7QEQIu1naT5d9xvBfkRfZlP37fufOj4fz+7DYw==
+reg-cli@0.17.5:
+  version "0.17.5"
+  resolved "https://registry.yarnpkg.com/reg-cli/-/reg-cli-0.17.5.tgz#fcadf3add1a82ed8b0de2f4491dc0e6e8585b675"
+  integrity sha512-syzKuKGBMGdsvKWtnrgZR4TiGDG7ho2+huyaYW74kshl1ebA/T0cBQU17gMRojHp5Mh/kq1AN/zEQLxtKqJP0w==
   dependencies:
     bluebird "3.7.2"
     chalk "4.1.2"
@@ -14527,7 +14527,7 @@ reg-cli@0.17.4:
     meow "3.7.0"
     mustache "4.2.0"
     x-img-diff-js "0.3.5"
-    yargs-parser "^20.2.9"
+    yargs-parser "^21.0.1"
 
 regenerate-unicode-properties@^8.2.0:
   version "8.2.0"
@@ -17417,10 +17417,15 @@ yargs-parser@^13.1.2:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^20.2.2, yargs-parser@^20.2.3, yargs-parser@^20.2.7, yargs-parser@^20.2.9:
+yargs-parser@^20.2.2, yargs-parser@^20.2.3, yargs-parser@^20.2.7:
   version "20.2.9"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
+
+yargs-parser@^21.0.1:
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.1.tgz#0267f286c877a4f0f728fceb6f8a3e4cb95c6e35"
+  integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
 
 yargs@^13.3.2:
   version "13.3.2"
