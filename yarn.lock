@@ -2270,14 +2270,16 @@
     tslib "^2.1.0"
     typescript "^4.5"
 
-"@formatjs/ts-transformer@3.9.6":
-  version "3.9.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.9.6.tgz#06a7fd8cbf83ce354960c88eaabee2b39598ac21"
-  integrity sha512-8x78/oSvWPOFneq+Hlc+EnAnhbGpUnvcoV5oYKc6W/ZnNqvJFKnTYAfDX15T/mSQwdr5Y9U17RmDBboQKVGssA==
+"@formatjs/ts-transformer@3.9.7":
+  version "3.9.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.9.7.tgz#c97d354199a9b41edb4e0c63c5601e9ea917eca7"
+  integrity sha512-H7sYU+B+5MHKfzZzmKUMgpmiCC963hcb7WA8kGCHKkHxo4rEqAPyTbv87yO+eiEZ8SQFYKdmj4yFaSYQ/x/kaA==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.1.2"
+    "@types/json-stable-stringify" "^1.0.32"
     "@types/node" "14 || 16 || 17"
     chalk "^4.0.0"
+    json-stable-stringify "^1.0.1"
     tslib "2.4.0"
     typescript "^4.5"
 
@@ -5593,10 +5595,10 @@ babel-plugin-extract-import-names@1.6.22:
   dependencies:
     "@babel/helper-plugin-utils" "7.10.4"
 
-babel-plugin-formatjs@10.3.22:
-  version "10.3.22"
-  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.3.22.tgz#ab4a56d8ba5b70e56827c24d848ebf62ec7fc157"
-  integrity sha512-RK1yDBVN0sMIyB1SFKMCadTgsCPBxhzTw+0n9HYT8iK7f55xQ4Lmsp/7TomvwSLA1gKKXLl3BhsjhYLjYiL+fA==
+babel-plugin-formatjs@10.3.23:
+  version "10.3.23"
+  resolved "https://registry.yarnpkg.com/babel-plugin-formatjs/-/babel-plugin-formatjs-10.3.23.tgz#c3e9920183fb023ec4b4fdf89488275497e5428c"
+  integrity sha512-WWfBgfOUdmnpFOxiYPr4kMWZsgJvbLbEn1DznW6rzFGTdCMu93knyu4DN8t1eA68AIdG7UBjToqjzJhtch9bFQ==
   dependencies:
     "@babel/core" "^7.10.4"
     "@babel/helper-plugin-utils" "^7.10.4"
@@ -5604,7 +5606,7 @@ babel-plugin-formatjs@10.3.22:
     "@babel/traverse" "7"
     "@babel/types" "^7.12.11"
     "@formatjs/icu-messageformat-parser" "2.1.2"
-    "@formatjs/ts-transformer" "3.9.6"
+    "@formatjs/ts-transformer" "3.9.7"
     "@types/babel__core" "^7.1.7"
     "@types/babel__helper-plugin-utils" "^7.10.0"
     tslib "2.4.0"
