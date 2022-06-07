@@ -75,7 +75,7 @@
     "redux-promise-middleware": "6.1.2",
     "redux-thunk": "2.4.1",
     "regenerator-runtime": "0.13.9",
-    "reselect": "4.1.5",
+    "reselect": "4.1.6",
     "resize-observer-polyfill": "1.5.1",
     "xstate": "4.32.1"
   },
