@@ -120,7 +120,7 @@
     "eslint-plugin-formatjs": "2.21.0",
     "eslint-plugin-jest": "25.7.0",
     "eslint-plugin-jsx-a11y": "6.6.0",
-    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-prettier": "4.1.0",
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "file-loader": "6.2.0",
