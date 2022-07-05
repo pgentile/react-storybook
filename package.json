@@ -107,7 +107,7 @@
     "babel-eslint": "10.1.0",
     "babel-jest": "27.5.1",
     "babel-loader": "8.2.3",
-    "babel-plugin-formatjs": "10.3.24",
+    "babel-plugin-formatjs": "10.3.25",
     "babel-plugin-macros": "3.1.0",
     "browserslist": "4.21.1",
     "clean-webpack-plugin": "4.0.0",
