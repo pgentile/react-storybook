@@ -13809,7 +13809,7 @@ postcss@^8.1.10:
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
 
-postcss@^8.2.15, postcss@^8.2.4, postcss@^8.3.6:
+postcss@^8.2.15, postcss@^8.2.4:
   version "8.3.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.6.tgz#2730dd76a97969f37f53b9a6096197be311cc4ea"
   integrity sha512-wG1cc/JhRgdqB6WHEuyLTedf3KIRuD0hG6ldkFEZNCjRxiC+3i6kkWUUbiJQayP28iwG35cEmAbe98585BYV0A==
@@ -13817,6 +13817,15 @@ postcss@^8.2.15, postcss@^8.2.4, postcss@^8.3.6:
     colorette "^1.2.2"
     nanoid "^3.1.23"
     source-map-js "^0.6.2"
+
+postcss@^8.4.16:
+  version "8.4.21"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.21.tgz#c639b719a57efc3187b13a1d765675485f4134f4"
+  integrity sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==
+  dependencies:
+    nanoid "^3.3.4"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
 
 postcss@^8.4.7:
   version "8.4.7"
@@ -16175,14 +16184,14 @@ stylelint-config-recommended@^5.0.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-5.0.0.tgz#fb5653f495a60b4938f2ad3e77712d9e1039ae78"
   integrity sha512-c8aubuARSu5A3vEHLBeOSJt1udOdS+1iue7BmJDTSXoCBmfEQmmWX+59vYIj3NQdJBY6a/QRv1ozVFpaB9jaqA==
 
-stylelint-no-unsupported-browser-features@5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/stylelint-no-unsupported-browser-features/-/stylelint-no-unsupported-browser-features-5.0.3.tgz#a65e80eff16e3a356ef64e1776e34f8a20b6959f"
-  integrity sha512-FqfbOTk5UEkHsAKOkPH6SvajsfO9YuoWvKxd34tCRBZug9ZNeaPn141nyWkd+ncc8S1gVmO2+O6qVAMj9bvWww==
+stylelint-no-unsupported-browser-features@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-no-unsupported-browser-features/-/stylelint-no-unsupported-browser-features-6.1.0.tgz#04aabd68eeef98cdc3c3926c85848995c32adb36"
+  integrity sha512-3Taj+z9PjIiY6cz4hg3eN8Khue3kMm9lPXYuEvdjAFXDK20uQo2NocJaWN6anIKclYlwrpkBAS9W/KV3qPTWsw==
   dependencies:
     doiuse "^4.4.1"
     lodash "^4.17.15"
-    postcss "^8.3.6"
+    postcss "^8.4.16"
 
 stylelint-prettier@1.2.0:
   version "1.2.0"
