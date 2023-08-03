@@ -115,7 +115,7 @@
     "css-loader": "6.7.1",
     "cssnano": "5.1.13",
     "eslint": "7.32.0",
-    "eslint-config-prettier": "8.5.0",
+    "eslint-config-prettier": "8.10.0",
     "eslint-plugin-compat": "3.13.0",
     "eslint-plugin-formatjs": "2.21.0",
     "eslint-plugin-jest": "25.7.0",
