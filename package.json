@@ -53,7 +53,7 @@
     "fast-memoize": "2.5.2",
     "final-form": "4.20.7",
     "final-form-focus": "1.1.2",
-    "libphonenumber-js": "1.10.14",
+    "libphonenumber-js": "1.11.12",
     "lodash-es": "4.17.21",
     "makecancelable": "1.1.1",
     "md5": "2.3.0",
