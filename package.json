@@ -80,12 +80,12 @@
     "xstate": "4.33.6"
   },
   "devDependencies": {
-    "@babel/cli": "7.15.7",
-    "@babel/core": "7.15.8",
-    "@babel/plugin-transform-react-jsx": "7.14.9",
-    "@babel/preset-env": "7.15.8",
-    "@babel/preset-react": "7.14.5",
-    "@babel/preset-typescript": "7.15.0",
+    "@babel/cli": "7.25.9",
+    "@babel/core": "7.25.9",
+    "@babel/plugin-transform-react-jsx": "7.25.9",
+    "@babel/preset-env": "7.25.9",
+    "@babel/preset-react": "7.25.9",
+    "@babel/preset-typescript": "7.25.9",
     "@emotion/babel-plugin": "11.10.2",
     "@emotion/eslint-plugin": "11.10.0",
     "@emotion/jest": "11.10.0",
