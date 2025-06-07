@@ -8746,10 +8746,10 @@ filter-obj@^1.1.0:
   resolved "https://registry.yarnpkg.com/filter-obj/-/filter-obj-1.1.0.tgz#9b311112bc6c6127a16e016c6c5d7f19e0805c5b"
   integrity sha1-mzERErxsYSehbgFsbF1/GeCAXFs=
 
-final-form-focus@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/final-form-focus/-/final-form-focus-1.1.2.tgz#8ea5c4bd802e220cebaa47a587bb0be164eb6806"
-  integrity sha512-Gd+Bd2Ll7ijo3/sd6kJ/bwLkhc2bUJPxTON6fIqee/008EJpACWhT+zoWCm9q6NcfMcWRS+Sp5ikRX8iqdXeGQ==
+final-form-focus@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/final-form-focus/-/final-form-focus-2.0.0.tgz#a66adc5a395aba86e97d1813b6e38aea71b847dc"
+  integrity sha512-U+zCvb66i6r6Jkw7CU0DEpgPUlXYdZxTqAdm0Tm26tUHGtBi3o7ViiTcadl+zPJGVL6UX1XZ7YJZG0MOwIp1iQ==
 
 final-form@4.20.7:
   version "4.20.7"
