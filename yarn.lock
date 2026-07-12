@@ -2185,6 +2185,11 @@
   dependencies:
     tslib "^2.1.0"
 
+"@formatjs/intl-getcanonicallocales@3.2.11":
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-3.2.11.tgz#bb284a387a8bef084ff2f1a176d4283d972d049c"
+  integrity sha512-3FX+dgs+n7IZ6LGewqKV+JhAN7PeknS17j2QH0Qq4yQ64QJCmd8ST5FIRRvVgM93T6L2sARpcSH1gNiVMgVy6w==
+
 "@formatjs/intl-listformat@6.5.3":
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-6.5.3.tgz#f29da613a8062dc3e4e3d847ba890c3ea745f051"
