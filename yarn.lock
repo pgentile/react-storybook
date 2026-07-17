@@ -2056,6 +2056,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@formatjs/bigdecimal@0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/bigdecimal/-/bigdecimal-0.2.7.tgz#164256d9bd93766b792fc9c0b803cbae4fc37261"
+  integrity sha512-B4+XY/e4u5v261r3a37Kq2ax91gPZSKGyVpx8X5dygAggLlUz+6MeBpmAhaBFGB8WQ4JB1qD+QtKHk9aJkEb9Q==
+
 "@formatjs/cli@4.8.4":
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-4.8.4.tgz#c4f4e589b8c77c950b659948dbf0e877a4d910fd"
@@ -2109,6 +2114,11 @@
   dependencies:
     tslib "^2.1.0"
 
+"@formatjs/fast-memoize@3.1.7":
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/fast-memoize/-/fast-memoize-3.1.7.tgz#5f79b3756e4bcb5faee47b3a2f01216e1212c9e4"
+  integrity sha512-zXfhLpvA6T7+efdt9JLbBwZ00tT7NsBMDVnDu8rpHeNNv8KfRZAMo2gkG0k9lK/Nzc//3kJ9pImsfuJxk3KhUA==
+
 "@formatjs/icu-messageformat-parser@2.0.18":
   version "2.0.18"
   resolved "https://registry.yarnpkg.com/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.0.18.tgz#b09e8f16b88e988fd125e7c5810300e8a6dd2c42"
@@ -2160,14 +2170,13 @@
     "@formatjs/ecma402-abstract" "1.11.4"
     tslib "^2.1.0"
 
-"@formatjs/intl-datetimeformat@4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-4.5.2.tgz#e9d21044cf0b98d12e5aa6d48863cc6d027d9117"
-  integrity sha512-3480L9EOR7iu7/FWP7LsBoK0BRZAsUVKRjLbkMbHQ/VCMctJNcfackVEXlQRjxr7tzgxfxv6hfxHmht8JaSHIw==
+"@formatjs/intl-datetimeformat@7.5.2":
+  version "7.5.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-7.5.2.tgz#bb6756b0242004d1f42523cb7dd0dfe3627ab886"
+  integrity sha512-V9r8Rlk+30y/TR8t/zlw9HAxRZomzaSbBRbJuELlBo0Vxvsze8NsY1bU+9e6lh75js9M/5lgu2Kpn06RdUTvZg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.11.3"
-    "@formatjs/intl-localematcher" "0.2.24"
-    tslib "^2.1.0"
+    "@formatjs/bigdecimal" "0.2.7"
+    "@formatjs/intl-localematcher" "0.8.13"
 
 "@formatjs/intl-displaynames@5.4.3":
   version "5.4.3"
@@ -2223,6 +2232,13 @@
   integrity sha512-9QTjdSBpQ7wHShZgsNzNig5qT3rCPvmZogS/wXZzKotns5skbXgs0I7J8cuN0PPqXyynvNVuN+iOKhNS2eb+ZA==
   dependencies:
     tslib "2.4.0"
+
+"@formatjs/intl-localematcher@0.8.13":
+  version "0.8.13"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-localematcher/-/intl-localematcher-0.8.13.tgz#e0a47881bba6f9b2d7bddcab7ca4b091ebf22267"
+  integrity sha512-kHEAFOkeJSPNi7c5PaKaRjxcBrJwzzt81ifUu+8uve1EDW/VJl83KsxmqgqNZLzcFEhSliZGvx3+pk/RH0IOmg==
+  dependencies:
+    "@formatjs/fast-memoize" "3.1.7"
 
 "@formatjs/intl-numberformat@7.4.3":
   version "7.4.3"
